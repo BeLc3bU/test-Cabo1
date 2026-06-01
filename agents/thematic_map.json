@@ -1,0 +1,181 @@
+{
+  "Dinámica de Grupos": {
+    "archivo_origen": [
+      "1.DINAMICA DE GRUPO.docx"
+    ],
+    "subtemas": [
+      "DINÁMICA DE GRUPOS",
+      "1. Introducción",
+      "2. Origen",
+      "3. Definición de Grupo (Bar-Tal, 1990)",
+      "4. Tipos de Grupos"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 4017,
+    "nivel_importancia": "Relevante"
+  },
+  "Registro y Redacción de Documentos": {
+    "archivo_origen": [
+      "1.REGISTRO Y UTILIZACIÓN DE DOCUMENTOS EN EL EA.docx",
+      "3.INTRODUCCIÓN A LA IG 10-01.docx"
+    ],
+    "subtemas": [
+      "JEMA",
+      "1. Disposiciones Generales",
+      "REGISTRO Y UTILIZACIÓN DE DOCUMENTOS EN EL EA",
+      "5. Siglas de los Documentos",
+      "2. Conceptos Básicos",
+      "3. Forma y Estructura de las Disposiciones Generales",
+      "(IG 10-14)",
+      "3. Libro de Registro",
+      "6. Identificación de Expedientes",
+      "2. Definiciones",
+      "1. Sistema de Registro y Gestión Documental",
+      "4. Números de Registro",
+      "INTRODUCCIÓN A LA IG 10-01"
+    ],
+    "normativas_detectadas": [
+      "IG 10-01",
+      "IG 10-14"
+    ],
+    "longitud_caracteres": 3971,
+    "nivel_importancia": "Crítico"
+  },
+  "Expresión Oral": {
+    "archivo_origen": [
+      "2.EXPRESIÓN ORAL.docx"
+    ],
+    "subtemas": [
+      "LA COMUNICACIÓN",
+      "2. Elementos de la Comunicación",
+      "3. Clasificación de la Comunicación"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 3867,
+    "nivel_importancia": "Relevante"
+  },
+  "Redacción de Documentos Militares": {
+    "archivo_origen": [
+      "2.REDACCIÓN DOCS MILITARES TEORIA.docx"
+    ],
+    "subtemas": [
+      "REDACCIÓN DE DOCUMENTOS MILITARES",
+      "1. IG 10-01",
+      "2. Documentos Administrativos",
+      "3. Redacción de Documentos"
+    ],
+    "normativas_detectadas": [
+      "IG 10-01"
+    ],
+    "longitud_caracteres": 2917,
+    "nivel_importancia": "Crítico"
+  },
+  "Expresión Escrita": {
+    "archivo_origen": [
+      "3.EXPRESION ESCRITA.docx"
+    ],
+    "subtemas": [
+      "EXPRESIÓN ESCRITA",
+      "1. Introducción a la Escritura",
+      "2. Objetivo de la Expresión Escrita",
+      "3. El Proceso de Escritura (Fases Clásicas)",
+      "4. Propiedades del Texto"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 3118,
+    "nivel_importancia": "Relevante"
+  },
+  "Liderazgo": {
+    "archivo_origen": [
+      "4.LIDERAZGO.docx"
+    ],
+    "subtemas": [
+      "LIDERAZGO",
+      "1. Introducción",
+      "2. Definición de Líder",
+      "3. Teorías del Liderazgo",
+      "4. El Líder 360º"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 3236,
+    "nivel_importancia": "Crítico"
+  },
+  "Valores Militares": {
+    "archivo_origen": [
+      "5.VALORES MILITARES.docx"
+    ],
+    "subtemas": [
+      "VALORES MILITARES",
+      "1. Objetivos",
+      "2. Antecedentes y Referencias Principales",
+      "3. Visión del JEMA (Diciembre de 2013)",
+      "4. Valores Militares del Ejército del Aire"
+    ],
+    "normativas_detectadas": [
+      "I.G. 00-4"
+    ],
+    "longitud_caracteres": 1624,
+    "nivel_importancia": "Crítico"
+  },
+  "Apoyo Psicológico": {
+    "archivo_origen": [
+      "APOYO PSICOLÓGICO.docx"
+    ],
+    "subtemas": [
+      "OBJETIVOS",
+      "CONCEPTOS BÁSICOS",
+      "CRISIS PSICOLÓGICA",
+      "CLASIFICACIÓN DE LAS VÍCTIMAS",
+      "INTERVINIENTES"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 4742,
+    "nivel_importancia": "Relevante"
+  },
+  "Historia del EA": {
+    "archivo_origen": [
+      "HISTORIA DEL EA.docx"
+    ],
+    "subtemas": [
+      "HISTORIA DEL EJÉRCITO DEL AIRE Y DEL ESPACIO",
+      "1. Introducción",
+      "2. Comienzos de la Aviación Española",
+      "3. Vuelos Históricos de la Aviación Española",
+      "4. La Guerra Civil (1936-1939)",
+      "5. Creación del Ejército del Aire"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 5155,
+    "nivel_importancia": "Relevante"
+  },
+  "Material Aéreo": {
+    "archivo_origen": [
+      "MATERIAL AÉREO.docx"
+    ],
+    "subtemas": [
+      "INTRODUCCIÓN",
+      "S.A.R.",
+      "MATERIAL AÉREO ACTUAL",
+      "COMBATE",
+      "TRANSPORTE"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 4137,
+    "nivel_importancia": "Relevante"
+  },
+  "Organizaciones Internacionales": {
+    "archivo_origen": [
+      "ORGANIZACIONES INTERNACIONALES.docx"
+    ],
+    "subtemas": [
+      "ORGANIZACIONES INTERNACIONALES",
+      "1. Consideraciones Generales",
+      "2. Organizaciones que se estudian",
+      "3. Organización de las Naciones Unidas (ONU)",
+      "4. Organización del Tratado del Atlántico Norte (OTAN)"
+    ],
+    "normativas_detectadas": [],
+    "longitud_caracteres": 2866,
+    "nivel_importancia": "Relevante"
+  }
+}

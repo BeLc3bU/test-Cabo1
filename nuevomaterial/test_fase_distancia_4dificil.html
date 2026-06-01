@@ -1,0 +1,341 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1.5rem 0}
+.header h2{font-size:18px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.topic-pill{font-size:12px;background:var(--color-background-secondary);display:inline-block;padding:2px 10px;border-radius:4px;margin-top:4px;color:var(--color-text-secondary)}
+.progress-bar{width:100%;height:4px;background:var(--color-background-secondary);border-radius:2px;margin-bottom:1.5rem;overflow:hidden}
+.progress-fill{height:100%;background:#C0622F;border-radius:2px;transition:width 0.3s}
+.q-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem;margin-bottom:1rem}
+.q-meta{font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px}
+.q-text{font-size:15px;color:var(--color-text-primary);line-height:1.5;margin-bottom:1rem}
+.options{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);cursor:pointer;transition:background 0.15s,border-color 0.15s;background:var(--color-background-primary)}
+.opt:hover{background:var(--color-background-secondary)}
+.opt.selected{border-color:#C0622F;background:#FDF0E8}
+.opt.correct{border-color:#1D9E75;background:#E1F5EE}
+.opt.wrong{border-color:#E24B4A;background:#FCEBEB}
+.opt-letter{font-size:12px;font-weight:500;color:var(--color-text-secondary);min-width:18px;margin-top:1px}
+.opt-text{font-size:14px;color:var(--color-text-primary);line-height:1.4}
+.nav{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:1rem}
+.btn{padding:8px 18px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);font-size:14px;cursor:pointer;font-family:var(--font-sans)}
+.btn:hover{background:var(--color-background-secondary)}
+.btn:disabled{opacity:0.35;cursor:not-allowed}
+.btn-primary{background:var(--color-text-primary);color:var(--color-background-primary);border-color:var(--color-text-primary)}
+.btn-primary:hover{opacity:0.85}
+.q-counter{font-size:13px;color:var(--color-text-secondary)}
+.feedback{font-size:13px;margin-top:10px;padding:8px 12px;border-radius:var(--border-radius-md);line-height:1.4}
+.feedback.ok{background:#E1F5EE;color:#0F6E56}
+.feedback.ko{background:#FCEBEB;color:#A32D2D}
+.result-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:2rem;text-align:center}
+.result-score{font-size:48px;font-weight:500;color:var(--color-text-primary);margin:1rem 0 0.25rem}
+.result-label{font-size:14px;color:var(--color-text-secondary);margin-bottom:1.5rem}
+.result-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:1.5rem}
+.stat{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px 8px}
+.stat-n{font-size:22px;font-weight:500}
+.stat-l{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.review-item{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:1rem;margin-bottom:10px;text-align:left}
+.review-q{font-size:13px;margin-bottom:6px;color:var(--color-text-primary)}
+.tag-ok{display:inline-block;font-size:11px;background:#E1F5EE;color:#0F6E56;border-radius:4px;padding:2px 8px;margin-bottom:6px}
+.tag-ko{display:inline-block;font-size:11px;background:#FCEBEB;color:#A32D2D;border-radius:4px;padding:2px 8px;margin-bottom:6px}
+.answer-line{font-size:12px;color:var(--color-text-secondary)}
+.answer-line b{color:var(--color-text-primary);font-weight:500}
+.medal{font-size:36px;margin-bottom:8px}
+</style>
+
+<div class="wrap">
+<div id="test-view">
+  <div class="header" style="margin-bottom:1rem">
+    <h2>Test 3 — Fase a distancia</h2>
+    <span class="topic-pill" id="topic-tag">—</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+  <div id="q-area"></div>
+  <div class="nav">
+    <span class="q-counter" id="qcount"></span>
+    <div style="display:flex;gap:8px">
+      <button class="btn" id="btn-prev" onclick="go(-1)" disabled>← Anterior</button>
+      <button class="btn btn-primary" id="btn-next" onclick="go(1)" disabled>Siguiente →</button>
+    </div>
+  </div>
+</div>
+<div id="result-view" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+
+/* ── ORGANIZACIONES INTERNACIONALES ── */
+{t:"Organizaciones internacionales",
+ q:"El secretario general de la ONU Antonio Guterres es de nacionalidad portuguesa y ocupa el cargo desde 2017. ¿Qué número de secretario general es?",
+ opts:["Sexto","Séptimo","Octavo","Noveno"],
+ a:2,
+ exp:"Guterres es el octavo secretario general de la ONU, cargo que ocupa desde 2017."},
+
+{t:"Organizaciones internacionales",
+ q:"¿Cuántos votos son necesarios para que el Consejo de Seguridad de la ONU apruebe una resolución, y qué condición adicional deben cumplir?",
+ opts:["7 votos sin condiciones adicionales","9 votos, y ningún miembro permanente puede vetar","9 votos, con mayoría simple de permanentes","12 votos por unanimidad"],
+ a:1,
+ exp:"Las resoluciones del Consejo de Seguridad se aprueban con 9 votos, pero cualquier miembro permanente puede vetarlas."},
+
+{t:"Organizaciones internacionales",
+ q:"La OTAN está presidida en 2024 por un nuevo secretario general. ¿Quién es?",
+ opts:["Jens Stoltenberg","Mark Rutte","Josep Borrell","Charles Michel"],
+ a:1,
+ exp:"Mark Rutte asumió la Secretaría General de la OTAN en 2024, sustituyendo a Jens Stoltenberg."},
+
+{t:"Organizaciones internacionales",
+ q:"La Comunidad Europea del Carbón y del Acero fue el embrión de la actual UE. ¿Cuáles fueron sus seis países fundadores?",
+ opts:["Francia, Alemania, Italia, España, Portugal y Bélgica","Alemania, Bélgica, Francia, Italia, Luxemburgo y Países Bajos","Francia, Reino Unido, Alemania, Italia, Países Bajos y Dinamarca","Alemania, Francia, Polonia, Italia, Austria y Bélgica"],
+ a:1,
+ exp:"Los 6 países fundadores fueron Alemania, Bélgica, Francia, Italia, Luxemburgo y Países Bajos, unidos bajo el lema 'si se quiere evitar una guerra, hay que trabajar juntos'."},
+
+{t:"Organizaciones internacionales",
+ q:"¿Cuántos países miembros tiene actualmente la Unión Europea tras la salida del Reino Unido?",
+ opts:["25","26","27","28"],
+ a:2,
+ exp:"Tras el Brexit, la UE cuenta con 27 países miembros."},
+
+/* ── APOYO PSICOLÓGICO ── */
+{t:"Apoyo psicológico",
+ q:"¿Qué estresores se denominan 'ambientales' dentro de los factores estresantes que afectan a los intervinientes en una emergencia?",
+ opts:["Situaciones de muerte o heridos graves","Tareas exigentes y triajes","Climatología extrema durante la intervención","La ideología de la propia profesión"],
+ a:2,
+ exp:"Los estresores ambientales son los relacionados con condiciones externas como la climatología extrema. Los sucesos como muerte o heridos son 'potencialmente estresores' y las tareas exigentes son 'estresores ocupacionales'."},
+
+{t:"Apoyo psicológico",
+ q:"Un soldado que participó en una misión de rescate y, al regresar, no estaba en el lugar del accidente, experimenta culpa por haberse 'salvado' sin estar presente. ¿A qué grado de víctima corresponde?",
+ opts:["Cuarto grado","Quinto grado","Sexto grado","No se considera víctima"],
+ a:2,
+ exp:"Las víctimas de 6.º grado son los llamados 'accidente blanco': personas que no estaban allí y sienten culpa por haberse salvado."},
+
+{t:"Apoyo psicológico",
+ q:"¿Qué diferencia hay entre 'oír' y 'escuchar activamente' según el temario?",
+ opts:["Ninguna; son sinónimos en el contexto de la comunicación","Oír es percibir el sonido; escuchar activamente implica percibir también emociones e ideas que hay detrás","Oír requiere más atención que escuchar","Escuchar es pasivo; oír es activo"],
+ a:1,
+ exp:"Oír es simplemente percibir el sonido. Escuchar activamente va más allá: implica captar emociones, ideas y pensamientos que no se expresan directamente."},
+
+{t:"Apoyo psicológico",
+ q:"La segunda fase de la crisis psicológica provoca reacciones emocionales intensas, enfado u odio y pérdida de creencias y valores. ¿Cómo se denomina esta fase?",
+ opts:["Fase de shock","Fase de reacción","Fase de adaptación","Fase de resolución"],
+ a:1,
+ exp:"La 2.ª fase es la fase de Reacción, que provoca reacciones emocionales intensas, enfado/odio y pérdida de creencias y valores. La 1.ª fase es la de Shock."},
+
+/* ── DINÁMICA DE GRUPOS ── */
+{t:"Dinámica de grupos",
+ q:"El Ejército como institución es un ejemplo de grupo formal. ¿Cuál de estas características lo define como tal?",
+ opts:["Surge de procesos espontáneos entre sus miembros","Tiene carácter normativo con normas y fines explícitos","Sus miembros interactúan cara a cara en grupos pequeños","Se basa exclusivamente en vínculos afectivos"],
+ a:1,
+ exp:"Los grupos formales son resultado de la planificación de una organización, tienen carácter normativo con normas y fines explícitos, y pueden ser temporales o permanentes."},
+
+{t:"Dinámica de grupos",
+ q:"Según el temario, ¿qué afirmación resume correctamente la relación entre grupo de pertenencia y grupo de referencia en el ámbito militar?",
+ opts:["El grupo militar debe ser de pertenencia y nunca de referencia","El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia","Ambos conceptos son idénticos en el contexto castrense","El grupo de referencia negativo es el más valorado en el Ejército"],
+ a:1,
+ exp:"El temario cita textualmente: 'El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia', pues debe inspirar valores y aspiraciones."},
+
+{t:"Dinámica de grupos",
+ q:"Para que un grupo sea eficaz, el temario enumera varias condiciones. ¿Cuál de estas NO aparece en esa lista?",
+ opts:["Meta común clara","Roles claros y aceptados","Liderazgo único e inamovible","Consenso en las decisiones"],
+ a:2,
+ exp:"El temario indica que todos los miembros deben tener capacidades de liderazgo, no que haya un único líder inamovible. El liderazgo eficaz debe ser atento y compartido."},
+
+{t:"Dinámica de grupos",
+ q:"¿Qué técnica de grupo, estructurada en fases de generación de ideas por escrito, ronda de ideas y votación preliminar, integra trabajo individual y grupal?",
+ opts:["Grupo inestructurado","Brainstorming libre","Grupo nominal","Dinámica de roles"],
+ a:2,
+ exp:"El grupo nominal es una reunión estructurada que integra trabajo individual y grupal, con fases de preparación, generación de ideas por escrito, ronda, discusión, votación y discusión final."},
+
+/* ── EXPRESIÓN ORAL ── */
+{t:"Expresión oral",
+ q:"Según el temario, ¿qué ocurre con el volumen de la voz cuando una persona siente miedo, excitación o rabia?",
+ opts:["El volumen disminuye considerablemente","El volumen se mantiene estable","El volumen aumenta","El volumen se vuelve irregular e impredecible"],
+ a:2,
+ exp:"Según el temario, el volumen de la voz aumenta al sentir miedo, excitación o rabia. Subir el volumen también es una llamada de atención."},
+
+{t:"Expresión oral",
+ q:"¿Qué transmite al receptor la falta de contacto visual por parte del EMISOR durante una conversación?",
+ opts:["Desinterés o temor excesivo","Ausencia de sinceridad o menosprecio","Mirada de soslayo y duda","Hastío o aburrimiento"],
+ a:1,
+ exp:"Según el temario, la falta de contacto visual en el emisor transmite ausencia de sinceridad o menosprecio. En el receptor indicaría desinterés o temor."},
+
+{t:"Expresión oral",
+ q:"Una presentación se estructura en introducción, proposición, confirmación y conclusión. ¿A qué tipo de comunicación en público corresponde esta estructura?",
+ opts:["Discurso improvisado","Conferencia","Debate","Presentación informal"],
+ a:1,
+ exp:"La estructura Introducción → Proposición → Confirmación → Conclusión es la propia de la Conferencia, junto con las 5 C del buen conferenciante."},
+
+{t:"Expresión oral",
+ q:"¿Qué elemento de apoyo en una presentación resulta más adecuado para grupos reducidos y permite modificar el contenido en tiempo real?",
+ opts:["Transparencias o presentaciones informáticas","Material impreso","La pizarra","Proyección multimedia"],
+ a:2,
+ exp:"Según el temario, la pizarra es el recurso más adecuado para grupos reducidos."},
+
+/* ── EXPRESIÓN ESCRITA ── */
+{t:"Expresión escrita",
+ q:"En la fase de Elocutio (redacción), ¿qué recomienda el temario respecto a los borradores?",
+ opts:["Elaborar un único borrador definitivo desde el principio","Centrarse en la forma antes que en el contenido","Elaborar diversos borradores atendiendo más al contenido que a la forma","Evitar releer lo escrito para no perder fluidez"],
+ a:2,
+ exp:"El temario recomienda elaborar diversos borradores atendiendo más al contenido que a la forma, y dejar los aspectos mecánicos para el final."},
+
+{t:"Expresión escrita",
+ q:"¿Cómo se denomina la persona 'poco dada a escribir o que no sabe hacerlo', según el término recogido en el temario de expresión escrita?",
+ opts:["Analfabeta","Ágrafa","Diléxica","Iletrada"],
+ a:1,
+ exp:"El término exacto del temario es 'ágrafa': persona poco dada a escribir o que no sabe hacerlo."},
+
+{t:"Expresión escrita",
+ q:"En un texto argumentativo, ¿cuál es el orden correcto del proceso según el temario?",
+ opts:["Refutación → Enunciación → Demostración → Conclusión","Enunciación → Demostración → Refutación → Conclusión","Demostración → Enunciación → Conclusión → Refutación","Conclusión → Enunciación → Demostración → Refutación"],
+ a:1,
+ exp:"El proceso en la argumentación sigue el orden: Enunciación → Demostración → Refutación → Conclusión."},
+
+/* ── LIDERAZGO ── */
+{t:"Liderazgo",
+ q:"En la teoría situacional de Hersey y Blanchard, ¿qué estilo de liderazgo se aplica cuando el subalterno tiene un nivel R4 de disposición?",
+ opts:["Decir: alta tarea, baja relación","Vender: alta tarea, alta relación","Participar: baja tarea, alta relación","Delegar: baja tarea, baja relación"],
+ a:3,
+ exp:"En R4 el seguidor está dispuesto y es capaz de asumir responsabilidad, por lo que el líder delega (baja tarea + baja relación) y no necesita intervenir mucho."},
+
+{t:"Liderazgo",
+ q:"El estudio de la Universidad de Michigan sobre liderazgo conductual distingue dos orientaciones. ¿Cuáles son?",
+ opts:["Orientación a la tarea y orientación a la estructura","Orientación al empleado y orientación a la producción","Orientación al logro y orientación a la participación","Orientación directiva y orientación de apoyo"],
+ a:1,
+ exp:"El estudio de la Universidad de Michigan identifica la conducta orientada al empleado (interés en sus necesidades) y la conducta orientada a la producción (prioridad al trabajo)."},
+
+{t:"Liderazgo",
+ q:"¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
+ opts:["Nelson Mandela","Malala Yousafzai","Martin Luther King","Napoleón Bonaparte"],
+ a:3,
+ exp:"Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece."},
+
+/* ── VALORES MILITARES ── */
+{t:"Valores militares",
+ q:"¿Qué valor militar se describe como 'fuerza en la diversidad' y fortalece el compañerismo y la confianza dentro del equipo?",
+ opts:["Lealtad","Disciplina","Espíritu de equipo","Ejemplaridad"],
+ a:2,
+ exp:"El espíritu de equipo es la unión que lleva a la sinergia, la fuerza en la diversidad; fortalece el compañerismo y exige compartir conocimiento con franqueza."},
+
+{t:"Valores militares",
+ q:"La Directiva 024/15 del JEMA, de junio de 2015, establece la implantación del modelo de Liderazgo y Valores en el EA en dos fases. ¿Cuáles son?",
+ opts:["Planificación y ejecución","Formación y evaluación","Implementación y consolidación","Difusión y aplicación"],
+ a:2,
+ exp:"La Directiva 024/15 establece dos fases para la implantación del modelo: Implementación y Consolidación."},
+
+/* ── TÉCNICAS DE APOYO / DOCUMENTOS ── */
+{t:"Técnicas de apoyo — documentos",
+ q:"¿Qué tipo de documento militar se usa para comunicar decisiones u órdenes de la autoridad y es emitido al BOD por el EMA o el SEGE?",
+ opts:["Instrucción General","Instrucción Comunicada","Resolución","Procedimiento Operativo"],
+ a:2,
+ exp:"La Resolución comunica decisiones u órdenes de la autoridad y es emitida al BOD por el EMA o el SEGE."},
+
+{t:"Técnicas de apoyo — documentos",
+ q:"En el sistema de numeración de disposiciones del EA, ¿qué bloque temático corresponde al número 30?",
+ opts:["Organización","Planes","Operaciones","Adiestramiento"],
+ a:2,
+ exp:"El bloque 30 corresponde a Operaciones. El 10 es Organización, el 20 son Planes y el 50 es Adiestramiento."},
+
+{t:"Técnicas de apoyo — documentos",
+ q:"¿Qué modificación de una disposición normativa supone una alteración no esencial sin que se edite una nueva versión del documento?",
+ opts:["Revisión (REV)","Anulación (ANL)","Enmienda (ENM)","Derogación parcial"],
+ a:2,
+ exp:"La Enmienda (ENM) es una modificación no esencial que no genera una nueva versión. La Revisión sí sustituye completamente la anterior."},
+
+{t:"Técnicas de apoyo — documentos",
+ q:"Un oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona. ¿Cuántos asuntos puede tratar un mismo oficio?",
+ opts:["Los que sean necesarios sin límite","Hasta tres asuntos como máximo","Un único asunto","Dos asuntos si están relacionados"],
+ a:2,
+ exp:"Según la normativa, un oficio trata un solo asunto. Además usa N/Ref y S/Ref para su identificación y seguimiento."},
+
+{t:"Técnicas de apoyo — documentos",
+ q:"En el libro de registro, ¿qué información NO es obligatoria registrar como norma general?",
+ opts:["Número de entrada o salida","Fecha del asiento","Extracto o epígrafe del asunto","El número de páginas del documento"],
+ a:3,
+ exp:"La información obligatoria es: número de registro, remitente/destinatario, fecha del documento, fecha y hora del asiento, y extracto del asunto. El número de páginas no figura entre los datos obligatorios."},
+
+{t:"Técnicas de apoyo — documentos",
+ q:"La instancia es un documento de los ciudadanos. ¿Cuál de las siguientes afirmaciones sobre la instancia es FALSA?",
+ opts:["Puede incluir solicitudes, denuncias, alegaciones o recursos","Debe llevar datos del solicitante, expone, solicita, fecha y firma","Debe ir firmada por el Jefe de la UCO del interesado","Debe registrarse de entrada conforme a lo establecido en la IG 10-14"],
+ a:2,
+ exp:"La instancia la firma el propio interesado, no el Jefe de su UCO. Esa es una afirmación falsa que aparece como trampa habitual en el temario."}
+
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false);
+
+function render(){
+  const q=QS[cur];
+  document.getElementById('topic-tag').textContent=q.t;
+  document.getElementById('qcount').textContent=`Pregunta ${cur+1} de ${QS.length}`;
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  const L=['a','b','c','d'];
+  let html=`<div class="q-card"><div class="q-meta">Pregunta ${cur+1}</div><div class="q-text">${q.q}</div><div class="options">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct';else if(ans[cur]===i)c+=' wrong';}
+    else if(ans[cur]===i)c+=' selected';
+    html+=`<div class="${c}" onclick="pick(${i})"><span class="opt-letter">${L[i]})</span><span class="opt-text">${o}</span></div>`;
+  });
+  html+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    html+=`<div class="feedback ${ok?'ok':'ko'}">${ok?'✓ Correcto. ':'✗ Incorrecto. '}${q.exp}</div>`;
+  }
+  html+='</div>';
+  document.getElementById('q-area').innerHTML=html;
+  document.getElementById('btn-prev').disabled=cur===0;
+  const nb=document.getElementById('btn-next');
+  const last=cur===QS.length-1;
+  nb.textContent=last?'Ver resultado →':'Siguiente →';
+  nb.disabled=ans[cur]===null;
+}
+
+function pick(i){
+  if(rev[cur])return;
+  ans[cur]=i;rev[cur]=true;
+  document.getElementById('btn-next').disabled=false;
+  render();
+}
+
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));render();
+}
+
+function medal(p){return p>=90?'🥇':p>=70?'🥈':p>=50?'🥉':'💪';}
+function msg(p){return p>=90?'¡Sobresaliente! Dominas el temario.':p>=70?'Buen resultado, sigue repasando los fallos.':p>=50?'Aprobado justo. Hay margen de mejora.':'A repasar el temario con más calma.';}
+
+function showResult(){
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const pct=Math.round(correct/QS.length*100);
+  document.getElementById('test-view').style.display='none';
+  const rv=document.getElementById('result-view');rv.style.display='block';
+  let reviewHtml='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    reviewHtml+=`<div class="review-item"><span class="${ok?'tag-ok':'tag-ko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span><div class="review-q">${i+1}. ${q.q}</div><div class="answer-line">Respuesta correcta: <b>${String.fromCharCode(97+q.a)}) ${q.opts[q.a]}</b></div></div>`;
+  });
+  rv.innerHTML=`<div class="result-card">
+    <div class="medal">${medal(pct)}</div>
+    <h2 style="font-size:18px;font-weight:500;color:var(--color-text-primary)">Resultado final</h2>
+    <div class="result-score">${correct}/${QS.length}</div>
+    <div class="result-label">${msg(pct)}</div>
+    <div class="result-stats">
+      <div class="stat"><div class="stat-n" style="color:#1D9E75">${correct}</div><div class="stat-l">Correctas</div></div>
+      <div class="stat"><div class="stat-n" style="color:#E24B4A">${QS.length-correct}</div><div class="stat-l">Incorrectas</div></div>
+      <div class="stat"><div class="stat-n">${pct}%</div><div class="stat-l">Nota</div></div>
+    </div>
+    <button class="btn btn-primary" onclick="restart()" style="margin-bottom:1.5rem">Repetir test</button>
+  </div>
+  <div style="margin-top:1.5rem"><h3 style="font-size:15px;font-weight:500;margin-bottom:1rem;color:var(--color-text-primary)">Repaso completo</h3>${reviewHtml}</div>`;
+}
+
+function restart(){
+  cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);
+  document.getElementById('result-view').style.display='none';
+  document.getElementById('test-view').style.display='block';
+  render();
+}
+
+render();
+</script>

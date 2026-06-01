@@ -1,0 +1,145 @@
+
+<style>
+  .test-wrap{padding:1rem 0;font-size:15px;color:var(--color-text-primary)}
+  .pbg{background:var(--color-background-secondary);border-radius:99px;height:8px;margin-bottom:1.5rem;border:0.5px solid var(--color-border-tertiary)}
+  .pbf{background:#534AB7;height:100%;border-radius:99px;transition:width 0.3s}
+  .qcard{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem 1.5rem;margin-bottom:1rem}
+  .qhdr{display:flex;gap:10px;align-items:flex-start;margin-bottom:1rem}
+  .qnum{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:2px 10px;font-size:13px;color:var(--color-text-secondary);white-space:nowrap;margin-top:1px}
+  .qtxt{font-size:15px;line-height:1.5}
+  .opt{display:flex;align-items:flex-start;gap:10px;padding:8px 10px;border-radius:var(--border-radius-md);cursor:pointer;border:0.5px solid var(--color-border-tertiary);margin-bottom:6px;transition:background 0.15s}
+  .opt:hover{background:var(--color-background-secondary)}
+  .opt.selected{border-color:#534AB7;background:#EEEDFE}
+  .opt.correct{border-color:#3B6D11;background:#EAF3DE}
+  .opt.wrong{border-color:#A32D2D;background:#FCEBEB}
+  .oletter{font-weight:500;min-width:18px;font-size:14px;color:var(--color-text-secondary)}
+  .opt.selected .oletter{color:#3C3489}
+  .opt.correct .oletter{color:#3B6D11}
+  .opt.wrong .oletter{color:#A32D2D}
+  .btn-check{background:#534AB7;border:none;color:#fff;border-radius:var(--border-radius-md);padding:9px 20px;font-size:14px;cursor:pointer}
+  .btn-check:disabled{opacity:0.4;cursor:default}
+  .btn-next{background:transparent;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:9px 20px;font-size:14px;cursor:pointer;color:var(--color-text-primary)}
+  .btn-next:hover{background:var(--color-background-secondary)}
+  .fb{margin-top:10px;font-size:13px;padding:8px 12px;border-radius:var(--border-radius-md);line-height:1.5}
+  .fb.ok{background:#EAF3DE;color:#27500A}
+  .fb.ko{background:#FCEBEB;color:#791F1F}
+  .tag{display:inline-block;background:#EEEDFE;border-radius:var(--border-radius-md);padding:2px 8px;font-size:12px;color:#3C3489;margin-bottom:8px}
+  .score-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:2rem;text-align:center}
+  .score-big{font-size:48px;font-weight:500;color:#534AB7}
+</style>
+
+<div class="test-wrap">
+<h2 class="sr-only">Test 2 de 30 preguntas sobre el temario de fase distancia</h2>
+<div id="phdr" style="margin-bottom:0.5rem;display:flex;justify-content:space-between;font-size:13px;color:var(--color-text-secondary)">
+  <span id="plabel">Pregunta 1 de 30</span>
+  <span id="pscore">Correctas: 0</span>
+</div>
+<div class="pbg"><div class="pbf" id="pbar" style="width:3.33%"></div></div>
+<div id="qcon"></div>
+<div style="display:flex;gap:10px;margin-top:1rem" id="navbtns">
+  <button class="btn-check" id="btncheck" onclick="check()" disabled>Comprobar</button>
+  <button class="btn-next" id="btnnext" onclick="next()" style="display:none">Siguiente →</button>
+</div>
+<div id="resarea"></div>
+</div>
+
+<script>
+const Q=[
+  {t:"Organizaciones Internacionales",q:"¿Cuál es el principal objetivo fundacional de la ONU según su carta constitutiva?",o:["Crear un mercado económico común entre naciones","Evitar futuras guerras mediante la diplomacia y el diálogo","Garantizar la seguridad militar de los países aliados","Establecer un idioma universal para las relaciones internacionales"],a:1,e:"La principal intención de la ONU es evitar futuras guerras mediante la diplomacia y el diálogo."},
+  {t:"Organizaciones Internacionales",q:"¿En cuántas ciudades se encuentran las oficinas principales de la ONU?",o:["2 ciudades: Nueva York y Ginebra","3 ciudades: Nueva York, París y Viena","4 ciudades: Nueva York, Nairobi, Ginebra y Viena","5 ciudades: Nueva York, Londres, Ginebra, Viena y Nairobi"],a:2,e:"Las oficinas principales de la ONU están en Nueva York, Nairobi, Ginebra y Viena."},
+  {t:"Organizaciones Internacionales",q:"¿Qué órgano de la ONU promueve el nivel de vida, el empleo y el desarrollo económico-social?",o:["La Asamblea General","El Consejo de Seguridad","La Secretaría General","El Consejo Económico y Social (ECOSOC)"],a:3,e:"El ECOSOC promueve un mejor nivel de vida (70%), empleo y progreso económico-social y desarrollo."},
+  {t:"Organizaciones Internacionales",q:"¿Cuántos países forman actualmente la OTAN y dónde está su cuartel general?",o:["30 países, con cuartel en Washington D.C.","32 países, con cuartel en Bruselas","28 países, con cuartel en Londres","32 países, con cuartel en París"],a:1,e:"La OTAN fue creada en 1949 por 12 países y hoy tiene 32 miembros, con cuartel general en Bruselas."},
+  {t:"Organizaciones Internacionales",q:"¿Qué institución de la UE vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales?",o:["La Comisión Europea","El Consejo Europeo","El Tribunal de Justicia","El Parlamento Europeo"],a:2,e:"El Tribunal de Justicia vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales."},
+  {t:"Organizaciones Internacionales",q:"¿Cada cuántos años se eligen los representantes del Parlamento Europeo?",o:["3 años","4 años","5 años","6 años"],a:2,e:"Los representantes ciudadanos del Parlamento Europeo son elegidos cada 5 años."},
+  {t:"Apoyo Psicológico",q:"¿Qué término describe un suceso repentino, tenso e impredecible que incapacita a la persona para resolverlo normalmente?",o:["Emergencia","Catástrofe","Crisis","Desastre múltiple"],a:2,e:"La crisis es un suceso repentino, tenso y difícil que incapacita a resolverlo normalmente, es imprevisible y requiere intervención rápida."},
+  {t:"Apoyo Psicológico",q:"¿Qué tipo de consecuencia psicológica a largo plazo puede desarrollarse tras una emergencia según el temario?",o:["Agitación psicomotriz","Trastorno adaptativo depresivo","Trastorno de estrés postraumático","Inacción motora"],a:2,e:"Las consecuencias a largo plazo incluyen el trastorno de estrés postraumático (TEP), trastornos del estado de ánimo y abuso de sustancias."},
+  {t:"Apoyo Psicológico",q:"¿Qué significa el principio de 'Inmediatez' en la intervención psicológica en emergencias?",o:["Atender a las víctimas lo más cerca posible del lugar del suceso","Realizar una intervención psicológica precoz","Transmitir información positiva a las víctimas","Reestructurar las experiencias traumáticas"],a:1,e:"El principio de Inmediatez establece que la intervención psicológica debe ser precoz."},
+  {t:"Apoyo Psicológico",q:"Una persona que no estaba presente en la catástrofe pero se siente culpable por haberse salvado se clasifica como víctima de:",o:["Primer grado","Cuarto grado","Quinto grado","Sexto grado"],a:3,e:"Las víctimas de 6º grado son los denominados 'Accidente Blanco': personas que al no estar en el lugar del suceso, se salvaron."},
+  {t:"Dinámica de Grupos",q:"¿Qué autor desarrolló la 'teoría de campo' antes de la Segunda Guerra Mundial, considerando el grupo como un todo dinámico?",o:["Bar-Tal","Stephen Olson","Moreland y Levine","Kurt Lewin"],a:3,e:"Kurt Lewin, antes de la Segunda Guerra Mundial en el MIT, agrupó sus conclusiones en la 'teoría de campo', considerando que el grupo es un todo dinámico y no la suma de sus individualidades."},
+  {t:"Dinámica de Grupos",q:"¿Cómo se llama la fase del modelo de Worchel en la que surgen dudas y desconfianza entre los miembros del grupo?",o:["Período de descontento","Productividad grupal","Individualización","Declive grupal"],a:3,e:"La fase de declive grupal es aquella en la que aparecen dudas, desconfianza y cuestionamientos sobre el grupo."},
+  {t:"Dinámica de Grupos",q:"¿Qué tipo de grupo surge de procesos espontáneos de interacción y satisface necesidades afectivas?",o:["Grupo formal permanente","Grupo secundario","Grupo informal","Grupo de referencia positiva"],a:2,e:"Los grupos informales son resultado de procesos espontáneos de interacción y tienen como función la expresión de necesidades afectivas."},
+  {t:"Dinámica de Grupos",q:"Según el temario, ¿qué factor NO incrementa la cohesión de un grupo?",o:["Tamaño pequeño del grupo","Experiencias pasadas compartidas","Amenaza exterior","Diversidad ideológica de sus miembros"],a:3,e:"Los factores que incrementan la cohesión son: aceptación de normas, estabilidad del grupo, tamaño pequeño, experiencias pasadas y amenaza exterior. La diversidad ideológica no aparece como factor."},
+  {t:"Expresión Oral",q:"¿Qué elemento de la comunicación no verbal está relacionado con la pronunciación, el volumen y la entonación de la voz?",o:["Kinesia","Proxémica","Paralingüística","Gestualización"],a:2,e:"La paralingüística trata todo lo relacionado con la voz y la dicción: volumen, articulación, entonación, modulación, etc."},
+  {t:"Expresión Oral",q:"¿Qué habilidad de escucha activa consiste en repetir con otras palabras lo que el interlocutor ha dicho para asegurar la comprensión?",o:["Resumir","Parafrasear","Emitir palabras de refuerzo","Hacer cumplidos"],a:1,e:"Parafrasear es la habilidad que ayuda a la comprensión, consistiendo en reformular con otras palabras lo que el interlocutor ha expresado."},
+  {t:"Expresión Oral",q:"Según el temario, ¿qué porcentaje de lo que se transmite en una conversación interpersonal es de forma no verbal?",o:["55%","75%","93%","100%"],a:2,e:"Según el temario, en una conversación interpersonal el 93% de lo que se transmite es de forma no verbal."},
+  {t:"Expresión Oral",q:"¿Qué tipo de comunicación organizacional puede distorsionarse a través del 'gatekeeping' o efecto portero?",o:["Comunicación horizontal","Comunicación vertical descendente","Comunicación vertical ascendente","Comunicación informal"],a:2,e:"La comunicación vertical ascendente puede sufrir distorsiones como el gatekeeping (reducción o restricción de la información) u ocultación."},
+  {t:"Expresión Escrita",q:"¿Cómo se denomina la primera fase del proceso de escritura, también llamada pre-escritura o planificación?",o:["Dispositio","Elocutio","Inventio","Emendatio"],a:2,e:"La Inventio (construcción) es la primera fase, también llamada pre-escritura o planificación, donde se elige y delimita el tema y se generan ideas."},
+  {t:"Expresión Escrita",q:"¿Qué tipo de texto expone una tesis o hipótesis y demuestra su viabilidad mediante un proceso de enunciación, demostración y refutación?",o:["Expositivo","Descriptivo","Narrativo","Argumentativo"],a:3,e:"El texto argumentativo expone una teoría, propone una tesis o formula una hipótesis y demuestra su viabilidad. Su proceso incluye: enunciación, demostración, refutación y conclusión."},
+  {t:"Expresión Escrita",q:"¿Qué propiedad textual consiste en el uso correcto de puntuación, nexos, anáforas y conectores en un texto?",o:["Adecuación","Coherencia","Cohesión","Gramática"],a:2,e:"La cohesión se refiere al uso correcto de puntuación, nexos, anáforas y conectores textuales."},
+  {t:"Liderazgo",q:"¿Cuáles son los siete rasgos que, según la teoría de rasgos, destacan en los líderes?",o:["Ambición, energía, deseo de dirigir, honradez, autoconfianza, inteligencia y autocontrol","Carisma, empatía, decisión, visión, energía, honradez y experiencia","Amabilidad, firmeza, inteligencia, creatividad, energía, lealtad y disciplina","Autoridad, conocimiento, respeto, disciplina, ambición, confianza y empatía"],a:0,e:"La teoría de rasgos identifica 7 rasgos en los líderes: ambición y energía, deseo de dirigir, honradez e integridad, autoconfianza, inteligencia, conocimiento y autocontrol."},
+  {t:"Liderazgo",q:"En el modelo de liderazgo 360º del Ejército del Aire, ¿cuáles son las cuatro cualidades que debe tener el líder?",o:["Decisivo, flexible, confiable y empático","Observador, flexible, confiable y empático","Autoritario, flexible, justo y empático","Observador, firme, confiable y resolutivo"],a:1,e:"El modelo de Líder 360º del EA establece que debe ser: Observador, Flexible, Confiable y Empático."},
+  {t:"Liderazgo",q:"¿Qué estilo de liderazgo de Hersey y Blanchard se aplica cuando el subalterno tiene bajo nivel de disposición y necesita indicaciones claras?",o:["Participar","Delegar","Vender","Decir"],a:3,e:"El estilo 'Decir' (alta tarea + baja relación) se aplica en el nivel R1, cuando el subalterno tiene bajo nivel de disposición y necesita direcciones claras y específicas."},
+  {t:"Valores Militares",q:"¿En qué artículo de las Reales Ordenanzas se establece que la disciplina obliga a mandar con responsabilidad y a obedecer lo mandado?",o:["Art. 7","Art. 8","Art. 9","Art. 10"],a:1,e:"El Art. 8 establece que la disciplina es un factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado."},
+  {t:"Valores Militares",q:"¿Qué valor militar se define como 'implicación intelectual y emocional con la institución por convencimiento'?",o:["Lealtad","Disponibilidad","Compromiso","Profesionalidad"],a:2,e:"El Compromiso se define como la implicación intelectual y emocional con la institución por convencimiento."},
+  {t:"Valores Militares",q:"¿En qué Real Decreto se recogen las Reales Ordenanzas de las Fuerzas Armadas (código deontológico)?",o:["R.D. 494/1984","R.D. 524/2022","R.D. 96/2009","R.D. 1076/2011"],a:2,e:"El R.D. 96/2009 recoge las Reales Ordenanzas de las FAS, que constituyen el código deontológico con principios éticos y reglas de comportamiento."},
+  {t:"Registro y Redacción",q:"¿Qué normativa del EA regula el sistema de registro y archivo de documentos adaptándolo a sistemas de mensajería y gestión documental?",o:["IG 10-01","IG 00-4","IG 10-14","IG 00-1"],a:2,e:"El objetivo de la IG 10-14 es adaptar el sistema de registro y archivo a los sistemas conjuntos de mensajería y gestión documental."},
+  {t:"Registro y Redacción",q:"¿Qué tipo de documento administrativo es una resolución?",o:["Documento de los ciudadanos","Documento de decisión","Documento de juicio","Documento de transmisión"],a:3,e:"Las resoluciones son documentos de transmisión, junto con notificaciones, publicaciones y comunicaciones."},
+  {t:"Registro y Redacción",q:"¿Qué tipo de instrucción es emitida por los Jefes de UCO y regula el régimen interior o desarrolla normas de nivel superior?",o:["Instrucción General (IG)","Instrucción Particular (IP)","Procedimiento Operativo (PO)","Instrucción Comunicada"],a:2,e:"El Procedimiento Operativo (PO) es emitido por Jefes de UCO y regula el régimen interior o desarrolla normas de nivel superior."},
+  {t:"Registro y Redacción",q:"¿Qué margen izquierdo establece la IG 10-01 para la redacción de documentos en papel A4?",o:["15 mm","20 mm","25 mm","30 mm"],a:3,e:"La IG 10-01 establece márgenes: izquierdo 30 mm, derecho 15 mm, superior 40 mm e inferior 20 mm."},
+];
+
+let cur=0,score=0,sel=null,fb=false;
+
+function render(){
+  const q=Q[cur];
+  const L=['a','b','c','d'];
+  document.getElementById('qcon').innerHTML=`<div class="qcard"><span class="tag">${q.t}</span><div class="qhdr"><span class="qnum">${cur+1}/30</span><span class="qtxt">${q.q}</span></div><div>${q.o.map((o,i)=>`<div class="opt" id="o${i}" onclick="pick(${i})"><span class="oletter">${L[i]})</span><span>${o}</span></div>`).join('')}</div><div id="fba"></div></div>`;
+  sel=null;fb=false;
+  document.getElementById('btncheck').disabled=true;
+  document.getElementById('btnnext').style.display='none';
+  document.getElementById('plabel').textContent=`Pregunta ${cur+1} de 30`;
+  document.getElementById('pscore').textContent=`Correctas: ${score}`;
+  document.getElementById('pbar').style.width=`${(cur/30)*100}%`;
+}
+
+function pick(i){
+  if(fb)return;
+  sel=i;
+  document.querySelectorAll('.opt').forEach((el,j)=>el.classList.toggle('selected',j===i));
+  document.getElementById('btncheck').disabled=false;
+}
+
+function check(){
+  if(sel===null||fb)return;
+  fb=true;
+  const q=Q[cur];
+  const ok=sel===q.a;
+  if(ok)score++;
+  document.querySelectorAll('.opt').forEach((el,j)=>{
+    if(j===q.a)el.classList.add('correct');
+    else if(j===sel&&!ok)el.classList.add('wrong');
+    el.style.cursor='default';
+  });
+  document.getElementById('fba').innerHTML=`<div class="fb ${ok?'ok':'ko'}">${ok?'Correcto — ':'Incorrecto — '}${q.e}</div>`;
+  document.getElementById('btncheck').disabled=true;
+  const nb=document.getElementById('btnnext');
+  nb.style.display='inline-block';
+  nb.textContent=cur<29?'Siguiente →':'Ver resultados →';
+}
+
+function next(){
+  if(cur<29){cur++;render();}
+  else showRes();
+}
+
+function showRes(){
+  document.getElementById('qcon').innerHTML='';
+  document.getElementById('navbtns').innerHTML=`<button class="btn-next" onclick="restart()">Repetir test</button>`;
+  document.getElementById('phdr').style.display='none';
+  document.querySelector('.pbg').style.display='none';
+  const pct=Math.round((score/30)*100);
+  const msg=pct>=80?'Excelente resultado.':pct>=60?'Buen trabajo, sigue practicando.':'Hay margen de mejora, repasa los temas con menos aciertos.';
+  document.getElementById('resarea').innerHTML=`<div class="score-card"><div class="score-big">${score}/30</div><p style="color:var(--color-text-secondary);font-size:15px;margin-top:4px">${pct}% de aciertos</p><p style="margin-top:1rem;color:var(--color-text-secondary);font-size:14px">${msg}</p></div>`;
+}
+
+function restart(){
+  cur=0;score=0;sel=null;fb=false;
+  document.getElementById('phdr').style.display='flex';
+  document.querySelector('.pbg').style.display='block';
+  document.getElementById('resarea').innerHTML='';
+  document.getElementById('navbtns').innerHTML=`<button class="btn-check" id="btncheck" onclick="check()" disabled>Comprobar</button><button class="btn-next" id="btnnext" onclick="next()" style="display:none">Siguiente →</button>`;
+  render();
+}
+
+render();
+</script>

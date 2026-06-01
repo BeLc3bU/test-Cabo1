@@ -1,0 +1,24 @@
+# Python temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos intermedios del pipeline de agentes
+agents/extracted_html_questions.json
+agents/generated_questions.json
+agents/validation_errors.json
+agents/validated_questions.json
+agents/calibrated_questions.json
+agents/deduplicated_questions.json
+agents/knowledge_gaps.json
+
+# Logs y bases de datos locales
+*.log
+
+# Editores y SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+.oops/

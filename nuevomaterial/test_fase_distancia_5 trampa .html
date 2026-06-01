@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,sans-serif)}
+.wrap{padding:1.5rem 0}
+.header{margin-bottom:1rem}
+.header h2{font-size:18px;font-weight:600;color:var(--color-text-primary)}
+.header p{font-size:12px;color:var(--color-text-secondary);margin-top:3px}
+.streakbar{display:flex;gap:4px;margin-bottom:1rem;flex-wrap:wrap}
+.dot{width:18px;height:18px;border-radius:50%;background:var(--color-background-secondary);border:1.5px solid var(--color-border-tertiary);transition:background .3s}
+.dot.ok{background:#1D9E75;border-color:#1D9E75}
+.dot.ko{background:#E24B4A;border-color:#E24B4A}
+.dot.cur{border-color:#C0622F;border-width:2px}
+.pbar{width:100%;height:3px;background:var(--color-background-secondary);border-radius:2px;margin-bottom:1.2rem;overflow:hidden}
+.pfill{height:100%;background:linear-gradient(90deg,#C0622F,#E8934A);border-radius:2px;transition:width .4s}
+.badge{display:inline-block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:3px;margin-bottom:8px}
+.badge-trap{background:#FEF3C7;color:#92400E}
+.badge-normal{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.badge-complete{background:#EDE9FE;color:#5B21B6}
+.qcard{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg,10px);padding:1.25rem;margin-bottom:1rem}
+.qtxt{font-size:15px;color:var(--color-text-primary);line-height:1.55;margin-bottom:1rem}
+.opts{display:flex;flex-direction:column;gap:7px}
+.opt{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md,8px);cursor:pointer;transition:all .15s;background:var(--color-background-primary)}
+.opt:hover:not(.locked){background:var(--color-background-secondary)}
+.opt.sel{border-color:#C0622F;background:#FDF0E8}
+.opt.correct{border-color:#1D9E75;background:#E1F5EE}
+.opt.wrong{border-color:#E24B4A;background:#FCEBEB}
+.opt-l{font-size:12px;font-weight:600;color:var(--color-text-secondary);min-width:20px;margin-top:1px}
+.opt-t{font-size:14px;color:var(--color-text-primary);line-height:1.4}
+.fb{font-size:13px;margin-top:10px;padding:9px 12px;border-radius:var(--border-radius-md,8px);line-height:1.45}
+.fb.ok{background:#E1F5EE;color:#0F6E56}
+.fb.ko{background:#FCEBEB;color:#A32D2D}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:.8rem}
+.btn{padding:8px 18px;border:.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md,8px);background:transparent;color:var(--color-text-primary);font-size:14px;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--color-background-secondary)}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:var(--color-text-primary);color:var(--color-background-primary);border-color:var(--color-text-primary)}
+.btnp:hover{opacity:.85;background:var(--color-text-primary)}
+.qn{font-size:13px;color:var(--color-text-secondary)}
+/* result */
+.res{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg,10px);padding:2rem;text-align:center;margin-bottom:1.5rem}
+.score{font-size:52px;font-weight:700;color:var(--color-text-primary);line-height:1;margin:.5rem 0 .25rem}
+.scorelbl{font-size:13px;color:var(--color-text-secondary);margin-bottom:1.5rem}
+.sgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:1.5rem}
+.sbox{background:var(--color-background-secondary);border-radius:var(--border-radius-md,8px);padding:12px 6px}
+.sn{font-size:22px;font-weight:600}
+.sl{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.ritem{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md,8px);padding:.9rem;margin-bottom:8px;text-align:left}
+.rq{font-size:13px;color:var(--color-text-primary);margin-bottom:5px;line-height:1.4}
+.tok{display:inline-block;font-size:10px;background:#E1F5EE;color:#0F6E56;border-radius:3px;padding:1px 7px;margin-bottom:5px;font-weight:600}
+.tko{display:inline-block;font-size:10px;background:#FCEBEB;color:#A32D2D;border-radius:3px;padding:1px 7px;margin-bottom:5px;font-weight:600}
+.al{font-size:12px;color:var(--color-text-secondary)}
+.al b{color:var(--color-text-primary)}
+</style>
+
+<div class="wrap">
+<div id="tv">
+  <div class="header">
+    <h2>Test 4 — Fase a distancia</h2>
+    <p id="topicpill">—</p>
+  </div>
+  <div class="streakbar" id="sbar"></div>
+  <div class="pbar"><div class="pfill" id="pf" style="width:0%"></div></div>
+  <div id="qa"></div>
+  <div class="nav">
+    <span class="qn" id="qn"></span>
+    <div style="display:flex;gap:8px">
+      <button class="btn" id="bprev" onclick="go(-1)" disabled>← Atrás</button>
+      <button class="btn btnp" id="bnext" onclick="go(1)" disabled>Siguiente →</button>
+    </div>
+  </div>
+</div>
+<div id="rv" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+// ── ORGANIZ. INTERNACIONALES (5) ──
+{t:"Organizaciones internacionales", trap:false,
+ q:"La Asamblea General de la ONU se reúne una vez al año y cada nación dispone de un voto. ¿Qué tipo de órgano es dentro de la estructura de la ONU?",
+ opts:["Órgano ejecutivo","Órgano deliberativo","Órgano judicial","Órgano consultivo"],
+ a:1, exp:"La Asamblea General es el órgano deliberativo de la ONU. Debate cualquier asunto de la Carta de la ONU y cada nación tiene un voto."},
+
+{t:"Organizaciones internacionales", trap:true,
+ q:"⚠ TRAMPA — ¿Cuál de estas afirmaciones sobre la OTAN es INCORRECTA?",
+ opts:["Su tratado consta de un preámbulo y 14 artículos","Fue creada en 1949 por 12 países fundadores","El Art. 5 regula la incorporación de nuevos estados europeos","El cuartel general está en Bruselas"],
+ a:2, exp:"El Art. 5 establece el compromiso de autodefensa colectiva. Es el Art. 10 el que permite invitar a ingresar a cualquier estado europeo por acuerdo unánime. El resto de afirmaciones son correctas."},
+
+{t:"Organizaciones internacionales", trap:false,
+ q:"¿Qué órgano de la UE vela por que los países miembros apliquen correctamente las leyes aprobadas y respeten los derechos fundamentales?",
+ opts:["La Comisión Europea","El Consejo Europeo","El Parlamento Europeo","El Tribunal de Justicia de la UE"],
+ a:3, exp:"El Tribunal de Justicia de la UE vela por que los países apliquen las leyes aprobadas y se respeten los derechos fundamentales."},
+
+{t:"Organizaciones internacionales", trap:false,
+ q:"¿Cuáles son los dos idiomas de TRABAJO de la ONU, de entre sus seis idiomas oficiales?",
+ opts:["Inglés y español","Inglés y chino","Francés e inglés","Árabe y francés"],
+ a:2, exp:"Los 6 idiomas oficiales son árabe, chino, español, francés, inglés y ruso, pero solo el francés y el inglés son idiomas de trabajo."},
+
+{t:"Organizaciones internacionales", trap:false,
+ q:"El Consejo Europeo y el Consejo de la UE suenan parecido pero son órganos distintos. ¿Qué diferencia los distingue?",
+ opts:["El Consejo Europeo aprueba leyes; el de la UE fija estrategia","El Consejo Europeo reúne a los dirigentes para fijar estrategia; el de la UE reúne a los ministros para aprobar leyes","Son el mismo órgano con dos nombres distintos","El Consejo de la UE es judicial; el Europeo es legislativo"],
+ a:1, exp:"El Consejo Europeo reúne a los dirigentes de los países para plantear estrategia común. El Consejo de la UE reúne a los ministros para aprobar leyes."},
+
+// ── APOYO PSICOLÓGICO (4) ──
+{t:"Apoyo psicológico", trap:false,
+ q:"¿Qué principio de intervención psicológica busca transmitir información positiva y generar expectativas de recuperación en la víctima?",
+ opts:["Proximidad","Inmediatez","Expectativas","Unidad"],
+ a:2, exp:"El principio de Expectativas consiste en transmitir información positiva para que la víctima confíe en su recuperación."},
+
+{t:"Apoyo psicológico", trap:true,
+ q:"⚠ TRAMPA — Ordena correctamente las letras del protocolo ACERCARSE: Ambiente, Contacto, Evaluación, Restablecimiento emocional… ¿qué viene después?",
+ opts:["Seguimiento","Comprensión de crisis","Recuperación de funcionamiento","Activar"],
+ a:1, exp:"Tras el Restablecimiento emocional viene la Comprensión de crisis, luego Activar, Recuperación de funcionamiento y finalmente Seguimiento."},
+
+{t:"Apoyo psicológico", trap:false,
+ q:"Una persona que conoce el suceso por los medios de comunicación y experimenta angustia sin haber estado presente ni tener familiares implicados, ¿a qué grado de víctima pertenece?",
+ opts:["Cuarto grado — comunidad afectada","Quinto grado — implicados por conocer el suceso","Sexto grado — accidente blanco","No se considera víctima"],
+ a:1, exp:"Las víctimas de 5.º grado son las personas implicadas emocionalmente por conocer el suceso a través de los medios u otras fuentes."},
+
+{t:"Apoyo psicológico", trap:false,
+ q:"¿Cuál de estos NO es un elemento que debe evitarse durante la escucha activa?",
+ opts:["Interrumpir al interlocutor","Parafrasear lo que dice el otro","Juzgar al interlocutor","Ofrecer soluciones prematuras"],
+ a:1, exp:"Parafrasear es una de las 3 habilidades necesarias para la escucha activa (junto con las palabras de refuerzo y el resumen). El resto son elementos a evitar."},
+
+// ── DINÁMICA DE GRUPOS (4) ──
+{t:"Dinámica de grupos", trap:false,
+ q:"¿En qué fase del modelo de socialización grupal de Moreland y Levine el individuo evalúa si el grupo ha cumplido sus expectativas antes de posiblemente marcharse?",
+ opts:["Fase de investigación","Fase de mantenimiento","Fase de resolución","Fase de recuerdo (remembrance)"],
+ a:3, exp:"La fase de recuerdo o remembrance es la última: el individuo evalúa su paso por el grupo. La de resolución trata la asignación de roles o el abandono."},
+
+{t:"Dinámica de grupos", trap:true,
+ q:"⚠ TRAMPA — Señala la afirmación CORRECTA sobre las normas grupales:",
+ opts:["Las normas grupales se imponen sin posibilidad de negociación","Las normas institucionales se establecen desde la negociación y aceptación","La norma grupal se establece desde la negociación y aceptación","Los miembros solo acatan las normas si están de acuerdo con ellas"],
+ a:2, exp:"Es la norma GRUPAL la que se establece desde la negociación y aceptación. La norma INSTITUCIONAL no tiene discusión. Las normas se acatan independientemente de la respuesta del miembro."},
+
+{t:"Dinámica de grupos", trap:false,
+ q:"¿Qué rol dentro de un grupo orienta su conducta principalmente hacia el trabajo a realizar, en lugar de hacia el beneficio propio o la interacción social?",
+ opts:["Miembro buscador de beneficio propio","Miembro orientado a la interacción","Miembro orientado al trabajo","Rol de líder formal"],
+ a:2, exp:"El temario agrupa los roles en tres tipos: los que buscan beneficio propio, los orientados a la interacción y los orientados al trabajo a realizar."},
+
+{t:"Dinámica de grupos", trap:false,
+ q:"Para aplicar la técnica de grupo inestructurado, ¿cuántos miembros debe tener como máximo el grupo?",
+ opts:["Menos de 4","Menos de 6","Menos de 10","No hay límite de tamaño"],
+ a:1, exp:"La técnica de grupo inestructurado requiere que el grupo sea inferior a 6 miembros, que el objetivo sea rutinario y el tema no muy trascendente."},
+
+// ── EXPRESIÓN ORAL (4) ──
+{t:"Expresión oral", trap:false,
+ q:"¿Qué elemento del lenguaje no verbal estudia cómo los desplazamientos, el espacio personal y el movimiento de los miembros reflejan actitudes y personalidad?",
+ opts:["Kinesia","Paralingüística","Gestualización","Proxémica"],
+ a:3, exp:"La proxémica estudia el espacio inmediato al sujeto comunicador: desplazamientos, amplitud del espacio personal y movimiento de los miembros."},
+
+{t:"Expresión oral", trap:true,
+ q:"⚠ TRAMPA — ¿Cuál de estas NO es una de las '5 C' del buen conferenciante según el temario?",
+ opts:["Conocimiento profundo del tema","Claridad","Carisma","Convicción"],
+ a:2, exp:"Las 5 C son: Conocimiento, Claridad, Concreción, Coherencia y Convicción. 'Carisma' no aparece en el temario."},
+
+{t:"Expresión oral", trap:false,
+ q:"Según los niveles de comunicación del temario, ¿qué nivel atañe al contenido de la información o mensaje que se transmite?",
+ opts:["Nivel emocional","Nivel físico","Nivel racional","Nivel semántico"],
+ a:2, exp:"El nivel racional atañe al contenido de la información. El nivel físico se refiere a la forma (tono, lenguaje) y el emocional al estado interno del comunicador."},
+
+{t:"Expresión oral", trap:false,
+ q:"Cuando el volumen de voz es muy bajo, ¿qué percepción genera en el oyente según el temario?",
+ opts:["Que el hablante domina la situación","Que el hablante está tranquilo y calmado","Que el hablante no quiere ser oído","Que el hablante muestra autoridad"],
+ a:2, exp:"Un volumen bajo transmite que el hablante no quiere ser oído. El volumen moderado transmite calma y el elevado, autoridad o dominio."},
+
+// ── EXPRESIÓN ESCRITA (3) ──
+{t:"Expresión escrita", trap:false,
+ q:"En los textos descriptivos, ¿qué estructura sintáctica es la más usada?",
+ opts:["Subordinación para expresar causas","Yuxtaposición","Coordinación adversativa","Oraciones interrogativas directas"],
+ a:1, exp:"La yuxtaposición es la estructura más usada en el texto descriptivo. La subordinación aparece para hacer comparaciones."},
+
+{t:"Expresión escrita", trap:true,
+ q:"⚠ TRAMPA — ¿Cuál de estas fórmulas de tratamiento escrito es CORRECTA para dirigirse a un Oficial General del Ejército?",
+ opts:["Señoría — V.S. — Ilustrísimo Señor","Excelencia — V.E. — Excmo. Sr.","Alteza Real — S.A.R.","Majestad — V.M."],
+ a:1, exp:"A los Oficiales Generales y almirantes corresponde el tratamiento de Excelencia (V.E.), con el pie 'Excmo. Sr.'. Señoría corresponde a Coroneles."},
+
+{t:"Expresión escrita", trap:false,
+ q:"¿Qué propiedad textual implica escoger las soluciones lingüísticas adecuadas, respetar las normas de cortesía y adaptar el registro al destinatario?",
+ opts:["Coherencia","Cohesión","Adecuación","Gramática"],
+ a:2, exp:"La adecuación es la propiedad textual que obliga a escoger soluciones lingüísticas, formas de interacción y normas de cortesía apropiadas al contexto y destinatario."},
+
+// ── LIDERAZGO (4) ──
+{t:"Liderazgo", trap:false,
+ q:"¿Qué característica diferencia al LÍDER del JEFE según el temario?",
+ opts:["El jefe tiene más formación técnica que el líder","El líder ocupa siempre un cargo superior al jefe","Hay una gran diferencia entre jefe y líder; el líder es reconocido como tal por el grupo","El jefe y el líder son conceptos equivalentes en el ámbito militar"],
+ a:2, exp:"El temario subraya que hay una gran diferencia entre jefe y líder. El líder es quien influye sobre los demás y es reconocido como tal por el grupo, independientemente de su cargo."},
+
+{t:"Liderazgo", trap:true,
+ q:"⚠ TRAMPA — En la teoría situacional, ¿qué estilo aplica el líder cuando el subalterno tiene BAJA disposición (R1)?",
+ opts:["Delegar","Participar","Vender","Decir"],
+ a:3, exp:"Ante un subalterno de nivel R1 (bajo nivel de disposición), el líder usa el estilo 'Decir' (alta tarea + baja relación), dando instrucciones claras y específicas."},
+
+{t:"Liderazgo", trap:false,
+ q:"¿En qué consiste el estilo de liderazgo democrático según el temario?",
+ opts:["El líder toma las decisiones unilateralmente sin consultar al grupo","El líder concede total libertad al grupo y apenas participa","El líder permite participar a los seguidores en las decisiones y se preocupa por sus necesidades","El líder delega toda la responsabilidad en sus subalternos"],
+ a:2, exp:"El liderazgo democrático permite participar a los seguidores en las decisiones y el líder se preocupa por sus necesidades. No debe confundirse con el laissez-faire, donde el líder es poco participativo."},
+
+{t:"Liderazgo", trap:false,
+ q:"Según la teoría de la Ruta-Meta, ¿qué comportamiento de liderazgo se caracteriza por establecer metas ambiciosas y esperar alto rendimiento?",
+ opts:["Líder Director","Líder Apoyador","Líder Participativo","Líder Orientado a Logros"],
+ a:3, exp:"El Líder Orientado a Logros establece metas exigentes y espera el máximo rendimiento de sus subordinados. El Apoyador muestra interés personal; el Director da instrucciones precisas."},
+
+// ── VALORES MILITARES (3) ──
+{t:"Valores militares", trap:false,
+ q:"¿Qué valor militar se describe como 'conducta íntegra, obligación ética y componente esencial del prestigio personal y profesional'?",
+ opts:["Lealtad","Ejemplaridad","Respeto","Valor"],
+ a:1, exp:"La Ejemplaridad implica comportamiento ejemplar, conducta íntegra como obligación ética y es básica para la cohesión del equipo. Los mandos la refuerzan con el ejemplo (Art. 54 y 70 RR.OO.)."},
+
+{t:"Valores militares", trap:true,
+ q:"⚠ TRAMPA — ¿Cuál de las siguientes afirmaciones sobre la disponibilidad es INCORRECTA?",
+ opts:["El Art. 3 establece como primer deber la disposición permanente para defender España","La recompensa del deber cumplido es motivo de orgullo","El Art. 20 recoge la disponibilidad permanente para el servicio","La disponibilidad solo se exige en tiempo de guerra o misión internacional"],
+ a:3, exp:"La disponibilidad es permanente, no solo en guerra o misiones. El Art. 20 establece expresamente la 'Disponibilidad Permanente para el Servicio'."},
+
+{t:"Valores militares", trap:false,
+ q:"¿Qué Real Decreto regula las Reales Ordenanzas de las Fuerzas Armadas vigentes, que recogen el código deontológico con los principios éticos y reglas de comportamiento?",
+ opts:["R.D. 494/1984","R.D. 96/2009","R.D. 524/2022","Ley O. 9/2011"],
+ a:1, exp:"El R.D. 96/2009 recoge las Reales Ordenanzas de las FAS, que son el código deontológico con los principios éticos y reglas de comportamiento. El R.D. 524/2022 cambió el nombre al Ejército del Aire."},
+
+// ── TÉCNICAS DE APOYO / DOCUMENTOS (3) ──
+{t:"Técnicas de apoyo — documentos", trap:false,
+ q:"¿Qué significa la sigla 'S/Ref.' en un documento militar?",
+ opts:["Sección de referencia interna del expediente","Referencia al sistema de clasificación del EA","La referencia del documento al que se está respondiendo","El número de registro de salida del documento"],
+ a:2, exp:"S/Ref. (Su Referencia) se usa cuando se responde a otro documento; se cita el número del documento recibido. N/Ref. es la referencia interna propia."},
+
+{t:"Técnicas de apoyo — documentos", trap:true,
+ q:"⚠ TRAMPA — ¿Cuál de estas normativas NO se publica en el BOD (Boletín Oficial de Defensa)?",
+ opts:["Resolución del EMA","Instrucción General (IG)","Instrucción Comunicada","Instrucción del JEMA"],
+ a:2, exp:"La Instrucción Comunicada es más específica y NO se publica en el BOD. Las Instrucciones Generales, las emitidas por el JEMA y las Resoluciones del EMA/SEGE sí se publican."},
+
+{t:"Técnicas de apoyo — documentos", trap:false,
+ q:"¿Cuáles son los márgenes establecidos en la IG 10-01 para los documentos en papel A4 del Ejército del Aire?",
+ opts:["Izq. 25mm / Der. 25mm / Sup. 30mm / Inf. 30mm","Izq. 30mm / Der. 15mm / Sup. 40mm / Inf. 20mm","Izq. 20mm / Der. 20mm / Sup. 35mm / Inf. 25mm","Izq. 35mm / Der. 10mm / Sup. 45mm / Inf. 15mm"],
+ a:1, exp:"La IG 10-01 establece: margen izquierdo 30mm, derecho 15mm, superior 40mm e inferior 20mm. Fuente Arial 11, interlineado sencillo, texto justificado."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false);
+
+function renderDots(){
+  const sb=document.getElementById('sbar');
+  sb.innerHTML=QS.map((_,i)=>{
+    let c='dot';
+    if(rev[i]) c+=ans[i]===QS[i].a?' ok':' ko';
+    if(i===cur&&!rev[i]) c+=' cur';
+    return `<div class="${c}"></div>`;
+  }).join('');
+}
+
+function render(){
+  const q=QS[cur];
+  document.getElementById('topicpill').textContent=q.t;
+  document.getElementById('qn').textContent=`Pregunta ${cur+1} de ${QS.length}`;
+  document.getElementById('pf').style.width=((cur+1)/QS.length*100)+'%';
+  renderDots();
+  const L=['A','B','C','D'];
+  const badgeCls=q.trap?'badge-trap':cur===QS.length-1?'badge-complete':'badge-normal';
+  const badgeTxt=q.trap?'⚠ Pregunta trampa':q.t;
+  let html=`<div class="qcard">
+    <div class="badge ${badgeCls}">${badgeTxt}</div>
+    <div class="qtxt">${q.q}</div>
+    <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    html+=`<div class="${c}" onclick="pick(${i})">
+      <span class="opt-l">${L[i]}</span>
+      <span class="opt-t">${o}</span>
+    </div>`;
+  });
+  html+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    html+=`<div class="fb ${ok?'ok':'ko'}">${ok?'✓':'✗'} ${q.exp}</div>`;
+  }
+  html+='</div>';
+  document.getElementById('qa').innerHTML=html;
+  document.getElementById('bprev').disabled=cur===0;
+  const nb=document.getElementById('bnext');
+  const last=cur===QS.length-1;
+  nb.textContent=last?'Ver resultado →':'Siguiente →';
+  nb.disabled=ans[cur]===null;
+}
+
+function pick(i){
+  if(rev[cur])return;
+  ans[cur]=i;rev[cur]=true;
+  document.getElementById('bnext').disabled=false;
+  render();
+}
+
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));
+  render();
+}
+
+function emoji(p){return p>=90?'🏆':p>=75?'🥇':p>=60?'🥈':p>=50?'🥉':'📚';}
+function msg(p){
+  if(p>=90)return'¡Sobresaliente! Tienes el temario muy bien asimilado.';
+  if(p>=75)return'Notable. Repasa los fallos y estarás listo.';
+  if(p>=60)return'Bien, pero hay margen. Repasa sobre todo las preguntas trampa.';
+  if(p>=50)return'Aprobado justo. El temario necesita más repaso.';
+  return'Hay que darle más vueltas al temario. ¡Tú puedes!';
+}
+
+function showResult(){
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const traps=QS.reduce((s,q,i)=>s+(q.trap&&ans[i]===q.a?1:0),0);
+  const trapTotal=QS.filter(q=>q.trap).length;
+  const pct=Math.round(correct/QS.length*100);
+  document.getElementById('tv').style.display='none';
+  const rv=document.getElementById('rv');rv.style.display='block';
+  let rhtml='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rhtml+=`<div class="ritem">
+      <span class="${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span>
+      ${q.trap?'<span style="font-size:10px;background:#FEF3C7;color:#92400E;border-radius:3px;padding:1px 7px;font-weight:600;margin-left:4px">TRAMPA</span>':''}
+      <div class="rq">${i+1}. ${q.q.replace('⚠ TRAMPA — ','')}</div>
+      <div class="al">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div>
+    </div>`;
+  });
+  rv.innerHTML=`<div class="res">
+    <div style="font-size:42px">${emoji(pct)}</div>
+    <h2 style="font-size:18px;font-weight:600;color:var(--color-text-primary);margin-top:.5rem">Resultado final</h2>
+    <div class="score">${correct}/${QS.length}</div>
+    <div class="scorelbl">${msg(pct)}</div>
+    <div class="sgrid">
+      <div class="sbox"><div class="sn" style="color:#1D9E75">${correct}</div><div class="sl">Correctas</div></div>
+      <div class="sbox"><div class="sn" style="color:#E24B4A">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+      <div class="sbox"><div class="sn" style="color:#92400E">${traps}/${trapTotal}</div><div class="sl">Trampas superadas</div></div>
+    </div>
+    <button class="btn btnp" onclick="restart()">Repetir test</button>
+  </div>
+  <h3 style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--color-text-primary)">Repaso completo</h3>
+  ${rhtml}`;
+}
+
+function restart(){
+  cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);
+  document.getElementById('rv').style.display='none';
+  document.getElementById('tv').style.display='block';
+  render();
+}
+
+render();
+</script>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Fase Distancia — EA</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --surface: #111827;
+    --surface2: #1a2235;
+    --border: #1e2d45;
+    --accent: #3b82f6;
+    --accent2: #60a5fa;
+    --green: #22c55e;
+    --red: #ef4444;
+    --yellow: #f59e0b;
+    --text: #e2e8f0;
+    --text-muted: #64748b;
+    --text-dim: #94a3b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 60px;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, #0d1b2e 0%, #0a0e1a 60%);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 24px 20px;
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  .header-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .header-title { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 3px; color: var(--accent2); line-height: 1; }
+  .header-sub { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+  .progress-bar-wrap { flex: 1; max-width: 220px; }
+  .progress-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 2px; transition: width 0.4s ease; }
+
+  /* MAIN */
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 0; }
+
+  /* SCREEN */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* INTRO */
+  .intro-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 32px;
+    text-align: center;
+  }
+  .intro-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .intro-title { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; letter-spacing: 4px; margin-bottom: 12px; }
+  .intro-desc { color: var(--text-dim); font-size: 0.92rem; line-height: 1.7; max-width: 480px; margin: 0 auto 32px; }
+  .tema-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-bottom: 32px; }
+  .tema-chip {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    text-align: left;
+  }
+  .tema-chip span { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; color: var(--accent); margin-bottom: 3px; }
+  .btn-start {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-start:hover { background: var(--accent2); transform: translateY(-1px); }
+
+  /* QUESTION */
+  .q-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .q-num { font-family: 'IBM Plex Mono', monospace; font-size: 2.4rem; color: var(--border); font-weight: 600; line-height: 1; }
+  .q-num span { color: var(--accent); }
+  .q-tema-tag {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.68rem;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--accent2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .q-text {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+  .option {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    cursor: pointer;
+    display: flex; align-items: flex-start; gap: 14px;
+    transition: border-color 0.18s, background 0.18s;
+    font-size: 0.93rem;
+    line-height: 1.5;
+    color: var(--text-dim);
+  }
+  .option:hover:not(.locked) { border-color: var(--accent); color: var(--text); background: var(--surface2); }
+  .option .opt-letter {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--surface2);
+    border-radius: 4px;
+    padding: 2px 7px;
+    min-width: 28px;
+    text-align: center;
+    margin-top: 1px;
+    flex-shrink: 0;
+    transition: background 0.18s, color 0.18s;
+  }
+  .option.selected { border-color: var(--accent); background: rgba(59,130,246,0.08); color: var(--text); }
+  .option.selected .opt-letter { background: var(--accent); color: #fff; }
+  .option.correct { border-color: var(--green); background: rgba(34,197,94,0.08); color: var(--text); }
+  .option.correct .opt-letter { background: var(--green); color: #fff; }
+  .option.wrong { border-color: var(--red); background: rgba(239,68,68,0.08); color: var(--text); }
+  .option.wrong .opt-letter { background: var(--red); color: #fff; }
+  .option.locked { cursor: default; }
+
+  .feedback-box {
+    display: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .feedback-box.show { display: block; }
+  .feedback-box.ok { background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); color: #4ade80; }
+  .feedback-box.fail { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: #f87171; }
+  .feedback-box strong { display: block; margin-bottom: 3px; }
+
+  .btn-next {
+    display: none;
+    background: var(--surface2);
+    border: 1.5px solid var(--accent);
+    color: var(--accent2);
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+  }
+  .btn-next.show { display: inline-block; }
+  .btn-next:hover { background: var(--accent); color: #fff; }
+
+  /* RESULTS */
+  .results-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 28px;
+    text-align: center;
+  }
+  .score-circle {
+    width: 130px; height: 130px;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+    background: var(--surface2);
+  }
+  .score-num { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--accent2); line-height: 1; }
+  .score-denom { font-size: 0.78rem; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; }
+  .score-msg { font-size: 1.1rem; margin-bottom: 8px; font-weight: 600; }
+  .score-pct { font-family: 'IBM Plex Mono', monospace; font-size: 1.8rem; margin-bottom: 24px; }
+  .score-pct.high { color: var(--green); }
+  .score-pct.mid { color: var(--yellow); }
+  .score-pct.low { color: var(--red); }
+
+  .breakdown { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin: 24px 0; }
+  .breakdown-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-align: left;
+  }
+  .breakdown-item .tema-name { font-size: 0.72rem; font-family: 'IBM Plex Mono', monospace; color: var(--accent); letter-spacing: 1px; margin-bottom: 6px; }
+  .breakdown-item .score-row { display: flex; align-items: center; justify-content: space-between; }
+  .breakdown-item .score-frac { font-weight: 600; font-size: 0.95rem; }
+  .breakdown-item .mini-bar { height: 3px; background: var(--border); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+  .breakdown-item .mini-fill { height: 100%; border-radius: 2px; }
+
+  .btn-retry {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+  }
+  .btn-retry:hover { background: var(--accent2); }
+
+  .divider { height: 1px; background: var(--border); margin: 28px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <div class="header-title">TEST · EA</div>
+      <div class="header-sub">Fase Distancia — 30 preguntas</div>
+    </div>
+    <div class="progress-bar-wrap" id="progressWrap" style="display:none">
+      <div class="progress-label">
+        <span id="progText">1 / 30</span>
+        <span id="progScore">✓ 0</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progFill" style="width:0%"></div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- INTRO -->
+<div class="screen active" id="screenIntro">
+  <div class="intro-card">
+    <div class="intro-badge">AUTOEVALUACIÓN OFICIAL</div>
+    <div class="intro-title">Test Completo</div>
+    <div class="intro-desc">30 preguntas tipo test de 4 opciones distribuidas entre todos los temas del programa. Solo una respuesta es correcta.</div>
+    <div class="tema-grid">
+      <div class="tema-chip"><span>T.1</span>Org. Internacionales</div>
+      <div class="tema-chip"><span>T.2</span>Apoyo Psicológico</div>
+      <div class="tema-chip"><span>T.3</span>Material Aéreo</div>
+      <div class="tema-chip"><span>T.4</span>Historia Aviación</div>
+      <div class="tema-chip"><span>T.5</span>Dinámica de Grupos</div>
+      <div class="tema-chip"><span>T.6</span>Comunicación Oral</div>
+      <div class="tema-chip"><span>T.7</span>Expresión Escrita</div>
+      <div class="tema-chip"><span>T.8</span>Liderazgo</div>
+      <div class="tema-chip"><span>T.9</span>Valores Militares</div>
+      <div class="tema-chip"><span>T.10</span>Reg. Documentos</div>
+      <div class="tema-chip"><span>T.11</span>Redacción Militar</div>
+    </div>
+    <button class="btn-start" onclick="startTest()">COMENZAR TEST</button>
+  </div>
+</div>
+
+<!-- QUESTION -->
+<div class="screen" id="screenQ">
+  <div class="q-meta">
+    <div class="q-num"><span id="qNumCurrent">1</span>/30</div>
+    <div class="q-tema-tag" id="qTemaTag">T.1</div>
+  </div>
+  <div class="q-text" id="qText"></div>
+  <div class="options" id="optionsContainer"></div>
+  <div class="feedback-box" id="feedbackBox"></div>
+  <button class="btn-next" id="btnNext" onclick="nextQuestion()">Siguiente pregunta →</button>
+</div>
+
+<!-- RESULTS -->
+<div class="screen" id="screenResults">
+  <div class="results-card">
+    <div class="score-circle">
+      <div class="score-num" id="resNum">0</div>
+      <div class="score-denom">de 30</div>
+    </div>
+    <div class="score-msg" id="resMsg"></div>
+    <div class="score-pct" id="resPct"></div>
+    <div class="divider"></div>
+    <div class="breakdown" id="breakdown"></div>
+    <button class="btn-retry" onclick="restartTest()">Repetir test</button>
+  </div>
+</div>
+
+</main>
+
+<script>
+const QUESTIONS = [
+  // T.1 — Organizaciones Internacionales (3)
+  {
+    tema: "T.1 · Org. Internacionales",
+    q: "¿Cuántos estados miembro tenía la ONU en el momento de su fundación en 1945?",
+    opts: ["24 estados miembros","51 estados miembros","100 estados miembros","193 estados miembros"],
+    correct: 1,
+    exp: "La ONU se fundó el 24 de octubre de 1945 con 51 estados miembros. Actualmente son 193."
+  },
+  {
+    tema: "T.1 · Org. Internacionales",
+    q: "¿Cuántos miembros permanentes tiene el Consejo de Seguridad de la ONU y qué derecho especial poseen?",
+    opts: ["9 miembros con derecho a voto doble","15 miembros con capacidad de mediación exclusiva","5 miembros permanentes con derecho de veto","5 miembros permanentes elegidos cada 4 años"],
+    correct: 2,
+    exp: "El Consejo de Seguridad tiene 15 miembros, de los cuales 5 son permanentes (China, EEUU, Rusia, Francia y UK) y poseen derecho de veto."
+  },
+  {
+    tema: "T.1 · Org. Internacionales",
+    q: "La OTAN fue creada en 1949. ¿Con cuántos países fundadores contaba y dónde tiene su cuartel general?",
+    opts: ["10 países, cuartel en París","14 países, cuartel en Londres","12 países, cuartel en Bruselas","32 países, cuartel en Berlín"],
+    correct: 2,
+    exp: "La OTAN se fundó en 1949 con 12 países y tiene su cuartel general en Bruselas. Hoy son 32 miembros."
+  },
+  // T.2 — Apoyo Psicológico (3)
+  {
+    tema: "T.2 · Apoyo Psicológico",
+    q: "Según la clasificación de víctimas por grado, ¿qué grado corresponde a los propios equipos intervinientes en una emergencia?",
+    opts: ["1º Grado","2º Grado","3º Grado","4º Grado"],
+    correct: 2,
+    exp: "Los equipos intervinientes (servicios de rescate, sanitarios, etc.) son víctimas de 3º Grado. Los afectados directos son 1º y los familiares 2º."
+  },
+  {
+    tema: "T.2 · Apoyo Psicológico",
+    q: "¿Cuál es la diferencia fundamental entre una emergencia y una catástrofe?",
+    opts: ["La magnitud del número de víctimas","En la catástrofe no se dispone de recursos suficientes para superarla","La catástrofe siempre tiene causas naturales","En la emergencia no existe amenaza para la vida"],
+    correct: 1,
+    exp: "La diferencia clave es la disponibilidad de recursos: en la emergencia se dispone de ellos; en la catástrofe, no."
+  },
+  {
+    tema: "T.2 · Apoyo Psicológico",
+    q: "En el protocolo de intervención psicológica, el principio de 'Proximidad' hace referencia a:",
+    opts: ["Intervenir lo antes posible para evitar daños mayores","Prestar la atención psicológica cerca del lugar de la catástrofe","Transmitir expectativas positivas a la víctima","Utilizar métodos de intervención breves y sencillos"],
+    correct: 1,
+    exp: "El principio de Proximidad indica que la atención psicológica debe prestarse próxima al lugar de la catástrofe."
+  },
+  // T.3 — Material Aéreo (3)
+  {
+    tema: "T.3 · Material Aéreo",
+    q: "¿Qué aeronave española se utiliza para misiones de contraincendios y en qué base aérea está ubicada?",
+    opts: ["C-295 en BA Getafe","Canadair CL-415 en BA Torrejón","AS-332 Superpuma en BA Getafe","C-212 Aviocar en BA Alcantarilla"],
+    correct: 1,
+    exp: "Los Canadair CL-215T y CL-415 se usan para contraincendios y están ubicados en BA Torrejón (43 Grupo FFAA)."
+  },
+  {
+    tema: "T.3 · Material Aéreo",
+    q: "El EF-2000 Eurofighter Typhoon tiene la designación C.16. ¿En qué Alas y bases aéreas está desplegado?",
+    opts: ["ALA 15 en Zaragoza y ALA 12 en Torrejón","ALA 11 en Morón y ALA 14 en Los Llanos","ALA 35 en Getafe y ALA 46 en Gando","ALA 31 en Zaragoza y ALA 49 en Son San Juan"],
+    correct: 1,
+    exp: "El Eurofighter C.16 está desplegado en el ALA 11 (BA Morón) y el ALA 14 (BA Los Llanos)."
+  },
+  {
+    tema: "T.3 · Material Aéreo",
+    q: "¿Qué aeronave no tripulada opera actualmente el Ejército del Aire y del Espacio para misiones ISR?",
+    opts: ["Predator MQ-1 en BA Armilla","MQ-9 Predator en BA Talavera (ALA 23)","NH-90 en BA Cuatro Vientos","C-235 VIGMA en BA Getafe"],
+    correct: 1,
+    exp: "El MQ-9 Predator (MQ-9B) realiza misiones de Inteligencia, Vigilancia y Reconocimiento (ISR) desde BA Talavera, ALA 23."
+  },
+  // T.4 — Historia Aviación (3)
+  {
+    tema: "T.4 · Historia Aviación",
+    q: "¿En qué año se realizó el primer vuelo del autogiro en España, quién lo inventó y en qué aeródromo tuvo lugar?",
+    opts: ["1920, Vives, Cuatro Vientos","1923, Juan de la Cierva, Getafe","1926, Kindelán, Los Alcázares","1911, Loygorri, Cuatro Vientos"],
+    correct: 1,
+    exp: "El primer vuelo del autogiro fue en 1923, inventado por Juan de la Cierva, y tuvo lugar en el aeródromo de Getafe."
+  },
+  {
+    tema: "T.4 · Historia Aviación",
+    q: "El vuelo histórico 'Plus Ultra' de 1926 cruzó el Atlántico Sur. ¿Quién era el comandante y piloto de esa travesía?",
+    opts: ["Capitán Barberán","Coronel Vives","Comandante Ramón Franco","Infante Alfonso de Orleáns"],
+    correct: 2,
+    exp: "El 'Plus Ultra' fue pilotado por el Comandante Ramón Franco, con tripulación formada también por Ruiz de Alda, Durán y el sargento Rada."
+  },
+  {
+    tema: "T.4 · Historia Aviación",
+    q: "¿En qué año cambió su denominación el Ejército del Aire para incluir la palabra 'Espacio', y por qué Real Decreto?",
+    opts: ["2020, RD 200/2020","2022, RD 524/2022","2019, RD 83/2019","2015, RD 494/2015"],
+    correct: 1,
+    exp: "En junio de 2022, por Real Decreto 524/2022, el Ejército del Aire pasó a denominarse Ejército del Aire y del Espacio."
+  },
+  // T.5 — Dinámica de Grupos (3)
+  {
+    tema: "T.5 · Dinámica de Grupos",
+    q: "En la clasificación de grupos, ¿cuál es la diferencia entre un grupo primario y uno secundario?",
+    opts: ["Los primarios son formales y los secundarios informales","Los primarios tienen pocos miembros con relación directa cara a cara; los secundarios son grandes sin relación directa","Los primarios son permanentes y los secundarios temporales","Los primarios tienen normas escritas y los secundarios no"],
+    correct: 1,
+    exp: "Los grupos primarios tienen pocos miembros con interacción directa (familia); los secundarios son grandes, unidos por objetivos comunes (grupo de trabajo)."
+  },
+  {
+    tema: "T.5 · Dinámica de Grupos",
+    q: "El modelo cíclico de formación de grupos de Worchel tiene 6 fases. ¿Cuál es la segunda fase?",
+    opts: ["Período de descontento","Suceso precipitante","Identificación con el grupo","Productividad grupal"],
+    correct: 1,
+    exp: "Las fases de Worchel son: 1) Descontento, 2) Suceso precipitante, 3) Identificación, 4) Productividad grupal, 5) Individualización, 6) Declive."
+  },
+  {
+    tema: "T.5 · Dinámica de Grupos",
+    q: "El 'pensamiento grupal' descrito por Janis (1972) implica que en un grupo prima:",
+    opts: ["La evaluación crítica de las alternativas disponibles","La búsqueda de consenso por encima de la evaluación realista","La individualización de los roles","La refutación sistemática de las ideas ajenas"],
+    correct: 1,
+    exp: "Janis describe el pensamiento grupal como la tendencia a buscar el consenso pasando a segundo plano la evaluación realista de alternativas."
+  },
+  // T.6 — Comunicación Oral (3)
+  {
+    tema: "T.6 · Comunicación Oral",
+    q: "En la comunicación no verbal, ¿a qué hace referencia la 'proxémica'?",
+    opts: ["El conjunto de gestos y movimientos corporales del emisor","Los elementos de la voz como tono, volumen y velocidad","Los comportamientos no verbales relacionados con el uso y estructuración del espacio","La expresión facial de las seis emociones principales"],
+    correct: 2,
+    exp: "La proxémica estudia los comportamientos no verbales relacionados con la utilización y estructuración del espacio inmediato al sujeto."
+  },
+  {
+    tema: "T.6 · Comunicación Oral",
+    q: "¿Cuáles son los tres niveles de comunicación según el temario?",
+    opts: ["Nivel físico, nivel psicológico y nivel cultural","Nivel racional, nivel físico y nivel emocional","Nivel verbal, nivel no verbal y nivel electrónico","Nivel emisor, nivel canal y nivel receptor"],
+    correct: 1,
+    exp: "Los tres niveles son: racional (contenido del mensaje), físico (forma en que se da) y emocional (el que más información aporta sobre el interlocutor)."
+  },
+  {
+    tema: "T.6 · Comunicación Oral",
+    q: "En la paralingüística, ¿qué indica un volumen de voz muy elevado según el temario?",
+    opts: ["Calma y seguridad en el hablante","Autoridad y dominio, o enfado e ira si es excesivo","Desinterés o falta de confianza","Nerviosismo y ansiedad situacional"],
+    correct: 1,
+    exp: "Volumen elevado indica autoridad y dominio; si es muy alto, transmite enfado o ira. El volumen aumenta también con miedo, excitación o rabia."
+  },
+  // T.7 — Expresión Escrita (3)
+  {
+    tema: "T.7 · Expresión Escrita",
+    q: "Las cuatro fases de la escritura son Inventio, Dispositio, Elocutio y Emendatio. ¿A qué proceso corresponde la 'Dispositio'?",
+    opts: ["Elección del tema y generación de ideas","Ordenar y planificar las ideas mediante un esquema","Redactar eligiendo la expresión lingüística adecuada","Revisar y corregir desviaciones lingüísticas"],
+    correct: 1,
+    exp: "La Dispositio es la fase de disposición: ordenar y planificar las ideas mediante un esquema que contenga la estructura del contenido."
+  },
+  {
+    tema: "T.7 · Expresión Escrita",
+    q: "En el lenguaje militar, ¿cuál de estas NO es una característica general del lenguaje especial o sectorial?",
+    opts: ["Objetividad, concisión y precisión","Uso masivo de siglas y acrónimos","Registro coloquial y expresivo para cercanía con subordinados","Vocabulario específico unido al común y científico general"],
+    correct: 2,
+    exp: "El lenguaje militar se caracteriza por objetividad, concisión, precisión, vocabulario específico y uso masivo de siglas. El registro coloquial no es una característica."
+  },
+  {
+    tema: "T.7 · Expresión Escrita",
+    q: "¿Qué tipo de texto predominantemente usa estructuras de 'yuxtaposición' y formas verbales que expresan estado o apariencia?",
+    opts: ["Texto narrativo","Texto argumentativo","Texto expositivo","Texto descriptivo"],
+    correct: 3,
+    exp: "El texto descriptivo usa formas verbales que expresan estado o apariencia, adjetivos, adverbios de modo y la yuxtaposición como estructura principal."
+  },
+  // T.8 — Liderazgo (3)
+  {
+    tema: "T.8 · Liderazgo",
+    q: "En la Teoría Situacional de Hersey y Blanchard, ¿qué estilo combina 'alta tarea + alta relación'?",
+    opts: ["Delegar","Participar","Vender","Decir"],
+    correct: 2,
+    exp: "El estilo 'Vender' combina alta tarea + alta relación, y se aplica cuando los subalternos tienen carencias pero el líder busca también su compromiso."
+  },
+  {
+    tema: "T.8 · Liderazgo",
+    q: "¿Cuáles son los cuatro fundamentos para ser un buen líder según el temario?",
+    opts: ["Visión, estrategia, control y disciplina","Modelo, ser apasionado, delegar y responsabilidad","Autoridad, honradez, inteligencia y autocontrol","Liderazgo autocrático, democrático, situacional y de rasgos"],
+    correct: 1,
+    exp: "Los 4 fundamentos son: ser modelo (dar ejemplo), ser apasionado, saber delegar y asumir responsabilidad."
+  },
+  {
+    tema: "T.8 · Liderazgo",
+    q: "¿Qué modelo de liderazgo aplica actualmente el Ejército del Aire, según el temario?",
+    opts: ["Liderazgo autocrático basado en jerarquía estricta","Liderazgo situacional de Hersey y Blanchard","Liderazgo 360° centrado en 'Nosotros' más que en 'Yo'","Liderazgo Laissez-faire orientado a la autonomía del personal"],
+    correct: 2,
+    exp: "El EA aplica el modelo Líder 360°, de enfoque constructivista y centrado en el equipo (Nosotros) más que en el individuo (Yo)."
+  },
+  // T.9 — Valores Militares (3)
+  {
+    tema: "T.9 · Valores Militares",
+    q: "¿Qué artículo de las RROO establece que el primer deber del militar es la disposición permanente para defender España?",
+    opts: ["Artículo 7","Artículo 10","Artículo 3","Artículo 20"],
+    correct: 2,
+    exp: "El Art. 3 de las RROO establece que el primer deber del militar es la disposición permanente para defender a España, incluyendo la entrega de la vida."
+  },
+  {
+    tema: "T.9 · Valores Militares",
+    q: "La I.G. 00-4 de octubre de 2015 desarrolla el modelo de Liderazgo y Valores en el EA. ¿Cuántos ejes estratégicos define la visión del JEMA?",
+    opts: ["2 ejes: personal y material","3 ejes: recursos humanos, material y organización","4 ejes: vocación, preparación, valores y motivación","5 ejes: disciplina, lealtad, valor, respeto y compromiso"],
+    correct: 1,
+    exp: "La visión del JEMA se articula en 3 ejes estratégicos: Recursos Humanos, Material y Organización."
+  },
+  {
+    tema: "T.9 · Valores Militares",
+    q: "¿Qué valor militar describe 'la fidelidad a una causa, cumplir el compromiso y buscar el éxito del equipo por el bien común'?",
+    opts: ["Disciplina","Compromiso","Lealtad","Ejemplaridad"],
+    correct: 2,
+    exp: "La Lealtad se define como fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común, añadiendo sinceridad."
+  },
+  // T.10 — Registro de Documentos (3)
+  {
+    tema: "T.10 · Reg. Documentos",
+    q: "En el sistema de registro de documentos, ¿qué significa 'S/Ref.'?",
+    opts: ["La referencia interna propia que identifica el expediente","La signatura del sistema de archivo del EA","La referencia al documento recibido al que se está respondiendo","El número de salida generado por el sistema automático"],
+    correct: 2,
+    exp: "S/Ref. (Su Referencia) se utiliza cuando se responde a otro documento, citando el número del documento recibido."
+  },
+  {
+    tema: "T.10 · Reg. Documentos",
+    q: "¿Cuál es la prelación del teletipo (MEFO) que indica entrega en menos de 6 horas?",
+    opts: ["Z – Flash","O – Inmediato","P – Prioridad","R – Rutina"],
+    correct: 2,
+    exp: "La prelación P (Prioridad) indica que el mensaje debe entregarse en hasta 6 horas. O (Inmediato) es menos de 1 hora y Z (Flash) lo antes posible."
+  },
+  {
+    tema: "T.10 · Reg. Documentos",
+    q: "¿Qué se entiende por 'expediente' en el sistema de registro y gestión documental?",
+    opts: ["El libro físico donde se anotan entradas y salidas","El conjunto de documentos correspondientes a un mismo asunto","El número único e invariable asignado a cada documento","El sistema de signatura para archivar documentos del EA"],
+    correct: 1,
+    exp: "Un expediente es el conjunto de documentos correspondientes a un mismo asunto."
+  },
+  // T.11 — Redacción Militar / IG 10-01 (3)
+  {
+    tema: "T.11 · Redacción Militar",
+    q: "Según la IG 10-01, ¿cuál es el margen izquierdo y superior establecido para los documentos militares en papel A4?",
+    opts: ["Izq. 25 mm / Sup. 30 mm","Izq. 30 mm / Sup. 40 mm","Izq. 20 mm / Sup. 25 mm","Izq. 35 mm / Sup. 35 mm"],
+    correct: 1,
+    exp: "La IG 10-01 establece: margen izquierdo 30 mm, derecho 15 mm, superior 40 mm e inferior 20 mm. Fuente Arial 11."
+  },
+  {
+    tema: "T.11 · Redacción Militar",
+    q: "¿Quién firma una Instrucción Particular (IP) y cuál es su ámbito de obligatoriedad?",
+    opts: ["El JEMA; obligatoria para todo el Ejército del Aire","Los Jefes de Mando; obligatoria para sus unidades dependientes","Los Jefes de UCO; regula el régimen interior de la propia unidad","El Ministro de Defensa; obligatoria en todo el ámbito del MINISDEF"],
+    correct: 1,
+    exp: "La IP es emitida por los Jefes de Mando, desarrolla normas superiores dentro de su ámbito y es obligatoria para sus unidades dependientes."
+  },
+  {
+    tema: "T.11 · Redacción Militar",
+    q: "En la clasificación de documentos administrativos, ¿a qué categoría pertenecen las solicitudes, denuncias, alegaciones y recursos?",
+    opts: ["Documentos de Decisión","Documentos de Transmisión","Documentos de Juicio","Documentos de los Ciudadanos"],
+    correct: 3,
+    exp: "Las solicitudes, denuncias, alegaciones y recursos (instancias) pertenecen a la categoría de Documentos de los Ciudadanos."
+  }
+];
+
+// Shuffle helper
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let questions = [];
+let current = 0;
+let score = 0;
+let temaScores = {};
+let answered = false;
+
+function startTest() {
+  questions = shuffle(QUESTIONS);
+  current = 0;
+  score = 0;
+  temaScores = {};
+  questions.forEach(q => {
+    if (!temaScores[q.tema]) temaScores[q.tema] = { correct: 0, total: 0 };
+    temaScores[q.tema].total++;
+  });
+  document.getElementById('screenIntro').classList.remove('active');
+  document.getElementById('screenQ').classList.add('active');
+  document.getElementById('progressWrap').style.display = 'block';
+  loadQuestion();
+}
+
+function loadQuestion() {
+  answered = false;
+  const q = questions[current];
+  document.getElementById('qNumCurrent').textContent = current + 1;
+  document.getElementById('qTemaTag').textContent = q.tema;
+  document.getElementById('qText').textContent = q.q;
+
+  // Update progress
+  const pct = (current / 30) * 100;
+  document.getElementById('progFill').style.width = pct + '%';
+  document.getElementById('progText').textContent = (current + 1) + ' / 30';
+  document.getElementById('progScore').textContent = '✓ ' + score;
+
+  const container = document.getElementById('optionsContainer');
+  container.innerHTML = '';
+
+  // Shuffle options but track correct
+  const indices = [0, 1, 2, 3];
+  const shuffled = shuffle(indices);
+  const correctOrigIdx = q.correct;
+
+  shuffled.forEach((origIdx, displayIdx) => {
+    const btn = document.createElement('div');
+    btn.className = 'option';
+    btn.dataset.origIdx = origIdx;
+    btn.dataset.isCorrect = (origIdx === correctOrigIdx) ? '1' : '0';
+    btn.innerHTML = `<span class="opt-letter">${String.fromCharCode(65 + displayIdx)}</span><span>${q.opts[origIdx]}</span>`;
+    btn.onclick = () => selectOption(btn);
+    container.appendChild(btn);
+  });
+
+  document.getElementById('feedbackBox').className = 'feedback-box';
+  document.getElementById('feedbackBox').innerHTML = '';
+  const btnNext = document.getElementById('btnNext');
+  btnNext.classList.remove('show');
+  btnNext.textContent = current === 29 ? 'Ver resultados →' : 'Siguiente pregunta →';
+}
+
+function selectOption(el) {
+  if (answered) return;
+  answered = true;
+
+  const allOpts = document.querySelectorAll('.option');
+  allOpts.forEach(o => o.classList.add('locked'));
+
+  const isCorrect = el.dataset.isCorrect === '1';
+  const q = questions[current];
+
+  if (isCorrect) {
+    el.classList.add('correct');
+    score++;
+    temaScores[q.tema].correct++;
+    showFeedback(true, q.exp);
+  } else {
+    el.classList.add('wrong');
+    // highlight correct
+    allOpts.forEach(o => { if (o.dataset.isCorrect === '1') o.classList.add('correct'); });
+    showFeedback(false, q.exp);
+  }
+
+  document.getElementById('progScore').textContent = '✓ ' + score;
+  document.getElementById('btnNext').classList.add('show');
+}
+
+function showFeedback(ok, exp) {
+  const box = document.getElementById('feedbackBox');
+  box.className = 'feedback-box show ' + (ok ? 'ok' : 'fail');
+  box.innerHTML = `<strong>${ok ? '✓ Correcto' : '✗ Incorrecto'}</strong>${exp}`;
+}
+
+function nextQuestion() {
+  current++;
+  if (current >= 30) {
+    showResults();
+  } else {
+    loadQuestion();
+  }
+}
+
+function showResults() {
+  document.getElementById('screenQ').classList.remove('active');
+  document.getElementById('screenResults').classList.add('active');
+  document.getElementById('progressWrap').style.display = 'none';
+  document.getElementById('progFill').style.width = '100%';
+
+  document.getElementById('resNum').textContent = score;
+  const pct = Math.round((score / 30) * 100);
+  const pctEl = document.getElementById('resPct');
+  pctEl.textContent = pct + '%';
+
+  let msg, cls;
+  if (pct >= 80) { msg = '🎖️ Excelente resultado'; cls = 'high'; }
+  else if (pct >= 60) { msg = '✅ Aprobado, sigue repasando'; cls = 'mid'; }
+  else { msg = '📚 Necesitas repasar más'; cls = 'low'; }
+  pctEl.className = 'score-pct ' + cls;
+  document.getElementById('resMsg').textContent = msg;
+
+  // Breakdown
+  const bd = document.getElementById('breakdown');
+  bd.innerHTML = '';
+  Object.entries(temaScores).forEach(([tema, s]) => {
+    const p = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+    const color = p >= 80 ? '#22c55e' : p >= 50 ? '#f59e0b' : '#ef4444';
+    bd.innerHTML += `
+      <div class="breakdown-item">
+        <div class="tema-name">${tema}</div>
+        <div class="score-row">
+          <span class="score-frac" style="color:${color}">${s.correct}/${s.total}</span>
+          <span style="font-size:0.75rem;color:var(--text-muted)">${p}%</span>
+        </div>
+        <div class="mini-bar"><div class="mini-fill" style="width:${p}%;background:${color}"></div></div>
+      </div>`;
+  });
+}
+
+function restartTest() {
+  document.getElementById('screenResults').classList.remove('active');
+  document.getElementById('screenIntro').classList.add('active');
+  document.getElementById('progressWrap').style.display = 'none';
+}
+</script>
+</body>
+</html>

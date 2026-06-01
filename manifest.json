@@ -1,0 +1,96 @@
+{
+  "name": "Curso de Cabo 1.º",
+  "short_name": "CursoCabo1",
+  "description": "Aplicación de tests para la preparación del Curso de Actualización para Cabo 1.º.",
+  "id": ".",
+  "scope": ".",
+  "display": "standalone",
+  "start_url": "index.html",
+  "display_override": [
+    "standalone"
+  ],
+  "orientation": "portrait",
+  "background_color": "#e0eafc",
+  "theme_color": "#3182ce",
+  "lang": "es-ES",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "launch_handler": { "client_mode": "focus-existing" },
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-monochrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "monochrome"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuevo Test",
+      "short_name": "Nuevo",
+      "description": "Iniciar un nuevo test con preguntas aleatorias",
+      "url": "index.html?action=nuevo-test",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Repasar Fallos",
+      "short_name": "Repaso",
+      "description": "Iniciar un test con las preguntas falladas anteriormente",
+      "url": "index.html?action=repasar-fallos",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Simulacro 1",
+      "short_name": "Simulacro 1",
+      "description": "Iniciar el primer simulacro de examen.",
+      "url": "index.html?action=simulacro1",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Simulacro 2",
+      "short_name": "Simulacro 2",
+      "description": "Iniciar el segundo simulacro de examen.",
+      "url": "index.html?action=simulacro2",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Simulacro 3",
+      "short_name": "Simulacro 3",
+      "description": "Iniciar el tercer simulacro de examen.",
+      "url": "index.html?action=simulacro3",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/screenshot-inicio.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Menú principal de la aplicación"
+    },
+    {
+      "src": "screenshots/screenshot-pregunta.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Ejemplo de una pregunta del test"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+
+<style>
+  .test-wrap { padding: 1rem 0; font-size: 15px; color: var(--color-text-primary); }
+  .progress-bar-bg { background: var(--color-background-secondary); border-radius: 99px; height: 8px; margin-bottom: 1.5rem; border: 0.5px solid var(--color-border-tertiary); }
+  .progress-bar-fill { background: #1D9E75; height: 100%; border-radius: 99px; transition: width 0.3s; }
+  .q-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+  .q-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 1rem; }
+  .q-num { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 2px 10px; font-size: 13px; color: var(--color-text-secondary); white-space: nowrap; margin-top: 1px; }
+  .q-text { font-size: 15px; line-height: 1.5; }
+  .opt { display: flex; align-items: flex-start; gap: 10px; padding: 8px 10px; border-radius: var(--border-radius-md); cursor: pointer; border: 0.5px solid var(--color-border-tertiary); margin-bottom: 6px; transition: background 0.15s; }
+  .opt:hover { background: var(--color-background-secondary); }
+  .opt.selected { border-color: #1D9E75; background: #E1F5EE; }
+  .opt.correct { border-color: #3B6D11; background: #EAF3DE; }
+  .opt.wrong { border-color: #A32D2D; background: #FCEBEB; }
+  .opt-letter { font-weight: 500; min-width: 18px; font-size: 14px; color: var(--color-text-secondary); }
+  .opt.selected .opt-letter { color: #0F6E56; }
+  .opt.correct .opt-letter { color: #3B6D11; }
+  .opt.wrong .opt-letter { color: #A32D2D; }
+  .btn-primary { background: transparent; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 9px 20px; font-size: 14px; cursor: pointer; color: var(--color-text-primary); }
+  .btn-primary:hover { background: var(--color-background-secondary); }
+  .btn-check { background: #1D9E75; border: none; color: #fff; border-radius: var(--border-radius-md); padding: 9px 20px; font-size: 14px; cursor: pointer; }
+  .btn-check:disabled { opacity: 0.4; cursor: default; }
+  .feedback { margin-top: 10px; font-size: 13px; padding: 8px 12px; border-radius: var(--border-radius-md); line-height: 1.5; }
+  .feedback.ok { background: #EAF3DE; color: #27500A; }
+  .feedback.ko { background: #FCEBEB; color: #791F1F; }
+  .score-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; text-align: center; }
+  .score-big { font-size: 48px; font-weight: 500; color: #1D9E75; }
+  .score-sub { font-size: 15px; color: var(--color-text-secondary); margin-top: 4px; }
+  .tag { display: inline-block; background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 2px 8px; font-size: 12px; color: var(--color-text-secondary); margin-bottom: 8px; }
+</style>
+
+<div class="test-wrap">
+  <h2 class="sr-only">Test de 30 preguntas sobre el temario de fase distancia</h2>
+  <div id="progress-wrap" style="margin-bottom:0.5rem; display:flex; justify-content:space-between; font-size:13px; color:var(--color-text-secondary);">
+    <span id="prog-label">Pregunta 1 de 30</span>
+    <span id="prog-score">Correctas: 0</span>
+  </div>
+  <div class="progress-bar-bg"><div class="progress-bar-fill" id="pbar" style="width:3.33%"></div></div>
+  <div id="q-container"></div>
+  <div style="display:flex; gap:10px; margin-top:1rem;" id="nav-btns">
+    <button class="btn-check" id="btn-check" onclick="checkAnswer()" disabled>Comprobar</button>
+    <button class="btn-primary" id="btn-next" onclick="nextQ()" style="display:none">Siguiente →</button>
+  </div>
+  <div id="result-area"></div>
+</div>
+
+<script>
+const questions = [
+  {tema:"Organizaciones Internacionales", q:"¿En qué año y con cuántos estados fundadores se creó la ONU?", opts:["En 1945 con 51 estados miembros","En 1945 con 193 estados miembros","Al terminar la Primera Guerra Mundial, en 1918","En 1949 con 12 países fundadores"], ans:0, exp:"La ONU nació el 24 de octubre de 1945 con 51 estados miembros. Hoy son 193."},
+  {tema:"Organizaciones Internacionales", q:"¿Cuántos idiomas oficiales tiene la ONU y cuáles son los idiomas de trabajo?", opts:["4 idiomas oficiales; inglés y español como idiomas de trabajo","6 idiomas oficiales; francés e inglés como idiomas de trabajo","6 idiomas oficiales; inglés y chino como idiomas de trabajo","5 idiomas oficiales; francés y ruso como idiomas de trabajo"], ans:1, exp:"La ONU tiene 6 idiomas oficiales. El francés y el inglés son los idiomas de trabajo."},
+  {tema:"Organizaciones Internacionales", q:"¿Qué órgano de la ONU tiene su sede en La Haya y resuelve controversias entre estados?", opts:["El Consejo de Seguridad","La Secretaría General","La Corte Internacional de Justicia","El ECOSOC"], ans:2, exp:"La Corte Internacional de Justicia (CIJ) es el principal órgano judicial de la ONU, se encuentra en La Haya y sus fallos son inapelables."},
+  {tema:"Organizaciones Internacionales", q:"¿Cuántos miembros permanentes tiene el Consejo de Seguridad de la ONU y cuál es su privilegio especial?", opts:["10 miembros permanentes con voto doble","5 miembros permanentes con derecho de veto","7 miembros permanentes con derecho de veto","5 miembros permanentes con voto de calidad"], ans:1, exp:"El Consejo de Seguridad tiene 5 miembros permanentes (China, EEUU, Rusia, Francia y UK) que tienen derecho de veto."},
+  {tema:"Organizaciones Internacionales", q:"¿En qué año se incorporó España a la estructura militar de mandos de la OTAN?", opts:["1949","1982","1986","1999"], ans:3, exp:"España se incorporó a la OTAN en 1982, el referéndum de ratificación fue en 1986 y la fecha efectiva de incorporación a la estructura militar de mandos fue en 1999."},
+  {tema:"Organizaciones Internacionales", q:"¿Qué institución de la UE está formada por 27 comisarios que proponen nuevas leyes?", opts:["El Parlamento Europeo","El Consejo Europeo","La Comisión Europea","El Tribunal de Justicia"], ans:2, exp:"La Comisión Europea está formada por 27 comisarios y es la encargada de proponer nuevas leyes en el conjunto de la UE."},
+  {tema:"Apoyo Psicológico", q:"¿Cuál es la diferencia clave entre una emergencia y una catástrofe?", opts:["Las causas naturales o humanas que las originan","En la catástrofe la sociedad carece de recursos suficientes para superarla","El número mínimo de víctimas que produce cada una","El grado de cobertura mediática del evento"], ans:1, exp:"En una catástrofe, la sociedad no dispone de suficientes recursos para superar el evento, a diferencia de la emergencia donde sí se cuenta con ellos."},
+  {tema:"Apoyo Psicológico", q:"¿Cuáles son las dos fases principales de una crisis psicológica?", opts:["Fase de adaptación y fase de asimilación","Fase incipiente y fase terminal","Fase de shock y fase de reacción","Fase previa y fase final"], ans:2, exp:"Las fases de una crisis psicológica son la fase de shock (que afecta a emoción, cognición, fisiológico y motor) y la fase de reacción."},
+  {tema:"Apoyo Psicológico", q:"Una víctima de tercer grado en una emergencia sería:", opts:["Un familiar directo del afectado","Alguien que se salvó por no estar presente","Un miembro de los equipos intervinientes","Alguien que conoce el suceso por los medios"], ans:2, exp:"Las víctimas de 3º grado son los equipos intervinientes. Las de 2º grado son los familiares y las de 1º los afectados directamente."},
+  {tema:"Apoyo Psicológico", q:"¿Qué principio de intervención psicológica indica que se deben emplear métodos breves y sencillos?", opts:["Inmediatez","Proximidad","Simplicidad","Unidad"], ans:2, exp:"El principio de Simplicidad establece que deben usarse métodos breves y sencillos en la intervención psicológica."},
+  {tema:"Dinámica de Grupos", q:"Según Bar-Tal (1990), ¿qué condición NO es necesaria para que un colectivo se convierta en grupo?", opts:["Que los componentes se definan como miembros del grupo","Que compartan creencias grupales","Que exista actividad coordinada","Que tengan el mismo nivel jerárquico"], ans:3, exp:"Bar-Tal establece tres condiciones: que los miembros se definan como parte del grupo, que compartan creencias grupales y que exista actividad coordinada. El nivel jerárquico no es una condición."},
+  {tema:"Dinámica de Grupos", q:"¿Cómo se denomina el tipo de grupo cuya unión se basa en objetivos comunes y cuya organización está regulada por escrito?", opts:["Primario","Formal","De pertenencia","Informal"], ans:1, exp:"Los grupos formales son resultado de la planificación de una organización, tienen carácter normativo con normas y fines explícitos."},
+  {tema:"Dinámica de Grupos", q:"En el modelo cíclico de Worchel, ¿qué nombre recibe la fase en la que los miembros trabajan en cooperación para ser un grupo eficaz?", opts:["Identificación con el grupo","Socialización","Productividad grupal","Individualización"], ans:2, exp:"La fase de productividad grupal (fase 4) es aquella en la que existe cooperación para que el grupo sea eficaz."},
+  {tema:"Dinámica de Grupos", q:"¿Cómo denomina Janis (1972) al fenómeno por el que la búsqueda del consenso grupal desplaza la evaluación realista de alternativas?", opts:["Cohesión grupal","Pensamiento grupal","Conformismo colectivo","Autocensura normativa"], ans:1, exp:"Janis denominó 'pensamiento grupal' a esta manera de pensar donde prima la búsqueda del consenso pasando a segundo plano la evaluación realista de acciones alternativas."},
+  {tema:"Expresión Oral", q:"¿A qué concepto pertenece el uso y estructuración del espacio inmediato al sujeto comunicador?", opts:["Kinesia","Paralingüística","Proxémica","Artefactual"], ans:2, exp:"La proxémica es el conjunto de comportamientos no verbales relacionados con la utilización y estructuración del espacio inmediato al sujeto comunicador."},
+  {tema:"Expresión Oral", q:"En comunicación no verbal, una mirada de soslayo transmite principalmente:", opts:["Interés y atención","Desconfianza y duda","Agresión y desafío","Hastío y aburrimiento"], ans:1, exp:"Según el contenido del temario, la mirada de soslayo transmite desconfianza y duda."},
+  {tema:"Expresión Oral", q:"¿Qué tipo de comunicación es la comunicación horizontal dentro de una organización?", opts:["Informal","Formal descendente","Formal ascendente","Formal entre mismo nivel jerárquico"], ans:3, exp:"La comunicación horizontal se produce entre personas del mismo nivel jerárquico y es un tipo de comunicación formal."},
+  {tema:"Expresión Oral", q:"Las 'Cualidades del conferenciante' se resumen en las 5 C. ¿Cuál de las siguientes NO es una de ellas?", opts:["Conocimiento profundo del tema","Claridad","Carisma","Coherencia"], ans:2, exp:"Las 5 C son: Conocimiento, Claridad, Concreción, Coherencia y Convicción. El carisma no forma parte de esta lista."},
+  {tema:"Expresión Escrita", q:"¿Con qué nombre latino se conoce la fase de escritura en la que se ordena y planifica el contenido mediante esquemas?", opts:["Inventio","Dispositio","Elocutio","Emendatio"], ans:1, exp:"La Dispositio es la fase de disposición, donde se ordenan y planifican las ideas mediante esquemas y organigramas."},
+  {tema:"Expresión Escrita", q:"¿Qué tipo de texto predomina en la objetividad y ofrece información o explicación para dar a conocer algo?", opts:["Narrativo","Argumentativo","Expositivo","Descriptivo"], ans:2, exp:"El texto expositivo ofrece información o explicación con objeto de dar a conocer, y en él predomina la objetividad."},
+  {tema:"Expresión Escrita", q:"Respecto al uso de siglas en textos militares escritos en español, ¿qué indica el estilo y forma de la escritura militar?", opts:["Se deben usar siempre en inglés para uniformidad con la OTAN","Se deben usar en español","Se pueden usar indistintamente en español o inglés","Solo se usan siglas en documentos clasificados"], ans:1, exp:"El temario indica que en la escritura militar se deben usar las siglas en español, por eso lo correcto es OTAN y no NATO."},
+  {tema:"Liderazgo", q:"¿Cuál de las siguientes sí es una de las cuatro teorías de liderazgo más representativas?", opts:["Teoría de valores","Teoría de contingencia absoluta","Teoría de la ruta-meta","Teoría del liderazgo natural"], ans:2, exp:"Las 4 teorías más representativas son: teoría de rasgos, teorías conductuales, teoría situacional y teoría de la ruta-meta."},
+  {tema:"Liderazgo", q:"En la teoría situacional de Hersey y Blanchard, ¿qué estilo combina alta orientación a la tarea con alta orientación a la relación?", opts:["Decir","Vender","Participar","Delegar"], ans:1, exp:"El estilo 'Vender' combina alta tarea + alta relación, según el modelo de Hersey y Blanchard."},
+  {tema:"Liderazgo", q:"¿Qué tipo de liderazgo concede libertad de acción a los miembros y tiene un líder poco participativo?", opts:["Democrático","Autocrático","Laissez-faire","Situacional"], ans:2, exp:"El liderazgo Laissez-faire (dejar hacer) concede libertad de acción a los miembros; el líder es poco participativo y las decisiones recaen en el grupo."},
+  {tema:"Valores Militares", q:"¿En qué instrucción general se describen los valores militares del Ejército del Aire?", opts:["IG 00-1","IG 10-01","IG 00-4","IG 10-14"], ans:2, exp:"Los valores militares están descritos en la I.G. 00-4, de 1 de octubre de 2015."},
+  {tema:"Valores Militares", q:"¿Qué normativa puede aplicarse al militar por incumplimiento de los valores militares?", opts:["Solo el Régimen Disciplinario","Solo el Código Penal Militar","Tanto el Código Penal Militar como el Régimen Disciplinario","Las Reales Ordenanzas de las FAS exclusivamente"], ans:2, exp:"Tanto la Ley Orgánica 8/2014 (Régimen Disciplinario) como la Ley Orgánica 14/2015 (Código Penal Militar) son de aplicación."},
+  {tema:"Valores Militares", q:"Según las Reales Ordenanzas, ¿cuál es el primer deber del militar recogido en el artículo 3?", opts:["Obedecer las órdenes de sus superiores","Disposición permanente para defender a España, incluso con entrega de la vida","Respetar los derechos fundamentales de los ciudadanos","Mantener la disciplina y el orden en su unidad"], ans:1, exp:"El Art.3 establece que el primer deber del militar es la disposición permanente para defender a España, con entrega de la vida si fuera necesario."},
+  {tema:"Registro y Redacción de Documentos", q:"¿Qué tipo de prelación en mensajería formal (MEFO) indica que el mensaje debe entregarse en un plazo máximo de 6 horas?", opts:["Z, Flash","O, Inmediato","P, Prioridad","R, Rutina"], ans:2, exp:"La prelación P (Prioridad) indica que el mensaje debe entregarse en un plazo de hasta 6 horas."},
+  {tema:"Registro y Redacción de Documentos", q:"¿Qué documento se utiliza para acreditar hechos e incluye los datos del que certifica, la razón, fecha y firma?", opts:["Oficio","Teletipo (MEFO)","Instancia","Certificado"], ans:3, exp:"El certificado es el documento que acredita hechos y debe incluir los datos del que certifica, la razón, la fecha y la firma."},
+  {tema:"Registro y Redacción de Documentos", q:"¿Qué modificación de una disposición normativa implica su derogación total y completa?", opts:["Enmienda (ENM)","Revisión (REV)","Modificación parcial","Anulación (ANL)"], ans:3, exp:"La Anulación (ANL) supone la derogación total de la disposición normativa. La Revisión la sustituye completamente pero por otra, y la Enmienda es una modificación no esencial."},
+];
+
+let current = 0;
+let score = 0;
+let answered = new Array(30).fill(false);
+let selectedOpt = null;
+let showingFeedback = false;
+
+function render() {
+  const q = questions[current];
+  const doc = document.getElementById('q-container');
+  const letters = ['a','b','c','d'];
+  let optsHtml = q.opts.map((o,i) => `<div class="opt" id="opt-${i}" onclick="selectOpt(${i})"><span class="opt-letter">${letters[i]})</span><span>${o}</span></div>`).join('');
+  doc.innerHTML = `<div class="q-card"><span class="tag">${q.tema}</span><div class="q-header"><span class="q-num">${current+1}/30</span><span class="q-text">${q.q}</span></div><div>${optsHtml}</div><div id="feedback-area"></div></div>`;
+  selectedOpt = null;
+  showingFeedback = false;
+  document.getElementById('btn-check').disabled = true;
+  document.getElementById('btn-next').style.display = 'none';
+  document.getElementById('prog-label').textContent = `Pregunta ${current+1} de 30`;
+  document.getElementById('prog-score').textContent = `Correctas: ${score}`;
+  document.getElementById('pbar').style.width = `${((current)/30)*100}%`;
+}
+
+function selectOpt(i) {
+  if (showingFeedback) return;
+  selectedOpt = i;
+  document.querySelectorAll('.opt').forEach((el,j) => {
+    el.classList.toggle('selected', j === i);
+  });
+  document.getElementById('btn-check').disabled = false;
+}
+
+function checkAnswer() {
+  if (selectedOpt === null || showingFeedback) return;
+  showingFeedback = true;
+  const q = questions[current];
+  const correct = selectedOpt === q.ans;
+  if (correct) score++;
+  document.querySelectorAll('.opt').forEach((el,j) => {
+    if (j === q.ans) el.classList.add('correct');
+    else if (j === selectedOpt && !correct) el.classList.add('wrong');
+    el.style.cursor = 'default';
+  });
+  const fb = document.getElementById('feedback-area');
+  fb.innerHTML = `<div class="feedback ${correct?'ok':'ko'}">${correct?'✓ Correcto — ':'✗ Incorrecto — '}${q.exp}</div>`;
+  document.getElementById('btn-check').disabled = true;
+  if (current < 29) {
+    document.getElementById('btn-next').style.display = 'inline-block';
+  } else {
+    document.getElementById('btn-next').style.display = 'inline-block';
+    document.getElementById('btn-next').textContent = 'Ver resultados →';
+  }
+}
+
+function nextQ() {
+  if (current < 29) {
+    current++;
+    render();
+  } else {
+    showResults();
+  }
+}
+
+function showResults() {
+  document.getElementById('q-container').innerHTML = '';
+  document.getElementById('nav-btns').innerHTML = `<button class="btn-primary" onclick="restart()">Repetir test</button>`;
+  document.getElementById('progress-wrap').style.display = 'none';
+  document.querySelector('.progress-bar-bg').style.display = 'none';
+  const pct = Math.round((score/30)*100);
+  let msg = pct >= 80 ? '¡Excelente resultado!' : pct >= 60 ? 'Buen trabajo, sigue practicando.' : 'Hay margen de mejora, repasa los temas con menos aciertos.';
+  document.getElementById('result-area').innerHTML = `<div class="score-card"><div class="score-big">${score}/30</div><div class="score-sub">${pct}% de aciertos</div><p style="margin-top:1rem;color:var(--color-text-secondary);font-size:14px;">${msg}</p></div>`;
+}
+
+function restart() {
+  current = 0; score = 0; answered.fill(false); selectedOpt = null; showingFeedback = false;
+  document.getElementById('progress-wrap').style.display = 'flex';
+  document.querySelector('.progress-bar-bg').style.display = 'block';
+  document.getElementById('result-area').innerHTML = '';
+  document.getElementById('nav-btns').innerHTML = `<button class="btn-check" id="btn-check" onclick="checkAnswer()" disabled>Comprobar</button><button class="btn-primary" id="btn-next" onclick="nextQ()" style="display:none">Siguiente →</button>`;
+  render();
+}
+
+render();
+</script>

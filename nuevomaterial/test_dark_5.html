@@ -1,0 +1,412 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;padding:0;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#3b5bdb;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}
+.timer b{color:#a5b4fc;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}
+.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#3b5bdb,#a5b4fc);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#3b5bdb;color:#a5b4fc}
+.qb.cur{background:#1e2a4a;border-color:#3b5bdb;color:#a5b4fc}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.tbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#1e2a4a;color:#a5b4fc}
+.trapbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2d2010;color:#fbbf24}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.qtxt{font-size:16px;color:#e8eaf0;line-height:1.65;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#3b5bdb}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#1e2a4a;border-color:#3b5bdb;color:#a5b4fc}
+.opt.sel{border-color:#3b5bdb;background:#131a30}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fbicon{font-size:18px;flex-shrink:0}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#3b5bdb;color:#a5b4fc}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#3b5bdb;color:#fff;border-color:#3b5bdb}
+.btnp:hover{background:#2f4bbf;border-color:#2f4bbf;color:#fff}
+/* RESULT */
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#a5b4fc;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}
+.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:200px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:34px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}
+.tko{background:#1a0d0d;color:#f87171}
+.ttrap{background:#2d2010;color:#fbbf24}
+.ttopic{background:#1e2235;color:#5a6280}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}
+.ra b{color:#a5b4fc}
+</style>
+
+<div class="w">
+
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Formación cívica · Fase a distancia</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+    <div class="qgrid" id="qgrid"></div>
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#1e2a4a;border:1px solid #3b5bdb"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+      <div class="legrow"><div class="legdot" style="background:#1e2235;border:1px solid #2a2f3e"></div>Sin responder</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+{t:"Organizaciones internacionales",trap:false,
+q:"¿Cuál de los 6 órganos principales de la ONU tiene como función principal deliberar y votar sobre cualquier asunto recogido en la Carta, con un voto por nación?",
+opts:["El Consejo de Seguridad","La Asamblea General","La Secretaría","El ECOSOC"],
+a:1,exp:"La Asamblea General es el órgano deliberativo: se reúne anualmente, cada nación tiene un voto y puede debatir cualquier asunto de la Carta de la ONU."},
+
+{t:"Organizaciones internacionales",trap:false,
+q:"¿En qué año y con cuántos países fundadores se creó la OTAN?",
+opts:["1945 con 51 países","1949 con 12 países","1957 con 15 países","1982 con 28 países"],
+a:1,exp:"La OTAN fue creada en 1949 por 12 países fundadores. Hoy cuenta con 32 miembros y su cuartel general está en Bruselas."},
+
+{t:"Organizaciones internacionales",trap:true,
+q:"⚠ Trampa — ¿Qué artículo del Tratado de la OTAN permite, por acuerdo unánime, invitar a ingresar a cualquier estado europeo?",
+opts:["El artículo 5","El artículo 10","El artículo 3","El artículo 14"],
+a:1,exp:"Es el Art. 10 el que permite invitar a nuevos estados europeos por acuerdo unánime. El famoso Art. 5 es el de la defensa colectiva."},
+
+{t:"Organizaciones internacionales",trap:false,
+q:"¿Qué organismo de la ONU coordina entidades como la FAO, la OMS, la UNESCO, el PNUD o el ACNUR?",
+opts:["La Asamblea General","El Consejo de Seguridad","El Consejo Económico y Social (ECOSOC)","La Corte Internacional de Justicia"],
+a:2,exp:"El ECOSOC promueve el desarrollo económico y social y coordina organismos especializados como FAO, OMS, UNESCO, PNUD, UNICEF y ACNUR."},
+
+{t:"Organizaciones internacionales",trap:false,
+q:"Tras la salida del Reino Unido, ¿cuántos estados miembros tiene la Unión Europea?",
+opts:["25","26","27","28"],
+a:2,exp:"Tras el Brexit, la UE quedó con 27 estados miembros."},
+
+{t:"Apoyo psicológico",trap:false,
+q:"¿Cuál es la diferencia clave entre una emergencia y una catástrofe?",
+opts:["Las causas que originan el evento","El número de víctimas mortales","En la catástrofe no se dispone de recursos suficientes para superarla","La duración del evento"],
+a:2,exp:"La clave está en los recursos: en la emergencia se dispone de ellos para superarla; en la catástrofe, no."},
+
+{t:"Apoyo psicológico",trap:false,
+q:"Una persona que presenció un accidente pero no resultó herida ni tiene familiares implicados, aunque sufre angustia, ¿a qué grado de víctima pertenece?",
+opts:["Primer grado","Tercer grado","Cuarto grado","Quinto grado"],
+a:3,exp:"Las víctimas de 5.º grado son las implicadas emocionalmente por conocer el suceso, aunque no estuvieran presentes ni tengan relación directa con las víctimas."},
+
+{t:"Apoyo psicológico",trap:true,
+q:"⚠ Trampa — ¿Qué consecuencias psicológicas son INMEDIATAS (no a largo plazo) tras una catástrofe?",
+opts:["Trastorno de estrés postraumático y abuso de sustancias","Trastorno adaptativo y trastorno de estrés agudo","Trastornos del estado de ánimo y trastornos psicosomáticos","Ira crónica y sentimiento de culpa persistente"],
+a:1,exp:"Las consecuencias INMEDIATAS son el trastorno adaptativo (depresivo, ansioso o mixto) y el trastorno de estrés agudo. Las de largo plazo incluyen el estrés postraumático y el abuso de sustancias."},
+
+{t:"Apoyo psicológico",trap:false,
+q:"¿Qué principio de intervención psicológica indica que debe actuarse de forma precoz, sin demora?",
+opts:["Proximidad","Inmediatez","Expectativas","Simplicidad"],
+a:1,exp:"El principio de inmediatez indica que la intervención psicológica debe ser precoz, actuando sin demora tras el evento."},
+
+{t:"Dinámica de grupos",trap:false,
+q:"Según Bar-Tal (1990), ¿cuántas condiciones debe cumplir un colectivo para convertirse en grupo?",
+opts:["2 condiciones","3 condiciones","4 condiciones","5 condiciones"],
+a:1,exp:"Bar-Tal establece 3 condiciones: que los miembros se definan como parte del grupo, que compartan creencias grupales y que exista actividad coordinada."},
+
+{t:"Dinámica de grupos",trap:false,
+q:"¿Cuál es la última fase del modelo cíclico de Worchel en la formación de grupos?",
+opts:["Individualización","Productividad grupal","Declive grupal","Suceso precipitante"],
+a:2,exp:"La última fase del modelo de Worchel es el declive grupal, caracterizado por dudas y desconfianza entre los miembros."},
+
+{t:"Dinámica de grupos",trap:true,
+q:"⚠ Trampa — ¿Cuál de estas afirmaciones sobre el pensamiento grupal de Janis es CORRECTA?",
+opts:["Mejora la toma de decisiones al buscar el consenso","Prioriza la evaluación realista sobre el acuerdo","La búsqueda de consenso desplaza la evaluación realista de alternativas","Solo afecta a grupos con más de 10 miembros"],
+a:2,exp:"El pensamiento grupal (Janis) es un fenómeno negativo: la búsqueda de consenso pasa a primer plano desplazando la evaluación realista. No mejora las decisiones, las empeora."},
+
+{t:"Dinámica de grupos",trap:false,
+q:"¿Cómo se denomina la fase de socialización grupal en la que el nuevo integrante se informa de las metas y normas del grupo?",
+opts:["Fase de investigación","Fase de socialización","Fase de mantenimiento","Fase de resolución"],
+a:1,exp:"En la fase de socialización (2.ª fase del modelo de Moreland y Levine) el nuevo integrante recibe información sobre las metas y normas del grupo."},
+
+{t:"Expresión oral",trap:false,
+q:"¿Qué elemento de la comunicación no verbal estudia los desplazamientos, el espacio personal y cómo nos movemos refleja nuestro estado?",
+opts:["Kinesia","Paralingüística","Proxémica","Gestualización"],
+a:2,exp:"La proxémica estudia el conjunto de comportamientos no verbales relacionados con el uso y estructuración del espacio inmediato al comunicador."},
+
+{t:"Expresión oral",trap:false,
+q:"¿Qué porcentaje de lo que se transmite en una conversación interpersonal es de carácter no verbal?",
+opts:["55%","70%","83%","93%"],
+a:3,exp:"Según el temario, en una conversación interpersonal el 93% de lo que se transmite es de forma no verbal."},
+
+{t:"Expresión oral",trap:true,
+q:"⚠ Trampa — ¿Cuál de estas NO es una habilidad necesaria para desarrollar la escucha activa?",
+opts:["Parafrasear","Resumir","Emitir palabras de refuerzo","Interrumpir para mostrar interés"],
+a:3,exp:"Interrumpir es uno de los elementos a EVITAR en la escucha activa. Las 3 habilidades necesarias son: parafrasear, emitir palabras de refuerzo y resumir."},
+
+{t:"Expresión oral",trap:false,
+q:"Un volumen de voz elevado transmite autoridad y dominio. ¿Qué transmite un volumen muy alto?",
+opts:["Seguridad y confianza","Enfado o ira","Que el hablante no quiere ser oído","Calma y serenidad"],
+a:1,exp:"Elevado transmite autoridad; muy alto transmite enfado o ira; moderado transmite calma; bajo sugiere que el hablante no quiere ser oído."},
+
+{t:"Expresión escrita",trap:false,
+q:"¿A qué fase del proceso de escritura corresponde la etapa 'Elocutio'?",
+opts:["Construcción e ideación del tema","Ordenar y planificar mediante esquemas","Redacción y elección de la expresión lingüística","Revisión y corrección"],
+a:2,exp:"La Elocutio es la fase de redacción: elegir la expresión lingüística adecuada, elaborar borradores y dar forma al texto."},
+
+{t:"Expresión escrita",trap:false,
+q:"En el texto expositivo, ¿cuál es el instrumento básico en la fase de elocución para ordenar y sistematizar la exposición?",
+opts:["El brainstorming","El guión","El mapa conceptual","El borrador libre"],
+a:1,exp:"En la redacción expositiva el guión es el instrumento básico en la elocución: permite ordenar y sistematizar la exposición de forma clara."},
+
+{t:"Expresión escrita",trap:true,
+q:"⚠ Trampa — ¿Qué tratamiento escrito corresponde a un Coronel o Capitán de Navío?",
+opts:["Excelencia — V.E. — Excmo. Sr.","Señoría — V.S. — Ilustrísimo Señor","Majestad — V.M.","Alteza Real — S.A.R."],
+a:1,exp:"A los Coroneles y Capitanes de Navío les corresponde el tratamiento de Señoría (V.S.), con el encabezado 'Ilustrísimo Señor' y la abreviatura 'Usía'. La Excelencia es para Oficiales Generales."},
+
+{t:"Liderazgo",trap:false,
+q:"¿Cuál de los siguientes NO es uno de los 7 rasgos de la teoría de rasgos del liderazgo?",
+opts:["Ambición y energía","Autoconfianza e inteligencia","Carisma y popularidad","Honradez e integridad"],
+a:2,exp:"Los 7 rasgos son: ambición y energía, deseo de dirigir, honradez e integridad, autoconfianza, inteligencia, conocimiento y autocontrol. El carisma no figura entre ellos."},
+
+{t:"Liderazgo",trap:false,
+q:"En la teoría situacional, ¿qué estilo combina baja tarea y alta relación?",
+opts:["Decir","Vender","Delegar","Participar"],
+a:3,exp:"El estilo Participar combina baja tarea + alta relación. Es el adecuado cuando el subalterno tiene problemas de motivación pero es competente (nivel R3)."},
+
+{t:"Liderazgo",trap:true,
+q:"⚠ Trampa — ¿Qué modelo de liderazgo utiliza actualmente el Ejército del Aire según el temario?",
+opts:["Liderazgo autocrático basado en la jerarquía","Liderazgo situacional de Hersey y Blanchard","Liderazgo 360º centrado en Nosotros más que en Yo","Liderazgo laissez-faire para fomentar la autonomía"],
+a:2,exp:"El modelo actual del EA es el Liderazgo 360º, enfocado en la teoría constructivista y centrado en el equipo (Nosotros) más que en el individuo (Yo)."},
+
+{t:"Liderazgo",trap:false,
+q:"¿Cuál es el primer deber del militar recogido en el Art. 3 de las Reales Ordenanzas?",
+opts:["Obedecer las órdenes del mando","Disposición permanente para defender a España","Mantener la disciplina en todo momento","Respetar la bandera y el himno nacional"],
+a:1,exp:"El Art. 3 establece como primer deber del militar la disposición permanente para defender a España, con entrega de la propia vida si fuera necesario."},
+
+{t:"Valores militares",trap:false,
+q:"¿En qué instrucción general se describen los valores militares del Ejército del Aire?",
+opts:["IG 10-01","IG 00-1","IG 00-4","IG 10-14"],
+a:2,exp:"Los valores militares están descritos en la IG 00-4, de 1 de octubre de 2015, sobre Liderazgo y Valores en el EA."},
+
+{t:"Valores militares",trap:false,
+q:"¿Qué valor militar convierte en hábito la autodisciplina y es definido como 'factor de cohesión que obliga a mandar con responsabilidad y obedecer lo mandado'?",
+opts:["Lealtad","Valor","Disciplina","Compromiso"],
+a:2,exp:"La disciplina es el valor que fomenta la autodisciplina, la convierte en hábito y es factor de cohesión (Art. 8 RR.OO.). Obliga a todos por igual: mandar con responsabilidad y obedecer lo mandado."},
+
+{t:"Técnicas de apoyo — documentos",trap:false,
+q:"¿Qué tipo de modificación de una disposición normativa la sustituye completamente, generando una nueva versión?",
+opts:["Enmienda (ENM)","Revisión (REV)","Anulación (ANL)","Derogación parcial"],
+a:1,exp:"La Revisión (REV) es una modificación esencial que sustituye completamente la versión anterior. La Enmienda es no esencial y no genera nueva versión; la Anulación deroga totalmente."},
+
+{t:"Técnicas de apoyo — documentos",trap:true,
+q:"⚠ Trampa — ¿Cuál de estas prelaciones del teletipo (MEFO) indica que el mensaje debe entregarse en menos de 1 hora?",
+opts:["Z — Flash","O — Inmediato","P — Prioridad","R — Rutina"],
+a:1,exp:"La prelación O (Inmediato) indica entrega en menos de 1 hora. La Z (Flash) es lo antes posible; la P (Prioridad) hasta 6 horas; la R (Rutina) hasta el inicio del día siguiente."},
+
+{t:"Técnicas de apoyo — documentos",trap:false,
+q:"¿Qué normativa del EA establece que en el texto de los documentos se suprimen todos los tratamientos honoríficos salvo 'don/doña' y 'señor/señora'?",
+opts:["La IG 10-01","La IG 10-14","El Manual de Documentos Administrativos","La IG 00-4"],
+a:2,exp:"Es el Manual de Documentos Administrativos (2003) el que suprime todo tipo de tratamientos y fórmulas honoríficas en el cuerpo del documento, manteniendo solo don/doña y señor/señora."},
+
+{t:"Técnicas de apoyo — documentos",trap:false,
+q:"¿Cuáles son las dos funciones principales de los documentos administrativos según el temario?",
+opts:["Función ejecutiva y función normativa","Función de constancia y función de comunicación","Función jurídica y función archivística","Función informativa y función disciplinaria"],
+a:1,exp:"Los documentos administrativos tienen dos funciones: la función de constancia (conservar y demostrar la existencia de los actos) y la función de comunicación (interna o externa)."},
+
+{t:"Técnicas de apoyo — documentos",trap:false,
+q:"¿A qué se refiere el concepto 'expediente' en el sistema de registro y gestión documental del EA?",
+opts:["Un expediente personal de un militar","El libro físico donde se anotan entradas y salidas","El conjunto de documentos correspondientes a un mismo asunto","El sistema electrónico de mensajería oficial"],
+a:2,exp:"El expediente es el conjunto de documentos correspondientes a un mismo asunto. Es uno de los conceptos básicos del sistema de registro y gestión documental."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+
+function renderGrid(){
+  document.getElementById('qgrid').innerHTML=QS.map((_,i)=>{
+    let c='qb';
+    if(i===cur)c+=' cur';
+    else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+    return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+  }).join('');
+}
+
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrid();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="tbadge">${q.t}</span>
+    ${q.trap?'<span class="trapbadge">⚠ Trampa</span>':''}
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}">
+      <span class="fbicon">${ok?'✓':'✗'}</span>
+      <span>${q.exp}</span>
+    </div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrid()}
+function jump(i){cur=i;renderQ();renderGrid()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrid();
+}
+
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const trapsOk=QS.reduce((s,q,i)=>s+(q.trap&&ans[i]===q.a?1:0),0);
+  const trapTotal=QS.filter(q=>q.trap).length;
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+  const map={};
+  QS.forEach((q,i)=>{if(!map[q.t])map[q.t]={ok:0,n:0};map[q.t].n++;if(rev[i]&&ans[i]===q.a)map[q.t].ok++});
+  let tbh='';
+  Object.entries(map).forEach(([name,{ok,n}])=>{
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row">
+      <div class="tb-name">${name}</div>
+      <div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div>
+      <div class="tb-sc" style="color:${col}">${ok}/${n}</div>
+    </div>`;
+  });
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem">
+      <div class="rtags">
+        <span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span>
+        ${q.trap?'<span class="rtag ttrap">Trampa</span>':''}
+        <span class="rtag ttopic">${q.t}</span>
+      </div>
+      <div class="rq">${i+1}. ${q.q.replace('⚠ Trampa — ','')}</div>
+      <div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div>
+    </div>`;
+  });
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado</div>
+      <div class="res-sub">Test 5 · Fase a distancia · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#fbbf24">${trapsOk}/${trapTotal}</div><div class="sl">Trampas ok</div></div>
+        <div class="sbox"><div class="sn" style="color:#a5b4fc">${fmt(secs)}</div><div class="sl">Tiempo</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()" style="margin:0 auto">↺ Repetir test</button>
+    </div>
+    <div class="tb-card">
+      <div class="tb-title">Resultados por tema</div>${tbh}
+    </div>
+    <div class="rev-card">
+      <div class="rev-title">Revisión completa</div>${rvh}
+    </div>
+  </div>`;
+}
+
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrid();startTmr();
+}
+
+renderQ();renderGrid();startTmr();
+</script>

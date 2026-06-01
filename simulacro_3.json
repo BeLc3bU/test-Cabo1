@@ -1,0 +1,452 @@
+[
+  {
+    "pregunta": "¿Qué propiedad textual implica escoger las soluciones lingüísticas adecuadas, respetar las normas de cortesía y adaptar el registro al destinatario?",
+    "opciones": [
+      "Coherencia",
+      "Cohesión",
+      "Adecuación",
+      "Gramática"
+    ],
+    "respuestaCorrecta": "Adecuación",
+    "tema": "Expresión Escrita",
+    "explicacion": "La adecuación es la propiedad textual que obliga a escoger soluciones lingüísticas, formas de interacción y normas de cortesía apropiadas al contexto y destinatario.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué tipo de modificación de una disposición normativa la sustituye completamente, generando una nueva versión?",
+    "opciones": [
+      "Enmienda (ENM)",
+      "Revisión (REV)",
+      "Anulación (ANL)",
+      "Derogación parcial"
+    ],
+    "respuestaCorrecta": "Revisión (REV)",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La Revisión (REV) es una modificación esencial que sustituye completamente la versión anterior. La Enmienda es no esencial y no genera nueva versión; la Anulación deroga totalmente.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre el estilo 'Delegar' y 'Participar' en la Teoría Situacional de Hersey y Blanchard?",
+    "opciones": [
+      "Delegar es alta tarea/baja relación; Participar es alta tarea/alta relación",
+      "Delegar es baja tarea/baja relación; Participar es baja tarea/alta relación",
+      "Delegar es alta relación/baja tarea; Participar es alta tarea/baja relación",
+      "No hay diferencia; son sinónimos en contextos distintos"
+    ],
+    "respuestaCorrecta": "Delegar es baja tarea/baja relación; Participar es baja tarea/alta relación",
+    "tema": "Liderazgo",
+    "explicacion": "Delegar = Baja tarea + Baja relación (subalternos capaces y motivados, el líder apenas interviene). Participar = Baja tarea + Alta relación (subalternos capaces pero con problemas de motivación).",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia fundamental entre una emergencia y una catástrofe?",
+    "opciones": [
+      "La magnitud del número de víctimas",
+      "En la catástrofe no se dispone de recursos suficientes para superarla",
+      "La catástrofe siempre tiene causas naturales",
+      "En la emergencia no existe amenaza para la vida"
+    ],
+    "respuestaCorrecta": "En la catástrofe no se dispone de recursos suficientes para superarla",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "La diferencia clave es la disponibilidad de recursos: en la emergencia se dispone de ellos; en la catástrofe, no.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "⚠ TRAMPA — ¿Cuál de estas normativas NO se publica en el BOD (Boletín Oficial de Defensa)?",
+    "opciones": [
+      "Resolución del EMA",
+      "Instrucción General (IG)",
+      "Instrucción Comunicada",
+      "Instrucción del JEMA"
+    ],
+    "respuestaCorrecta": "Instrucción Comunicada",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La Instrucción Comunicada es más específica y NO se publica en el BOD. Las Instrucciones Generales, las emitidas por el JEMA y las Resoluciones del EMA/SEGE sí se publican.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según el temario, ¿qué afirmación resume correctamente la relación entre grupo de pertenencia y grupo de referencia en el ámbito militar?",
+    "opciones": [
+      "El grupo militar debe ser de pertenencia y nunca de referencia",
+      "El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia",
+      "Ambos conceptos son idénticos en el contexto castrense",
+      "El grupo de referencia negativo es el más valorado en el Ejército"
+    ],
+    "respuestaCorrecta": "El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "El temario cita textualmente: 'El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia', pues debe inspirar valores y aspiraciones.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué característica diferencia al LÍDER del JEFE según el temario?",
+    "opciones": [
+      "El jefe tiene más formación técnica que el líder",
+      "El líder ocupa siempre un cargo superior al jefe",
+      "Hay una gran diferencia entre jefe y líder; el líder es reconocido como tal por el grupo",
+      "El jefe y el líder son conceptos equivalentes en el ámbito militar"
+    ],
+    "respuestaCorrecta": "Hay una gran diferencia entre jefe y líder; el líder es reconocido como tal por el grupo",
+    "tema": "Liderazgo",
+    "explicacion": "El temario subraya que hay una gran diferencia entre jefe y líder. El líder es quien influye sobre los demás y es reconocido como tal por el grupo, independientemente de su cargo.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿En qué año se realizó el primer vuelo del autogiro en España, quién lo inventó y en qué aeródromo tuvo lugar?",
+    "opciones": [
+      "1920, Vives, Cuatro Vientos",
+      "1923, Juan de la Cierva, Getafe",
+      "1926, Kindelán, Los Alcázares",
+      "1911, Loygorri, Cuatro Vientos"
+    ],
+    "respuestaCorrecta": "1923, Juan de la Cierva, Getafe",
+    "tema": "Historia del EA",
+    "explicacion": "El primer vuelo del autogiro fue en 1923, inventado por Juan de la Cierva, y tuvo lugar en el aeródromo de Getafe.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "⚠ Trampa — El Art. 128 de las Reales Ordenanzas establece una obligación específica relacionada con la formación. ¿A quién va dirigido y qué obliga a hacer?",
+    "opciones": [
+      "A los mandos: motivar a sus subordinados con el ejemplo",
+      "A los profesores: tener cualidades pedagógicas",
+      "A los alumnos: aprovechar al máximo los medios y oportunidades",
+      "A los sargentos: transmitir el saber a los soldados"
+    ],
+    "respuestaCorrecta": "A los alumnos: aprovechar al máximo los medios y oportunidades",
+    "tema": "Valores Militares",
+    "explicacion": "El Art. 128 de las RR.OO. establece la 'función docente de los alumnos': aprovecharán al máximo los medios y oportunidades disponibles para su formación. No va dirigido a mandos ni profesores.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿A qué concepto pertenece el uso y estructuración del espacio inmediato al sujeto comunicador?",
+    "opciones": [
+      "Kinesia",
+      "Paralingüística",
+      "Proxémica",
+      "Artefactual"
+    ],
+    "respuestaCorrecta": "Proxémica",
+    "tema": "Expresión Oral",
+    "explicacion": "La proxémica es el conjunto de comportamientos no verbales relacionados con la utilización y estructuración del espacio inmediato al sujeto comunicador.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué tipo de texto predomina en la objetividad y ofrece información o explicación para dar a conocer algo?",
+    "opciones": [
+      "Narrativo",
+      "Argumentativo",
+      "Expositivo",
+      "Descriptivo"
+    ],
+    "respuestaCorrecta": "Expositivo",
+    "tema": "Expresión Escrita",
+    "explicacion": "El texto expositivo ofrece información o explicación con objeto de dar a conocer, y en él predomina la objetividad.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿En qué artículo de las Reales Ordenanzas se establece que la disciplina obliga a mandar con responsabilidad y a obedecer lo mandado?",
+    "opciones": [
+      "Art. 7",
+      "Art. 8",
+      "Art. 9",
+      "Art. 10"
+    ],
+    "respuestaCorrecta": "Art. 8",
+    "tema": "Valores Militares",
+    "explicacion": "El Art. 8 establece que la disciplina es un factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Un redactor usa constantemente la voz pasiva, calca estructuras del inglés y emplea el gerundio de forma incorrecta. ¿Qué problema del lenguaje militar está cometiendo según el temario?",
+    "opciones": [
+      "Está usando falsos amigos de forma reiterada",
+      "Está incurriendo en traducción directa sin adecuar al español",
+      "Está mezclando registros culto y coloquial de forma inapropiada",
+      "Está violando las normas de cohesión textual"
+    ],
+    "respuestaCorrecta": "Está incurriendo en traducción directa sin adecuar al español",
+    "tema": "Expresión Escrita",
+    "explicacion": "El temario advierte sobre la 'traducción directa': calcar la estructura lógica del inglés y el uso incorrecto del gerundio. También alerta del uso de voz pasiva cuando debe usarse voz activa. Son errores propios de la traducción directa sin adecuación al español.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Respecto al uso de siglas en documentos militares escritos en español, ¿qué norma se debe aplicar?",
+    "opciones": [
+      "Se pueden usar indistintamente en inglés o español",
+      "Deben usarse siempre en inglés por ser lengua OTAN",
+      "Deben usarse en español (p. ej. OTAN, no NATO)",
+      "No se deben usar siglas en documentos oficiales"
+    ],
+    "respuestaCorrecta": "Deben usarse en español (p. ej. OTAN, no NATO)",
+    "tema": "Expresión Escrita",
+    "explicacion": "En la escritura militar española se deben usar las siglas en español, por lo que 'OTAN' es correcto y 'NATO' no.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "El valor del 'Espíritu de equipo' incluye una actitud específica hacia el conocimiento y la información. ¿Cómo la describe exactamente el temario?",
+    "opciones": [
+      "Reservar la información para proteger la seguridad de la unidad",
+      "Actitud abierta de compartir conocimiento e información con franqueza y sinceridad",
+      "Transmitir solo la información necesaria para el cumplimiento de órdenes",
+      "Gestionar el conocimiento a través de la cadena de mando exclusivamente"
+    ],
+    "respuestaCorrecta": "Actitud abierta de compartir conocimiento e información con franqueza y sinceridad",
+    "tema": "Valores Militares",
+    "explicacion": "El temario describe el espíritu de equipo como una 'actitud abierta de compartir conocimiento e información con franqueza y sinceridad'. Esta apertura genera confianza y refuerza el compañerismo.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿En qué Instrucción General se describen los valores militares?",
+    "opciones": [
+      "En la I.G. 00-4",
+      "En la I.G. 00-1",
+      "No se describen en ninguna I.G. Aparecen en una Orden Ministerial.",
+      "No se describen en ninguna I.G. Aparecen en las Reales Ordenanzas del Ejército del Aire."
+    ],
+    "respuestaCorrecta": "En la I.G. 00-4",
+    "tema": "Valores Militares",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "⚠ TRAMPA — Ordena correctamente las letras del protocolo ACERCARSE: Ambiente, Contacto, Evaluación, Restablecimiento emocional… ¿qué viene después?",
+    "opciones": [
+      "Seguimiento",
+      "Comprensión de crisis",
+      "Recuperación de funcionamiento",
+      "Activar"
+    ],
+    "respuestaCorrecta": "Comprensión de crisis",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Tras el Restablecimiento emocional viene la Comprensión de crisis, luego Activar, Recuperación de funcionamiento y finalmente Seguimiento.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Cuando los GESTOS de una persona nos están dando información estamos hablando de:",
+    "opciones": [
+      "Proxémica",
+      "Kinesia",
+      "Paralinguística",
+      "Gestualización"
+    ],
+    "respuestaCorrecta": "Kinesia",
+    "tema": "Expresión Oral",
+    "explicacion": "",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según la teoría situacional de Hersey y Blanchard, ¿qué estilo combina alta tarea y alta relación? (Variante)",
+    "opciones": [
+      "Participar",
+      "Vender",
+      "Delegar",
+      "Decir"
+    ],
+    "respuestaCorrecta": "Vender",
+    "tema": "Liderazgo",
+    "explicacion": "El estilo 'Vender' combina alta tarea + alta relación. Sirve para compensar carencias de los subalternos.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuál de los 6 órganos principales de la ONU tiene como función principal deliberar y votar sobre cualquier asunto recogido en la Carta, con un voto por nación?",
+    "opciones": [
+      "El Consejo de Seguridad",
+      "La Asamblea General",
+      "La Secretaría",
+      "El ECOSOC"
+    ],
+    "respuestaCorrecta": "La Asamblea General",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La Asamblea General es el órgano deliberativo: se reúne anualmente, cada nación tiene un voto y puede debatir cualquier asunto de la Carta de la ONU.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cómo se denomina la persona 'poco dada a escribir o que no sabe hacerlo', según el término recogido en el temario de expresión escrita?",
+    "opciones": [
+      "Analfabeta",
+      "Ágrafa",
+      "Diléxica",
+      "Iletrada"
+    ],
+    "respuestaCorrecta": "Ágrafa",
+    "tema": "Expresión Escrita",
+    "explicacion": "El término exacto del temario es 'ágrafa': persona poco dada a escribir o que no sabe hacerlo.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "La instancia es un documento de los ciudadanos. ¿Cuál de las siguientes afirmaciones sobre la instancia es FALSA?",
+    "opciones": [
+      "Puede incluir solicitudes, denuncias, alegaciones o recursos",
+      "Debe llevar datos del solicitante, expone, solicita, fecha y firma",
+      "Debe ir firmada por el Jefe de la UCO del interesado",
+      "Debe registrarse de entrada conforme a lo establecido en la IG 10-14"
+    ],
+    "respuestaCorrecta": "Debe ir firmada por el Jefe de la UCO del interesado",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La instancia la firma el propio interesado, no el Jefe de su UCO. Esa es una afirmación falsa que aparece como trampa habitual en el temario.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué tipo de texto se caracteriza por exponer una tesis, demostrar su viabilidad y concluir tras un proceso de enunciación, demostración y refutación?",
+    "opciones": [
+      "Texto expositivo",
+      "Texto descriptivo",
+      "Texto argumentativo",
+      "Texto narrativo"
+    ],
+    "respuestaCorrecta": "Texto argumentativo",
+    "tema": "Expresión Escrita",
+    "explicacion": "El texto argumentativo propone una tesis o hipótesis y la demuestra mediante el proceso: Enunciación → Demostración → Refutación → Conclusión.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuál es el principal objetivo fundacional de la ONU según su carta constitutiva?",
+    "opciones": [
+      "Crear un mercado económico común entre naciones",
+      "Evitar futuras guerras mediante la diplomacia y el diálogo",
+      "Garantizar la seguridad militar de los países aliados",
+      "Establecer un idioma universal para las relaciones internacionales"
+    ],
+    "respuestaCorrecta": "Evitar futuras guerras mediante la diplomacia y el diálogo",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La principal intención de la ONU es evitar futuras guerras mediante la diplomacia y el diálogo.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué técnica de grupo, estructurada en fases de generación de ideas por escrito, ronda de ideas y votación preliminar, integra trabajo individual y grupal?",
+    "opciones": [
+      "Grupo inestructurado",
+      "Brainstorming libre",
+      "Grupo nominal",
+      "Dinámica de roles"
+    ],
+    "respuestaCorrecta": "Grupo nominal",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "El grupo nominal es una reunión estructurada que integra trabajo individual y grupal, con fases de preparación, generación de ideas por escrito, ronda, discusión, votación y discusión final.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Quién firma una Instrucción Particular (IP) y cuál es su ámbito de aplicación?",
+    "opciones": [
+      "La firma el JEMA y es de aplicación en todo el Ejército del Aire",
+      "La firma el Ministro de Defensa y se publica en el BOD",
+      "La firma el Jefe de Mando y es obligatoria para sus unidades dependientes",
+      "La firma el Jefe de UCO y regula el régimen interior de su unidad"
+    ],
+    "respuestaCorrecta": "La firma el Jefe de Mando y es obligatoria para sus unidades dependientes",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La Instrucción Particular (IP) la emite el Jefe de Mando, desarrolla normas superiores dentro de su ámbito y es obligatoria para sus unidades dependientes. No debe confundirse con el Procedimiento Operativo (PO), que lo emite el Jefe de UCO.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué tipo de consecuencia psicológica a largo plazo puede desarrollarse tras una emergencia según el temario?",
+    "opciones": [
+      "Agitación psicomotriz",
+      "Trastorno adaptativo depresivo",
+      "Trastorno de estrés postraumático",
+      "Inacción motora"
+    ],
+    "respuestaCorrecta": "Trastorno de estrés postraumático",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las consecuencias a largo plazo incluyen el trastorno de estrés postraumático (TEP), trastornos del estado de ánimo y abuso de sustancias.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué tipo de documento administrativo es una resolución?",
+    "opciones": [
+      "Documento de los ciudadanos",
+      "Documento de decisión",
+      "Documento de juicio",
+      "Documento de transmisión"
+    ],
+    "respuestaCorrecta": "Documento de transmisión",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "Las resoluciones son documentos de transmisión, junto con notificaciones, publicaciones y comunicaciones.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cómo se denomina la fase de socialización grupal en la que el nuevo integrante se informa de las metas y normas del grupo?",
+    "opciones": [
+      "Fase de investigación",
+      "Fase de socialización",
+      "Fase de mantenimiento",
+      "Fase de resolución"
+    ],
+    "respuestaCorrecta": "Fase de socialización",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "En la fase de socialización (2.ª fase del modelo de Moreland y Levine) el nuevo integrante recibe información sobre las metas y normas del grupo.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Qué tipo de grupo surge de procesos espontáneos de interacción y satisface necesidades afectivas?",
+    "opciones": [
+      "Grupo formal permanente",
+      "Grupo secundario",
+      "Grupo informal",
+      "Grupo de referencia positiva"
+    ],
+    "respuestaCorrecta": "Grupo informal",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "Los grupos informales son resultado de procesos espontáneos de interacción y tienen como función la expresión de necesidades afectivas.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  }
+]

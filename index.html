@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Cabo 1.º - Ejército del Aire</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3182ce"/>
+    <link rel="icon" href="icons/icon-192x192.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="contenedor-test" class="contenedor-test">
+
+
+        <!-- Menú de Inicio -->
+        <section id="inicio-menu" aria-labelledby="main-title">
+            <h1 id="main-title">Curso de Cabo 1.º</h1>
+            <p id="main-subtitle">Elige un modo para comenzar</p>
+            <fieldset class="config-test-normal">
+                <legend>Configuración de Test</legend>
+                <div>
+                    <label for="num-preguntas-select">Preguntas por test:</label>
+                    <select id="num-preguntas-select">
+                        <option value="10">10</option>
+                        <option value="20" selected>20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="start-menu-grid">
+                <div class="test-section">
+                    <h2>Modos de Práctica</h2>
+                    <button id="iniciar-nuevo-test-btn" class="btn btn-primary" data-action="nuevo-test">Test Normal</button>
+                    <button id="iniciar-repaso-fallos-btn" class="btn btn-secondary" data-action="repasar-fallos">Repasar Fallos <span id="contador-fallos"></span></button>
+                </div>
+                <div class="test-section">
+                    <h2>Simulacros</h2>
+                    <button id="iniciar-simulacro-1-btn" class="btn btn-exam" data-action="simulacro1">Simulacro 1</button>
+                    <button id="iniciar-simulacro-2-btn" class="btn btn-exam" data-action="simulacro2">Simulacro 2</button>
+                    <button id="iniciar-simulacro-3-btn" class="btn btn-exam" data-action="simulacro3">Simulacro 3</button>
+                </div>
+            </div>
+            <div class="start-menu-footer">
+                <button id="reiniciar-progreso-btn" class="btn btn-tertiary" data-action="reiniciar-progreso">Reiniciar Progreso</button>
+            </div>
+        </section>
+
+        <!-- Contenido del Test (oculto al inicio) -->
+        <section id="test-content" class="oculto" aria-labelledby="pregunta-actual">
+            <div class="progreso-header">
+            <div class="info-header">
+                <div id="progreso-texto"></div>
+                <div class="header-botones">
+                    <button id="sound-toggle-btn" class="oculto" aria-label="Silenciar sonidos">🔊</button>
+                </div>
+                <div id="record-texto"></div>
+            </div>
+            <div class="barra-progreso-contenedor" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <div id="barra-progreso" style="width: 0%;"></div>
+            </div>
+            </div>
+            <div id="pregunta-wrapper"> <!-- Contenedor para la animación -->
+                <h2 id="pregunta-actual"></h2>
+                <div id="opciones-respuesta" class="opciones"></div>
+            </div>
+            <div id="veredicto" class="oculto" aria-live="assertive"></div>
+            <div id="feedback" aria-live="polite"></div>
+            <div id="revision-fallos" class="oculto"></div>
+            <div class="footer-botones">
+                <button id="finalizar-ahora-btn" class="oculto">Finalizar Test</button>
+                <button id="seguir-mas-tarde-btn" class="oculto">Seguir más tarde</button>
+                <button id="reiniciar-test" class="oculto">Menú Principal</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Confirmación (oculto por defecto) -->
+    <div id="modal-overlay" class="oculto">
+        <div id="confirmation-modal" class="modal" role="alertdialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-message">
+            <h3 id="modal-title"></h3>
+            <p id="modal-message"></p>
+            <div class="modal-actions">
+                <button id="modal-cancel-btn" class="btn-secundario">Cancelar</button>
+                <button id="modal-confirm-btn" class="btn-primario">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner de Actualización (oculto por defecto) -->
+    <div id="update-banner" class="oculto">
+        <span>Hay una nueva versión disponible.</span>
+        <button id="update-now-btn">Actualizar</button>
+    </div>
+
+    <!-- Botón de tema fuera del flujo principal para posicionamiento fijo -->
+    <button id="theme-toggle-btn" aria-label="Cambiar tema claro/oscuro"></button>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

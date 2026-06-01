@@ -1,0 +1,187 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.wrap{padding:1.5rem 0}
+.header{margin-bottom:1.5rem}
+.header h2{font-size:18px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.header p{font-size:13px;color:var(--color-text-secondary)}
+.progress-bar{width:100%;height:4px;background:var(--color-background-secondary);border-radius:2px;margin-bottom:1.5rem;overflow:hidden}
+.progress-fill{height:100%;background:#1D9E75;border-radius:2px;transition:width 0.3s}
+.q-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem;margin-bottom:1rem}
+.q-meta{font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px}
+.q-text{font-size:15px;color:var(--color-text-primary);line-height:1.5;margin-bottom:1rem}
+.options{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);cursor:pointer;transition:background 0.15s,border-color 0.15s;background:var(--color-background-primary)}
+.opt:hover{background:var(--color-background-secondary);border-color:var(--color-border-secondary)}
+.opt.selected{border-color:#1D9E75;background:#E1F5EE}
+.opt.correct{border-color:#1D9E75;background:#E1F5EE}
+.opt.wrong{border-color:#E24B4A;background:#FCEBEB}
+.opt-letter{font-size:12px;font-weight:500;color:var(--color-text-secondary);min-width:18px;margin-top:1px}
+.opt-text{font-size:14px;color:var(--color-text-primary);line-height:1.4}
+.nav{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:1rem}
+.btn{padding:8px 18px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);font-size:14px;cursor:pointer;font-family:var(--font-sans)}
+.btn:hover{background:var(--color-background-secondary)}
+.btn:disabled{opacity:0.35;cursor:not-allowed}
+.btn-primary{background:var(--color-text-primary);color:var(--color-background-primary);border-color:var(--color-text-primary)}
+.btn-primary:hover{opacity:0.85;background:var(--color-text-primary)}
+.q-counter{font-size:13px;color:var(--color-text-secondary)}
+.feedback{font-size:13px;margin-top:10px;padding:8px 12px;border-radius:var(--border-radius-md);line-height:1.4}
+.feedback.ok{background:#E1F5EE;color:#0F6E56}
+.feedback.ko{background:#FCEBEB;color:#A32D2D}
+.result-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:2rem;text-align:center}
+.result-score{font-size:48px;font-weight:500;color:var(--color-text-primary);margin:1rem 0 0.25rem}
+.result-label{font-size:14px;color:var(--color-text-secondary);margin-bottom:1.5rem}
+.result-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:1.5rem}
+.stat{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px 8px}
+.stat-n{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.stat-l{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.review-item{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:1rem;margin-bottom:10px;text-align:left}
+.review-item .q-text{font-size:13px;margin-bottom:6px}
+.tag-ok{display:inline-block;font-size:11px;background:#E1F5EE;color:#0F6E56;border-radius:4px;padding:2px 8px;margin-bottom:6px}
+.tag-ko{display:inline-block;font-size:11px;background:#FCEBEB;color:#A32D2D;border-radius:4px;padding:2px 8px;margin-bottom:6px}
+.answer-line{font-size:12px;color:var(--color-text-secondary)}
+.answer-line span{color:var(--color-text-primary);font-weight:500}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only" style="position:absolute;left:-9999px">Test de formación cívica y humana — 30 preguntas tipo test</h2>
+
+<div id="test-view">
+  <div class="header">
+    <h2>Test — Fase a distancia</h2>
+    <p id="topic-tag" style="font-size:12px;background:var(--color-background-secondary);display:inline-block;padding:2px 10px;border-radius:4px;margin-top:4px">—</p>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+  <div id="q-area"></div>
+  <div class="nav">
+    <span class="q-counter" id="qcount"></span>
+    <div style="display:flex;gap:8px">
+      <button class="btn" id="btn-prev" onclick="go(-1)" disabled>← Anterior</button>
+      <button class="btn btn-primary" id="btn-next" onclick="go(1)" disabled>Siguiente →</button>
+    </div>
+  </div>
+</div>
+
+<div id="result-view" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+{t:"Organizaciones internacionales",q:"¿En qué año y con cuántos estados miembros fundó sus actividades la organización que hoy conocemos como Naciones Unidas?",opts:["En 1919, con 32 estados miembros","En 1945, con 51 estados miembros","En 1949, con 12 estados miembros","En 1957, con 27 estados miembros"],a:1,exp:"La ONU nació el 24 de octubre de 1945 con 51 estados miembros; en la actualidad son 193."},
+{t:"Organizaciones internacionales",q:"¿Cuántos idiomas oficiales tiene la ONU y cuáles se consideran idiomas de trabajo?",opts:["4 idiomas; inglés y español","6 idiomas; francés e inglés","6 idiomas; inglés y ruso","8 idiomas; árabe y chino"],a:1,exp:"La ONU tiene 6 idiomas oficiales (árabe, chino, español, francés, inglés y ruso), siendo francés e inglés los idiomas de trabajo."},
+{t:"Organizaciones internacionales",q:"¿Qué órgano de la ONU está integrado por 15 miembros, de los cuales 5 son permanentes con derecho de veto?",opts:["La Asamblea General","La Corte Internacional de Justicia","El Consejo de Seguridad","El Secretariado"],a:2,exp:"El Consejo de Seguridad tiene 15 miembros; 5 permanentes (China, EEUU, Rusia, Francia y UK) con derecho de veto."},
+{t:"Organizaciones internacionales",q:"La OTAN fue creada en 1949 por 12 países fundadores. ¿Cuántos miembros tiene en la actualidad y dónde se encuentra su cuartel general?",opts:["28 miembros; Berlín","30 miembros; París","32 miembros; Bruselas","36 miembros; Londres"],a:2,exp:"La OTAN fue fundada en 1949 por 12 países y hoy cuenta con 32 miembros. Su cuartel general está en Bruselas."},
+{t:"Organizaciones internacionales",q:"¿Qué institución de la Unión Europea está compuesta por los ministros de los gobiernos miembros y se reúne periódicamente para aprobar leyes?",opts:["La Comisión Europea","El Parlamento Europeo","El Consejo de la UE","El Tribunal de Justicia"],a:2,exp:"El Consejo de la UE es la voz de los países miembros: los ministros se reúnen para aprobar leyes junto al Parlamento."},
+{t:"Apoyo psicológico",q:"¿Cuál es la diferencia entre una emergencia y una catástrofe?",opts:["Las causas que originan el evento","La localización geográfica del evento","En una catástrofe la sociedad no dispone de suficientes recursos para superarlo","El número exacto de víctimas mortales"],a:2,exp:"La clave es la disponibilidad de recursos: en la emergencia se dispone de ellos; en la catástrofe no."},
+{t:"Apoyo psicológico",q:"Dentro de la clasificación de víctimas, ¿a qué grado pertenecen los familiares directos de los afectados?",opts:["Primer grado","Segundo grado","Tercer grado","Cuarto grado"],a:1,exp:"Las víctimas de 2.º grado son los familiares. Las de 1.º son los afectados directos."},
+{t:"Apoyo psicológico",q:"¿Qué trastorno psicológico inmediato puede presentar una víctima tras una emergencia, caracterizado por agitación psicomotriz o inacción?",opts:["Trastorno de estrés postraumático","Trastorno psicosomático","Trastorno de estrés agudo","Trastorno adaptativo ansioso"],a:2,exp:"El trastorno de estrés agudo es una consecuencia inmediata y puede manifestarse con agitación o inacción."},
+{t:"Apoyo psicológico",q:"¿Qué principio de intervención psicológica en emergencias indica que la atención debe prestarse cerca del lugar de la catástrofe?",opts:["Inmediatez","Simplicidad","Proximidad","Unidad"],a:2,exp:"El principio de proximidad señala que la atención psicológica debe realizarse próxima al lugar de la catástrofe."},
+{t:"Apoyo psicológico",q:"Posibles consecuencias psicológicas a LARGO plazo tras una catástrofe incluyen:",opts:["Agitación psicomotriz e inacción","Trastorno adaptativo depresivo","Trastornos del estado de ánimo y abuso de sustancias","Reacciones emocionales intensas de pocas horas"],a:2,exp:"A largo plazo pueden aparecer trastorno de estrés postraumático, trastornos del estado de ánimo y abuso de sustancias."},
+{t:"Dinámica de grupos",q:"Según Kurt Lewin, ¿qué es un grupo?",opts:["La suma de las individualidades que lo forman","Un todo dinámico que va más allá de la suma de sus miembros","Un conjunto de personas con el mismo cargo","Un equipo formal creado por una organización"],a:1,exp:"Para Lewin el grupo es un todo dinámico y no la simple suma de individualidades."},
+{t:"Dinámica de grupos",q:"¿Qué tipo de grupo surge de forma espontánea a partir de procesos de interacción y satisface necesidades afectivas?",opts:["Grupo formal","Grupo primario","Grupo informal","Grupo de referencia negativo"],a:2,exp:"Los grupos informales surgen espontáneamente, sin planificación, para satisfacer necesidades afectivas."},
+{t:"Dinámica de grupos",q:"En el modelo cíclico de Worchel, ¿cuál es la primera fase de formación de un grupo?",opts:["Identificación con el grupo","Productividad grupal","Periodo de descontento","Suceso precipitante"],a:2,exp:"La primera fase del modelo de Worchel es el período de descontento, cuando los miembros plantean salirse o crear otro grupo."},
+{t:"Dinámica de grupos",q:"¿Cuál de las siguientes NO es una respuesta principal de los miembros a las normas grupales?",opts:["Imitativa","Conformista","Participativa","Negativista"],a:2,exp:"Las respuestas son: imitativa, conformista, colectivista y negativista. 'Participativa' no figura entre ellas."},
+{t:"Dinámica de grupos",q:"¿Qué concepto describe la fuerza que une a los miembros de un grupo?",opts:["Pensamiento grupal","Cohesión grupal","Rol de estatus","Norma institucional"],a:1,exp:"La cohesión grupal es la fuerza de unión de los miembros y se incrementa con la aceptación de normas y la estabilidad."},
+{t:"Expresión oral",q:"¿Qué elemento de la comunicación no verbal estudia el uso y estructuración del espacio inmediato al comunicador?",opts:["Kinesia","Paralingüística","Proxémica","Gestualización"],a:2,exp:"La proxémica estudia el espacio inmediato (no físico, sino mental) que rodea al comunicador."},
+{t:"Expresión oral",q:"En una conversación interpersonal, ¿qué porcentaje aproximado de la comunicación se transmite de forma no verbal?",opts:["55%","70%","85%","93%"],a:3,exp:"Se considera que el 93% de lo que se transmite en una conversación interpersonal es de forma no verbal."},
+{t:"Expresión oral",q:"¿A qué tipo de comunicación pertenece la comunicación vertical ascendente o descendente dentro de una organización?",opts:["Informal","Masiva","Formal","Intrapersonal"],a:2,exp:"La comunicación vertical (ascendente o descendente) pertenece a la comunicación formal dentro de la organización."},
+{t:"Expresión oral",q:"¿Cuál de las siguientes NO es una habilidad para desarrollar la escucha activa?",opts:["Parafrasear","Emitir palabras de refuerzo","Interrumpir para clarificar","Resumir lo escuchado"],a:2,exp:"Interrumpir es uno de los elementos a EVITAR en la escucha activa, no una habilidad que se deba desarrollar."},
+{t:"Expresión oral",q:"Al autoevaluar una presentación, ¿cuál de los siguientes aspectos NO sería relevante valorar?",opts:["Si se cumplieron los objetivos planteados","Si el contenido se ajustó al tiempo disponible","Si el aula tenía suficiente ventilación","Si se disponía de los recursos adecuados"],a:2,exp:"La ventilación del aula es un factor externo irrelevante para la autoevaluación de la presentación."},
+{t:"Expresión escrita",q:"¿A qué fase del proceso de escritura corresponde la etapa denominada 'Dispositio'?",opts:["Redacción del texto final","Revisión y corrección","Elección y generación de ideas","Ordenar y planificar ideas mediante un esquema"],a:3,exp:"La Dispositio es la fase en que se ordenan y planifican las ideas, preparando esquemas y eligiendo el tipo de discurso."},
+{t:"Expresión escrita",q:"¿Cómo se denomina el tipo de texto que presenta información o explicación con predominio de la objetividad?",opts:["Narrativo","Argumentativo","Expositivo","Descriptivo"],a:2,exp:"El texto expositivo ofrece información o explicación con predominio de la objetividad."},
+{t:"Expresión escrita",q:"Respecto al uso de siglas en documentos militares escritos en español, ¿qué norma se debe aplicar?",opts:["Se pueden usar indistintamente en inglés o español","Deben usarse siempre en inglés por ser lengua OTAN","Deben usarse en español (p. ej. OTAN, no NATO)","No se deben usar siglas en documentos oficiales"],a:2,exp:"En la escritura militar española se deben usar las siglas en español, por lo que 'OTAN' es correcto y 'NATO' no."},
+{t:"Liderazgo",q:"¿Cuál de las siguientes es una teoría de liderazgo reconocida?",opts:["Teoría de valores","Teoría de ruta-meta","Teoría de intereses","Teoría motivacional"],a:1,exp:"Las 4 teorías principales son: rasgos, conductuales, situacional y ruta-meta. 'Teoría de valores' no es una de ellas."},
+{t:"Liderazgo",q:"Según la teoría situacional de Hersey y Blanchard, ¿qué estilo combina alta tarea y alta relación?",opts:["Decir","Delegar","Vender","Participar"],a:2,exp:"El estilo 'Vender' combina alta tarea + alta relación. Sirve para compensar carencias de los subalternos."},
+{t:"Liderazgo",q:"¿Qué tipo de liderazgo concede libertad de acción a los miembros del grupo y presenta un líder poco participativo?",opts:["Autocrático","Democrático","Laissez-faire","Situacional"],a:2,exp:"El liderazgo Laissez-faire (dejar hacer) concede libertad de acción; el líder es poco participativo y las decisiones son del grupo."},
+{t:"Valores militares",q:"¿En qué instrucción general del Ejército del Aire se describen los valores militares?",opts:["IG 00-1","IG 10-01","IG 00-4","IG 10-14"],a:2,exp:"Los valores militares se describen en la IG 00-4, de 1 de octubre de 2015."},
+{t:"Valores militares",q:"¿Qué normativa puede aplicarse en caso de incumplimiento grave de los valores militares que constituya un delito?",opts:["Solo el Régimen Disciplinario","Solo el Código Penal Militar","Tanto el Régimen Disciplinario como el Código Penal Militar","Las Reales Ordenanzas únicamente"],a:2,exp:"Pueden aplicarse tanto la Ley Orgánica 8/2014 (Régimen Disciplinario) como la Ley Orgánica 14/2015 (Código Penal Militar)."},
+{t:"Técnicas de apoyo — documentos",q:"En el sistema de mensajería formal (MEFO/teletipo), ¿qué prelación indica que el mensaje debe entregarse en un plazo máximo de 6 horas?",opts:["Z — Flash","O — Inmediato","P — Prioridad","R — Rutina"],a:2,exp:"La prelación P (Prioridad) indica entrega en hasta 6 horas. La O (Inmediato) es menos de 1 hora y la Z (Flash) lo antes posible."},
+{t:"Técnicas de apoyo — documentos",q:"¿Qué tipo de disposición emite el JEMA, regula el funcionamiento del Ejército del Aire y constituye la base del ordenamiento jurídico interno?",opts:["Instrucción Particular","Procedimiento Operativo","Instrucción General","Directiva del JEMA"],a:2,exp:"La Instrucción General (IG) es emitida por el JEMA y es la normativa principal del EA."},
+{t:"Técnicas de apoyo — documentos",q:"¿Qué modificación de una disposición normativa supone su derogación total?",opts:["Enmienda (ENM)","Revisión (REV)","Anulación (ANL)","Modificación parcial"],a:2,exp:"La Anulación (ANL) supone la derogación total de la disposición. La Revisión la sustituye completamente pero emite una nueva versión."}
+];
+
+let cur=0,answers=Array(QS.length).fill(null),revealed=Array(QS.length).fill(false);
+
+function render(){
+  const q=QS[cur];
+  document.getElementById('topic-tag').textContent=q.t;
+  document.getElementById('qcount').textContent=`Pregunta ${cur+1} de ${QS.length}`;
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  let html=`<div class="q-card"><div class="q-meta">Pregunta ${cur+1}</div><div class="q-text">${q.q}</div><div class="options">`;
+  const letters=['a','b','c','d'];
+  q.opts.forEach((o,i)=>{
+    let cls='opt';
+    if(revealed[cur]){
+      if(i===q.a) cls+=' correct';
+      else if(answers[cur]===i) cls+=' wrong';
+    } else if(answers[cur]===i) cls+=' selected';
+    html+=`<div class="${cls}" onclick="pick(${i})"><span class="opt-letter">${letters[i]})</span><span class="opt-text">${o}</span></div>`;
+  });
+  html+='</div>';
+  if(revealed[cur]){
+    const ok=answers[cur]===q.a;
+    html+=`<div class="feedback ${ok?'ok':'ko'}">${ok?'✓ Correcto. ':'✗ Incorrecto. '}${q.exp}</div>`;
+  }
+  html+='</div>';
+  document.getElementById('q-area').innerHTML=html;
+  document.getElementById('btn-prev').disabled=cur===0;
+  const isLast=cur===QS.length-1;
+  const nb=document.getElementById('btn-next');
+  if(isLast){
+    nb.textContent='Ver resultado →';
+    nb.disabled=!revealed[cur];
+  } else {
+    nb.textContent='Siguiente →';
+    nb.disabled=answers[cur]===null;
+  }
+}
+
+function pick(i){
+  if(revealed[cur]) return;
+  answers[cur]=i;
+  revealed[cur]=true;
+  document.getElementById('btn-next').disabled=false;
+  render();
+}
+
+function go(dir){
+  if(dir===1 && cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+dir));
+  render();
+}
+
+function showResult(){
+  const correct=answers.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const pct=Math.round(correct/QS.length*100);
+  document.getElementById('test-view').style.display='none';
+  const rv=document.getElementById('result-view');
+  rv.style.display='block';
+  let reviewHtml='';
+  QS.forEach((q,i)=>{
+    const ok=answers[i]===q.a;
+    reviewHtml+=`<div class="review-item"><span class="${ok?'tag-ok':'tag-ko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span><div class="q-text">${i+1}. ${q.q}</div><div class="answer-line">Respuesta correcta: <span>${String.fromCharCode(97+q.a)}) ${q.opts[q.a]}</span></div></div>`;
+  });
+  rv.innerHTML=`<div class="result-card">
+    <h2 style="font-size:18px;font-weight:500;color:var(--color-text-primary)">Resultado final</h2>
+    <div class="result-score">${correct}/${QS.length}</div>
+    <div class="result-label">${pct}% de acierto</div>
+    <div class="result-stats">
+      <div class="stat"><div class="stat-n" style="color:#1D9E75">${correct}</div><div class="stat-l">Correctas</div></div>
+      <div class="stat"><div class="stat-n" style="color:#E24B4A">${QS.length-correct}</div><div class="stat-l">Incorrectas</div></div>
+      <div class="stat"><div class="stat-n">${pct}%</div><div class="stat-l">Puntuación</div></div>
+    </div>
+    <button class="btn btn-primary" onclick="restart()" style="margin-bottom:1.5rem">Repetir test</button>
+  </div>
+  <div style="margin-top:1.5rem"><h3 style="font-size:15px;font-weight:500;margin-bottom:1rem;color:var(--color-text-primary)">Repaso de respuestas</h3>${reviewHtml}</div>`;
+}
+
+function restart(){
+  cur=0;answers=Array(QS.length).fill(null);revealed=Array(QS.length).fill(false);
+  document.getElementById('result-view').style.display='none';
+  document.getElementById('test-view').style.display='block';
+  render();
+}
+
+render();
+</script>
