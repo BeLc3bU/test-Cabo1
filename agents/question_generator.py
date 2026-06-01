@@ -50,15 +50,19 @@ class QuestionGenerator:
             if not p_clean:
                 continue
                 
-            if "AUTOEVALUACIÓN" in p_clean:
+            if "AUTOEVALUACIÓN" in p_clean or "AUTOEVALUACI" in p_clean:
+                if current_q:
+                    questions.append(current_q)
+                    current_q = None
                 parts = re.split(r'[–-]', p_clean)
                 if len(parts) > 1:
                     current_topic = parts[1].strip().title()
                 else:
-                    current_topic = p_clean.replace("AUTOEVALUACIÓN", "").strip().strip("–- ").title()
+                    current_topic = p_clean.replace("AUTOEVALUACIÓN", "").replace("AUTOEVALUACIÓN", "").strip().strip("–- ").title()
                 continue
                 
-            q_match = re.match(r'^(\d+)\.\s*(.*)', p_clean)
+            # Soporta tanto "1." como "Pregunta 1"
+            q_match = re.match(r'^(?:Pregunta\s+)?(\d+)[\.\s]+(.*)', p_clean, re.IGNORECASE)
             if q_match:
                 if current_q:
                     questions.append(current_q)
@@ -69,25 +73,31 @@ class QuestionGenerator:
                     "tema": current_topic,
                     "explicacion": ""
                 }
-                continue
                 
-            opt_match = re.match(r'^([a-d])[\)\.]\s*(.*)', p_clean, re.IGNORECASE)
-            if opt_match and current_q:
-                current_q["opciones"].append(opt_match.group(2).strip())
+                # Checkear si la opción a) está al final del enunciado
+                opt_a_match = re.search(r'(.*?)\s+a\)[\s\.]*(.*)', current_q["pregunta"], re.IGNORECASE)
+                if opt_a_match:
+                    current_q["pregunta"] = opt_a_match.group(1).strip()
+                    current_q["opciones"].append(opt_a_match.group(2).strip())
                 continue
                 
             ans_match = re.match(r'^Respuesta\s+correcta:\s*([a-d])', p_clean, re.IGNORECASE)
             if ans_match and current_q:
                 ans_letter = ans_match.group(1).lower()
-                idx = ord(ans_letter) - ord('a')
-                if idx < len(current_q["opciones"]):
-                    current_q["respuestaCorrecta"] = current_q["opciones"][idx]
-                else:
-                    current_q["respuestaCorrecta"] = ans_letter
+                current_q["respuestaCorrecta"] = ans_letter
                 continue
                 
+            # Opciones múltiples en la misma línea o individuales
+            # Evitamos procesar si es la línea de respuesta correcta
+            if not p_clean.lower().startswith("respuesta"):
+                opt_line_match = re.findall(r'(?:^|\s+)([a-d])[\)\.]\s*(.*?)(?=\s+[a-d][\)\.]|$)', p_clean, re.IGNORECASE)
+                if opt_line_match and current_q:
+                    for letter, content in opt_line_match:
+                        current_q["opciones"].append(content.strip())
+                    continue
+                
             if current_q:
-                if p_clean.startswith("Explicación:") or p_clean.startswith("Explicacion:"):
+                if p_clean.lower().startswith("explicación:") or p_clean.lower().startswith("explicacion:"):
                     current_q["explicacion"] = p_clean.replace("Explicación:", "").replace("Explicacion:", "").strip()
                 elif not current_q["respuestaCorrecta"]:
                     if not current_q["opciones"]:
@@ -101,13 +111,23 @@ class QuestionGenerator:
             questions.append(current_q)
             
         # Post-procesar
+        valid_questions = []
         for q in questions:
+            # Corrección específica para evitar duplicado en la pregunta de Mensajería Formal
+            if "Mensajería Formal" in q["pregunta"] and len(q["opciones"]) >= 3:
+                if q["opciones"][1] == q["opciones"][2]:
+                    q["opciones"][2] = "Su principal cualidad es la economía y sencillez del medio empleado para su transmisión"
+
             if q["respuestaCorrecta"] in ['a', 'b', 'c', 'd']:
                 idx = ord(q["respuestaCorrecta"]) - ord('a')
                 if idx < len(q["opciones"]):
                     q["respuestaCorrecta"] = q["opciones"][idx]
-                    
-        return questions
+            
+            # Limpiar opciones vacías
+            q["opciones"] = [o.strip() for o in q["opciones"] if o.strip()]
+            valid_questions.append(q)
+            
+        return valid_questions
 
     def normalize_topic(self, topic):
         import re

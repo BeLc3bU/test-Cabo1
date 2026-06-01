@@ -1,136 +1,76 @@
 [
   {
-    "pregunta": "⚠ TRAMPA — En la teoría situacional, ¿qué estilo aplica el líder cuando el subalterno tiene BAJA disposición (R1)?",
+    "pregunta": "Marque que dos tipos de Disposiciones Generales regulan la IG 10-01:",
     "opciones": [
-      "Delegar",
-      "Participar",
-      "Vender",
-      "Decir"
+      "Instrucciones Generales y Instrucciones Específicas",
+      "Ordenes Ministeriales y Instrucciones",
+      "Procedimientos y Instrucciones Particulares",
+      "Ninguna es correcta"
     ],
-    "respuestaCorrecta": "Decir",
-    "tema": "Liderazgo",
-    "explicacion": "Ante un subalterno de nivel R1 (bajo nivel de disposición), el líder usa el estilo 'Decir' (alta tarea + baja relación), dando instrucciones claras y específicas.",
+    "respuestaCorrecta": "Ordenes Ministeriales y Instrucciones",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuáles son los seis idiomas oficiales de la ONU?",
+    "opciones": [
+      "Inglés, Francés, Español, Alemán, Chino y Ruso",
+      "Inglés, Francés, Español, Árabe, Chino y Ruso",
+      "Inglés, Francés, Portugués, Árabe, Chino y Japonés",
+      "Inglés, Francés, Español, Árabe, Hindú y Ruso"
+    ],
+    "respuestaCorrecta": "Inglés, Francés, Español, Árabe, Chino y Ruso",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "Los 6 idiomas oficiales de la ONU son: Árabe, Chino, Español, Francés, Inglés y Ruso. Los idiomas de trabajo son solo Francés e Inglés.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Qué rol dentro de un grupo orienta su conducta principalmente hacia el trabajo a realizar, en lugar de hacia el beneficio propio o la interacción social?",
+    "pregunta": "¿Cuáles son las principales utilidades del registro de documentación?",
     "opciones": [
-      "Miembro buscador de beneficio propio",
-      "Miembro orientado a la interacción",
-      "Miembro orientado al trabajo",
-      "Rol de líder formal"
+      "Mejorar la trazabilidad de la información",
+      "Acceso a consultar las características de un documento",
+      "Mejorar su localización en los expedientes",
+      "Todas son correctas"
     ],
-    "respuestaCorrecta": "Miembro orientado al trabajo",
+    "respuestaCorrecta": "Todas son correctas",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué órgano de la UE vela por que los países miembros apliquen correctamente las leyes aprobadas y respeten los derechos fundamentales?",
+    "opciones": [
+      "La Comisión Europea",
+      "El Consejo Europeo",
+      "El Parlamento Europeo",
+      "El Tribunal de Justicia de la UE"
+    ],
+    "respuestaCorrecta": "El Tribunal de Justicia de la UE",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El Tribunal de Justicia de la UE vela por que los países apliquen las leyes aprobadas y se respeten los derechos fundamentales.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En la estructura de grupo, ¿qué características tienen los roles según Brownn (1988)? Señala la INCORRECTA.",
+    "opciones": [
+      "Son la base de la comunicación entre miembros",
+      "Funcionan como agencia mediadora entre individuo y grupo",
+      "Los roles son siempre asignados por el líder formal del grupo",
+      "Forman parte de la autodefinición de la persona en el grupo"
+    ],
+    "respuestaCorrecta": "Los roles son siempre asignados por el líder formal del grupo",
     "tema": "Dinámica de Grupos",
-    "explicacion": "El temario agrupa los roles en tres tipos: los que buscan beneficio propio, los orientados a la interacción y los orientados al trabajo a realizar.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el sistema de signatura del EA, ¿qué representa el campo 'AA' en el código (S) S.DD/AA.VV.TT.tt?",
-    "opciones": [
-      "El año del documento",
-      "La agrupación",
-      "El autor del documento",
-      "La autoridad firmante"
-    ],
-    "respuestaCorrecta": "La agrupación",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "En el sistema de signatura del EA: (S)=sección, DD=división, AA=agrupación, VV=voz, TT=título, tt=subtítulo.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué valor militar se describe como 'conducta íntegra, obligación ética y componente esencial del prestigio personal y profesional'?",
-    "opciones": [
-      "Lealtad",
-      "Ejemplaridad",
-      "Respeto",
-      "Valor"
-    ],
-    "respuestaCorrecta": "Ejemplaridad",
-    "tema": "Valores Militares",
-    "explicacion": "La Ejemplaridad implica comportamiento ejemplar, conducta íntegra como obligación ética y es básica para la cohesión del equipo. Los mandos la refuerzan con el ejemplo (Art. 54 y 70 RR.OO.).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué principio de intervención psicológica busca transmitir información positiva y generar expectativas de recuperación en la víctima?",
-    "opciones": [
-      "Proximidad",
-      "Inmediatez",
-      "Expectativas",
-      "Unidad"
-    ],
-    "respuestaCorrecta": "Expectativas",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "El principio de Expectativas consiste en transmitir información positiva para que la víctima confíe en su recuperación.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué tipo de instrucción es emitida por los Jefes de UCO y regula el régimen interior o desarrolla normas de nivel superior?",
-    "opciones": [
-      "Instrucción General (IG)",
-      "Instrucción Particular (IP)",
-      "Procedimiento Operativo (PO)",
-      "Instrucción Comunicada"
-    ],
-    "respuestaCorrecta": "Procedimiento Operativo (PO)",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "El Procedimiento Operativo (PO) es emitido por Jefes de UCO y regula el régimen interior o desarrolla normas de nivel superior.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué Real Decreto regula las Reales Ordenanzas de las Fuerzas Armadas vigentes, que recogen el código deontológico con los principios éticos y reglas de comportamiento?",
-    "opciones": [
-      "R.D. 494/1984",
-      "R.D. 96/2009",
-      "R.D. 524/2022",
-      "Ley O. 9/2011"
-    ],
-    "respuestaCorrecta": "R.D. 96/2009",
-    "tema": "Valores Militares",
-    "explicacion": "El R.D. 96/2009 recoge las Reales Ordenanzas de las FAS, que son el código deontológico con los principios éticos y reglas de comportamiento. El R.D. 524/2022 cambió el nombre al Ejército del Aire.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según la numeración de disposiciones del EA, ¿a qué materia corresponde el código '60'?",
-    "opciones": [
-      "Operaciones",
-      "Adiestramiento",
-      "Personal",
-      "Material"
-    ],
-    "respuestaCorrecta": "Personal",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "El código 60 corresponde a Personal. El sistema de dos dígitos clasifica: 00 Doctrina, 10 Organización, 30 Operaciones, 50 Adiestramiento, 60 Personal, 70 Material, etc.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son las dos fases principales de una crisis psicológica?",
-    "opciones": [
-      "Fase de adaptación y fase de asimilación",
-      "Fase incipiente y fase terminal",
-      "Fase de shock y fase de reacción",
-      "Fase previa y fase final"
-    ],
-    "respuestaCorrecta": "Fase de shock y fase de reacción",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las fases de una crisis psicológica son la fase de shock (que afecta a emoción, cognición, fisiológico y motor) y la fase de reacción.",
-    "dificultad": "media",
+    "explicacion": "Brownn no indica que los roles sean siempre asignados por el líder. Los roles emergen de la dinámica del grupo y pueden ser reconocidos o negociados colectivamente.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro2"
   },
@@ -150,227 +90,17 @@
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Cuáles son los cuatro fundamentos para ser un buen líder según el temario?",
+    "pregunta": "¿Qué institución de la UE está formada por 27 comisarios que proponen nuevas leyes?",
     "opciones": [
-      "Visión, estrategia, control y disciplina",
-      "Modelo, ser apasionado, delegar y responsabilidad",
-      "Autoridad, honradez, inteligencia y autocontrol",
-      "Liderazgo autocrático, democrático, situacional y de rasgos"
-    ],
-    "respuestaCorrecta": "Modelo, ser apasionado, delegar y responsabilidad",
-    "tema": "Liderazgo",
-    "explicacion": "Los 4 fundamentos son: ser modelo (dar ejemplo), ser apasionado, saber delegar y asumir responsabilidad.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En la teoría situacional, ¿qué estilo combina baja tarea y alta relación?",
-    "opciones": [
-      "Decir",
-      "Vender",
-      "Delegar",
-      "Participar"
-    ],
-    "respuestaCorrecta": "Participar",
-    "tema": "Liderazgo",
-    "explicacion": "El estilo Participar combina baja tarea + alta relación. Es el adecuado cuando el subalterno tiene problemas de motivación pero es competente (nivel R3).",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Qué consecuencias psicológicas son INMEDIATAS (no a largo plazo) tras una catástrofe?",
-    "opciones": [
-      "Trastorno de estrés postraumático y abuso de sustancias",
-      "Trastorno adaptativo y trastorno de estrés agudo",
-      "Trastornos del estado de ánimo y trastornos psicosomáticos",
-      "Ira crónica y sentimiento de culpa persistente"
-    ],
-    "respuestaCorrecta": "Trastorno adaptativo y trastorno de estrés agudo",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las consecuencias INMEDIATAS son el trastorno adaptativo (depresivo, ansioso o mixto) y el trastorno de estrés agudo. Las de largo plazo incluyen el estrés postraumático y el abuso de sustancias.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué aeronave española se utiliza para misiones de contraincendios y en qué base aérea está ubicada?",
-    "opciones": [
-      "C-295 en BA Getafe",
-      "Canadair CL-415 en BA Torrejón",
-      "AS-332 Superpuma en BA Getafe",
-      "C-212 Aviocar en BA Alcantarilla"
-    ],
-    "respuestaCorrecta": "Canadair CL-415 en BA Torrejón",
-    "tema": "Material Aéreo",
-    "explicacion": "Los Canadair CL-215T y CL-415 se usan para contraincendios y están ubicados en BA Torrejón (43 Grupo FFAA).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el libro de registro, ¿qué información NO es obligatoria registrar como norma general?",
-    "opciones": [
-      "Número de entrada o salida",
-      "Fecha del asiento",
-      "Extracto o epígrafe del asunto",
-      "El número de páginas del documento"
-    ],
-    "respuestaCorrecta": "El número de páginas del documento",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "La información obligatoria es: número de registro, remitente/destinatario, fecha del documento, fecha y hora del asiento, y extracto del asunto. El número de páginas no figura entre los datos obligatorios.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué valor militar describe 'la fidelidad a una causa, cumplir el compromiso y buscar el éxito del equipo por el bien común'?",
-    "opciones": [
-      "Disciplina",
-      "Compromiso",
-      "Lealtad",
-      "Ejemplaridad"
-    ],
-    "respuestaCorrecta": "Lealtad",
-    "tema": "Valores Militares",
-    "explicacion": "La Lealtad se define como fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común, añadiendo sinceridad.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según el temario, ¿qué porcentaje de lo que se transmite en una conversación interpersonal es de forma no verbal?",
-    "opciones": [
-      "55%",
-      "70%",
-      "93%",
-      "38%"
-    ],
-    "respuestaCorrecta": "93%",
-    "tema": "Expresión Oral",
-    "explicacion": "Según el temario, en una conversación interpersonal el 93% de lo que se transmite es de forma no verbal.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué trastorno psicológico inmediato puede presentar una víctima tras una emergencia, caracterizado por agitación psicomotriz o inacción?",
-    "opciones": [
-      "Trastorno de estrés postraumático",
-      "Trastorno psicosomático",
-      "Trastorno de estrés agudo",
-      "Trastorno adaptativo ansioso"
-    ],
-    "respuestaCorrecta": "Trastorno de estrés agudo",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "El trastorno de estrés agudo es una consecuencia inmediata y puede manifestarse con agitación o inacción.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Un grupo militar lleva tiempo funcionando bien, pero últimamente hay dudas sobre el liderazgo, los miembros empiezan a cuestionar la misión común y hay desconfianza creciente. Según el modelo cíclico de Worchel, ¿en qué fase se encuentra el grupo y qué puede ocurrir a continuación?",
-    "opciones": [
-      "Fase de productividad grupal; a continuación vendrá la individualización",
-      "Fase de individualización; a continuación vendrá el declive grupal",
-      "Fase de declive grupal; el grupo puede reiniciar el ciclo o disolverse",
-      "Fase de descontento; se aproxima un suceso precipitante"
-    ],
-    "respuestaCorrecta": "Fase de declive grupal; el grupo puede reiniciar el ciclo o disolverse",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Las características descritas (dudas, desconfianza, cuestionamiento) corresponden a la fase de Declive grupal, la última del modelo de Worchel. Tras ella, el grupo puede reiniciar el ciclo con una nueva fase de descontento o disolverse.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Una víctima de tercer grado en una emergencia sería:",
-    "opciones": [
-      "Un familiar directo del afectado",
-      "Alguien que se salvó por no estar presente",
-      "Un miembro de los equipos intervinientes",
-      "Alguien que conoce el suceso por los medios"
-    ],
-    "respuestaCorrecta": "Un miembro de los equipos intervinientes",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las víctimas de 3º grado son los equipos intervinientes. Las de 2º grado son los familiares y las de 1º los afectados directamente.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según Kurt Lewin, ¿qué es un grupo?",
-    "opciones": [
-      "La suma de las individualidades que lo forman",
-      "Un todo dinámico que va más allá de la suma de sus miembros",
-      "Un conjunto de personas con el mismo cargo",
-      "Un equipo formal creado por una organización"
-    ],
-    "respuestaCorrecta": "Un todo dinámico que va más allá de la suma de sus miembros",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Para Lewin el grupo es un todo dinámico y no la simple suma de individualidades.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cómo denomina Janis (1972) al fenómeno por el que la búsqueda del consenso grupal desplaza la evaluación realista de alternativas?",
-    "opciones": [
-      "Cohesión grupal",
-      "Pensamiento grupal",
-      "Conformismo colectivo",
-      "Autocensura normativa"
-    ],
-    "respuestaCorrecta": "Pensamiento grupal",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Janis denominó 'pensamiento grupal' a esta manera de pensar donde prima la búsqueda del consenso pasando a segundo plano la evaluación realista de acciones alternativas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué tipo de documento militar se usa para comunicar decisiones u órdenes de la autoridad y es emitido al BOD por el EMA o el SEGE?",
-    "opciones": [
-      "Instrucción General",
-      "Instrucción Comunicada",
-      "Resolución",
-      "Procedimiento Operativo"
-    ],
-    "respuestaCorrecta": "Resolución",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "La Resolución comunica decisiones u órdenes de la autoridad y es emitida al BOD por el EMA o el SEGE.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuántos votos se necesitan para aprobar una resolución en el Consejo de Seguridad de la ONU, y qué condición especial existe?",
-    "opciones": [
-      "Mayoría simple de 8 votos sin condiciones especiales",
-      "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
-      "Unanimidad de los 15 miembros",
-      "9 votos y ratificación posterior por la Asamblea General"
-    ],
-    "respuestaCorrecta": "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Las resoluciones se aprueban con 9 votos, pero los 5 miembros permanentes (China, EEUU, Rusia, Francia y UK) poseen derecho de veto.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Es un organismo o institución de la Comunidad Europea:",
-    "opciones": [
-      "Tribunal de Justicia",
       "El Parlamento Europeo",
       "El Consejo Europeo",
-      "Todas son verdaderas"
+      "La Comisión Europea",
+      "El Tribunal de Justicia"
     ],
-    "respuestaCorrecta": "Todas son verdaderas",
+    "respuestaCorrecta": "La Comisión Europea",
     "tema": "Organizaciones Internacionales",
-    "explicacion": "",
-    "dificultad": "facil",
+    "explicacion": "La Comisión Europea está formada por 27 comisarios y es la encargada de proponer nuevas leyes en el conjunto de la UE.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
@@ -390,61 +120,331 @@
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿En qué año se creó el primer aeródromo militar en España y dónde estaba ubicado?",
+    "pregunta": "¿En qué instrucción general se describen los valores militares del Ejército del Aire?",
     "opciones": [
-      "1908, en Los Alcázares",
-      "1913, en Getafe",
-      "1911, en Cuatro Vientos",
-      "1915, en Zaragoza"
+      "IG 10-01",
+      "IG 00-1",
+      "IG 00-4",
+      "IG 10-14"
     ],
-    "respuestaCorrecta": "1911, en Cuatro Vientos",
+    "respuestaCorrecta": "IG 00-4",
+    "tema": "Valores Militares",
+    "explicacion": "Los valores militares están descritos en la IG 00-4, de 1 de octubre de 2015, sobre Liderazgo y Valores en el EA.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El texto que relata acontecimientos se denomina:",
+    "opciones": [
+      "Argumentativo",
+      "Expositivo",
+      "Narrativo",
+      "Descriptivo"
+    ],
+    "respuestaCorrecta": "Narrativo",
+    "tema": "Expresión Escrita",
+    "explicacion": "",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué valor militar describe 'la fidelidad a una causa, cumplir el compromiso y buscar el éxito del equipo por el bien común'?",
+    "opciones": [
+      "Disciplina",
+      "Compromiso",
+      "Lealtad",
+      "Ejemplaridad"
+    ],
+    "respuestaCorrecta": "Lealtad",
+    "tema": "Valores Militares",
+    "explicacion": "La Lealtad se define como fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común, añadiendo sinceridad.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El vuelo histórico 'Plus Ultra' de 1926 cruzó el Atlántico Sur. ¿Quién era el comandante y piloto de esa travesía?",
+    "opciones": [
+      "Capitán Barberán",
+      "Coronel Vives",
+      "Comandante Ramón Franco",
+      "Infante Alfonso de Orleáns"
+    ],
+    "respuestaCorrecta": "Comandante Ramón Franco",
     "tema": "Historia del EA",
-    "explicacion": "El primer aeródromo militar en España se creó en 1911 en Cuatro Vientos.",
-    "dificultad": "facil",
+    "explicacion": "El 'Plus Ultra' fue pilotado por el Comandante Ramón Franco, con tripulación formada también por Ruiz de Alda, Durán y el sargento Rada.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
+    "pregunta": "¿Qué diferencia conceptual existe entre los estresores 'potencialmente estresores' y los 'ocupacionales' dentro de los factores estresantes de los intervinientes?",
     "opciones": [
-      "Nelson Mandela",
-      "Malala Yousafzai",
-      "Martin Luther King",
-      "Napoleón Bonaparte"
+      "No existe diferencia; son sinónimos en el temario",
+      "Los potencialmente estresores son sucesos como muertes o heridos; los ocupacionales son tareas exigentes como triajes o decisiones difíciles",
+      "Los ocupacionales son externos al trabajo; los potencialmente estresores son internos al individuo",
+      "Los ocupacionales afectan solo a los mandos; los potencialmente estresores afectan a toda la tropa"
     ],
-    "respuestaCorrecta": "Napoleón Bonaparte",
-    "tema": "Liderazgo",
-    "explicacion": "Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es el primer deber del militar recogido en el Art. 3 de las Reales Ordenanzas?",
-    "opciones": [
-      "Obedecer las órdenes del mando",
-      "Disposición permanente para defender a España",
-      "Mantener la disciplina en todo momento",
-      "Respetar la bandera y el himno nacional"
-    ],
-    "respuestaCorrecta": "Disposición permanente para defender a España",
-    "tema": "Liderazgo",
-    "explicacion": "El Art. 3 establece como primer deber del militar la disposición permanente para defender a España, con entrega de la propia vida si fuera necesario.",
+    "respuestaCorrecta": "Los potencialmente estresores son sucesos como muertes o heridos; los ocupacionales son tareas exigentes como triajes o decisiones difíciles",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Los estresores 'potencialmente estresores' son sucesos como presenciar muertes o heridos. Los 'ocupacionales' son las propias exigencias del trabajo: tareas muy exigentes, triajes, decisiones de alta presión. Los 'ambientales' serían la climatología extrema.",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "En la clasificación de documentos administrativos, ¿a qué categoría pertenecen las solicitudes, denuncias, alegaciones y recursos?",
+    "pregunta": "En el protocolo de intervención psicológica, el principio de 'Proximidad' hace referencia a:",
     "opciones": [
-      "Documentos de Decisión",
-      "Documentos de Transmisión",
-      "Documentos de Juicio",
-      "Documentos de los Ciudadanos"
+      "Intervenir lo antes posible para evitar daños mayores",
+      "Prestar la atención psicológica cerca del lugar de la catástrofe",
+      "Transmitir expectativas positivas a la víctima",
+      "Utilizar métodos de intervención breves y sencillos"
     ],
-    "respuestaCorrecta": "Documentos de los Ciudadanos",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "Las solicitudes, denuncias, alegaciones y recursos (instancias) pertenecen a la categoría de Documentos de los Ciudadanos.",
+    "respuestaCorrecta": "Prestar la atención psicológica cerca del lugar de la catástrofe",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "El principio de Proximidad indica que la atención psicológica debe prestarse próxima al lugar de la catástrofe.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuántos idiomas oficiales tiene la ONU y cuáles son exactamente?",
+    "opciones": [
+      "5: inglés, francés, español, ruso y chino",
+      "6: árabe, chino, español, francés, inglés y ruso",
+      "6: árabe, chino, inglés, francés, portugués y ruso",
+      "7: árabe, chino, español, francés, inglés, ruso y alemán"
+    ],
+    "respuestaCorrecta": "6: árabe, chino, español, francés, inglés y ruso",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La ONU tiene exactamente 6 idiomas oficiales: árabe, chino, español, francés, inglés y ruso. De ellos, solo el francés y el inglés son idiomas de trabajo.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Qué tratamiento escrito corresponde a un Coronel o Capitán de Navío?",
+    "opciones": [
+      "Excelencia — V.E. — Excmo. Sr.",
+      "Señoría — V.S. — Ilustrísimo Señor",
+      "Majestad — V.M.",
+      "Alteza Real — S.A.R."
+    ],
+    "respuestaCorrecta": "Señoría — V.S. — Ilustrísimo Señor",
+    "tema": "Expresión Escrita",
+    "explicacion": "A los Coroneles y Capitanes de Navío les corresponde el tratamiento de Señoría (V.S.), con el encabezado 'Ilustrísimo Señor' y la abreviatura 'Usía'. La Excelencia es para Oficiales Generales.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué significa la sigla 'S/Ref.' en un documento militar?",
+    "opciones": [
+      "Sección de referencia interna del expediente",
+      "Referencia al sistema de clasificación del EA",
+      "La referencia del documento al que se está respondiendo",
+      "El número de registro de salida del documento"
+    ],
+    "respuestaCorrecta": "La referencia del documento al que se está respondiendo",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "S/Ref. (Su Referencia) se usa cuando se responde a otro documento; se cita el número del documento recibido. N/Ref. es la referencia interna propia.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿En qué Instrucción General se describen los valores militares?",
+    "opciones": [
+      "En la I.G. 00-4",
+      "En la I.G. 00-1",
+      "No se describen en ninguna I.G. Aparecen en una Orden Ministerial.",
+      "No se describen en ninguna I.G. Aparecen en las Reales Ordenanzas del Ejército del Aire."
+    ],
+    "respuestaCorrecta": "En la I.G. 00-4",
+    "tema": "Valores Militares",
+    "explicacion": "",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué habilidad de escucha activa consiste en repetir con otras palabras lo que el interlocutor ha dicho para asegurar la comprensión?",
+    "opciones": [
+      "Resumir",
+      "Parafrasear",
+      "Emitir palabras de refuerzo",
+      "Hacer cumplidos"
+    ],
+    "respuestaCorrecta": "Parafrasear",
+    "tema": "Expresión Oral",
+    "explicacion": "Parafrasear es la habilidad que ayuda a la comprensión, consistiendo en reformular con otras palabras lo que el interlocutor ha expresado.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Un documento llega a una unidad militar. Al registrarlo, ¿cuál es la diferencia entre la 'fecha del documento' y la 'fecha del asiento' que deben constar en el libro de registro?",
+    "opciones": [
+      "Son lo mismo; el temario no distingue entre ellas",
+      "La fecha del documento es cuándo se creó; la del asiento es cuándo se registró en el libro",
+      "La fecha del asiento es la de creación; la del documento es la de recepción",
+      "Solo es obligatorio registrar la fecha del asiento, no la del documento"
+    ],
+    "respuestaCorrecta": "La fecha del documento es cuándo se creó; la del asiento es cuándo se registró en el libro",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "El libro de registro debe contener ambas por separado: la fecha del documento (cuándo fue creado o emitido) y la fecha y hora del asiento (cuándo fue registrado en la unidad receptora). Son datos distintos y ambos obligatorios.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según el temario, ¿qué ocurre con el volumen de la voz cuando una persona siente miedo, excitación o rabia?",
+    "opciones": [
+      "El volumen disminuye considerablemente",
+      "El volumen se mantiene estable",
+      "El volumen aumenta",
+      "El volumen se vuelve irregular e impredecible"
+    ],
+    "respuestaCorrecta": "El volumen aumenta",
+    "tema": "Expresión Oral",
+    "explicacion": "Según el temario, el volumen de la voz aumenta al sentir miedo, excitación o rabia. Subir el volumen también es una llamada de atención.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Quién firma una Instrucción Particular (IP) y cuál es su ámbito de aplicación?",
+    "opciones": [
+      "La firma el JEMA y es de aplicación en todo el Ejército del Aire",
+      "La firma el Ministro de Defensa y se publica en el BOD",
+      "La firma el Jefe de Mando y es obligatoria para sus unidades dependientes",
+      "La firma el Jefe de UCO y regula el régimen interior de su unidad"
+    ],
+    "respuestaCorrecta": "La firma el Jefe de Mando y es obligatoria para sus unidades dependientes",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La Instrucción Particular (IP) la emite el Jefe de Mando, desarrolla normas superiores dentro de su ámbito y es obligatoria para sus unidades dependientes. No debe confundirse con el Procedimiento Operativo (PO), que lo emite el Jefe de UCO.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En la teoría situacional, ¿qué estilo combina baja tarea y alta relación?",
+    "opciones": [
+      "Decir",
+      "Vender",
+      "Delegar",
+      "Participar"
+    ],
+    "respuestaCorrecta": "Participar",
+    "tema": "Liderazgo",
+    "explicacion": "El estilo Participar combina baja tarea + alta relación. Es el adecuado cuando el subalterno tiene problemas de motivación pero es competente (nivel R3).",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué tipo de prelación en mensajería formal (MEFO) indica que el mensaje debe entregarse en un plazo máximo de 6 horas?",
+    "opciones": [
+      "Z, Flash",
+      "O, Inmediato",
+      "P, Prioridad",
+      "R, Rutina"
+    ],
+    "respuestaCorrecta": "P, Prioridad",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La prelación P (Prioridad) indica que el mensaje debe entregarse en un plazo de hasta 6 horas.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué principio de intervención psicológica indica que se deben emplear métodos breves y sencillos?",
+    "opciones": [
+      "Inmediatez",
+      "Proximidad",
+      "Simplicidad",
+      "Unidad"
+    ],
+    "respuestaCorrecta": "Simplicidad",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "El principio de Simplicidad establece que deben usarse métodos breves y sencillos en la intervención psicológica.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿En qué año cambió su denominación el Ejército del Aire para incluir la palabra 'Espacio', y por qué Real Decreto?",
+    "opciones": [
+      "2020, RD 200/2020",
+      "2022, RD 524/2022",
+      "2019, RD 83/2019",
+      "2015, RD 494/2015"
+    ],
+    "respuestaCorrecta": "2022, RD 524/2022",
+    "tema": "Historia del EA",
+    "explicacion": "En junio de 2022, por Real Decreto 524/2022, el Ejército del Aire pasó a denominarse Ejército del Aire y del Espacio.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El secretario general de la ONU Antonio Guterres es de nacionalidad portuguesa y ocupa el cargo desde 2017. ¿Qué número de secretario general es?",
+    "opciones": [
+      "Sexto",
+      "Séptimo",
+      "Octavo",
+      "Noveno"
+    ],
+    "respuestaCorrecta": "Octavo",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "Guterres es el octavo secretario general de la ONU, cargo que ocupa desde 2017.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuáles son las dos funciones principales de los documentos administrativos según el temario?",
+    "opciones": [
+      "Función ejecutiva y función normativa",
+      "Función de constancia y función de comunicación",
+      "Función jurídica y función archivística",
+      "Función informativa y función disciplinaria"
+    ],
+    "respuestaCorrecta": "Función de constancia y función de comunicación",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "Los documentos administrativos tienen dos funciones: la función de constancia (conservar y demostrar la existencia de los actos) y la función de comunicación (interna o externa).",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué técnica de grupo, estructurada en fases de generación de ideas por escrito, ronda de ideas y votación preliminar, integra trabajo individual y grupal?",
+    "opciones": [
+      "Grupo inestructurado",
+      "Brainstorming libre",
+      "Grupo nominal",
+      "Dinámica de roles"
+    ],
+    "respuestaCorrecta": "Grupo nominal",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "El grupo nominal es una reunión estructurada que integra trabajo individual y grupal, con fases de preparación, generación de ideas por escrito, ronda, discusión, votación y discusión final.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuántos votos se necesitan para aprobar una resolución en el Consejo de Seguridad de la ONU, y qué condición especial existe?",
+    "opciones": [
+      "Mayoría simple de 8 votos sin condiciones especiales",
+      "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
+      "Unanimidad de los 15 miembros",
+      "9 votos y ratificación posterior por la Asamblea General"
+    ],
+    "respuestaCorrecta": "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "Las resoluciones se aprueban con 9 votos, pero los 5 miembros permanentes (China, EEUU, Rusia, Francia y UK) poseen derecho de veto.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"

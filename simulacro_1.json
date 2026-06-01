@@ -1,135 +1,90 @@
 [
   {
-    "pregunta": "¿En qué instrucción general se describen los valores militares del Ejército del Aire?",
+    "pregunta": "Una persona que presenció un accidente pero no resultó herida ni tiene familiares implicados, aunque sufre angustia, ¿a qué grado de víctima pertenece?",
     "opciones": [
-      "IG 10-01",
-      "IG 00-1",
-      "IG 00-4",
-      "IG 10-14"
+      "Primer grado",
+      "Tercer grado",
+      "Cuarto grado",
+      "Quinto grado"
     ],
-    "respuestaCorrecta": "IG 00-4",
-    "tema": "Valores Militares",
-    "explicacion": "Los valores militares están descritos en la IG 00-4, de 1 de octubre de 2015, sobre Liderazgo y Valores en el EA.",
+    "respuestaCorrecta": "Quinto grado",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las víctimas de 5.º grado son las implicadas emocionalmente por conocer el suceso, aunque no estuvieran presentes ni tengan relación directa con las víctimas.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Cada cuántos años se eligen los representantes del Parlamento Europeo?",
+    "pregunta": "¿Quién fue el autor referente en la dinámica de grupos?",
     "opciones": [
-      "3 años",
-      "4 años",
-      "5 años",
-      "6 años"
+      "Stephen Olson",
+      "Winston Churchill",
+      "Albert Einstein",
+      "Kurt Lewin"
     ],
-    "respuestaCorrecta": "5 años",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Los representantes ciudadanos del Parlamento Europeo son elegidos cada 5 años.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "La Comunidad Europea del Carbón y del Acero fue el embrión de la actual UE. ¿Cuáles fueron sus seis países fundadores?",
-    "opciones": [
-      "Francia, Alemania, Italia, España, Portugal y Bélgica",
-      "Alemania, Bélgica, Francia, Italia, Luxemburgo y Países Bajos",
-      "Francia, Reino Unido, Alemania, Italia, Países Bajos y Dinamarca",
-      "Alemania, Francia, Polonia, Italia, Austria y Bélgica"
-    ],
-    "respuestaCorrecta": "Alemania, Bélgica, Francia, Italia, Luxemburgo y Países Bajos",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Los 6 países fundadores fueron Alemania, Bélgica, Francia, Italia, Luxemburgo y Países Bajos, unidos bajo el lema 'si se quiere evitar una guerra, hay que trabajar juntos'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué fase de la escritura corresponde al “EMENDATIO”?",
-    "opciones": [
-      "Revisión",
-      "Construcción",
-      "Disposición",
-      "El concepto EMENDATIO corresponde a la expresión oral"
-    ],
-    "respuestaCorrecta": "Revisión",
-    "tema": "Expresión Escrita",
+    "respuestaCorrecta": "Kurt Lewin",
+    "tema": "Dinámica de Grupos",
     "explicacion": "",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Qué artículo de las RROO establece que el primer deber del militar es la disposición permanente para defender España?",
+    "pregunta": "⚠ Trampa — Janis (1972) identifica 3 categorías de procesos en el pensamiento grupal. ¿Cuál de estas NO es una de ellas?",
     "opciones": [
-      "Artículo 7",
-      "Artículo 10",
-      "Artículo 3",
-      "Artículo 20"
+      "Conducta intergrupal y conflictos con grupos rivales",
+      "Ilusión de invulnerabilidad e ilusión de unanimidad",
+      "Presión hacia la uniformidad y autocensura",
+      "Cohesión extrema que bloquea la toma de decisiones individuales"
     ],
-    "respuestaCorrecta": "Artículo 3",
-    "tema": "Valores Militares",
-    "explicacion": "El Art. 3 de las RROO establece que el primer deber del militar es la disposición permanente para defender a España, incluyendo la entrega de la vida.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "El estudio de la Universidad de Michigan sobre liderazgo conductual distingue dos orientaciones. ¿Cuáles son?",
-    "opciones": [
-      "Orientación a la tarea y orientación a la estructura",
-      "Orientación al empleado y orientación a la producción",
-      "Orientación al logro y orientación a la participación",
-      "Orientación directiva y orientación de apoyo"
-    ],
-    "respuestaCorrecta": "Orientación al empleado y orientación a la producción",
-    "tema": "Liderazgo",
-    "explicacion": "El estudio de la Universidad de Michigan identifica la conducta orientada al empleado (interés en sus necesidades) y la conducta orientada a la producción (prioridad al trabajo).",
+    "respuestaCorrecta": "Cohesión extrema que bloquea la toma de decisiones individuales",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "Las 3 categorías de Janis son: conducta intergrupal, ilusiones compartidas (invulnerabilidad y unanimidad) y aspectos coercitivos (presión hacia la uniformidad y autocensura). 'Cohesión extrema que bloquea decisiones individuales' no es una categoría nombrada como tal.",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Qué normativa puede aplicarse en caso de incumplimiento grave de los valores militares que constituya un delito?",
+    "pregunta": "¿Qué propiedad textual consiste en el uso correcto de puntuación, nexos, anáforas y conectores en un texto?",
     "opciones": [
-      "Solo el Régimen Disciplinario",
-      "Solo el Código Penal Militar",
-      "Tanto el Régimen Disciplinario como el Código Penal Militar",
-      "Las Reales Ordenanzas únicamente"
+      "Adecuación",
+      "Coherencia",
+      "Cohesión",
+      "Gramática"
     ],
-    "respuestaCorrecta": "Tanto el Régimen Disciplinario como el Código Penal Militar",
-    "tema": "Valores Militares",
-    "explicacion": "Pueden aplicarse tanto la Ley Orgánica 8/2014 (Régimen Disciplinario) como la Ley Orgánica 14/2015 (Código Penal Militar).",
+    "respuestaCorrecta": "Cohesión",
+    "tema": "Expresión Escrita",
+    "explicacion": "La cohesión se refiere al uso correcto de puntuación, nexos, anáforas y conectores textuales.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué tipo de comunicación organizacional puede distorsionarse a través del 'gatekeeping' o efecto portero?",
+    "opciones": [
+      "Comunicación horizontal",
+      "Comunicación vertical descendente",
+      "Comunicación vertical ascendente",
+      "Comunicación informal"
+    ],
+    "respuestaCorrecta": "Comunicación vertical ascendente",
+    "tema": "Expresión Oral",
+    "explicacion": "La comunicación vertical ascendente puede sufrir distorsiones como el gatekeeping (reducción o restricción de la información) u ocultación.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "El sistema de signatura del EA para archivar documentos sigue el formato: (S) S.DD/AA.VV.TT.tt. ¿Qué representan las letras 'AA' en ese código?",
+    "pregunta": "⚠ TRAMPA — ¿Cuál de estas afirmaciones sobre la OTAN es INCORRECTA?",
     "opciones": [
-      "Las iniciales del autor del documento",
-      "El año de creación del documento",
-      "La agrupación temática del documento",
-      "La autoridad firmante del documento"
+      "Su tratado consta de un preámbulo y 14 artículos",
+      "Fue creada en 1949 por 12 países fundadores",
+      "El Art. 5 regula la incorporación de nuevos estados europeos",
+      "El cuartel general está en Bruselas"
     ],
-    "respuestaCorrecta": "La agrupación temática del documento",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "En el sistema de signatura del EA: (S) es la sección, DD es la división, AA es la agrupación, VV es la voz, TT es el título y Tt es el subtítulo. Las letras AA representan la Agrupación temática.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes NO es uno de los 7 rasgos de la teoría de rasgos del liderazgo?",
-    "opciones": [
-      "Ambición y energía",
-      "Autoconfianza e inteligencia",
-      "Carisma y popularidad",
-      "Honradez e integridad"
-    ],
-    "respuestaCorrecta": "Carisma y popularidad",
-    "tema": "Liderazgo",
-    "explicacion": "Los 7 rasgos son: ambición y energía, deseo de dirigir, honradez e integridad, autoconfianza, inteligencia, conocimiento y autocontrol. El carisma no figura entre ellos.",
+    "respuestaCorrecta": "El Art. 5 regula la incorporación de nuevos estados europeos",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El Art. 5 establece el compromiso de autodefensa colectiva. Es el Art. 10 el que permite invitar a ingresar a cualquier estado europeo por acuerdo unánime. El resto de afirmaciones son correctas.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro1"
@@ -150,166 +105,76 @@
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿A qué se refiere el concepto 'expediente' en el sistema de registro y gestión documental del EA?",
+    "pregunta": "Un redactor usa constantemente la voz pasiva, calca estructuras del inglés y emplea el gerundio de forma incorrecta. ¿Qué problema del lenguaje militar está cometiendo según el temario?",
     "opciones": [
-      "Un expediente personal de un militar",
-      "El libro físico donde se anotan entradas y salidas",
-      "El conjunto de documentos correspondientes a un mismo asunto",
-      "El sistema electrónico de mensajería oficial"
+      "Está usando falsos amigos de forma reiterada",
+      "Está incurriendo en traducción directa sin adecuar al español",
+      "Está mezclando registros culto y coloquial de forma inapropiada",
+      "Está violando las normas de cohesión textual"
     ],
-    "respuestaCorrecta": "El conjunto de documentos correspondientes a un mismo asunto",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "El expediente es el conjunto de documentos correspondientes a un mismo asunto. Es uno de los conceptos básicos del sistema de registro y gestión documental.",
-    "dificultad": "media",
+    "respuestaCorrecta": "Está incurriendo en traducción directa sin adecuar al español",
+    "tema": "Expresión Escrita",
+    "explicacion": "El temario advierte sobre la 'traducción directa': calcar la estructura lógica del inglés y el uso incorrecto del gerundio. También alerta del uso de voz pasiva cuando debe usarse voz activa. Son errores propios de la traducción directa sin adecuación al español.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "⚠ TRAMPA — ¿Cuál de las siguientes afirmaciones sobre la disponibilidad es INCORRECTA?",
+    "pregunta": "Es un organismo o institución de la Comunidad Europea:",
     "opciones": [
-      "El Art. 3 establece como primer deber la disposición permanente para defender España",
-      "La recompensa del deber cumplido es motivo de orgullo",
-      "El Art. 20 recoge la disponibilidad permanente para el servicio",
-      "La disponibilidad solo se exige en tiempo de guerra o misión internacional"
+      "Tribunal de Justicia",
+      "El Parlamento Europeo",
+      "El Consejo Europeo",
+      "Todas son verdaderas"
     ],
-    "respuestaCorrecta": "La disponibilidad solo se exige en tiempo de guerra o misión internacional",
+    "respuestaCorrecta": "Todas son verdaderas",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
+    "opciones": [
+      "Nelson Mandela",
+      "Malala Yousafzai",
+      "Martin Luther King",
+      "Napoleón Bonaparte"
+    ],
+    "respuestaCorrecta": "Napoleón Bonaparte",
+    "tema": "Liderazgo",
+    "explicacion": "Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué normativa nos puede ser de aplicación en caso de incumplimiento de nuestros valores?",
+    "opciones": [
+      "El Régimen disciplinario únicamente.",
+      "El Código Penal Militar únicamente.",
+      "Tanto el Código Penal como el Régimen Disciplinario.",
+      "No nos pueden aplicar nada…"
+    ],
+    "respuestaCorrecta": "Tanto el Código Penal como el Régimen Disciplinario.",
     "tema": "Valores Militares",
-    "explicacion": "La disponibilidad es permanente, no solo en guerra o misiones. El Art. 20 establece expresamente la 'Disponibilidad Permanente para el Servicio'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué tipo de prelación en mensajería formal (MEFO) indica que el mensaje debe entregarse en un plazo máximo de 6 horas?",
-    "opciones": [
-      "Z, Flash",
-      "O, Inmediato",
-      "P, Prioridad",
-      "R, Rutina"
-    ],
-    "respuestaCorrecta": "P, Prioridad",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "La prelación P (Prioridad) indica que el mensaje debe entregarse en un plazo de hasta 6 horas.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué diferencia hay entre 'oír' y 'escuchar activamente' según el temario?",
-    "opciones": [
-      "Ninguna; son sinónimos en el contexto de la comunicación",
-      "Oír es percibir el sonido; escuchar activamente implica percibir también emociones e ideas que hay detrás",
-      "Oír requiere más atención que escuchar",
-      "Escuchar es pasivo; oír es activo"
-    ],
-    "respuestaCorrecta": "Oír es percibir el sonido; escuchar activamente implica percibir también emociones e ideas que hay detrás",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Oír es simplemente percibir el sonido. Escuchar activamente va más allá: implica captar emociones, ideas y pensamientos que no se expresan directamente.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "En el sistema de mensajería formal (MEFO/teletipo), ¿qué prelación indica que el mensaje debe entregarse en un plazo máximo de 6 horas?",
-    "opciones": [
-      "Z — Flash",
-      "O — Inmediato",
-      "P — Prioridad",
-      "R — Rutina"
-    ],
-    "respuestaCorrecta": "P — Prioridad",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "La prelación P (Prioridad) indica entrega en hasta 6 horas. La O (Inmediato) es menos de 1 hora y la Z (Flash) lo antes posible.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuántos miembros permanentes tiene el Consejo de Seguridad de la ONU y qué derecho especial poseen?",
-    "opciones": [
-      "9 miembros con derecho a voto doble",
-      "15 miembros con capacidad de mediación exclusiva",
-      "5 miembros permanentes con derecho de veto",
-      "5 miembros permanentes elegidos cada 4 años"
-    ],
-    "respuestaCorrecta": "5 miembros permanentes con derecho de veto",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El Consejo de Seguridad tiene 15 miembros, de los cuales 5 son permanentes (China, EEUU, Rusia, Francia y UK) y poseen derecho de veto.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Las hoy denominadas “Naciones Unidas” se fundaron:",
-    "opciones": [
-      "Después de la Segunda Guerra Mundial, en 1945",
-      "Para impulsar la seguridad colectiva de todos los países de Europa",
-      "Al finalizar la Primera Guerra Mundial",
-      "Por iniciativa de Reino Unido en 1957"
-    ],
-    "respuestaCorrecta": "Después de la Segunda Guerra Mundial, en 1945",
-    "tema": "Organizaciones Internacionales",
     "explicacion": "",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "Posibles consecuencias psicológicas a LARGO plazo tras una catástrofe incluyen:",
+    "pregunta": "¿Cuáles son las dos fases principales de una crisis psicológica?",
     "opciones": [
-      "Agitación psicomotriz e inacción",
-      "Trastorno adaptativo depresivo",
-      "Trastornos del estado de ánimo y abuso de sustancias",
-      "Reacciones emocionales intensas de pocas horas"
+      "Fase de adaptación y fase de asimilación",
+      "Fase incipiente y fase terminal",
+      "Fase de shock y fase de reacción",
+      "Fase previa y fase final"
     ],
-    "respuestaCorrecta": "Trastornos del estado de ánimo y abuso de sustancias",
+    "respuestaCorrecta": "Fase de shock y fase de reacción",
     "tema": "Apoyo Psicológico",
-    "explicacion": "A largo plazo pueden aparecer trastorno de estrés postraumático, trastornos del estado de ánimo y abuso de sustancias.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Un oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona. ¿Cuántos asuntos puede tratar un mismo oficio?",
-    "opciones": [
-      "Los que sean necesarios sin límite",
-      "Hasta tres asuntos como máximo",
-      "Un único asunto",
-      "Dos asuntos si están relacionados"
-    ],
-    "respuestaCorrecta": "Un único asunto",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "Según la normativa, un oficio trata un solo asunto. Además usa N/Ref y S/Ref para su identificación y seguimiento.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué diferencia conceptual existe entre los estresores 'potencialmente estresores' y los 'ocupacionales' dentro de los factores estresantes de los intervinientes?",
-    "opciones": [
-      "No existe diferencia; son sinónimos en el temario",
-      "Los potencialmente estresores son sucesos como muertes o heridos; los ocupacionales son tareas exigentes como triajes o decisiones difíciles",
-      "Los ocupacionales son externos al trabajo; los potencialmente estresores son internos al individuo",
-      "Los ocupacionales afectan solo a los mandos; los potencialmente estresores afectan a toda la tropa"
-    ],
-    "respuestaCorrecta": "Los potencialmente estresores son sucesos como muertes o heridos; los ocupacionales son tareas exigentes como triajes o decisiones difíciles",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Los estresores 'potencialmente estresores' son sucesos como presenciar muertes o heridos. Los 'ocupacionales' son las propias exigencias del trabajo: tareas muy exigentes, triajes, decisiones de alta presión. Los 'ambientales' serían la climatología extrema.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿A qué fase del proceso de escritura corresponde la etapa 'Elocutio'?",
-    "opciones": [
-      "Construcción e ideación del tema",
-      "Ordenar y planificar mediante esquemas",
-      "Redacción y elección de la expresión lingüística",
-      "Revisión y corrección"
-    ],
-    "respuestaCorrecta": "Redacción y elección de la expresión lingüística",
-    "tema": "Expresión Escrita",
-    "explicacion": "La Elocutio es la fase de redacción: elegir la expresión lingüística adecuada, elaborar borradores y dar forma al texto.",
+    "explicacion": "Las fases de una crisis psicológica son la fase de shock (que afecta a emoción, cognición, fisiológico y motor) y la fase de reacción.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro1"
@@ -330,92 +195,167 @@
     "examen": "simulacro1"
   },
   {
-    "pregunta": "⚠ TRAMPA — ¿Cuál de estas fórmulas de tratamiento escrito es CORRECTA para dirigirse a un Oficial General del Ejército?",
+    "pregunta": "¿En qué teoría sobre el liderazgo existen ciertos comportamientos específicos que diferencian a los líderes de los no líderes?",
     "opciones": [
-      "Señoría — V.S. — Ilustrísimo Señor",
-      "Excelencia — V.E. — Excmo. Sr.",
-      "Alteza Real — S.A.R.",
-      "Majestad — V.M."
+      "Rasgos",
+      "Conductuales",
+      "Situacional",
+      "Teoría de la Ruta-Meta"
     ],
-    "respuestaCorrecta": "Excelencia — V.E. — Excmo. Sr.",
-    "tema": "Expresión Escrita",
-    "explicacion": "A los Oficiales Generales y almirantes corresponde el tratamiento de Excelencia (V.E.), con el pie 'Excmo. Sr.'. Señoría corresponde a Coroneles.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "En el protocolo de intervención psicológica, el principio de 'Proximidad' hace referencia a:",
-    "opciones": [
-      "Intervenir lo antes posible para evitar daños mayores",
-      "Prestar la atención psicológica cerca del lugar de la catástrofe",
-      "Transmitir expectativas positivas a la víctima",
-      "Utilizar métodos de intervención breves y sencillos"
-    ],
-    "respuestaCorrecta": "Prestar la atención psicológica cerca del lugar de la catástrofe",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "El principio de Proximidad indica que la atención psicológica debe prestarse próxima al lugar de la catástrofe.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál de las siguientes sí es una de las cuatro teorías de liderazgo más representativas?",
-    "opciones": [
-      "Teoría de valores",
-      "Teoría de contingencia absoluta",
-      "Teoría de la ruta-meta",
-      "Teoría del liderazgo natural"
-    ],
-    "respuestaCorrecta": "Teoría de la ruta-meta",
+    "respuestaCorrecta": "Conductuales",
     "tema": "Liderazgo",
-    "explicacion": "Las 4 teorías más representativas son: teoría de rasgos, teorías conductuales, teoría situacional y teoría de la ruta-meta.",
+    "explicacion": "",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Qué valor militar se define como 'implicación intelectual y emocional con la institución por convencimiento'?",
+    "pregunta": "Para aplicar la técnica de grupo inestructurado, ¿cuántos miembros debe tener como máximo el grupo?",
     "opciones": [
-      "Lealtad",
-      "Disponibilidad",
-      "Compromiso",
-      "Profesionalidad"
+      "Menos de 4",
+      "Menos de 6",
+      "Menos de 10",
+      "No hay límite de tamaño"
     ],
-    "respuestaCorrecta": "Compromiso",
-    "tema": "Valores Militares",
-    "explicacion": "El Compromiso se define como la implicación intelectual y emocional con la institución por convencimiento.",
+    "respuestaCorrecta": "Menos de 6",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "La técnica de grupo inestructurado requiere que el grupo sea inferior a 6 miembros, que el objetivo sea rutinario y el tema no muy trascendente.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Cuáles son los márgenes establecidos en la IG 10-01 para los documentos en papel A4 del Ejército del Aire?",
+    "pregunta": "¿Cuántos miembros permanentes tiene el Consejo de Seguridad de la ONU y qué derecho especial poseen?",
     "opciones": [
-      "Izq. 25mm / Der. 25mm / Sup. 30mm / Inf. 30mm",
-      "Izq. 30mm / Der. 15mm / Sup. 40mm / Inf. 20mm",
-      "Izq. 20mm / Der. 20mm / Sup. 35mm / Inf. 25mm",
-      "Izq. 35mm / Der. 10mm / Sup. 45mm / Inf. 15mm"
+      "9 miembros con derecho a voto doble",
+      "15 miembros con capacidad de mediación exclusiva",
+      "5 miembros permanentes con derecho de veto",
+      "5 miembros permanentes elegidos cada 4 años"
     ],
-    "respuestaCorrecta": "Izq. 30mm / Der. 15mm / Sup. 40mm / Inf. 20mm",
+    "respuestaCorrecta": "5 miembros permanentes con derecho de veto",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El Consejo de Seguridad tiene 15 miembros, de los cuales 5 son permanentes (China, EEUU, Rusia, Francia y UK) y poseen derecho de veto.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuáles son los dos idiomas de TRABAJO de la ONU, de entre sus seis idiomas oficiales?",
+    "opciones": [
+      "Inglés y español",
+      "Inglés y chino",
+      "Francés e inglés",
+      "Árabe y francés"
+    ],
+    "respuestaCorrecta": "Francés e inglés",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "Los 6 idiomas oficiales son árabe, chino, español, francés, inglés y ruso, pero solo el francés y el inglés son idiomas de trabajo.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuál es la función que garantiza la conservación de los actos, demuestra la existencia de ellos y da derecho a los ciudadanos a acceder a los mismos?",
+    "opciones": [
+      "Función de constancia",
+      "Función de comunicación",
+      "Función de existencia",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": "Función de constancia",
     "tema": "Registro y Redacción de Documentos",
-    "explicacion": "La IG 10-01 establece: margen izquierdo 30mm, derecho 15mm, superior 40mm e inferior 20mm. Fuente Arial 11, interlineado sencillo, texto justificado.",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "Según el temario, ¿qué porcentaje de lo que se transmite en una conversación interpersonal es de forma no verbal?",
+    "opciones": [
+      "55%",
+      "70%",
+      "93%",
+      "38%"
+    ],
+    "respuestaCorrecta": "93%",
+    "tema": "Expresión Oral",
+    "explicacion": "Según el temario, en una conversación interpersonal el 93% de lo que se transmite es de forma no verbal.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "Una persona que conoce el suceso por los medios de comunicación y experimenta angustia sin haber estado presente ni tener familiares implicados, ¿a qué grado de víctima pertenece?",
+    "opciones": [
+      "Cuarto grado — comunidad afectada",
+      "Quinto grado — implicados por conocer el suceso",
+      "Sexto grado — accidente blanco",
+      "No se considera víctima"
+    ],
+    "respuestaCorrecta": "Quinto grado — implicados por conocer el suceso",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las víctimas de 5.º grado son las personas implicadas emocionalmente por conocer el suceso a través de los medios u otras fuentes.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "El estudio de la Universidad de Michigan sobre liderazgo conductual distingue dos orientaciones. ¿Cuáles son?",
+    "opciones": [
+      "Orientación a la tarea y orientación a la estructura",
+      "Orientación al empleado y orientación a la producción",
+      "Orientación al logro y orientación a la participación",
+      "Orientación directiva y orientación de apoyo"
+    ],
+    "respuestaCorrecta": "Orientación al empleado y orientación a la producción",
+    "tema": "Liderazgo",
+    "explicacion": "El estudio de la Universidad de Michigan identifica la conducta orientada al empleado (interés en sus necesidades) y la conducta orientada a la producción (prioridad al trabajo).",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Qué elemento de la comunicación no verbal estudia los desplazamientos, el espacio personal y cómo nos movemos refleja nuestro estado?",
+    "pregunta": "La instancia es un documento de los ciudadanos. ¿Cuál de las siguientes afirmaciones sobre la instancia es FALSA?",
     "opciones": [
-      "Kinesia",
-      "Paralingüística",
-      "Proxémica",
-      "Gestualización"
+      "Puede incluir solicitudes, denuncias, alegaciones o recursos",
+      "Debe llevar datos del solicitante, expone, solicita, fecha y firma",
+      "Debe ir firmada por el Jefe de la UCO del interesado",
+      "Debe registrarse de entrada conforme a lo establecido en la IG 10-14"
     ],
-    "respuestaCorrecta": "Proxémica",
-    "tema": "Expresión Oral",
-    "explicacion": "La proxémica estudia el conjunto de comportamientos no verbales relacionados con el uso y estructuración del espacio inmediato al comunicador.",
+    "respuestaCorrecta": "Debe ir firmada por el Jefe de la UCO del interesado",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La instancia la firma el propio interesado, no el Jefe de su UCO. Esa es una afirmación falsa que aparece como trampa habitual en el temario.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "En las características de los documentos, ¿qué efectos producen frente a terceros o a la propia organización?",
+    "opciones": [
+      "Jurídicos",
+      "Informativos o comunicativos",
+      "Ninguna es correcta",
+      "A y B son correctas"
+    ],
+    "respuestaCorrecta": "A y B son correctas",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "",
     "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre emergencia y catástrofe?",
+    "opciones": [
+      "Las consecuencias sufridas por las víctimas",
+      "El nivel de estrés emocional postraumático",
+      "En una catástrofe la sociedad no dispone de suficientes recursos para superar el evento.",
+      "Las causas que lo originan"
+    ],
+    "respuestaCorrecta": "En una catástrofe la sociedad no dispone de suficientes recursos para superar el evento.",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro1"
   },
@@ -435,17 +375,77 @@
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Cuántos idiomas oficiales tiene la ONU y cuáles son exactamente?",
+    "pregunta": "⚠ Trampa — El Art. 128 de las Reales Ordenanzas establece una obligación específica relacionada con la formación. ¿A quién va dirigido y qué obliga a hacer?",
     "opciones": [
-      "5: inglés, francés, español, ruso y chino",
-      "6: árabe, chino, español, francés, inglés y ruso",
-      "6: árabe, chino, inglés, francés, portugués y ruso",
-      "7: árabe, chino, español, francés, inglés, ruso y alemán"
+      "A los mandos: motivar a sus subordinados con el ejemplo",
+      "A los profesores: tener cualidades pedagógicas",
+      "A los alumnos: aprovechar al máximo los medios y oportunidades",
+      "A los sargentos: transmitir el saber a los soldados"
     ],
-    "respuestaCorrecta": "6: árabe, chino, español, francés, inglés y ruso",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La ONU tiene exactamente 6 idiomas oficiales: árabe, chino, español, francés, inglés y ruso. De ellos, solo el francés y el inglés son idiomas de trabajo.",
-    "dificultad": "media",
+    "respuestaCorrecta": "A los alumnos: aprovechar al máximo los medios y oportunidades",
+    "tema": "Valores Militares",
+    "explicacion": "El Art. 128 de las RR.OO. establece la 'función docente de los alumnos': aprovecharán al máximo los medios y oportunidades disponibles para su formación. No va dirigido a mandos ni profesores.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿A qué concepto pertenece el uso y estructuración del espacio inmediato al sujeto comunicador?",
+    "opciones": [
+      "Kinesia",
+      "Paralingüística",
+      "Proxémica",
+      "Artefactual"
+    ],
+    "respuestaCorrecta": "Proxémica",
+    "tema": "Expresión Oral",
+    "explicacion": "La proxémica es el conjunto de comportamientos no verbales relacionados con la utilización y estructuración del espacio inmediato al sujeto comunicador.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué modificación de una disposición normativa implica su derogación total y completa?",
+    "opciones": [
+      "Enmienda (ENM)",
+      "Revisión (REV)",
+      "Modificación parcial",
+      "Anulación (ANL)"
+    ],
+    "respuestaCorrecta": "Anulación (ANL)",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La Anulación (ANL) supone la derogación total de la disposición normativa. La Revisión la sustituye completamente pero por otra, y la Enmienda es una modificación no esencial.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué tipo de liderazgo concede libertad de acción a los miembros del grupo y presenta un líder poco participativo?",
+    "opciones": [
+      "Autocrático",
+      "Democrático",
+      "Laissez-faire",
+      "Situacional"
+    ],
+    "respuestaCorrecta": "Laissez-faire",
+    "tema": "Liderazgo",
+    "explicacion": "El liderazgo Laissez-faire (dejar hacer) concede libertad de acción; el líder es poco participativo y las decisiones son del grupo.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "⚠ TRAMPA — Señala la afirmación CORRECTA sobre las normas grupales:",
+    "opciones": [
+      "Las normas grupales se imponen sin posibilidad de negociación",
+      "Las normas institucionales se establecen desde la negociación y aceptación",
+      "La norma grupal se establece desde la negociación y aceptación",
+      "Los miembros solo acatan las normas si están de acuerdo con ellas"
+    ],
+    "respuestaCorrecta": "La norma grupal se establece desde la negociación y aceptación",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "Es la norma GRUPAL la que se establece desde la negociación y aceptación. La norma INSTITUCIONAL no tiene discusión. Las normas se acatan independientemente de la respuesta del miembro.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro1"
   }
