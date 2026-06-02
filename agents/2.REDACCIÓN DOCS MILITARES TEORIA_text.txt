@@ -1,0 +1,84 @@
+REDACCIÓN DE DOCUMENTOS MILITARES
+(Basado en IG 10-01)
+1. IG 10-01
+Propósito: Facilitar la producción normativa y normalizar los documentos en el Ejército del Aire.
+Es la norma principal que regula cómo se deben redactar los documentos militares.
+2. Documentos Administrativos
+Definición: Soporte que materializa los actos de la Administración.
+Características:
+Producen efectos jurídicos, informativos o comunicativos.
+El emisor es siempre un órgano administrativo.
+Funciones principales:
+Función de constancia: Conservar y demostrar la existencia de los actos + derecho de acceso de los ciudadanos.
+Función de comunicación: Interna o externa.
+Clasificación de los Documentos Administrativos:
+Tipo de Documento
+Ejemplos principales
+De Decisión
+Resoluciones, Acuerdos
+De Transmisión
+Notificaciones, Publicaciones, Comunicaciones
+De Constancia
+Actas, Certificados
+De Juicio
+Informes
+De los Ciudadanos
+(Solicitudes, Denuncias, Alegaciones, Recursos) =Instancias
+3. Redacción de Documentos
+Deben ser:
+Claros → Fáciles de comprender.
+Concisos → Brevedad.
+Metódicos → Orden lógico.
+Concretos → Evitar ambigüedades.
+Correctos → Gramática, ortografía y normas.
+4. Normas Generales de Presentación (IG 10-01)
+Papel: A4.
+Márgenes: Izq. 30 mm | Der. 15 mm | Sup. 40 mm | Inf. 20 mm.
+Fuente: Arial 11, negro, interlineado sencillo, justificado.
+Espaciado: 1 línea antes y después de cada párrafo.
+Paginación: “Página X de Y” (Arial 6).
+Divisiones: Hasta 4 niveles (Mayúsculas Negrita → Mayúsculas → Minúsculas Negrita → Minúsculas).
+5. Tipos de Documentos más importantes
+Documento
+Uso Principal
+Características importantes
+Oficio
+Comunicación oficial entre órganos y particulares
+Un solo asunto. Dirigido a la autoridad o cargo oficial. Usar N/Ref y S/Ref.
+Teletipo (MEFO)
+Comunicaciones urgentes
+Rapidez y seguridad. Prelaciones:
+• Z (Flash): Entrega lo antes posible
+• O (Inmediato): Menos de 1 hora
+• P (Prioridad): Hasta 6 horas
+• R (Rutina): Hasta el comienzo del trabajo del día siguiente
+Instancia
+Peticiones del personal
+Estructura: Datos + EXPONE + SOLICITA + Fecha y firma
+Certificado
+Acreditar hechos
+Datos del que certifica + Razón + Fecha y firma
+6. Tratamientos Honoríficos
+Los escritos se dirigen al cargo, no a la persona.
+En el cuerpo del documento se suprimen casi todos los tratamientos (solo se permiten “don/doña” y “señor/señora”).
+Tratamientos más importantes:
+Cargo
+Tratamiento Oral / Escrito
+En el pie del documento
+Rey de España
+Majestad (V.M.)
+A S.M. El Rey
+Príncipe de Asturias e Infantes
+Alteza Real (S.A.R.)
+A S.A.R. el Príncipe
+Oficiales Generales
+Excelencia (V.E.)
+Excmo. Sr.
+Coroneles
+Señoría (V.S.)
+Sr. Coronel
+Resto de miembros de las FAS
+Usted (Vd.)
+Sr. / Sra.
+Tratamientos Honoríficos en escritos administrativos:
+Manual de Documentos Administrativos 2003: Se suprimirán todo tipo de tratamientos y fórmula honoríficas, así como sus abreviaturas. Únicamente se mantendrá don/doña y señor/a.

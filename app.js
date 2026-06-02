@@ -51,6 +51,7 @@ window.addEventListener('load', () => {
             [
                 ui.elements.iniciarNuevoTestBtn,
                 ui.elements.iniciarRepasoFallosBtn,
+                ui.elements.iniciarTestTemasBtn,
                 ui.elements.iniciarSimulacro1Btn,
                 ui.elements.iniciarSimulacro2Btn,
                 ui.elements.iniciarSimulacro3Btn
@@ -85,6 +86,26 @@ window.addEventListener('load', () => {
                 return; // Salimos del bucle para mostrar solo un modal a la vez
             }
         }
+
+        // Buscar sesiones de temas guardadas dinámicamente en localStorage
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && key.startsWith('testCabo1State_tema_')) {
+                const modoClave = key.substring('testCabo1State_'.length);
+                const nombreTema = modoClave.substring('tema_'.length);
+                ui.showConfirmationModal({
+                    title: 'Test sin finalizar',
+                    message: `Hemos encontrado un test del tema "${nombreTema}" sin finalizar. ¿Quieres continuar donde lo dejaste?`,
+                    onConfirm: () => restaurarSesion(modoClave),
+                    onCancel: () => {
+                        limpiarEstado(modoClave);
+                        ui.showStartView();
+                    }
+                });
+                return; // Salimos para mostrar solo un modal
+            }
+        }
+
         ui.showStartView();
     }
 
@@ -100,7 +121,7 @@ window.addEventListener('load', () => {
                     const ultimaRespuestaFallada = estadoGuardado.preguntasFalladas.find(p => p.preguntaData.pregunta === preguntaData?.pregunta);
                 const opcionSeleccionada = ultimaRespuestaFallada ? ultimaRespuestaFallada.respuestaUsuario : preguntaData.respuestaCorrecta;
                 const esCorrecto = !ultimaRespuestaFallada;
-                ui.showAnswerFeedback(opcionSeleccionada, esCorrecto, preguntaData.respuestaCorrecta);
+                ui.showAnswerFeedback(opcionSeleccionada, esCorrecto, preguntaData.respuestaCorrecta, preguntaData.explicacion);
             }
         }
     }
@@ -176,6 +197,18 @@ window.addEventListener('load', () => {
         }
     }
 
+    function iniciarTestPorTema(tema) {
+        const numPreguntas = ui.elements.numPreguntasSelect.value === 'Infinity' ? Infinity : parseInt(ui.elements.numPreguntasSelect.value, 10);
+        const preguntasTema = questionBank.getAll().filter(q => q.tema === tema);
+        
+        if (preguntasTema.length > 0) {
+            const seleccionadas = preguntasTema.slice(0, numPreguntas);
+            iniciarNuevoTest('tema_' + tema, { preguntasPersonalizadas: seleccionadas });
+        } else {
+            alert(`No hay preguntas disponibles para el tema "${tema}".`);
+        }
+    }
+
     function mostrarPreguntaActual(estadoActual) {
         if (!estadoActual) return;
         const preguntaData = estadoActual.preguntasDelTest[estadoActual.preguntaActualIndex];
@@ -192,10 +225,11 @@ window.addEventListener('load', () => {
             return;
         }
 
-        ui.showAnswerFeedback(opcionSeleccionada, resultadoRespuesta.esCorrecto, resultadoRespuesta.respuestaCorrecta);
+        ui.showAnswerFeedback(opcionSeleccionada, resultadoRespuesta.esCorrecto, resultadoRespuesta.respuestaCorrecta, resultadoRespuesta.explicacion);
         actualizarContadoresUI();
 
-        const delay = resultadoRespuesta.esCorrecto ? 1000 : 2000;
+        // Dar más tiempo si hay una explicación para que el usuario pueda leerla
+        const delay = resultadoRespuesta.esCorrecto ? 1000 : (resultadoRespuesta.explicacion ? 4000 : 2500);
         setTimeout(() => {
             const { nuevoEstado, resultadoFinal } = avanzarPregunta(estadoActual);
             if (resultadoFinal) {
@@ -218,6 +252,20 @@ window.addEventListener('load', () => {
     function registrarEventListeners() {
         ui.elements.iniciarNuevoTestBtn.addEventListener('click', iniciarTestNormal);
         ui.elements.iniciarRepasoFallosBtn.addEventListener('click', () => iniciarRepasoFallos());
+        if (ui.elements.iniciarTestTemasBtn) {
+            ui.elements.iniciarTestTemasBtn.addEventListener('click', () => ui.showTemasMenuView());
+        }
+        if (ui.elements.volverMenuBtn) {
+            ui.elements.volverMenuBtn.addEventListener('click', () => ui.showStartView());
+        }
+        if (ui.elements.btnTemas) {
+            ui.elements.btnTemas.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tema = btn.getAttribute('data-tema');
+                    iniciarTestPorTema(tema);
+                });
+            });
+        }
         ui.elements.iniciarSimulacro1Btn.addEventListener('click', () => iniciarTestExamen('simulacro1'));
         ui.elements.iniciarSimulacro2Btn.addEventListener('click', () => iniciarTestExamen('simulacro2'));
         ui.elements.iniciarSimulacro3Btn.addEventListener('click', () => iniciarTestExamen('simulacro3'));

@@ -1,0 +1,722 @@
+[
+  {
+    "pregunta": "¿En qué año se creó el primer globo aerostático en España por Viera y Clavijo?",
+    "opciones": [
+      "1783",
+      "1884",
+      "1903",
+      "1910"
+    ],
+    "respuestaCorrecta": "1783",
+    "tema": "Historia del EA",
+    "explicacion": "El primer globo aerostático en España fue lanzado en 1783 por Viera y Clavijo."
+  },
+  {
+    "pregunta": "¿Qué oficiales capitanes presenciaron las demostraciones de Wilbur Wright en Francia en 1908, despertando el interés militar por la aviación?",
+    "opciones": [
+      "Capitanes Herrera y Kindelán",
+      "Coronel Vives y Capitán Kindelán",
+      "Alfonso de Orleans y Benito Loygorri",
+      "Ramón Franco y Ruiz de Alda"
+    ],
+    "respuestaCorrecta": "Capitanes Herrera y Kindelán",
+    "tema": "Historia del EA",
+    "explicacion": "En 1908, los capitanes Herrera y Kindelán presenciaron las demostraciones de Wilbur Wright en Francia."
+  },
+  {
+    "pregunta": "¿En qué año se creó el Servicio Militar de Aerostación en España?",
+    "opciones": [
+      "1884",
+      "1896",
+      "1911",
+      "1913"
+    ],
+    "respuestaCorrecta": "1884",
+    "tema": "Historia del EA",
+    "explicacion": "El Servicio Militar de Aerostación en España fue creado en 1884."
+  },
+  {
+    "pregunta": "¿Quiénes son considerados los primeros pilotos militares españoles en el año 1910?",
+    "opciones": [
+      "El Infante Alfonso de Orleans y Benito Loygorri Pimentel",
+      "Los capitanes Herrera y Kindelán",
+      "El coronel Vives y Ramón Franco",
+      "Julio Ruiz de Alda y Ramón Franco"
+    ],
+    "respuestaCorrecta": "El Infante Alfonso de Orleans y Benito Loygorri Pimentel",
+    "tema": "Historia del EA",
+    "explicacion": "En 1910, el Infante Alfonso de Orleans y Benito Loygorri Pimentel obtuvieron el título de piloto militar, siendo los primeros de España."
+  },
+  {
+    "pregunta": "¿Qué oficiales son considerados los creadores del Ejército del Aire y del Espacio actual tras fundar el aeródromo de Cuatro Vientos en 1911?",
+    "opciones": [
+      "Coronel Vives y Capitán Kindelán",
+      "Capitanes Herrera y Kindelán",
+      "Infante Alfonso de Orleans y Vives",
+      "Ramón Franco y Ruiz de Alda"
+    ],
+    "respuestaCorrecta": "Coronel Vives y Capitán Kindelán",
+    "tema": "Historia del EA",
+    "explicacion": "El Coronel Vives y el Capitán Kindelán son considerados los creadores del Ejército del Aire tras establecer el aeródromo de Cuatro Vientos en 1911."
+  },
+  {
+    "pregunta": "¿En qué año nació oficialmente la Aeronáutica Militar española, dividida en Aerostación y Aviación?",
+    "opciones": [
+      "1913",
+      "1911",
+      "1910",
+      "1908"
+    ],
+    "respuestaCorrecta": "1913",
+    "tema": "Historia del EA",
+    "explicacion": "La Aeronáutica Militar española nació oficialmente en 1913, estructurada en los ramos de Aerostación y Aviación."
+  },
+  {
+    "pregunta": "¿En qué conflicto internacional se convirtió España en el primer país del mundo en emplear la aviación militar en guerra y realizar el primer bombardeo aéreo?",
+    "opciones": [
+      "Guerra de Marruecos",
+      "Guerra Civil Española",
+      "Campaña de Guinea",
+      "Primera Guerra Mundial"
+    ],
+    "respuestaCorrecta": "Guerra de Marruecos",
+    "tema": "Historia del EA",
+    "explicacion": "España usó por primera vez de forma militar y realizó el primer bombardeo aéreo de la historia en la Guerra de Marruecos (1913)."
+  },
+  {
+    "pregunta": "¿Qué tripulantes y aeronave realizaron el histórico vuelo España-Argentina en 1926?",
+    "opciones": [
+      "Ramón Franco con el hidroavión 'Plus Ultra'",
+      "Escuadrilla 'Elcano' con aviones Farman",
+      "Patrulla 'Atlántida' con el 'Jesús del Gran Poder'",
+      "Capitán Haya con el 'Cuatro Vientos'"
+    ],
+    "respuestaCorrecta": "Ramón Franco con el hidroavión 'Plus Ultra'",
+    "tema": "Historia del EA",
+    "explicacion": "En 1926, Ramón Franco pilotó el hidroavión 'Plus Ultra' para cruzar el Atlántico Sur hasta Argentina."
+  },
+  {
+    "pregunta": "¿Cómo se denominó al histórico vuelo realizado entre Madrid y Manila en 1926?",
+    "opciones": [
+      "Escuadrilla 'Elcano'",
+      "Patrulla 'Atlántida'",
+      "Vuelo 'Plus Ultra'",
+      "Vuelo 'Jesús del Gran Poder'"
+    ],
+    "respuestaCorrecta": "Escuadrilla 'Elcano'",
+    "tema": "Historia del EA",
+    "explicacion": "El vuelo de Madrid a Manila en 1926 fue llevado a cabo por la Escuadrilla 'Elcano'."
+  },
+  {
+    "pregunta": "¿Qué histórica aeronave española realizó el vuelo Sevilla-Río de Janeiro en 1929?",
+    "opciones": [
+      "El avión 'Jesús del Gran Poder'",
+      "El hidroavión 'Plus Ultra'",
+      "La escuadrilla 'Elcano'",
+      "El avión 'Cuatro Vientos'"
+    ],
+    "respuestaCorrecta": "El avión 'Jesús del Gran Poder'",
+    "tema": "Historia del EA",
+    "explicacion": "En 1929 se llevó a cabo el histórico vuelo Sevilla - Río de Janeiro empleando el monoplano 'Jesús del Gran Poder'."
+  },
+  {
+    "pregunta": "Durante la Guerra Civil (1936-1939), ¿cuál de los siguientes modelos de cazas fue proporcionado al bando republicano por la URSS?",
+    "opciones": [
+      "I-16 'Rata'",
+      "He-51",
+      "Fiat CR-32",
+      "Ju-87 Stuka"
+    ],
+    "respuestaCorrecta": "I-16 'Rata'",
+    "tema": "Historia del EA",
+    "explicacion": "El bando republicano recibió apoyo aéreo soviético con cazas como el I-15 'Chato' y el I-16 'Rata'."
+  },
+  {
+    "pregunta": "¿Qué hito logístico aéreo de relevancia histórica tuvo lugar por primera vez en la Guerra Civil Española?",
+    "opciones": [
+      "El primer puente aéreo masivo de la historia para trasladar al Ejército de África",
+      "El primer vuelo supersónico militar",
+      "El primer combate nocturno entre reactores",
+      "La primera evacuación sanitaria en helicóptero"
+    ],
+    "respuestaCorrecta": "El primer puente aéreo masivo de la historia para trasladar al Ejército de África",
+    "tema": "Historia del EA",
+    "explicacion": "El traslado de tropas del Ejército de África a la península supuso el primer puente aéreo masivo de la historia militar."
+  },
+  {
+    "pregunta": "¿En qué fecha oficial se creó el Ministerio del Aire en España?",
+    "opciones": [
+      "8 de agosto de 1939",
+      "7 de octubre de 1939",
+      "1 de abril de 1939",
+      "18 de julio de 1936"
+    ],
+    "respuestaCorrecta": "8 de agosto de 1939",
+    "tema": "Historia del EA",
+    "explicacion": "El Ministerio del Aire fue creado por ley el 8 de agosto de 1939."
+  },
+  {
+    "pregunta": "¿En qué fecha nace oficialmente el Ejército del Aire como un ejército independiente en España?",
+    "opciones": [
+      "7 de octubre de 1939",
+      "8 de agosto de 1939",
+      "14 de abril de 1931",
+      "10 de diciembre de 1953"
+    ],
+    "respuestaCorrecta": "7 de octubre de 1939",
+    "tema": "Historia del EA",
+    "explicacion": "El 7 de octubre de 1939 se promulgó la ley que constituía formalmente el Ejército del Aire como arma independiente."
+  },
+  {
+    "pregunta": "¿Cuál fue el primer proyecto aeronáutico nacional desarrollado en España durante la posguerra?",
+    "opciones": [
+      "CASA C-201 Alcotán",
+      "HA-200 Saeta",
+      "C-101 Mirlo",
+      "CASA C-212 Aviocar"
+    ],
+    "respuestaCorrecta": "CASA C-201 Alcotán",
+    "tema": "Historia del EA",
+    "explicacion": "El CASA C-201 Alcotán fue el primer proyecto nacional de avión de transporte tras la Guerra Civil."
+  },
+  {
+    "pregunta": "¿Qué acuerdo diplomático supuso una gran modernización del material aéreo español y la llegada de los primeros reactores como el F-86 Sabre?",
+    "opciones": [
+      "Tratado de Asistencia con EE.UU. de 1953",
+      "Tratado de Bruselas de 1948",
+      "Ingreso en la OTAN en 1982",
+      "Tratado de Madrid de 1970"
+    ],
+    "respuestaCorrecta": "Tratado de Asistencia con EE.UU. de 1953",
+    "tema": "Historia del EA",
+    "explicacion": "Los acuerdos bilaterales de 1953 con EE.UU. permitieron la llegada de material moderno, reactores y helicópteros."
+  },
+  {
+    "pregunta": "¿Cuál es el primer reactor militar de diseño y fabricación nacional que entró en servicio en España en 1965?",
+    "opciones": [
+      "HA-200 Saeta",
+      "CASA C-101 Mirlo",
+      "CASA C-212 Aviocar",
+      "HA-1112 Buchón"
+    ],
+    "respuestaCorrecta": "HA-200 Saeta",
+    "tema": "Historia del EA",
+    "explicacion": "El Hispano Aviación HA-200 Saeta fue el primer avión de reacción diseñado y fabricado en España."
+  },
+  {
+    "pregunta": "¿Quiénes diseñaron originalmente el Rokiski (insignia del EA) en abril de 1913?",
+    "opciones": [
+      "Oficiales en casa del Infante Alfonso de Orleans, dibujado por la Infanta Beatriz de Sajonia",
+      "El orfebre José Luis Rokiski y el Coronel Vives",
+      "El Rey Alfonso XIII y los diseñadores de la joyería Ansorena",
+      "El Capitán Kindelán y el teniente Herrera"
+    ],
+    "respuestaCorrecta": "Oficiales en casa del Infante Alfonso de Orleans, dibujado por la Infanta Beatriz de Sajonia",
+    "tema": "Historia del EA",
+    "explicacion": "El Rokiski fue diseñado en la casa del Infante Alfonso de Orleans y dibujado por su esposa, la Infanta Beatriz de Sajonia, inspirada en las alas de Horus y el ojo de Ra."
+  },
+  {
+    "pregunta": "¿Cuál es el origen histórico del término popular 'Rokiski' para referirse a la insignia del pecho del Ejército del Aire?",
+    "opciones": [
+      "Proviene del orfebre José Luis Rokiski Gómez, que fabricó la mayoría de las insignias entre 1939 y 1965",
+      "Proviene de un piloto polaco héroe de la aviación española",
+      "Hace referencia a las alas de Horus en idioma egipcio antiguo",
+      "Fue el nombre en clave del proyecto de la primera insignia aeronáutica militar"
+    ],
+    "respuestaCorrecta": "Proviene del orfebre José Luis Rokiski Gómez, que fabricó la mayoría de las insignias entre 1939 y 1965",
+    "tema": "Historia del EA",
+    "explicacion": "El orfebre de origen polaco José Luis Rokiski Gómez fabricaba las insignias militares de pecho en su taller de Madrid, quedando su apellido asociado a la insignia."
+  },
+  {
+    "pregunta": "¿Qué norma legal oficializó el cambio de denominación a 'Ejército del Aire y del Espacio' en el año 2022?",
+    "opciones": [
+      "Real Decreto 524/2022, de 27 de junio",
+      "Ley Orgánica de la Defensa de 2022",
+      "Orden Ministerial de 7 de octubre de 2022",
+      "Real Decreto-Ley de Reestructuración de la Defensa de 2022"
+    ],
+    "respuestaCorrecta": "Real Decreto 524/2022, de 27 de junio",
+    "tema": "Historia del EA",
+    "explicacion": "El Real Decreto 524/2022 cambió oficialmente la denominación del Ejército para reflejar la importancia operativa del espacio ultraterrestre."
+  },
+  {
+    "pregunta": "¿A qué unidad militar y Base Aérea están asignados principalmente los cazas F-18 Hornet (C.15M) de la zona norte de la Península?",
+    "opciones": [
+      "Ala 15 en la Base Aérea de Zaragoza",
+      "Ala 12 en la Base Aérea de Torrejón",
+      "Ala 14 en la Base Aérea de Los Llanos",
+      "Ala 11 en la Base Aérea de Morón"
+    ],
+    "respuestaCorrecta": "Ala 15 en la Base Aérea de Zaragoza",
+    "tema": "Material Aéreo",
+    "explicacion": "Los F-18 del norte peninsular operan desde la Base Aérea de Zaragoza asignados al Ala 15."
+  },
+  {
+    "pregunta": "¿Qué base aérea y unidad militar albergan a los cazas EF-2000 Eurofighter (C.16) del Ala 14?",
+    "opciones": [
+      "Base Aérea de Los Llanos (Albacete) - Ala 14",
+      "Base Aérea de Morón (Sevilla) - Ala 11",
+      "Base Aérea de Torrejón (Madrid) - Ala 12",
+      "Base Aérea de Gando (Gran Canaria) - Ala 46"
+    ],
+    "respuestaCorrecta": "Base Aérea de Los Llanos (Albacete) - Ala 14",
+    "tema": "Material Aéreo",
+    "explicacion": "El Ala 14 opera cazas Eurofighter en la Base Aérea de Los Llanos (Albacete)."
+  },
+  {
+    "pregunta": "¿Qué aeronave de transporte pesado y reabastecimiento en vuelo sustituyó definitivamente al clásico C-130 Hércules en el Ala 31 en 2021?",
+    "opciones": [
+      "Airbus A-400M (T.23)",
+      "Airbus A-330-200 (T.24)",
+      "CASA C-295 (T.21)",
+      "CASA CN-235 (T.19)"
+    ],
+    "respuestaCorrecta": "Airbus A-400M (T.23)",
+    "tema": "Material Aéreo",
+    "explicacion": "El Airbus A-400M (T.23) sustituyó oficialmente al mítico C-130 Hércules en 2021."
+  },
+  {
+    "pregunta": "¿Qué unidad y Base Aérea se encargan del transporte de autoridades (VIP) y aeroevacuaciones utilizando el Falcon 900 (T.18) y Airbus A-310?",
+    "opciones": [
+      "45 Grupo en la Base Aérea de Torrejón",
+      "47 Grupo en la Base Aérea de Torrejón",
+      "Ala 48 en la Base Aérea de Getafe",
+      "CECAF en la Base Aérea de Getafe"
+    ],
+    "respuestaCorrecta": "45 Grupo en la Base Aérea de Torrejón",
+    "tema": "Material Aéreo",
+    "explicacion": "El 45 Grupo ubicado en Torrejón opera los Falcon 900 y A-310 para misiones VIP y evacuaciones médicas."
+  },
+  {
+    "pregunta": "¿Qué avión de escuela e instrucción de vuelo básico sustituirá progresivamente a los clásicos C-101 y T-35 en la Academia General del Aire?",
+    "opciones": [
+      "Pilatus PC-21",
+      "F-5 (AE.9)",
+      "EC-120 Colibrí",
+      "Beechcraft C-90"
+    ],
+    "respuestaCorrecta": "Pilatus PC-21",
+    "tema": "Material Aéreo",
+    "explicacion": "La Academia General del Aire en San Javier está incorporando el turbopropulsor Pilatus PC-21 para la formación de alumnos."
+  },
+  {
+    "pregunta": "¿Dónde se encuentra ubicada la escuela de helicópteros del Ejército del Aire y qué modelos opera para la enseñanza básica y avanzada?",
+    "opciones": [
+      "Ala 78 en la Base Aérea de Armilla, operando EC-120 Colibrí y Sikorsky S-76",
+      "Ala 48 en la Base Aérea de Getafe, operando Super Puma y NH-90",
+      "721 Escuadrón en la Base Aérea de Alcantarilla, operando CASA C-212",
+      "41 Grupo en la Base Aérea de Matacán, operando C-101"
+    ],
+    "respuestaCorrecta": "Ala 78 en la Base Aérea de Armilla, operando EC-120 Colibrí y Sikorsky S-76",
+    "tema": "Material Aéreo",
+    "explicacion": "La escuela militar de helicópteros del EA está en el Ala 78 (Armilla) y utiliza los EC-120 (enseñanza básica) y S-76 (enseñanza avanzada)."
+  },
+  {
+    "pregunta": "¿Qué base aérea y unidad operan los aviones apagafuegos Canadair CL-215T (UD.13T) y CL-415 (UD.14)?",
+    "opciones": [
+      "43 Grupo en la Base Aérea de Torrejón",
+      "47 Grupo en la Base Aérea de Torrejón",
+      "Ala 35 en la Base Aérea de Getafe",
+      "CECAF en la Base Aérea de Getafe"
+    ],
+    "respuestaCorrecta": "43 Grupo en la Base Aérea de Torrejón",
+    "tema": "Material Aéreo",
+    "explicacion": "El 43 Grupo opera los 'apagafuegos' Canadair en la lucha contra incendios forestales, con base principal en Torrejón."
+  },
+  {
+    "pregunta": "¿Qué aeronave no tripulada (UAV) opera el Ejército del Aire para misiones ISR (Inteligencia, Vigilancia y Reconocimiento) desde la Base Aérea de Talavera?",
+    "opciones": [
+      "MQ-9 Predator B",
+      "NH-90",
+      "Cessna Citation V",
+      "Falcon 20"
+    ],
+    "respuestaCorrecta": "MQ-9 Predator B",
+    "tema": "Material Aéreo",
+    "explicacion": "El MQ-9 Predator B opera en el Ala 23 (Talavera la Real) realizando patrullas ISR de largo alcance."
+  },
+  {
+    "pregunta": "¿Qué helicóptero polivalente moderno se encuentra asignado al Ala 48 en la Base Aérea de Cuatro Vientos para tareas de transporte y SAR?",
+    "opciones": [
+      "NH-90",
+      "EC-120 Colibrí",
+      "Sikorsky S-76",
+      "Bell-47"
+    ],
+    "respuestaCorrecta": "NH-90",
+    "tema": "Material Aéreo",
+    "explicacion": "El helicóptero NH-90 (Lobo) está en servicio en el Ala 48 (Cuatro Vientos) realizando misiones SAR y transporte táctico."
+  },
+  {
+    "pregunta": "¿En qué destacamento y base exterior participa España en la Operación Atalanta contra la piratería en el Océano Índico?",
+    "opciones": [
+      "Destacamento Orión en Yibuti",
+      "Destacamento Marfil en Dakar (Senegal)",
+      "Policía Aérea en Estonia",
+      "Destacamento Mamba en Libreville (Gabón)"
+    ],
+    "respuestaCorrecta": "Destacamento Orión en Yibuti",
+    "tema": "Material Aéreo",
+    "explicacion": "La lucha contra la piratería en la Operación Atalanta se realiza a través del Destacamento Orión con base en Yibuti."
+  },
+  {
+    "pregunta": "¿Qué aeronave del Ala 35 y personal de apoyo están desplegados en Dakar (Senegal) para la operación de apoyo a Malí (Destacamento Marfil)?",
+    "opciones": [
+      "CASA C-295 (T.21)",
+      "Airbus A-400M (T.23)",
+      "CASA CN-235 (T.19)",
+      "Falcon 900 (T.18)"
+    ],
+    "respuestaCorrecta": "CASA C-295 (T.21)",
+    "tema": "Material Aéreo",
+    "explicacion": "El Destacamento Marfil (Dakar) opera aeronaves CASA C-295 (T.21) en labores de transporte intra-teatro."
+  },
+  {
+    "pregunta": "¿Qué siglas identifican al futuro caza europeo de combate de quinta/sexta generación desarrollado por España, Francia y Alemania?",
+    "opciones": [
+      "FCAS",
+      "EF-2000",
+      "MQ-9",
+      "CLAEX"
+    ],
+    "respuestaCorrecta": "FCAS",
+    "tema": "Material Aéreo",
+    "explicacion": "El FCAS (Future Combat Air System) es el programa trinacional europeo para el desarrollo del futuro caza."
+  },
+  {
+    "pregunta": "¿Qué aeronaves y unidad militar operan en la Base Aérea de Getafe para misiones específicas de Cartografía y Fotografía aérea?",
+    "opciones": [
+      "C-235 (TR.19A) y Cessna Citation V (TR.20) del 403 Escuadrón",
+      "Falcon 20 (TM.11) del 47 Grupo",
+      "CASA C-212 (T.12) del 721 Escuadrón",
+      "Beechcraft C-90 (U.22) del 45 Grupo"
+    ],
+    "respuestaCorrecta": "C-235 (TR.19A) y Cessna Citation V (TR.20) del 403 Escuadrón",
+    "tema": "Material Aéreo",
+    "explicacion": "El 403 Escuadrón en Getafe realiza misiones cartográficas y fotográficas usando aviones C-235 (TR.19A) y Cessna Citation V."
+  },
+  {
+    "pregunta": "¿Qué unidad táctica de Torrejón tiene encomendadas las misiones de Guerra Electrónica (E.W.) con aviones Falcon 20 (TM.11) modificados?",
+    "opciones": [
+      "47 Grupo de Fuerzas Aéreas",
+      "45 Grupo",
+      "43 Grupo",
+      "Ala 12"
+    ],
+    "respuestaCorrecta": "47 Grupo de Fuerzas Aéreas",
+    "tema": "Material Aéreo",
+    "explicacion": "El 47 Grupo opera las contramedidas y guerra electrónica (TM.11 y TM.12) desde Torrejón."
+  },
+  {
+    "pregunta": "¿Qué avión multipropósito sirve para reabastecimiento estratégico en vuelo en el 45 Grupo en Torrejón?",
+    "opciones": [
+      "Airbus A-330-200 (TK.24)",
+      "Airbus A-400M (TK.23)",
+      "Falcon 900 (T.18)",
+      "CASA C-295 (T.21)"
+    ],
+    "respuestaCorrecta": "Airbus A-330-200 (TK.24)",
+    "tema": "Material Aéreo",
+    "explicacion": "Los nuevos Airbus A-330 (T.24/TK.24) actúan en el 45 Grupo para transporte y reabastecimiento estratégico."
+  },
+  {
+    "pregunta": "¿Qué avión es operado en la escuela de transporte de la Base Aérea de Matacán (Salamanca) por el 744 Escuadrón?",
+    "opciones": [
+      "C-235 (T.19)",
+      "C-101 Mirlo (E.25)",
+      "T-35 C Tamiz (E.26)",
+      "Bonanza F-33 C (E.24)"
+    ],
+    "respuestaCorrecta": "C-235 (T.19)",
+    "tema": "Material Aéreo",
+    "explicacion": "El C-235 (T.19) sirve en el 744 Escuadrón (Matacán) para instrucción y adiestramiento de pilotos de transporte."
+  },
+  {
+    "pregunta": "¿A qué unidad pertenece el avión de enlace Beechcraft C-90 (U.22) basado en Getafe?",
+    "opciones": [
+      "CECAF",
+      "CLAEX",
+      "45 Grupo",
+      "43 Grupo"
+    ],
+    "respuestaCorrecta": "CECAF",
+    "tema": "Material Aéreo",
+    "explicacion": "El Centro de Cartografía y Fotografía (CECAF) en Getafe opera el Beechcraft C-90 para tareas de enlace."
+  },
+  {
+    "pregunta": "¿Qué helicóptero realiza misiones de búsqueda y salvamento (SAR) en el Ala 49 de la Base Aérea de Son San Juan (Baleares)?",
+    "opciones": [
+      "AS-332 B Super Puma (HD.21)",
+      "EC-120 Colibrí (HE.25)",
+      "Sikorsky S-76 (HE.24)",
+      "AS-532 Cougar (HT.27)"
+    ],
+    "respuestaCorrecta": "AS-332 B Super Puma (HD.21)",
+    "tema": "Material Aéreo",
+    "explicacion": "El Ala 49 (Son San Juan, Mallorca) opera el helicóptero de rescate HD.21 Super Puma."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes no es un escuadrón SAR del Ejército del Aire y del Espacio?",
+    "opciones": [
+      "402 Escuadrón (Getafe)",
+      "803 Escuadrón (Getafe)",
+      "802 Escuadrón (Gando)",
+      "801 Escuadrón (Son San Juan)"
+    ],
+    "respuestaCorrecta": "402 Escuadrón (Getafe)",
+    "tema": "Material Aéreo",
+    "explicacion": "El 402 Escuadrón es una unidad de transporte VIP (Super Puma/Cougar). Los escuadrones 801, 802 y 803 son específicos de búsqueda y rescate (SAR)."
+  },
+  {
+    "pregunta": "¿Qué aeronave realiza misiones de vigilancia marítima (VIGMA) bajo la denominación D.4 en España?",
+    "opciones": [
+      "C-235",
+      "C-212 AvioCar",
+      "Falcon 900",
+      "MQ-9 Predator B"
+    ],
+    "respuestaCorrecta": "C-235",
+    "tema": "Material Aéreo",
+    "explicacion": "Los aviones C-235 modificados para patrulla marítima y SAR se denominan D.4 VIGMA."
+  },
+  {
+    "pregunta": "Según la norma IG 10-01, ¿cuál es el propósito primordial de esta Instrucción General en el Ejército del Aire y del Espacio?",
+    "opciones": [
+      "Facilitar la producción normativa y normalizar la documentación",
+      "Regular el régimen disciplinario militar",
+      "Definir las plantillas de personal orgánico",
+      "Controlar la seguridad de la información clasificada"
+    ],
+    "respuestaCorrecta": "Facilitar la producción normativa y normalizar la documentación",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "El propósito de la IG 10-01 es normalizar y unificar los criterios formales y de redacción de los documentos del Ejército."
+  },
+  {
+    "pregunta": "En el marco administrativo militar, ¿cuál es la definición formal de un Documento Administrativo?",
+    "opciones": [
+      "El soporte que materializa los actos de la Administración",
+      "Cualquier comunicación informal escrita entre compañeros",
+      "Una orden de operaciones táctica de obligado cumplimiento",
+      "Un boletín de información general del Ministerio de Defensa"
+    ],
+    "respuestaCorrecta": "El soporte que materializa los actos de la Administración",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Formalmente, el documento administrativo se define como el soporte que contiene y materializa las decisiones y actos administrativos."
+  },
+  {
+    "pregunta": "Dentro de la clasificación de documentos administrativos, ¿dónde se encuadran las Resoluciones y los Acuerdos?",
+    "opciones": [
+      "Documentos de Decisión",
+      "Documentos de Transmisión",
+      "Documentos de Constancia",
+      "Documentos de Juicio"
+    ],
+    "respuestaCorrecta": "Documentos de Decisión",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Las Resoluciones y Acuerdos son actos resolutorios y por tanto se clasifican como Documentos de Decisión."
+  },
+  {
+    "pregunta": "¿En qué categoría se clasifican los documentos administrativos como las Notificaciones, Publicaciones y Comunicaciones?",
+    "opciones": [
+      "Documentos de Transmisión",
+      "Documentos de Decisión",
+      "Documentos de Constancia",
+      "Documentos de Juicio"
+    ],
+    "respuestaCorrecta": "Documentos de Transmisión",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Los actos que tienen por objeto comunicar o trasladar decisiones son Documentos de Transmisión."
+  },
+  {
+    "pregunta": "¿Qué tipo de documentos administrativos son las Actas y los Certificados?",
+    "opciones": [
+      "Documentos de Constancia",
+      "Documentos de Juicio",
+      "Documentos de Decisión",
+      "Documentos de los Ciudadanos"
+    ],
+    "respuestaCorrecta": "Documentos de Constancia",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Los documentos que acreditan de forma indubitada un hecho o acto son Documentos de Constancia (Actas y Certificados)."
+  },
+  {
+    "pregunta": "¿Bajo qué categoría se clasifican las instancias, recursos, denuncias o alegaciones presentadas por los miembros de las FAS?",
+    "opciones": [
+      "Documentos de los Ciudadanos",
+      "Documentos de Transmisión",
+      "Documentos de Juicio",
+      "Documentos de Decisión"
+    ],
+    "respuestaCorrecta": "Documentos de los Ciudadanos",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Las instancias y recursos dirigidos a la administración son catalogados formalmente como Documentos de los Ciudadanos."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes no es una característica exigida por la IG 10-01 para la redacción de escritos militares?",
+    "opciones": [
+      "Redundancia explicativa",
+      "Claridad y concisión",
+      "Orden lógico o método",
+      "Concreción y corrección gramática"
+    ],
+    "respuestaCorrecta": "Redundancia explicativa",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La IG 10-01 exige escritos claros, concisos, metódicos, concretos y correctos; la redundancia está explícitamente desaconsejada."
+  },
+  {
+    "pregunta": "Según las normas generales de presentación de la IG 10-01, ¿cuáles son los márgenes estándar exigidos en el papel A4?",
+    "opciones": [
+      "Izquierdo 30 mm, Derecho 15 mm, Superior 40 mm, Inferior 20 mm",
+      "Izquierdo 25 mm, Derecho 25 mm, Superior 30 mm, Inferior 30 mm",
+      "Izquierdo 20 mm, Derecho 10 mm, Superior 20 mm, Inferior 10 mm",
+      "Izquierdo 35 mm, Derecho 20 mm, Superior 35 mm, Inferior 25 mm"
+    ],
+    "respuestaCorrecta": "Izquierdo 30 mm, Derecho 15 mm, Superior 40 mm, Inferior 20 mm",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La IG 10-01 fija los márgenes en: Izq. 30 mm, Der. 15 mm, Sup. 40 mm e Inf. 20 mm."
+  },
+  {
+    "pregunta": "¿Cuál es el formato de tipografía, tamaño e interlineado estándar para la confección de escritos oficiales en el EA?",
+    "opciones": [
+      "Arial 11, color negro, interlineado sencillo y texto justificado",
+      "Times New Roman 12, interlineado doble y alineado a la izquierda",
+      "Calibri 10, interlineado de 1.5 y texto centrado",
+      "Verdana 11, interlineado sencillo y texto justificado"
+    ],
+    "respuestaCorrecta": "Arial 11, color negro, interlineado sencillo y texto justificado",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La IG 10-01 estipula el uso de la tipografía Arial 11 en color negro con alineación justificada e interlineado simple."
+  },
+  {
+    "pregunta": "¿Cómo debe representarse la numeración de páginas en el pie de página de los escritos según la IG 10-01?",
+    "opciones": [
+      "'Página X de Y' en fuente Arial 6",
+      "'Pag. X' en Arial 10",
+      "'Pág. X / Y' en Times 8",
+      "'Página X' en Arial 8"
+    ],
+    "respuestaCorrecta": "'Página X de Y' en fuente Arial 6",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Se debe colocar centrada en el pie la estructura 'Página X de Y' con fuente Arial y un tamaño de 6 puntos."
+  },
+  {
+    "pregunta": "¿Hasta cuántos niveles de divisiones estructurales jerárquicas en el texto permite la IG 10-01 en sus escritos administrativos?",
+    "opciones": [
+      "Hasta 4 niveles (Mayúsculas Negrita, Mayúsculas, Minúsculas Negrita, Minúsculas)",
+      "Hasta 2 niveles (Títulos y Subtítulos)",
+      "Hasta 6 niveles alfanuméricos",
+      "No hay límite establecido"
+    ],
+    "respuestaCorrecta": "Hasta 4 niveles (Mayúsculas Negrita, Mayúsculas, Minúsculas Negrita, Minúsculas)",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "El formato jerárquico se limita a 4 niveles detallados formalmente desde negrita mayúscula a minúsculas simples."
+  },
+  {
+    "pregunta": "¿Qué documento se utiliza para la comunicación oficial ordinaria y formal entre órganos administrativos o con particulares?",
+    "opciones": [
+      "Oficio",
+      "Teletipo",
+      "Instancia",
+      "Acta"
+    ],
+    "respuestaCorrecta": "Oficio",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "El Oficio es el medio clásico para comunicarse formalmente entre órganos de la administración y con particulares."
+  },
+  {
+    "pregunta": "¿Cuál es la regla de oro respecto a los asuntos tratados en un Oficio militar?",
+    "opciones": [
+      "Debe tratar de un solo asunto",
+      "Debe tratar como mínimo de tres asuntos relacionados",
+      "No se permiten asuntos de carácter logístico",
+      "El asunto debe redactarse siempre en mayúsculas de nivel 4"
+    ],
+    "respuestaCorrecta": "Debe tratar de un solo asunto",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Por motivos de archivo y tramitación eficaz, cada Oficio debe tratar de un único asunto exclusivo."
+  },
+  {
+    "pregunta": "En el sistema de mensajería formal MEFO (teletipo), ¿qué letra identifica a la prelación 'Prioridad' y qué plazo de entrega tiene fijado?",
+    "opciones": [
+      "P (Prioridad) - Plazo máximo de entrega de 6 horas",
+      "Z (Flash) - Entrega inmediata en menos de 5 minutos",
+      "O (Inmediato) - Plazo de 1 hora",
+      "R (Rutina) - Plazo de 24 horas"
+    ],
+    "respuestaCorrecta": "P (Prioridad) - Plazo máximo de entrega de 6 horas",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La prelación 'P' indica 'Prioridad' y fija un plazo máximo de entrega o transmisión de 6 horas."
+  },
+  {
+    "pregunta": "En mensajería formal (MEFO), ¿qué plazo de entrega tiene fijada la prelación 'O' (Inmediato)?",
+    "opciones": [
+      "Menos de 1 hora",
+      "Entrega lo antes posible",
+      "Hasta 6 horas",
+      "Al comienzo de la jornada siguiente"
+    ],
+    "respuestaCorrecta": "Menos de 1 hora",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La prelación 'O' (Inmediato) exige que el mensaje sea entregado en un plazo inferior a una hora."
+  },
+  {
+    "pregunta": "¿Qué prelación MEFO se entrega 'al comienzo del trabajo del día siguiente' de su transmisión?",
+    "opciones": [
+      "R (Rutina)",
+      "P (Prioridad)",
+      "O (Inmediato)",
+      "Z (Flash)"
+    ],
+    "respuestaCorrecta": "R (Rutina)",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Los teletipos con prelación 'R' (Rutina) se tramitan para ser entregados antes de que comience el horario laboral del día siguiente."
+  },
+  {
+    "pregunta": "¿Cuál es la estructura formal obligatoria que compone una Instancia militar?",
+    "opciones": [
+      "Datos del solicitante + EXPONE + SOLICITA + Fecha y firma",
+      "Cuerpo del oficio + Justificación + Firma del Coronel",
+      "Datos del cargo + Razón de constancia + S/Ref",
+      "EXPONE + Propósito + Antecedentes + Conclusión"
+    ],
+    "respuestaCorrecta": "Datos del solicitante + EXPONE + SOLICITA + Fecha y firma",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La instancia se compone obligatoriamente de los datos personales, el cuerpo expositivo ('EXPONE'), la petición formal ('SOLICITA') y el cierre con fecha y firma."
+  },
+  {
+    "pregunta": "Según las normas de tratamientos honoríficos en escritos administrativos, ¿cuál es la norma general respecto a los cargos y nombres?",
+    "opciones": [
+      "Se dirigen siempre al cargo, no a la persona",
+      "Se dirigen al nombre personal con el máximo rango",
+      "Solo se permite el uso del nombre de pila",
+      "Se prohíbe mencionar el cargo oficial"
+    ],
+    "respuestaCorrecta": "Se dirigen siempre al cargo, no a la persona",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La correspondencia administrativa oficial se dirige siempre al cargo institucional de forma abstracta, no a la persona concreta que lo ocupa."
+  },
+  {
+    "pregunta": "¿Qué tratamiento honorífico corresponde oralmente y por escrito a los Coroneles en el pie de un documento administrativo?",
+    "opciones": [
+      "Señoría (V.S.) / Sr. Coronel",
+      "Excelencia (V.E.) / Excmo. Sr.",
+      "Alteza Real (S.A.R.) / A S.A.R. el Coronel",
+      "Usted (Vd.) / Coronel de Entrada"
+    ],
+    "respuestaCorrecta": "Señoría (V.S.) / Sr. Coronel",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "A los Coroneles les corresponde históricamente el tratamiento de Señoría (V.S.) y formalmente en firma 'Sr. Coronel'."
+  },
+  {
+    "pregunta": "De acuerdo con el Manual de Documentos Administrativos de 2003, ¿qué tratamientos y abreviaturas honoríficas se deben mantener en los escritos administrativos?",
+    "opciones": [
+      "Únicamente se mantendrá don/doña y señor/señora",
+      "Se mantendrán todas las abreviaturas tradicionales como V.E. o V.S.",
+      "Se prohíben absolutamente todos los tratamientos sin excepción",
+      "Se deben usar indistintamente según el rango del emisor"
+    ],
+    "respuestaCorrecta": "Únicamente se mantendrá don/doña y señor/señora",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "Las normas modernas de simplificación administrativa exigen suprimir fórmulas honoríficas redundantes, manteniendo únicamente 'don/doña' y 'señor/señora'."
+  }
+]

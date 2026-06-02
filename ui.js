@@ -6,11 +6,15 @@ export class UI {
             testContentEl: document.getElementById('test-content'),
             iniciarNuevoTestBtn: document.getElementById('iniciar-nuevo-test-btn'),
             iniciarRepasoFallosBtn: document.getElementById('iniciar-repaso-fallos-btn'),
+            iniciarTestTemasBtn: document.getElementById('iniciar-test-temas-btn'),
             iniciarSimulacro1Btn: document.getElementById('iniciar-simulacro-1-btn'),
             iniciarSimulacro2Btn: document.getElementById('iniciar-simulacro-2-btn'),
             iniciarSimulacro3Btn: document.getElementById('iniciar-simulacro-3-btn'),
             numPreguntasSelect: document.getElementById('num-preguntas-select'),
             configTestNormal: document.querySelector('.config-test-normal'),
+            temasMenuEl: document.getElementById('temas-menu'),
+            volverMenuBtn: document.getElementById('volver-menu-btn'),
+            btnTemas: document.querySelectorAll('.btn-tema'),
             soundToggleBtn: document.getElementById('sound-toggle-btn'),
             reiniciarProgresoBtn: document.getElementById('reiniciar-progreso-btn'),
             seguirMasTardeBtn: document.getElementById('seguir-mas-tarde-btn'),
@@ -45,11 +49,19 @@ export class UI {
     showStartView() {
         this.elements.inicioMenuEl.classList.remove('oculto');
         this.elements.testContentEl.classList.add('oculto');
+        if (this.elements.temasMenuEl) this.elements.temasMenuEl.classList.add('oculto');
     }
 
     showTestView() {
         this.elements.inicioMenuEl.classList.add('oculto');
         this.elements.testContentEl.classList.remove('oculto');
+        if (this.elements.temasMenuEl) this.elements.temasMenuEl.classList.add('oculto');
+    }
+
+    showTemasMenuView() {
+        this.elements.inicioMenuEl.classList.add('oculto');
+        this.elements.testContentEl.classList.add('oculto');
+        if (this.elements.temasMenuEl) this.elements.temasMenuEl.classList.remove('oculto');
     }
 
     initializeTheme(theme) {
@@ -152,7 +164,7 @@ export class UI {
         }
     }
 
-    showAnswerFeedback(opcionSeleccionada, esCorrecto, respuestaCorrecta) {
+    showAnswerFeedback(opcionSeleccionada, esCorrecto, respuestaCorrecta, explicacion) {
         const botonSeleccionado = Array.from(this.elements.opcionesEl.children).find(btn => btn.innerText.endsWith(opcionSeleccionada));
 
         if (esCorrecto) {
@@ -176,6 +188,18 @@ export class UI {
             const strongElement = document.createElement('strong');
             strongElement.textContent = respuestaCorrecta;
             this.elements.feedbackEl.appendChild(strongElement);
+            
+            if (explicacion && explicacion.trim()) {
+                const expDiv = document.createElement('div');
+                expDiv.className = 'feedback-explicacion';
+                
+                const expStrong = document.createElement('strong');
+                expStrong.textContent = 'Explicación: ';
+                expDiv.appendChild(expStrong);
+                expDiv.appendChild(document.createTextNode(explicacion));
+                
+                this.elements.feedbackEl.appendChild(expDiv);
+            }
             
             this.elements.feedbackEl.className = 'feedback visible incorrecto';
         }

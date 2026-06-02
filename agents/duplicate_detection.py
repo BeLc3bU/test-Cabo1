@@ -46,8 +46,9 @@ class DuplicateDetectionAgent:
             is_semantic_dup = False
             for u_q in unique_questions:
                 if q["tema"] == u_q["tema"]: # Solo comparar dentro del mismo tema para optimizar
-                    sim = self.get_jaccard_similarity(q["pregunta"], u_q["pregunta"])
-                    if sim > 0.85:
+                    sim_q = self.get_jaccard_similarity(q["pregunta"], u_q["pregunta"])
+                    sim_a = self.get_jaccard_similarity(q["respuestaCorrecta"], u_q["respuestaCorrecta"])
+                    if sim_q > 0.65 and (sim_a > 0.75 or q["respuestaCorrecta"].strip().lower() == u_q["respuestaCorrecta"].strip().lower()):
                         is_semantic_dup = True
                         semantic_removed += 1
                         # Si la nueva pregunta tiene una explicación y la vieja no, actualizarla
@@ -61,7 +62,7 @@ class DuplicateDetectionAgent:
                 
         print(f"[Duplicate Detection] Eliminación finalizada:")
         print(f"  - Duplicados exactos eliminados: {duplicates_removed}")
-        print(f"  - Duplicados semánticos (>85% similitud) eliminados: {semantic_removed}")
+        print(f"  - Duplicados semánticos (>65% preg + >75%/exacto respuesta) eliminados: {semantic_removed}")
         print(f"  - Preguntas únicas resultantes: {len(unique_questions)}")
         
         with open(self.output_json, 'w', encoding='utf-8') as f:

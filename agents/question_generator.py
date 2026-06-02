@@ -172,32 +172,40 @@ class QuestionGenerator:
         # 3. Cargar preguntas de Docx (Autoevaluación)
         docx_questions = self.parse_autoevaluacion()
         
+        # 3.b Cargar preguntas adicionales (de temas con baja cobertura)
+        extra_questions = []
+        extra_json_path = os.path.join(self.base_dir, "agents", "extra_questions.json")
+        if os.path.exists(extra_json_path):
+            with open(extra_json_path, 'r', encoding='utf-8') as f:
+                extra_questions = json.load(f)
+            print(f"[Question Generator] Cargadas {len(extra_questions)} preguntas adicionales.")
+
         # 4. Fusionar todo y normalizar temas
         all_questions = []
-        for q in (html_questions + docx_questions):
+        for q in (html_questions + docx_questions + extra_questions):
             q["tema"] = self.normalize_topic(q["tema"])
             all_questions.append(q)
             
         print(f"[Question Generator] Fusionadas {len(all_questions)} preguntas de entrada.")
         
         # 5. Generación de variantes programáticas para aumentar robustez del banco
-        # Esto nos asegura tener suficientes variantes y cubrir todos los requisitos de calidad offline
-        variants = []
-        for idx, q in enumerate(all_questions):
-            if len(variants) >= 50:  # Generar hasta 50 variantes útiles
-                break
-            # Generar variante por orden inverso de opciones
-            if len(q["opciones"]) == 4 and idx % 7 == 0:
-                rev_opts = list(reversed(q["opciones"]))
-                variants.append({
-                    "pregunta": f"{q['pregunta']} (Variante)",
-                    "opciones": rev_opts,
-                    "respuestaCorrecta": q["respuestaCorrecta"],
-                    "tema": q["tema"],
-                    "explicacion": q["explicacion"]
-                })
-        
-        all_questions.extend(variants)
+        # Desactivado temporalmente para evitar preguntas duplicadas redundantes.
+        # variants = []
+        # for idx, q in enumerate(all_questions):
+        #     if len(variants) >= 50:  # Generar hasta 50 variantes útiles
+        #         break
+        #     # Generar variante por orden inverso de opciones
+        #     if len(q["opciones"]) == 4 and idx % 7 == 0:
+        #         rev_opts = list(reversed(q["opciones"]))
+        #         variants.append({
+        #             "pregunta": f"{q['pregunta']} (Variante)",
+        #             "opciones": rev_opts,
+        #             "respuestaCorrecta": q["respuestaCorrecta"],
+        #             "tema": q["tema"],
+        #             "explicacion": q["explicacion"]
+        #         })
+        # 
+        # all_questions.extend(variants)
         
         # 6. Escribir resultado
         with open(self.output_json, 'w', encoding='utf-8') as f:

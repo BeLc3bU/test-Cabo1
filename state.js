@@ -189,7 +189,7 @@ export function procesarRespuesta(opcionSeleccionada, estadoActual) {
     if (estadoActual.preguntaActualIndex > 0) {
         guardarEstado(estadoActual);
     }
-    return { esCorrecto, respuestaCorrecta: preguntaActual.respuestaCorrecta };
+    return { esCorrecto, respuestaCorrecta: preguntaActual.respuestaCorrecta, explicacion: preguntaActual.explicacion };
 }
 
 export function avanzarPregunta(estadoActual) {

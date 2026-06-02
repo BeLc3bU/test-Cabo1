@@ -1,315 +1,60 @@
 [
   {
-    "pregunta": "Marque que dos tipos de Disposiciones Generales regulan la IG 10-01:",
+    "pregunta": "¿Qué tipo de comunicación organizacional puede distorsionarse a través del 'gatekeeping' o efecto portero?",
     "opciones": [
-      "Instrucciones Generales y Instrucciones Específicas",
-      "Ordenes Ministeriales y Instrucciones",
-      "Procedimientos y Instrucciones Particulares",
+      "Comunicación horizontal",
+      "Comunicación vertical descendente",
+      "Comunicación vertical ascendente",
+      "Comunicación informal"
+    ],
+    "respuestaCorrecta": "Comunicación vertical ascendente",
+    "tema": "Expresión Oral",
+    "explicacion": "La comunicación vertical ascendente puede sufrir distorsiones como el gatekeeping (reducción o restricción de la información) u ocultación.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según las Reales Ordenanzas, ¿cuál es el primer deber del militar recogido en el artículo 3?",
+    "opciones": [
+      "Obedecer las órdenes de sus superiores",
+      "Disposición permanente para defender a España, incluso con entrega de la vida",
+      "Respetar los derechos fundamentales de los ciudadanos",
+      "Mantener la disciplina y el orden en su unidad"
+    ],
+    "respuestaCorrecta": "Disposición permanente para defender a España, incluso con entrega de la vida",
+    "tema": "Valores Militares",
+    "explicacion": "El Art.3 establece que el primer deber del militar es la disposición permanente para defender a España, con entrega de la vida si fuera necesario.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es el primer deber del militar recogido en el Art. 3 de las Reales Ordenanzas?",
+    "opciones": [
+      "Obedecer las órdenes del mando",
+      "Disposición permanente para defender a España",
+      "Mantener la disciplina en todo momento",
+      "Respetar la bandera y el himno nacional"
+    ],
+    "respuestaCorrecta": "Disposición permanente para defender a España",
+    "tema": "Liderazgo",
+    "explicacion": "El Art. 3 establece como primer deber del militar la disposición permanente para defender a España, con entrega de la propia vida si fuera necesario.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes sería adecuado en la escritura de un texto?",
+    "opciones": [
+      "NATO",
+      "OTAN",
+      "NATO y OTAN son válidas las dos",
       "Ninguna es correcta"
     ],
-    "respuestaCorrecta": "Ordenes Ministeriales y Instrucciones",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son los seis idiomas oficiales de la ONU?",
-    "opciones": [
-      "Inglés, Francés, Español, Alemán, Chino y Ruso",
-      "Inglés, Francés, Español, Árabe, Chino y Ruso",
-      "Inglés, Francés, Portugués, Árabe, Chino y Japonés",
-      "Inglés, Francés, Español, Árabe, Hindú y Ruso"
-    ],
-    "respuestaCorrecta": "Inglés, Francés, Español, Árabe, Chino y Ruso",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Los 6 idiomas oficiales de la ONU son: Árabe, Chino, Español, Francés, Inglés y Ruso. Los idiomas de trabajo son solo Francés e Inglés.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son las principales utilidades del registro de documentación?",
-    "opciones": [
-      "Mejorar la trazabilidad de la información",
-      "Acceso a consultar las características de un documento",
-      "Mejorar su localización en los expedientes",
-      "Todas son correctas"
-    ],
-    "respuestaCorrecta": "Todas son correctas",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué órgano de la UE vela por que los países miembros apliquen correctamente las leyes aprobadas y respeten los derechos fundamentales?",
-    "opciones": [
-      "La Comisión Europea",
-      "El Consejo Europeo",
-      "El Parlamento Europeo",
-      "El Tribunal de Justicia de la UE"
-    ],
-    "respuestaCorrecta": "El Tribunal de Justicia de la UE",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El Tribunal de Justicia de la UE vela por que los países apliquen las leyes aprobadas y se respeten los derechos fundamentales.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En la estructura de grupo, ¿qué características tienen los roles según Brownn (1988)? Señala la INCORRECTA.",
-    "opciones": [
-      "Son la base de la comunicación entre miembros",
-      "Funcionan como agencia mediadora entre individuo y grupo",
-      "Los roles son siempre asignados por el líder formal del grupo",
-      "Forman parte de la autodefinición de la persona en el grupo"
-    ],
-    "respuestaCorrecta": "Los roles son siempre asignados por el líder formal del grupo",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Brownn no indica que los roles sean siempre asignados por el líder. Los roles emergen de la dinámica del grupo y pueden ser reconocidos o negociados colectivamente.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el texto descriptivo, las formas verbales más usadas expresan estado o apariencia. ¿Qué función sintáctica cumple el adjetivo en este tipo de texto y qué estructura se emplea para hacer comparaciones?",
-    "opciones": [
-      "El adjetivo precisa el significado verbal; se usa la yuxtaposición para comparar",
-      "El adjetivo es el núcleo del predicado; se usa la coordinación para comparar",
-      "El adjetivo modifica frecuentemente al sustantivo; se usa la subordinación para comparar",
-      "El adjetivo sustituye al verbo; se usa la yuxtaposición para comparar"
-    ],
-    "respuestaCorrecta": "El adjetivo modifica frecuentemente al sustantivo; se usa la subordinación para comparar",
-    "tema": "Expresión Escrita",
-    "explicacion": "En el texto descriptivo el adjetivo se usa con frecuencia para caracterizar realidades. Los adverbios de modo precisan las formas adjetivas. La yuxtaposición es la estructura más usada en general, pero la subordinación se usa específicamente para hacer comparaciones.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué institución de la UE está formada por 27 comisarios que proponen nuevas leyes?",
-    "opciones": [
-      "El Parlamento Europeo",
-      "El Consejo Europeo",
-      "La Comisión Europea",
-      "El Tribunal de Justicia"
-    ],
-    "respuestaCorrecta": "La Comisión Europea",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La Comisión Europea está formada por 27 comisarios y es la encargada de proponer nuevas leyes en el conjunto de la UE.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cómo se denomina el tipo de texto que presenta información o explicación con predominio de la objetividad?",
-    "opciones": [
-      "Narrativo",
-      "Argumentativo",
-      "Expositivo",
-      "Descriptivo"
-    ],
-    "respuestaCorrecta": "Expositivo",
-    "tema": "Expresión Escrita",
-    "explicacion": "El texto expositivo ofrece información o explicación con predominio de la objetividad.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿En qué instrucción general se describen los valores militares del Ejército del Aire?",
-    "opciones": [
-      "IG 10-01",
-      "IG 00-1",
-      "IG 00-4",
-      "IG 10-14"
-    ],
-    "respuestaCorrecta": "IG 00-4",
-    "tema": "Valores Militares",
-    "explicacion": "Los valores militares están descritos en la IG 00-4, de 1 de octubre de 2015, sobre Liderazgo y Valores en el EA.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "El texto que relata acontecimientos se denomina:",
-    "opciones": [
-      "Argumentativo",
-      "Expositivo",
-      "Narrativo",
-      "Descriptivo"
-    ],
-    "respuestaCorrecta": "Narrativo",
+    "respuestaCorrecta": "OTAN",
     "tema": "Expresión Escrita",
     "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué valor militar describe 'la fidelidad a una causa, cumplir el compromiso y buscar el éxito del equipo por el bien común'?",
-    "opciones": [
-      "Disciplina",
-      "Compromiso",
-      "Lealtad",
-      "Ejemplaridad"
-    ],
-    "respuestaCorrecta": "Lealtad",
-    "tema": "Valores Militares",
-    "explicacion": "La Lealtad se define como fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común, añadiendo sinceridad.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "El vuelo histórico 'Plus Ultra' de 1926 cruzó el Atlántico Sur. ¿Quién era el comandante y piloto de esa travesía?",
-    "opciones": [
-      "Capitán Barberán",
-      "Coronel Vives",
-      "Comandante Ramón Franco",
-      "Infante Alfonso de Orleáns"
-    ],
-    "respuestaCorrecta": "Comandante Ramón Franco",
-    "tema": "Historia del EA",
-    "explicacion": "El 'Plus Ultra' fue pilotado por el Comandante Ramón Franco, con tripulación formada también por Ruiz de Alda, Durán y el sargento Rada.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué diferencia conceptual existe entre los estresores 'potencialmente estresores' y los 'ocupacionales' dentro de los factores estresantes de los intervinientes?",
-    "opciones": [
-      "No existe diferencia; son sinónimos en el temario",
-      "Los potencialmente estresores son sucesos como muertes o heridos; los ocupacionales son tareas exigentes como triajes o decisiones difíciles",
-      "Los ocupacionales son externos al trabajo; los potencialmente estresores son internos al individuo",
-      "Los ocupacionales afectan solo a los mandos; los potencialmente estresores afectan a toda la tropa"
-    ],
-    "respuestaCorrecta": "Los potencialmente estresores son sucesos como muertes o heridos; los ocupacionales son tareas exigentes como triajes o decisiones difíciles",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Los estresores 'potencialmente estresores' son sucesos como presenciar muertes o heridos. Los 'ocupacionales' son las propias exigencias del trabajo: tareas muy exigentes, triajes, decisiones de alta presión. Los 'ambientales' serían la climatología extrema.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el protocolo de intervención psicológica, el principio de 'Proximidad' hace referencia a:",
-    "opciones": [
-      "Intervenir lo antes posible para evitar daños mayores",
-      "Prestar la atención psicológica cerca del lugar de la catástrofe",
-      "Transmitir expectativas positivas a la víctima",
-      "Utilizar métodos de intervención breves y sencillos"
-    ],
-    "respuestaCorrecta": "Prestar la atención psicológica cerca del lugar de la catástrofe",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "El principio de Proximidad indica que la atención psicológica debe prestarse próxima al lugar de la catástrofe.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuántos idiomas oficiales tiene la ONU y cuáles son exactamente?",
-    "opciones": [
-      "5: inglés, francés, español, ruso y chino",
-      "6: árabe, chino, español, francés, inglés y ruso",
-      "6: árabe, chino, inglés, francés, portugués y ruso",
-      "7: árabe, chino, español, francés, inglés, ruso y alemán"
-    ],
-    "respuestaCorrecta": "6: árabe, chino, español, francés, inglés y ruso",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La ONU tiene exactamente 6 idiomas oficiales: árabe, chino, español, francés, inglés y ruso. De ellos, solo el francés y el inglés son idiomas de trabajo.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Qué tratamiento escrito corresponde a un Coronel o Capitán de Navío?",
-    "opciones": [
-      "Excelencia — V.E. — Excmo. Sr.",
-      "Señoría — V.S. — Ilustrísimo Señor",
-      "Majestad — V.M.",
-      "Alteza Real — S.A.R."
-    ],
-    "respuestaCorrecta": "Señoría — V.S. — Ilustrísimo Señor",
-    "tema": "Expresión Escrita",
-    "explicacion": "A los Coroneles y Capitanes de Navío les corresponde el tratamiento de Señoría (V.S.), con el encabezado 'Ilustrísimo Señor' y la abreviatura 'Usía'. La Excelencia es para Oficiales Generales.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué significa la sigla 'S/Ref.' en un documento militar?",
-    "opciones": [
-      "Sección de referencia interna del expediente",
-      "Referencia al sistema de clasificación del EA",
-      "La referencia del documento al que se está respondiendo",
-      "El número de registro de salida del documento"
-    ],
-    "respuestaCorrecta": "La referencia del documento al que se está respondiendo",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "S/Ref. (Su Referencia) se usa cuando se responde a otro documento; se cita el número del documento recibido. N/Ref. es la referencia interna propia.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿En qué Instrucción General se describen los valores militares?",
-    "opciones": [
-      "En la I.G. 00-4",
-      "En la I.G. 00-1",
-      "No se describen en ninguna I.G. Aparecen en una Orden Ministerial.",
-      "No se describen en ninguna I.G. Aparecen en las Reales Ordenanzas del Ejército del Aire."
-    ],
-    "respuestaCorrecta": "En la I.G. 00-4",
-    "tema": "Valores Militares",
-    "explicacion": "",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué habilidad de escucha activa consiste en repetir con otras palabras lo que el interlocutor ha dicho para asegurar la comprensión?",
-    "opciones": [
-      "Resumir",
-      "Parafrasear",
-      "Emitir palabras de refuerzo",
-      "Hacer cumplidos"
-    ],
-    "respuestaCorrecta": "Parafrasear",
-    "tema": "Expresión Oral",
-    "explicacion": "Parafrasear es la habilidad que ayuda a la comprensión, consistiendo en reformular con otras palabras lo que el interlocutor ha expresado.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Un documento llega a una unidad militar. Al registrarlo, ¿cuál es la diferencia entre la 'fecha del documento' y la 'fecha del asiento' que deben constar en el libro de registro?",
-    "opciones": [
-      "Son lo mismo; el temario no distingue entre ellas",
-      "La fecha del documento es cuándo se creó; la del asiento es cuándo se registró en el libro",
-      "La fecha del asiento es la de creación; la del documento es la de recepción",
-      "Solo es obligatorio registrar la fecha del asiento, no la del documento"
-    ],
-    "respuestaCorrecta": "La fecha del documento es cuándo se creó; la del asiento es cuándo se registró en el libro",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "El libro de registro debe contener ambas por separado: la fecha del documento (cuándo fue creado o emitido) y la fecha y hora del asiento (cuándo fue registrado en la unidad receptora). Son datos distintos y ambos obligatorios.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según el temario, ¿qué ocurre con el volumen de la voz cuando una persona siente miedo, excitación o rabia?",
-    "opciones": [
-      "El volumen disminuye considerablemente",
-      "El volumen se mantiene estable",
-      "El volumen aumenta",
-      "El volumen se vuelve irregular e impredecible"
-    ],
-    "respuestaCorrecta": "El volumen aumenta",
-    "tema": "Expresión Oral",
-    "explicacion": "Según el temario, el volumen de la voz aumenta al sentir miedo, excitación o rabia. Subir el volumen también es una llamada de atención.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
@@ -330,61 +75,331 @@
     "examen": "simulacro2"
   },
   {
-    "pregunta": "En la teoría situacional, ¿qué estilo combina baja tarea y alta relación?",
+    "pregunta": "Según la teoría de la Ruta-Meta, ¿qué comportamiento de liderazgo se caracteriza por establecer metas ambiciosas y esperar alto rendimiento?",
     "opciones": [
-      "Decir",
-      "Vender",
-      "Delegar",
-      "Participar"
+      "Líder Director",
+      "Líder Apoyador",
+      "Líder Participativo",
+      "Líder Orientado a Logros"
     ],
-    "respuestaCorrecta": "Participar",
+    "respuestaCorrecta": "Líder Orientado a Logros",
     "tema": "Liderazgo",
-    "explicacion": "El estilo Participar combina baja tarea + alta relación. Es el adecuado cuando el subalterno tiene problemas de motivación pero es competente (nivel R3).",
-    "dificultad": "facil",
+    "explicacion": "El Líder Orientado a Logros establece metas exigentes y espera el máximo rendimiento de sus subordinados. El Apoyador muestra interés personal; el Director da instrucciones precisas.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Qué tipo de prelación en mensajería formal (MEFO) indica que el mensaje debe entregarse en un plazo máximo de 6 horas?",
+    "pregunta": "Indique cual de las siguientes normativas se publican en el BOD:",
     "opciones": [
-      "Z, Flash",
-      "O, Inmediato",
-      "P, Prioridad",
-      "R, Rutina"
+      "Instruccion comunicada",
+      "Procedimientos Operativos",
+      "Resolución",
+      "Nota Interior"
     ],
-    "respuestaCorrecta": "P, Prioridad",
+    "respuestaCorrecta": "Resolución",
     "tema": "Registro y Redacción de Documentos",
-    "explicacion": "La prelación P (Prioridad) indica que el mensaje debe entregarse en un plazo de hasta 6 horas.",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué avión multipropósito sirve para reabastecimiento estratégico en vuelo en el 45 Grupo en Torrejón?",
+    "opciones": [
+      "Airbus A-330-200 (TK.24)",
+      "Airbus A-400M (TK.23)",
+      "Falcon 900 (T.18)",
+      "CASA C-295 (T.21)"
+    ],
+    "respuestaCorrecta": "Airbus A-330-200 (TK.24)",
+    "tema": "Material Aéreo",
+    "explicacion": "Los nuevos Airbus A-330 (T.24/TK.24) actúan en el 45 Grupo para transporte y reabastecimiento estratégico.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cómo se llama la fase del modelo de Worchel en la que surgen dudas y desconfianza entre los miembros del grupo?",
+    "opciones": [
+      "Período de descontento",
+      "Productividad grupal",
+      "Individualización",
+      "Declive grupal"
+    ],
+    "respuestaCorrecta": "Declive grupal",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "La fase de declive grupal es aquella en la que aparecen dudas, desconfianza y cuestionamientos sobre el grupo.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Qué principio de intervención psicológica indica que se deben emplear métodos breves y sencillos?",
+    "pregunta": "¿Qué propiedad textual consiste en el uso correcto de puntuación, nexos, anáforas y conectores en un texto?",
     "opciones": [
-      "Inmediatez",
-      "Proximidad",
-      "Simplicidad",
-      "Unidad"
+      "Adecuación",
+      "Coherencia",
+      "Cohesión",
+      "Gramática"
     ],
-    "respuestaCorrecta": "Simplicidad",
+    "respuestaCorrecta": "Cohesión",
+    "tema": "Expresión Escrita",
+    "explicacion": "La cohesión se refiere al uso correcto de puntuación, nexos, anáforas y conectores textuales.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿A qué fase del proceso de escritura corresponde la etapa 'Elocutio'?",
+    "opciones": [
+      "Construcción e ideación del tema",
+      "Ordenar y planificar mediante esquemas",
+      "Redacción y elección de la expresión lingüística",
+      "Revisión y corrección"
+    ],
+    "respuestaCorrecta": "Redacción y elección de la expresión lingüística",
+    "tema": "Expresión Escrita",
+    "explicacion": "La Elocutio es la fase de redacción: elegir la expresión lingüística adecuada, elaborar borradores y dar forma al texto.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿A qué unidad militar y Base Aérea están asignados principalmente los cazas F-18 Hornet (C.15M) de la zona norte de la Península?",
+    "opciones": [
+      "Ala 15 en la Base Aérea de Zaragoza",
+      "Ala 12 en la Base Aérea de Torrejón",
+      "Ala 14 en la Base Aérea de Los Llanos",
+      "Ala 11 en la Base Aérea de Morón"
+    ],
+    "respuestaCorrecta": "Ala 15 en la Base Aérea de Zaragoza",
+    "tema": "Material Aéreo",
+    "explicacion": "Los F-18 del norte peninsular operan desde la Base Aérea de Zaragoza asignados al Ala 15.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué valor militar describe 'la fidelidad a una causa, cumplir el compromiso y buscar el éxito del equipo por el bien común'?",
+    "opciones": [
+      "Disciplina",
+      "Compromiso",
+      "Lealtad",
+      "Ejemplaridad"
+    ],
+    "respuestaCorrecta": "Lealtad",
+    "tema": "Valores Militares",
+    "explicacion": "La Lealtad se define como fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común, añadiendo sinceridad.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En mensajería formal (MEFO), ¿qué plazo de entrega tiene fijada la prelación 'O' (Inmediato)?",
+    "opciones": [
+      "Menos de 1 hora",
+      "Entrega lo antes posible",
+      "Hasta 6 horas",
+      "Al comienzo de la jornada siguiente"
+    ],
+    "respuestaCorrecta": "Menos de 1 hora",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La prelación 'O' (Inmediato) exige que el mensaje sea entregado en un plazo inferior a una hora.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "La OTAN está presidida en 2024 por un nuevo secretario general. ¿Quién es?",
+    "opciones": [
+      "Jens Stoltenberg",
+      "Mark Rutte",
+      "Josep Borrell",
+      "Charles Michel"
+    ],
+    "respuestaCorrecta": "Mark Rutte",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "Mark Rutte asumió la Secretaría General de la OTAN en 2024, sustituyendo a Jens Stoltenberg.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El Consejo Europeo y el Consejo de la UE suenan parecido pero son órganos distintos. ¿Qué diferencia los distingue?",
+    "opciones": [
+      "El Consejo Europeo aprueba leyes; el de la UE fija estrategia",
+      "El Consejo Europeo reúne a los dirigentes para fijar estrategia; el de la UE reúne a los ministros para aprobar leyes",
+      "Son el mismo órgano con dos nombres distintos",
+      "El Consejo de la UE es judicial; el Europeo es legislativo"
+    ],
+    "respuestaCorrecta": "El Consejo Europeo reúne a los dirigentes para fijar estrategia; el de la UE reúne a los ministros para aprobar leyes",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El Consejo Europeo reúne a los dirigentes de los países para plantear estrategia común. El Consejo de la UE reúne a los ministros para aprobar leyes.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre el estilo 'Delegar' y 'Participar' en la Teoría Situacional de Hersey y Blanchard?",
+    "opciones": [
+      "Delegar es alta tarea/baja relación; Participar es alta tarea/alta relación",
+      "Delegar es baja tarea/baja relación; Participar es baja tarea/alta relación",
+      "Delegar es alta relación/baja tarea; Participar es alta tarea/baja relación",
+      "No hay diferencia; son sinónimos en contextos distintos"
+    ],
+    "respuestaCorrecta": "Delegar es baja tarea/baja relación; Participar es baja tarea/alta relación",
+    "tema": "Liderazgo",
+    "explicacion": "Delegar = Baja tarea + Baja relación (subalternos capaces y motivados, el líder apenas interviene). Participar = Baja tarea + Alta relación (subalternos capaces pero con problemas de motivación).",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
+    "opciones": [
+      "Nelson Mandela",
+      "Malala Yousafzai",
+      "Martin Luther King",
+      "Napoleón Bonaparte"
+    ],
+    "respuestaCorrecta": "Napoleón Bonaparte",
+    "tema": "Liderazgo",
+    "explicacion": "Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Cuál de estas prelaciones del teletipo (MEFO) indica que el mensaje debe entregarse en menos de 1 hora?",
+    "opciones": [
+      "Z — Flash",
+      "O — Inmediato",
+      "P — Prioridad",
+      "R — Rutina"
+    ],
+    "respuestaCorrecta": "O — Inmediato",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La prelación O (Inmediato) indica entrega en menos de 1 hora. La Z (Flash) es lo antes posible; la P (Prioridad) hasta 6 horas; la R (Rutina) hasta el inicio del día siguiente.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué elemento de la comunicación no verbal estudia los desplazamientos, el espacio personal y cómo nos movemos refleja nuestro estado?",
+    "opciones": [
+      "Kinesia",
+      "Paralingüística",
+      "Proxémica",
+      "Gestualización"
+    ],
+    "respuestaCorrecta": "Proxémica",
+    "tema": "Expresión Oral",
+    "explicacion": "La proxémica estudia el conjunto de comportamientos no verbales relacionados con el uso y estructuración del espacio inmediato al comunicador.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál de los 6 órganos principales de la ONU tiene como función principal deliberar y votar sobre cualquier asunto recogido en la Carta, con un voto por nación?",
+    "opciones": [
+      "El Consejo de Seguridad",
+      "La Asamblea General",
+      "La Secretaría",
+      "El ECOSOC"
+    ],
+    "respuestaCorrecta": "La Asamblea General",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La Asamblea General es el órgano deliberativo: se reúne anualmente, cada nación tiene un voto y puede debatir cualquier asunto de la Carta de la ONU.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "La I.G. 00-4 de octubre de 2015 desarrolla el modelo de Liderazgo y Valores en el EA. ¿Cuántos ejes estratégicos define la visión del JEMA?",
+    "opciones": [
+      "2 ejes: personal y material",
+      "3 ejes: recursos humanos, material y organización",
+      "4 ejes: vocación, preparación, valores y motivación",
+      "5 ejes: disciplina, lealtad, valor, respeto y compromiso"
+    ],
+    "respuestaCorrecta": "3 ejes: recursos humanos, material y organización",
+    "tema": "Valores Militares",
+    "explicacion": "La visión del JEMA se articula en 3 ejes estratégicos: Recursos Humanos, Material y Organización.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuántos países forman actualmente la OTAN y dónde está su cuartel general?",
+    "opciones": [
+      "30 países, con cuartel en Washington D.C.",
+      "32 países, con cuartel en Bruselas",
+      "28 países, con cuartel en Londres",
+      "32 países, con cuartel en París"
+    ],
+    "respuestaCorrecta": "32 países, con cuartel en Bruselas",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La OTAN fue creada en 1949 por 12 países y hoy tiene 32 miembros, con cuartel general en Bruselas.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué tipo de documento militar se usa para comunicar decisiones u órdenes de la autoridad y es emitido al BOD por el EMA o el SEGE?",
+    "opciones": [
+      "Instrucción General",
+      "Instrucción Comunicada",
+      "Resolución",
+      "Procedimiento Operativo"
+    ],
+    "respuestaCorrecta": "Resolución",
+    "tema": "Registro y Redacción de Documentos",
+    "explicacion": "La Resolución comunica decisiones u órdenes de la autoridad y es emitida al BOD por el EMA o el SEGE.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — El protocolo ACERCARSE tiene 8 pasos. ¿Cuál es el paso que ocupa la quinta posición?",
+    "opciones": [
+      "Activar",
+      "Restablecimiento emocional",
+      "Comprensión de crisis",
+      "Recuperación de funcionamiento"
+    ],
+    "respuestaCorrecta": "Comprensión de crisis",
     "tema": "Apoyo Psicológico",
-    "explicacion": "El principio de Simplicidad establece que deben usarse métodos breves y sencillos en la intervención psicológica.",
-    "dificultad": "facil",
+    "explicacion": "El orden exacto es: Ambiente · Contacto · Evaluación · Restablecimiento emocional · Comprensión de crisis · Activar · Recuperación de funcionamiento · Seguimiento. La 5.ª posición es 'Comprensión de crisis'.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿En qué año cambió su denominación el Ejército del Aire para incluir la palabra 'Espacio', y por qué Real Decreto?",
+    "pregunta": "Las víctimas de 6º grado en la clasificación del temario se denominan 'Accidente Blanco'. ¿A quiénes se refiere?",
     "opciones": [
-      "2020, RD 200/2020",
-      "2022, RD 524/2022",
-      "2019, RD 83/2019",
-      "2015, RD 494/2015"
+      "Personas que conocen el suceso a través de los medios de comunicación",
+      "Los equipos intervinientes que sufren estrés secundario",
+      "Personas que se salvaron por no estar en el lugar del suceso",
+      "Familiares de las víctimas directas que no presenciaron el evento"
     ],
-    "respuestaCorrecta": "2022, RD 524/2022",
-    "tema": "Historia del EA",
-    "explicacion": "En junio de 2022, por Real Decreto 524/2022, el Ejército del Aire pasó a denominarse Ejército del Aire y del Espacio.",
+    "respuestaCorrecta": "Personas que se salvaron por no estar en el lugar del suceso",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las víctimas de 6º grado son las que 'se salvaron por no estar allí', denominadas Accidente Blanco. No estar en el lugar puede generar igualmente trauma psicológico.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿A qué tipo de comunicación pertenece la comunicación vertical ascendente o descendente dentro de una organización?",
+    "opciones": [
+      "Informal",
+      "Masiva",
+      "Formal",
+      "Intrapersonal"
+    ],
+    "respuestaCorrecta": "Formal",
+    "tema": "Expresión Oral",
+    "explicacion": "La comunicación vertical (ascendente o descendente) pertenece a la comunicación formal dentro de la organización.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro2"
@@ -405,46 +420,31 @@
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Cuáles son las dos funciones principales de los documentos administrativos según el temario?",
+    "pregunta": "La segunda fase de la crisis psicológica provoca reacciones emocionales intensas, enfado u odio y pérdida de creencias y valores. ¿Cómo se denomina esta fase?",
     "opciones": [
-      "Función ejecutiva y función normativa",
-      "Función de constancia y función de comunicación",
-      "Función jurídica y función archivística",
-      "Función informativa y función disciplinaria"
+      "Fase de shock",
+      "Fase de reacción",
+      "Fase de adaptación",
+      "Fase de resolución"
     ],
-    "respuestaCorrecta": "Función de constancia y función de comunicación",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "Los documentos administrativos tienen dos funciones: la función de constancia (conservar y demostrar la existencia de los actos) y la función de comunicación (interna o externa).",
+    "respuestaCorrecta": "Fase de reacción",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "La 2.ª fase es la fase de Reacción, que provoca reacciones emocionales intensas, enfado/odio y pérdida de creencias y valores. La 1.ª fase es la de Shock.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Qué técnica de grupo, estructurada en fases de generación de ideas por escrito, ronda de ideas y votación preliminar, integra trabajo individual y grupal?",
+    "pregunta": "¿Qué tipo de consecuencia psicológica a largo plazo puede desarrollarse tras una emergencia según el temario?",
     "opciones": [
-      "Grupo inestructurado",
-      "Brainstorming libre",
-      "Grupo nominal",
-      "Dinámica de roles"
+      "Agitación psicomotriz",
+      "Trastorno adaptativo depresivo",
+      "Trastorno de estrés postraumático",
+      "Inacción motora"
     ],
-    "respuestaCorrecta": "Grupo nominal",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "El grupo nominal es una reunión estructurada que integra trabajo individual y grupal, con fases de preparación, generación de ideas por escrito, ronda, discusión, votación y discusión final.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuántos votos se necesitan para aprobar una resolución en el Consejo de Seguridad de la ONU, y qué condición especial existe?",
-    "opciones": [
-      "Mayoría simple de 8 votos sin condiciones especiales",
-      "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
-      "Unanimidad de los 15 miembros",
-      "9 votos y ratificación posterior por la Asamblea General"
-    ],
-    "respuestaCorrecta": "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Las resoluciones se aprueban con 9 votos, pero los 5 miembros permanentes (China, EEUU, Rusia, Francia y UK) poseen derecho de veto.",
+    "respuestaCorrecta": "Trastorno de estrés postraumático",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las consecuencias a largo plazo incluyen el trastorno de estrés postraumático (TEP), trastornos del estado de ánimo y abuso de sustancias.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
