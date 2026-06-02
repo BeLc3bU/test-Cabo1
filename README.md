@@ -8,9 +8,10 @@ La aplicación incorpora una **arquitectura multiagente especializada** para la 
 
 ## ✨ Características de la Aplicación
 
-- **2 Modos de Práctica Principales**:
-  - **Test Normal Configurable**: Cuestionarios dinámicos con un número de preguntas configurable (10, 20, 30, 50 o 100). Utiliza un **algoritmo de muestreo estratificado proporcional por temas** para asegurar que los 11 temas del curso estén representados proporcionalmente de acuerdo con el volumen restante de preguntas no vistas en el pool general.
+- **3 Modos de Práctica Principales**:
+  - **Test Normal Configurable**: Cuestionarios dinámicos con un número de preguntas configurable (10, 20, 30, 50 o 100). Utiliza un **algoritmo de muestreo estratificado proporcional por temas** para asegurar que los 12 temas del curso estén representados proporcionalmente de acuerdo con el volumen restante de preguntas no vistas en el pool general.
   - **Repaso de Fallos**: Permite repasar exclusivamente las preguntas respondidas incorrectamente en sesiones anteriores de forma interactiva y persistente.
+  - **Test por Temas**: Permite realizar exámenes enfocados de forma independiente en cada uno de los 12 temas del curso, ordenados de forma oficial, con mezcla de preguntas y límite configurable.
 - **Simulacros de Examen**: 
   - **3 simulacros de 30 preguntas** cada uno con conjuntos cerrados de preguntas únicas sin solapamiento.
   - Sistema de calificación formal **APTO / NO APTO** en base a una nota final sobre 100 calculada de forma proporcional (cada fallo resta `0.33` puntos, requiriendo un mínimo de `50.00 / 100` para ser APTO).

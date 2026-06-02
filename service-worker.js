@@ -1,4 +1,4 @@
-const CACHE_NAME = 'curso-cabo1-v1'; // Nueva versión para forzar la actualización.
+const CACHE_NAME = 'curso-cabo1-v2'; // Nueva versión para forzar la actualización.
 // Lista de archivos para cachear en la instalación.
 const urlsToCache = [
   '.', // Representa la raíz del directorio actual

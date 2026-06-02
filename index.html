@@ -36,6 +36,7 @@
                     <h2>Modos de Práctica</h2>
                     <button id="iniciar-nuevo-test-btn" class="btn btn-primary" data-action="nuevo-test">Test Normal</button>
                     <button id="iniciar-repaso-fallos-btn" class="btn btn-secondary" data-action="repasar-fallos">Repasar Fallos <span id="contador-fallos"></span></button>
+                    <button id="iniciar-test-temas-btn" class="btn btn-secondary" data-action="test-temas">Test por Temas</button>
                 </div>
                 <div class="test-section">
                     <h2>Simulacros</h2>
@@ -46,6 +47,29 @@
             </div>
             <div class="start-menu-footer">
                 <button id="reiniciar-progreso-btn" class="btn btn-tertiary" data-action="reiniciar-progreso">Reiniciar Progreso</button>
+            </div>
+        </section>
+
+        <!-- Menú de Temas (oculto al inicio) -->
+        <section id="temas-menu" class="oculto" aria-labelledby="temas-title">
+            <h1 id="temas-title">Test por Temas</h1>
+            <p id="temas-subtitle">Selecciona un tema para comenzar la práctica</p>
+            <div class="temas-grid">
+                <button class="btn btn-tema" data-tema="Apoyo Psicológico">1. Apoyo Psicológico</button>
+                <button class="btn btn-tema" data-tema="Organizaciones Internacionales">2. Organizaciones Internacionales</button>
+                <button class="btn btn-tema" data-tema="Historia del EA">3. Historia del EA</button>
+                <button class="btn btn-tema" data-tema="Material Aéreo">4. Material Aéreo</button>
+                <button class="btn btn-tema" data-tema="Dinámica de Grupos">5. Dinámica de Grupos</button>
+                <button class="btn btn-tema" data-tema="Expresión Oral">6. Expresión Oral</button>
+                <button class="btn btn-tema" data-tema="Expresión Escrita">7. Expresión Escrita</button>
+                <button class="btn btn-tema" data-tema="Liderazgo">8. Liderazgo</button>
+                <button class="btn btn-tema" data-tema="Valores Militares">9. Valores Militares</button>
+                <button class="btn btn-tema" data-tema="Registro y Utilización de Documentos">10. Registro y Utilización de Documentos</button>
+                <button class="btn btn-tema" data-tema="Redacción de Documentos Militares">11. Redacción de Documentos Militares</button>
+                <button class="btn btn-tema" data-tema="Instrucción a la IG 10-01">12. Instrucción a la IG 10-01</button>
+            </div>
+            <div class="start-menu-footer">
+                <button id="volver-menu-btn" class="btn btn-tertiary">Volver al Menú Principal</button>
             </div>
         </section>
 

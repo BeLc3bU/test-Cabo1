@@ -52,6 +52,63 @@ export async function loadAllQuestions() {
     const unifiedQuestions = questionSets.flat();
     allQuestions = unifyAndDeduplicate(unifiedQuestions);
 
+    // Normalizar y clasificar dinámicamente los temas de las preguntas
+    allQuestions.forEach(q => {
+        if (q.tema) {
+            let t = q.tema.trim();
+            const tLower = t.toLowerCase();
+            
+            if (tLower === 'dinámica de grupo' || tLower === 'dinamica de grupo' || tLower === 'dinámica de grupos' || tLower === 'dinamica de grupos') {
+                q.tema = 'Dinámica de Grupos';
+            } else if (tLower === 'expresión oral' || tLower === 'expresion oral' || tLower === 'expresión orgal' || tLower === 'expresion orgal') {
+                q.tema = 'Expresión Oral';
+            } else if (tLower === 'expresión escrita' || tLower === 'expresion escrita') {
+                q.tema = 'Expresión Escrita';
+            } else if (tLower === 'apoyo psicológico' || tLower === 'apoyo psicologico') {
+                q.tema = 'Apoyo Psicológico';
+            } else if (tLower === 'organizaciones internacionales') {
+                q.tema = 'Organizaciones Internacionales';
+            } else if (tLower === 'historia del ea') {
+                q.tema = 'Historia del EA';
+            } else if (tLower === 'material aéreo' || tLower === 'material aereo') {
+                q.tema = 'Material Aéreo';
+            } else if (tLower === 'liderazgo') {
+                q.tema = 'Liderazgo';
+            } else if (tLower === 'valores militares') {
+                q.tema = 'Valores Militares';
+            } else if (tLower === 'registro y redacción de documentos' || tLower === 'redacción de documentos militares' || tLower === 'registro y utilización de documentos' || tLower === 'registro y utilizacion de documentos') {
+                const text = (q.pregunta + ' ' + (q.explicacion || '')).toLowerCase();
+                if (
+                    text.includes('10-01') || 
+                    text.includes('10_01') || 
+                    text.includes('margen') || 
+                    text.includes('márgenes') || 
+                    text.includes('papel a4') || 
+                    text.includes('tratamientos honoríficos') ||
+                    text.includes('tratamiento honorífico') ||
+                    (text.includes('normativa') && text.includes('redacción') && text.includes('documentos'))
+                ) {
+                    q.tema = 'Instrucción a la IG 10-01';
+                } else if (
+                    text.includes('registr') || 
+                    text.includes('archiv') || 
+                    text.includes('expediente') || 
+                    text.includes('signatura') || 
+                    text.includes('asiento') || 
+                    text.includes('n/ref') || 
+                    text.includes('s/ref') ||
+                    text.includes('libro de registro')
+                ) {
+                    q.tema = 'Registro y Utilización de Documentos';
+                } else {
+                    q.tema = 'Redacción de Documentos Militares';
+                }
+            }
+        } else {
+            q.tema = 'General';
+        }
+    });
+
     // Crear un mapa para búsqueda de índices O(1)
     allQuestions.forEach((q, index) => {
         questionIndexMap.set(q.pregunta, index);
