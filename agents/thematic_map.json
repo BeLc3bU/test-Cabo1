@@ -20,23 +20,23 @@
       "3.INTRODUCCIÓN A LA IG 10-01.docx"
     ],
     "subtemas": [
-      "1. Disposiciones Generales",
-      "1. Sistema de Registro y Gestión Documental",
-      "2. Definiciones",
-      "4. Números de Registro",
-      "REGISTRO Y UTILIZACIÓN DE DOCUMENTOS EN EL EA",
       "INTRODUCCIÓN A LA IG 10-01",
+      "3. Forma y Estructura de las Disposiciones Generales",
       "5. Siglas de los Documentos",
-      "6. Identificación de Expedientes",
-      "JEMA",
-      "(IG 10-14)",
+      "2. Definiciones",
       "2. Conceptos Básicos",
       "3. Libro de Registro",
-      "3. Forma y Estructura de las Disposiciones Generales"
+      "1. Disposiciones Generales",
+      "JEMA",
+      "6. Identificación de Expedientes",
+      "4. Números de Registro",
+      "1. Sistema de Registro y Gestión Documental",
+      "REGISTRO Y UTILIZACIÓN DE DOCUMENTOS EN EL EA",
+      "(IG 10-14)"
     ],
     "normativas_detectadas": [
-      "IG 10-14",
-      "IG 10-01"
+      "IG 10-01",
+      "IG 10-14"
     ],
     "longitud_caracteres": 3971,
     "nivel_importancia": "Crítico"

@@ -1,139 +1,106 @@
 agent_development_plan:
   mission_statement: >
-    Crear una Progressive Web App (PWA) robusta, intuitiva y funcional para ayudar a los usuarios a prepararse para el "test de permanencia".
-    La aplicación debe ser instalable, funcionar offline, persistir el progreso del usuario y ofrecer diferentes modos de estudio para maximizar la eficacia del aprendizaje.
-    La calidad del código, la mantenibilidad y una excelente experiencia de usuario son prioridades clave.
+    Crear una Progressive Web App (PWA) robusta, intuitiva y autogestionada para ayudar a los alumnos a prepararse para el Curso de Cabo 1.º del Ejército del Aire y del Espacio.
+    La aplicación debe funcionar 100% offline, persistir el progreso de forma segura y aislar configuraciones obsoletas.
+    El banco de preguntas se mantiene de forma inteligente y automatizada por un pipeline multiagente.
   agent_persona:
     name: Gemini Code Assist
     description: >
       Un asistente de ingeniería de software de clase mundial con amplia experiencia en desarrollo web front-end, PWAs, JavaScript moderno (ES6+),
-      y diseño de arquitecturas de software limpias y escalables. El enfoque se centra en la claridad, la eficiencia y las mejores prácticas.
+      y diseño de arquitecturas de software limpias, escalables y pipelines multiagente en Python.
   feature_analysis:
     - feature: "PWA & Offline"
       development_tasks:
-        - "Crear manifest.json con metadatos, iconos y atajos."
-        - "Implementar service-worker.js."
-        - "Definir estrategias de caché: Cache First para assets estáticos y Network First para los JSON de preguntas."
-        - "Gestionar el ciclo de vida del SW (instalación, activación, limpieza de caché antigua, actualización con prompt)."
+        - "Crear manifest.json con metadatos, iconos de máscara y atajos de teclado."
+        - "Implementar service-worker.js con estrategia Stale-While-Revalidate."
+        - "Implementar banner de actualización dinámica al detectar nuevas versiones del SW."
       involved_files:
         - manifest.json
-        - service-worker.js 
+        - service-worker.js
         - app.js
-    - feature: "Modos de Test"
+    - feature: "Modos de Práctica y Test"
       development_tasks:
-        - "Implementar modo Normal (aleatorio, configurable), Repaso de Fallos y Test Imprescindible."
-        - "Añadir modos de Examen 2022 y Examen 2024."
-        - "Permitir al usuario seleccionar el número de preguntas para el test normal."
+        - "Implementar Test Normal con algoritmo de muestreo estratificado proporcional por temas."
+        - "Implementar Repaso de Fallos persistente y Test por Temas (12 temas)."
+        - "Implementar 3 Simulacros de examen estáticos con cálculo formal APTO/NO APTO y penalización de fallos (-0.33)."
       involved_files:
         - index.html
         - app.js
         - state.js
         - ui.js
-    - feature: "Lógica del Test"
+        - questionManager.js
+    - feature: "Lógica del Test y Visualización"
       development_tasks:
-        - "Cargar y unificar los archivos JSON de forma asíncrona."
-        - "Gestionar el estado del test: pregunta actual, puntuación, aciertos, fallos."
-        - "Implementar el sistema de puntuación (+1 acierto, -0.33 fallo)."
+        - "Unificación y clasificación dinámica de temas en el cliente."
+        - "Gestión del estado de test, puntuaciones y feedback interactivo inmediato."
+        - "Mostrar la respuesta correcta y la explicación detallada (.feedback-explicacion) al cometer fallos, ampliando el retardo a 4 segundos."
       involved_files:
         - app.js
         - state.js
-        - questionManager.js
+        - ui.js
+        - style.css
     - feature: "Persistencia de Datos"
       development_tasks:
-        - "Usar localStorage para almacenar: Récord, preguntas no vistas, fallos, estado de sesión, tema, y preferencias de usuario (nº preguntas, silencio)."
+        - "Aislamiento de claves de localStorage con prefijo testCabo1State_."
+        - "Guardado de récords, fallos acumulados y sesión en curso."
       involved_files:
         - storage.js
-    - feature: "Interfaz y Experiencia de Usuario (UI/UX)"
+    - feature: "Pipeline Multiagente (Mantenimiento del Banco)"
       development_tasks:
-        - "Diseñar una estructura HTML semántica y vistas principales (menú, test)."
-        - "Implementar barra de progreso, feedback visual y modal de confirmación."
-        - "Mostrar resumen y revisión de fallos al finalizar."
-        - "Implementar tema claro/oscuro con persistencia."
-        - "Asegurar diseño responsive (mobile-first)."
-        - "Añadir animaciones, atajos de teclado, sonidos y feedback háptico."
+        - "Desarrollar el script orquestador para coordinar secuencialmente a todos los agentes."
+        - "Implementar el analizador de temario en docx para crear thematic_map.json."
+        - "Implementar generador de preguntas (parsar docx, extraer html e integrar extra_questions.json)."
+        - "Implementar validador estructural de preguntas de examen."
+        - "Implementar calibración de dificultad (30% fácil, 50% media, 20% difícil) por percentiles de complejidad."
+        - "Implementar deduplicación cruzada (similitud Jaccard de pregunta >0.65 y respuesta >0.75 o idéntica)."
+        - "Implementar analizador de lagunas de conocimiento de temas."
+        - "Implementar constructor de exámenes balanceados y suite de QA & Testing."
       involved_files:
-        - index.html
-        - style.css
-        - app.js
-        - ui.js
-    - feature: "Arquitectura y Refactorización"
-      development_tasks:
-        - "Modularizar el código JavaScript separando la lógica de estado, almacenamiento, gestión de preguntas y UI."
-        - "Convertir la lógica de UI en una clase para una mejor encapsulación."
-      involved_files:
-        - app.js
-        - ui.js
-        - state.js
-        - storage.js
-        - questionManager.js
-    - feature: "Herramientas de Desarrollo"
-      development_tasks:
-        - "Crear un script en Node.js (validar_preguntas.js) para validar la estructura del JSON, comprobar respuestas y eliminar duplicados."
-      involved_files:
-        - "validar_preguntas.js"
+        - agents/orchestrator.py
+        - agents/material_analyzer.py
+        - agents/question_generator.py
+        - agents/validation.py
+        - agents/difficulty_calibration.py
+        - agents/duplicate_detection.py
+        - agents/knowledge_gap.py
+        - agents/exam_builder.py
+        - agents/qa_testing.py
+        - agents/html_extractor.js
   execution_plan:
     - phase: 1
-      title: "El Esqueleto Funcional (MVP)"
+      title: "Extracción y Consolidación de Datos (Backend Pipeline)"
       steps:
-        - title: "Estructura Base"
+        - title: "Análisis del Temario"
           sub_steps:
-            - "Crear index.html con contenedores para menú y test."
-            - "Crear style.css con variables y layout básico."
-            - "Crear y enlazar app.js."
-        - title: "Carga de Datos y Test Normal"
+            - "Mapear los temas oficiales mediante lectura de leyes en los docx de Temario."
+        - title: "Generación de Preguntas"
           sub_steps:
-            - "Implementar carga asíncrona de preguntas.json."
-            - "Desarrollar lógica para 'Nuevo Test' con preguntas aleatorias."
-            - "Crear funciones para mostrar pregunta y gestionar respuestas (acierto/fallo)."
+            - "Extraer preguntas de los archivos HTML existentes de tests."
+            - "Crear base de preguntas extra a mano para temas de baja cobertura (Historia, Material, Redacción)."
+            - "Consolidar el pool inicial de preguntas."
     - phase: 2
-      title: "Persistencia y Modos Adicionales"
+      title: "Validación, Calibración y Deduplicación"
       steps:
-        - title: "Gestión de Preguntas Vistas y Falladas"
+        - title: "Validación de Datos"
           sub_steps:
-            - "Usar localStorage para el pool de preguntas no vistas."
-            - "Implementar guardado y eliminación de fallos persistentes."
-        - title: "Implementar Modos de Repaso e Imprescindible"
-          sub_steps: 
-            - "Crear lógica para 'Repaso de Fallos' usando los índices guardados."
-            - "Crear lógica para 'Test Imprescindible' filtrando por la propiedad 'imprescindible'."
-        - title: "Persistencia de Sesión y Récord"
+            - "Filtrar preguntas con esquemas rotos o respuestas correctas inexistentes."
+        - title: "Calibración y Limpieza"
           sub_steps:
-            - "Guardar el estado del test en curso en localStorage."
-            - "Implementar la funcionalidad de 'Continuar test' al iniciar la app."
-            - "Guardar y mostrar el récord de puntuación."
+            - "Calcular complejidad y asignar dificultades (fácil/media/difícil)."
+            - "Aplicar algoritmo de deduplicación cruzada para limpiar repeticiones semánticas."
+        - title: "Compilación de Simulacros"
+          sub_steps:
+            - "Construir preguntas.json y distribuir simulacros balanceados."
+            - "Ejecutar pruebas de QA y generar reporte qa_report.md."
     - phase: 3
-      title: "PWA y Experiencia de Usuario"
+      title: "Lógica Frontend y Modos de Práctica"
       steps:
-        - title: "Implementación del Service Worker"
+        - title: "Sistema Modular de Test"
           sub_steps:
-            - "Crear y registrar service-worker.js."
-            - "Definir assets para cachear y estrategias de caché (Cache First, Network First)."
-        - title: "Manifiesto y Mejoras PWA"
+            - "Desarrollar carga de preguntas e integración en los 4 modos de práctica."
+            - "Implementar lógica de puntuación y persistencia de progreso."
+        - title: "UX e Interacciones"
           sub_steps:
-            - "Crear un manifest.json detallado con iconos, atajos y capturas de pantalla."
-        - title: "Mejoras de UI/UX"
-          sub_steps:
-            - "Implementar tema claro/oscuro con persistencia."
-            - "Refinar CSS para un diseño responsive."
-            - "Añadir animaciones y atajos de teclado."
-    - phase: 4
-      title: "Refactorización y Mejoras de UX"
-      steps:
-        - title: "Modularización del Código"
-          sub_steps:
-            - "Refactorizar la lógica de localStorage a un módulo `storage.js`."
-            - "Refactorizar la carga y gestión de preguntas a un módulo `questionManager.js`."
-            - "Convertir la lógica de la UI en una clase `UI` en `ui.js`."
-        - title: "Mejoras de Interfaz y Experiencia"
-          sub_steps:
-            - "Implementar un modal de confirmación reutilizable."
-            - "Añadir feedback auditivo (sonidos) y háptico (vibración) con control de silencio."
-            - "Permitir al usuario seleccionar el número de preguntas."
-    - phase: 5
-      title: "Robustez y Mantenimiento"
-      steps:
-        - title: "Script de Validación y Depuración"
-          sub_steps:
-            - "Desarrollar el script validar_preguntas.js para asegurar la integridad de los datos JSON."
-            - "Realizar una depuración completa del flujo de la aplicación."
-            - "Añadir comentarios y verificar accesibilidad (ARIA)."
+            - "Diseñar transiciones fluidas, tema oscuro, feedback sonoro e interacciones hápticas."
+            - "Implementar atajos de teclado y sistema de restauración automática de sesión."
+            - "Implementar visualización de explicaciones dinámicas de respuestas incorrectas."
