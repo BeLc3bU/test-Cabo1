@@ -1,0 +1,422 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#b45309;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}.timer b{color:#fcd34d;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#b45309,#fcd34d);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#b45309;color:#fcd34d}
+.qb.cur{background:#2d1f0a;border-color:#b45309;color:#fcd34d}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2d1f0a;color:#fcd34d}
+.trapbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2d2010;color:#fb923c}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.tema-ind{font-size:10px;color:#4a5068;padding:2px 7px;border-radius:4px;background:#1e2235}
+.qtxt{font-size:15px;color:#e8eaf0;line-height:1.7;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#b45309}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#2d1f0a;border-color:#b45309;color:#fcd34d}
+.opt.sel{border-color:#b45309;background:#1a1205}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fbicon{font-size:18px;flex-shrink:0}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#b45309;color:#fcd34d}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#b45309;color:#fff;border-color:#b45309}
+.btnp:hover{background:#92400e;border-color:#92400e;color:#fff}
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#fcd34d;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:210px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:36px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}.tko{background:#1a0d0d;color:#f87171}
+.ttrap{background:#2d2010;color:#fb923c}.ttopic{background:#1e2235;color:#5a6280}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}.ra b{color:#fcd34d}
+.block-div{height:1px;background:#2a2f3e;margin:8px 0 12px}
+.block-label{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-weight:600}
+</style>
+
+<div class="w">
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Test 9 · 3 preguntas por tema · 10 temas</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+
+    <div class="block-label">T1 · OO.II.</div>
+    <div class="qgrid" id="g0" style="margin-bottom:10px"></div>
+    <div class="block-label">T2 · Ap. Psic.</div>
+    <div class="qgrid" id="g1" style="margin-bottom:10px"></div>
+    <div class="block-label">T3 · Mat. Aéreo</div>
+    <div class="qgrid" id="g2" style="margin-bottom:10px"></div>
+    <div class="block-label">T4 · Hist. Aviación</div>
+    <div class="qgrid" id="g3" style="margin-bottom:10px"></div>
+    <div class="block-label">T5 · Din. Grupos</div>
+    <div class="qgrid" id="g4" style="margin-bottom:10px"></div>
+    <div class="block-label">T6 · Expr. Oral</div>
+    <div class="qgrid" id="g5" style="margin-bottom:10px"></div>
+    <div class="block-label">T7 · Expr. Escrita</div>
+    <div class="qgrid" id="g6" style="margin-bottom:10px"></div>
+    <div class="block-label">T8 · Liderazgo</div>
+    <div class="qgrid" id="g7" style="margin-bottom:10px"></div>
+    <div class="block-label">T9 · Val. Militares</div>
+    <div class="qgrid" id="g8" style="margin-bottom:10px"></div>
+    <div class="block-label">T10 · Técn. Apoyo</div>
+    <div class="qgrid" id="g9" style="margin-bottom:10px"></div>
+
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#2d1f0a;border:1px solid #b45309"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+// 10 temas × 3 preguntas = 30 en total
+const QS=[
+
+// ── T1: ORGANIZACIONES INTERNACIONALES (1-3) ──
+{t:"T1 · Org. Internacionales",gi:0,trap:false,
+q:"¿Cuál es el órgano de la ONU que dirime controversias entre estados con fallos inapelables, está compuesto por 15 jueces y tiene su sede en La Haya?",
+opts:["El Consejo de Seguridad","El Secretariado","La Corte Internacional de Justicia","El ECOSOC"],
+a:2,exp:"La Corte Internacional de Justicia (CIJ) es el principal órgano judicial de la ONU. Sus 15 jueces son elegidos por la Asamblea General y el Consejo de Seguridad. Sus fallos son inapelables y dirime solo controversias entre estados."},
+
+{t:"T1 · Org. Internacionales",gi:0,trap:true,
+q:"⚠ Trampa — El Tratado de la OTAN tiene 14 artículos. ¿Cuál describe el compromiso de autodefensa colectiva y cuál permite invitar a nuevos estados europeos?",
+opts:["Art. 3 autodefensa — Art. 5 nuevos estados","Art. 5 autodefensa — Art. 10 nuevos estados","Art. 10 autodefensa — Art. 14 nuevos estados","Art. 1 autodefensa — Art. 5 nuevos estados"],
+a:1,exp:"El Art. 5 es el famoso artículo de autodefensa colectiva. El Art. 10 permite invitar a nuevos estados europeos por acuerdo unánime. Son los dos artículos más importantes del Tratado y es muy fácil confundirlos."},
+
+{t:"T1 · Org. Internacionales",gi:0,trap:false,
+q:"¿Qué organismo de la UE está formado por los dirigentes de los países miembros y se reúne para plantear la estrategia común, distinto del que aprueba las leyes?",
+opts:["La Comisión Europea","El Parlamento Europeo","El Consejo de la UE","El Consejo Europeo"],
+a:3,exp:"El Consejo Europeo reúne a los dirigentes (jefes de Estado o de Gobierno) para fijar la estrategia común de la UE. No debe confundirse con el Consejo de la UE, que reúne a los ministros para aprobar leyes."},
+
+// ── T2: APOYO PSICOLÓGICO (4-6) ──
+{t:"T2 · Apoyo psicológico",gi:1,trap:false,
+q:"¿Qué clasifica a una persona como víctima de 'tercer grado' en el sistema de clasificación de víctimas de una catástrofe?",
+opts:["Ser familiar directo de un afectado","Ser miembro de los equipos intervinientes","Pertenecer a la comunidad afectada","Conocer el suceso por los medios de comunicación"],
+a:1,exp:"Las víctimas de 3.er grado son los equipos intervinientes: bomberos, sanitarios, fuerzas de seguridad, psicólogos de emergencia, etc. Soportan una alta carga de estrés por su exposición directa al suceso."},
+
+{t:"T2 · Apoyo psicológico",gi:1,trap:false,
+q:"La primera fase de la crisis psicológica es el Shock. ¿Cuáles son exactamente las cuatro esferas que afecta?",
+opts:["Emocional, social, laboral y física","Emoción, cognición, fisiológico y motor","Cognitiva, conductual, afectiva y social","Sensorial, motora, verbal y emocional"],
+a:1,exp:"La 1.ª fase de shock afecta simultáneamente a cuatro esferas: emoción, cognición, fisiológico y motor. La 2.ª fase (Reacción) provoca reacciones emocionales intensas, enfado/odio y pérdida de creencias y valores."},
+
+{t:"T2 · Apoyo psicológico",gi:1,trap:true,
+q:"⚠ Trampa — ¿Cuál de estos principios de intervención psicológica hace referencia a reestructurar las experiencias de la víctima?",
+opts:["Proximidad","Inmediatez","Unidad","Simplicidad"],
+a:2,exp:"'Unidad' en el temario significa reestructurar las experiencias vividas. No confundir con Proximidad (atención cerca del lugar), Inmediatez (actuar sin demora) ni Simplicidad (métodos breves y sencillos)."},
+
+// ── T3: MATERIAL AÉREO (7-9) ──
+{t:"T3 · Material aéreo",gi:2,trap:false,
+q:"¿Cuál es la designación española, el nombre popular y la base de operaciones del caza polivalente que opera desde el ALA 15 en Zaragoza y el ALA 12 en Torrejón?",
+opts:["C.16 — Eurofighter — BA Morón","C.15 — F-18 Hornet — BA Zaragoza y BA Torrejón","T.21 — C-295 — BA Getafe","E.25 — C-101 Mirlo — BA Matacán"],
+a:1,exp:"El F-18 Hornet tiene la designación española C.15 (modernizado como C.15M). Opera desde BA Zaragoza (ALA 15), BA Torrejón (CLAEX y ALA 12) y BA Gando (ALA 46)."},
+
+{t:"T3 · Material aéreo",gi:2,trap:false,
+q:"¿Qué aeronave del EA se usa para enseñanza básica de helicópteros, tiene designación HE.25 y opera desde la Escuela de Helicópteros en BA Armilla?",
+opts:["AS-332 Superpuma","Sikorsky S-76","EC-120 Colibrí","NH-90"],
+a:2,exp:"El EC-120 'Colibrí' (HE.25) se usa para enseñanza básica de helicópteros y opera desde BA Armilla junto al Sikorsky S-76 (HE.24, enseñanza avanzada), ambos en la Escuela de Helicópteros del ALA 78."},
+
+{t:"T3 · Material aéreo",gi:2,trap:true,
+q:"⚠ Trampa — En las matrículas del EA, ¿qué significa el símbolo de misión básica 'U'?",
+opts:["Unidad de combate","Utilitario","Unmanned (no tripulado)","Unificado de transporte"],
+a:1,exp:"En el sistema de matrículas del EA, 'U' = Utilitario (misión básica). 'N' es el símbolo de tipo para aeronaves No tripuladas. Ejemplo: el Beechcraft C-90 tiene designación U.22 (Utilitario tipo 22)."},
+
+// ── T4: HISTORIA DE LA AVIACIÓN ESPAÑOLA (10-12) ──
+{t:"T4 · Historia aviación",gi:3,trap:false,
+q:"¿En qué año se realizó el primer vuelo de autogiro en España, quién fue su inventor y desde qué base se realizó?",
+opts:["1920 — Kindelán — Los Alcázares","1923 — Juan de la Cierva — Getafe","1926 — Ramón Franco — Cuatro Vientos","1915 — Infante Alfonso — San Javier"],
+a:1,exp:"En 1923 se realizó el primer vuelo de autogiro, inventado por Juan de la Cierva, desde Getafe. Ese mismo año también se realizó el primer vuelo Península-Las Palmas."},
+
+{t:"T4 · Historia aviación",gi:3,trap:false,
+q:"Durante la Guerra Civil, ¿qué bombardeo sobre una ciudad vasca fue especialmente significativo y qué obra de arte universal inspiró?",
+opts:["Bombardeo de Bilbao — inspiró 'El Guernica' de Dalí","Bombardeo de Guernica — inspiró el Guernica de Pablo Picasso","Bombardeo de Santander — inspiró una obra de Miró","Bombardeo de San Sebastián — inspiró la sinfonía de Falla"],
+a:1,exp:"El bombardeo de Guernica, realizado con aviones alemanes Heinkel He-111 y Ju-52 de la Legión Cóndor, inspiró la famosa obra 'Guernica' de Pablo Picasso, símbolo universal contra la guerra."},
+
+{t:"T4 · Historia aviación",gi:3,trap:true,
+q:"⚠ Trampa — ¿En qué año llegó el primer reactor de diseño y fabricación puramente nacional al Ejército del Aire y cómo se llamaba?",
+opts:["1953 — F-86 Sabre","1960 — F-104 Starfighter","1965 — HA-200 Saeta (E-14)","1971 — F-4 Phantom"],
+a:2,exp:"El HA-200 Saeta (E-14) llegó al EA en 1965 y fue el primer reactor de diseño y fabricación puramente nacional. Se usó como entrenador en la Escuela Básica de Matacán y después en la AGA. El F-86 (1955) y el F-104 (1960) eran americanos."},
+
+// ── T5: DINÁMICA DE GRUPOS (13-15) ──
+{t:"T5 · Dinámica de grupos",gi:4,trap:false,
+q:"¿Qué autor y en qué publicación estableció en 1990 las tres condiciones que debe cumplir un colectivo para convertirse en grupo?",
+opts:["Worchel en 1984 — modelo cíclico","Bar-Tal en 1990 — definición de grupo","Moreland y Levine en 1989 — socialización grupal","Kurt Lewin antes de la WWII — teoría de campo"],
+a:1,exp:"Bar-Tal (1990) estableció que para que un colectivo sea un grupo sus componentes deben definirse como miembros del grupo, compartir creencias grupales y existir actividad coordinada entre ellos."},
+
+{t:"T5 · Dinámica de grupos",gi:4,trap:false,
+q:"¿Cuáles son las tres categorías de ilusiones del 'pensamiento grupal' de Janis relacionadas con la capacidad del grupo para abordar problemas?",
+opts:["Ilusión de superioridad, de control y de permanencia","Ilusión de invulnerabilidad e ilusión de unanimidad","Ilusión de liderazgo, de consenso y de eficacia","Ilusión de cohesión, de neutralidad y de objetividad"],
+a:1,exp:"Janis distingue dos ilusiones compartidas relacionadas con la capacidad de abordar problemas: la ilusión de invulnerabilidad (el grupo cree que no puede fallar) y la ilusión de unanimidad (se sobreestima el acuerdo interno). Estas forman la 2.ª categoría de las 3 que describe."},
+
+{t:"T5 · Dinámica de grupos",gi:4,trap:true,
+q:"⚠ Trampa — ¿Cuántas fases tiene el modelo de socialización grupal de Moreland y Levine y cómo se llama la última?",
+opts:["4 fases — Fase de resolución","5 fases — Fase de recuerdo (remembrance)","6 fases — Fase de declive","3 fases — Fase de mantenimiento"],
+a:1,exp:"El modelo de Moreland y Levine (1984/1989) tiene 5 fases: investigación, socialización, mantenimiento, resolución y recuerdo (remembrance). No confundir con el modelo de Worchel, que tiene 6 fases y describe la formación del grupo, no la socialización individual."},
+
+// ── T6: EXPRESIÓN ORAL (16-18) ──
+{t:"T6 · Expresión oral",gi:5,trap:false,
+q:"¿Cuál de estas clasificaciones de la comunicación corresponde a la dimensión 'según el contexto'?",
+opts:["Verbal / no verbal / electrónica","Intrapersonal / interpersonal / grupal / pública","Formal / informal","Culta / estándar / coloquial / popular"],
+a:2,exp:"La clasificación 'según el contexto' distingue entre Formal (sujeta a normas y papeles establecidos) e Informal (espontánea y natural). La verbal/no verbal es 'según el medio'; la culta/coloquial es 'por el tratamiento del lenguaje'; la interpersonal es 'según emisor/receptor'."},
+
+{t:"T6 · Expresión oral",gi:5,trap:false,
+q:"¿Qué herramienta de comunicación consiste en defender las propias opiniones de forma razonada, evitando reacciones emocionales, hasta convencer o ser convencido?",
+opts:["Escucha activa","Empatía","Asertividad","Paralingüística"],
+a:2,exp:"La asertividad es la convicción de defender opiniones propias de forma razonada evitando reacciones emocionales, hasta convencer a otros o ser convencidos de que otras opciones son mejores. Las tres herramientas de comunicación son: escucha activa, asertividad y empatía."},
+
+{t:"T6 · Expresión oral",gi:5,trap:true,
+q:"⚠ Trampa — ¿Qué elemento de la comunicación no verbal estudia específicamente las cualidades de la voz como volumen, entonación, modulación y velocidad?",
+opts:["Kinesia","Proxémica","Gestualización","Paralingüística"],
+a:3,exp:"La Paralingüística estudia todos los elementos que acompañan a las emisiones lingüísticas relacionados con la voz y la dicción: volumen, articulación, entonación, modulación, claridad, muletillas, énfasis, velocidad y tiempo. No es kinesia ni proxémica."},
+
+// ── T7: EXPRESIÓN ESCRITA (19-21) ──
+{t:"T7 · Expresión escrita",gi:6,trap:false,
+q:"En el proceso de escritura, ¿cuál es la diferencia entre la fase 'Dispositio' y la fase 'Elocutio'?",
+opts:["Dispositio es revisar; Elocutio es construir ideas","Dispositio es ordenar y planificar ideas mediante esquemas; Elocutio es redactar eligiendo la expresión lingüística","Dispositio es redactar; Elocutio es corregir","Son la misma fase con dos nombres distintos"],
+a:1,exp:"Dispositio (Disposición): ordenar y planificar las ideas mediante esquemas, elegir el tipo de discurso. Elocutio (Redacción): elegir la expresión lingüística adecuada, elaborar borradores. Emendatio sería la revisión final."},
+
+{t:"T7 · Expresión escrita",gi:6,trap:false,
+q:"El texto argumentativo tiene un proceso propio de cuatro pasos. ¿Cuál es el segundo paso tras la enunciación?",
+opts:["Conclusión","Refutación","Demostración","Revisión"],
+a:2,exp:"El proceso argumentativo sigue el orden: Enunciación → Demostración → Refutación → Conclusión. En la Demostración se prueba la viabilidad de la tesis propuesta con evidencias claras y ordenadas."},
+
+{t:"T7 · Expresión escrita",gi:6,trap:true,
+q:"⚠ Trampa — ¿Qué propiedad textual se ocupa del uso correcto de puntuación, nexos, anáforas y conectores para enlazar las partes del texto?",
+opts:["Adecuación","Coherencia","Cohesión","Gramática"],
+a:2,exp:"La Cohesión se refiere al uso correcto de puntuación, nexos, anáforas y conectores. No confundir con Coherencia (selección y organización lógica de la información) ni con Adecuación (elección del registro apropiado según el destinatario)."},
+
+// ── T8: LIDERAZGO (22-24) ──
+{t:"T8 · Liderazgo",gi:7,trap:false,
+q:"Según la teoría situacional de Hersey y Blanchard, ¿qué estilo aplica el líder cuando el subalterno tiene alta disposición para la tarea pero necesita apoyo en la relación (nivel R2)?",
+opts:["Decir: alta tarea + baja relación","Vender: alta tarea + alta relación","Participar: baja tarea + alta relación","Delegar: baja tarea + baja relación"],
+a:1,exp:"El nivel R2 se caracteriza por baja capacidad pero alta disposición. El estilo 'Vender' (alta tarea + alta relación) suple las carencias del subalterno con dirección (tarea) y compra sus deseos con apoyo (relación)."},
+
+{t:"T8 · Liderazgo",gi:7,trap:false,
+q:"¿Cuál es la conclusión principal del temario sobre la relación entre rasgos, conductas y contexto en el liderazgo?",
+opts:["Los rasgos son el único factor determinante del liderazgo","El contexto determina completamente al líder independientemente de su personalidad","Ninguno de ellos es por sí solo determinante; el líder se construye a partir del conjunto","La conducta es más importante que el contexto y los rasgos juntos"],
+a:2,exp:"La conclusión del temario es clara: 'el liderazgo está determinado por el contexto y las circunstancias, los rasgos de personalidad del líder y sus seguidores, así como por las conductas, pero ninguna de ellas es determinante.' El líder se construye a partir del conjunto de estas variables."},
+
+{t:"T8 · Liderazgo",gi:7,trap:true,
+q:"⚠ Trampa — ¿Cuál de los siguientes comportamientos pertenece al 'Líder Apoyador' dentro de la teoría de la Ruta-Meta?",
+opts:["Establece metas ambiciosas y espera alto rendimiento","Da instrucciones claras y específicas sobre qué hacer y cómo","Es amistoso y muestra interés personal por las necesidades del subordinado","Consulta a los subordinados antes de tomar decisiones"],
+a:2,exp:"El Líder Apoyador de la teoría Ruta-Meta es amistoso y muestra interés por las necesidades del subordinado. No confundir: el Orientado a Logros establece metas; el Director da instrucciones concretas; el Participativo consulta antes de decidir."},
+
+// ── T9: VALORES MILITARES (25-27) ──
+{t:"T9 · Valores militares",gi:8,trap:false,
+q:"¿Cuál es el valor militar que implica fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común?",
+opts:["Disciplina","Compromiso","Lealtad","Espíritu de equipo"],
+a:2,exp:"La Lealtad es fidelidad a una causa, cumplir con el compromiso y buscar el éxito del equipo por el bien común. Incluye la sinceridad. El Art. 10 de las RR.OO. lo vincula con el compañerismo y la unidad."},
+
+{t:"T9 · Valores militares",gi:8,trap:false,
+q:"¿Qué dos leyes orgánicas pueden aplicarse por incumplimiento de los valores militares, según el temario?",
+opts:["LO 9/2011 y LO 14/2015","LO 8/2014 Régimen Disciplinario y LO 14/2015 Código Penal Militar","R.D. 96/2009 y LO 9/2011","Solo el Código Penal Militar en casos graves"],
+a:1,exp:"Por incumplimiento de los valores militares pueden aplicarse: la LO 8/2014 (Régimen Disciplinario), que garantiza la observancia de las reglas de comportamiento, y la LO 14/2015 (Código Penal Militar), para infracciones que constituyan delitos militares."},
+
+{t:"T9 · Valores militares",gi:8,trap:true,
+q:"⚠ Trampa — El valor 'Valor' incluye varias virtudes. ¿Cuál de estas afirmaciones sobre este valor es CORRECTA según el temario?",
+opts:["El valor solo se aplica en combate directo con el enemigo","Incluye el valor para innovar y afrontar con determinación cualquier situación, no solo el combate","Es sinónimo de disciplina en el contexto militar","Solo lo deben demostrar los mandos, no la tropa"],
+a:1,exp:"El valor 'Valor' en el temario incluye: virtudes fundamentales, valor para innovar, afrontar con determinación cualquier situación, espíritu de lucha y acometividad. Va mucho más allá del combate: 'buscaremos y aceptaremos la responsabilidad' (Art. 88 y 89 RR.OO.)."},
+
+// ── T10: TÉCNICAS DE APOYO / DOCUMENTOS (28-30) ──
+{t:"T10 · Técnicas de apoyo",gi:9,trap:false,
+q:"¿Qué norma del EA regula el sistema de registro y archivo adaptándolo a los sistemas conjuntos de mensajería, mientras que la IG 10-01 regula la redacción?",
+opts:["IG 00-4","IG 10-14","Manual de Documentos Administrativos","Procedimiento Operativo del JEMA"],
+a:1,exp:"La IG 10-14 regula el sistema de registro y archivo, adaptándolo a los sistemas de mensajería y gestión documental. La IG 10-01 regula la redacción y normalización de documentos en el EA. Son complementarias pero distintas."},
+
+{t:"T10 · Técnicas de apoyo",gi:9,trap:false,
+q:"En la paginación de documentos oficiales del EA según la IG 10-01, ¿qué formato se usa y con qué fuente y tamaño?",
+opts:["Solo número de página, Arial 11","Página X de Y, Arial 6","Número correlativo, Times New Roman 8","Folio N.º X, Calibri 9"],
+a:1,exp:"La IG 10-01 establece que la paginación debe seguir el formato 'Página X de Y' con fuente Arial tamaño 6. El cuerpo del documento usa Arial 11, pero la paginación usa Arial 6 para no interferir con el contenido."},
+
+{t:"T10 · Técnicas de apoyo",gi:9,trap:true,
+q:"⚠ Trampa — ¿A quién se dirige un Oficio y quién firma una Instancia?",
+opts:["El Oficio se dirige a la persona física; la Instancia la firma el jefe de la UCO","El Oficio se dirige al cargo oficial; la Instancia la firma el propio interesado","El Oficio lo firma el JEMA; la Instancia la firma cualquier ciudadano","Ambos documentos se dirigen al cargo oficial y los firma el superior jerárquico"],
+a:1,exp:"El Oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona física. La Instancia (petición del ciudadano o personal) la firma el propio interesado, nunca el jefe de su UCO. Confundir estos dos puntos es el error más frecuente en el temario."},
+];
+
+// Índices de las preguntas por grupo (gi)
+const GROUPS=Array.from({length:10},(_,i)=>QS.map((_,j)=>j).filter(j=>QS[j].gi===i));
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+
+function renderGrids(){
+  GROUPS.forEach((idxs,gi)=>{
+    const el=document.getElementById('g'+gi);
+    if(!el)return;
+    el.innerHTML=idxs.map(i=>{
+      let c='qb';
+      if(i===cur)c+=' cur';
+      else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+      return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+    }).join('');
+  });
+}
+
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrids();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="tbadge">${q.t}</span>
+    ${q.trap?'<span class="trapbadge">⚠ Trampa</span>':''}
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}"><span class="fbicon">${ok?'✓':'✗'}</span><span>${q.exp}</span></div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrids()}
+function jump(i){cur=i;renderQ();renderGrids()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrids();
+}
+
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const trapsOk=QS.reduce((s,q,i)=>s+(q.trap&&ans[i]===q.a?1:0),0);
+  const trapTotal=QS.filter(q=>q.trap).length;
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+
+  // Por tema
+  const tnames=["T1 · Org. Internacionales","T2 · Apoyo psicológico","T3 · Material aéreo","T4 · Historia aviación","T5 · Dinámica de grupos","T6 · Expresión oral","T7 · Expresión escrita","T8 · Liderazgo","T9 · Valores militares","T10 · Técnicas de apoyo"];
+  let tbh='';
+  GROUPS.forEach((idxs,gi)=>{
+    const ok=idxs.filter(i=>rev[i]&&ans[i]===QS[i].a).length;
+    const n=idxs.length;
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row"><div class="tb-name">${tnames[gi]}</div><div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div><div class="tb-sc" style="color:${col}">${ok}/${n}</div></div>`;
+  });
+
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem"><div class="rtags"><span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span>${q.trap?'<span class="rtag ttrap">Trampa</span>':''}<span class="rtag ttopic">${q.t}</span></div><div class="rq">${i+1}. ${q.q.replace('⚠ Trampa — ','')}</div><div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div></div>`;
+  });
+
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado · Test 9</div>
+      <div class="res-sub">10 temas × 3 preguntas · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#fb923c">${trapsOk}/${trapTotal}</div><div class="sl">Trampas ok</div></div>
+        <div class="sbox"><div class="sn" style="color:#fcd34d">${fmt(secs)}</div><div class="sl">Tiempo</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()">↺ Repetir test</button>
+    </div>
+    <div class="tb-card"><div class="tb-title">Resultados por tema (3 preguntas cada uno)</div>${tbh}</div>
+    <div class="rev-card"><div class="rev-title">Revisión completa</div>${rvh}</div>
+  </div>`;
+}
+
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrids();startTmr();
+}
+renderQ();renderGrids();startTmr();
+</script>

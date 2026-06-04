@@ -1,0 +1,375 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#7f1d1d;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}.timer b{color:#fca5a5;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#7f1d1d,#fca5a5);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#7f1d1d;color:#fca5a5}
+.qb.cur{background:#3d0e0e;border-color:#7f1d1d;color:#fca5a5}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.qnum-badge{font-size:12px;font-weight:600;color:#fca5a5;background:#3d0e0e;padding:3px 12px;border-radius:5px;border:1px solid #7f1d1d}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.qtxt{font-size:15px;color:#e8eaf0;line-height:1.75;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#7f1d1d}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#3d0e0e;border-color:#7f1d1d;color:#fca5a5}
+.opt.sel{border-color:#7f1d1d;background:#230808}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fb-tema{display:inline-block;font-size:10px;font-weight:600;background:#1e2235;color:#7c8499;padding:1px 7px;border-radius:3px;margin-bottom:6px}
+.fbicon{font-size:18px;flex-shrink:0;margin-top:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#7f1d1d;color:#fca5a5}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#7f1d1d;color:#fff;border-color:#7f1d1d}
+.btnp:hover{background:#6b1919;border-color:#6b1919;color:#fff}
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#fca5a5;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:200px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:34px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}.tko{background:#1a0d0d;color:#f87171}
+.ttopic{background:#1e2235;color:#5a6280}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}.ra b{color:#fca5a5}
+</style>
+
+<div class="w">
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Formación cívica · Test 13 · Modo examen</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+    <div class="qgrid" id="qgrid"></div>
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#3d0e0e;border:1px solid #7f1d1d"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+      <div class="legrow"><div class="legdot" style="background:#1e2235;border:1px solid #2a2f3e"></div>Sin responder</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+{t:"Org. Internacionales",
+q:"¿Cuál de los siguientes países NO forma parte de los cinco miembros permanentes del Consejo de Seguridad de la ONU?",
+opts:["Francia","Alemania","China","Reino Unido"],
+a:1,exp:"Los cinco miembros permanentes del Consejo de Seguridad son: China, Estados Unidos, Rusia, Francia y Reino Unido. Alemania no es miembro permanente aunque sea una de las mayores economías del mundo."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál es la diferencia principal entre una 'emergencia' y un 'desastre de múltiples víctimas'?",
+opts:["En la emergencia hay más víctimas que en el desastre de múltiples víctimas","En el desastre de múltiples víctimas se requiere gran movilización de recursos, situándose entre la emergencia y la catástrofe","La emergencia siempre tiene causas naturales; el desastre de múltiples víctimas causas humanas","No existe diferencia; son el mismo concepto con distintos nombres"],
+a:1,exp:"La emergencia requiere acción inmediata y se dispone de recursos para superarla. El desastre de múltiples víctimas es intermedio: requiere acción inmediata y gran movilización de recursos, pero sin llegar al nivel de catástrofe donde no se dispone de recursos suficientes."},
+
+{t:"Dinámica de grupos",
+q:"¿Cuál de los siguientes NO es un tipo de grupo según la clasificación del temario?",
+opts:["Grupos primarios y secundarios","Grupos formales e informales","Grupos de pertenencia y de referencia","Grupos activos y pasivos"],
+a:3,exp:"El temario clasifica los grupos en: primarios/secundarios, formales/informales, y de pertenencia/de referencia. Los 'grupos activos y pasivos' no forman parte de ninguna clasificación del temario."},
+
+{t:"Expresión oral",
+q:"¿Cuál de estas conductas se debe evitar durante la escucha activa según el temario?",
+opts:["Parafrasear al interlocutor","Resumir lo escuchado","Contar tu propia historia cuando el otro necesita hablar","Emitir palabras de refuerzo"],
+a:2,exp:"El temario señala expresamente que hay que evitar 'contar tu historia cuando el otro necesita hablarte'. Las otras tres opciones (parafrasear, resumir y emitir palabras de refuerzo) son las tres habilidades necesarias para desarrollar la escucha activa."},
+
+{t:"Expresión escrita",
+q:"¿Qué fase de la escritura corresponde a la 'Dispositio'?",
+opts:["Revisión y corrección del texto","Redacción y elección de expresión lingüística","Ordenar y planificar ideas mediante esquemas","Generación libre de ideas sobre el tema"],
+a:2,exp:"La Dispositio es la fase de Disposición: ordenar y planificar las ideas mediante esquemas, elegir el tipo de discurso y decidir cómo desarrollar el tema. No confundir con Inventio (generar ideas), Elocutio (redactar) ni Emendatio (revisar)."},
+
+{t:"Liderazgo",
+q:"¿Cuál de las siguientes NO es una de las cuatro teorías de liderazgo más representativas según el temario?",
+opts:["Teoría de rasgos","Teoría conductista","Teoría de ruta-meta","Teoría motivacional de Maslow"],
+a:3,exp:"Las cuatro teorías más representativas del temario son: teoría de rasgos, teorías conductuales, teoría situacional y teoría de la ruta-meta. La teoría motivacional de Maslow no aparece entre ellas."},
+
+{t:"Valores militares",
+q:"Según los tres ejes estratégicos de la visión del JEMA, ¿cuál de las siguientes opciones los recoge correctamente?",
+opts:["Recursos humanos, recursos ambientales y recursos personales","Recursos humanos, material y formación","Recursos humanos, material y organización","Empleo, organización y valores"],
+a:2,exp:"Los tres ejes estratégicos de la visión del JEMA son: Recursos Humanos (profesionales con vocación, motivados, preparados y con valores), Material, y Organización. Es una de las preguntas más frecuentes sobre valores militares."},
+
+{t:"Técnicas de apoyo",
+q:"¿Qué prelación del sistema MEFO (antes teletipo) indica que el mensaje debe entregarse lo antes posible, sin margen de tiempo definido?",
+opts:["O — Inmediato","P — Prioridad","Z — Flash","R — Rutina"],
+a:2,exp:"La prelación Z (Flash) indica entrega lo antes posible. La O (Inmediato) es menos de 1 hora, la P (Prioridad) hasta 6 horas y la R (Rutina) hasta el comienzo del trabajo del día siguiente."},
+
+{t:"Material aéreo",
+q:"¿Cuál de estos aviones del EA realiza misiones de fotografía y opera desde BA Getafe en el 403 Escuadrón?",
+opts:["A-400M (TK.23)","C-235 fotográfico (TR.19A)","Eurofighter C.16","AS-332 Superpuma HD.21"],
+a:1,exp:"El C-235 fotográfico tiene designación TR.19A y opera desde BA Getafe en el 403 Escuadrón, junto al Cessna Citation V (TR.20) para fotografía y calibración."},
+
+{t:"Historia aviación",
+q:"¿En qué año se creó el Servicio Militar de Aerostación en España, considerado el origen de la aviación militar española?",
+opts:["1903","1884","1910","1911"],
+a:1,exp:"En 1884 se creó el Servicio Militar de Aerostación, el antecedente más remoto de la aviación militar española. El año 1903 es cuando los hermanos Wright realizaron sus primeros vuelos, y 1910 cuando Vives y Kindelán son considerados creadores del EAE."},
+
+{t:"Org. Internacionales",
+q:"¿Qué artículo del Tratado de la OTAN establece el compromiso de autodefensa colectiva entre sus miembros?",
+opts:["Artículo 3","Artículo 5","Artículo 10","Artículo 14"],
+a:1,exp:"El artículo 5 del Tratado de la OTAN establece el compromiso de autodefensa colectiva: un ataque contra uno de los miembros se considera un ataque contra todos. El artículo 10 permite invitar a nuevos estados europeos."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál de las siguientes es una consecuencia psicológica a largo plazo tras una emergencia o catástrofe, según el temario?",
+opts:["Agitación psicomotriz","Trastorno de estrés agudo","Trastorno adaptativo depresivo","Trastorno psicosomático"],
+a:3,exp:"Las consecuencias a largo plazo son: trastorno de estrés postraumático (TEP), trastornos psicosomáticos, trastornos del estado de ánimo y abuso de sustancias. La agitación y el trastorno de estrés agudo son consecuencias inmediatas; el adaptativo también es inmediato."},
+
+{t:"Dinámica de grupos",
+q:"¿Qué autor definió el modelo cíclico de seis fases para la formación de grupos?",
+opts:["Kurt Lewin","Bar-Tal","Moreland y Levine","Worchel"],
+a:3,exp:"Worchel describió el modelo cíclico de 6 fases: período de descontento, suceso precipitante, identificación con el grupo, productividad grupal, individualización y declive grupal. Moreland y Levine describieron la socialización grupal (5 fases) y Lewin la teoría de campo."},
+
+{t:"Expresión oral",
+q:"En la comunicación no verbal, ¿qué transmite una persona que mira constantemente el reloj durante una reunión?",
+opts:["Autoridad y dominio","Sinceridad y franqueza","Hastío o aburrimiento","Agresión y desafío"],
+a:2,exp:"Según el temario, mirar al techo o al reloj transmite hastío. La mirada fija y sostenida transmite agresión o desafío; los gestos de seguridad transmiten confianza; la falta de contacto visual del emisor transmite ausencia de sinceridad."},
+
+{t:"Expresión escrita",
+q:"¿Cuál de los siguientes es un texto de tipo 'narrativo' según la clasificación del temario?",
+opts:["Un informe técnico sobre el estado de una aeronave","Un relato de hechos con personajes, acción y trama en el tiempo","Una exposición sobre cómo funciona un sistema de armas","Un texto que defiende una tesis con argumentos y evidencias"],
+a:1,exp:"El texto narrativo relata hechos (acción) promovidos por personajes localizados en el espacio y el tiempo, con una secuencia estratégica de acontecimientos (trama). El técnico sería expositivo, el que defiende una tesis es argumentativo."},
+
+{t:"Liderazgo",
+q:"En la teoría situacional de Hersey y Blanchard, ¿qué estilo de liderazgo combina baja tarea y baja relación?",
+opts:["Decir","Vender","Participar","Delegar"],
+a:3,exp:"El estilo Delegar combina baja tarea y baja relación. Es el adecuado para subalternos con nivel R4: plenamente dispuestos y capaces de asumir responsabilidad. El líder no necesita ni dirigir las tareas ni apoyar emocionalmente."},
+
+{t:"Valores militares",
+q:"¿En qué instrucción general se describen los valores militares del Ejército del Aire y de qué fecha es?",
+opts:["IG 10-01 de enero de 2010","IG 00-4 de 1 de octubre de 2015","IG 10-14 de marzo de 2012","IG 00-1 de septiembre de 2008"],
+a:1,exp:"Los valores militares se describen en la IG 00-4 de 1 de octubre de 2015, sobre Liderazgo y Valores en el EA. La IG 10-01 regula la redacción de documentos y la IG 10-14 el registro documental."},
+
+{t:"Técnicas de apoyo",
+q:"¿Cuál de las siguientes normativas regula las normas de carácter general para la redacción de documentos en el ámbito del Ejército del Aire y del Espacio?",
+opts:["IG 00-4","IG 10-14","IG 10-01","Manual de Documentos Administrativos"],
+a:2,exp:"La IG 10-01 es la normativa que regula las normas generales para la redacción de documentos en el EA. La IG 10-14 regula el registro y archivo. La IG 00-4 regula liderazgo y valores."},
+
+{t:"Material aéreo",
+q:"¿Cuál de estas aeronaves del EA es específicamente de enseñanza básica y opera desde la Academia General del Aire en San Javier?",
+opts:["Sikorsky S-76 (HE.24)","ENAER T.35C Tamiz (E.26)","Northrop F-5 (AE.9)","Bonanza F-33C (E.24)"],
+a:1,exp:"El ENAER T.35C 'Tamiz' (E.26) es el avión de enseñanza básica que opera desde BA San Javier en el 791 Escuadrón de la AGA. El Sikorsky S-76 es enseñanza avanzada de helicópteros; el F-5 es de caza y ataque; el Bonanza opera desde Villanubla."},
+
+{t:"Historia aviación",
+q:"¿Quién fue el diseñador del emblema del Rokiski y dónde se fabricó el primero?",
+opts:["Lo diseñó el orfebre José Luis Rokiski en su taller","Lo diseñó la esposa del Infante Alfonso de Orleáns y se fabricó en la joyería Ansorena de Madrid","Lo diseñó Kindelán y se fabricó en la Casa de la Moneda","Lo diseñó el primer JEMA y se fabricó en Toledo"],
+a:1,exp:"El Rokiski fue diseñado en el domicilio del piloto Infante Alfonso de Orleáns por su esposa, la Infanta Beatriz de Sajonia. El primer ejemplar se fabricó en la joyería Ansorena de Madrid. El nombre proviene del orfebre José Luis Rokiski Gómez."},
+
+{t:"Org. Internacionales",
+q:"¿Cuál es la función principal del Consejo Europeo dentro de la estructura de la Unión Europea?",
+opts:["Aprobar las leyes europeas junto al Parlamento","Proponer nuevas normativas para el conjunto de la UE","Reunir a los dirigentes de los países para plantear la estrategia común","Velar por la correcta aplicación de las leyes en los estados miembros"],
+a:2,exp:"El Consejo Europeo reúne a los dirigentes (jefes de Estado o Gobierno) de los países miembros para plantear la estrategia común de la UE. No debe confundirse con el Consejo de la UE (ministros que aprueban leyes) ni con la Comisión (que propone leyes)."},
+
+{t:"Apoyo psicológico",
+q:"Según el temario, ¿cuál es el primer paso del protocolo ACERCARSE en los primeros auxilios psicológicos?",
+opts:["Contacto","Evaluación","Ambiente","Restablecimiento emocional"],
+a:2,exp:"El protocolo ACERCARSE comienza por Ambiente. El orden completo es: Ambiente · Contacto · Evaluación · Restablecimiento emocional · Comprensión de crisis · Activar · Recuperación de funcionamiento · Seguimiento."},
+
+{t:"Dinámica de grupos",
+q:"¿Cuál de las siguientes respuestas a las normas grupales implica que el miembro actúa sin que medie la cognición?",
+opts:["Conformista","Colectivista","Imitativa y sugestiva","Negativista"],
+a:2,exp:"La respuesta imitativa y sugestiva es aquella en la que no media la cognición: el miembro simplemente imita o sigue la sugestión del grupo sin procesarlo racionalmente. Las otras respuestas (conformista, colectivista, negativista) implican algún nivel de procesamiento."},
+
+{t:"Expresión oral",
+q:"¿Qué tipo de comunicación es aquella que se produce entre dos personas, según la clasificación del temario por emisor/receptor?",
+opts:["Intrapersonal","Interpersonal","Grupal","Pública"],
+a:1,exp:"La comunicación interpersonal es la que se produce entre dos personas. La intrapersonal es consigo mismo, la grupal en un grupo pequeño y la pública ante un público. No confundir con la clasificación por contexto (formal/informal) ni por medio (verbal/no verbal)."},
+
+{t:"Expresión escrita",
+q:"¿Cuál de las siguientes características define al lenguaje militar según el temario?",
+opts:["Uso frecuente de la voz pasiva y estructuras del inglés","Objetividad, concisión, precisión y uso masivo de siglas y acrónimos","Predominio del lenguaje coloquial y familiar","Vocabulario exclusivamente técnico sin términos comunes"],
+a:1,exp:"El lenguaje militar se caracteriza por: objetividad, concisión, precisión, discurso interno, vocabulario específico unido al común y científico, uso masivo de siglas y acrónimos, y diversidad discursiva. El uso de voz pasiva y estructuras inglesas son errores a evitar, no características."},
+
+{t:"Liderazgo",
+q:"¿Cuál de los siguientes personajes históricos citados en el temario como ejemplo de liderazgo fue político británico?",
+opts:["Mahatma Gandhi","Nelson Mandela","Winston Churchill","Martin Luther King"],
+a:2,exp:"Winston Churchill (1874-1965) fue político británico. Gandhi fue abogado y político indio; Mandela fue abogado y político sudafricano; Martin Luther King fue pastor y activista norteamericano."},
+
+{t:"Valores militares",
+q:"¿Qué normativa puede ser de aplicación cuando el incumplimiento de los valores militares constituye una infracción disciplinaria leve o grave pero no un delito?",
+opts:["Solo el Código Penal Militar (LO 14/2015)","El Régimen Disciplinario (LO 8/2014) únicamente","Ambas normas pueden aplicarse simultáneamente siempre","Las Reales Ordenanzas directamente"],
+a:1,exp:"Para infracciones disciplinarias (no delitos) se aplica la LO 8/2014, el Régimen Disciplinario de las FAS. El Código Penal Militar (LO 14/2015) se aplica cuando la infracción constituye un delito militar. Ambas pueden aplicarse según la gravedad de los hechos."},
+
+{t:"Técnicas de apoyo",
+q:"¿A qué tipo de documento administrativo pertenece una 'resolución' según la clasificación del temario?",
+opts:["Documento de juicio","Documento de los ciudadanos","Documento de transmisión","Documento de decisión"],
+a:3,exp:"Las resoluciones son documentos de decisión, junto con los acuerdos. Los de juicio son los informes; los de transmisión incluyen notificaciones y comunicaciones; los de ciudadanos incluyen solicitudes, denuncias, alegaciones y recursos (instancias)."},
+
+{t:"Material aéreo",
+q:"¿Cuántas misiones actuales tiene el EA y aproximadamente cuántos militares/guardias tiene desplegados según el temario?",
+opts:["8 misiones y más de 1.000 militares","16 misiones y más de 3.000 militares/guardias","12 misiones y más de 2.500 militares","20 misiones y más de 5.000 militares"],
+a:1,exp:"Según el temario, el EA está presente en 16 misiones y más de 3.000 militares/guardias desplegados en misiones permanentes de apoyo y situaciones de riesgo o catástrofe, a petición de las autoridades o por firma de convenios."},
+
+{t:"Historia aviación",
+q:"¿Qué avión protagonizó la primera vuelta a España en 1927, cuántos kilómetros recorrió y en cuántas horas aproximadamente?",
+opts:["C-101 Mirlo — 5.000 km — 48 horas","Breguet XIX — 3.000 km — 72 horas","Plus Ultra — 3.500 km — 60 horas","Dornier — 4.500 km — 55 horas"],
+a:1,exp:"La primera vuelta a España se realizó en 1927 con un Breguet XIX, recorriendo aproximadamente 3.000 km en unas 72 horas. No confundir con el vuelo Sevilla-Bata de 1931 (4.500 km en 27 horas)."},
+
+{t:"Técnicas de apoyo",
+q:"En la instancia como tipo de documento, ¿cuál de las siguientes afirmaciones es correcta?",
+opts:["La instancia es un documento de transmisión entre órganos administrativos","La instancia es un escrito a través del cual un particular solicita la iniciación de un procedimiento y debe ir firmada por el propio interesado","La instancia debe ir dirigida siempre al JEMA independientemente del asunto","La instancia la redacta el jefe de la UCO en nombre del interesado"],
+a:1,exp:"La instancia es un documento de los ciudadanos mediante el cual un particular solicita la iniciación de un procedimiento (incluye solicitudes, denuncias, alegaciones y recursos). Debe ir firmada por el propio interesado, nunca por el jefe de su UCO."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+function renderGrid(){
+  document.getElementById('qgrid').innerHTML=QS.map((_,i)=>{
+    let c='qb';
+    if(i===cur)c+=' cur';
+    else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+    return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+  }).join('');
+}
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrid();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="qnum-badge">Pregunta ${cur+1}</span>
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}">
+      <span class="fbicon">${ok?'✓':'✗'}</span>
+      <div><div class="fb-tema">${q.t}</div>${q.exp}</div>
+    </div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrid()}
+function jump(i){cur=i;renderQ();renderGrid()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrid();
+}
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+  const map={};
+  QS.forEach((q,i)=>{if(!map[q.t])map[q.t]={ok:0,n:0};map[q.t].n++;if(rev[i]&&ans[i]===q.a)map[q.t].ok++});
+  let tbh='';
+  Object.entries(map).forEach(([name,{ok,n}])=>{
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row"><div class="tb-name">${name}</div><div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div><div class="tb-sc" style="color:${col}">${ok}/${n}</div></div>`;
+  });
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem"><div class="rtags"><span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span><span class="rtag ttopic">${q.t}</span></div><div class="rq">${i+1}. ${q.q}</div><div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div></div>`;
+  });
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado · Test 13</div>
+      <div class="res-sub">Modo examen · Sin pistas · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#fca5a5">${pct}%</div><div class="sl">Nota</div></div>
+        <div class="sbox"><div class="sn" style="color:#fbbf24">${fmt(secs)}</div><div class="sl">Tiempo</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()">↺ Repetir test</button>
+    </div>
+    <div class="tb-card"><div class="tb-title">Resultados por tema</div>${tbh}</div>
+    <div class="rev-card"><div class="rev-title">Revisión completa</div>${rvh}</div>
+  </div>`;
+}
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrid();startTmr();
+}
+renderQ();renderGrid();startTmr();
+</script>

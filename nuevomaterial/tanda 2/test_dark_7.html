@@ -1,0 +1,391 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#0e7490;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}.timer b{color:#67e8f9;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#0e7490,#67e8f9);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#0e7490;color:#67e8f9}
+.qb.cur{background:#0c2a30;border-color:#0e7490;color:#67e8f9}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#0c2a30;color:#67e8f9}
+.trapbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2d2010;color:#fbbf24}
+.hardbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2a1040;color:#c084fc}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.qtxt{font-size:15px;color:#e8eaf0;line-height:1.7;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#0e7490}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#0c2a30;border-color:#0e7490;color:#67e8f9}
+.opt.sel{border-color:#0e7490;background:#091c20}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fbicon{font-size:18px;flex-shrink:0}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#0e7490;color:#67e8f9}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#0e7490;color:#fff;border-color:#0e7490}
+.btnp:hover{background:#0a5f78;border-color:#0a5f78;color:#fff}
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#67e8f9;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:200px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:34px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}.tko{background:#1a0d0d;color:#f87171}
+.ttrap{background:#2d2010;color:#fbbf24}.ttopic{background:#1e2235;color:#5a6280}
+.thard{background:#2a1040;color:#c084fc}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}.ra b{color:#67e8f9}
+</style>
+
+<div class="w">
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Formación cívica · Test 7</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+    <div class="qgrid" id="qgrid"></div>
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#0c2a30;border:1px solid #0e7490"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+      <div class="legrow"><div class="legdot" style="background:#1e2235;border:1px solid #2a2f3e"></div>Sin responder</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+// ── ORGANIZACIONES INTERNACIONALES ──
+{t:"Org. Internacionales",trap:false,hard:false,
+q:"La ONU nació para evitar guerras mediante la diplomacia. ¿Cuántos miembros tiene actualmente, frente a los 51 fundadores de 1945?",
+opts:["151 miembros","173 miembros","193 miembros","207 miembros"],
+a:2,exp:"La ONU comenzó con 51 estados miembros en 1945 y hoy cuenta con 193, prácticamente la totalidad de los estados reconocidos internacionalmente."},
+
+{t:"Org. Internacionales",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál de estas afirmaciones sobre la Asamblea General de la ONU es FALSA?",
+opts:["Se reúne con carácter anual","Cada nación dispone de un voto independientemente de su tamaño","Puede debatir cualquier asunto recogido en la Carta de la ONU","Sus resoluciones requieren el voto favorable de los 5 miembros permanentes"],
+a:3,exp:"El requisito de los 5 miembros permanentes con derecho a veto es del Consejo de Seguridad, no de la Asamblea General. En la Asamblea cada nación tiene un voto y no existe el mecanismo de veto."},
+
+{t:"Org. Internacionales",trap:false,hard:true,
+q:"El Tratado del Atlántico Norte tiene un preámbulo y 14 artículos. Si el Art. 5 regula la autodefensa colectiva y el Art. 10 permite invitar a nuevos estados europeos, ¿qué tipo de obligación genera el Art. 5 para los estados miembros cuando uno de ellos es atacado?",
+opts:["Obliga a declarar la guerra automáticamente al agresor","Compromete a los miembros en la autodefensa colectiva, pero cada uno decide su respuesta concreta","Activa únicamente sanciones económicas contra el agresor","Requiere unanimidad para cualquier acción militar"],
+a:1,exp:"El Art. 5 establece el compromiso de autodefensa colectiva: si un miembro es atacado, los demás lo consideran un ataque contra todos. Sin embargo, cada estado decide la respuesta concreta que considera apropiada, no hay automatismo bélico."},
+
+{t:"Org. Internacionales",trap:false,hard:false,
+q:"¿Cómo se llama el secretario general actual de la OTAN desde 2024?",
+opts:["Jens Stoltenberg","António Guterres","Mark Rutte","Josep Borrell"],
+a:2,exp:"Mark Rutte asumió la Secretaría General de la OTAN en 2024, relevando a Jens Stoltenberg. António Guterres es el Secretario General de la ONU."},
+
+{t:"Org. Internacionales",trap:false,hard:true,
+q:"En la estructura de la UE, ¿cuál es la diferencia entre el órgano que propone leyes y el que representa la voz de los ciudadanos votando esas leyes?",
+opts:["La Comisión propone; el Parlamento Europeo representa y vota junto al Consejo","El Consejo Europeo propone; la Comisión vota","El Parlamento propone; la Comisión vota","El Tribunal de Justicia propone; el Consejo aprueba"],
+a:0,exp:"La Comisión Europea (27 comisarios) propone nuevas leyes. El Parlamento Europeo (representantes ciudadanos elegidos cada 5 años) debate y vota esas leyes junto al Consejo de la UE."},
+
+// ── APOYO PSICOLÓGICO ──
+{t:"Apoyo psicológico",trap:false,hard:true,
+q:"Según el temario, ¿cuál es la diferencia entre 'escuchar' y 'escucha activa'?",
+opts:["No existe diferencia práctica entre ambas","Escuchar es entender y dar sentido a lo que se oye; la escucha activa va más allá percibiendo también emociones e ideas que hay detrás","Escuchar es pasivo; la escucha activa implica interrumpir para confirmar","La escucha activa solo se aplica en contextos terapéuticos profesionales"],
+a:1,exp:"El temario distingue tres niveles: oír (percibir el sonido), escuchar (entender y dar sentido) y escucha activa (percibir más allá de lo expresado directamente, captando emociones e ideas subyacentes). La diferencia radica en el nivel de atención."},
+
+{t:"Apoyo psicológico",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál de los siguientes NO es un factor estresante de tipo 'ocupacional' para los intervinientes en una emergencia?",
+opts:["Tareas muy exigentes","Tomar decisiones bajo presión extrema","Triajes complicados","Presenciar la muerte de víctimas"],
+a:3,exp:"Presenciar muertes o heridos son 'sucesos potencialmente estresores', no estresores ocupacionales. Los ocupacionales son las exigencias propias del trabajo: tareas exigentes, triajes, decisiones difíciles. La climatología extrema sería ambiental."},
+
+{t:"Apoyo psicológico",trap:false,hard:false,
+q:"¿Cuántos grados de víctimas distingue el temario y cuál es la denominación especial del 6.º grado?",
+opts:["5 grados; el 5.º son los espectadores","6 grados; el 6.º se llama 'accidente blanco'","6 grados; el 6.º son los periodistas","7 grados; el 7.º son los responsables políticos"],
+a:1,exp:"El temario distingue 6 grados de víctimas. El 6.º grado, llamado 'accidente blanco', son quienes no estaban en el lugar del suceso y experimentan culpa por haberse salvado."},
+
+{t:"Apoyo psicológico",trap:false,hard:true,
+q:"La asertividad tiene 4 pasos concretos. ¿Cuál es el orden correcto según el temario?",
+opts:["Sentimientos → Hechos → Consecuencias → Petición","Hechos → Sentimientos → Petición concreta → Consecuencias","Petición → Hechos → Sentimientos → Consecuencias","Consecuencias → Petición → Hechos → Sentimientos"],
+a:1,exp:"El proceso asertivo del temario sigue este orden: 1) Describir los hechos concretos, 2) Manifestar sentimientos y pensamientos, 3) Pedir de forma concreta y operativa lo que se quiere, 4) Especificar las consecuencias."},
+
+// ── DINÁMICA DE GRUPOS ──
+{t:"Dinámica de grupos",trap:false,hard:false,
+q:"¿Quién fue el autor de referencia en el origen de la dinámica de grupos y cuál fue su aportación clave?",
+opts:["Stephen Olson; creó el modelo de socialización grupal","Kurt Lewin; estableció que el grupo es un todo dinámico, no la suma de sus partes","Bar-Tal; definió las condiciones para que un colectivo sea un grupo","Worchel; describió el modelo cíclico de formación de grupos"],
+a:1,exp:"Kurt Lewin, antes de la Segunda Guerra Mundial en el MIT, agrupó sus conclusiones en la 'teoría de campo' y estableció que el grupo es un todo dinámico, no la mera suma de las individualidades que lo forman."},
+
+{t:"Dinámica de grupos",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál de estas afirmaciones sobre los grupos de referencia es INCORRECTA?",
+opts:["Un grupo de referencia positiva influye en actitudes y valores del individuo","Un grupo de referencia negativa es aquel al que no se desea pertenecer","Un grupo de referencia negativa no influye en absoluto en el individuo","El grupo militar debería ser un grupo de referencia más que de pertenencia"],
+a:2,exp:"Tanto la referencia positiva como la negativa influyen en actitudes y valores. La diferencia es la dirección: en la positiva se desea pertenecer e influye positivamente; en la negativa no se desea pertenecer, pero igualmente ejerce influencia."},
+
+{t:"Dinámica de grupos",trap:false,hard:true,
+q:"Un equipo de trabajo informal se forma dentro de una unidad militar entre compañeros que comparten aficiones. ¿Qué tipo de grupo es simultáneamente según las tres clasificaciones del temario?",
+opts:["Primario, informal y de pertenencia","Secundario, formal y de referencia","Primario, formal y de pertenencia","Secundario, informal y de referencia negativa"],
+a:0,exp:"Es primario (pocos miembros, interacción directa cara a cara, relación afectiva), informal (surge espontáneamente, no por planificación organizativa) y de pertenencia (los miembros pertenecen a él y se identifican con el grupo)."},
+
+{t:"Dinámica de grupos",trap:false,hard:true,
+q:"En la técnica del grupo nominal, ¿qué ocurre en la fase de 'votación preliminar' y qué viene inmediatamente después?",
+opts:["Se vota el tema a tratar; después viene la generación de ideas","Se votan las ideas generadas; después hay una discusión sobre lo votado","Se elige al líder del grupo; después viene la ronda de ideas","Se decide el formato del informe final; después se redacta"],
+a:1,exp:"En el grupo nominal: tras la discusión en serie sobre los objetivos, se realiza una votación preliminar sobre las ideas. Inmediatamente después viene una discusión sobre lo que se ha votado para cerrar el proceso."},
+
+// ── EXPRESIÓN ORAL ──
+{t:"Expresión oral",trap:false,hard:false,
+q:"¿Cómo se denomina el elemento de la comunicación que informa al emisor de que el receptor ha recibido e interpretado correctamente el mensaje?",
+opts:["Canal","Ruido","Retroalimentación o feedback","Código"],
+a:2,exp:"La retroalimentación o feedback hace la comunicación bidireccional: el emisor y el receptor intercambian su papel y el feedback informa al emisor de que el mensaje fue recibido e interpretado correctamente."},
+
+{t:"Expresión oral",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál de estas cualidades de la voz NO aparece en el temario de expresión oral?",
+opts:["Articulación","Modulación","Timbre","Énfasis"],
+a:2,exp:"El temario recoge: volumen, articulación, entonación, modulación, claridad, muletillas, énfasis, velocidad y tiempo. El 'timbre' no aparece como cualidad de la voz en el temario."},
+
+{t:"Expresión oral",trap:false,hard:true,
+q:"La comunicación vertical descendente tiene errores específicos. ¿Cuáles son los DOS errores que menciona el temario para este tipo de comunicación?",
+opts:["Gatekeeping y ocultación","Reducción del mensaje al descender y falta de comprensión","Distorsión activa y rumores","Exceso de información y ambigüedad"],
+a:1,exp:"Los errores específicos de la comunicación vertical DESCENDENTE son: reducción del mensaje original al descender de nivel jerárquico, y falta de comprensión del mensaje. El gatekeeping, la ocultación y las distorsiones son errores de la comunicación ASCENDENTE."},
+
+{t:"Expresión oral",trap:false,hard:true,
+q:"Según el temario, ¿en qué momento debe decidir el orador si acepta preguntas durante su actuación o solo al final, y cuál es la recomendación?",
+opts:["Debe decidirlo antes de empezar; se recomienda durante la charla","Debe decidirlo al inicio de la intervención; se recomienda al final","No tiene importancia el momento en que se hagan las preguntas","Las preguntas siempre se hacen durante la intervención según el temario"],
+a:1,exp:"El orador decide si acepta preguntas durante su actuación o al final. El temario recomienda hacerlas al final, y señala que el público agradece poder preguntar."},
+
+// ── EXPRESIÓN ESCRITA ──
+{t:"Expresión escrita",trap:false,hard:false,
+q:"¿Cómo se denomina en el temario la técnica de generación de ideas que consiste en producir libremente el mayor número de ideas posible sobre un tema sin juzgarlas?",
+opts:["Mapa conceptual","Diagrama de flujo","Brainstorming o tormenta de ideas","Esquema jerárquico"],
+a:2,exp:"El brainstorming o tormenta de ideas (también llamado lluvia de ideas) es la técnica de generación de ideas de la fase Inventio. Consiste en producir libremente ideas sin juzgarlas ni filtrarlas en un primer momento."},
+
+{t:"Expresión escrita",trap:true,hard:false,
+q:"⚠ Trampa — En el texto narrativo lineal, ¿cuál es el orden correcto de sus tres partes estructurales?",
+opts:["Introducción → Clímax → Desenlace","Planteamiento → Nudo/complicación → Desenlace","Desarrollo → Planteamiento → Clímax","Exposición → Refutación → Conclusión"],
+a:1,exp:"La estructura narrativa lineal tiene: Planteamiento o exposición → Nudo/complicación → Desenlace. La estructura libre o artística es la que incluye Clímax. La secuencia Exposición→Refutación→Conclusión es del texto argumentativo."},
+
+{t:"Expresión escrita",trap:false,hard:true,
+q:"¿Qué son los 'falsos amigos' en el contexto del lenguaje militar y por qué son un riesgo específico?",
+opts:["Términos que suenan amigables pero tienen connotación negativa en combate","Palabras iguales o muy parecidas entre dos idiomas pero con significados distintos, lo que genera traducciones incorrectas","Siglas extranjeras que se usan sin traducir por error","Expresiones coloquiales que se cuelan en documentos oficiales"],
+a:1,exp:"Los 'falsos amigos' son palabras iguales o muy parecidas en dos idiomas (por ejemplo, español e inglés) que tienen significados diferentes. En el lenguaje militar son un riesgo porque pueden generar traducciones literales incorrectas que distorsionen el mensaje."},
+
+// ── LIDERAZGO ──
+{t:"Liderazgo",trap:false,hard:true,
+q:"Un líder novato dirige a un equipo experimentado y muy motivado (nivel R4). Si aplica el estilo 'Decir' en lugar del correcto, ¿qué problema concreto puede generar?",
+opts:["El equipo rendirá mejor al tener instrucciones claras","El equipo puede sentirse micromanaged, desmotivarse y perder autonomía","El equipo necesitará más reuniones para compensar la falta de dirección","No hay problema; todos los estilos son igualmente válidos para R4"],
+a:1,exp:"Para un equipo R4 (dispuesto y capaz) el estilo correcto es Delegar (baja tarea + baja relación). Aplicar Decir (alta tarea + baja relación) implica dar instrucciones innecesarias a personas que ya saben lo que hacen, generando microgestión, frustración y pérdida de motivación."},
+
+{t:"Liderazgo",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál de los siguientes líderes históricos citados en el temario fue abogado Y político, con origen africano?",
+opts:["Mahatma Gandhi","Martin Luther King","Nelson Mandela","Malala Yousafzai"],
+a:2,exp:"Nelson Mandela (1918-2013) fue abogado y político sudafricano. Gandhi también fue abogado pero de origen indio. Martin Luther King fue pastor y activista norteamericano. Malala es activista y estudiante pakistaní."},
+
+{t:"Liderazgo",trap:false,hard:true,
+q:"Los cuatro fundamentos para ser un buen líder según el temario son: ser modelo, ser apasionado, delegar y responsabilidad. ¿Por qué el temario señala que 'delegar no es sencillo'?",
+opts:["Porque implica asumir más trabajo personal al supervisar todo","Porque requiere tiempo, dedicación y entender que no se puede hacer todo","Porque solo los líderes experimentados pueden delegar eficazmente","Porque delegar significa perder el control sobre los resultados"],
+a:1,exp:"El temario especifica que delegar 'no es sencillo' porque requiere tiempo, dedicación y entender que no se puede hacer todo. Delegar implica confiar en los subordinados, y para que ellos confíen en su líder, primero él debe confiar en ellos."},
+
+{t:"Liderazgo",trap:false,hard:false,
+q:"¿Qué teoría de liderazgo considera que factores ambientales y características del subordinado son contingencias que afectan al estilo del líder?",
+opts:["Teoría de rasgos","Teoría conductual","Teoría situacional de Hersey y Blanchard","Teoría de la Ruta-Meta"],
+a:3,exp:"La teoría de la Ruta-Meta distingue entre factores de contingencia ambiental (fuera del control del subordinado) y factores de contingencia del subordinado (sus propias características). Ambos determinan qué comportamiento de liderazgo es más eficaz."},
+
+// ── VALORES MILITARES ──
+{t:"Valores militares",trap:false,hard:true,
+q:"El valor de la 'Ejemplaridad' se refiere a la conducta íntegra como obligación ética. ¿Qué artículos de las RR.OO. lo sustentan directamente en relación con los mandos?",
+opts:["Art. 7 y Art. 8","Art. 54 y Art. 70","Art. 25 y Art. 26","Art. 10 y Art. 11"],
+a:1,exp:"El Art. 54 establece que el mando reafirmará su liderazgo con el ejemplo. El Art. 70 señala que el mando motivará a sus subordinados con el ejemplo. Ambos sustentan directamente el valor de la ejemplaridad para los mandos."},
+
+{t:"Valores militares",trap:true,hard:false,
+q:"⚠ Trampa — ¿Qué norma recoge las 16 reglas esenciales de comportamiento del militar?",
+opts:["R.D. 96/2009 — Reales Ordenanzas de las FAS","Ley O. 9/2011 — Art. 6 sobre reglas de comportamiento del militar","I.G. 00-4 — Liderazgo y Valores en el EA","R.D. 494/1984 — Reales Ordenanzas del EA"],
+a:1,exp:"La Ley Orgánica 9/2011 de Derechos y Deberes recoge en su Art. 6 las 16 Reglas Esenciales de comportamiento del militar. Las RR.OO. (R.D. 96/2009) son el código deontológico general, y la IG 00-4 describe los valores en el EA."},
+
+{t:"Valores militares",trap:false,hard:true,
+q:"El valor 'Respeto' en el temario tiene cuatro dimensiones. ¿Cuáles son?",
+opts:["Al mando, a la misión, a los recursos y a la institución","Al otro, a nosotros mismos, a la dignidad y derechos inviolables, y a la institución","A la bandera, al escudo, al himno y a la nación","A los subordinados, a los iguales, a los superiores y a los civiles"],
+a:1,exp:"El temario describe el Respeto en cuatro dimensiones: al otro, a nosotros mismos, a la dignidad y derechos inviolables de las personas, y a la institución."},
+
+// ── TÉCNICAS DE APOYO / DOCUMENTOS ──
+{t:"Técnicas de apoyo",trap:false,hard:true,
+q:"¿Qué diferencia hay entre una 'Instrucción General' y una 'Directiva del JEMA' en cuanto a su carácter y alcance temporal?",
+opts:["Son idénticas; solo difieren en el nombre","La IG es la normativa principal y estable; la Directiva del JEMA es de carácter temporal sobre asuntos concretos o imprevistos","La IG tiene carácter temporal; la Directiva es la normativa principal permanente","La Directiva la firma el Ministro; la IG la firma el JEMA"],
+a:1,exp:"La Instrucción General (IG) es la normativa principal y base del ordenamiento jurídico interno del EA, emitida por el JEMA. La Directiva del JEMA da directrices específicas de carácter TEMPORAL sobre asuntos concretos o imprevistos. Ambas las firma el JEMA, pero su naturaleza y duración difieren."},
+
+{t:"Técnicas de apoyo",trap:true,hard:false,
+q:"⚠ Trampa — ¿Qué bloque temático de la numeración de disposiciones del EA corresponde al número 40?",
+opts:["Personal","Operaciones","Información y Comunicación","Adiestramiento"],
+a:2,exp:"El bloque 40 corresponde a Información y Comunicación. El 30 es Operaciones, el 50 es Adiestramiento y el 60 es Personal. Es fácil confundir el 40 con Operaciones o Personal."},
+
+{t:"Técnicas de apoyo",trap:false,hard:true,
+q:"En la redacción de documentos militares, ¿a quién va dirigido un Oficio y cuántos asuntos puede tratar, según la IG 10-01?",
+opts:["A la persona física que ocupa el cargo; puede tratar varios asuntos relacionados","A la autoridad o al cargo oficial, nunca a la persona; trata un único asunto","A la sección que debe ejecutar la acción; sin límite de asuntos","Al superior jerárquico directo; puede tratar hasta dos asuntos"],
+a:1,exp:"El Oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona física que lo ocupa. Trata un único asunto y usa N/Ref y S/Ref para su identificación y seguimiento."},
+
+{t:"Técnicas de apoyo",trap:false,hard:false,
+q:"¿Qué prelación del teletipo (MEFO) indica que el mensaje debe entregarse hasta el comienzo del trabajo del día siguiente?",
+opts:["Z — Flash","O — Inmediato","P — Prioridad","R — Rutina"],
+a:3,exp:"La prelación R (Rutina) indica que el mensaje se entregará hasta el comienzo del trabajo del día siguiente. La P (Prioridad) es hasta 6 horas, la O (Inmediato) menos de 1 hora y la Z (Flash) lo antes posible."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+function renderGrid(){
+  document.getElementById('qgrid').innerHTML=QS.map((_,i)=>{
+    let c='qb';
+    if(i===cur)c+=' cur';
+    else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+    return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+  }).join('');
+}
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrid();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="tbadge">${q.t}</span>
+    ${q.trap?'<span class="trapbadge">⚠ Trampa</span>':''}
+    ${q.hard&&!q.trap?'<span class="hardbadge">★ Difícil</span>':''}
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}">
+      <span class="fbicon">${ok?'✓':'✗'}</span>
+      <span>${q.exp}</span>
+    </div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrid()}
+function jump(i){cur=i;renderQ();renderGrid()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrid();
+}
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const trapsOk=QS.reduce((s,q,i)=>s+(q.trap&&ans[i]===q.a?1:0),0);
+  const hardOk=QS.reduce((s,q,i)=>s+(q.hard&&!q.trap&&ans[i]===q.a?1:0),0);
+  const trapTotal=QS.filter(q=>q.trap).length;
+  const hardTotal=QS.filter(q=>q.hard&&!q.trap).length;
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+  const map={};
+  QS.forEach((q,i)=>{if(!map[q.t])map[q.t]={ok:0,n:0};map[q.t].n++;if(rev[i]&&ans[i]===q.a)map[q.t].ok++});
+  let tbh='';
+  Object.entries(map).forEach(([name,{ok,n}])=>{
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row"><div class="tb-name">${name}</div><div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div><div class="tb-sc" style="color:${col}">${ok}/${n}</div></div>`;
+  });
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem"><div class="rtags"><span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span>${q.trap?'<span class="rtag ttrap">Trampa</span>':''}${q.hard&&!q.trap?'<span class="rtag thard">★ Difícil</span>':''}<span class="rtag ttopic">${q.t}</span></div><div class="rq">${i+1}. ${q.q.replace('⚠ Trampa — ','')}</div><div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div></div>`;
+  });
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado · Test 7</div>
+      <div class="res-sub">Fase a distancia · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#fbbf24">${trapsOk}/${trapTotal}</div><div class="sl">Trampas ok</div></div>
+        <div class="sbox"><div class="sn" style="color:#c084fc">${hardOk}/${hardTotal}</div><div class="sl">Difíciles ok</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()">↺ Repetir test</button>
+    </div>
+    <div class="tb-card"><div class="tb-title">Resultados por tema</div>${tbh}</div>
+    <div class="rev-card"><div class="rev-title">Revisión completa</div>${rvh}</div>
+  </div>`;
+}
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrid();startTmr();
+}
+renderQ();renderGrid();startTmr();
+</script>

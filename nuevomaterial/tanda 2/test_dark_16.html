@@ -1,0 +1,375 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#312e81;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}.timer b{color:#818cf8;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#312e81,#818cf8);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#312e81;color:#818cf8}
+.qb.cur{background:#1e1c4a;border-color:#312e81;color:#818cf8}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.qnum-badge{font-size:12px;font-weight:600;color:#818cf8;background:#1e1c4a;padding:3px 12px;border-radius:5px;border:1px solid #312e81}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.qtxt{font-size:15px;color:#e8eaf0;line-height:1.75;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#312e81}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#1e1c4a;border-color:#312e81;color:#818cf8}
+.opt.sel{border-color:#312e81;background:#100f2e}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fb-tema{display:inline-block;font-size:10px;font-weight:600;background:#1e2235;color:#7c8499;padding:1px 7px;border-radius:3px;margin-bottom:6px}
+.fbicon{font-size:18px;flex-shrink:0;margin-top:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#312e81;color:#818cf8}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#312e81;color:#fff;border-color:#312e81}
+.btnp:hover{background:#27246b;border-color:#27246b;color:#fff}
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#818cf8;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:200px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:34px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}.tko{background:#1a0d0d;color:#f87171}
+.ttopic{background:#1e2235;color:#5a6280}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}.ra b{color:#818cf8}
+</style>
+
+<div class="w">
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Formación cívica · Test 16 · Modo examen</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+    <div class="qgrid" id="qgrid"></div>
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#1e1c4a;border:1px solid #312e81"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+      <div class="legrow"><div class="legdot" style="background:#1e2235;border:1px solid #2a2f3e"></div>Sin responder</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+{t:"Org. Internacionales",
+q:"¿Cuál de los siguientes NO es un órgano principal de la ONU?",
+opts:["Consejo de Seguridad","Corte Internacional de Justicia","Tribunal Penal Internacional","Asamblea General"],
+a:2,exp:"Los seis órganos principales de la ONU son: Asamblea General, Consejo de Seguridad, Consejo Económico y Social (ECOSOC), Corte Internacional de Justicia, Secretaría y Consejo de Tutela. El Tribunal Penal Internacional es un organismo independiente, no un órgano principal de la ONU."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál de los siguientes es un ejemplo de estresor 'ambiental' para los equipos intervinientes en una emergencia?",
+opts:["Tener que tomar decisiones rápidas bajo presión","Presenciar la muerte de varias víctimas","Trabajar en condiciones de frío extremo o inundación","La ideología o vocación de servicio del interviniente"],
+a:2,exp:"Los estresores ambientales son las condiciones del entorno físico: climatología extrema, terreno difícil, trabajar en frío o calor extremo, inundaciones, etc. Las decisiones bajo presión son estresores ocupacionales; presenciar muertes son potencialmente estresores; la vocación está relacionada con la ideología profesional."},
+
+{t:"Dinámica de grupos",
+q:"En la fase de 'productividad grupal' del modelo de Worchel, ¿cuál es el objetivo principal del grupo?",
+opts:["Resolver los conflictos internos surgidos en la fase anterior","Cooperar entre todos los miembros para convertirse en un grupo eficaz","Identificar y expulsar a los miembros que no cumplen las normas","Replantearse la misión original del grupo"],
+a:1,exp:"En la fase de productividad grupal, los miembros cooperan para ser un grupo eficaz. Es la cuarta fase del modelo de Worchel, tras la identificación con el grupo, y precede a la individualización donde empiezan a prevalecer las necesidades individuales."},
+
+{t:"Expresión oral",
+q:"¿Qué transmite al interlocutor una persona que habla muy lentamente durante una presentación?",
+opts:["Autoridad y dominio de la situación","Calma y serenidad","Que el discurso resulta aburrido para la audiencia","Que el orador no quiere ser escuchado"],
+a:2,exp:"Según el temario, hablar muy lentamente hace el discurso aburrido. Hablar muy rápido puede hacerlo incomprensible. El ritmo moderado es el más adecuado. Un volumen bajo (no velocidad lenta) es lo que transmite que no se quiere ser oído."},
+
+{t:"Expresión escrita",
+q:"¿A qué tipo de texto pertenece el siguiente ejemplo: 'El F-18 es un caza polivalente de ala en flecha con dos motores turbofán que alcanza velocidades superiores a Mach 1.8'?",
+opts:["Narrativo","Argumentativo","Descriptivo","Expositivo"],
+a:2,exp:"Es un texto descriptivo: atiende a la realidad percibida, identifica rasgos físicos y técnicos del objeto (forma, motores, velocidad). No narra hechos, no defiende una tesis ni explica un proceso: describe cómo es algo."},
+
+{t:"Liderazgo",
+q:"¿Cuál de las siguientes afirmaciones describe correctamente el liderazgo autocrático según el temario?",
+opts:["El líder consulta a su equipo antes de tomar decisiones importantes","El líder concede libertad total al grupo para decidir","El líder ordena qué hacer y es el único en la toma de decisiones","El líder comparte la responsabilidad de los resultados con el grupo"],
+a:2,exp:"El liderazgo autocrático se caracteriza porque el líder ordena qué hacer y es el único que toma decisiones, sin consultar al grupo. Se diferencia del democrático (que permite participar) y del laissez-faire (que cede la decisión al grupo)."},
+
+{t:"Valores militares",
+q:"Según el temario, ¿cuál es la diferencia entre 'incorporación voluntaria' y el carácter 'exigible' de los valores militares?",
+opts:["Los valores son exigibles solo durante el servicio activo, no en la reserva","Al incorporarse voluntariamente al EA, el militar adquiere el compromiso de cumplir las reglas de comportamiento, siendo los valores exigibles y no solo deseables","Los valores son deseables para los militares igual que para el resto de la sociedad","Solo los mandos tienen los valores como exigibles; la tropa solo los tiene como deseables"],
+a:1,exp:"El temario señala que los miembros del EA se incorporan de forma voluntaria y asumen el compromiso de cumplir las reglas de comportamiento. Por eso los valores militares son para ellos EXIGIBLES, mientras que para el resto de la sociedad son solo deseables."},
+
+{t:"Técnicas de apoyo",
+q:"¿Cuál es la diferencia entre una 'Orden Ministerial' y una 'Instrucción General' como disposiciones generales según la IG 10-01?",
+opts:["La Orden Ministerial la firma el JEMA; la Instrucción General el Ministro","La Orden Ministerial la emite el Ministro de Defensa; la Instrucción General la emite el JEMA y se publica en el BOD","Son idénticas en origen y alcance, solo cambia el nombre según la materia","La Orden Ministerial solo regula aspectos disciplinarios; la IG regula todo lo demás"],
+a:1,exp:"La Orden Ministerial es emitida por el Ministro de Defensa dentro del ámbito de su competencia. La Instrucción General (IG) es emitida por el JEMA, desarrolla o complementa normas superiores y se publica en el BOD. Son las dos disposiciones generales de la IG 10-01."},
+
+{t:"Material aéreo",
+q:"¿Cuál es la misión específica del C-212 Aviocar con designación TM.12 según el temario?",
+opts:["Transporte táctico de tropas","Contramedidas electrónicas (guerra electrónica)","Enseñanza básica de vuelo","Vigilancia marítima (VIGMA)"],
+a:1,exp:"El C-212 Aviocar con designación TM.12 realiza misiones de contramedidas electrónicas (guerra electrónica) desde BA Torrejón, en el 47 Grupo FFAA, junto al AMD Falcon 20 (TM.11). La 'M' en la designación indica misión electrónica."},
+
+{t:"Historia aviación",
+q:"¿Quiénes formaban la tripulación del vuelo Plus Ultra de 1926 (España-Argentina)?",
+opts:["Barberán y Collar","Vives y Kindelán","Ramón Franco, Ruiz de Alda, Durán y Rada","El Infante Alfonso de Orleáns y Loygorri"],
+a:2,exp:"La tripulación del Plus Ultra fue: Comandante y piloto Ramón Franco, Capitán navegante y piloto Ruiz de Alda, Teniente de navío y observador Durán, y el Sargento mecánico Rada. Barberán y Collar fueron los del vuelo a Camagüey en 1933."},
+
+{t:"Org. Internacionales",
+q:"¿Cuál de estas afirmaciones sobre el Parlamento Europeo es correcta?",
+opts:["Sus miembros son designados por los gobiernos de cada estado miembro","Se reúne una vez al año para aprobar el presupuesto de la UE","Sus representantes son elegidos directamente por los ciudadanos cada 5 años y debate y vota nuevas leyes","Es el único órgano con capacidad de proponer nuevas leyes en la UE"],
+a:2,exp:"El Parlamento Europeo está formado por representantes elegidos directamente por los ciudadanos cada 5 años. Debate y vota nuevas leyes junto al Consejo de la UE. La iniciativa legislativa (proponer leyes) corresponde a la Comisión Europea, no al Parlamento."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál de los siguientes describe la figura del 'accidente blanco' según la clasificación de víctimas del temario?",
+opts:["Víctima que sufre heridas leves y no requiere hospitalización","Persona que, al no estar presente en el lugar del suceso, siente culpa por haberse salvado","Interviniente que resulta herido durante la operación de rescate","Familiar que no fue informado a tiempo del suceso"],
+a:1,exp:"Las víctimas de 6.º grado se denominan 'accidente blanco': personas que no estaban en el lugar del suceso y experimentan sentimientos de culpa por haberse salvado al no estar allí. Es la categoría más peculiar de la clasificación de víctimas."},
+
+{t:"Dinámica de grupos",
+q:"¿Cuál es el número mínimo de condiciones que establece Bar-Tal para que un colectivo sea considerado un grupo?",
+opts:["Una sola condición","Dos condiciones","Tres condiciones","Cuatro condiciones"],
+a:2,exp:"Bar-Tal (1990) establece tres condiciones: 1) los componentes se definan como miembros del grupo, 2) compartan creencias grupales, 3) exista actividad coordinada. Las tres deben cumplirse simultáneamente."},
+
+{t:"Expresión oral",
+q:"¿Cuál de los siguientes describe correctamente la 'asertividad' según el temario?",
+opts:["La capacidad de percibir las emociones del interlocutor y ponerse en su lugar","La habilidad para escuchar activamente sin interrumpir al que habla","La convicción de defender opiniones propias de forma razonada, evitando reacciones emocionales","La capacidad de transmitir mensajes claros ajustando el tono de voz al contenido"],
+a:2,exp:"La asertividad es la convicción de defender opiniones propias de forma razonada, evitando reacciones emocionales, hasta convencer a otros o ser convencido de que otras opciones son mejores. La empatía es ponerse en el lugar del otro; la escucha activa es la otra herramienta comunicativa clave."},
+
+{t:"Expresión escrita",
+q:"En el proceso de redacción de un texto expositivo, ¿cuál es el instrumento básico de la fase de 'elocución' para ordenar y sistematizar la exposición?",
+opts:["El brainstorming","El mapa conceptual","El guión","El borrador libre"],
+a:2,exp:"En la redacción expositiva, el guión es el instrumento básico en la fase de elocución: permite ordenar y sistematizar la exposición de forma clara y coherente antes de redactar el texto definitivo."},
+
+{t:"Liderazgo",
+q:"¿Cuál de los siguientes personajes citados como ejemplo de liderazgo en el temario nació en 1997?",
+opts:["Nelson Mandela","Martin Luther King","Winston Churchill","Malala Yousafzai"],
+a:3,exp:"Malala Yousafzai (1997-) es la más joven de los ejemplos de liderazgo del temario. Es activista y estudiante pakistaní, conocida por su defensa del derecho a la educación. Nelson Mandela nació en 1918, Churchill en 1874 y King en 1929."},
+
+{t:"Valores militares",
+q:"¿Qué valor militar se relaciona con 'buscar la excelencia a través del perfeccionamiento' y requiere formación técnica, humanística, moral y ética?",
+opts:["Compromiso","Lealtad","Profesionalidad","Ejemplaridad"],
+a:2,exp:"La Profesionalidad busca la excelencia a través del perfeccionamiento continuo. Requiere dedicación, esfuerzo, sacrificio y humildad, e incluye tanto formación técnica como humanística, moral y ética. Los Arts. 25, 26, 100, 101, 118, 126 y 128 de las RR.OO. la sustentan."},
+
+{t:"Técnicas de apoyo",
+q:"¿Cuál es la principal diferencia entre la función de 'constancia' y la función de 'comunicación' de los documentos administrativos?",
+opts:["La función de constancia es interna; la de comunicación es siempre externa","La función de constancia conserva y demuestra la existencia de los actos y da acceso a los ciudadanos; la de comunicación transmite información interna o externamente","Son la misma función con dos nombres distintos","La función de constancia solo aplica a documentos clasificados"],
+a:1,exp:"La función de constancia garantiza la conservación de los actos, demuestra su existencia y da derecho a los ciudadanos a acceder a ellos. La función de comunicación transmite información, tanto interna (entre órganos) como externa (con ciudadanos o instituciones)."},
+
+{t:"Material aéreo",
+q:"El Northrop F-5 opera desde BA Talavera en la Escuela de Caza y Ataque del ALA 23. ¿Cuál es su designación y cuáles son sus misiones?",
+opts:["C.15 — caza polivalente y interceptación","C.16 — superioridad aérea","AE.9 — enseñanza y ataque a suelo","E.25 — enseñanza básica y reentrenamiento"],
+a:2,exp:"El Northrop F-5 tiene designación AE.9, combinando misión de Ataque (A) y Enseñanza (E). Opera desde BA Talavera en el ALA 23 con la Escuela de Caza y Ataque. La 'A' indica misión secundaria de ataque a suelo junto a la enseñanza."},
+
+{t:"Historia aviación",
+q:"¿En qué año entró en servicio el primer F-86 Sabre en el EA español, gracias al tratado de asistencia con EE.UU.?",
+opts:["1949","1953","1955","1960"],
+a:2,exp:"La primera unidad operativa española con el F-86 Sabre fue en 1955, dos años después de la firma del tratado de asistencia con EE.UU. en 1953. En 1960 llegó el F-104 Starfighter y en 1965 el HA-200 Saeta, primer reactor nacional."},
+
+{t:"Org. Internacionales",
+q:"¿Cuál de las siguientes describe correctamente la misión de 'Apoyo a Mali' del EA?",
+opts:["Su objetivo es proteger contra la piratería en el Cuerno de África","Su objetivo es asegurar el espacio aéreo en el Báltico con cazas","Su objetivo es la seguridad y estabilidad en la región, con 65 personas y dos aviones C-295","Su objetivo es el transporte humanitario con el A-400M desde BA Zaragoza"],
+a:2,exp:"La Operación Apoyo a Mali tiene como objetivo la seguridad y estabilidad en la región. El EA despliega 65 personas y dos aviones T.21 (C-295), junto con el ALA 35, EADA, UMAAD y GRUMOCA. No confundir con Atalanta (piratería en Somalia) ni con la BAP (Báltico)."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál de estos trastornos es una consecuencia INMEDIATA y no a largo plazo según el temario?",
+opts:["Trastorno de estrés postraumático (TEP)","Abuso de sustancias","Trastorno adaptativo depresivo o ansioso","Trastornos psicosomáticos"],
+a:2,exp:"Las consecuencias inmediatas son el trastorno adaptativo (depresivo, ansioso o mixto) y el trastorno de estrés agudo. Las de largo plazo incluyen el TEP, trastornos psicosomáticos, trastornos del estado de ánimo y abuso de sustancias."},
+
+{t:"Dinámica de grupos",
+q:"¿Cuál de las siguientes afirmaciones sobre los roles en un grupo es CORRECTA según Brown (1988)?",
+opts:["Los roles son siempre asignados formalmente por la organización","Los roles forman parte de la autodefinición del individuo en el grupo","Solo el líder tiene un rol claramente definido; los demás son intercambiables","Los roles son irrelevantes para el funcionamiento del grupo"],
+a:1,exp:"Una de las cinco características de los roles según Brown (1988) es que 'los roles forman parte de nuestra autodefinición en el grupo': cómo nos identificamos dentro del grupo está íntimamente ligado al rol que desempeñamos."},
+
+{t:"Expresión oral",
+q:"¿Cuál de los siguientes NO es un elemento de la comunicación según el esquema del temario?",
+opts:["Emisor","Retroalimentación","Intención","Ruido"],
+a:2,exp:"Los elementos de la comunicación según el temario son: emisor, receptor, código, mensaje, canal, ruido y retroalimentación (feedback). La 'intención' no es un elemento comunicativo en sí mismo según el esquema del temario, aunque sea parte del proceso."},
+
+{t:"Expresión escrita",
+q:"¿Cuál de los siguientes es un error típico al redactar documentos militares que se menciona expresamente en el temario?",
+opts:["Usar siglas en español en lugar de en inglés","Usar excesivos conectores textuales","Calcar estructuras del inglés y usar gerundio incorrectamente por traducción directa","Escribir párrafos demasiado cortos"],
+a:2,exp:"El temario advierte expresamente sobre la 'traducción directa': calcar la estructura lógica del inglés, el uso incorrecto del gerundio y el empleo de voz pasiva. Son errores propios del entorno OTAN donde el inglés es lengua de trabajo y contamina la redacción en español."},
+
+{t:"Liderazgo",
+q:"¿Cuál es la característica que define al nivel de disposición R4 de un subalterno en la teoría situacional?",
+opts:["Tiene mucha motivación pero escasa competencia técnica","Tiene problemas de motivación aunque sea técnicamente competente","Está plenamente dispuesto y es capaz de asumir responsabilidad por sí mismo","Necesita instrucciones claras y específicas para realizar la tarea"],
+a:2,exp:"El nivel R4 describe a un subalterno plenamente dispuesto y capaz de asumir responsabilidad. El líder aplica el estilo Delegar (baja tarea + baja relación) porque el subordinado no necesita ni dirección de tareas ni apoyo emocional adicional."},
+
+{t:"Valores militares",
+q:"¿Cuál de los siguientes artículos de las RR.OO. se relaciona directamente con el valor de la 'Disciplina' estableciendo que es factor de cohesión y obliga a mandar con responsabilidad?",
+opts:["Art. 3","Art. 8","Art. 20","Art. 54"],
+a:1,exp:"El Art. 8 establece que la disciplina es un factor de cohesión que obliga a mandar con responsabilidad y obedecer lo mandado. El Art. 7 trata disciplina, jerarquía y unidad en términos generales; el Art. 44 la describe como virtud fundamental que obliga a todos por igual."},
+
+{t:"Técnicas de apoyo",
+q:"¿Cuántos niveles de división admite la IG 10-01 para estructurar internamente los documentos y en qué orden se aplican?",
+opts:["3 niveles: título, subtítulo y párrafo","4 niveles: mayúsculas negrita, mayúsculas, minúsculas negrita y minúsculas","5 niveles: partes, capítulos, secciones, artículos e incisos","2 niveles: encabezado y cuerpo del documento"],
+a:1,exp:"La IG 10-01 establece hasta 4 niveles de división: 1.º Mayúsculas Negrita, 2.º Mayúsculas, 3.º Minúsculas Negrita, 4.º Minúsculas. Este sistema jerárquico organiza visualmente la estructura de los documentos oficiales del EA."},
+
+{t:"Material aéreo",
+q:"¿Cuál de estas aeronaves del EA realiza misiones de transporte VIP y aeroevacuaciones, tiene designación T.18 y opera desde BA Torrejón?",
+opts:["Airbus A-400M","Airbus A-330-200","Falcon 900","Beechcraft C-90"],
+a:2,exp:"El Falcon 900 (T.18) realiza misiones de Transporte VIP y Aeroevacuaciones desde BA Torrejón, encuadrado en el 45 Grupo FFAA. No confundir con el Airbus A-310 (T.22, también VIP) ni con el A-330-200 (T.24/TK.24, transporte y reabastecimiento)."},
+
+{t:"Historia aviación",
+q:"¿Qué innovación táctica en formaciones de combate aéreo se desarrolló durante la Guerra Civil Española y se exportó a la Segunda Guerra Mundial?",
+opts:["Se pasó de vuelo en solitario a formaciones de tres aviones","Se inventó el vuelo nocturno como táctica ofensiva estándar","Se pasó de formaciones de tres aviones a grupos de cuatro, más eficaces","Se desarrolló el bombardeo de precisión con guiado laser"],
+a:2,exp:"Durante la Guerra Civil, la experiencia de combate aéreo llevó a cambiar las formaciones de 3 aviones a grupos de 4, que resultaron más eficaces en combate. Esta táctica fue adoptada después por las potencias en la Segunda Guerra Mundial."},
+
+{t:"Org. Internacionales",
+q:"¿Cuántos comisarios forman la Comisión Europea y cuál es su función principal?",
+opts:["15 comisarios que aprueban las leyes europeas","27 comisarios que proponen nuevas leyes para el conjunto de la UE","30 comisarios que representan a los ciudadanos europeos","21 comisarios que velan por la aplicación de las leyes"],
+a:1,exp:"La Comisión Europea está formada por 27 comisarios, uno por cada estado miembro. Su función principal es proponer nuevas leyes para el conjunto de la UE. No aprueba leyes (eso es el Parlamento y el Consejo de la UE) ni representa a los ciudadanos (eso es el Parlamento)."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+function renderGrid(){
+  document.getElementById('qgrid').innerHTML=QS.map((_,i)=>{
+    let c='qb';
+    if(i===cur)c+=' cur';
+    else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+    return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+  }).join('');
+}
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrid();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="qnum-badge">Pregunta ${cur+1}</span>
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}">
+      <span class="fbicon">${ok?'✓':'✗'}</span>
+      <div><div class="fb-tema">${q.t}</div>${q.exp}</div>
+    </div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrid()}
+function jump(i){cur=i;renderQ();renderGrid()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrid();
+}
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+  const map={};
+  QS.forEach((q,i)=>{if(!map[q.t])map[q.t]={ok:0,n:0};map[q.t].n++;if(rev[i]&&ans[i]===q.a)map[q.t].ok++});
+  let tbh='';
+  Object.entries(map).forEach(([name,{ok,n}])=>{
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row"><div class="tb-name">${name}</div><div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div><div class="tb-sc" style="color:${col}">${ok}/${n}</div></div>`;
+  });
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem"><div class="rtags"><span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span><span class="rtag ttopic">${q.t}</span></div><div class="rq">${i+1}. ${q.q}</div><div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div></div>`;
+  });
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado · Test 16</div>
+      <div class="res-sub">Modo examen · Sin pistas · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#818cf8">${pct}%</div><div class="sl">Nota</div></div>
+        <div class="sbox"><div class="sn" style="color:#fbbf24">${fmt(secs)}</div><div class="sl">Tiempo</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()">↺ Repetir test</button>
+    </div>
+    <div class="tb-card"><div class="tb-title">Resultados por tema</div>${tbh}</div>
+    <div class="rev-card"><div class="rev-title">Revisión completa</div>${rvh}</div>
+  </div>`;
+}
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrid();startTmr();
+}
+renderQ();renderGrid();startTmr();
+</script>

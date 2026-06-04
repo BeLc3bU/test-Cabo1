@@ -1,108 +1,123 @@
 [
   {
-    "pregunta": "¿En qué documento se indica que se suprimen todo tipo de tratamientos honoríficos en el texto o cuerpo de documentos (a salvo de don/doña y señor/señora)?",
+    "pregunta": "El Tratado del Atlántico Norte tiene un preámbulo y 14 artículos. Si el Art. 5 regula la autodefensa colectiva y el Art. 10 permite invitar a nuevos estados europeos, ¿qué tipo de obligación genera el Art. 5 para los estados miembros cuando uno de ellos es atacado?",
     "opciones": [
-      "En la IG 10-01",
-      "En la IG 10-14",
-      "En el Manual de Documentos Administrativos",
-      "Ninguna es correcta"
+      "Obliga a declarar la guerra automáticamente al agresor",
+      "Compromete a los miembros en la autodefensa colectiva, pero cada uno decide su respuesta concreta",
+      "Activa únicamente sanciones económicas contra el agresor",
+      "Requiere unanimidad para cualquier acción militar"
     ],
-    "respuestaCorrecta": "En el Manual de Documentos Administrativos",
-    "tema": "Registro y Redacción de Documentos",
+    "respuestaCorrecta": "Compromete a los miembros en la autodefensa colectiva, pero cada uno decide su respuesta concreta",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El Art. 5 establece el compromiso de autodefensa colectiva: si un miembro es atacado, los demás lo consideran un ataque contra todos. Sin embargo, cada estado decide la respuesta concreta que considera apropiada, no hay automatismo bélico.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿En qué teoría sobre el liderazgo existen ciertos comportamientos específicos que diferencian a los líderes de los no líderes?",
+    "opciones": [
+      "Rasgos",
+      "Conductuales",
+      "Situacional",
+      "Teoría de la Ruta-Meta"
+    ],
+    "respuestaCorrecta": "Conductuales",
+    "tema": "Liderazgo",
     "explicacion": "",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "Para aplicar la técnica de grupo inestructurado, ¿cuántos miembros debe tener como máximo el grupo?",
+    "pregunta": "Un redactor usa constantemente la voz pasiva, calca estructuras del inglés y emplea el gerundio de forma incorrecta. ¿Qué problema del lenguaje militar está cometiendo según el temario?",
     "opciones": [
-      "Menos de 4",
-      "Menos de 6",
-      "Menos de 10",
-      "No hay límite de tamaño"
+      "Está usando falsos amigos de forma reiterada",
+      "Está incurriendo en traducción directa sin adecuar al español",
+      "Está mezclando registros culto y coloquial de forma inapropiada",
+      "Está violando las normas de cohesión textual"
     ],
-    "respuestaCorrecta": "Menos de 6",
+    "respuestaCorrecta": "Está incurriendo en traducción directa sin adecuar al español",
+    "tema": "Expresión Escrita",
+    "explicacion": "El temario advierte sobre la 'traducción directa': calcar la estructura lógica del inglés y el uso incorrecto del gerundio. También alerta del uso de voz pasiva cuando debe usarse voz activa. Son errores propios de la traducción directa sin adecuación al español.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué valor militar se describe como 'conducta íntegra, obligación ética y componente esencial del prestigio personal y profesional'?",
+    "opciones": [
+      "Lealtad",
+      "Ejemplaridad",
+      "Respeto",
+      "Valor"
+    ],
+    "respuestaCorrecta": "Ejemplaridad",
+    "tema": "Valores Militares",
+    "explicacion": "La Ejemplaridad implica comportamiento ejemplar, conducta íntegra como obligación ética y es básica para la cohesión del equipo. Los mandos la refuerzan con el ejemplo (Art. 54 y 70 RR.OO.).",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿En qué año se creó el Servicio Militar de Aerostación en España?",
+    "opciones": [
+      "1884",
+      "1896",
+      "1911",
+      "1913"
+    ],
+    "respuestaCorrecta": "1884",
+    "tema": "Historia del EA",
+    "explicacion": "El Servicio Militar de Aerostación en España fue creado en 1884.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "El 'pensamiento grupal' descrito por Janis (1972) implica que en un grupo prima:",
+    "opciones": [
+      "La evaluación crítica de las alternativas disponibles",
+      "La búsqueda de consenso por encima de la evaluación realista",
+      "La individualización de los roles",
+      "La refutación sistemática de las ideas ajenas"
+    ],
+    "respuestaCorrecta": "La búsqueda de consenso por encima de la evaluación realista",
     "tema": "Dinámica de Grupos",
-    "explicacion": "La técnica de grupo inestructurado requiere que el grupo sea inferior a 6 miembros, que el objetivo sea rutinario y el tema no muy trascendente.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué tipo de documento administrativo es una resolución?",
-    "opciones": [
-      "Documento de los ciudadanos",
-      "Documento de decisión",
-      "Documento de juicio",
-      "Documento de transmisión"
-    ],
-    "respuestaCorrecta": "Documento de transmisión",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "Las resoluciones son documentos de transmisión, junto con notificaciones, publicaciones y comunicaciones.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "El artículo 5 del Tratado de la OTAN se refiere a:",
-    "opciones": [
-      "La contribución de todos los países miembros en las relaciones internacionales pacíficas y amistosas.",
-      "Las Partes pueden, por acuerdo unánime, invitar a ingresar a cualquier Estado europeo…",
-      "El compromiso de las Fuerzas Armadas de los miembros en la “autodefensa colectiva”",
-      "Las Partes se consultarán cuando… la integridad territorial… fuese amenazada."
-    ],
-    "respuestaCorrecta": "El compromiso de las Fuerzas Armadas de los miembros en la “autodefensa colectiva”",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuántos votos se necesitan para aprobar una resolución en el Consejo de Seguridad de la ONU, y qué condición especial existe?",
-    "opciones": [
-      "Mayoría simple de 8 votos sin condiciones especiales",
-      "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
-      "Unanimidad de los 15 miembros",
-      "9 votos y ratificación posterior por la Asamblea General"
-    ],
-    "respuestaCorrecta": "9 votos, pero los 5 miembros permanentes tienen derecho de veto",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Las resoluciones se aprueban con 9 votos, pero los 5 miembros permanentes (China, EEUU, Rusia, Francia y UK) poseen derecho de veto.",
+    "explicacion": "Janis describe el pensamiento grupal como la tendencia a buscar el consenso pasando a segundo plano la evaluación realista de alternativas.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "En el sistema de numeración de disposiciones del EA, ¿qué bloque temático corresponde al número 30?",
+    "pregunta": "¿Cuál es la diferencia funcional entre un 'Oficio' y una 'Instancia' como tipos de documentos administrativos?",
     "opciones": [
-      "Organización",
-      "Planes",
-      "Operaciones",
-      "Adiestramiento"
+      "El oficio lo redacta cualquier ciudadano; la instancia solo los militares",
+      "El oficio es comunicación oficial entre órganos o con particulares; la instancia es una petición del ciudadano o personal para iniciar un procedimiento",
+      "Ambos sirven para lo mismo pero el oficio tiene carácter urgente",
+      "El oficio trata varios asuntos; la instancia solo uno"
     ],
-    "respuestaCorrecta": "Operaciones",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "El bloque 30 corresponde a Operaciones. El 10 es Organización, el 20 son Planes y el 50 es Adiestramiento.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo debe representarse la numeración de páginas en el pie de página de los escritos según la IG 10-01?",
-    "opciones": [
-      "'Página X de Y' en fuente Arial 6",
-      "'Pag. X' en Arial 10",
-      "'Pág. X / Y' en Times 8",
-      "'Página X' en Arial 8"
-    ],
-    "respuestaCorrecta": "'Página X de Y' en fuente Arial 6",
+    "respuestaCorrecta": "El oficio es comunicación oficial entre órganos o con particulares; la instancia es una petición del ciudadano o personal para iniciar un procedimiento",
     "tema": "Redacción de Documentos Militares",
-    "explicacion": "Se debe colocar centrada en el pie la estructura 'Página X de Y' con fuente Arial y un tamaño de 6 puntos.",
+    "explicacion": "El Oficio es un documento de transmisión entre órganos administrativos o con particulares, trata un solo asunto y va dirigido al cargo oficial. La Instancia es un documento de los ciudadanos (o personal) mediante el cual se solicita la iniciación de un procedimiento: incluye solicitudes, denuncias, alegaciones y recursos.",
     "dificultad": "dificil",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "En la Guerra Civil Española, ¿qué aviones recibió la República para frenar el avance nacionalista sobre Madrid?",
+    "opciones": [
+      "Messerschmitt Bf 109 y Junkers Ju-52",
+      "Heinkel He-111 y Savoia S-81",
+      "Polikarpov I-15 e I-16 de origen soviético",
+      "Fiat CR-32 y Breguet XIX"
+    ],
+    "respuestaCorrecta": "Polikarpov I-15 e I-16 de origen soviético",
+    "tema": "Historia del EA",
+    "explicacion": "La República recibió primero ayuda francesa y después soviética, con los cazas Polikarpov I-15 e I-16, que lograron frenar el avance nacionalista sobre Madrid.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
   },
   {
     "pregunta": "La Comunidad Europea del Carbón y del Acero fue el embrión de la actual UE. ¿Cuáles fueron sus seis países fundadores?",
@@ -117,232 +132,97 @@
     "explicacion": "Los 6 países fundadores fueron Alemania, Bélgica, Francia, Italia, Luxemburgo y Países Bajos, unidos bajo el lema 'si se quiere evitar una guerra, hay que trabajar juntos'.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "¿En qué fecha nace oficialmente el Ejército del Aire como un ejército independiente en España?",
+    "pregunta": "¿Qué avión multipropósito sirve para reabastecimiento estratégico en vuelo en el 45 Grupo en Torrejón?",
     "opciones": [
-      "7 de octubre de 1939",
-      "8 de agosto de 1939",
-      "14 de abril de 1931",
-      "10 de diciembre de 1953"
+      "Airbus A-330-200 (TK.24)",
+      "Airbus A-400M (TK.23)",
+      "Falcon 900 (T.18)",
+      "CASA C-295 (T.21)"
     ],
-    "respuestaCorrecta": "7 de octubre de 1939",
-    "tema": "Historia del EA",
-    "explicacion": "El 7 de octubre de 1939 se promulgó la ley que constituía formalmente el Ejército del Aire como arma independiente.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué es el sistema de registro y documental?",
-    "opciones": [
-      "Un conjunto de recursos, humanos y materiales, así como los protocolos de utilización y de funcionamiento, que permiten mantener constancia de un documento",
-      "Un sistema de mensajería oficial del MINISDEF",
-      "Un libro físico en el cuál sólo se registran las salidas del MINISDEF",
-      "Ninguna es correcta"
-    ],
-    "respuestaCorrecta": "Un conjunto de recursos, humanos y materiales, así como los protocolos de utilización y de funcionamiento, que permiten mantener constancia de un documento",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "",
+    "respuestaCorrecta": "Airbus A-330-200 (TK.24)",
+    "tema": "Material Aéreo",
+    "explicacion": "Los nuevos Airbus A-330 (T.24/TK.24) actúan en el 45 Grupo para transporte y reabastecimiento estratégico.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "¿Qué normativa del EA regula el sistema de registro y archivo de documentos adaptándolo a sistemas de mensajería y gestión documental?",
+    "pregunta": "La Asamblea General de la ONU debate cualquier asunto de la Carta. Sin embargo, existe un órgano que puede reunirse de urgencia sin periodicidad fija y cuyos 5 miembros permanentes tienen capacidad de bloquear cualquier resolución. ¿Qué ocurre exactamente si uno de esos miembros vota en contra?",
     "opciones": [
-      "IG 10-01",
-      "IG 00-4",
-      "IG 10-14",
-      "IG 00-1"
+      "La resolución se aprueba igualmente si obtiene 9 votos",
+      "La resolución queda bloqueada por el derecho de veto",
+      "Se convoca una votación de desempate en la Asamblea General",
+      "El Secretario General tiene la última palabra"
     ],
-    "respuestaCorrecta": "IG 10-14",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "El objetivo de la IG 10-14 es adaptar el sistema de registro y archivo a los sistemas conjuntos de mensajería y gestión documental.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuáles son las dos funciones principales de los documentos administrativos según el temario?",
-    "opciones": [
-      "Función ejecutiva y función normativa",
-      "Función de constancia y función de comunicación",
-      "Función jurídica y función archivística",
-      "Función informativa y función disciplinaria"
-    ],
-    "respuestaCorrecta": "Función de constancia y función de comunicación",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "Los documentos administrativos tienen dos funciones: la función de constancia (conservar y demostrar la existencia de los actos) y la función de comunicación (interna o externa).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "En un texto argumentativo, ¿cuál es el orden correcto del proceso según el temario?",
-    "opciones": [
-      "Refutación → Enunciación → Demostración → Conclusión",
-      "Enunciación → Demostración → Refutación → Conclusión",
-      "Demostración → Enunciación → Conclusión → Refutación",
-      "Conclusión → Enunciación → Demostración → Refutación"
-    ],
-    "respuestaCorrecta": "Enunciación → Demostración → Refutación → Conclusión",
-    "tema": "Expresión Escrita",
-    "explicacion": "El proceso en la argumentación sigue el orden: Enunciación → Demostración → Refutación → Conclusión.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuáles son las tres propiedades textuales principales que se revisan en la fase de Emendatio (corrección)?",
-    "opciones": [
-      "Inventio, Dispositio y Elocutio",
-      "Adecuación, coherencia y cohesión",
-      "Gramática, léxico y tipología",
-      "Narrativo, descriptivo y expositivo"
-    ],
-    "respuestaCorrecta": "Adecuación, coherencia y cohesión",
-    "tema": "Expresión Escrita",
-    "explicacion": "En la corrección se revisa: Adecuación (soluciones lingüísticas apropiadas), Coherencia (selección y organización de la información) y Cohesión (puntuación, nexos, conectores).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "⚠ TRAMPA — ¿Cuál de estas afirmaciones sobre la OTAN es INCORRECTA?",
-    "opciones": [
-      "Su tratado consta de un preámbulo y 14 artículos",
-      "Fue creada en 1949 por 12 países fundadores",
-      "El Art. 5 regula la incorporación de nuevos estados europeos",
-      "El cuartel general está en Bruselas"
-    ],
-    "respuestaCorrecta": "El Art. 5 regula la incorporación de nuevos estados europeos",
+    "respuestaCorrecta": "La resolución queda bloqueada por el derecho de veto",
     "tema": "Organizaciones Internacionales",
-    "explicacion": "El Art. 5 establece el compromiso de autodefensa colectiva. Es el Art. 10 el que permite invitar a ingresar a cualquier estado europeo por acuerdo unánime. El resto de afirmaciones son correctas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué documento se utiliza para la comunicación oficial ordinaria y formal entre órganos administrativos o con particulares?",
-    "opciones": [
-      "Oficio",
-      "Teletipo",
-      "Instancia",
-      "Acta"
-    ],
-    "respuestaCorrecta": "Oficio",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "El Oficio es el medio clásico para comunicarse formalmente entre órganos de la administración y con particulares.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Según la numeración de disposiciones del EA, ¿a qué materia corresponde el código '60'?",
-    "opciones": [
-      "Operaciones",
-      "Adiestramiento",
-      "Personal",
-      "Material"
-    ],
-    "respuestaCorrecta": "Personal",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "El código 60 corresponde a Personal. El sistema de dos dígitos clasifica: 00 Doctrina, 10 Organización, 30 Operaciones, 50 Adiestramiento, 60 Personal, 70 Material, etc.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Un oficial da una charla con voz monótona, sin variar el tono ni el ritmo, y arrastra las palabras. ¿Qué dos cualidades de la paralingüística está descuidando simultáneamente?",
-    "opciones": [
-      "Volumen y articulación",
-      "Entonación y claridad",
-      "Modulación y velocidad",
-      "Énfasis y tiempo"
-    ],
-    "respuestaCorrecta": "Entonación y claridad",
-    "tema": "Expresión Oral",
-    "explicacion": "Voz monótona = falta de Entonación (no usa distintos tonos para potenciar la expresividad). Arrastrar las palabras = falta de Claridad (hablar sin arrastrar palabras es una de las cualidades de la voz descritas en el temario).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Respecto al uso de siglas en textos militares escritos en español, ¿qué indica el estilo y forma de la escritura militar?",
-    "opciones": [
-      "Se deben usar siempre en inglés para uniformidad con la OTAN",
-      "Se deben usar en español",
-      "Se pueden usar indistintamente en español o inglés",
-      "Solo se usan siglas en documentos clasificados"
-    ],
-    "respuestaCorrecta": "Se deben usar en español",
-    "tema": "Expresión Escrita",
-    "explicacion": "El temario indica que en la escritura militar se deben usar las siglas en español, por eso lo correcto es OTAN y no NATO.",
+    "explicacion": "Los 5 miembros permanentes del Consejo de Seguridad (China, EEUU, Rusia, Francia y Reino Unido) tienen derecho de veto: si cualquiera de ellos vota en contra, la resolución queda bloqueada aunque tenga los 9 votos necesarios.",
     "dificultad": "dificil",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "¿Cuál es la última fase del modelo cíclico de Worchel en la formación de grupos?",
+    "pregunta": "Según los niveles de comunicación del temario, ¿qué nivel atañe al contenido de la información o mensaje que se transmite?",
     "opciones": [
-      "Individualización",
-      "Productividad grupal",
-      "Declive grupal",
-      "Suceso precipitante"
+      "Nivel emocional",
+      "Nivel físico",
+      "Nivel racional",
+      "Nivel semántico"
     ],
-    "respuestaCorrecta": "Declive grupal",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "La última fase del modelo de Worchel es el declive grupal, caracterizado por dudas y desconfianza entre los miembros.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Posibles consecuencias psicológicas a LARGO plazo tras una catástrofe incluyen:",
-    "opciones": [
-      "Agitación psicomotriz e inacción",
-      "Trastorno adaptativo depresivo",
-      "Trastornos del estado de ánimo y abuso de sustancias",
-      "Reacciones emocionales intensas de pocas horas"
-    ],
-    "respuestaCorrecta": "Trastornos del estado de ánimo y abuso de sustancias",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "A largo plazo pueden aparecer trastorno de estrés postraumático, trastornos del estado de ánimo y abuso de sustancias.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Posibles consecuencias a largo plazo en las víctimas tras una emergencia o catástrofe:",
-    "opciones": [
-      "Ira, ansiedad y sentimiento de culpa",
-      "Agitación",
-      "Trastorno del estado de ánimo y abuso de sustancias",
-      "Ninguna de las anteriores"
-    ],
-    "respuestaCorrecta": "Trastorno del estado de ánimo y abuso de sustancias",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué elemento del lenguaje no verbal estudia cómo los desplazamientos, el espacio personal y el movimiento de los miembros reflejan actitudes y personalidad?",
-    "opciones": [
-      "Kinesia",
-      "Paralingüística",
-      "Gestualización",
-      "Proxémica"
-    ],
-    "respuestaCorrecta": "Proxémica",
+    "respuestaCorrecta": "Nivel racional",
     "tema": "Expresión Oral",
-    "explicacion": "La proxémica estudia el espacio inmediato al sujeto comunicador: desplazamientos, amplitud del espacio personal y movimiento de los miembros.",
+    "explicacion": "El nivel racional atañe al contenido de la información. El nivel físico se refiere a la forma (tono, lenguaje) y el emocional al estado interno del comunicador.",
     "dificultad": "facil",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué término describe un suceso repentino, tenso e impredecible que incapacita a la persona para resolverlo normalmente?",
+    "opciones": [
+      "Emergencia",
+      "Catástrofe",
+      "Crisis",
+      "Desastre múltiple"
+    ],
+    "respuestaCorrecta": "Crisis",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "La crisis es un suceso repentino, tenso y difícil que incapacita a resolverlo normalmente, es imprevisible y requiere intervención rápida.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "Según la norma IG 10-01, ¿cuál es el propósito primordial de esta Instrucción General en el Ejército del Aire y del Espacio?",
+    "opciones": [
+      "Facilitar la producción normativa y normalizar la documentación",
+      "Regular el régimen disciplinario militar",
+      "Definir las plantillas de personal orgánico",
+      "Controlar la seguridad de la información clasificada"
+    ],
+    "respuestaCorrecta": "Facilitar la producción normativa y normalizar la documentación",
+    "tema": "Instrucción a la IG 10-01",
+    "explicacion": "El propósito de la IG 10-01 es normalizar y unificar los criterios formales y de redacción de los documentos del Ejército.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué avión es operado en la escuela de transporte de la Base Aérea de Matacán (Salamanca) por el 744 Escuadrón?",
+    "opciones": [
+      "C-235 (T.19)",
+      "C-101 Mirlo (E.25)",
+      "T-35 C Tamiz (E.26)",
+      "Bonanza F-33 C (E.24)"
+    ],
+    "respuestaCorrecta": "C-235 (T.19)",
+    "tema": "Material Aéreo",
+    "explicacion": "El C-235 (T.19) sirve en el 744 Escuadrón (Matacán) para instrucción y adiestramiento de pilotos de transporte.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
   },
   {
     "pregunta": "¿Qué hito logístico aéreo de relevancia histórica tuvo lugar por primera vez en la Guerra Civil Española?",
@@ -357,96 +237,366 @@
     "explicacion": "El traslado de tropas del Ejército de África a la península supuso el primer puente aéreo masivo de la historia militar.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "¿Qué técnica de grupo, estructurada en fases de generación de ideas por escrito, ronda de ideas y votación preliminar, integra trabajo individual y grupal?",
+    "pregunta": "Según las normas de tratamientos honoríficos en escritos administrativos, ¿cuál es la norma general respecto a los cargos y nombres?",
     "opciones": [
-      "Grupo inestructurado",
-      "Brainstorming libre",
-      "Grupo nominal",
-      "Dinámica de roles"
+      "Se dirigen siempre al cargo, no a la persona",
+      "Se dirigen al nombre personal con el máximo rango",
+      "Solo se permite el uso del nombre de pila",
+      "Se prohíbe mencionar el cargo oficial"
     ],
-    "respuestaCorrecta": "Grupo nominal",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "El grupo nominal es una reunión estructurada que integra trabajo individual y grupal, con fases de preparación, generación de ideas por escrito, ronda, discusión, votación y discusión final.",
+    "respuestaCorrecta": "Se dirigen siempre al cargo, no a la persona",
+    "tema": "Instrucción a la IG 10-01",
+    "explicacion": "La correspondencia administrativa oficial se dirige siempre al cargo institucional de forma abstracta, no a la persona concreta que lo ocupa.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "⚠ Trampa — ¿Qué consecuencias psicológicas son INMEDIATAS (no a largo plazo) tras una catástrofe?",
+    "pregunta": "En el registro y archivo de documentación, cuando hablamos de Expediente, ¿a qué nos referimos?",
     "opciones": [
-      "Trastorno de estrés postraumático y abuso de sustancias",
-      "Trastorno adaptativo y trastorno de estrés agudo",
-      "Trastornos del estado de ánimo y trastornos psicosomáticos",
-      "Ira crónica y sentimiento de culpa persistente"
+      "Conjunto de documentos correspondientes a un mismo asunto",
+      "Un expediente de pérdida de aptitudes psicofísicas",
+      "Expediente personal de un militar",
+      "Ninguna es correcta"
     ],
-    "respuestaCorrecta": "Trastorno adaptativo y trastorno de estrés agudo",
+    "respuestaCorrecta": "Conjunto de documentos correspondientes a un mismo asunto",
+    "tema": "Registro y Utilización de Documentos",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué tipo de trastorno psicológico se considera una consecuencia INMEDIATA tras una catástrofe?",
+    "opciones": [
+      "Trastorno de estrés postraumático (TEP)",
+      "Abuso de sustancias",
+      "Trastorno adaptativo depresivo o ansioso",
+      "Trastorno psicosomático"
+    ],
+    "respuestaCorrecta": "Trastorno adaptativo depresivo o ansioso",
     "tema": "Apoyo Psicológico",
-    "explicacion": "Las consecuencias INMEDIATAS son el trastorno adaptativo (depresivo, ansioso o mixto) y el trastorno de estrés agudo. Las de largo plazo incluyen el estrés postraumático y el abuso de sustancias.",
+    "explicacion": "Las consecuencias inmediatas incluyen el trastorno adaptativo (depresivo, ansioso, mixto) y el trastorno de estrés agudo. El TEP y los trastornos psicosomáticos son consecuencias a largo plazo.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre los Canadair CL-215T y CL-415 que operan desde BA Torrejón y cuáles son sus designaciones militares?",
+    "opciones": [
+      "El CL-215T es cisterna y el CL-415 es fotográfico",
+      "Ambos son contraincendios; el CL-215T tiene designación UD.13T y el CL-415 tiene UD.14",
+      "El CL-215T es anfibio y el CL-415 es terrestre",
+      "Son el mismo avión con diferente motorización y misión distinta"
+    ],
+    "respuestaCorrecta": "Ambos son contraincendios; el CL-215T tiene designación UD.13T y el CL-415 tiene UD.14",
+    "tema": "Material Aéreo",
+    "explicacion": "Ambos son aviones contraincendios del EA operados desde BA Torrejón (43 Grupo FFAA). El CL-215T tiene designación UD.13T (la T indica que es la versión turboprop modernizada) y el CL-415 tiene designación UD.14. Son los únicos aviones dedicados exclusivamente a extinción de incendios.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
+    "opciones": [
+      "Nelson Mandela",
+      "Malala Yousafzai",
+      "Martin Luther King",
+      "Napoleón Bonaparte"
+    ],
+    "respuestaCorrecta": "Napoleón Bonaparte",
+    "tema": "Liderazgo",
+    "explicacion": "Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "⚠ TRAMPA — ¿Cuál de estas fórmulas de tratamiento escrito es CORRECTA para dirigirse a un Oficial General del Ejército?",
+    "opciones": [
+      "Señoría — V.S. — Ilustrísimo Señor",
+      "Excelencia — V.E. — Excmo. Sr.",
+      "Alteza Real — S.A.R.",
+      "Majestad — V.M."
+    ],
+    "respuestaCorrecta": "Excelencia — V.E. — Excmo. Sr.",
+    "tema": "Expresión Escrita",
+    "explicacion": "A los Oficiales Generales y almirantes corresponde el tratamiento de Excelencia (V.E.), con el pie 'Excmo. Sr.'. Señoría corresponde a Coroneles.",
     "dificultad": "dificil",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "El vuelo histórico 'Plus Ultra' de 1926 cruzó el Atlántico Sur. ¿Quién era el comandante y piloto de esa travesía?",
+    "pregunta": "¿Cuántos niveles de división admite la IG 10-01 para estructurar internamente los documentos y en qué orden se aplican?",
     "opciones": [
-      "Capitán Barberán",
-      "Coronel Vives",
-      "Comandante Ramón Franco",
-      "Infante Alfonso de Orleáns"
+      "3 niveles: título, subtítulo y párrafo",
+      "4 niveles: mayúsculas negrita, mayúsculas, minúsculas negrita y minúsculas",
+      "5 niveles: partes, capítulos, secciones, artículos e incisos",
+      "2 niveles: encabezado y cuerpo del documento"
     ],
-    "respuestaCorrecta": "Comandante Ramón Franco",
+    "respuestaCorrecta": "4 niveles: mayúsculas negrita, mayúsculas, minúsculas negrita y minúsculas",
+    "tema": "Instrucción a la IG 10-01",
+    "explicacion": "La IG 10-01 establece hasta 4 niveles de división: 1.º Mayúsculas Negrita, 2.º Mayúsculas, 3.º Minúsculas Negrita, 4.º Minúsculas. Este sistema jerárquico organiza visualmente la estructura de los documentos oficiales del EA.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué órgano de la UE vela por que los países miembros apliquen correctamente las leyes aprobadas y respeten los derechos fundamentales?",
+    "opciones": [
+      "La Comisión Europea",
+      "El Consejo Europeo",
+      "El Parlamento Europeo",
+      "El Tribunal de Justicia de la UE"
+    ],
+    "respuestaCorrecta": "El Tribunal de Justicia de la UE",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El Tribunal de Justicia de la UE vela por que los países apliquen las leyes aprobadas y se respeten los derechos fundamentales.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "En el sistema de mensajería formal MEFO (teletipo), ¿qué letra identifica a la prelación 'Prioridad' y qué plazo de entrega tiene fijado?",
+    "opciones": [
+      "P (Prioridad) - Plazo máximo de entrega de 6 horas",
+      "Z (Flash) - Entrega inmediata en menos de 5 minutos",
+      "O (Inmediato) - Plazo de 1 hora",
+      "R (Rutina) - Plazo de 24 horas"
+    ],
+    "respuestaCorrecta": "P (Prioridad) - Plazo máximo de entrega de 6 horas",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La prelación 'P' indica 'Prioridad' y fija un plazo máximo de entrega o transmisión de 6 horas.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "Según el temario, ¿qué factor NO incrementa la cohesión de un grupo?",
+    "opciones": [
+      "Tamaño pequeño del grupo",
+      "Experiencias pasadas compartidas",
+      "Amenaza exterior",
+      "Diversidad ideológica de sus miembros"
+    ],
+    "respuestaCorrecta": "Diversidad ideológica de sus miembros",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "Los factores que incrementan la cohesión son: aceptación de normas, estabilidad del grupo, tamaño pequeño, experiencias pasadas y amenaza exterior. La diversidad ideológica no aparece como factor.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Cuáles son las dos fases principales de una crisis psicológica?",
+    "opciones": [
+      "Fase de adaptación y fase de asimilación",
+      "Fase incipiente y fase terminal",
+      "Fase de shock y fase de reacción",
+      "Fase previa y fase final"
+    ],
+    "respuestaCorrecta": "Fase de shock y fase de reacción",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las fases de una crisis psicológica son la fase de shock (que afecta a emoción, cognición, fisiológico y motor) y la fase de reacción.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué factores incrementan la cohesión grupal según el temario?",
+    "opciones": [
+      "Tamaño grande del grupo y diversidad de objetivos",
+      "Aceptación de normas, estabilidad, tamaño pequeño y amenaza exterior",
+      "Rotación frecuente de miembros y ausencia de normas rígidas",
+      "Alta individualización y roles ambiguos"
+    ],
+    "respuestaCorrecta": "Aceptación de normas, estabilidad, tamaño pequeño y amenaza exterior",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "La cohesión aumenta con: aceptación de normas, esfuerzo por conseguir metas, estabilidad, tamaño pequeño, experiencias pasadas compartidas y amenaza exterior.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre los roles en un grupo es CORRECTA según Brown (1988)?",
+    "opciones": [
+      "Los roles son siempre asignados formalmente por la organización",
+      "Los roles forman parte de la autodefinición del individuo en el grupo",
+      "Solo el líder tiene un rol claramente definido; los demás son intercambiables",
+      "Los roles son irrelevantes para el funcionamiento del grupo"
+    ],
+    "respuestaCorrecta": "Los roles forman parte de la autodefinición del individuo en el grupo",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "Una de las cinco características de los roles según Brown (1988) es que 'los roles forman parte de nuestra autodefinición en el grupo': cómo nos identificamos dentro del grupo está íntimamente ligado al rol que desempeñamos.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Cuál de los siguientes comportamientos pertenece al 'Líder Apoyador' dentro de la teoría de la Ruta-Meta?",
+    "opciones": [
+      "Establece metas ambiciosas y espera alto rendimiento",
+      "Da instrucciones claras y específicas sobre qué hacer y cómo",
+      "Es amistoso y muestra interés personal por las necesidades del subordinado",
+      "Consulta a los subordinados antes de tomar decisiones"
+    ],
+    "respuestaCorrecta": "Es amistoso y muestra interés personal por las necesidades del subordinado",
+    "tema": "Liderazgo",
+    "explicacion": "El Líder Apoyador de la teoría Ruta-Meta es amistoso y muestra interés por las necesidades del subordinado. No confundir: el Orientado a Logros establece metas; el Director da instrucciones concretas; el Participativo consulta antes de decidir.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "Una vez realizada mi presentación… ¿Qué debo autoevaluar? Señalar el que NO corresponda.",
+    "opciones": [
+      "Si he cumplido los objetivos",
+      "Si el contenido se ha ajustado al tiempo",
+      "Si había mucha luz en la clase",
+      "Si disponía de los recursos adecuados"
+    ],
+    "respuestaCorrecta": "Si había mucha luz en la clase",
+    "tema": "Expresión Oral",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿A qué tipo de comunicación pertenece la comunicación vertical ascendente o descendente dentro de una organización?",
+    "opciones": [
+      "Informal",
+      "Masiva",
+      "Formal",
+      "Intrapersonal"
+    ],
+    "respuestaCorrecta": "Formal",
+    "tema": "Expresión Oral",
+    "explicacion": "La comunicación vertical (ascendente o descendente) pertenece a la comunicación formal dentro de la organización.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes NO es un elemento de la comunicación según el esquema del temario?",
+    "opciones": [
+      "Emisor",
+      "Retroalimentación",
+      "Intención",
+      "Ruido"
+    ],
+    "respuestaCorrecta": "Intención",
+    "tema": "Expresión Oral",
+    "explicacion": "Los elementos de la comunicación según el temario son: emisor, receptor, código, mensaje, canal, ruido y retroalimentación (feedback). La 'intención' no es un elemento comunicativo en sí mismo según el esquema del temario, aunque sea parte del proceso.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "⚠ Trampa — El primer aeródromo militar de España se estableció en 1911. ¿Dónde?",
+    "opciones": [
+      "Los Alcázares",
+      "Getafe",
+      "Cuatro Vientos",
+      "San Javier"
+    ],
+    "respuestaCorrecta": "Cuatro Vientos",
     "tema": "Historia del EA",
-    "explicacion": "El 'Plus Ultra' fue pilotado por el Comandante Ramón Franco, con tripulación formada también por Ruiz de Alda, Durán y el sargento Rada.",
+    "explicacion": "El primer aeródromo militar de España fue Cuatro Vientos, en 1911. Los Alcázares fue donde se realizó el primer vuelo de hidroavión en 1915 y donde se creó la Escuela de Bombardeo en 1920.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "Un oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona. ¿Cuántos asuntos puede tratar un mismo oficio?",
+    "pregunta": "¿A qué tipo de texto pertenece el siguiente ejemplo: 'El F-18 es un caza polivalente de ala en flecha con dos motores turbofán que alcanza velocidades superiores a Mach 1.8'?",
     "opciones": [
-      "Los que sean necesarios sin límite",
-      "Hasta tres asuntos como máximo",
-      "Un único asunto",
-      "Dos asuntos si están relacionados"
+      "Narrativo",
+      "Argumentativo",
+      "Descriptivo",
+      "Expositivo"
     ],
-    "respuestaCorrecta": "Un único asunto",
-    "tema": "Registro y Redacción de Documentos",
-    "explicacion": "Según la normativa, un oficio trata un solo asunto. Además usa N/Ref y S/Ref para su identificación y seguimiento.",
+    "respuestaCorrecta": "Descriptivo",
+    "tema": "Expresión Escrita",
+    "explicacion": "Es un texto descriptivo: atiende a la realidad percibida, identifica rasgos físicos y técnicos del objeto (forma, motores, velocidad). No narra hechos, no defiende una tesis ni explica un proceso: describe cómo es algo.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué es el sistema de registro y documental?",
+    "opciones": [
+      "Un conjunto de recursos, humanos y materiales, así como los protocolos de utilización y de funcionamiento, que permiten mantener constancia de un documento",
+      "Un sistema de mensajería oficial del MINISDEF",
+      "Un libro físico en el cuál sólo se registran las salidas del MINISDEF",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": "Un conjunto de recursos, humanos y materiales, así como los protocolos de utilización y de funcionamiento, que permiten mantener constancia de un documento",
+    "tema": "Registro y Utilización de Documentos",
+    "explicacion": "",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "Un psicólogo llega al lugar del desastre en menos de una hora, atiende a las víctimas in situ con técnicas breves y les transmite que la recuperación es posible. ¿Cuántos principios de intervención está aplicando simultáneamente y cuáles son?",
+    "pregunta": "¿Cuál es la relación entre los valores militares y las Reales Ordenanzas de las FAS (R.D. 96/2009) según el temario?",
     "opciones": [
-      "2 principios: inmediatez y proximidad",
-      "3 principios: proximidad, inmediatez y expectativas",
-      "4 principios: proximidad, inmediatez, expectativas y simplicidad",
-      "Todos los principios a la vez"
+      "Las RR.OO. son posteriores a la IG 00-4 y la complementan",
+      "Las RR.OO. son el código deontológico con principios éticos y reglas de comportamiento; la IG 00-4 desarrolla los valores del EA sobre esa base",
+      "Las RR.OO. solo regulan aspectos disciplinarios, no valores",
+      "Las RR.OO. han sido derogadas por la IG 00-4"
     ],
-    "respuestaCorrecta": "4 principios: proximidad, inmediatez, expectativas y simplicidad",
+    "respuestaCorrecta": "Las RR.OO. son el código deontológico con principios éticos y reglas de comportamiento; la IG 00-4 desarrolla los valores del EA sobre esa base",
+    "tema": "Valores Militares",
+    "explicacion": "El R.D. 96/2009 (RR.OO.) es el código deontológico general de las FAS con principios éticos y reglas de comportamiento. La IG 00-4 (2015) desarrolla específicamente los valores en el EA, el modelo de liderazgo 360º y el empeño colectivo, construyendo sobre esa base.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "Una persona que trabajó como voluntaria en la atención a víctimas de un terremoto comienza semanas después a tener pesadillas recurrentes, evita hablar del suceso y presenta una respuesta de alarma exagerada ante ruidos fuertes. ¿Qué consecuencia psicológica de largo plazo presenta?",
+    "opciones": [
+      "Trastorno adaptativo ansioso",
+      "Trastorno de estrés agudo",
+      "Trastorno de estrés postraumático",
+      "Trastorno psicosomático"
+    ],
+    "respuestaCorrecta": "Trastorno de estrés postraumático",
     "tema": "Apoyo Psicológico",
-    "explicacion": "Está aplicando al menos 3 principios: Proximidad (atención cerca del lugar), Inmediatez (intervención precoz) y Expectativas (transmite que la recuperación es posible). La simplicidad requeriría además métodos breves, que también se mencionan.",
-    "dificultad": "media",
+    "explicacion": "El trastorno de estrés postraumático (TEP) es una consecuencia de largo plazo. Sus síntomas característicos son: re-experimentación (flashbacks, pesadillas), evitación y activación aumentada. El trastorno de estrés agudo es inmediato; el TEP persiste semanas o meses después del evento.",
+    "dificultad": "facil",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
   },
   {
-    "pregunta": "⚠ Trampa — Janis (1972) identifica 3 categorías de procesos en el pensamiento grupal. ¿Cuál de estas NO es una de ellas?",
+    "pregunta": "¿Qué Directiva del JEMA impulsó la implantación del modelo de Liderazgo y Valores en el EA, y en qué año fue emitida?",
     "opciones": [
-      "Conducta intergrupal y conflictos con grupos rivales",
-      "Ilusión de invulnerabilidad e ilusión de unanimidad",
-      "Presión hacia la uniformidad y autocensura",
-      "Cohesión extrema que bloquea la toma de decisiones individuales"
+      "Directiva 001/10 de enero de 2010",
+      "Directiva 024/15 de junio de 2015",
+      "Directiva 100/22 de junio de 2022",
+      "Directiva 00-4 de octubre de 2015"
     ],
-    "respuestaCorrecta": "Cohesión extrema que bloquea la toma de decisiones individuales",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Las 3 categorías de Janis son: conducta intergrupal, ilusiones compartidas (invulnerabilidad y unanimidad) y aspectos coercitivos (presión hacia la uniformidad y autocensura). 'Cohesión extrema que bloquea decisiones individuales' no es una categoría nombrada como tal.",
-    "dificultad": "dificil",
+    "respuestaCorrecta": "Directiva 024/15 de junio de 2015",
+    "tema": "Valores Militares",
+    "explicacion": "La Directiva 024/15 de junio de 2015 impulsó la implantación del modelo de Liderazgo y Valores en el EA en dos fases: implementación y consolidación.",
+    "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro1"
+    "examen": "simulacro_1"
+  },
+  {
+    "pregunta": "¿Qué propiedad textual consiste en el uso correcto de puntuación, nexos, anáforas y conectores en un texto?",
+    "opciones": [
+      "Adecuación",
+      "Coherencia",
+      "Cohesión",
+      "Gramática"
+    ],
+    "respuestaCorrecta": "Cohesión",
+    "tema": "Expresión Escrita",
+    "explicacion": "La cohesión se refiere al uso correcto de puntuación, nexos, anáforas y conectores textuales.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro_1"
   }
 ]

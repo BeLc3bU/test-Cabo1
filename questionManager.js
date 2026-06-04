@@ -119,13 +119,30 @@ export async function loadAllQuestions() {
     }
 
     const savedIndices = storage.getUnseenQuestionIndices();
+    const lastCount = storage.getTotalQuestionsCount();
+
     if (savedIndices) {
         unseenQuestionIndices = savedIndices;
+        
+        // Si se han añadido nuevas preguntas, agregamos sus índices a las no vistas
+        const effectiveLastCount = lastCount !== null ? lastCount : 369;
+        if (allQuestions.length > effectiveLastCount) {
+            const newIndices = [];
+            for (let i = effectiveLastCount; i < allQuestions.length; i++) {
+                newIndices.push(i);
+            }
+            shuffleArray(newIndices);
+            unseenQuestionIndices = [...unseenQuestionIndices, ...newIndices];
+            storage.setUnseenQuestionIndices(unseenQuestionIndices);
+        }
     } else {
         unseenQuestionIndices = allQuestions.map((_, index) => index);
         shuffleArray(unseenQuestionIndices);
         storage.setUnseenQuestionIndices(unseenQuestionIndices);
     }
+
+    // Actualizar el recuento total de preguntas en localStorage
+    storage.setTotalQuestionsCount(allQuestions.length);
 }
 
 export const questionBank = {

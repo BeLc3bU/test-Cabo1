@@ -1,0 +1,363 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#7c3aed;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}.timer b{color:#c4b5fd;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#7c3aed,#c4b5fd);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#7c3aed;color:#c4b5fd}
+.qb.cur{background:#2d1f4e;border-color:#7c3aed;color:#c4b5fd}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2d1f4e;color:#c4b5fd}
+.trapbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#2d2010;color:#fbbf24}
+.hardbadge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:5px;background:#0c2a30;color:#67e8f9}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.qtxt{font-size:15px;color:#e8eaf0;line-height:1.7;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#7c3aed}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#2d1f4e;border-color:#7c3aed;color:#c4b5fd}
+.opt.sel{border-color:#7c3aed;background:#1a1230}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fbicon{font-size:18px;flex-shrink:0}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#7c3aed;color:#c4b5fd}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#7c3aed;color:#fff;border-color:#7c3aed}
+.btnp:hover{background:#6d28d9;border-color:#6d28d9;color:#fff}
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#c4b5fd;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:200px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:34px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}.tko{background:#1a0d0d;color:#f87171}
+.ttrap{background:#2d2010;color:#fbbf24}.ttopic{background:#1e2235;color:#5a6280}
+.thard{background:#0c2a30;color:#67e8f9}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}.ra b{color:#c4b5fd}
+</style>
+
+<div class="w">
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Formación cívica · Test 8 — Temario completo</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+    <div class="qgrid" id="qgrid"></div>
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#2d1f4e;border:1px solid #7c3aed"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+      <div class="legrow"><div class="legdot" style="background:#1e2235;border:1px solid #2a2f3e"></div>Sin responder</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+// ── MATERIAL AÉREO (8 preguntas — el tema más olvidado) ──
+{t:"Material aéreo",trap:false,hard:false,
+q:"¿Cuál es la designación oficial española y el nombre popular del caza polivalente de combate que opera desde las bases de Morón (ALA 11) y Los Llanos (ALA 14)?",
+opts:["C.15 — F-18 Hornet","C.16 — EF-2000 Eurofighter Typhoon","T.21 — C-295","T.23 — Airbus A-400M"],
+a:1,exp:"El EF-2000 Eurofighter Typhoon tiene la designación española C.16 y opera desde la BA Morón (ALA 11) y la BA Los Llanos (ALA 14)."},
+
+{t:"Material aéreo",trap:false,hard:true,
+q:"El C-212 'Aviocar' es una aeronave muy versátil que cumple varias misiones simultáneas. ¿Cuáles son todas las misiones que cubre según el temario?",
+opts:["Solo transporte y enseñanza","Transporte, guerra electrónica, enseñanza y ensayos en vuelo","Transporte, SAR y fotografía","Combate, transporte y enseñanza"],
+a:1,exp:"El C-212 Aviocar (T.12/TR.12/XT.12) cubre cuatro misiones: transporte, guerra electrónica (EW), enseñanza y ensayos en vuelo. Opera desde BA Alcantarilla, San Javier y Torrejón."},
+
+{t:"Material aéreo",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál de estas aeronaves es la encargada de las misiones de reabastecimiento en vuelo (cisternas) según el temario?",
+opts:["Únicamente el Airbus A-330-200","Únicamente el Airbus A-400M","Tanto el A-400M (TK.23) como el A-330-200 (TK.24)","El Falcon 900 y el C-295"],
+a:2,exp:"Ambos pueden hacer reabastecimiento en vuelo: el A-400M con designación TK.23 (BA Zaragoza, ALA 31) y el A-330-200 con TK.24 (BA Torrejón, 45 Grupo FFAA). Son los dos aviones cisterna del EA."},
+
+{t:"Material aéreo",trap:false,hard:true,
+q:"El MQ-9 'Predator' es la aeronave no tripulada del EA. ¿Qué tipo de misiones realiza y desde qué base opera?",
+opts:["Contraincendios desde BA Torrejón","Reconocimiento e ISR desde BA Talavera (ALA 23)","Fotografía y calibración desde BA Getafe","SAR desde BA Gando"],
+a:1,exp:"El MQ-9 Predator (versión MQ-9B) realiza misiones de Reconocimiento e ISR (Inteligencia, Vigilancia y Reconocimiento) desde la BA Talavera, donde está el ALA 23."},
+
+{t:"Material aéreo",trap:false,hard:false,
+q:"¿Qué aeronave del EA se dedica exclusivamente a la extinción de incendios y desde qué base opera?",
+opts:["C-235 desde BA Getafe","AS-332 Superpuma desde BA Son San Juan","Canadair CL-215T y CL-415 desde BA Torrejón","C-212 desde BA Alcantarilla"],
+a:2,exp:"Los Canadair CL-215T (UD.13T) y CL-415 (UD.14) son los aviones contraincendios del EA y operan desde la BA Torrejón, encuadrados en el 43 Grupo FFAA."},
+
+{t:"Material aéreo",trap:false,hard:true,
+q:"En el sistema de matrículas del EA, si una aeronave tiene el símbolo de misión básica 'D' y el símbolo de tipo 'H', ¿qué tipo de aeronave es?",
+opts:["Un avión de ataque no tripulado","Un helicóptero de salvamento","Un avión de bombardeo con capacidad de enseñanza","Un velero de patrulla"],
+a:1,exp:"En las matrículas del EA: D = Salvamento (misión básica) y H = Helicóptero (tipo). Por tanto, una aeronave con D y H es un helicóptero de salvamento, como el AS-332B 'Superpuma' SAR con designación HD.21."},
+
+{t:"Material aéreo",trap:true,hard:false,
+q:"⚠ Trampa — ¿Cuál es la misión principal del AS-332 'Superpuma' del ALA 48 encuadrado en el 402 Escuadrón?",
+opts:["Misiones SAR de búsqueda y rescate","Transporte VIP","Contraincendios","Enseñanza avanzada de helicópteros"],
+a:1,exp:"El AS-332 del 402 Escuadrón (ALA 48, BA Getafe) tiene designación HT.21 y su misión es Transporte VIP. No debe confundirse con el AS-332B del 803 Escuadrón (HD.21), que sí hace SAR."},
+
+{t:"Material aéreo",trap:false,hard:true,
+q:"¿En qué año cambió el nombre del Ejército del Aire al actual 'Ejército del Aire y del Espacio' y mediante qué norma?",
+opts:["En 2020 mediante Ley Orgánica","En 2022 mediante Real Decreto 524/2022 de 27 de junio","En 2019 mediante Instrucción General del JEMA","En 2021 mediante Orden Ministerial"],
+a:1,exp:"En junio de 2022, tras 83 años de historia, el Real Decreto 524/2022 de 27 de junio dispuso el cambio de denominación de Ejército del Aire a Ejército del Aire y del Espacio."},
+
+// ── HISTORIA DE LA AVIACIÓN ESPAÑOLA (5 preguntas) ──
+{t:"Historia aviación española",trap:false,hard:false,
+q:"¿Cuál fue el primer vuelo histórico transatlántico sur realizado por aviación española, en qué año se produjo y cómo se llamaba el avión?",
+opts:["1923 — Madrid-Manila — Breguet XIX","1926 — España-Argentina — Plus Ultra","1929 — Sevilla-Río de Janeiro — Cuatro Vientos","1933 — Sevilla-Camagüey — Superbidón"],
+a:1,exp:"En 1926 el 'Plus Ultra' completó el primer vuelo atlántico sur, de España a Argentina. La tripulación la formaban el Cte. Ramón Franco (piloto), el Capitán Ruiz de Alda (navegante), el Tte. de Navío Durán y el Sgt. mecánico Rada."},
+
+{t:"Historia aviación española",trap:true,hard:false,
+q:"⚠ Trampa — El primer aeródromo militar de España se estableció en 1911. ¿Dónde?",
+opts:["Los Alcázares","Getafe","Cuatro Vientos","San Javier"],
+a:2,exp:"El primer aeródromo militar de España fue Cuatro Vientos, en 1911. Los Alcázares fue donde se realizó el primer vuelo de hidroavión en 1915 y donde se creó la Escuela de Bombardeo en 1920."},
+
+{t:"Historia aviación española",trap:false,hard:true,
+q:"La primera travesía del Atlántico Central sin escalas se realizó en 1933 entre Sevilla y Camagüey. ¿Quiénes la tripularon y en qué avión?",
+opts:["Ramón Franco y Ruiz de Alda en el Plus Ultra","Barberán y Collar en un Breguet Superbidón llamado 'Cuatro Vientos'","Kindelán y Vives en un Dornier","El Infante Alfonso de Orleáns en el Tamiz"],
+a:1,exp:"La primera travesía del Atlántico Central sin escalas (1933) la realizaron el Capitán Barberán y el Teniente Collar en un Breguet Superbidón de Construcciones Aeronáuticas bautizado 'Cuatro Vientos'."},
+
+{t:"Historia aviación española",trap:false,hard:false,
+q:"¿Quién diseñó el emblema del Rokiski y cuál es su origen heráldico más remoto?",
+opts:["Lo diseñó el orfebre José Luis Rokiski; tiene origen en el escudo de la Casa de Borbón","Lo diseñó la esposa del Infante Alfonso de Orleáns; recuerda al ojo del dios Ra con las alas del dios Horus","Lo diseñó Kindelán; tiene origen en la heráldica medieval española","Lo diseñó el JEMA en 1940; es un diseño completamente original"],
+a:1,exp:"El Rokiski fue diseñado en el domicilio del piloto Infante Alfonso de Orleáns por su esposa, la Infanta Beatriz de Sajonia. Su forma recuerda al ojo del dios Ra con las alas del dios Horus. El primer ejemplar se fabricó en la joyería Ansorena de Madrid."},
+
+{t:"Historia aviación española",trap:false,hard:true,
+q:"Durante la Guerra Civil Española, ¿qué cambio táctico fundamental en las formaciones aéreas se desarrolló y luego se aplicó en la Segunda Guerra Mundial?",
+opts:["Se pasó de vuelo en solitario a formaciones de 3 aviones","Se pasó de formaciones de 3 aviones a grupos de 4, más eficaces","Se inventó el vuelo nocturno como táctica estándar","Se implantó el reabastecimiento en vuelo como táctica habitual"],
+a:1,exp:"La Guerra Civil Española fue un campo de pruebas para la aviación. Una de las innovaciones tácticas fue el cambio de formaciones de 3 aviones a grupos de 4, que resultaron más eficaces en combate. Esta táctica se exportó a la Segunda Guerra Mundial."},
+
+// ── ORGANIZACIONES INTERNACIONALES (2) ──
+{t:"Org. Internacionales",trap:false,hard:false,
+q:"¿Qué misión internacional del EA tiene como objetivo proteger contra la piratería en el Cuerno de África y bajo qué operación europea se enmarca?",
+opts:["Operación Apoyo a Mali — EUTM Mali","Operación Atalanta — EUNAVFOR Somalia","Policía Aérea del Báltico — BAP","Operación Resolute Support — OTAN"],
+a:1,exp:"La Operación Atalanta se enmarca en la EUNAVFOR Somalia y tiene como objetivo la protección contra la piratería en el Cuerno de África. El EA tiene destacamentos en Yibuti con el Orión, el D.4 (CN-235 VIGMA) y el T.21 (C-295)."},
+
+{t:"Org. Internacionales",trap:true,hard:false,
+q:"⚠ Trampa — La Policía Aérea del Báltico (BAP) es una misión de la OTAN. ¿Cuál es su objetivo y con qué aeronaves participa España?",
+opts:["Proteger el espacio aéreo europeo con aviones C-295","Asegurar el espacio aéreo OTAN en el Báltico con F-18 o Eurofighter","Vigilar el Mediterráneo con el MQ-9 Predator","Apoyar misiones humanitarias con el A-400M"],
+a:1,exp:"La BAP tiene como objetivo asegurar el espacio aéreo OTAN en la región del Báltico. España participa con unos 150 militares y aviones F-18 o Eurofighter según la rotación."},
+
+// ── DINÁMICA DE GRUPOS (2) ──
+{t:"Dinámica de grupos",trap:false,hard:true,
+q:"¿Cuál es la diferencia exacta entre los grupos 'primarios' y los 'secundarios' en cuanto al tipo de vínculo y el tamaño?",
+opts:["Primarios: grandes, normas escritas, objetivos comunes. Secundarios: pequeños, afectividad","Primarios: pocos miembros, interacción cara a cara, afectividad y solidaridad. Secundarios: grandes, sin relación directa, unidos por objetivos comunes","Primarios: formales y planificados. Secundarios: informales y espontáneos","Primarios: temporales. Secundarios: permanentes"],
+a:1,exp:"Primarios: pocos miembros, interacción directa cara a cara, alto nivel de interdependencia e identificación, relación basada en afectividad, compromiso y solidaridad (ej. familia). Secundarios: grupos grandes, sin relación directa, unidos por objetivos comunes y organización escrita por reglamentos (ej. grupo de trabajo)."},
+
+{t:"Dinámica de grupos",trap:false,hard:false,
+q:"¿Qué función tienen las normas grupales según el temario? Señala la opción que recoge correctamente las TRES funciones.",
+opts:["Sancionar, controlar y jerarquizar","Ayuda existencial y coordinación, ayuda a la consecución de metas, y aumentar o mantener la identidad grupal","Establecer roles, repartir tareas y elegir al líder","Generar cohesión, crear conflictos productivos y fomentar la creatividad"],
+a:1,exp:"Las tres funciones de las normas en el grupo son: ayuda existencial y coordinación de actividades; ayuda a la consecución de las metas del grupo; y aumentar o mantener la identidad grupal."},
+
+// ── EXPRESIÓN ORAL (2) ──
+{t:"Expresión oral",trap:false,hard:false,
+q:"¿Cuáles son los tres elementos principales de la comunicación no verbal que recoge el temario?",
+opts:["Proxémica, paralingüística y dicción","Kinesia, proxémica y paralingüística","Gestos, postura y mirada","Voz, movimiento y espacio"],
+a:1,exp:"Los tres elementos principales de la comunicación no verbal según el temario son: Kinesia (gestos y movimientos corporales), Proxémica (uso del espacio) y Paralingüística (cualidades de la voz y la dicción)."},
+
+{t:"Expresión oral",trap:true,hard:false,
+q:"⚠ Trampa — ¿A qué elemento de la comunicación no verbal corresponde estudiar cómo nos afecta el 'aspecto externo' y la imagen que proyectamos?",
+opts:["Kinesia","Paralingüística","Proxémica","Gestualización"],
+a:2,exp:"El aspecto externo forma parte de la Proxémica según el temario: 'A través de la apariencia proyectamos personalidad. El proceso psicológico del pre-juicio. Una imagen adecuada hace más receptivo a quien escucha.' Es un elemento del espacio personal, no de la kinesia."},
+
+// ── LIDERAZGO (2) ──
+{t:"Liderazgo",trap:false,hard:true,
+q:"¿Cuál es la diferencia entre el estudio sobre liderazgo de la Ohio State University y el de la Universidad de Michigan en cuanto a las dimensiones que identifican?",
+opts:["Ohio identifica rasgos personales; Michigan identifica conductas situacionales","Ohio identifica 'iniciación de estructura' y 'consideración'; Michigan identifica 'orientación al empleado' y 'orientación a la producción'","Ohio estudia grupos grandes; Michigan estudia líderes individuales","Son idénticos; solo difieren en el nombre de las universidades"],
+a:1,exp:"Ohio State University: Iniciación de Estructura (el líder estructura su rol y el de los subordinados) y Consideración (el líder ayuda a los subordinados). Universidad de Michigan: Conducta orientada al empleado (interés en sus necesidades) y Conducta orientada a la producción (prioridad al trabajo)."},
+
+{t:"Liderazgo",trap:false,hard:false,
+q:"¿Cuál es el año de nacimiento y la profesión de Malala Yousafzai, citada en el temario como ejemplo de liderazgo?",
+opts:["1990 — médica pakistaní","1997 — activista y estudiante pakistaní","1985 — política afgana","2001 — periodista india"],
+a:1,exp:"Malala Yousafzai (1997-) es activista y estudiante pakistaní, la más joven de los ejemplos de liderazgo recogidos en el temario. Es conocida por su defensa del derecho a la educación."},
+
+// ── VALORES MILITARES (2) ──
+{t:"Valores militares",trap:false,hard:true,
+q:"El valor 'Profesionalidad' incluye cuatro pilares personales. ¿Cuáles son y qué meta final persigue según el temario?",
+opts:["Lealtad, respeto, disciplina y valor — con el fin de cumplir órdenes","Dedicación, esfuerzo, sacrificio y humildad — buscando la excelencia a través del perfeccionamiento","Formación, jerarquía, obediencia y compromiso — para defender a España","Motivación, vocación, preparación y valores — para ser un líder 360º"],
+a:1,exp:"La profesionalidad requiere dedicación, esfuerzo, sacrificio y humildad. La meta es buscar la excelencia a través del perfeccionamiento continuo, que incluye formación técnica y también humanística, moral y ética."},
+
+{t:"Valores militares",trap:true,hard:false,
+q:"⚠ Trampa — ¿Qué artículo de las RR.OO. establece que el primer deber del militar es la disposición permanente para defender a España incluso con entrega de la vida?",
+opts:["Art. 7","Art. 20","Art. 3","Art. 44"],
+a:2,exp:"El Art. 3 establece el primer deber del militar: 'Disposición Permanente para Defender a España', incluyendo la entrega de la propia vida. El Art. 20 trata la disponibilidad permanente para el servicio y el Art. 44 la disciplina."},
+
+// ── TÉCNICAS DE APOYO (3) ──
+{t:"Técnicas de apoyo",trap:false,hard:false,
+q:"¿Qué tipo de documento emite el Ministro de Defensa dentro del ámbito de su competencia y es una de las dos Disposiciones Generales reguladas en la IG 10-01?",
+opts:["Instrucción General","Orden Ministerial","Resolución","Procedimiento Operativo"],
+a:1,exp:"Las dos Disposiciones Generales de la IG 10-01 son la Orden Ministerial (emitida por el Ministro de Defensa) y las Instrucciones (emitidas por el JEMA). Ambas se publican en el BOD."},
+
+{t:"Técnicas de apoyo",trap:true,hard:false,
+q:"⚠ Trampa — En la clasificación de documentos administrativos, ¿a qué tipo pertenece una 'Resolución'?",
+opts:["Documento de los ciudadanos","Documento de juicio","Documento de decisión","Documento de transmisión"],
+a:2,exp:"La Resolución es un documento de DECISIÓN (junto con los Acuerdos). No debe confundirse con los de Transmisión (notificaciones, comunicaciones), los de Juicio (informes) ni los de Ciudadanos (instancias, recursos)."},
+
+{t:"Técnicas de apoyo",trap:false,hard:true,
+q:"¿Cuál es el formato estándar para identificar un expediente en el sistema del EA y qué información contiene cada parte?",
+opts:["Número correlativo + año + tipo (E/S)","Siglas de la sección + año + número de orden (ej: SPER23/30)","Código de materia de dos dígitos + letra del mando + año","Nivel de clasificación + fecha + número de registro"],
+a:1,exp:"El formato habitual para identificar expedientes es: siglas de la sección + año + número de orden. Por ejemplo, 2,6/9SPER23/30 identifica la Sección Personal (SPER), expediente 30 del año 2023."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+function renderGrid(){
+  document.getElementById('qgrid').innerHTML=QS.map((_,i)=>{
+    let c='qb';
+    if(i===cur)c+=' cur';
+    else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+    return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+  }).join('');
+}
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrid();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="tbadge">${q.t}</span>
+    ${q.trap?'<span class="trapbadge">⚠ Trampa</span>':''}
+    ${q.hard&&!q.trap?'<span class="hardbadge">★ Difícil</span>':''}
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}"><span class="fbicon">${ok?'✓':'✗'}</span><span>${q.exp}</span></div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrid()}
+function jump(i){cur=i;renderQ();renderGrid()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrid();
+}
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const trapsOk=QS.reduce((s,q,i)=>s+(q.trap&&ans[i]===q.a?1:0),0);
+  const hardOk=QS.reduce((s,q,i)=>s+(q.hard&&!q.trap&&ans[i]===q.a?1:0),0);
+  const trapTotal=QS.filter(q=>q.trap).length;
+  const hardTotal=QS.filter(q=>q.hard&&!q.trap).length;
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+  const map={};
+  QS.forEach((q,i)=>{if(!map[q.t])map[q.t]={ok:0,n:0};map[q.t].n++;if(rev[i]&&ans[i]===q.a)map[q.t].ok++});
+  let tbh='';
+  Object.entries(map).forEach(([name,{ok,n}])=>{
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row"><div class="tb-name">${name}</div><div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div><div class="tb-sc" style="color:${col}">${ok}/${n}</div></div>`;
+  });
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem"><div class="rtags"><span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span>${q.trap?'<span class="rtag ttrap">Trampa</span>':''}${q.hard&&!q.trap?'<span class="rtag thard">★ Difícil</span>':''}<span class="rtag ttopic">${q.t}</span></div><div class="rq">${i+1}. ${q.q.replace('⚠ Trampa — ','')}</div><div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div></div>`;
+  });
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado · Test 8</div>
+      <div class="res-sub">Temario completo · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#fbbf24">${trapsOk}/${trapTotal}</div><div class="sl">Trampas ok</div></div>
+        <div class="sbox"><div class="sn" style="color:#67e8f9">${hardOk}/${hardTotal}</div><div class="sl">Difíciles ok</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()">↺ Repetir test</button>
+    </div>
+    <div class="tb-card"><div class="tb-title">Resultados por tema</div>${tbh}</div>
+    <div class="rev-card"><div class="rev-title">Revisión completa</div>${rvh}</div>
+  </div>`;
+}
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrid();startTmr();
+}
+renderQ();renderGrid();startTmr();
+</script>

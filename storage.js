@@ -14,6 +14,7 @@ const KEYS = {
     SESSION_SIMULACRO_3: 'testCabo1Simulacro3State',
     SOUND_MUTED: 'testCabo1SoundMuted',
     NUM_PREGUNTAS: 'testCabo1NumPreguntas',
+    TOTAL_QUESTIONS: 'testCabo1TotalQuestionsCount',
 };
 
 function getSessionKey(modo) {
@@ -97,6 +98,9 @@ export const storage = {
 
     getNumPreguntas: () => get(KEYS.NUM_PREGUNTAS) || 20, // Valor por defecto 20
     setNumPreguntas: (num) => set(KEYS.NUM_PREGUNTAS, num),
+
+    getTotalQuestionsCount: () => get(KEYS.TOTAL_QUESTIONS),
+    setTotalQuestionsCount: (count) => set(KEYS.TOTAL_QUESTIONS, count),
 
     getSession: (modo) => get(getSessionKey(modo)),
     setSession: (modo, estado) => set(getSessionKey(modo), estado),

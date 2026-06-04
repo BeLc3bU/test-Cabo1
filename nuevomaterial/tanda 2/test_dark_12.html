@@ -1,0 +1,375 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+.w{background:#0f1117;min-height:500px;color:#e8eaf0}
+.topbar{background:#181c27;border-bottom:1px solid #2a2f3e;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{background:#4a1942;color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:.05em}
+.course{font-size:12px;color:#7c8499;margin-left:10px}
+.topright{display:flex;align-items:center;gap:18px}
+.timer{font-size:13px;color:#7c8499}.timer b{color:#f0abfc;font-variant-numeric:tabular-nums}
+.livescore{font-size:13px;color:#7c8499}.livescore b{color:#34d399}
+.prog-wrap{height:3px;background:#1e2235}
+.prog-bar{height:3px;background:linear-gradient(90deg,#4a1942,#f0abfc);transition:width .4s}
+.body{display:flex;min-height:460px}
+.sidebar{width:176px;min-width:176px;background:#181c27;border-right:1px solid #2a2f3e;padding:16px 12px;flex-shrink:0}
+.sid-title{font-size:10px;color:#4a5068;text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-bottom:16px}
+.qb{width:100%;aspect-ratio:1;border:1px solid #2a2f3e;border-radius:6px;background:#1e2235;font-size:11px;font-weight:600;color:#5a6280;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.qb:hover{border-color:#4a1942;color:#f0abfc}
+.qb.cur{background:#2d1130;border-color:#4a1942;color:#f0abfc}
+.qb.ok{background:#0d2e22;border-color:#059669;color:#34d399}
+.qb.ko{background:#2d1515;border-color:#dc2626;color:#f87171}
+.leg{display:flex;flex-direction:column;gap:7px}
+.legrow{display:flex;align-items:center;gap:7px;font-size:11px;color:#4a5068}
+.legdot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.main{flex:1;padding:28px 32px;overflow:auto}
+.qmeta{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.qnum-badge{font-size:12px;font-weight:600;color:#f0abfc;background:#2d1130;padding:3px 12px;border-radius:5px;border:1px solid #4a1942}
+.qnum{font-size:11px;color:#4a5068;margin-left:auto}
+.qtxt{font-size:15px;color:#e8eaf0;line-height:1.75;margin-bottom:22px;font-weight:400}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid #2a2f3e;border-radius:10px;cursor:pointer;transition:all .15s;background:#181c27}
+.opt:hover:not(.locked){background:#1e2235;border-color:#4a1942}
+.optl{width:28px;height:28px;border-radius:6px;background:#1e2235;border:1px solid #2a2f3e;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5a6280;flex-shrink:0;margin-top:1px;transition:all .15s}
+.opt.sel .optl{background:#2d1130;border-color:#4a1942;color:#f0abfc}
+.opt.sel{border-color:#4a1942;background:#1a0a20}
+.opt.correct{border-color:#059669;background:#0a2018}
+.opt.correct .optl{background:#0d2e22;border-color:#059669;color:#34d399}
+.opt.wrong{border-color:#dc2626;background:#1a0d0d}
+.opt.wrong .optl{background:#2d1515;border-color:#dc2626;color:#f87171}
+.opttxt{font-size:14px;color:#c8ccd8;line-height:1.5;padding-top:4px}
+.fb{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.fb.ok{background:#0a2018;border:1px solid #059669;color:#6ee7b7}
+.fb.ko{background:#1a0d0d;border:1px solid #dc2626;color:#fca5a5}
+.fb-tema{display:inline-block;font-size:10px;font-weight:600;background:#1e2235;color:#7c8499;padding:1px 7px;border-radius:3px;margin-bottom:6px}
+.fbicon{font-size:18px;flex-shrink:0;margin-top:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:18px;border-top:1px solid #2a2f3e}
+.navcnt{font-size:12px;color:#4a5068}
+.navbtns{display:flex;gap:8px}
+.btn{padding:9px 18px;border:1px solid #2a2f3e;border-radius:8px;background:transparent;color:#c8ccd8;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:#1e2235;border-color:#4a1942;color:#f0abfc}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btnp{background:#4a1942;color:#fff;border-color:#4a1942}
+.btnp:hover{background:#3b1235;border-color:#3b1235;color:#fff}
+.res-wrap{padding:28px;background:#0f1117}
+.res-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:30px;text-align:center;margin-bottom:20px}
+.res-icon{font-size:48px;margin-bottom:12px}
+.res-title{font-size:20px;font-weight:600;color:#e8eaf0;margin-bottom:4px}
+.res-sub{font-size:13px;color:#4a5068;margin-bottom:20px}
+.res-pct{font-size:56px;font-weight:700;color:#f0abfc;line-height:1;margin-bottom:4px}
+.res-nota{font-size:14px;color:#7c8499;margin-bottom:22px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sbox{background:#1e2235;border-radius:8px;padding:14px 8px;text-align:center}
+.sn{font-size:22px;font-weight:600}.sl{font-size:11px;color:#4a5068;margin-top:3px}
+.tb-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px;margin-bottom:20px}
+.tb-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:16px}
+.tb-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tb-name{font-size:12px;color:#7c8499;width:200px;flex-shrink:0;line-height:1.3}
+.tb-bwrap{flex:1;height:7px;background:#1e2235;border-radius:4px;overflow:hidden}
+.tb-b{height:7px;border-radius:4px}
+.tb-sc{font-size:12px;font-weight:600;min-width:34px;text-align:right}
+.rev-card{background:#181c27;border:1px solid #2a2f3e;border-radius:14px;padding:22px}
+.rev-title{font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:14px}
+.ritem{border-bottom:1px solid #1e2235;padding:12px 0}
+.ritem:last-child{border-bottom:none}
+.rtags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.rtag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600}
+.tok{background:#0a2018;color:#34d399}.tko{background:#1a0d0d;color:#f87171}
+.ttopic{background:#1e2235;color:#5a6280}
+.rq{font-size:13px;color:#c8ccd8;margin-bottom:4px;line-height:1.4}
+.ra{font-size:12px;color:#4a5068}.ra b{color:#f0abfc}
+</style>
+
+<div class="w">
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">ACAD. MILITAR</span>
+    <span class="course" style="margin-left:10px">Formación cívica · Test 12 · Modo examen</span>
+  </div>
+  <div class="topright">
+    <div class="timer">⏱ <b id="tmr">00:00</b></div>
+    <div class="livescore">Aciertos: <b id="lsc">0</b></div>
+  </div>
+</div>
+<div class="prog-wrap"><div class="prog-bar" id="prog" style="width:0%"></div></div>
+<div class="body" id="bodylayout">
+  <div class="sidebar">
+    <div class="sid-title">Preguntas</div>
+    <div class="qgrid" id="qgrid"></div>
+    <div class="leg">
+      <div class="legrow"><div class="legdot" style="background:#2d1130;border:1px solid #4a1942"></div>Actual</div>
+      <div class="legrow"><div class="legdot" style="background:#0d2e22;border:1px solid #059669"></div>Correcta</div>
+      <div class="legrow"><div class="legdot" style="background:#2d1515;border:1px solid #dc2626"></div>Incorrecta</div>
+      <div class="legrow"><div class="legdot" style="background:#1e2235;border:1px solid #2a2f3e"></div>Sin responder</div>
+    </div>
+  </div>
+  <div class="main" id="main"></div>
+</div>
+<div id="resarea" style="display:none"></div>
+</div>
+
+<script>
+const QS=[
+{t:"Org. Internacionales",
+q:"La ONU tiene cuatro oficinas principales repartidas por el mundo. ¿Cuál de estas combinaciones es la correcta?",
+opts:["Nueva York, Londres, Ginebra y Tokio","Nueva York, Nairobi, Ginebra y Viena","París, Nairobi, Ginebra y Viena","Nueva York, Nairobi, Bruselas y Ginebra"],
+a:1,exp:"Las cuatro oficinas principales de la ONU están en Nueva York (sede central), Nairobi, Ginebra y Viena."},
+
+{t:"Liderazgo",
+q:"Un líder que establece metas muy ambiciosas para su equipo y espera de ellos el máximo rendimiento, sin dar demasiado apoyo emocional, está aplicando uno de los cuatro comportamientos de la teoría de la Ruta-Meta. ¿Cuál?",
+opts:["Líder Director","Líder Apoyador","Líder Participativo","Líder Orientado a Logros"],
+a:3,exp:"El Líder Orientado a Logros establece metas exigentes y espera alto rendimiento de sus subordinados. No debe confundirse con el Director (que da instrucciones concretas) ni con el Apoyador (que muestra interés personal)."},
+
+{t:"Material aéreo",
+q:"El Ejército del Aire participa en la Policía Aérea del Báltico con unos 150 militares. ¿Con qué aeronaves puede participar según el temario?",
+opts:["MQ-9 Predator o C-295","A-400M o A-330","F-18 o Eurofighter","Canadair CL-415 o AS-332"],
+a:2,exp:"En la misión de Policía Aérea del Báltico (BAP), cuyo objetivo es asegurar el espacio aéreo OTAN, España participa con aproximadamente 150 militares y aeronaves F-18 o Eurofighter según la rotación."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál es la definición exacta de 'crisis' tal como la recoge el temario de apoyo psicológico?",
+opts:["Un evento que requiere acción inmediata y para el que no se dispone de recursos","Un suceso repentino, tenso y difícil que incapacita a la persona para resolverlo con sus mecanismos habituales, imprevisible y que requiere intervención rápida","Un desastre de múltiples víctimas que supera la capacidad de respuesta","Un trastorno de estrés agudo causado por exposición directa al peligro"],
+a:1,exp:"La crisis es un suceso repentino, tenso y difícil que incapacita a la persona para resolverlo normalmente. Es imprevisible, requiere intervención rápida y afecta globalmente. No confundir con emergencia, catástrofe ni con el trastorno de estrés agudo."},
+
+{t:"Historia aviación",
+q:"¿Qué vuelo histórico realizó la aviación española en 1929 y entre qué ciudades?",
+opts:["Madrid a Manila con 3 Breguet XIX","Sevilla a Río de Janeiro en un Breguet XIX","Sevilla a Camagüey sin escalas en un Superbidón","La primera vuelta a España en 3.000 km"],
+a:1,exp:"En 1929 se realizó el vuelo Sevilla-Río de Janeiro en un Breguet XIX. No confundir con el vuelo de 1933 (Sevilla-Camagüey, primera travesía del Atlántico Central sin escalas) ni con el Plus Ultra de 1926 (España-Argentina)."},
+
+{t:"Dinámica de grupos",
+q:"Según el temario, ¿qué condiciones deben darse para que un grupo sea considerado 'eficaz'? Señala la opción que recoge condiciones REALES del temario.",
+opts:["Que todos obedezcan al líder sin cuestionarlo y que no haya conflictos internos","Meta común clara, roles claros y aceptados, normas claras de funcionamiento y liderazgo atento","Que el grupo tenga más de 20 miembros para ser representativo","Que todos los miembros tengan el mismo perfil de personalidad"],
+a:1,exp:"El grupo eficaz requiere, entre otras condiciones: meta común clara, roles claros y aceptados, normas claras de funcionamiento, liderazgo atento, número adecuado de miembros y miembros con perfiles de personalidad DIVERSOS (no iguales)."},
+
+{t:"Expresión oral",
+q:"¿Cuál es la diferencia entre los conceptos 'dicción' y 'paralingüística' en el temario de expresión oral?",
+opts:["Son sinónimos que describen el mismo fenómeno","La paralingüística son los elementos no verbales que acompañan al habla incluyendo voz y dicción; la dicción es específicamente la forma correcta de emplear las palabras en el idioma","La dicción estudia el espacio; la paralingüística estudia los gestos","La paralingüística es solo el volumen; la dicción es solo la pronunciación"],
+a:1,exp:"La paralingüística estudia todos los elementos que acompañan a las emisiones lingüísticas (voz, dicción, etc.). La dicción es un concepto más específico: la forma de emplear las palabras para formar oraciones, hablada o escrita. Hay buena dicción cuando el uso de las palabras es correcto y acertado en el idioma."},
+
+{t:"Valores militares",
+q:"¿Cuál es la relación entre los valores militares y las Reales Ordenanzas de las FAS (R.D. 96/2009) según el temario?",
+opts:["Las RR.OO. son posteriores a la IG 00-4 y la complementan","Las RR.OO. son el código deontológico con principios éticos y reglas de comportamiento; la IG 00-4 desarrolla los valores del EA sobre esa base","Las RR.OO. solo regulan aspectos disciplinarios, no valores","Las RR.OO. han sido derogadas por la IG 00-4"],
+a:1,exp:"El R.D. 96/2009 (RR.OO.) es el código deontológico general de las FAS con principios éticos y reglas de comportamiento. La IG 00-4 (2015) desarrolla específicamente los valores en el EA, el modelo de liderazgo 360º y el empeño colectivo, construyendo sobre esa base."},
+
+{t:"Técnicas de apoyo",
+q:"Una UCO recibe un documento urgente a las 09:15 del martes. En el libro de registro se anota como fecha del documento el lunes (día en que fue redactado). ¿Qué otros datos son obligatorios registrar según el temario?",
+opts:["Solo el número de registro y el remitente","Número de registro, remitente, fecha del documento, fecha y hora del asiento, y extracto del asunto","Solo la fecha de recepción y el destinatario","El nivel de clasificación, la firma y el sello de la unidad"],
+a:1,exp:"La información obligatoria en el libro de registro es: número de registro (E/S), remitente/destinatario, fecha del documento, fecha y hora del asiento, y extracto o epígrafe del asunto. En este caso la fecha del asiento sería martes 09:15 y la del documento el lunes."},
+
+{t:"Material aéreo",
+q:"El programa FACA (Futuro Avión de Caza y Ataque) se adquirió para sustituir a un avión obsoleto. ¿A cuál sustituía y qué modelo fue seleccionado?",
+opts:["Sustituía al Mirage F1 y se eligió el F-104","Sustituía a los F-4C y se eligió el F/A-18 Hornet (EF-18)","Sustituía al C-101 Mirlo y se eligió el Eurofighter","Sustituía al F-86 Sabre y se eligió el Mirage III"],
+a:1,exp:"El programa FACA se diseñó para sustituir a los obsoletos F-4C Phantom. El modelo elegido fue el cazabombardero estadounidense McDonnell Douglas F/A-18 Hornet (designación española EF-18). En 1995 se adquirieron además 24 F-18A para sustituir a los Mirage F-1."},
+
+{t:"Apoyo psicológico",
+q:"En la clasificación de víctimas, ¿qué diferencia a las víctimas de cuarto grado de las de quinto grado?",
+opts:["Las de 4.º grado son familiares; las de 5.º son intervinientes","Las de 4.º grado pertenecen a la comunidad afectada; las de 5.º son implicadas por conocer el suceso a través de medios u otras fuentes","Las de 4.º son heridos leves; las de 5.º son heridos graves","Las de 4.º son testigos directos; las de 5.º son testigos indirectos"],
+a:1,exp:"Las víctimas de 4.º grado son la comunidad afectada (barrio, ciudad). Las de 5.º grado son personas implicadas emocionalmente por conocer el suceso, aunque no tengan relación directa ni hayan estado presentes: lo conocen por medios de comunicación u otras fuentes."},
+
+{t:"Expresión escrita",
+q:"¿Qué son los 'conectores textuales' y para qué sirven según el apartado de cohesión del temario?",
+opts:["Son siglas que ayudan a identificar el tipo de documento","Son elementos lingüísticos (nexos, conjunciones, adverbios) que enlazan las partes del texto expresando relaciones de causa, consecuencia, oposición, orden, etc.","Son los márgenes y formatos establecidos en la IG 10-01","Son fórmulas de cortesía para encabezar documentos oficiales"],
+a:1,exp:"Los conectores textuales son elementos de cohesión que enlazan partes del texto. El temario los clasifica por función: de causa, de consecuencia, de finalidad, de oposición, los que añaden información, los que indican objeción y los que marcan un orden en la exposición."},
+
+{t:"Org. Internacionales",
+q:"¿Cuál es la función específica del Tribunal de Justicia de la UE dentro del sistema institucional europeo?",
+opts:["Propone nuevas leyes a la Comisión","Representa a los ciudadanos europeos en el Parlamento","Vela porque los países miembros apliquen correctamente las leyes y se respeten los derechos fundamentales","Decide la estrategia común de la UE en las cumbres de dirigentes"],
+a:2,exp:"El Tribunal de Justicia de la UE vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales. No debe confundirse con el Consejo Europeo (estrategia) ni con la Comisión (propone leyes)."},
+
+{t:"Historia aviación",
+q:"¿Qué avión de fabricación española fue el primero en incorporarse al EA con carácter de reactor de diseño nacional, en qué año llegó y cuál era su misión principal?",
+opts:["C-101 Mirlo en 1970 como entrenador avanzado","HA-200 Saeta (E-14) en 1965 como entrenador en la Escuela Básica","CASA C-212 Aviocar en 1975 para transporte y enlace","EF-2000 Eurofighter en 2003 como caza polivalente"],
+a:1,exp:"El HA-200 Saeta (E-14) llegó al EA en 1965 y fue el primer reactor de diseño y fabricación puramente nacional. Se usó como entrenador en la Escuela Básica de Matacán y después en la AGA. Fue un hito de la industria aeronáutica española."},
+
+{t:"Dinámica de grupos",
+q:"¿Qué distingue a una 'norma institucional' de una 'norma grupal' en cuanto a su proceso de creación y la posibilidad de cuestionarla?",
+opts:["La norma institucional puede negociarse; la grupal no tiene discusión posible","La norma grupal se establece desde la negociación y aceptación; la institucional no tiene discusión","Ambas se negocian pero la institucional tiene más peso formal","La diferencia es solo de nombre; funcionalmente son iguales"],
+a:1,exp:"La norma grupal surge de la negociación y aceptación de los miembros del grupo. La norma institucional, en cambio, no tiene discusión posible: se impone directamente. Sin embargo, según el temario, las normas se acatan independientemente del tipo de respuesta del miembro."},
+
+{t:"Liderazgo",
+q:"¿Cuál es el modelo de liderazgo actual del Ejército del Aire y cuáles son exactamente los cuatro adjetivos que lo describen en el temario?",
+opts:["Liderazgo situacional — decisivo, flexible, empático y justo","Liderazgo 360º — observador, flexible, confiable y empático","Liderazgo transformacional — visionario, motivador, honesto y comprometido","Liderazgo laissez-faire — autónomo, delegador, confiable y participativo"],
+a:1,exp:"El modelo actual del EA es el Liderazgo 360º, enfocado en la teoría constructivista y centrado en Nosotros más que en Yo. Los cuatro atributos exactos que recoge el temario son: Observador — Flexible — Confiable — Empático."},
+
+{t:"Material aéreo",
+q:"¿Cuál es la base de operaciones del EF-2000 Eurofighter del ALA 14 y cuál es la designación oficial española del Eurofighter?",
+opts:["BA Zaragoza — C.15","BA Torrejón — E.25","BA Los Llanos (Albacete) — C.16","BA Morón — T.21"],
+a:2,exp:"El EF-2000 Eurofighter Typhoon tiene designación española C.16. El ALA 14 opera desde la BA Los Llanos en Albacete, mientras que el ALA 11 lo hace desde BA Morón. El F-18 es el C.15, no el Eurofighter."},
+
+{t:"Técnicas de apoyo",
+q:"¿Qué significa el formato de signatura '2,6/9SPER23/30' en el sistema de archivo del EA?",
+opts:["Documento número 30 del año 2023 de la Sección de Personal","Un código de clasificación de seguridad nivel 2","La prelación 'inmediato' de un teletipo de la sección de operaciones","El número de registro de entrada del documento en el libro de registro"],
+a:0,exp:"En el sistema de signatura del EA, el formato siglas de sección + año + número de orden identifica expedientes. En este ejemplo: SPER = Sección de Personal, 23 = año 2023, 30 = expediente número 30. El 2,6/9 corresponde al código de la sección en el sistema de archivo."},
+
+{t:"Expresión oral",
+q:"¿Qué tres herramientas de comunicación recoge el temario como fundamentales para una comunicación eficaz?",
+opts:["Proxémica, kinesia y paralingüística","Escucha activa, asertividad y empatía","Volumen, entonación y modulación","Retroalimentación, código y canal"],
+a:1,exp:"El temario recoge tres herramientas fundamentales de la comunicación: la escucha activa (percibir más allá de lo expresado), la asertividad (defender opiniones razonadamente) y la empatía (ponerse en el lugar del otro). Son las tres habilidades comunicativas clave."},
+
+{t:"Valores militares",
+q:"¿Qué artículo de las Reales Ordenanzas establece que la disciplina es 'virtud fundamental que obliga a todos por igual' y que todos deben practicarla, exigirla y fortalecerla?",
+opts:["Art. 7","Art. 8","Art. 9","Art. 44"],
+a:3,exp:"El Art. 44 establece que la disciplina es virtud fundamental que obliga a todos por igual y que todos deben practicar, exigir y fortalecer. El Art. 7 trata disciplina, jerarquía y unidad en general; el Art. 8 la disciplina como factor de cohesión; el Art. 9 la jerarquía."},
+
+{t:"Historia aviación",
+q:"Durante la posguerra española, ¿qué industria nacional fue la encargada de desarrollar nuevos proyectos aeronáuticos a partir de 1946 y qué empresa europea se integró posteriormente?",
+opts:["IBERIA, después integrada en Air France","CASA, después integrada en Airbus","SENER, después integrada en Boeing","INDRA, después integrada en Thales"],
+a:1,exp:"CASA (Construcciones Aeronáuticas S.A.) fue la industria nacional que desarrolló proyectos aeronáuticos en la posguerra. Después se integró en el grupo Airbus. Entre sus aportaciones al EA están el C-101, C-212, CN-235, C-295, A-400M, EF-2000 y el NH-90."},
+
+{t:"Apoyo psicológico",
+q:"¿Cuál es la diferencia entre los 'estresores potencialmente estresores' y los 'estresores ambientales' dentro de los factores que afectan a los intervinientes?",
+opts:["Los potencialmente estresores son internos al individuo; los ambientales son externos al trabajo","Los potencialmente estresores son sucesos como la muerte o heridos graves; los ambientales son condiciones externas como la climatología extrema","Son lo mismo con nombres distintos según la fase de la intervención","Los potencialmente estresores afectan solo al mando; los ambientales a toda la unidad"],
+a:1,exp:"Los 'sucesos potencialmente estresores' son eventos traumáticos propios de la situación: muerte, heridos, destrucción. Los 'estresores ambientales' son condiciones del entorno físico: climatología extrema, temperatura, terreno difícil. Los 'ocupacionales' son las exigencias del propio trabajo."},
+
+{t:"Dinámica de grupos",
+q:"¿Qué es el 'status' de un rol según el temario y cómo se adquiere dentro del grupo?",
+opts:["Es el cargo oficial asignado por la organización al miembro del grupo","Es el significado, valor o prestigio asociado a un determinado rol o posición dentro del grupo","Es sinónimo de liderazgo formal dentro del grupo","Es la antigüedad acumulada por el miembro en el grupo"],
+a:1,exp:"El status es el significado, valor o prestigio asociado a un determinado rol o posición dentro del grupo. No es necesariamente el cargo oficial: puede ser un reconocimiento informal del grupo hacia quien ocupa una posición determinada."},
+
+{t:"Técnicas de apoyo",
+q:"¿Qué tipo de documento administrativo es una 'denuncia' presentada por un ciudadano ante la administración militar?",
+opts:["Documento de decisión","Documento de juicio","Documento de los ciudadanos","Documento de transmisión"],
+a:2,exp:"Las denuncias son documentos de los ciudadanos, junto con las solicitudes, alegaciones y recursos. Todos ellos se agrupan bajo el nombre genérico de 'instancias'. Los documentos de decisión son resoluciones y acuerdos; los de juicio son informes."},
+
+{t:"Expresión escrita",
+q:"¿Qué recomendación hace el temario sobre el uso de la voz pasiva en el lenguaje militar y por qué?",
+opts:["Se recomienda la voz pasiva para dar objetividad a los documentos oficiales","El uso de voz pasiva debe evitarse y sustituirse por voz activa, ya que calca estructuras del inglés y no se adapta al español","La voz pasiva es obligatoria en documentos clasificados","Se permite la voz pasiva solo en informes de incidentes"],
+a:1,exp:"El temario advierte sobre el 'empleo de voz pasiva' como uno de los errores propios de la traducción directa del inglés. En español militar debe usarse la voz activa en la forma y los tiempos verbales, adaptando la estructura al español en lugar de calcar el inglés."},
+
+{t:"Org. Internacionales",
+q:"¿Cuántos miembros tiene actualmente la OTAN y cuándo fue exactamente la fecha efectiva de incorporación de España a su estructura militar de mandos?",
+opts:["30 miembros — España se incorporó en 1982","32 miembros — España se incorporó efectivamente a la estructura militar en 1999","28 miembros — España nunca se incorporó a la estructura militar","32 miembros — España se incorporó en 1986 tras el referéndum"],
+a:1,exp:"La OTAN tiene actualmente 32 miembros. España se adhirió al Tratado en 1982, ratificó mediante referéndum en 1986, pero la fecha efectiva de incorporación a la estructura militar de mandos fue en 1999."},
+
+{t:"Liderazgo",
+q:"¿Por qué el temario concluye que 'tener ciertos rasgos y ciertas conductas ayudan para ser un líder, pero en ningún caso son determinantes'?",
+opts:["Porque el liderazgo depende únicamente de la formación recibida","Porque no existe una relación causa-efecto directa entre tener rasgos o conductas de liderazgo y ser efectivamente un líder eficaz en cualquier situación","Porque el liderazgo es innato y no puede desarrollarse","Porque la situación es el único factor relevante"],
+a:1,exp:"El temario concluye que no existe relación causa-efecto directa. El liderazgo está determinado por el conjunto del contexto, los rasgos y las conductas, pero ninguno por sí solo es determinante ni suficiente. El líder se construye a partir de todas esas variables interactuando."},
+
+{t:"Material aéreo",
+q:"¿Qué aeronave de guerra electrónica opera desde BA Torrejón en el 47 Grupo FFAA y tiene designación TM.11?",
+opts:["C-212 Aviocar","AMD Falcon 20","Cessna Citation V","Northrop F-5"],
+a:1,exp:"El AMD Falcon 20 tiene dos versiones en el EA: la TM.11 para contramedidas electrónicas (guerra electrónica) y la T.11 para calibración, ambas operando desde BA Torrejón en el 47 Grupo FFAA. Es una aeronave con doble misión según la configuración."},
+
+{t:"Valores militares",
+q:"El valor de la 'Lealtad' incluye un componente de sinceridad. ¿Qué artículo de las RR.OO. lo vincula al apoyo al mando y lo describe como cualidad esencial?",
+opts:["Art. 10 — lealtad y compañerismo","Art. 80 — apoyo al mando, colaboración total, cualidades esenciales lealtad","Art. 54 — el mando reafirma su liderazgo con el ejemplo","Art. 3 — disposición permanente"],
+a:1,exp:"El Art. 80 trata el apoyo al mando con colaboración total y describe la lealtad como cualidad esencial. El Art. 10 también aparece vinculado a la lealtad en términos de compañerismo y unidad, pero el Art. 80 es el que habla específicamente de la lealtad al mando como cualidad esencial."},
+
+{t:"Expresión oral",
+q:"Según el temario, ¿qué ocurre con la credibilidad del comunicador 'durante el discurso' y de qué depende en ese momento?",
+opts:["Depende de las referencias previas que tenga el público sobre el comunicador","Depende de la prestancia, el dinamismo y la personalidad del comunicador durante la intervención","Depende del autoexamen posterior que realice el comunicador","Depende exclusivamente del contenido técnico del discurso"],
+a:1,exp:"El temario distingue tres momentos de la credibilidad: antes del discurso (referencias previas del público), durante el discurso (prestancia, dinamismo y personalidad del comunicador) y después del discurso (autoexamen). Durante la intervención, lo que transmite el comunicador con su presencia y personalidad es determinante."},
+
+{t:"Historia aviación",
+q:"¿Qué aviones utilizaron los nacionales en el bombardeo de Guernica durante la Guerra Civil y quién los proporcionó?",
+opts:["Polikarpov I-16 proporcionados por la URSS","Heinkel He-111 y Ju-52 de la Legión Cóndor alemana","Fiat CR-32 y Savoia S-81 italianos","Breguet XIX proporcionados por Francia"],
+a:1,exp:"El bombardeo de Guernica fue realizado con aviones alemanes Heinkel He-111 y Junkers Ju-52 pertenecientes a la Legión Cóndor. Inspiró la famosa obra de Pablo Picasso. Fue uno de los primeros bombardeos estratégicos sobre población civil de la historia."},
+];
+
+let cur=0,ans=Array(QS.length).fill(null),rev=Array(QS.length).fill(false),secs=0,tid;
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function startTmr(){tid=setInterval(()=>{secs++;document.getElementById('tmr').textContent=fmt(secs)},1000)}
+function updLive(){document.getElementById('lsc').textContent=ans.reduce((s,a,i)=>s+(rev[i]&&a===QS[i].a?1:0),0)}
+function renderGrid(){
+  document.getElementById('qgrid').innerHTML=QS.map((_,i)=>{
+    let c='qb';
+    if(i===cur)c+=' cur';
+    else if(rev[i])c+=ans[i]===QS[i].a?' ok':' ko';
+    return `<button class="${c}" onclick="jump(${i})">${i+1}</button>`;
+  }).join('');
+}
+function renderQ(){
+  const q=QS[cur];
+  document.getElementById('prog').style.width=((cur+1)/QS.length*100)+'%';
+  renderGrid();
+  const L=['A','B','C','D'];
+  let h=`<div class="qmeta">
+    <span class="qnum-badge">Pregunta ${cur+1}</span>
+    <span class="qnum">${cur+1} / ${QS.length}</span>
+  </div>
+  <div class="qtxt">${q.q}</div>
+  <div class="opts">`;
+  q.opts.forEach((o,i)=>{
+    let c='opt';
+    if(rev[cur]){if(i===q.a)c+=' correct locked';else if(ans[cur]===i)c+=' wrong locked';}
+    else if(ans[cur]===i)c+=' sel';
+    h+=`<div class="${c}" onclick="pick(${i})">
+      <div class="optl">${L[i]}</div>
+      <div class="opttxt">${o}</div>
+    </div>`;
+  });
+  h+='</div>';
+  if(rev[cur]){
+    const ok=ans[cur]===q.a;
+    h+=`<div class="fb ${ok?'ok':'ko'}">
+      <span class="fbicon">${ok?'✓':'✗'}</span>
+      <div><div class="fb-tema">${q.t}</div>${q.exp}</div>
+    </div>`;
+  }
+  const done=rev.filter(Boolean).length;
+  const corr=rev.filter((r,i)=>r&&ans[i]===QS[i].a).length;
+  h+=`<div class="nav">
+    <span class="navcnt">${done} respondidas · ${corr} correctas</span>
+    <div class="navbtns">
+      <button class="btn" onclick="go(-1)" ${cur===0?'disabled':''}>← Anterior</button>
+      <button class="btn btnp" onclick="go(1)" ${ans[cur]===null?'disabled':''}>${cur===QS.length-1?'Ver resultado →':'Siguiente →'}</button>
+    </div>
+  </div>`;
+  document.getElementById('main').innerHTML=h;
+}
+function pick(i){if(rev[cur])return;ans[cur]=i;rev[cur]=true;updLive();renderQ();renderGrid()}
+function jump(i){cur=i;renderQ();renderGrid()}
+function go(d){
+  if(d===1&&cur===QS.length-1){showResult();return;}
+  cur=Math.max(0,Math.min(QS.length-1,cur+d));renderQ();renderGrid();
+}
+function showResult(){
+  clearInterval(tid);
+  const correct=ans.reduce((s,a,i)=>s+(a===QS[i].a?1:0),0);
+  const pct=Math.round(correct/QS.length*100);
+  const nota=pct>=90?'Sobresaliente':pct>=75?'Notable':pct>=60?'Bien':pct>=50?'Aprobado':'Insuficiente';
+  const icon=pct>=75?'🏆':pct>=50?'🎖️':'📚';
+  document.getElementById('bodylayout').style.display='none';
+  const ra=document.getElementById('resarea');ra.style.display='block';
+  const map={};
+  QS.forEach((q,i)=>{if(!map[q.t])map[q.t]={ok:0,n:0};map[q.t].n++;if(rev[i]&&ans[i]===q.a)map[q.t].ok++});
+  let tbh='';
+  Object.entries(map).forEach(([name,{ok,n}])=>{
+    const p=Math.round(ok/n*100);
+    const col=p>=75?'#34d399':p>=50?'#fbbf24':'#f87171';
+    tbh+=`<div class="tb-row"><div class="tb-name">${name}</div><div class="tb-bwrap"><div class="tb-b" style="width:${p}%;background:${col}"></div></div><div class="tb-sc" style="color:${col}">${ok}/${n}</div></div>`;
+  });
+  let rvh='';
+  QS.forEach((q,i)=>{
+    const ok=ans[i]===q.a;
+    rvh+=`<div class="ritem"><div class="rtags"><span class="rtag ${ok?'tok':'tko'}">${ok?'✓ Correcta':'✗ Incorrecta'}</span><span class="rtag ttopic">${q.t}</span></div><div class="rq">${i+1}. ${q.q}</div><div class="ra">Correcta: <b>${['A','B','C','D'][q.a]}) ${q.opts[q.a]}</b></div></div>`;
+  });
+  ra.innerHTML=`<div class="res-wrap">
+    <div class="res-card">
+      <div class="res-icon">${icon}</div>
+      <div class="res-title">Examen completado · Test 12</div>
+      <div class="res-sub">Modo examen · Sin pistas · Tiempo: ${fmt(secs)}</div>
+      <div class="res-pct">${pct}%</div>
+      <div class="res-nota">${nota} · ${correct} de ${QS.length} correctas</div>
+      <div class="sgrid">
+        <div class="sbox"><div class="sn" style="color:#34d399">${correct}</div><div class="sl">Correctas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f87171">${QS.length-correct}</div><div class="sl">Incorrectas</div></div>
+        <div class="sbox"><div class="sn" style="color:#f0abfc">${pct}%</div><div class="sl">Nota</div></div>
+        <div class="sbox"><div class="sn" style="color:#fbbf24">${fmt(secs)}</div><div class="sl">Tiempo</div></div>
+      </div>
+      <button class="btn btnp" onclick="restart()">↺ Repetir test</button>
+    </div>
+    <div class="tb-card"><div class="tb-title">Resultados por tema</div>${tbh}</div>
+    <div class="rev-card"><div class="rev-title">Revisión completa</div>${rvh}</div>
+  </div>`;
+}
+function restart(){
+  clearInterval(tid);cur=0;ans=Array(QS.length).fill(null);rev=Array(QS.length).fill(false);secs=0;
+  document.getElementById('tmr').textContent='00:00';
+  document.getElementById('lsc').textContent='0';
+  document.getElementById('resarea').style.display='none';
+  document.getElementById('bodylayout').style.display='flex';
+  renderQ();renderGrid();startTmr();
+}
+renderQ();renderGrid();startTmr();
+</script>
