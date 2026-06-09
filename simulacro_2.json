@@ -1,543 +1,33 @@
 [
   {
-    "pregunta": "España se integró en la estructura militar de mandos de la OTAN en 1999, pero su adhesión al Tratado fue mucho antes. ¿En qué orden cronológico correcto se produjeron los hitos de España con la OTAN?",
+    "pregunta": "¿Qué institución de la UE vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales?",
     "opciones": [
-      "Adhesión 1982 → Referéndum 1986 → Integración militar 1999",
-      "Referéndum 1982 → Adhesión 1986 → Integración militar 1999",
-      "Adhesión 1978 → Referéndum 1982 → Integración militar 1986",
-      "Integración militar 1982 → Referéndum 1986 → Salida y reingreso 1999"
+      "La Comisión Europea",
+      "El Consejo Europeo",
+      "El Tribunal de Justicia",
+      "El Parlamento Europeo"
     ],
-    "respuestaCorrecta": "Adhesión 1982 → Referéndum 1986 → Integración militar 1999",
+    "respuestaCorrecta": "El Tribunal de Justicia",
     "tema": "Organizaciones Internacionales",
-    "explicacion": "El orden correcto es: adhesión al Tratado en 1982, referéndum de ratificación en 1986 y fecha efectiva de incorporación a la estructura militar de mandos en 1999.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué rol dentro de un grupo orienta su conducta principalmente hacia el trabajo a realizar, en lugar de hacia el beneficio propio o la interacción social?",
-    "opciones": [
-      "Miembro buscador de beneficio propio",
-      "Miembro orientado a la interacción",
-      "Miembro orientado al trabajo",
-      "Rol de líder formal"
-    ],
-    "respuestaCorrecta": "Miembro orientado al trabajo",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "El temario agrupa los roles en tres tipos: los que buscan beneficio propio, los orientados a la interacción y los orientados al trabajo a realizar.",
+    "explicacion": "El Tribunal de Justicia vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales.",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro_2"
+    "examen": "simulacro2"
   },
   {
-    "pregunta": "⚠ Trampa — El Tratado de la OTAN tiene 14 artículos. ¿Cuál describe el compromiso de autodefensa colectiva y cuál permite invitar a nuevos estados europeos?",
+    "pregunta": "¿En qué año se creó el primer aeródromo militar en España y dónde estaba ubicado?",
     "opciones": [
-      "Art. 3 autodefensa — Art. 5 nuevos estados",
-      "Art. 5 autodefensa — Art. 10 nuevos estados",
-      "Art. 10 autodefensa — Art. 14 nuevos estados",
-      "Art. 1 autodefensa — Art. 5 nuevos estados"
+      "1908, en Los Alcázares",
+      "1913, en Getafe",
+      "1911, en Cuatro Vientos",
+      "1915, en Zaragoza"
     ],
-    "respuestaCorrecta": "Art. 5 autodefensa — Art. 10 nuevos estados",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El Art. 5 es el famoso artículo de autodefensa colectiva. El Art. 10 permite invitar a nuevos estados europeos por acuerdo unánime. Son los dos artículos más importantes del Tratado y es muy fácil confundirlos.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Al autoevaluar una presentación, ¿cuál de los siguientes aspectos NO sería relevante valorar?",
-    "opciones": [
-      "Si se cumplieron los objetivos planteados",
-      "Si el contenido se ajustó al tiempo disponible",
-      "Si el aula tenía suficiente ventilación",
-      "Si se disponía de los recursos adecuados"
-    ],
-    "respuestaCorrecta": "Si el aula tenía suficiente ventilación",
-    "tema": "Expresión Oral",
-    "explicacion": "La ventilación del aula es un factor externo irrelevante para la autoevaluación de la presentación.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Según la numeración de disposiciones del EA, ¿a qué materia corresponde el código '60'?",
-    "opciones": [
-      "Operaciones",
-      "Adiestramiento",
-      "Personal",
-      "Material"
-    ],
-    "respuestaCorrecta": "Personal",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "El código 60 corresponde a Personal. El sistema de dos dígitos clasifica: 00 Doctrina, 10 Organización, 30 Operaciones, 50 Adiestramiento, 60 Personal, 70 Material, etc.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "⚠ TRAMPA — ¿Cuál de estas afirmaciones sobre la OTAN es INCORRECTA?",
-    "opciones": [
-      "Su tratado consta de un preámbulo y 14 artículos",
-      "Fue creada en 1949 por 12 países fundadores",
-      "El Art. 5 regula la incorporación de nuevos estados europeos",
-      "El cuartel general está en Bruselas"
-    ],
-    "respuestaCorrecta": "El Art. 5 regula la incorporación de nuevos estados europeos",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El Art. 5 establece el compromiso de autodefensa colectiva. Es el Art. 10 el que permite invitar a ingresar a cualquier estado europeo por acuerdo unánime. El resto de afirmaciones son correctas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "El texto descriptivo usa fundamentalmente la yuxtaposición como estructura y el adjetivo como elemento clave. ¿Qué tipos de descripción literaria distingue el temario?",
-    "opciones": [
-      "Solo externa e interna",
-      "Externa, interna, pictórica, topográfica y cinematográfica",
-      "Objetiva y subjetiva únicamente",
-      "Técnica, literaria y periodística"
-    ],
-    "respuestaCorrecta": "Externa, interna, pictórica, topográfica y cinematográfica",
-    "tema": "Expresión Escrita",
-    "explicacion": "El temario distingue dentro de la descripción literaria/subjetiva cinco subtipos: externa, interna, pictórica, topográfica y cinematográfica. La descripción técnica u objetiva es la que tiene actitud imparcial, diferente de todas ellas.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes no es un escuadrón SAR del Ejército del Aire y del Espacio?",
-    "opciones": [
-      "402 Escuadrón (Getafe)",
-      "803 Escuadrón (Getafe)",
-      "802 Escuadrón (Gando)",
-      "801 Escuadrón (Son San Juan)"
-    ],
-    "respuestaCorrecta": "402 Escuadrón (Getafe)",
-    "tema": "Material Aéreo",
-    "explicacion": "El 402 Escuadrón es una unidad de transporte VIP (Super Puma/Cougar). Los escuadrones 801, 802 y 803 son específicos de búsqueda y rescate (SAR).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué tipos de grupos nos podemos encontrar? Señalar el que NO corresponda.",
-    "opciones": [
-      "Primarios",
-      "Formales",
-      "Referenciados",
-      "De pertenencia"
-    ],
-    "respuestaCorrecta": "Referenciados",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuáles son las tres propiedades textuales principales que se revisan en la fase de Emendatio (corrección)?",
-    "opciones": [
-      "Inventio, Dispositio y Elocutio",
-      "Adecuación, coherencia y cohesión",
-      "Gramática, léxico y tipología",
-      "Narrativo, descriptivo y expositivo"
-    ],
-    "respuestaCorrecta": "Adecuación, coherencia y cohesión",
-    "tema": "Expresión Escrita",
-    "explicacion": "En la corrección se revisa: Adecuación (soluciones lingüísticas apropiadas), Coherencia (selección y organización de la información) y Cohesión (puntuación, nexos, conectores).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuál es la diferencia fundamental entre una emergencia y una catástrofe?",
-    "opciones": [
-      "La magnitud del número de víctimas",
-      "En la catástrofe no se dispone de recursos suficientes para superarla",
-      "La catástrofe siempre tiene causas naturales",
-      "En la emergencia no existe amenaza para la vida"
-    ],
-    "respuestaCorrecta": "En la catástrofe no se dispone de recursos suficientes para superarla",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "La diferencia clave es la disponibilidad de recursos: en la emergencia se dispone de ellos; en la catástrofe, no.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "⚠ Trampa — En la comunicación vertical ascendente, ¿qué error consiste en el cambio activo e intencionado de la información al transmitirla hacia arriba?",
-    "opciones": [
-      "Gatekeeping",
-      "Ocultación",
-      "Distorsión general",
-      "Ruido semántico"
-    ],
-    "respuestaCorrecta": "Distorsión general",
-    "tema": "Expresión Oral",
-    "explicacion": "Las distorsiones generales son cambios activos e intencionados de la información en la comunicación ascendente. El gatekeeping es reducir o restringir la información. La ocultación es no transmitir información relevante. Son tres errores distintos de la comunicación ascendente.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué tipo de texto predominantemente usa estructuras de 'yuxtaposición' y formas verbales que expresan estado o apariencia?",
-    "opciones": [
-      "Texto narrativo",
-      "Texto argumentativo",
-      "Texto expositivo",
-      "Texto descriptivo"
-    ],
-    "respuestaCorrecta": "Texto descriptivo",
-    "tema": "Expresión Escrita",
-    "explicacion": "El texto descriptivo usa formas verbales que expresan estado o apariencia, adjetivos, adverbios de modo y la yuxtaposición como estructura principal.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué clasifica a una persona como víctima de 'tercer grado' en el sistema de clasificación de víctimas de una catástrofe?",
-    "opciones": [
-      "Ser familiar directo de un afectado",
-      "Ser miembro de los equipos intervinientes",
-      "Pertenecer a la comunidad afectada",
-      "Conocer el suceso por los medios de comunicación"
-    ],
-    "respuestaCorrecta": "Ser miembro de los equipos intervinientes",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las víctimas de 3.er grado son los equipos intervinientes: bomberos, sanitarios, fuerzas de seguridad, psicólogos de emergencia, etc. Soportan una alta carga de estrés por su exposición directa al suceso.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿En qué conflicto internacional se convirtió España en el primer país del mundo en emplear la aviación militar en guerra y realizar el primer bombardeo aéreo?",
-    "opciones": [
-      "Guerra de Marruecos",
-      "Guerra Civil Española",
-      "Campaña de Guinea",
-      "Primera Guerra Mundial"
-    ],
-    "respuestaCorrecta": "Guerra de Marruecos",
+    "respuestaCorrecta": "1911, en Cuatro Vientos",
     "tema": "Historia del EA",
-    "explicacion": "España usó por primera vez de forma militar y realizó el primer bombardeo aéreo de la historia en la Guerra de Marruecos (1913).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿En qué se diferencia la teoría de rasgos de las teorías conductuales en su enfoque sobre el liderazgo?",
-    "opciones": [
-      "La teoría de rasgos estudia situaciones externas; la conductual estudia la personalidad",
-      "La teoría de rasgos sostiene que el líder nace con cualidades innatas; la conductual dice que lo que diferencia a los líderes son comportamientos específicos que pueden aprenderse",
-      "Son enfoques idénticos con distinto nombre",
-      "La teoría de rasgos es más moderna que la conductual"
-    ],
-    "respuestaCorrecta": "La teoría de rasgos sostiene que el líder nace con cualidades innatas; la conductual dice que lo que diferencia a los líderes son comportamientos específicos que pueden aprenderse",
-    "tema": "Liderazgo",
-    "explicacion": "La teoría de rasgos identifica características personales (ambición, honradez, inteligencia, autoconfianza...) como propias de los líderes — sugiriendo que son innatas. Las teorías conductuales se centran en comportamientos específicos que diferencian a los líderes de los no líderes, lo que implica que pueden observarse y potencialmente aprenderse.",
+    "explicacion": "El primer aeródromo militar en España se creó en 1911 en Cuatro Vientos.",
     "dificultad": "facil",
     "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuál es la diferencia entre el estilo 'Delegar' y 'Participar' en la Teoría Situacional de Hersey y Blanchard?",
-    "opciones": [
-      "Delegar es alta tarea/baja relación; Participar es alta tarea/alta relación",
-      "Delegar es baja tarea/baja relación; Participar es baja tarea/alta relación",
-      "Delegar es alta relación/baja tarea; Participar es alta tarea/baja relación",
-      "No hay diferencia; son sinónimos en contextos distintos"
-    ],
-    "respuestaCorrecta": "Delegar es baja tarea/baja relación; Participar es baja tarea/alta relación",
-    "tema": "Liderazgo",
-    "explicacion": "Delegar = Baja tarea + Baja relación (subalternos capaces y motivados, el líder apenas interviene). Participar = Baja tarea + Alta relación (subalternos capaces pero con problemas de motivación).",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuál fue el primer proyecto aeronáutico nacional desarrollado en España durante la posguerra?",
-    "opciones": [
-      "CASA C-201 Alcotán",
-      "HA-200 Saeta",
-      "C-101 Mirlo",
-      "CASA C-212 Aviocar"
-    ],
-    "respuestaCorrecta": "CASA C-201 Alcotán",
-    "tema": "Historia del EA",
-    "explicacion": "El CASA C-201 Alcotán fue el primer proyecto nacional de avión de transporte tras la Guerra Civil.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué fase de la escritura corresponde al “EMENDATIO”?",
-    "opciones": [
-      "Revisión",
-      "Construcción",
-      "Disposición",
-      "El concepto EMENDATIO corresponde a la expresión oral"
-    ],
-    "respuestaCorrecta": "Revisión",
-    "tema": "Expresión Escrita",
-    "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuáles son las cuatro características que debe reunir todo documento bien redactado según la IG 10-01?",
-    "opciones": [
-      "Breve, formal, oficial y numerado",
-      "Claro, conciso, metódico, concreto y correcto",
-      "Urgente, clasificado, archivado y registrado",
-      "Firmado, sellado, fechado y referenciado"
-    ],
-    "respuestaCorrecta": "Claro, conciso, metódico, concreto y correcto",
-    "tema": "Instrucción a la IG 10-01",
-    "explicacion": "Según la IG 10-01 los documentos deben ser: Claros (fáciles de comprender), Concisos (brevedad), Metódicos (orden lógico), Concretos (sin ambigüedades) y Correctos (gramática, ortografía y normas). Son cinco cualidades, no cuatro.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿A quién se ha de dirigir un Oficio?",
-    "opciones": [
-      "A la autoridad o al cargo oficial",
-      "A la persona que ejerce el cargo",
-      "A la sección que debe realizar la acción",
-      "Ninguna es correcta"
-    ],
-    "respuestaCorrecta": "A la autoridad o al cargo oficial",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué aeronave realiza misiones de vigilancia marítima (VIGMA) bajo la denominación D.4 en España?",
-    "opciones": [
-      "C-235",
-      "C-212 AvioCar",
-      "Falcon 900",
-      "MQ-9 Predator B"
-    ],
-    "respuestaCorrecta": "C-235",
-    "tema": "Material Aéreo",
-    "explicacion": "Los aviones C-235 modificados para patrulla marítima y SAR se denominan D.4 VIGMA.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Un oficial da una charla con voz monótona, sin variar el tono ni el ritmo, y arrastra las palabras. ¿Qué dos cualidades de la paralingüística está descuidando simultáneamente?",
-    "opciones": [
-      "Volumen y articulación",
-      "Entonación y claridad",
-      "Modulación y velocidad",
-      "Énfasis y tiempo"
-    ],
-    "respuestaCorrecta": "Entonación y claridad",
-    "tema": "Expresión Oral",
-    "explicacion": "Voz monótona = falta de Entonación (no usa distintos tonos para potenciar la expresividad). Arrastrar las palabras = falta de Claridad (hablar sin arrastrar palabras es una de las cualidades de la voz descritas en el temario).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuáles son los márgenes establecidos en la IG 10-01 para los documentos en papel A4 del Ejército del Aire?",
-    "opciones": [
-      "Izq. 25mm / Der. 25mm / Sup. 30mm / Inf. 30mm",
-      "Izq. 30mm / Der. 15mm / Sup. 40mm / Inf. 20mm",
-      "Izq. 20mm / Der. 20mm / Sup. 35mm / Inf. 25mm",
-      "Izq. 35mm / Der. 10mm / Sup. 45mm / Inf. 15mm"
-    ],
-    "respuestaCorrecta": "Izq. 30mm / Der. 15mm / Sup. 40mm / Inf. 20mm",
-    "tema": "Instrucción a la IG 10-01",
-    "explicacion": "La IG 10-01 establece: margen izquierdo 30mm, derecho 15mm, superior 40mm e inferior 20mm. Fuente Arial 11, interlineado sencillo, texto justificado.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuántos estados miembro tenía la ONU en el momento de su fundación en 1945?",
-    "opciones": [
-      "24 estados miembros",
-      "51 estados miembros",
-      "100 estados miembros",
-      "193 estados miembros"
-    ],
-    "respuestaCorrecta": "51 estados miembros",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La ONU se fundó el 24 de octubre de 1945 con 51 estados miembros. Actualmente son 193.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Según el temario, ¿cuál es la diferencia entre 'incorporación voluntaria' y el carácter 'exigible' de los valores militares?",
-    "opciones": [
-      "Los valores son exigibles solo durante el servicio activo, no en la reserva",
-      "Al incorporarse voluntariamente al EA, el militar adquiere el compromiso de cumplir las reglas de comportamiento, siendo los valores exigibles y no solo deseables",
-      "Los valores son deseables para los militares igual que para el resto de la sociedad",
-      "Solo los mandos tienen los valores como exigibles; la tropa solo los tiene como deseables"
-    ],
-    "respuestaCorrecta": "Al incorporarse voluntariamente al EA, el militar adquiere el compromiso de cumplir las reglas de comportamiento, siendo los valores exigibles y no solo deseables",
-    "tema": "Valores Militares",
-    "explicacion": "El temario señala que los miembros del EA se incorporan de forma voluntaria y asumen el compromiso de cumplir las reglas de comportamiento. Por eso los valores militares son para ellos EXIGIBLES, mientras que para el resto de la sociedad son solo deseables.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Una víctima de tercer grado en una emergencia sería:",
-    "opciones": [
-      "Un familiar directo del afectado",
-      "Alguien que se salvó por no estar presente",
-      "Un miembro de los equipos intervinientes",
-      "Alguien que conoce el suceso por los medios"
-    ],
-    "respuestaCorrecta": "Un miembro de los equipos intervinientes",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las víctimas de 3º grado son los equipos intervinientes. Las de 2º grado son los familiares y las de 1º los afectados directamente.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Qué modificación de una disposición normativa implica una modificación ESENCIAL que sustituye completamente la versión anterior?",
-    "opciones": [
-      "Enmienda (ENM)",
-      "Revisión (REV)",
-      "Anulación (ANL)",
-      "Actualización (ACT)"
-    ],
-    "respuestaCorrecta": "Revisión (REV)",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La Revisión (REV) implica una modificación esencial que sustituye completamente la disposición anterior. La Enmienda solo modifica aspectos no esenciales y la Anulación la deroga totalmente.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿En qué año cambió el nombre del Ejército del Aire al actual 'Ejército del Aire y del Espacio' y mediante qué norma?",
-    "opciones": [
-      "En 2020 mediante Ley Orgánica",
-      "En 2022 mediante Real Decreto 524/2022 de 27 de junio",
-      "En 2019 mediante Instrucción General del JEMA",
-      "En 2021 mediante Orden Ministerial"
-    ],
-    "respuestaCorrecta": "En 2022 mediante Real Decreto 524/2022 de 27 de junio",
-    "tema": "Material Aéreo",
-    "explicacion": "En junio de 2022, tras 83 años de historia, el Real Decreto 524/2022 de 27 de junio dispuso el cambio de denominación de Ejército del Aire a Ejército del Aire y del Espacio.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Según las Reales Ordenanzas, ¿cuál es el primer deber del militar recogido en el artículo 3?",
-    "opciones": [
-      "Obedecer las órdenes de sus superiores",
-      "Disposición permanente para defender a España, incluso con entrega de la vida",
-      "Respetar los derechos fundamentales de los ciudadanos",
-      "Mantener la disciplina y el orden en su unidad"
-    ],
-    "respuestaCorrecta": "Disposición permanente para defender a España, incluso con entrega de la vida",
-    "tema": "Valores Militares",
-    "explicacion": "El Art.3 establece que el primer deber del militar es la disposición permanente para defender a España, con entrega de la vida si fuera necesario.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "La 'referencia negativa' de un grupo de referencia implica que el individuo no desea pertenecer a él. ¿Qué efecto tiene igualmente ese grupo sobre sus actitudes y valores?",
-    "opciones": [
-      "Ninguno; al rechazarlo, el grupo deja de influir completamente",
-      "Influye igualmente en sus actitudes y valores aunque sea de forma contraria",
-      "Solo influye si el individuo pertenece físicamente al grupo",
-      "Solo afecta a aspectos superficiales como la vestimenta o el lenguaje"
-    ],
-    "respuestaCorrecta": "Influye igualmente en sus actitudes y valores aunque sea de forma contraria",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Según el temario, tanto la referencia positiva (desea pertenecer) como la negativa (no desea pertenecer) influyen en las actitudes y valores del individuo. La diferencia es la dirección de esa influencia.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuál es la diferencia exacta entre los grupos 'primarios' y los 'secundarios' en cuanto al tipo de vínculo y el tamaño?",
-    "opciones": [
-      "Primarios: grandes, normas escritas, objetivos comunes. Secundarios: pequeños, afectividad",
-      "Primarios: pocos miembros, interacción cara a cara, afectividad y solidaridad. Secundarios: grandes, sin relación directa, unidos por objetivos comunes",
-      "Primarios: formales y planificados. Secundarios: informales y espontáneos",
-      "Primarios: temporales. Secundarios: permanentes"
-    ],
-    "respuestaCorrecta": "Primarios: pocos miembros, interacción cara a cara, afectividad y solidaridad. Secundarios: grandes, sin relación directa, unidos por objetivos comunes",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Primarios: pocos miembros, interacción directa cara a cara, alto nivel de interdependencia e identificación, relación basada en afectividad, compromiso y solidaridad (ej. familia). Secundarios: grupos grandes, sin relación directa, unidos por objetivos comunes y organización escrita por reglamentos (ej. grupo de trabajo).",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿En qué año cambió su denominación el Ejército del Aire para incluir la palabra 'Espacio', y por qué Real Decreto?",
-    "opciones": [
-      "2020, RD 200/2020",
-      "2022, RD 524/2022",
-      "2019, RD 83/2019",
-      "2015, RD 494/2015"
-    ],
-    "respuestaCorrecta": "2022, RD 524/2022",
-    "tema": "Historia del EA",
-    "explicacion": "En junio de 2022, por Real Decreto 524/2022, el Ejército del Aire pasó a denominarse Ejército del Aire y del Espacio.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "En el marco administrativo militar, ¿cuál es la definición formal de un Documento Administrativo?",
-    "opciones": [
-      "El soporte que materializa los actos de la Administración",
-      "Cualquier comunicación informal escrita entre compañeros",
-      "Una orden de operaciones táctica de obligado cumplimiento",
-      "Un boletín de información general del Ministerio de Defensa"
-    ],
-    "respuestaCorrecta": "El soporte que materializa los actos de la Administración",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "Formalmente, el documento administrativo se define como el soporte que contiene y materializa las decisiones y actos administrativos.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "Una persona que no estaba presente en la catástrofe pero se siente culpable por haberse salvado se clasifica como víctima de:",
-    "opciones": [
-      "Primer grado",
-      "Cuarto grado",
-      "Quinto grado",
-      "Sexto grado"
-    ],
-    "respuestaCorrecta": "Sexto grado",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las víctimas de 6º grado son los denominados 'Accidente Blanco': personas que al no estar en el lugar del suceso, se salvaron.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "¿Cuáles son los tres elementos que facilitan la escucha activa, según la clasificación del temario?",
-    "opciones": [
-      "Empatía, asertividad y retroalimentación",
-      "Disposición psicológica y feedback; y como habilidades: parafrasear, emitir palabras de refuerzo y resumir",
-      "Volumen adecuado, contacto visual y postura abierta",
-      "Lenguaje no verbal, paralingüística y kinesia"
-    ],
-    "respuestaCorrecta": "Disposición psicológica y feedback; y como habilidades: parafrasear, emitir palabras de refuerzo y resumir",
-    "tema": "Expresión Oral",
-    "explicacion": "La escucha activa se apoya en 2 elementos facilitadores (disposición psicológica y feedback) y 3 habilidades: parafrasear, emitir palabras de refuerzo y resumir.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro_2"
+    "examen": "simulacro2"
   },
   {
     "pregunta": "En la teoría situacional, ¿qué estilo combina baja tarea y alta relación?",
@@ -552,51 +42,411 @@
     "explicacion": "El estilo Participar combina baja tarea + alta relación. Es el adecuado cuando el subalterno tiene problemas de motivación pero es competente (nivel R3).",
     "dificultad": "facil",
     "imprescindible": false,
-    "examen": "simulacro_2"
+    "examen": "simulacro2"
   },
   {
-    "pregunta": "Marque que dos tipos de Disposiciones Generales regulan la IG 10-01:",
+    "pregunta": "⚠ Trampa — El valor 'Compromiso' incluye referencias a varios artículos de las RR.OO. ¿Cuál de estas afirmaciones NO corresponde al compromiso sino a otro valor?",
     "opciones": [
-      "Instrucciones Generales y Instrucciones Específicas",
-      "Ordenes Ministeriales y Instrucciones",
-      "Procedimientos y Instrucciones Particulares",
-      "Ninguna es correcta"
+      "Art. 3 — Entrega de la vida como primer deber",
+      "Art. 128 — Aprovechar al máximo los medios y oportunidades (alumnos)",
+      "Art. 10 — Comportarse con lealtad y compañerismo",
+      "Art. 21 — Tradición"
     ],
-    "respuestaCorrecta": "Ordenes Ministeriales y Instrucciones",
-    "tema": "Instrucción a la IG 10-01",
-    "explicacion": "",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro_2"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿En qué año se firmó el tratado de asistencia con los EE.UU. que trajo reactores y helicópteros al EA, y cuándo entró en servicio la primera unidad con el F-86?",
-    "opciones": [
-      "1949 firma — 1953 primera unidad F-86",
-      "1953 firma — 1955 primera unidad operativa con el F-86",
-      "1960 firma — 1965 primera unidad con el F-104",
-      "1945 firma — 1950 primera unidad con el Saeta"
-    ],
-    "respuestaCorrecta": "1953 firma — 1955 primera unidad operativa con el F-86",
-    "tema": "Historia del EA",
-    "explicacion": "El tratado con EE.UU. se firmó en 1953, trayendo reactores, aviones de transporte y helicópteros. La primera unidad operativa española con el F-86 fue en 1955. El F-104 llegó en 1960 y el HA-200 Saeta (primer reactor nacional) en 1965.",
+    "respuestaCorrecta": "Art. 10 — Comportarse con lealtad y compañerismo",
+    "tema": "Valores Militares",
+    "explicacion": "El Art. 10 (lealtad y compañerismo) corresponde al valor de la LEALTAD, no al compromiso. Los artículos del compromiso son: Art. 3 (entrega de la vida), Art. 21 (tradición), Art. 22 (prestigio), Art. 23 (historial) y Art. 128 (obligación de los alumnos de aprovechar los medios).",
     "dificultad": "media",
     "imprescindible": false,
-    "examen": "simulacro_2"
+    "examen": "simulacro2"
   },
   {
-    "pregunta": "El valor 'Profesionalidad' incluye cuatro pilares personales. ¿Cuáles son y qué meta final persigue según el temario?",
+    "pregunta": "¿Quién fue el autor referente en la dinámica de grupos?",
     "opciones": [
-      "Lealtad, respeto, disciplina y valor — con el fin de cumplir órdenes",
-      "Dedicación, esfuerzo, sacrificio y humildad — buscando la excelencia a través del perfeccionamiento",
-      "Formación, jerarquía, obediencia y compromiso — para defender a España",
-      "Motivación, vocación, preparación y valores — para ser un líder 360º"
+      "Stephen Olson",
+      "Winston Churchill",
+      "Albert Einstein",
+      "Kurt Lewin"
     ],
-    "respuestaCorrecta": "Dedicación, esfuerzo, sacrificio y humildad — buscando la excelencia a través del perfeccionamiento",
-    "tema": "Valores Militares",
-    "explicacion": "La profesionalidad requiere dedicación, esfuerzo, sacrificio y humildad. La meta es buscar la excelencia a través del perfeccionamiento continuo, que incluye formación técnica y también humanística, moral y ética.",
+    "respuestaCorrecta": "Kurt Lewin",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ TRAMPA — Ordena correctamente las letras del protocolo ACERCARSE: Ambiente, Contacto, Evaluación, Restablecimiento emocional… ¿qué viene después?",
+    "opciones": [
+      "Seguimiento",
+      "Comprensión de crisis",
+      "Recuperación de funcionamiento",
+      "Activar"
+    ],
+    "respuestaCorrecta": "Comprensión de crisis",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Tras el Restablecimiento emocional viene la Comprensión de crisis, luego Activar, Recuperación de funcionamiento y finalmente Seguimiento.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Cuál de estas fases del proceso de escritura NO pertenece a la terminología clásica latina recogida en el temario?",
+    "opciones": [
+      "Inventio",
+      "Dispositio",
+      "Elocutio",
+      "Scriptio"
+    ],
+    "respuestaCorrecta": "Scriptio",
+    "tema": "Expresión Escrita",
+    "explicacion": "Las cuatro fases del proceso de escritura en el temario son: Inventio (construcción), Dispositio (disposición), Elocutio (redacción) y Emendatio (revisión). 'Scriptio' no aparece en el temario.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Una víctima de tercer grado en una emergencia sería:",
+    "opciones": [
+      "Un familiar directo del afectado",
+      "Alguien que se salvó por no estar presente",
+      "Un miembro de los equipos intervinientes",
+      "Alguien que conoce el suceso por los medios"
+    ],
+    "respuestaCorrecta": "Un miembro de los equipos intervinientes",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Las víctimas de 3º grado son los equipos intervinientes. Las de 2º grado son los familiares y las de 1º los afectados directamente.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
+    "opciones": [
+      "Nelson Mandela",
+      "Malala Yousafzai",
+      "Martin Luther King",
+      "Napoleón Bonaparte"
+    ],
+    "respuestaCorrecta": "Napoleón Bonaparte",
+    "tema": "Liderazgo",
+    "explicacion": "Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué aviones utilizaron los nacionales en el bombardeo de Guernica durante la Guerra Civil y quién los proporcionó?",
+    "opciones": [
+      "Polikarpov I-16 proporcionados por la URSS",
+      "Heinkel He-111 y Ju-52 de la Legión Cóndor alemana",
+      "Fiat CR-32 y Savoia S-81 italianos",
+      "Breguet XIX proporcionados por Francia"
+    ],
+    "respuestaCorrecta": "Heinkel He-111 y Ju-52 de la Legión Cóndor alemana",
+    "tema": "Historia del EA",
+    "explicacion": "El bombardeo de Guernica fue realizado con aviones alemanes Heinkel He-111 y Junkers Ju-52 pertenecientes a la Legión Cóndor. Inspiró la famosa obra de Pablo Picasso. Fue uno de los primeros bombardeos estratégicos sobre población civil de la historia.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — En el texto narrativo lineal, ¿cuál es el orden correcto de sus tres partes estructurales?",
+    "opciones": [
+      "Introducción → Clímax → Desenlace",
+      "Planteamiento → Nudo/complicación → Desenlace",
+      "Desarrollo → Planteamiento → Clímax",
+      "Exposición → Refutación → Conclusión"
+    ],
+    "respuestaCorrecta": "Planteamiento → Nudo/complicación → Desenlace",
+    "tema": "Expresión Escrita",
+    "explicacion": "La estructura narrativa lineal tiene: Planteamiento o exposición → Nudo/complicación → Desenlace. La estructura libre o artística es la que incluye Clímax. La secuencia Exposición→Refutación→Conclusión es del texto argumentativo.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En la redacción de documentos militares, ¿a quién va dirigido un Oficio y cuántos asuntos puede tratar, según la IG 10-01?",
+    "opciones": [
+      "A la persona física que ocupa el cargo; puede tratar varios asuntos relacionados",
+      "A la autoridad o al cargo oficial, nunca a la persona; trata un único asunto",
+      "A la sección que debe ejecutar la acción; sin límite de asuntos",
+      "Al superior jerárquico directo; puede tratar hasta dos asuntos"
+    ],
+    "respuestaCorrecta": "A la autoridad o al cargo oficial, nunca a la persona; trata un único asunto",
+    "tema": "Instrucción a la IG 10-01",
+    "explicacion": "El Oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona física que lo ocupa. Trata un único asunto y usa N/Ref y S/Ref para su identificación y seguimiento.",
     "dificultad": "dificil",
     "imprescindible": false,
-    "examen": "simulacro_2"
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es la principal diferencia entre la función de 'constancia' y la función de 'comunicación' de los documentos administrativos?",
+    "opciones": [
+      "La función de constancia es interna; la de comunicación es siempre externa",
+      "La función de constancia conserva y demuestra la existencia de los actos y da acceso a los ciudadanos; la de comunicación transmite información interna o externamente",
+      "Son la misma función con dos nombres distintos",
+      "La función de constancia solo aplica a documentos clasificados"
+    ],
+    "respuestaCorrecta": "La función de constancia conserva y demuestra la existencia de los actos y da acceso a los ciudadanos; la de comunicación transmite información interna o externamente",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La función de constancia garantiza la conservación de los actos, demuestra su existencia y da derecho a los ciudadanos a acceder a ellos. La función de comunicación transmite información, tanto interna (entre órganos) como externa (con ciudadanos o instituciones).",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El Ejército del Aire participa en la Policía Aérea del Báltico con unos 150 militares. ¿Con qué aeronaves puede participar según el temario?",
+    "opciones": [
+      "MQ-9 Predator o C-295",
+      "A-400M o A-330",
+      "F-18 o Eurofighter",
+      "Canadair CL-415 o AS-332"
+    ],
+    "respuestaCorrecta": "F-18 o Eurofighter",
+    "tema": "Material Aéreo",
+    "explicacion": "En la misión de Policía Aérea del Báltico (BAP), cuyo objetivo es asegurar el espacio aéreo OTAN, España participa con aproximadamente 150 militares y aeronaves F-18 o Eurofighter según la rotación.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes NO es un principio de intervención psicológica en emergencias según el temario?",
+    "opciones": [
+      "Proximidad",
+      "Inmediatez",
+      "Objetividad",
+      "Expectativas"
+    ],
+    "respuestaCorrecta": "Objetividad",
+    "tema": "Apoyo Psicológico",
+    "explicacion": "Los principios de intervención del temario son: Proximidad, Inmediatez, Expectativas, Simplicidad y Unidad. La 'Objetividad' no aparece como principio de intervención psicológica.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En el sistema de mensajería formal MEFO (teletipo), ¿qué letra identifica a la prelación 'Prioridad' y qué plazo de entrega tiene fijado?",
+    "opciones": [
+      "P (Prioridad) - Plazo máximo de entrega de 6 horas",
+      "Z (Flash) - Entrega inmediata en menos de 5 minutos",
+      "O (Inmediato) - Plazo de 1 hora",
+      "R (Rutina) - Plazo de 24 horas"
+    ],
+    "respuestaCorrecta": "P (Prioridad) - Plazo máximo de entrega de 6 horas",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "La prelación 'P' indica 'Prioridad' y fija un plazo máximo de entrega o transmisión de 6 horas.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es el órgano de la ONU que dirime controversias entre estados con fallos inapelables, está compuesto por 15 jueces y tiene su sede en La Haya?",
+    "opciones": [
+      "El Consejo de Seguridad",
+      "El Secretariado",
+      "La Corte Internacional de Justicia",
+      "El ECOSOC"
+    ],
+    "respuestaCorrecta": "La Corte Internacional de Justicia",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La Corte Internacional de Justicia (CIJ) es el principal órgano judicial de la ONU. Sus 15 jueces son elegidos por la Asamblea General y el Consejo de Seguridad. Sus fallos son inapelables y dirime solo controversias entre estados.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿En qué año entró en servicio el primer F-86 Sabre en el EA español, gracias al tratado de asistencia con EE.UU.?",
+    "opciones": [
+      "1949",
+      "1953",
+      "1955",
+      "1960"
+    ],
+    "respuestaCorrecta": "1955",
+    "tema": "Historia del EA",
+    "explicacion": "La primera unidad operativa española con el F-86 Sabre fue en 1955, dos años después de la firma del tratado de asistencia con EE.UU. en 1953. En 1960 llegó el F-104 Starfighter y en 1965 el HA-200 Saeta, primer reactor nacional.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según el temario, ¿qué ocurre con la credibilidad del comunicador 'durante el discurso' y de qué depende en ese momento?",
+    "opciones": [
+      "Depende de las referencias previas que tenga el público sobre el comunicador",
+      "Depende de la prestancia, el dinamismo y la personalidad del comunicador durante la intervención",
+      "Depende del autoexamen posterior que realice el comunicador",
+      "Depende exclusivamente del contenido técnico del discurso"
+    ],
+    "respuestaCorrecta": "Depende de la prestancia, el dinamismo y la personalidad del comunicador durante la intervención",
+    "tema": "Expresión Oral",
+    "explicacion": "El temario distingue tres momentos de la credibilidad: antes del discurso (referencias previas del público), durante el discurso (prestancia, dinamismo y personalidad del comunicador) y después del discurso (autoexamen). Durante la intervención, lo que transmite el comunicador con su presencia y personalidad es determinante.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Respecto a las principales respuestas de los grupos, señalar la incorrecta.",
+    "opciones": [
+      "Participativa",
+      "Imitativa",
+      "Conformista",
+      "Colectivista"
+    ],
+    "respuestaCorrecta": "Participativa",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El MQ-9 'Predator' es la aeronave no tripulada del EA. ¿Qué tipo de misiones realiza y desde qué base opera?",
+    "opciones": [
+      "Contraincendios desde BA Torrejón",
+      "Reconocimiento e ISR desde BA Talavera (ALA 23)",
+      "Fotografía y calibración desde BA Getafe",
+      "SAR desde BA Gando"
+    ],
+    "respuestaCorrecta": "Reconocimiento e ISR desde BA Talavera (ALA 23)",
+    "tema": "Material Aéreo",
+    "explicacion": "El MQ-9 Predator (versión MQ-9B) realiza misiones de Reconocimiento e ISR (Inteligencia, Vigilancia y Reconocimiento) desde la BA Talavera, donde está el ALA 23.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "El valor de 'Ejemplaridad' implica que la conducta íntegra es una obligación ética. ¿Qué artículo recoge que los mandos reafirmarán su liderazgo con el ejemplo?",
+    "opciones": [
+      "Art. 44",
+      "Art. 54",
+      "Art. 70",
+      "Art. 89"
+    ],
+    "respuestaCorrecta": "Art. 54",
+    "tema": "Valores Militares",
+    "explicacion": "El Art. 54 establece que los mandos reafirmarán su liderazgo con el ejemplo. El Art. 70 recoge que motivarán a los subordinados también con el ejemplo.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Indique cual de las siguientes modificaciones deroga una disposición normativa en vigor:",
+    "opciones": [
+      "Enmienda",
+      "Revisión",
+      "Modificación",
+      "Anulación"
+    ],
+    "respuestaCorrecta": "Anulación",
+    "tema": "Redacción de Documentos Militares",
+    "explicacion": "",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un ERROR propio de la comunicación vertical ASCENDENTE según el temario?",
+    "opciones": [
+      "Reducción del mensaje al descender de nivel jerárquico",
+      "Falta de comprensión del mensaje",
+      "Gatekeeping o efecto portero",
+      "Exceso de información en los mensajes descendentes"
+    ],
+    "respuestaCorrecta": "Gatekeeping o efecto portero",
+    "tema": "Expresión Oral",
+    "explicacion": "El Gatekeeping (portero) es un error específico de la comunicación ascendente: quien transmite la información hacia arriba la reduce o restringe. La reducción del mensaje y la falta de comprensión son errores de la comunicación DESCENDENTE.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué permite el sistema de registro y gestión documental?",
+    "opciones": [
+      "Localizar física o electrónicamente un documento",
+      "Consultar sus características",
+      "Destruir documentación clasificada",
+      "A y B son correctas"
+    ],
+    "respuestaCorrecta": "A y B son correctas",
+    "tema": "Registro y Utilización de Documentos",
+    "explicacion": "",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué artículo del Tratado de la OTAN establece el compromiso de autodefensa colectiva entre sus miembros?",
+    "opciones": [
+      "Artículo 3",
+      "Artículo 5",
+      "Artículo 10",
+      "Artículo 14"
+    ],
+    "respuestaCorrecta": "Artículo 5",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "El artículo 5 del Tratado de la OTAN establece el compromiso de autodefensa colectiva: un ataque contra uno de los miembros se considera un ataque contra todos. El artículo 10 permite invitar a nuevos estados europeos.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuáles son los siete rasgos que, según la teoría de rasgos, destacan en los líderes?",
+    "opciones": [
+      "Ambición, energía, deseo de dirigir, honradez, autoconfianza, inteligencia y autocontrol",
+      "Carisma, empatía, decisión, visión, energía, honradez y experiencia",
+      "Amabilidad, firmeza, inteligencia, creatividad, energía, lealtad y disciplina",
+      "Autoridad, conocimiento, respeto, disciplina, ambición, confianza y empatía"
+    ],
+    "respuestaCorrecta": "Ambición, energía, deseo de dirigir, honradez, autoconfianza, inteligencia y autocontrol",
+    "tema": "Liderazgo",
+    "explicacion": "La teoría de rasgos identifica 7 rasgos en los líderes: ambición y energía, deseo de dirigir, honradez e integridad, autoconfianza, inteligencia, conocimiento y autocontrol.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "⚠ Trampa — ¿Cuál es la misión principal del AS-332 'Superpuma' del ALA 48 encuadrado en el 402 Escuadrón?",
+    "opciones": [
+      "Misiones SAR de búsqueda y rescate",
+      "Transporte VIP",
+      "Contraincendios",
+      "Enseñanza avanzada de helicópteros"
+    ],
+    "respuestaCorrecta": "Transporte VIP",
+    "tema": "Material Aéreo",
+    "explicacion": "El AS-332 del 402 Escuadrón (ALA 48, BA Getafe) tiene designación HT.21 y su misión es Transporte VIP. No debe confundirse con el AS-332B del 803 Escuadrón (HD.21), que sí hace SAR.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En la estructura de la UE, ¿cuál es la diferencia entre el órgano que propone leyes y el que representa la voz de los ciudadanos votando esas leyes?",
+    "opciones": [
+      "La Comisión propone; el Parlamento Europeo representa y vota junto al Consejo",
+      "El Consejo Europeo propone; la Comisión vota",
+      "El Parlamento propone; la Comisión vota",
+      "El Tribunal de Justicia propone; el Consejo aprueba"
+    ],
+    "respuestaCorrecta": "La Comisión propone; el Parlamento Europeo representa y vota junto al Consejo",
+    "tema": "Organizaciones Internacionales",
+    "explicacion": "La Comisión Europea (27 comisarios) propone nuevas leyes. El Parlamento Europeo (representantes ciudadanos elegidos cada 5 años) debate y vota esas leyes junto al Consejo de la UE.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según el temario, ¿qué afirmación resume correctamente la relación entre grupo de pertenencia y grupo de referencia en el ámbito militar?",
+    "opciones": [
+      "El grupo militar debe ser de pertenencia y nunca de referencia",
+      "El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia",
+      "Ambos conceptos son idénticos en el contexto castrense",
+      "El grupo de referencia negativo es el más valorado en el Ejército"
+    ],
+    "respuestaCorrecta": "El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia",
+    "tema": "Dinámica de Grupos",
+    "explicacion": "El temario cita textualmente: 'El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia', pues debe inspirar valores y aspiraciones.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro2"
   }
 ]
