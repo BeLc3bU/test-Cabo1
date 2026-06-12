@@ -113,15 +113,29 @@ window.addEventListener('load', () => {
         const estadoGuardado = cargarEstado(modo);
         if (estadoGuardado) {
             ui.showTestView();
-                ui.resetTestUI(estadoGuardado);
+            ui.resetTestUI(estadoGuardado);
             ui.updateRecord(storage.getHighScore());
-                mostrarPreguntaActual(estadoGuardado);
+            mostrarPreguntaActual(estadoGuardado);
             if (estadoGuardado.haRespondido) {
-                    const preguntaData = estadoGuardado.preguntasDelTest[estadoGuardado.preguntaActualIndex] || {};
-                    const ultimaRespuestaFallada = estadoGuardado.preguntasFalladas.find(p => p.preguntaData.pregunta === preguntaData?.pregunta);
+                const preguntaData = estadoGuardado.preguntasDelTest[estadoGuardado.preguntaActualIndex] || {};
+                const ultimaRespuestaFallada = estadoGuardado.preguntasFalladas.find(p => p.preguntaData.pregunta === preguntaData?.pregunta);
                 const opcionSeleccionada = ultimaRespuestaFallada ? ultimaRespuestaFallada.respuestaUsuario : preguntaData.respuestaCorrecta;
                 const esCorrecto = !ultimaRespuestaFallada;
                 ui.showAnswerFeedback(opcionSeleccionada, esCorrecto, preguntaData.respuestaCorrecta, preguntaData.explicacion);
+
+                // Programar el avance a la siguiente pregunta tras mostrar el feedback al restaurar
+                isProcessing = true;
+                const delay = esCorrecto ? 1000 : (preguntaData.explicacion ? 4000 : 2500);
+                setTimeout(() => {
+                    const { nuevoEstado, resultadoFinal } = avanzarPregunta(estadoGuardado);
+                    if (resultadoFinal) {
+                        ui.showTestResults(resultadoFinal, estadoGuardado.modo, iniciarRepasoFallos, () => { ui.showStartView(); });
+                        actualizarContadoresUI();
+                    } else {
+                        mostrarPreguntaActual(nuevoEstado);
+                    }
+                    isProcessing = false;
+                }, delay);
             }
         }
     }
@@ -286,7 +300,7 @@ window.addEventListener('load', () => {
         });
 
         ui.elements.seguirMasTardeBtn.addEventListener('click', () => {
-            guardarEstado();
+            guardarEstado(getTestState());
             ui.showStartView();
         });
 

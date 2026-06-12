@@ -186,9 +186,7 @@ export function procesarRespuesta(opcionSeleccionada, estadoActual) {
         }
         storage.addFailedQuestion(indiceGlobal);
     }
-    if (estadoActual.preguntaActualIndex > 0) {
-        guardarEstado(estadoActual);
-    }
+    guardarEstado(estadoActual);
     return { esCorrecto, respuestaCorrecta: preguntaActual.respuestaCorrecta, explicacion: preguntaActual.explicacion };
 }
 
@@ -196,6 +194,7 @@ export function avanzarPregunta(estadoActual) {
     if (!estadoActual) return { nuevoEstado: null, resultadoFinal: null };
     estadoActual.preguntaActualIndex++;
     estadoActual.haRespondido = false;
+    guardarEstado(estadoActual);
     if (estadoActual.preguntaActualIndex >= estadoActual.preguntasDelTest.length) {
         const resultadoFinal = finalizarTest(estadoActual);
         return { nuevoEstado: null, resultadoFinal };
