@@ -1,452 +1,452 @@
-[
-  {
-    "pregunta": "De acuerdo con los elementos de puntería con pistola descritos en el temario, ¿dónde se debe enfocar la vista para apuntar de manera correcta?",
-    "opciones": [
-      "En el punto de mira",
-      "En el blanco u objetivo",
-      "En la parte trasera de la corredera",
-      "En el punto de mira y en el blanco de forma alterna"
-    ],
-    "respuestaCorrecta": "En el punto de mira",
-    "tema": "Tiro",
-    "explicacion": "El temario indica literalmente: 'Elementos de puntería con pistola: Enfocar el punto de mira para apuntar'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es la posición oficial de tiro que se detalla en el documento de estudio?",
-    "opciones": [
-      "Isósceles moderna",
-      "Posición Weaver clásica",
-      "Tendido con apoyo",
-      "De rodillas en dos tiempos"
-    ],
-    "respuestaCorrecta": "Isósceles moderna",
-    "tema": "Tiro",
-    "explicacion": "En la sección de TIRO se establece que la posición de tiro oficial es la 'Isósceles moderna'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es el peso oficial del fusil automático G36E en vacío según el temario?",
-    "opciones": [
-      "3,3 kg",
-      "3,1 kg",
-      "3,5 kg",
-      "2,9 kg"
-    ],
-    "respuestaCorrecta": "3,3 kg",
-    "tema": "Armamento",
-    "explicacion": "El peso detallado para el fusil G36E es de 3,3 kg.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Respecto a la capacidad del fusil G36E, ¿cuál es la distribución de cartuchos en el cargador y en el arma según el temario?",
-    "opciones": [
-      "30 cartuchos en el cargador y 31 en el arma (uno en recámara)",
-      "20 cartuchos en el cargador y 21 en el arma",
-      "30 cartuchos en el cargador y 30 en el arma",
-      "15 cartuchos en el cargador y 16 en el arma"
-    ],
-    "respuestaCorrecta": "30 cartuchos en el cargador y 31 en el arma (uno en recámara)",
-    "tema": "Armamento",
-    "explicacion": "El temario especifica: 'Capacidad: 30 cartuchos cargador. 31 el arma (uno en recamara)'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué tipo de rallado tiene el cañón del fusil G36E y de la pistola USP COMPACT según el temario?",
-    "opciones": [
-      "Rallado DEXTROSUM",
-      "Rallado SINISTRORSUM",
-      "Rallado Poligonal Rectilíneo",
-      "No disponen de rallado (cañón liso)"
-    ],
-    "respuestaCorrecta": "Rallado DEXTROSUM",
-    "tema": "Armamento",
-    "explicacion": "El temario indica para ambos modelos de armas: 'Rallado DEXTROSUM'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es el periodo de vigencia general de las pruebas PAFAS y el periodo para los alumnos que salen del centro de formación?",
-    "opciones": [
-      "2 años con carácter general y 1 año para alumnos que salen del centro de formación",
-      "1 año general y 2 años para egresados",
-      "Vigencia permanente con revisión médica cada 2 años",
-      "3 años con revisión anual obligatoria"
-    ],
-    "respuestaCorrecta": "2 años con carácter general y 1 año para alumnos que salen del centro de formación",
-    "tema": "PAFAS",
-    "explicacion": "El temario recoge: 'Vigencia PAFAS: 2 años. Para alumnos que salen del centro de formación 1 año'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Quién ostenta la presidencia de la Junta de Evaluación de las pruebas PAFAS?",
-    "opciones": [
-      "El Jefe de la UCO (Coronel o Teniente Coronel)",
-      "El Coronel Médico de la Unidad",
-      "El Oficial de Adiestramiento de la Base",
-      "El Secretario General del tribunal"
-    ],
-    "respuestaCorrecta": "El Jefe de la UCO (Coronel o Teniente Coronel)",
-    "tema": "PAFAS",
-    "explicacion": "En la Junta de evaluación de las PAFAS, el Presidente del tribunal es el 'Jefe de la UCO (Col. O Tcol.)'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según la calificación de grupos del temario, ¿qué tipo de grupo se define por relaciones cercanas e informales, y qué grupo por un interés común y relación formal?",
-    "opciones": [
-      "Primarios (Familia) y Secundarios (Ejército)",
-      "Secundarios (Familia) y Primarios (Ejército)",
-      "Informales (Trabajo) y Formales (Amigos)",
-      "De referencia (Ejército) y De pertenencia (Familia)"
-    ],
-    "respuestaCorrecta": "Primarios (Familia) y Secundarios (Ejército)",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "La clasificación de grupos es: 'Grupos primarios: Cercanos e informales (Familia)' y 'Grupos secundarios: Interés común. Relación formal (Ejercito)'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son las categorías estructurales que organizan un grupo según un patrón en el temario de dinámicas de grupo?",
-    "opciones": [
-      "Rol, Normas grupales, Cohesión grupal y Pensamiento grupal",
-      "Liderazgo, Poder, Puesto y Tarea",
-      "Primarios, Secundarios, Formales e Informales",
-      "Ambiente, Contacto, Cohesión y Actividad"
-    ],
-    "respuestaCorrecta": "Rol, Normas grupales, Cohesión grupal y Pensamiento grupal",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "El temario detalla que la 'Estructura: Grupo se organiza según un patrón: Rol, Normas grupales, Cohesión grupal, Pensamiento grupal'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cómo se define el concepto de 'Rol' dentro del estudio de la dinámica de grupos?",
-    "opciones": [
-      "Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo",
-      "Poder legítimo que otorga la organización a un puesto de trabajo",
-      "Grado de atracción y unión que sienten los miembros entre sí",
-      "Proceso por el que las interacciones sociales modifican la percepción"
-    ],
-    "respuestaCorrecta": "Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "El temario define 'Rol: Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son los tres niveles organizativos contemplados en la visión del JEMA sobre el liderazgo?",
-    "opciones": [
-      "Recursos Humanos, Material y Organización",
-      "Estratégico, Operativo y Táctico",
-      "Misión, Subordinados y Familia",
-      "Jefe, Líder y Subordinado"
-    ],
-    "respuestaCorrecta": "Recursos Humanos, Material y Organización",
-    "tema": "Liderazgo",
-    "explicacion": "La visión del JEMA establece que la organización del liderazgo se da en tres niveles: Recursos Humanos, Material y Organización.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son las tres responsabilidades esenciales del mando como líder descritas en el temario?",
-    "opciones": [
-      "Cumplir la misión, cuidar a tus subordinados y cuidar de sus familias",
-      "Mantener la disciplina, controlar los recursos y planificar la instrucción",
-      "Obedecer las órdenes, adiestrar al personal y gestionar el material",
-      "Fomentar el deporte, realizar evaluaciones PAFAS y tramitar EPIs"
-    ],
-    "respuestaCorrecta": "Cumplir la misión, cuidar a tus subordinados y cuidar de sus familias",
-    "tema": "Liderazgo",
-    "explicacion": "Bajo las Responsabilidades como líder se detalla: 'Cumplir la misión, Cuidar a tus subordinados, Cuidar también de sus familias'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son las denominadas '5C' que componen el valor militar del 'Espíritu de equipo'?",
-    "opciones": [
-      "Coordinación, Compromiso, Confianza, Complementariedad y Comunicación",
-      "Cohesión, Control, Carácter, Compañerismo y Compromiso",
-      "Comunicación, Calidad, Capacitación, Cooperación y Confianza",
-      "Cuidado, Conducta, Capacidad, Consistencia y Claridad"
-    ],
-    "respuestaCorrecta": "Coordinación, Compromiso, Confianza, Complementariedad y Comunicación",
-    "tema": "Liderazgo",
-    "explicacion": "El valor 'Espíritu de equipo' consta de las denominadas '5C': Coordinación, Compromiso, Confianza, Complementariedad, Comunicación.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En instrucción de orden cerrado, ¿cómo se ejecutan los giros de cabeza al marchar en columna de a seis o de a nueve?",
-    "opciones": [
-      "Toda la columna guía es la que no gira la cabeza",
-      "El único que no gira la cabeza es el guía principal de la derecha",
-      "Únicamente giran la cabeza los mandos de sección",
-      "Ninguno de los integrantes debe realizar giros de cabeza"
-    ],
-    "respuestaCorrecta": "Toda la columna guía es la que no gira la cabeza",
-    "tema": "IOC",
-    "explicacion": "El temario indica: 'En columna de a seis o nueve TODA la columna guía es la que no gira la cabeza'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué norma se da en el temario sobre los braceos al realizar variaciones en el orden cerrado?",
-    "opciones": [
-      "Dejar de bracear a la orden EJECUTIVA, volviendo a bracear por filas al acabar la variación",
-      "Continuar braceando ininterrumpidamente durante toda la variación",
-      "Dejar de bracear a la orden PREVENTIVA y reanudar a la orden ejecutiva",
-      "Bracear únicamente con el brazo izquierdo durante el giro"
-    ],
-    "respuestaCorrecta": "Dejar de bracear a la orden EJECUTIVA, volviendo a bracear por filas al acabar la variación",
-    "tema": "IOC",
-    "explicacion": "Sobre las variaciones se indica: 'Variaciones: Dejar de bracear a la orden EJECUTIVA. Se vuelve a bracear por filas cuando acabe la variación'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿A quién le corresponde portar el guion de un batallón o grupo que ha heredado la tradición de regimientos?",
-    "opciones": [
-      "Sargento o cabo 1.º",
-      "Únicamente un suboficial mayor",
-      "Cabo o soldado más antiguo",
-      "Un Oficial subalterno"
-    ],
-    "respuestaCorrecta": "Sargento o cabo 1.º",
-    "tema": "IOC",
-    "explicacion": "El temario establece: 'Guion de batallón o grupo: Sargento o cabo 1.º para aquellos Bóns./Grs. que han heredado la tradición de regimientos y cabo 1.º para el resto'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el tratamiento de hemorragias en el TCCC, ¿cómo se debe aplicar un agente hemostático en la unión de miembros?",
-    "opciones": [
-      "Manteniendo 3 minutos de presión directa",
-      "Manteniendo 10 minutos de presión directa",
-      "Colocando un vendaje compresivo sin ejercer presión manual",
-      "El agente hemostático no requiere presión directa, actúa solo"
-    ],
-    "respuestaCorrecta": "Manteniendo 3 minutos de presión directa",
-    "tema": "TCCC",
-    "explicacion": "En la sección TCCC se lee: 'Agente hemostático en unión de miembros. 3 minutos de presión directa. (3+3+3)'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es el protocolo de evaluación táctica MARCH utilizado en la fase TACTICAL FIELD CARE (TFC) y qué significa la letra 'A'?",
-    "opciones": [
-      "Airway (manejo de la vía aérea)",
-      "Arterial bleeding (control de hemorragia arterial)",
-      "Assessment (evaluación rápida del estado)",
-      "Antisepsis (desinfección de la herida)"
-    ],
-    "respuestaCorrecta": "Airway (manejo de la vía aérea)",
-    "tema": "TCCC",
-    "explicacion": "El protocolo MARCH en la fase TFC significa: M: Massive bleeding, A: Airway (manejo de la vía aérea), R: Respiration, C: Circulation, H: Head Trauma / hypothermia.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es la causa número 2 de baja evitable en combate y cuánto tiempo máximo hay para tratarla?",
-    "opciones": [
-      "14% por vías aéreas. Tratar antes de 6 minutos",
-      "15% por neumotórax. Tratar antes de 5 minutos",
-      "9% por hemotórax. Tratar antes de 9 minutos",
-      "20% por shock. Tratar antes de 10 minutos"
-    ],
-    "respuestaCorrecta": "14% por vías aéreas. Tratar antes de 6 minutos",
-    "tema": "TCCC",
-    "explicacion": "Las causas de baja especificadas son: '2. 14% por vías aéreas. Tratar antes de 6 minutos'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿En qué fase de la asistencia del TCCC interviene el paramédico en ausencia de fuego enemigo (zona templada)?",
-    "opciones": [
-      "TACTICAL FIELD CARE (TFC)",
-      "CARE UNDER FIRE (CUF)",
-      "TACTICAL EVACUATION CARE (TEC)",
-      "MEDEVAC"
-    ],
-    "respuestaCorrecta": "TACTICAL FIELD CARE (TFC)",
-    "tema": "TCCC",
-    "explicacion": "El temario indica: '2. TACTICAL FIELD CARE (TFC): No fuego enemigo (Zona templada). Limitado pero interviene Para-medico'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "De acuerdo con la prevención de riesgos laborales, ¿cómo se define el término 'Prevención'?",
-    "opciones": [
-      "Conjunto de actividades o medidas adoptadas o previstas en todas las fases con el fin de evitar o disminuir los riesgos del trabajo",
-      "Posibilidad de que un trabajador sufra un determinado daño derivado del trabajo",
-      "Obligatoriedad de utilizar los Equipos de Protección Individual",
-      "Estudio médico para calificar la gravedad de un accidente"
-    ],
-    "respuestaCorrecta": "Conjunto de actividades o medidas adoptadas o previstas en todas las fases con el fin de evitar o disminuir los riesgos del trabajo",
-    "tema": "PRL",
-    "explicacion": "El temario define PREVENCIÓN como: 'Conjunto de actividades o medidas adoptadas o previstas en todas las fases de actividades de la empresa con el fin de evitar o disminuir los riesgos derivados del trabajo'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué diferencia hay entre un Accidente sin Baja y un Accidente con Baja en el ámbito de la prevención laboral?",
-    "opciones": [
-      "El accidente sin baja permite seguir trabajando tras la asistencia; el accidente con baja incapacita para la tarea",
-      "El accidente sin baja ocurre fuera de la jornada laboral; el accidente con baja ocurre dentro de la UCO",
-      "El accidente sin baja no tiene consecuencias legales; el accidente con baja requiere juicio",
-      "No hay diferencia administrativa, ambos son términos idénticos"
-    ],
-    "respuestaCorrecta": "El accidente sin baja permite seguir trabajando tras la asistencia; el accidente con baja incapacita para la tarea",
-    "tema": "PRL",
-    "explicacion": "En la sección de PRL se define: 'ACCIDENTE SIN BAJA: Hay lesión pero permite seguir trabajando tras asistencia' y 'ACCIDNTE CON BAJA: Incapacitado para seguir la tarea'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿A través de qué oficina se debe tramitar la solicitud de los Equipos de Protección Individual (EPI) correspondientes a cada puesto de trabajo?",
-    "opciones": [
-      "Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO",
-      "Junta de Evaluación de la Base",
-      "Oficina de Recursos Humanos del Ministerio de Defensa",
-      "Secretaría General de la Unidad"
-    ],
-    "respuestaCorrecta": "Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO",
-    "tema": "PRL",
-    "explicacion": "El temario indica: 'La solicitud de los EPI que le puedan corresponder, siempre basada en la evaluación de riesgos de su puesto de trabajo, debe realizarse a través de la Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Para calificar la gravedad de un riesgo laboral, ¿cuáles son los dos factores que se deben valorar?",
-    "opciones": [
-      "La probabilidad de que se produzca el daño y la severidad del mismo",
-      "La duración de la jornada laboral y la antigüedad del personal",
-      "La presencia de equipos médicos y los recursos materiales de la UCO",
-      "La formación previa del personal y el coste de los EPIs"
-    ],
-    "respuestaCorrecta": "La probabilidad de que se produzca el daño y la severidad del mismo",
-    "tema": "PRL",
-    "explicacion": "El temario indica: 'Para calificar un riesgo desde el punto de vista de su gravedad, se valorará la probabilidad de que se produzca un daño y la severidad del mismo'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cómo se define el Sistema de Gestión Ambiental (ISO 14001) según el temario?",
-    "opciones": [
-      "Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano",
-      "Un reglamento disciplinario para sancionar vertidos industriales en bases aéreas",
-      "Una directiva del JEMA de obligado cumplimiento sobre reciclaje de papel",
-      "Una auditoría de seguridad que determina el apto médico ambiental"
-    ],
-    "respuestaCorrecta": "Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano",
-    "tema": "Medio Ambiente",
-    "explicacion": "El temario define ISO 14001 como: 'ISO 14001: Sistema de gestión ambiental. Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿De cuántos puntos consta la Política Ambiental del Ejército del Aire y del Espacio?",
-    "opciones": [
-      "Consta de 10 puntos",
-      "Consta de 5 puntos",
-      "Consta de 12 puntos",
-      "Consta de 8 puntos"
-    ],
-    "respuestaCorrecta": "Consta de 10 puntos",
-    "tema": "Medio Ambiente",
-    "explicacion": "El temario indica explícitamente: 'Política Ambiental del EA: El JEMA firma las políticas medioambientales. Consta de 10 puntos'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el plan PADEA, ¿cuál es la diferencia entre los conceptos de Tolerancia y Síntomas de abstinencia?",
-    "opciones": [
-      "Tolerancia es la necesidad de dosis mayores; Síntomas de abstinencia son las reacciones al suspender el consumo",
-      "Tolerancia es el deseo intenso; Síntomas de abstinencia es el consumo experimental",
-      "Tolerancia es la intoxicación aguda; Síntomas de abstinencia es el seguimiento de 8 meses",
-      "No hay diferencia, son dos términos clínicos sinónimos"
-    ],
-    "respuestaCorrecta": "Tolerancia es la necesidad de dosis mayores; Síntomas de abstinencia son las reacciones al suspender el consumo",
-    "tema": "PADEA",
-    "explicacion": "Bajo 'Dependencia: Deseo intenso. Produce:', el temario diferencia: 'Tolerancia: se acostumbra a la sustancia. Necesita dosis cada vez mayores. Síntomas de abstinencia: síntomas físico y psicológicos cuando se suspende consumo de drogas'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según la clasificación del PADEA, ¿quién es el consumidor experimental?",
-    "opciones": [
-      "El que realiza ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo",
-      "El que ya sabe previamente lo que puede obtener y escoge el momento propicio",
-      "El que consume periódicamente pero esto no le impide desarrollar su vida",
-      "Aquel para el que el consumo es el centro de su vida"
-    ],
-    "respuestaCorrecta": "El que realiza ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo",
-    "tema": "PADEA",
-    "explicacion": "El temario define: 'Experimentales. Ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según la clasificación del PADEA, ¿quién es el consumidor habitual?",
-    "opciones": [
-      "El que tiene un consumo periódico, que no le impide desarrollar su vida, pero busca el efecto con continuidad",
-      "El que realiza ensayos por curiosidad en una o varias ocasiones sin repetir",
-      "Aquel para el que el consumo es el centro de su vida y constituye un problema",
-      "El que escoge escenarios específicos por conocer previamente los efectos"
-    ],
-    "respuestaCorrecta": "El que tiene un consumo periódico, que no le impide desarrollar su vida, pero busca el efecto con continuidad",
-    "tema": "PADEA",
-    "explicacion": "El temario define: 'Habituales. consumo periódico, “no les impide desarrollar su vida” pero el efecto es buscado con continuidad'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿En qué grado afecta al cuerpo el consumo de drogas más allá del momento del consumo, y qué ejemplo cita el temario?",
-    "opciones": [
-      "Afecta más allá de su consumo, por ejemplo el THC afecta más de 7 días",
-      "Afecta solo durante las 24 horas siguientes al consumo",
-      "Afecta exclusivamente a nivel físico durante un periodo de 48 horas",
-      "No hay efectos residuales que superen los 3 días"
-    ],
-    "respuestaCorrecta": "Afecta más allá de su consumo, por ejemplo el THC afecta más de 7 días",
-    "tema": "PADEA",
-    "explicacion": "El temario señala: 'El consumo de drogas afecta al cuerpo más allá de su consumo. (ej: THC más 7 días). Importa lo que haces en el fin de semana'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  }
+﻿[
+    {
+        "pregunta":  "De acuerdo con los elementos de puntería con pistola descritos en el temario, ¿dónde se debe enfocar la vista para apuntar de manera correcta?",
+        "opciones":  [
+                         "En el blanco u objetivo",
+                         "En el punto de mira y en el blanco de forma alterna",
+                         "En el punto de mira",
+                         "En la parte trasera de la corredera"
+                     ],
+        "respuestaCorrecta":  "En el punto de mira",
+        "tema":  "Tiro",
+        "explicacion":  "El temario indica literalmente: \u0027Elementos de puntería con pistola: Enfocar el punto de mira para apuntar\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuál es la posición oficial de tiro que se detalla en el documento de estudio?",
+        "opciones":  [
+                         "Posición Weaver clásica",
+                         "Isósceles moderna",
+                         "Tendido con apoyo",
+                         "De rodillas en dos tiempos"
+                     ],
+        "respuestaCorrecta":  "Isósceles moderna",
+        "tema":  "Tiro",
+        "explicacion":  "En la sección de TIRO se establece que la posición de tiro oficial es la \u0027Isósceles moderna\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuál es el peso oficial del fusil automático G36E en vacío según el temario?",
+        "opciones":  [
+                         "3,1 kg",
+                         "2,9 kg",
+                         "3,3 kg",
+                         "3,5 kg"
+                     ],
+        "respuestaCorrecta":  "3,3 kg",
+        "tema":  "Armamento",
+        "explicacion":  "El peso detallado para el fusil G36E es de 3,3 kg.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "Respecto a la capacidad del fusil G36E, ¿cuál es la distribución de cartuchos en el cargador y en el arma según el temario?",
+        "opciones":  [
+                         "30 cartuchos en el cargador y 30 en el arma",
+                         "15 cartuchos en el cargador y 16 en el arma",
+                         "30 cartuchos en el cargador y 31 en el arma (uno en recámara)",
+                         "20 cartuchos en el cargador y 21 en el arma"
+                     ],
+        "respuestaCorrecta":  "30 cartuchos en el cargador y 31 en el arma (uno en recámara)",
+        "tema":  "Armamento",
+        "explicacion":  "El temario especifica: \u0027Capacidad: 30 cartuchos cargador. 31 el arma (uno en recamara)\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Qué tipo de rallado tiene el cañón del fusil G36E y de la pistola USP COMPACT según el temario?",
+        "opciones":  [
+                         "Rallado Poligonal Rectilíneo",
+                         "Rallado SINISTRORSUM",
+                         "Rallado DEXTROSUM",
+                         "No disponen de rallado (cañón liso)"
+                     ],
+        "respuestaCorrecta":  "Rallado DEXTROSUM",
+        "tema":  "Armamento",
+        "explicacion":  "El temario indica para ambos modelos de armas: \u0027Rallado DEXTROSUM\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuál es el periodo de vigencia general de las pruebas PAFAS y el periodo para los alumnos que salen del centro de formación?",
+        "opciones":  [
+                         "1 año general y 2 años para egresados",
+                         "Vigencia permanente con revisión médica cada 2 años",
+                         "3 años con revisión anual obligatoria",
+                         "2 años con carácter general y 1 año para alumnos que salen del centro de formación"
+                     ],
+        "respuestaCorrecta":  "2 años con carácter general y 1 año para alumnos que salen del centro de formación",
+        "tema":  "PAFAS",
+        "explicacion":  "El temario recoge: \u0027Vigencia PAFAS: 2 años. Para alumnos que salen del centro de formación 1 año\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Quién ostenta la presidencia de la Junta de Evaluación de las pruebas PAFAS?",
+        "opciones":  [
+                         "El Secretario General del tribunal",
+                         "El Oficial de Adiestramiento de la Base",
+                         "El Jefe de la UCO (Coronel o Teniente Coronel)",
+                         "El Coronel Médico de la Unidad"
+                     ],
+        "respuestaCorrecta":  "El Jefe de la UCO (Coronel o Teniente Coronel)",
+        "tema":  "PAFAS",
+        "explicacion":  "En la Junta de evaluación de las PAFAS, el Presidente del tribunal es el \u0027Jefe de la UCO (Col. O Tcol.)\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "Según la calificación de grupos del temario, ¿qué tipo de grupo se define por relaciones cercanas e informales, y qué grupo por un interés común y relación formal?",
+        "opciones":  [
+                         "Primarios (Familia) y Secundarios (Ejército)",
+                         "De referencia (Ejército) y De pertenencia (Familia)",
+                         "Informales (Trabajo) y Formales (Amigos)",
+                         "Secundarios (Familia) y Primarios (Ejército)"
+                     ],
+        "respuestaCorrecta":  "Primarios (Familia) y Secundarios (Ejército)",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "La clasificación de grupos es: \u0027Grupos primarios: Cercanos e informales (Familia)\u0027 y \u0027Grupos secundarios: Interés común. Relación formal (Ejercito)\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuáles son las categorías estructurales que organizan un grupo según un patrón en el temario de dinámicas de grupo?",
+        "opciones":  [
+                         "Primarios, Secundarios, Formales e Informales",
+                         "Ambiente, Contacto, Cohesión y Actividad",
+                         "Liderazgo, Poder, Puesto y Tarea",
+                         "Rol, Normas grupales, Cohesión grupal y Pensamiento grupal"
+                     ],
+        "respuestaCorrecta":  "Rol, Normas grupales, Cohesión grupal y Pensamiento grupal",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "El temario detalla que la \u0027Estructura: Grupo se organiza según un patrón: Rol, Normas grupales, Cohesión grupal, Pensamiento grupal\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cómo se define el concepto de \u0027Rol\u0027 dentro del estudio de la dinámica de grupos?",
+        "opciones":  [
+                         "Poder legítimo que otorga la organización a un puesto de trabajo",
+                         "Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo",
+                         "Proceso por el que las interacciones sociales modifican la percepción",
+                         "Grado de atracción y unión que sienten los miembros entre sí"
+                     ],
+        "respuestaCorrecta":  "Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "El temario define \u0027Rol: Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuáles son los tres niveles organizativos contemplados en la visión del JEMA sobre el liderazgo?",
+        "opciones":  [
+                         "Estratégico, Operativo y Táctico",
+                         "Jefe, Líder y Subordinado",
+                         "Recursos Humanos, Material y Organización",
+                         "Misión, Subordinados y Familia"
+                     ],
+        "respuestaCorrecta":  "Recursos Humanos, Material y Organización",
+        "tema":  "Liderazgo",
+        "explicacion":  "La visión del JEMA establece que la organización del liderazgo se da en tres niveles: Recursos Humanos, Material y Organización.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuáles son las tres responsabilidades esenciales del mando como líder descritas en el temario?",
+        "opciones":  [
+                         "Fomentar el deporte, realizar evaluaciones PAFAS y tramitar EPIs",
+                         "Mantener la disciplina, controlar los recursos y planificar la instrucción",
+                         "Cumplir la misión, cuidar a tus subordinados y cuidar de sus familias",
+                         "Obedecer las órdenes, adiestrar al personal y gestionar el material"
+                     ],
+        "respuestaCorrecta":  "Cumplir la misión, cuidar a tus subordinados y cuidar de sus familias",
+        "tema":  "Liderazgo",
+        "explicacion":  "Bajo las Responsabilidades como líder se detalla: \u0027Cumplir la misión, Cuidar a tus subordinados, Cuidar también de sus familias\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuáles son las denominadas \u00275C\u0027 que componen el valor militar del \u0027Espíritu de equipo\u0027?",
+        "opciones":  [
+                         "Coordinación, Compromiso, Confianza, Complementariedad y Comunicación",
+                         "Cohesión, Control, Carácter, Compañerismo y Compromiso",
+                         "Cuidado, Conducta, Capacidad, Consistencia y Claridad",
+                         "Comunicación, Calidad, Capacitación, Cooperación y Confianza"
+                     ],
+        "respuestaCorrecta":  "Coordinación, Compromiso, Confianza, Complementariedad y Comunicación",
+        "tema":  "Liderazgo",
+        "explicacion":  "El valor \u0027Espíritu de equipo\u0027 consta de las denominadas \u00275C\u0027: Coordinación, Compromiso, Confianza, Complementariedad, Comunicación.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "En instrucción de orden cerrado, ¿cómo se ejecutan los giros de cabeza al marchar en columna de a seis o de a nueve?",
+        "opciones":  [
+                         "Únicamente giran la cabeza los mandos de sección",
+                         "Toda la columna guía es la que no gira la cabeza",
+                         "Ninguno de los integrantes debe realizar giros de cabeza",
+                         "El único que no gira la cabeza es el guía principal de la derecha"
+                     ],
+        "respuestaCorrecta":  "Toda la columna guía es la que no gira la cabeza",
+        "tema":  "IOC",
+        "explicacion":  "El temario indica: \u0027En columna de a seis o nueve TODA la columna guía es la que no gira la cabeza\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Qué norma se da en el temario sobre los braceos al realizar variaciones en el orden cerrado?",
+        "opciones":  [
+                         "Dejar de bracear a la orden EJECUTIVA, volviendo a bracear por filas al acabar la variación",
+                         "Continuar braceando ininterrumpidamente durante toda la variación",
+                         "Bracear únicamente con el brazo izquierdo durante el giro",
+                         "Dejar de bracear a la orden PREVENTIVA y reanudar a la orden ejecutiva"
+                     ],
+        "respuestaCorrecta":  "Dejar de bracear a la orden EJECUTIVA, volviendo a bracear por filas al acabar la variación",
+        "tema":  "IOC",
+        "explicacion":  "Sobre las variaciones se indica: \u0027Variaciones: Dejar de bracear a la orden EJECUTIVA. Se vuelve a bracear por filas cuando acabe la variación\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿A quién le corresponde portar el guion de un batallón o grupo que ha heredado la tradición de regimientos?",
+        "opciones":  [
+                         "Sargento o cabo 1.º",
+                         "Cabo o soldado más antiguo",
+                         "Únicamente un suboficial mayor",
+                         "Un Oficial subalterno"
+                     ],
+        "respuestaCorrecta":  "Sargento o cabo 1.º",
+        "tema":  "IOC",
+        "explicacion":  "El temario establece: \u0027Guion de batallón o grupo: Sargento o cabo 1.º para aquellos Bóns./Grs. que han heredado la tradición de regimientos y cabo 1.º para el resto\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "En el tratamiento de hemorragias en el TCCC, ¿cómo se debe aplicar un agente hemostático en la unión de miembros?",
+        "opciones":  [
+                         "El agente hemostático no requiere presión directa, actúa solo",
+                         "Manteniendo 3 minutos de presión directa",
+                         "Colocando un vendaje compresivo sin ejercer presión manual",
+                         "Manteniendo 10 minutos de presión directa"
+                     ],
+        "respuestaCorrecta":  "Manteniendo 3 minutos de presión directa",
+        "tema":  "TCCC",
+        "explicacion":  "En la sección TCCC se lee: \u0027Agente hemostático en unión de miembros. 3 minutos de presión directa. (3+3+3)\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuál es el protocolo de evaluación táctica MARCH utilizado en la fase TACTICAL FIELD CARE (TFC) y qué significa la letra \u0027A\u0027?",
+        "opciones":  [
+                         "Airway (manejo de la vía aérea)",
+                         "Antisepsis (desinfección de la herida)",
+                         "Arterial bleeding (control de hemorragia arterial)",
+                         "Assessment (evaluación rápida del estado)"
+                     ],
+        "respuestaCorrecta":  "Airway (manejo de la vía aérea)",
+        "tema":  "TCCC",
+        "explicacion":  "El protocolo MARCH en la fase TFC significa: M: Massive bleeding, A: Airway (manejo de la vía aérea), R: Respiration, C: Circulation, H: Head Trauma / hypothermia.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cuál es la causa número 2 de baja evitable en combate y cuánto tiempo máximo hay para tratarla?",
+        "opciones":  [
+                         "15% por neumotórax. Tratar antes de 5 minutos",
+                         "9% por hemotórax. Tratar antes de 9 minutos",
+                         "20% por shock. Tratar antes de 10 minutos",
+                         "14% por vías aéreas. Tratar antes de 6 minutos"
+                     ],
+        "respuestaCorrecta":  "14% por vías aéreas. Tratar antes de 6 minutos",
+        "tema":  "TCCC",
+        "explicacion":  "Las causas de baja especificadas son: \u00272. 14% por vías aéreas. Tratar antes de 6 minutos\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿En qué fase de la asistencia del TCCC interviene el paramédico en ausencia de fuego enemigo (zona templada)?",
+        "opciones":  [
+                         "TACTICAL FIELD CARE (TFC)",
+                         "MEDEVAC",
+                         "TACTICAL EVACUATION CARE (TEC)",
+                         "CARE UNDER FIRE (CUF)"
+                     ],
+        "respuestaCorrecta":  "TACTICAL FIELD CARE (TFC)",
+        "tema":  "TCCC",
+        "explicacion":  "El temario indica: \u00272. TACTICAL FIELD CARE (TFC): No fuego enemigo (Zona templada). Limitado pero interviene Para-medico\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "De acuerdo con la prevención de riesgos laborales, ¿cómo se define el término \u0027Prevención\u0027?",
+        "opciones":  [
+                         "Estudio médico para calificar la gravedad de un accidente",
+                         "Obligatoriedad de utilizar los Equipos de Protección Individual",
+                         "Conjunto de actividades o medidas adoptadas o previstas en todas las fases con el fin de evitar o disminuir los riesgos del trabajo",
+                         "Posibilidad de que un trabajador sufra un determinado daño derivado del trabajo"
+                     ],
+        "respuestaCorrecta":  "Conjunto de actividades o medidas adoptadas o previstas en todas las fases con el fin de evitar o disminuir los riesgos del trabajo",
+        "tema":  "PRL",
+        "explicacion":  "El temario define PREVENCIÓN como: \u0027Conjunto de actividades o medidas adoptadas o previstas en todas las fases de actividades de la empresa con el fin de evitar o disminuir los riesgos derivados del trabajo\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Qué diferencia hay entre un Accidente sin Baja y un Accidente con Baja en el ámbito de la prevención laboral?",
+        "opciones":  [
+                         "El accidente sin baja no tiene consecuencias legales; el accidente con baja requiere juicio",
+                         "No hay diferencia administrativa, ambos son términos idénticos",
+                         "El accidente sin baja permite seguir trabajando tras la asistencia; el accidente con baja incapacita para la tarea",
+                         "El accidente sin baja ocurre fuera de la jornada laboral; el accidente con baja ocurre dentro de la UCO"
+                     ],
+        "respuestaCorrecta":  "El accidente sin baja permite seguir trabajando tras la asistencia; el accidente con baja incapacita para la tarea",
+        "tema":  "PRL",
+        "explicacion":  "En la sección de PRL se define: \u0027ACCIDENTE SIN BAJA: Hay lesión pero permite seguir trabajando tras asistencia\u0027 y \u0027ACCIDNTE CON BAJA: Incapacitado para seguir la tarea\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿A través de qué oficina se debe tramitar la solicitud de los Equipos de Protección Individual (EPI) correspondientes a cada puesto de trabajo?",
+        "opciones":  [
+                         "Junta de Evaluación de la Base",
+                         "Secretaría General de la Unidad",
+                         "Oficina de Recursos Humanos del Ministerio de Defensa",
+                         "Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO"
+                     ],
+        "respuestaCorrecta":  "Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO",
+        "tema":  "PRL",
+        "explicacion":  "El temario indica: \u0027La solicitud de los EPI que le puedan corresponder, siempre basada en la evaluación de riesgos de su puesto de trabajo, debe realizarse a través de la Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "Para calificar la gravedad de un riesgo laboral, ¿cuáles son los dos factores que se deben valorar?",
+        "opciones":  [
+                         "La formación previa del personal y el coste de los EPIs",
+                         "La probabilidad de que se produzca el daño y la severidad del mismo",
+                         "La presencia de equipos médicos y los recursos materiales de la UCO",
+                         "La duración de la jornada laboral y la antigüedad del personal"
+                     ],
+        "respuestaCorrecta":  "La probabilidad de que se produzca el daño y la severidad del mismo",
+        "tema":  "PRL",
+        "explicacion":  "El temario indica: \u0027Para calificar un riesgo desde el punto de vista de su gravedad, se valorará la probabilidad de que se produzca un daño y la severidad del mismo\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿Cómo se define el Sistema de Gestión Ambiental (ISO 14001) según el temario?",
+        "opciones":  [
+                         "Una auditoría de seguridad que determina el apto médico ambiental",
+                         "Un reglamento disciplinario para sancionar vertidos industriales en bases aéreas",
+                         "Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano",
+                         "Una directiva del JEMA de obligado cumplimiento sobre reciclaje de papel"
+                     ],
+        "respuestaCorrecta":  "Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano",
+        "tema":  "Medio Ambiente",
+        "explicacion":  "El temario define ISO 14001 como: \u0027ISO 14001: Sistema de gestión ambiental. Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿De cuántos puntos consta la Política Ambiental del Ejército del Aire y del Espacio?",
+        "opciones":  [
+                         "Consta de 12 puntos",
+                         "Consta de 8 puntos",
+                         "Consta de 10 puntos",
+                         "Consta de 5 puntos"
+                     ],
+        "respuestaCorrecta":  "Consta de 10 puntos",
+        "tema":  "Medio Ambiente",
+        "explicacion":  "El temario indica explícitamente: \u0027Política Ambiental del EA: El JEMA firma las políticas medioambientales. Consta de 10 puntos\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "En el plan PADEA, ¿cuál es la diferencia entre los conceptos de Tolerancia y Síntomas de abstinencia?",
+        "opciones":  [
+                         "Tolerancia es la intoxicación aguda; Síntomas de abstinencia es el seguimiento de 8 meses",
+                         "Tolerancia es el deseo intenso; Síntomas de abstinencia es el consumo experimental",
+                         "No hay diferencia, son dos términos clínicos sinónimos",
+                         "Tolerancia es la necesidad de dosis mayores; Síntomas de abstinencia son las reacciones al suspender el consumo"
+                     ],
+        "respuestaCorrecta":  "Tolerancia es la necesidad de dosis mayores; Síntomas de abstinencia son las reacciones al suspender el consumo",
+        "tema":  "PADEA",
+        "explicacion":  "Bajo \u0027Dependencia: Deseo intenso. Produce:\u0027, el temario diferencia: \u0027Tolerancia: se acostumbra a la sustancia. Necesita dosis cada vez mayores. Síntomas de abstinencia: síntomas físico y psicológicos cuando se suspende consumo de drogas\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "Según la clasificación del PADEA, ¿quién es el consumidor experimental?",
+        "opciones":  [
+                         "El que ya sabe previamente lo que puede obtener y escoge el momento propicio",
+                         "El que realiza ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo",
+                         "El que consume periódicamente pero esto no le impide desarrollar su vida",
+                         "Aquel para el que el consumo es el centro de su vida"
+                     ],
+        "respuestaCorrecta":  "El que realiza ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo",
+        "tema":  "PADEA",
+        "explicacion":  "El temario define: \u0027Experimentales. Ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "Según la clasificación del PADEA, ¿quién es el consumidor habitual?",
+        "opciones":  [
+                         "El que escoge escenarios específicos por conocer previamente los efectos",
+                         "El que tiene un consumo periódico, que no le impide desarrollar su vida, pero busca el efecto con continuidad",
+                         "El que realiza ensayos por curiosidad en una o varias ocasiones sin repetir",
+                         "Aquel para el que el consumo es el centro de su vida y constituye un problema"
+                     ],
+        "respuestaCorrecta":  "El que tiene un consumo periódico, que no le impide desarrollar su vida, pero busca el efecto con continuidad",
+        "tema":  "PADEA",
+        "explicacion":  "El temario define: \u0027Habituales. consumo periódico, “no les impide desarrollar su vida” pero el efecto es buscado con continuidad\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    },
+    {
+        "pregunta":  "¿En qué grado afecta al cuerpo el consumo de drogas más allá del momento del consumo, y qué ejemplo cita el temario?",
+        "opciones":  [
+                         "Afecta más allá de su consumo, por ejemplo el THC afecta más de 7 días",
+                         "Afecta solo durante las 24 horas siguientes al consumo",
+                         "No hay efectos residuales que superen los 3 días",
+                         "Afecta exclusivamente a nivel físico durante un periodo de 48 horas"
+                     ],
+        "respuestaCorrecta":  "Afecta más allá de su consumo, por ejemplo el THC afecta más de 7 días",
+        "tema":  "PADEA",
+        "explicacion":  "El temario señala: \u0027El consumo de drogas afecta al cuerpo más allá de su consumo. (ej: THC más 7 días). Importa lo que haces en el fin de semana\u0027.",
+        "dificultad":  "media",
+        "imprescindible":  false,
+        "examen":  "simulacro2"
+    }
 ]

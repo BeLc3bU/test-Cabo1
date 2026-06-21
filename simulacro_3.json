@@ -1,452 +1,452 @@
-[
-  {
-    "pregunta": "Cuando el tirador presenta una dominancia cruzada (ojo y mano de diferentes lados), ¿qué técnica específica de tiro con los dos ojos abiertos se debe aplicar según el temario?",
-    "opciones": [
-      "Tiro con los dos ojos abiertos utilizando el ojo y mano de diferentes lados",
-      "Cerrar obligatoriamente el ojo no dominante",
-      "Cambiar la empuñadura a la mano del ojo dominante",
-      "Adoptar la posición Weaver modificada"
-    ],
-    "respuestaCorrecta": "Tiro con los dos ojos abiertos utilizando el ojo y mano de diferentes lados",
-    "tema": "Tiro",
-    "explicacion": "El temario establece literalmente: 'Tiro con los dos ojos abiertos: Ojo y mano de diferentes lados=dominancia cruzada'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "De acuerdo con las especificaciones técnicas del fusil automático G36E, ¿cuál es el principio mecánico de automatismo del arma?",
-    "opciones": [
-      "Fusil automático por toma de gases indirecta",
-      "Fusil automático por retroceso directo de masas",
-      "Fusil automático por toma de gases directa",
-      "Fusil semiautomático por acerrojamiento Browning-Peters"
-    ],
-    "respuestaCorrecta": "Fusil automático por toma de gases indirecta",
-    "tema": "Armamento",
-    "explicacion": "La ficha del fusil G36E indica: 'Fusil automático por toma de gases indirecta'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuántos y de qué tipo son los seguros que posee la pistola USP COMPACT según el temario?",
-    "opciones": [
-      "Seguros: 4 (1 activo + 3 pasivos)",
-      "Seguros: 3 (1 activo + 2 pasivos)",
-      "Seguros: 4 pasivos automáticos",
-      "Seguros: 2 activos manuales"
-    ],
-    "respuestaCorrecta": "Seguros: 4 (1 activo + 3 pasivos)",
-    "tema": "Armamento",
-    "explicacion": "El temario especifica que la USP COMPACT tiene 'Seguros: 4 (1 activo + 3 pasivos)'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál es el sistema de acerrojamiento mecánico que utiliza la pistola USP COMPACT?",
-    "opciones": [
-      "Browning-Peters",
-      "Cierre de rodillos semirrígido",
-      "Bloque de cuña oscilante",
-      "Toma de gases indirecta con cabeza de cierre rotatoria"
-    ],
-    "respuestaCorrecta": "Browning-Peters",
-    "tema": "Armamento",
-    "explicacion": "El sistema de acerrojamiento de la USP COMPACT es: 'Browning-Peters'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Respecto a la capacidad del arma de la pistola USP COMPACT, ¿cuántos cartuchos aloja en total si tiene uno en la recámara?",
-    "opciones": [
-      "14 el arma (13 cartuchos en el cargador)",
-      "13 el arma (12 cartuchos en el cargador)",
-      "15 el arma (14 cartuchos en el cargador)",
-      "16 el arma (15 cartuchos en el cargador)"
-    ],
-    "respuestaCorrecta": "14 el arma (13 cartuchos en el cargador)",
-    "tema": "Armamento",
-    "explicacion": "El temario detalla para la USP COMPACT: 'Capacidad: 13 cartuchos cargador. 14 el arma (uno en recamara)'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según la IG 60-28, ¿qué limitación de edad se establece para la realización de la prueba de circuito de agilidad en las PAFAS?",
-    "opciones": [
-      "Es aplicable solo a menores de 45 años",
-      "Es obligatoria para todos los menores de 50 años",
-      "Está reservada exclusivamente para menores de 35 años",
-      "Se dispensa únicamente a los mayores de 40 años"
-    ],
-    "respuestaCorrecta": "Es aplicable solo a menores de 45 años",
-    "tema": "PAFAS",
-    "explicacion": "En la lista de pruebas físicas se lee: 'Prueba de circuito de agilidad (menores de 45 años)'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuáles son las funciones específicas asignadas al cargo de Secretario General dentro de la Junta de Evaluación de las PAFAS?",
-    "opciones": [
-      "Elabora el acta, comprueba validez de certificados médicos y juez de pruebas",
-      "Firmar las actas finales y presidir el tribunal de apelación",
-      "Tomar los tiempos de carrera y supervisar el circuito de agilidad",
-      "Decidir sobre la calificación de APTO en caso de empate del tribunal"
-    ],
-    "respuestaCorrecta": "Elabora el acta, comprueba validez de certificados médicos y juez de pruebas",
-    "tema": "PAFAS",
-    "explicacion": "El temario asigna al Secretario general de la junta: 'Elabora el acta, comprueba validez de certificados médicos y juez de pruebas'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según la definición del temario, ¿qué es la 'Influencia social' en las dinámicas de grupo?",
-    "opciones": [
-      "Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo",
-      "Capacidad de un mando militar para dirigir las decisiones del grupo por su autoridad",
-      "Poder que los compañeros otorgan a un líder en detrimento de un jefe formal",
-      "Proceso por el que un individuo decide abandonar el grupo de pertenencia"
-    ],
-    "respuestaCorrecta": "Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "En la sección de dinámicas de grupo se define 'Influencia social: Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cómo describe detalladamente el temario el proceso de 'Conformismo'?",
-    "opciones": [
-      "Proceso por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) por presión real o imaginada",
-      "Aceptar las directrices del jefe de grupo por el simple hecho de ocupar el puesto formal",
-      "Adaptar los valores individuales a los del grupo militar de pertenencia voluntariamente",
-      "Cuestionar las decisiones colectivas para evitar el fenómeno de pensamiento grupal"
-    ],
-    "respuestaCorrecta": "Proceso por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) por presión real o imaginada",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "El temario indica sobre Conformismo: 'Proceso de influencia por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) dentro de un grupo. Cambio en la condición, respuestas u opiniones como resultado de una presión, real o imaginada, por parte de una persona o grupo'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuáles son los ejemplos de grupos que el temario asocia respectivamente a 'De referencia' y 'De pertenencia'?",
-    "opciones": [
-      "Familia (referencia) y Ejército (pertenencia)",
-      "Ejército (referencia) y Familia (pertenencia)",
-      "Amigos (referencia) y Grupo de Trabajo (pertenencia)",
-      "Secundarios (referencia) y Primarios (pertenencia)"
-    ],
-    "respuestaCorrecta": "Familia (referencia) y Ejército (pertenencia)",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "La clasificación del temario establece literalmente: 'De referencia: Familia' y 'De pertenencia: Ejercito'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuáles son los cinco escalones de la Pirámide de Maslow que el temario asocia al valor militar de la 'Motivación', ordenados de base a cúspide?",
-    "opciones": [
-      "Biológicas → Seguridad → Pertenencia → Reconocimiento → Autorrealización",
-      "Fisiológicas → Protección → Afecto → Autoestima → Liderazgo",
-      "Básicas → Estabilidad → Afiliación → Estatus → Éxito profesional",
-      "Supervivencia → Seguridad → Integración → Logro → Motivación"
-    ],
-    "respuestaCorrecta": "Biológicas → Seguridad → Pertenencia → Reconocimiento → Autorrealización",
-    "tema": "Liderazgo",
-    "explicacion": "Según el gráfico de la Pirámide de Maslow en el temario, los escalones son: Biológicas (base), Seguridad, Pertenencia, Reconocimiento y Autorrealización (cúspide).",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál de las siguientes afirmaciones sobre las responsabilidades del líder y la influencia es CORRECTA según el modelo del Ejército del Aire?",
-    "opciones": [
-      "El líder influye al resto; tiene la responsabilidad de cumplir la misión, cuidar a subordinados y a sus familias",
-      "El líder solo influye sobre los subordinados directos, no sobre el resto del grupo",
-      "El líder debe centrarse en cumplir la misión; cuidar a subordinados y familias es secundario",
-      "El modelo de liderazgo es exclusivamente piramidal y descendente, sin influencia de retorno"
-    ],
-    "respuestaCorrecta": "El líder influye al resto; tiene la responsabilidad de cumplir la misión, cuidar a subordinados y a sus familias",
-    "tema": "Liderazgo",
-    "explicacion": "El temario describe las responsabilidades: cumplir la misión, cuidar a subordinados y cuidar de sus familias, y añade: '*El líder influye al resto'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "En instrucción de orden cerrado, ¿qué norma rige las variaciones en las formaciones de a seis o a nueve?",
-    "opciones": [
-      "Existe doble variaciones pero no es aconsejable de a seis o a nueve",
-      "Es obligatorio realizar doble variaciones de a seis o a nueve para mantener el alineamiento",
-      "No están permitidas las variaciones en estas columnas por riesgo de colisión",
-      "Las variaciones en estas columnas deben ejecutarse siempre a paso ligero"
-    ],
-    "respuestaCorrecta": "Existe doble variaciones pero no es aconsejable de a seis o a nueve",
-    "tema": "IOC",
-    "explicacion": "El temario expone textualmente: 'Existe doble variaciones pero no es aconsejable de a seis o a nueve'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Con respecto a los guiones y banderines, ¿quiénes están autorizados a portar el guion de batallón o grupo?",
-    "opciones": [
-      "Sargento o cabo 1.º en los que han heredado la tradición de regimientos y cabo 1.º para el resto",
-      "Únicamente sargentos para batallón y cabos 1.º para grupos independientes",
-      "Cabos 1.º o cabos indistintamente, siempre que tengan el apto en las PAFAS",
-      "Soldados de primera bajo la supervisión directa del cabo de escuadra"
-    ],
-    "respuestaCorrecta": "Sargento o cabo 1.º en los que han heredado la tradición de regimientos y cabo 1.º para el resto",
-    "tema": "IOC",
-    "explicacion": "El temario determina: 'Guion de batallón o grupo: Sargento o cabo 1.º para aquellos Bóns./Grs. que han heredado la tradición de regimientos y cabo 1.º para el resto'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Al ejecutar las órdenes de 'Armar' o 'Envainar' la bayoneta, ¿cuál es la regla visual que se debe cumplir obligatoriamente?",
-    "opciones": [
-      "Mirar la bayoneta siempre que la movamos",
-      "Mantener la vista al frente en posición de firmes",
-      "Cerrar los ojos durante el encastre",
-      "Mirar únicamente al suelo para comprobar el encastre"
-    ],
-    "respuestaCorrecta": "Mirar la bayoneta siempre que la movamos",
-    "tema": "IOC",
-    "explicacion": "Sobre armar/envainar, el temario dice: 'Mirar la bayoneta siempre que la movamos. Diferencia de encastre en función al fusil'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuáles son los porcentajes de causas de baja evitable y sus respectivos tiempos límite de tratamiento según el TCCC?",
-    "opciones": [
-      "85% Hemorragias (<3 min), 14% Vías Aéreas (<6 min), 9% Hemotórax (<9 min)",
-      "80% Hemorragias (<5 min), 15% Vías Aéreas (<8 min), 5% Hemotórax (<10 min)",
-      "85% Hemorragias (<5 min), 10% Vías Aéreas (<3 min), 5% Hemotórax (<6 min)",
-      "90% Hemorragias (<3 min), 8% Vías Aéreas (<6 min), 2% Hemotórax (<9 min)"
-    ],
-    "respuestaCorrecta": "85% Hemorragias (<3 min), 14% Vías Aéreas (<6 min), 9% Hemotórax (<9 min)",
-    "tema": "TCCC",
-    "explicacion": "Las estadísticas exactas del temario son: '1. 85% por Hemorragias. Tratar antes de 3 minutos', '2. 14% por vías aéreas. Tratar antes de 6 minutos' y '3. 9% Hemotorax. Tratar antes de 9 minutos'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "En el TCCC, ¿en qué consiste la regla de aplicación de presión directa con agente hemostático para hemorragias en unión de miembros?",
-    "opciones": [
-      "3 minutos de presión directa con esquema (3+3+3)",
-      "Presión continua durante 9 minutos sin interrupción alguna",
-      "Presión directa durante 5 minutos y luego vendaje compresivo durante 3 minutos",
-      "Presión intermitente de 1 minuto seguida de descanso de 3 minutos"
-    ],
-    "respuestaCorrecta": "3 minutos de presión directa con esquema (3+3+3)",
-    "tema": "TCCC",
-    "explicacion": "La directriz de tratamiento indica: 'Agente hemostático en unión de miembros. 3 minutos de presión directa. (3+3+3)'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "En la fase CARE UNDER FIRE (CUF), ¿cuál es la conducta correcta ante un herido durante una escaramuza activa?",
-    "opciones": [
-      "En escaramuza NO asistimos al herido y se ordena o espera que continúe disparando si es viable",
-      "Proporcionar asistencia paramédica inmediata bajo fuego de cobertura",
-      "Evacuar inmediatamente al herido hacia la zona templada (TFC)",
-      "Aplicar el protocolo MARCH completo antes de repeler la agresión"
-    ],
-    "respuestaCorrecta": "En escaramuza NO asistimos al herido y se ordena o espera que continúe disparando si es viable",
-    "tema": "TCCC",
-    "explicacion": "En la sección CUF del temario se detalla: 'Ordenar o esperar que el herido continúe disparando en el combate, si es viable. En escaramuza NO asistimos al herido. Tratar hemorragias con torniquete'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según el protocolo MARCH aplicado en la fase TACTICAL FIELD CARE (TFC), ¿qué representan detalladamente las siglas 'R', 'C' e 'H'?",
-    "opciones": [
-      "Respiration (respiración), Circulation (circulación) y Head Trauma / hypothermia (traumatismo craneal / hipotermia)",
-      "Rescue (rescate), Compression (compresión) y Hospitalization (hospitalización)",
-      "Reanimation (reanimación), Cardiography (cardiografía) y Hemostasis (hemostasia)",
-      "Resuscitation (resucitación), Clearing (limpieza de vía) y Hemorrhage (hemorragia)"
-    ],
-    "respuestaCorrecta": "Respiration (respiración), Circulation (circulación) y Head Trauma / hypothermia (traumatismo craneal / hipotermia)",
-    "tema": "TCCC",
-    "explicacion": "En el protocolo MARCH de TFC, las letras significan: M: Massive bleeding, A: Airway, R: Respiration, C: Circulation, H: Head Trauma / hypothermia.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál es la definición y características de la fase TACTICAL EVACUATION CARE (TEC) dentro del TCCC?",
-    "opciones": [
-      "Asistencia tras evacuación (Zona fría) por personal médico y equipo medicalizado",
-      "Asistencia paramédica precoz en la Zona Templada sin fuego hostil",
-      "Tratamiento de hemorragias masivas únicamente con torniquete bajo fuego enemigo",
-      "Estadística de bajas basada en el tiempo límite de evacuación del combatiente"
-    ],
-    "respuestaCorrecta": "Asistencia tras evacuación (Zona fría) por personal médico y equipo medicalizado",
-    "tema": "TCCC",
-    "explicacion": "El temario define: '3. TACTICAL EVACUATION CARE (TEC): Asistencia tras evacuación (Zona fría). Personal médico y equipo medicalizado'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Qué diferencia al Accidente in Itinere de los Accidentes con o sin baja según las definiciones de prevención de riesgos?",
-    "opciones": [
-      "El in itinere se define estrictamente por ocurrir durante el desplazamiento al trabajo",
-      "El in itinere no provoca lesión física alguna en el trabajador",
-      "El in itinere exime de la obligatoriedad de usar los Equipos de Protección Individual",
-      "El in itinere es competencia exclusiva del personal civil, no del personal militar"
-    ],
-    "respuestaCorrecta": "El in itinere se define estrictamente por ocurrir durante el desplazamiento al trabajo",
-    "tema": "PRL",
-    "explicacion": "El temario clasifica los accidentes por sus consecuencias y circunstancias: 'ACCIDENTE IN ITINERE: Durante el desplazamiento al trabajo'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según la normativa de prevención de riesgos laborales del Ejército del Aire, ¿cómo se califica formalmente un 'Accidente de trabajo'?",
-    "opciones": [
-      "Lesión corporal",
-      "Daño a las instalaciones derivado de una negligencia",
-      "Posibilidad de que un trabajador sufra un determinado daño",
-      "Cualquier incidente ocurrido en acto de servicio"
-    ],
-    "respuestaCorrecta": "Lesión corporal",
-    "tema": "PRL",
-    "explicacion": "El temario define de manera escueta: 'ACCIDENTE DE TRABAJO: Lesión corporal'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "De acuerdo con la gestión de prevención, ¿sobre qué base se debe realizar la solicitud de un Equipo de Protección Individual (EPI)?",
-    "opciones": [
-      "Siempre basada en la evaluación de riesgos de su puesto de trabajo",
-      "Sobre la base de la antigüedad del trabajador y su rango",
-      "Exclusivamente por petición del jefe de la UCO sin justificación técnica",
-      "En función de la disponibilidad de presupuesto anual en la UCO"
-    ],
-    "respuestaCorrecta": "Siempre basada en la evaluación de riesgos de su puesto de trabajo",
-    "tema": "PRL",
-    "explicacion": "El temario es claro: 'La solicitud de los EPI que le puedan corresponder, siempre basada en la evaluación de riesgos de su puesto de trabajo, debe realizarse a través de la Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según la norma ISO 14001, ¿qué preguntas fundamentales debe responder el Sistema de Gestión Ambiental en la UCO?",
-    "opciones": [
-      "Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse",
-      "Quién contamina, qué sanción se aplica, cuánto cuesta la multa y cómo recurrirla",
-      "Cuántos recursos se consumen, qué porcentaje se recicla y a qué coste",
-      "Qué directiva se incumple, quién firma el acta y cuándo se ejecuta la sanción"
-    ],
-    "respuestaCorrecta": "Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse",
-    "tema": "Medio Ambiente",
-    "explicacion": "El temario detalla que la ISO 14001 responde a: 'Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según la clasificación del PADEA, ¿en qué consiste la diferencia entre un consumidor ocasional y un consumidor dependiente?",
-    "opciones": [
-      "El ocasional conoce los efectos y escoge momentos propicios; el dependiente tiene el consumo como centro de su vida",
-      "El ocasional realiza ensayos por curiosidad; el dependiente consume periódicamente sin alterar su rutina",
-      "El ocasional consume los fines de semana; el dependiente consume exclusivamente en días laborables",
-      "El ocasional da negativo en las pruebas; el dependiente requiere 8 meses de seguimiento"
-    ],
-    "respuestaCorrecta": "El ocasional conoce los efectos y escoge momentos propicios; el dependiente tiene el consumo como centro de su vida",
-    "tema": "PADEA",
-    "explicacion": "El temario clasifica a los consumidores en: 'Ocasionales. La persona ya sabe previamente lo que puede obtener de una droga y escoge los momentos y escenarios más propicios para sentir los efectos' y 'Dependientes. El consumo es el centro de sus vidas. PROBLEMA'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "De acuerdo con el plan PADEA, ¿qué se entiende por el fenómeno de la 'Tolerancia' en un consumidor?",
-    "opciones": [
-      "Se acostumbra a la sustancia y necesita dosis cada vez mayores",
-      "El deseo intenso y obsesivo de consumir una droga",
-      "Los síntomas físicos y psicológicos al interrumpir bruscamente el consumo",
-      "La capacidad del organismo para eliminar la sustancia en un fin de semana"
-    ],
-    "respuestaCorrecta": "Se acostumbra a la sustancia y necesita dosis cada vez mayores",
-    "tema": "PADEA",
-    "explicacion": "El temario describe la Tolerancia como: 'Tolerancia: se acostumbra a la sustancia. Necesita dosis cada vez mayores'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según el temario de adicciones, ¿cómo se define clínicamente la 'Dependencia'?",
-    "opciones": [
-      "Deseo intenso",
-      "Consumo periódico que no impide llevar una vida normal",
-      "Alteración física temporal del sistema nervioso",
-      "Acción de evadir las órdenes legítimas de control de la UCO"
-    ],
-    "respuestaCorrecta": "Deseo intenso",
-    "tema": "PADEA",
-    "explicacion": "El temario define de manera literal: 'Dependencia: Deseo intenso'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿En qué grado afecta al organismo el consumo de cannabis (THC) y qué advertencia temporal realiza el plan PADEA?",
-    "opciones": [
-      "El consumo de THC afecta al cuerpo más de 7 días, importando lo que se hace en el fin de semana",
-      "El THC se elimina por completo en 24 horas y no deja secuelas físicas",
-      "Afecta al cuerpo solo durante las primeras 12 horas tras el consumo",
-      "El THC afecta únicamente al rendimiento en las pruebas físicas PAFAS"
-    ],
-    "respuestaCorrecta": "El consumo de THC afecta al cuerpo más de 7 días, importando lo que se hace en el fin de semana",
-    "tema": "PADEA",
-    "explicacion": "El temario expone textualmente: 'El consumo de drogas afecta al cuerpo más allá de su consumo. (ej: THC más 7 días). Importa lo que haces en el fin de semana'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según el temario del PADEA, ¿qué consecuencias tiene negarse a cumplir un deber legítimamente ordenado relacionado con el control de drogas?",
-    "opciones": [
-      "Medidas disciplinarias y, en el caso de los alumnos, la expulsión",
-      "Una sanción económica de hasta el 50% de la retribución mensual",
-      "La suspensión automática de la vigencia de las pruebas PAFAS",
-      "El arresto preventivo en la UCO por un periodo de 30 días"
-    ],
-    "respuestaCorrecta": "Medidas disciplinarias y, en el caso de los alumnos, la expulsión",
-    "tema": "PADEA",
-    "explicacion": "El temario recoge: 'La negativa al cumplimiento de un deber legítimamente ordenado puede dar lugar a la aplicación de medidas disciplinarias (y a la expulsión en caso de alumnos)'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Según la clasificación del PADEA, ¿cuál es la característica que define al consumidor 'habitual'?",
-    "opciones": [
-      "Consumo periódico, no les impide desarrollar su vida pero el efecto es buscado con continuidad",
-      "Ensayos por curiosidad en una o varias ocasiones sin intención de repetir",
-      "Deseo intenso y obsesivo que constituye el centro de su vida",
-      "Consumo selectivo escogiendo escenarios específicos por conocer los efectos"
-    ],
-    "respuestaCorrecta": "Consumo periódico, no les impide desarrollar su vida pero el efecto es buscado con continuidad",
-    "tema": "PADEA",
-    "explicacion": "El temario define: 'Habituales. consumo periódico, “no les impide desarrollar su vida” pero el efecto es buscado con continuidad'.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  }
+﻿[
+    {
+        "pregunta":  "Cuando el tirador presenta una dominancia cruzada (ojo y mano de diferentes lados), ¿qué técnica específica de tiro con los dos ojos abiertos se debe aplicar según el temario?",
+        "opciones":  [
+                         "Cerrar obligatoriamente el ojo no dominante",
+                         "Adoptar la posición Weaver modificada",
+                         "Cambiar la empuñadura a la mano del ojo dominante",
+                         "Tiro con los dos ojos abiertos utilizando el ojo y mano de diferentes lados"
+                     ],
+        "respuestaCorrecta":  "Tiro con los dos ojos abiertos utilizando el ojo y mano de diferentes lados",
+        "tema":  "Tiro",
+        "explicacion":  "El temario establece literalmente: \u0027Tiro con los dos ojos abiertos: Ojo y mano de diferentes lados=dominancia cruzada\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "De acuerdo con las especificaciones técnicas del fusil automático G36E, ¿cuál es el principio mecánico de automatismo del arma?",
+        "opciones":  [
+                         "Fusil automático por retroceso directo de masas",
+                         "Fusil automático por toma de gases indirecta",
+                         "Fusil automático por toma de gases directa",
+                         "Fusil semiautomático por acerrojamiento Browning-Peters"
+                     ],
+        "respuestaCorrecta":  "Fusil automático por toma de gases indirecta",
+        "tema":  "Armamento",
+        "explicacion":  "La ficha del fusil G36E indica: \u0027Fusil automático por toma de gases indirecta\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuántos y de qué tipo son los seguros que posee la pistola USP COMPACT según el temario?",
+        "opciones":  [
+                         "Seguros: 2 activos manuales",
+                         "Seguros: 4 (1 activo + 3 pasivos)",
+                         "Seguros: 3 (1 activo + 2 pasivos)",
+                         "Seguros: 4 pasivos automáticos"
+                     ],
+        "respuestaCorrecta":  "Seguros: 4 (1 activo + 3 pasivos)",
+        "tema":  "Armamento",
+        "explicacion":  "El temario especifica que la USP COMPACT tiene \u0027Seguros: 4 (1 activo + 3 pasivos)\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuál es el sistema de acerrojamiento mecánico que utiliza la pistola USP COMPACT?",
+        "opciones":  [
+                         "Toma de gases indirecta con cabeza de cierre rotatoria",
+                         "Cierre de rodillos semirrígido",
+                         "Browning-Peters",
+                         "Bloque de cuña oscilante"
+                     ],
+        "respuestaCorrecta":  "Browning-Peters",
+        "tema":  "Armamento",
+        "explicacion":  "El sistema de acerrojamiento de la USP COMPACT es: \u0027Browning-Peters\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Respecto a la capacidad del arma de la pistola USP COMPACT, ¿cuántos cartuchos aloja en total si tiene uno en la recámara?",
+        "opciones":  [
+                         "15 el arma (14 cartuchos en el cargador)",
+                         "16 el arma (15 cartuchos en el cargador)",
+                         "13 el arma (12 cartuchos en el cargador)",
+                         "14 el arma (13 cartuchos en el cargador)"
+                     ],
+        "respuestaCorrecta":  "14 el arma (13 cartuchos en el cargador)",
+        "tema":  "Armamento",
+        "explicacion":  "El temario detalla para la USP COMPACT: \u0027Capacidad: 13 cartuchos cargador. 14 el arma (uno en recamara)\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según la IG 60-28, ¿qué limitación de edad se establece para la realización de la prueba de circuito de agilidad en las PAFAS?",
+        "opciones":  [
+                         "Es aplicable solo a menores de 45 años",
+                         "Se dispensa únicamente a los mayores de 40 años",
+                         "Es obligatoria para todos los menores de 50 años",
+                         "Está reservada exclusivamente para menores de 35 años"
+                     ],
+        "respuestaCorrecta":  "Es aplicable solo a menores de 45 años",
+        "tema":  "PAFAS",
+        "explicacion":  "En la lista de pruebas físicas se lee: \u0027Prueba de circuito de agilidad (menores de 45 años)\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuáles son las funciones específicas asignadas al cargo de Secretario General dentro de la Junta de Evaluación de las PAFAS?",
+        "opciones":  [
+                         "Tomar los tiempos de carrera y supervisar el circuito de agilidad",
+                         "Firmar las actas finales y presidir el tribunal de apelación",
+                         "Decidir sobre la calificación de APTO en caso de empate del tribunal",
+                         "Elabora el acta, comprueba validez de certificados médicos y juez de pruebas"
+                     ],
+        "respuestaCorrecta":  "Elabora el acta, comprueba validez de certificados médicos y juez de pruebas",
+        "tema":  "PAFAS",
+        "explicacion":  "El temario asigna al Secretario general de la junta: \u0027Elabora el acta, comprueba validez de certificados médicos y juez de pruebas\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según la definición del temario, ¿qué es la \u0027Influencia social\u0027 en las dinámicas de grupo?",
+        "opciones":  [
+                         "Capacidad de un mando militar para dirigir las decisiones del grupo por su autoridad",
+                         "Proceso por el que un individuo decide abandonar el grupo de pertenencia",
+                         "Poder que los compañeros otorgan a un líder en detrimento de un jefe formal",
+                         "Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo"
+                     ],
+        "respuestaCorrecta":  "Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "En la sección de dinámicas de grupo se define \u0027Influencia social: Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cómo describe detalladamente el temario el proceso de \u0027Conformismo\u0027?",
+        "opciones":  [
+                         "Proceso por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) por presión real o imaginada",
+                         "Aceptar las directrices del jefe de grupo por el simple hecho de ocupar el puesto formal",
+                         "Adaptar los valores individuales a los del grupo militar de pertenencia voluntariamente",
+                         "Cuestionar las decisiones colectivas para evitar el fenómeno de pensamiento grupal"
+                     ],
+        "respuestaCorrecta":  "Proceso por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) por presión real o imaginada",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "El temario indica sobre Conformismo: \u0027Proceso de influencia por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) dentro de un grupo. Cambio en la condición, respuestas u opiniones como resultado de una presión, real o imaginada, por parte de una persona o grupo\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuáles son los ejemplos de grupos que el temario asocia respectivamente a \u0027De referencia\u0027 y \u0027De pertenencia\u0027?",
+        "opciones":  [
+                         "Amigos (referencia) y Grupo de Trabajo (pertenencia)",
+                         "Ejército (referencia) y Familia (pertenencia)",
+                         "Familia (referencia) y Ejército (pertenencia)",
+                         "Secundarios (referencia) y Primarios (pertenencia)"
+                     ],
+        "respuestaCorrecta":  "Familia (referencia) y Ejército (pertenencia)",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "La clasificación del temario establece literalmente: \u0027De referencia: Familia\u0027 y \u0027De pertenencia: Ejercito\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuáles son los cinco escalones de la Pirámide de Maslow que el temario asocia al valor militar de la \u0027Motivación\u0027, ordenados de base a cúspide?",
+        "opciones":  [
+                         "Básicas → Estabilidad → Afiliación → Estatus → Éxito profesional",
+                         "Fisiológicas → Protección → Afecto → Autoestima → Liderazgo",
+                         "Supervivencia → Seguridad → Integración → Logro → Motivación",
+                         "Biológicas → Seguridad → Pertenencia → Reconocimiento → Autorrealización"
+                     ],
+        "respuestaCorrecta":  "Biológicas → Seguridad → Pertenencia → Reconocimiento → Autorrealización",
+        "tema":  "Liderazgo",
+        "explicacion":  "Según el gráfico de la Pirámide de Maslow en el temario, los escalones son: Biológicas (base), Seguridad, Pertenencia, Reconocimiento y Autorrealización (cúspide).",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuál de las siguientes afirmaciones sobre las responsabilidades del líder y la influencia es CORRECTA según el modelo del Ejército del Aire?",
+        "opciones":  [
+                         "El líder influye al resto; tiene la responsabilidad de cumplir la misión, cuidar a subordinados y a sus familias",
+                         "El modelo de liderazgo es exclusivamente piramidal y descendente, sin influencia de retorno",
+                         "El líder debe centrarse en cumplir la misión; cuidar a subordinados y familias es secundario",
+                         "El líder solo influye sobre los subordinados directos, no sobre el resto del grupo"
+                     ],
+        "respuestaCorrecta":  "El líder influye al resto; tiene la responsabilidad de cumplir la misión, cuidar a subordinados y a sus familias",
+        "tema":  "Liderazgo",
+        "explicacion":  "El temario describe las responsabilidades: cumplir la misión, cuidar a subordinados y cuidar de sus familias, y añade: \u0027*El líder influye al resto\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "En instrucción de orden cerrado, ¿qué norma rige las variaciones en las formaciones de a seis o a nueve?",
+        "opciones":  [
+                         "No están permitidas las variaciones en estas columnas por riesgo de colisión",
+                         "Existe doble variaciones pero no es aconsejable de a seis o a nueve",
+                         "Es obligatorio realizar doble variaciones de a seis o a nueve para mantener el alineamiento",
+                         "Las variaciones en estas columnas deben ejecutarse siempre a paso ligero"
+                     ],
+        "respuestaCorrecta":  "Existe doble variaciones pero no es aconsejable de a seis o a nueve",
+        "tema":  "IOC",
+        "explicacion":  "El temario expone textualmente: \u0027Existe doble variaciones pero no es aconsejable de a seis o a nueve\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Con respecto a los guiones y banderines, ¿quiénes están autorizados a portar el guion de batallón o grupo?",
+        "opciones":  [
+                         "Soldados de primera bajo la supervisión directa del cabo de escuadra",
+                         "Cabos 1.º o cabos indistintamente, siempre que tengan el apto en las PAFAS",
+                         "Únicamente sargentos para batallón y cabos 1.º para grupos independientes",
+                         "Sargento o cabo 1.º en los que han heredado la tradición de regimientos y cabo 1.º para el resto"
+                     ],
+        "respuestaCorrecta":  "Sargento o cabo 1.º en los que han heredado la tradición de regimientos y cabo 1.º para el resto",
+        "tema":  "IOC",
+        "explicacion":  "El temario determina: \u0027Guion de batallón o grupo: Sargento o cabo 1.º para aquellos Bóns./Grs. que han heredado la tradición de regimientos y cabo 1.º para el resto\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Al ejecutar las órdenes de \u0027Armar\u0027 o \u0027Envainar\u0027 la bayoneta, ¿cuál es la regla visual que se debe cumplir obligatoriamente?",
+        "opciones":  [
+                         "Mantener la vista al frente en posición de firmes",
+                         "Mirar la bayoneta siempre que la movamos",
+                         "Mirar únicamente al suelo para comprobar el encastre",
+                         "Cerrar los ojos durante el encastre"
+                     ],
+        "respuestaCorrecta":  "Mirar la bayoneta siempre que la movamos",
+        "tema":  "IOC",
+        "explicacion":  "Sobre armar/envainar, el temario dice: \u0027Mirar la bayoneta siempre que la movamos. Diferencia de encastre en función al fusil\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuáles son los porcentajes de causas de baja evitable y sus respectivos tiempos límite de tratamiento según el TCCC?",
+        "opciones":  [
+                         "80% Hemorragias (\u003c5 min), 15% Vías Aéreas (\u003c8 min), 5% Hemotórax (\u003c10 min)",
+                         "85% Hemorragias (\u003c3 min), 14% Vías Aéreas (\u003c6 min), 9% Hemotórax (\u003c9 min)",
+                         "85% Hemorragias (\u003c5 min), 10% Vías Aéreas (\u003c3 min), 5% Hemotórax (\u003c6 min)",
+                         "90% Hemorragias (\u003c3 min), 8% Vías Aéreas (\u003c6 min), 2% Hemotórax (\u003c9 min)"
+                     ],
+        "respuestaCorrecta":  "85% Hemorragias (\u003c3 min), 14% Vías Aéreas (\u003c6 min), 9% Hemotórax (\u003c9 min)",
+        "tema":  "TCCC",
+        "explicacion":  "Las estadísticas exactas del temario son: \u00271. 85% por Hemorragias. Tratar antes de 3 minutos\u0027, \u00272. 14% por vías aéreas. Tratar antes de 6 minutos\u0027 y \u00273. 9% Hemotorax. Tratar antes de 9 minutos\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "En el TCCC, ¿en qué consiste la regla de aplicación de presión directa con agente hemostático para hemorragias en unión de miembros?",
+        "opciones":  [
+                         "3 minutos de presión directa con esquema (3+3+3)",
+                         "Presión continua durante 9 minutos sin interrupción alguna",
+                         "Presión directa durante 5 minutos y luego vendaje compresivo durante 3 minutos",
+                         "Presión intermitente de 1 minuto seguida de descanso de 3 minutos"
+                     ],
+        "respuestaCorrecta":  "3 minutos de presión directa con esquema (3+3+3)",
+        "tema":  "TCCC",
+        "explicacion":  "La directriz de tratamiento indica: \u0027Agente hemostático en unión de miembros. 3 minutos de presión directa. (3+3+3)\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "En la fase CARE UNDER FIRE (CUF), ¿cuál es la conducta correcta ante un herido durante una escaramuza activa?",
+        "opciones":  [
+                         "Aplicar el protocolo MARCH completo antes de repeler la agresión",
+                         "En escaramuza NO asistimos al herido y se ordena o espera que continúe disparando si es viable",
+                         "Proporcionar asistencia paramédica inmediata bajo fuego de cobertura",
+                         "Evacuar inmediatamente al herido hacia la zona templada (TFC)"
+                     ],
+        "respuestaCorrecta":  "En escaramuza NO asistimos al herido y se ordena o espera que continúe disparando si es viable",
+        "tema":  "TCCC",
+        "explicacion":  "En la sección CUF del temario se detalla: \u0027Ordenar o esperar que el herido continúe disparando en el combate, si es viable. En escaramuza NO asistimos al herido. Tratar hemorragias con torniquete\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según el protocolo MARCH aplicado en la fase TACTICAL FIELD CARE (TFC), ¿qué representan detalladamente las siglas \u0027R\u0027, \u0027C\u0027 e \u0027H\u0027?",
+        "opciones":  [
+                         "Reanimation (reanimación), Cardiography (cardiografía) y Hemostasis (hemostasia)",
+                         "Rescue (rescate), Compression (compresión) y Hospitalization (hospitalización)",
+                         "Respiration (respiración), Circulation (circulación) y Head Trauma / hypothermia (traumatismo craneal / hipotermia)",
+                         "Resuscitation (resucitación), Clearing (limpieza de vía) y Hemorrhage (hemorragia)"
+                     ],
+        "respuestaCorrecta":  "Respiration (respiración), Circulation (circulación) y Head Trauma / hypothermia (traumatismo craneal / hipotermia)",
+        "tema":  "TCCC",
+        "explicacion":  "En el protocolo MARCH de TFC, las letras significan: M: Massive bleeding, A: Airway, R: Respiration, C: Circulation, H: Head Trauma / hypothermia.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Cuál es la definición y características de la fase TACTICAL EVACUATION CARE (TEC) dentro del TCCC?",
+        "opciones":  [
+                         "Tratamiento de hemorragias masivas únicamente con torniquete bajo fuego enemigo",
+                         "Estadística de bajas basada en el tiempo límite de evacuación del combatiente",
+                         "Asistencia paramédica precoz en la Zona Templada sin fuego hostil",
+                         "Asistencia tras evacuación (Zona fría) por personal médico y equipo medicalizado"
+                     ],
+        "respuestaCorrecta":  "Asistencia tras evacuación (Zona fría) por personal médico y equipo medicalizado",
+        "tema":  "TCCC",
+        "explicacion":  "El temario define: \u00273. TACTICAL EVACUATION CARE (TEC): Asistencia tras evacuación (Zona fría). Personal médico y equipo medicalizado\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿Qué diferencia al Accidente in Itinere de los Accidentes con o sin baja según las definiciones de prevención de riesgos?",
+        "opciones":  [
+                         "El in itinere exime de la obligatoriedad de usar los Equipos de Protección Individual",
+                         "El in itinere no provoca lesión física alguna en el trabajador",
+                         "El in itinere es competencia exclusiva del personal civil, no del personal militar",
+                         "El in itinere se define estrictamente por ocurrir durante el desplazamiento al trabajo"
+                     ],
+        "respuestaCorrecta":  "El in itinere se define estrictamente por ocurrir durante el desplazamiento al trabajo",
+        "tema":  "PRL",
+        "explicacion":  "El temario clasifica los accidentes por sus consecuencias y circunstancias: \u0027ACCIDENTE IN ITINERE: Durante el desplazamiento al trabajo\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según la normativa de prevención de riesgos laborales del Ejército del Aire, ¿cómo se califica formalmente un \u0027Accidente de trabajo\u0027?",
+        "opciones":  [
+                         "Daño a las instalaciones derivado de una negligencia",
+                         "Lesión corporal",
+                         "Cualquier incidente ocurrido en acto de servicio",
+                         "Posibilidad de que un trabajador sufra un determinado daño"
+                     ],
+        "respuestaCorrecta":  "Lesión corporal",
+        "tema":  "PRL",
+        "explicacion":  "El temario define de manera escueta: \u0027ACCIDENTE DE TRABAJO: Lesión corporal\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "De acuerdo con la gestión de prevención, ¿sobre qué base se debe realizar la solicitud de un Equipo de Protección Individual (EPI)?",
+        "opciones":  [
+                         "Exclusivamente por petición del jefe de la UCO sin justificación técnica",
+                         "En función de la disponibilidad de presupuesto anual en la UCO",
+                         "Siempre basada en la evaluación de riesgos de su puesto de trabajo",
+                         "Sobre la base de la antigüedad del trabajador y su rango"
+                     ],
+        "respuestaCorrecta":  "Siempre basada en la evaluación de riesgos de su puesto de trabajo",
+        "tema":  "PRL",
+        "explicacion":  "El temario es claro: \u0027La solicitud de los EPI que le puedan corresponder, siempre basada en la evaluación de riesgos de su puesto de trabajo, debe realizarse a través de la Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según la norma ISO 14001, ¿qué preguntas fundamentales debe responder el Sistema de Gestión Ambiental en la UCO?",
+        "opciones":  [
+                         "Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse",
+                         "Quién contamina, qué sanción se aplica, cuánto cuesta la multa y cómo recurrirla",
+                         "Qué directiva se incumple, quién firma el acta y cuándo se ejecuta la sanción",
+                         "Cuántos recursos se consumen, qué porcentaje se recicla y a qué coste"
+                     ],
+        "respuestaCorrecta":  "Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse",
+        "tema":  "Medio Ambiente",
+        "explicacion":  "El temario detalla que la ISO 14001 responde a: \u0027Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según la clasificación del PADEA, ¿en qué consiste la diferencia entre un consumidor ocasional y un consumidor dependiente?",
+        "opciones":  [
+                         "El ocasional conoce los efectos y escoge momentos propicios; el dependiente tiene el consumo como centro de su vida",
+                         "El ocasional realiza ensayos por curiosidad; el dependiente consume periódicamente sin alterar su rutina",
+                         "El ocasional consume los fines de semana; el dependiente consume exclusivamente en días laborables",
+                         "El ocasional da negativo en las pruebas; el dependiente requiere 8 meses de seguimiento"
+                     ],
+        "respuestaCorrecta":  "El ocasional conoce los efectos y escoge momentos propicios; el dependiente tiene el consumo como centro de su vida",
+        "tema":  "PADEA",
+        "explicacion":  "El temario clasifica a los consumidores en: \u0027Ocasionales. La persona ya sabe previamente lo que puede obtener de una droga y escoge los momentos y escenarios más propicios para sentir los efectos\u0027 y \u0027Dependientes. El consumo es el centro de sus vidas. PROBLEMA\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "De acuerdo con el plan PADEA, ¿qué se entiende por el fenómeno de la \u0027Tolerancia\u0027 en un consumidor?",
+        "opciones":  [
+                         "Los síntomas físicos y psicológicos al interrumpir bruscamente el consumo",
+                         "El deseo intenso y obsesivo de consumir una droga",
+                         "Se acostumbra a la sustancia y necesita dosis cada vez mayores",
+                         "La capacidad del organismo para eliminar la sustancia en un fin de semana"
+                     ],
+        "respuestaCorrecta":  "Se acostumbra a la sustancia y necesita dosis cada vez mayores",
+        "tema":  "PADEA",
+        "explicacion":  "El temario describe la Tolerancia como: \u0027Tolerancia: se acostumbra a la sustancia. Necesita dosis cada vez mayores\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según el temario de adicciones, ¿cómo se define clínicamente la \u0027Dependencia\u0027?",
+        "opciones":  [
+                         "Alteración física temporal del sistema nervioso",
+                         "Acción de evadir las órdenes legítimas de control de la UCO",
+                         "Deseo intenso",
+                         "Consumo periódico que no impide llevar una vida normal"
+                     ],
+        "respuestaCorrecta":  "Deseo intenso",
+        "tema":  "PADEA",
+        "explicacion":  "El temario define de manera literal: \u0027Dependencia: Deseo intenso\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "¿En qué grado afecta al organismo el consumo de cannabis (THC) y qué advertencia temporal realiza el plan PADEA?",
+        "opciones":  [
+                         "El THC afecta únicamente al rendimiento en las pruebas físicas PAFAS",
+                         "El THC se elimina por completo en 24 horas y no deja secuelas físicas",
+                         "El consumo de THC afecta al cuerpo más de 7 días, importando lo que se hace en el fin de semana",
+                         "Afecta al cuerpo solo durante las primeras 12 horas tras el consumo"
+                     ],
+        "respuestaCorrecta":  "El consumo de THC afecta al cuerpo más de 7 días, importando lo que se hace en el fin de semana",
+        "tema":  "PADEA",
+        "explicacion":  "El temario expone textualmente: \u0027El consumo de drogas afecta al cuerpo más allá de su consumo. (ej: THC más 7 días). Importa lo que haces en el fin de semana\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según el temario del PADEA, ¿qué consecuencias tiene negarse a cumplir un deber legítimamente ordenado relacionado con el control de drogas?",
+        "opciones":  [
+                         "Una sanción económica de hasta el 50% de la retribución mensual",
+                         "El arresto preventivo en la UCO por un periodo de 30 días",
+                         "Medidas disciplinarias y, en el caso de los alumnos, la expulsión",
+                         "La suspensión automática de la vigencia de las pruebas PAFAS"
+                     ],
+        "respuestaCorrecta":  "Medidas disciplinarias y, en el caso de los alumnos, la expulsión",
+        "tema":  "PADEA",
+        "explicacion":  "El temario recoge: \u0027La negativa al cumplimiento de un deber legítimamente ordenado puede dar lugar a la aplicación de medidas disciplinarias (y a la expulsión en caso de alumnos)\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    },
+    {
+        "pregunta":  "Según la clasificación del PADEA, ¿cuál es la característica que define al consumidor \u0027habitual\u0027?",
+        "opciones":  [
+                         "Consumo periódico, no les impide desarrollar su vida pero el efecto es buscado con continuidad",
+                         "Deseo intenso y obsesivo que constituye el centro de su vida",
+                         "Consumo selectivo escogiendo escenarios específicos por conocer los efectos",
+                         "Ensayos por curiosidad en una o varias ocasiones sin intención de repetir"
+                     ],
+        "respuestaCorrecta":  "Consumo periódico, no les impide desarrollar su vida pero el efecto es buscado con continuidad",
+        "tema":  "PADEA",
+        "explicacion":  "El temario define: \u0027Habituales. consumo periódico, “no les impide desarrollar su vida” pero el efecto es buscado con continuidad\u0027.",
+        "dificultad":  "dificil",
+        "imprescindible":  false,
+        "examen":  "simulacro3"
+    }
 ]

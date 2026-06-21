@@ -1,452 +1,452 @@
-[
-  {
-    "pregunta": "De acuerdo con las normas de seguridad de tiro, ¿dónde debe mantenerse el dedo índice si no se quiere disparar?",
-    "opciones": [
-      "Fuera del disparador",
-      "En el guardamonte",
-      "Presionando suavemente el disparador",
-      "En el seguro del arma"
-    ],
-    "respuestaCorrecta": "Fuera del disparador",
-    "tema": "Tiro",
-    "explicacion": "Las normas de seguridad de tiro especifican claramente: 'Dedo índice fuera del disparador si no se quiere disparar'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo se deben tratar las armas según las normas de seguridad de tiro?",
-    "opciones": [
-      "Como si estuvieran cargadas",
-      "Como si estuvieran descargadas para evitar miedo",
-      "Dependiendo de si tienen cargador puesto o no",
-      "Únicamente con el seguro puesto"
-    ],
-    "respuestaCorrecta": "Como si estuvieran cargadas",
-    "tema": "Tiro",
-    "explicacion": "Según las normas de seguridad de tiro, se debe siempre: 'Tratar armas como si estuvieran cargadas'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál es el calibre oficial del fusil G36E según el temario?",
-    "opciones": [
-      "5'56mm x 45 OTAN",
-      "9x19mm parabellum",
-      "7'62mm x 51 OTAN",
-      "5'56mm x 30 OTAN"
-    ],
-    "respuestaCorrecta": "5'56mm x 45 OTAN",
-    "tema": "Armamento",
-    "explicacion": "El temario indica que el calibre del fusil G36E es 5'56mm x 45 OTAN.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué capacidad de cartuchos tiene el cargador de la pistola USP COMPACT?",
-    "opciones": [
-      "13 cartuchos",
-      "30 cartuchos",
-      "15 cartuchos",
-      "10 cartuchos"
-    ],
-    "respuestaCorrecta": "13 cartuchos",
-    "tema": "Armamento",
-    "explicacion": "La capacidad del cargador de la pistola USP COMPACT es de 13 cartuchos.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Según la instrucción IG 60-28, ¿cuál de las siguientes pruebas físicas NO forma parte de las PAFAS?",
-    "opciones": [
-      "Lanzamiento de balón medicinal",
-      "Extensiones de brazos",
-      "Flexiones de tronco",
-      "Carrera continua 2000m"
-    ],
-    "respuestaCorrecta": "Lanzamiento de balón medicinal",
-    "tema": "PAFAS",
-    "explicacion": "Las pruebas establecidas en la IG 60-28 son: extensiones de brazos, flexiones de tronco, carrera continua 2000m y circuito de agilidad. El lanzamiento de balón medicinal no está incluido.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuántos puntos mínimos por prueba se requieren para obtener la calificación de APTO en las PAFAS?",
-    "opciones": [
-      "Mínimo 20 puntos por prueba",
-      "Mínimo 50 puntos por prueba",
-      "Mínimo 15 puntos por prueba",
-      "Mínimo 10 puntos por prueba"
-    ],
-    "respuestaCorrecta": "Mínimo 20 puntos por prueba",
-    "tema": "PAFAS",
-    "explicacion": "Para obtener la calificación de APTO en las PAFAS se requiere obtener un mínimo de 20 puntos por prueba.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo define el temario el concepto de 'Grupo'?",
-    "opciones": [
-      "Personas juntas por una característica común",
-      "Personas que trabajan en un mismo edificio",
-      "Un conjunto de individuos con diferentes liderazgos",
-      "Un equipo militar de combate organizado formalmente"
-    ],
-    "respuestaCorrecta": "Personas juntas por una característica común",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "El temario define el concepto del siguiente modo: 'Grupo = personas juntas por una característica común'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Según la calificación de grupos, ¿cuáles son considerados grupos primarios?",
-    "opciones": [
-      "Cercanos e informales (como la familia)",
-      "Relaciones de interés común y relación formal",
-      "Los amigos y compañeros de trabajo",
-      "El Ejército del Aire y del Espacio"
-    ],
-    "respuestaCorrecta": "Cercanos e informales (como la familia)",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "Los grupos primarios se clasifican en el temario como: 'Cercanos e informales (Familia)'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál es la diferencia fundamental en el origen del poder entre un Jefe y un Líder según el temario?",
-    "opciones": [
-      "El Jefe tiene poder por el puesto; el Líder por la autoridad otorgada por compañeros y subordinados",
-      "El Jefe es elegido por votación; el Líder es impuesto por la organización",
-      "El Jefe tiene poder informal; el Líder tiene poder puramente formal",
-      "No existe diferencia alguna entre ambos conceptos"
-    ],
-    "respuestaCorrecta": "El Jefe tiene poder por el puesto; el Líder por la autoridad otorgada por compañeros y subordinados",
-    "tema": "Dinámicas de Grupo",
-    "explicacion": "El temario detalla que 'Jefe = Poder por puesto' y 'Líder = Poder por autoridad que le otorgan compañeros y subordinados'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Según la visión del JEMA, ¿en cuántos niveles se organiza el liderazgo?",
-    "opciones": [
-      "Tres niveles",
-      "Dos niveles",
-      "Cuatro niveles",
-      "Cinco niveles"
-    ],
-    "respuestaCorrecta": "Tres niveles",
-    "tema": "Liderazgo",
-    "explicacion": "La visión del JEMA contempla una 'Organización en tres niveles: Recursos Humanos, Material y Organización'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál es el modelo de liderazgo adoptado por el Ejército del Aire y del Espacio?",
-    "opciones": [
-      "Modelo 360",
-      "Modelo vertical tradicional",
-      "Modelo transaccional básico",
-      "Modelo de contingencia situacional"
-    ],
-    "respuestaCorrecta": "Modelo 360",
-    "tema": "Liderazgo",
-    "explicacion": "El modelo de liderazgo especificado en el temario es el 'Modelo de liderazgo Ejercito del aire: 360'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo se llama el apartado de liderazgo accesible a través de la intranet?",
-    "opciones": [
-      "El rincón del Líder",
-      "Portal de Liderazgo del EA",
-      "Espacio del Mando y Valores",
-      "Aula Virtual de Liderazgo"
-    ],
-    "respuestaCorrecta": "El rincón del Líder",
-    "tema": "Liderazgo",
-    "explicacion": "El temario señala que el apartado correspondiente en la intranet es 'El rincón del Líder'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué teoría o herramienta se menciona en el temario para explicar la Motivación como parte de los valores militares?",
-    "opciones": [
-      "La Pirámide de Maslow",
-      "La teoría de los dos factores de Herzberg",
-      "El modelo de expectativas de Vroom",
-      "La teoría X e Y de McGregor"
-    ],
-    "respuestaCorrecta": "La Pirámide de Maslow",
-    "tema": "Liderazgo",
-    "explicacion": "Bajo el noveno valor ('Motivación'), el temario menciona explícitamente: 'Motivación: Pirámide de Maslow'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "En columna de a tres, ¿quién es el único integrante que NO gira la cabeza durante los giros en orden cerrado?",
-    "opciones": [
-      "El guía",
-      "El que va en el centro",
-      "El último de la fila",
-      "Todos deben girar la cabeza obligatoriamente"
-    ],
-    "respuestaCorrecta": "El guía",
-    "tema": "IOC",
-    "explicacion": "El temario de Instrucción de Orden Cerrado indica: 'En columna de a tres el UNICO que no gira la cabeza es el guía'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "En instrucción de orden cerrado, ¿con qué pierna se debe flexionar al escuchar la voz preventiva del paso ligero?",
-    "opciones": [
-      "La pierna derecha",
-      "La pierna izquierda",
-      "Ambas piernas simultáneamente",
-      "Ninguna, la flexión se realiza en la voz ejecutiva"
-    ],
-    "respuestaCorrecta": "La pierna derecha",
-    "tema": "IOC",
-    "explicacion": "El paso ligero requiere 'Flexionar la pierna derecha en voz preventiva'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿A quién le corresponde portar el banderín de una Compañía, Escuadrón o Batería?",
-    "opciones": [
-      "Cabo",
-      "Sargento",
-      "Cabo 1.º",
-      "Soldado"
-    ],
-    "respuestaCorrecta": "Cabo",
-    "tema": "IOC",
-    "explicacion": "El temario especifica textualmente para 'Banderín dBe Cía./Escón./Bía.: Cabo'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes NO es uno de los tres objetivos principales del TCCC?",
-    "opciones": [
-      "Asegurar el repliegue táctico inmediato",
-      "Tratar al Herido",
-      "Evitar más heridos",
-      "Completar la misión"
-    ],
-    "respuestaCorrecta": "Asegurar el repliegue táctico inmediato",
-    "tema": "TCCC",
-    "explicacion": "Los tres objetivos del TCCC son: Tratar al Herido, Evitar más heridos y Completar la misión.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Según las estadísticas de TCCC, ¿cuál es la causa de baja más común en combate, representando el 85% de las muertes evitables?",
-    "opciones": [
-      "Hemorragias",
-      "Obstrucción de vías aéreas",
-      "Hemotórax a tensión",
-      "Traumatismo craneal"
-    ],
-    "respuestaCorrecta": "Hemorragias",
-    "tema": "TCCC",
-    "explicacion": "La causa número 1 de baja es '85% por Hemorragias. Tratar antes de 3 minutos'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿En qué fase de la asistencia en combate (TCCC) se encuentra el personal si está bajo fuego enemigo en la zona caliente?",
-    "opciones": [
-      "CARE UNDER FIRE (CUF)",
-      "TACTICAL FIELD CARE (TFC)",
-      "TACTICAL EVACUATION CARE (TEC)",
-      "MEDEVAC"
-    ],
-    "respuestaCorrecta": "CARE UNDER FIRE (CUF)",
-    "tema": "TCCC",
-    "explicacion": "La fase bajo fuego enemigo (zona caliente) se denomina 'CARE UNDER FIRE (CUF)'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿A qué distancia del punto de sangrado se debe aplicar un torniquete en extremidades?",
-    "opciones": [
-      "A 5-7 cm del punto de sangrado",
-      "Justo encima de la herida",
-      "A 10-15 cm del punto de sangrado",
-      "Lo más proximal posible, cerca de la ingle o axila"
-    ],
-    "respuestaCorrecta": "A 5-7 cm del punto de sangrado",
-    "tema": "TCCC",
-    "explicacion": "El temario instruye: 'Torniquete en extremidades siempre a 5-7 cm del punto de sangrado'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué significan las siglas OPRL en el ámbito del Ejército del Aire y del Espacio?",
-    "opciones": [
-      "Oficina de Prevención de Riesgos Laborales",
-      "Organización de Planes y Recursos Laborales",
-      "Orden de Prevención y Riesgo Local",
-      "Oficial de Prevención de Riesgos de la Unidad"
-    ],
-    "respuestaCorrecta": "Oficina de Prevención de Riesgos Laborales",
-    "tema": "PRL",
-    "explicacion": "Las siglas OPRL hacen referencia a la Oficina de Prevención de Riesgos Laborales.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo define el temario el término 'Riesgo' en prevención de riesgos laborales?",
-    "opciones": [
-      "Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo",
-      "Conjunto de actividades adoptadas para evitar o disminuir accidentes",
-      "Lesión corporal sufrida por el trabajador durante la jornada de trabajo",
-      "Daño material ocurrido a los equipos de la empresa"
-    ],
-    "respuestaCorrecta": "Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo",
-    "tema": "PRL",
-    "explicacion": "El temario define Riesgo como: 'Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo se clasifica a un accidente laboral que ocurre durante el desplazamiento al trabajo?",
-    "opciones": [
-      "ACCIDENTE IN ITINERE",
-      "ACCIDENTE SIN BAJA",
-      "ACCIDENTE CON BAJA",
-      "INCIDENTE"
-    ],
-    "respuestaCorrecta": "ACCIDENTE IN ITINERE",
-    "tema": "PRL",
-    "explicacion": "El temario define: 'ACCIDENTE IN ITINERE: Durante el desplazamiento al trabajo'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué define a un 'Incidente' según la normativa de prevención de riesgos laborales?",
-    "opciones": [
-      "Acontecimiento que ocurre sin ocasionar lesión",
-      "Lesión corporal que incapacita para la tarea",
-      "Accidente que ocurre durante el trayecto de ida o vuelta",
-      "Falta de uso de los Equipos de Protección Individual"
-    ],
-    "respuestaCorrecta": "Acontecimiento que ocurre sin ocasionar lesión",
-    "tema": "PRL",
-    "explicacion": "El temario indica: 'INCIDENTE: Sin ocasionar lesión'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué norma ISO regula el Sistema de Gestión Ambiental en el Ejército del Aire?",
-    "opciones": [
-      "ISO 14001",
-      "ISO 9001",
-      "ISO 45001",
-      "ISO 50001"
-    ],
-    "respuestaCorrecta": "ISO 14001",
-    "tema": "Medio Ambiente",
-    "explicacion": "La norma ISO 14001 es la que regula el Sistema de Gestión Ambiental.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué autoridad firma las políticas medioambientales del Ejército del Aire y del Espacio?",
-    "opciones": [
-      "El JEMA",
-      "El Ministro de Defensa",
-      "El Director del Instituto de Prevención",
-      "El Comandante de la Base Aérea"
-    ],
-    "respuestaCorrecta": "El JEMA",
-    "tema": "Medio Ambiente",
-    "explicacion": "El temario especifica: 'El JEMA firma las políticas medioambientales'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál es el objetivo general del plan PADEA?",
-    "opciones": [
-      "Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa",
-      "Regular las licencias de bebidas alcohólicas en bases militares",
-      "Establecer la prevención de riesgos y accidentes por caídas",
-      "Realizar pruebas físicas obligatorias a todo el personal de la UCO"
-    ],
-    "respuestaCorrecta": "Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa",
-    "tema": "PADEA",
-    "explicacion": "El temario señala que el 'OBJETIVO GENERAL PADEA → Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿De cuántos meses es el periodo de seguimiento si se da positivo en una prueba de drogas del PADEA?",
-    "opciones": [
-      "8 meses",
-      "12 meses",
-      "6 meses",
-      "24 meses"
-    ],
-    "respuestaCorrecta": "8 meses",
-    "tema": "PADEA",
-    "explicacion": "El temario indica: 'Seguimiento si das positivo en PADEA = 8 meses'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cómo define el temario el término 'Intoxicación' en el ámbito de las adicciones?",
-    "opciones": [
-      "Consumo de droga",
-      "Deseo intenso de consumir",
-      "Necesidad de dosis cada vez mayores",
-      "Síntomas físicos y psicológicos al suspender el consumo"
-    ],
-    "respuestaCorrecta": "Consumo de droga",
-    "tema": "PADEA",
-    "explicacion": "El temario define 'Intoxicación: Consumo de droga'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Qué consecuencia puede acarrear para los alumnos la negativa al cumplimiento de las órdenes legítimas sobre el PADEA?",
-    "opciones": [
-      "La expulsión (en caso de alumnos) y aplicación de medidas disciplinarias",
-      "La suspensión temporal de empleo y sueldo",
-      "La obligación de repetir las pruebas PAFAS en 1 año",
-      "Un apercibimiento verbal del Presidente de la Junta"
-    ],
-    "respuestaCorrecta": "La expulsión (en caso de alumnos) y aplicación de medidas disciplinarias",
-    "tema": "PADEA",
-    "explicacion": "El temario indica: 'La negativa al cumplimiento de un deber legítimamente ordenado puede dar lugar a la aplicación de medidas disciplinarias (y a la expulsión en caso de alumnos)'.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  }
+﻿[
+    {
+        "pregunta":  "De acuerdo con las normas de seguridad de tiro, ¿dónde debe mantenerse el dedo índice si no se quiere disparar?",
+        "opciones":  [
+                         "Presionando suavemente el disparador",
+                         "En el guardamonte",
+                         "Fuera del disparador",
+                         "En el seguro del arma"
+                     ],
+        "respuestaCorrecta":  "Fuera del disparador",
+        "tema":  "Tiro",
+        "explicacion":  "Las normas de seguridad de tiro especifican claramente: \u0027Dedo índice fuera del disparador si no se quiere disparar\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cómo se deben tratar las armas según las normas de seguridad de tiro?",
+        "opciones":  [
+                         "Únicamente con el seguro puesto",
+                         "Como si estuvieran descargadas para evitar miedo",
+                         "Como si estuvieran cargadas",
+                         "Dependiendo de si tienen cargador puesto o no"
+                     ],
+        "respuestaCorrecta":  "Como si estuvieran cargadas",
+        "tema":  "Tiro",
+        "explicacion":  "Según las normas de seguridad de tiro, se debe siempre: \u0027Tratar armas como si estuvieran cargadas\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cuál es el calibre oficial del fusil G36E según el temario?",
+        "opciones":  [
+                         "7\u002762mm x 51 OTAN",
+                         "5\u002756mm x 45 OTAN",
+                         "9x19mm parabellum",
+                         "5\u002756mm x 30 OTAN"
+                     ],
+        "respuestaCorrecta":  "5\u002756mm x 45 OTAN",
+        "tema":  "Armamento",
+        "explicacion":  "El temario indica que el calibre del fusil G36E es 5\u002756mm x 45 OTAN.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué capacidad de cartuchos tiene el cargador de la pistola USP COMPACT?",
+        "opciones":  [
+                         "15 cartuchos",
+                         "10 cartuchos",
+                         "13 cartuchos",
+                         "30 cartuchos"
+                     ],
+        "respuestaCorrecta":  "13 cartuchos",
+        "tema":  "Armamento",
+        "explicacion":  "La capacidad del cargador de la pistola USP COMPACT es de 13 cartuchos.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "Según la instrucción IG 60-28, ¿cuál de las siguientes pruebas físicas NO forma parte de las PAFAS?",
+        "opciones":  [
+                         "Lanzamiento de balón medicinal",
+                         "Extensiones de brazos",
+                         "Carrera continua 2000m",
+                         "Flexiones de tronco"
+                     ],
+        "respuestaCorrecta":  "Lanzamiento de balón medicinal",
+        "tema":  "PAFAS",
+        "explicacion":  "Las pruebas establecidas en la IG 60-28 son: extensiones de brazos, flexiones de tronco, carrera continua 2000m y circuito de agilidad. El lanzamiento de balón medicinal no está incluido.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cuántos puntos mínimos por prueba se requieren para obtener la calificación de APTO en las PAFAS?",
+        "opciones":  [
+                         "Mínimo 10 puntos por prueba",
+                         "Mínimo 50 puntos por prueba",
+                         "Mínimo 20 puntos por prueba",
+                         "Mínimo 15 puntos por prueba"
+                     ],
+        "respuestaCorrecta":  "Mínimo 20 puntos por prueba",
+        "tema":  "PAFAS",
+        "explicacion":  "Para obtener la calificación de APTO en las PAFAS se requiere obtener un mínimo de 20 puntos por prueba.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cómo define el temario el concepto de \u0027Grupo\u0027?",
+        "opciones":  [
+                         "Personas juntas por una característica común",
+                         "Un conjunto de individuos con diferentes liderazgos",
+                         "Personas que trabajan en un mismo edificio",
+                         "Un equipo militar de combate organizado formalmente"
+                     ],
+        "respuestaCorrecta":  "Personas juntas por una característica común",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "El temario define el concepto del siguiente modo: \u0027Grupo = personas juntas por una característica común\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "Según la calificación de grupos, ¿cuáles son considerados grupos primarios?",
+        "opciones":  [
+                         "Los amigos y compañeros de trabajo",
+                         "Relaciones de interés común y relación formal",
+                         "Cercanos e informales (como la familia)",
+                         "El Ejército del Aire y del Espacio"
+                     ],
+        "respuestaCorrecta":  "Cercanos e informales (como la familia)",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "Los grupos primarios se clasifican en el temario como: \u0027Cercanos e informales (Familia)\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cuál es la diferencia fundamental en el origen del poder entre un Jefe y un Líder según el temario?",
+        "opciones":  [
+                         "No existe diferencia alguna entre ambos conceptos",
+                         "El Jefe tiene poder por el puesto; el Líder por la autoridad otorgada por compañeros y subordinados",
+                         "El Jefe es elegido por votación; el Líder es impuesto por la organización",
+                         "El Jefe tiene poder informal; el Líder tiene poder puramente formal"
+                     ],
+        "respuestaCorrecta":  "El Jefe tiene poder por el puesto; el Líder por la autoridad otorgada por compañeros y subordinados",
+        "tema":  "Dinámicas de Grupo",
+        "explicacion":  "El temario detalla que \u0027Jefe = Poder por puesto\u0027 y \u0027Líder = Poder por autoridad que le otorgan compañeros y subordinados\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "Según la visión del JEMA, ¿en cuántos niveles se organiza el liderazgo?",
+        "opciones":  [
+                         "Cinco niveles",
+                         "Dos niveles",
+                         "Tres niveles",
+                         "Cuatro niveles"
+                     ],
+        "respuestaCorrecta":  "Tres niveles",
+        "tema":  "Liderazgo",
+        "explicacion":  "La visión del JEMA contempla una \u0027Organización en tres niveles: Recursos Humanos, Material y Organización\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cuál es el modelo de liderazgo adoptado por el Ejército del Aire y del Espacio?",
+        "opciones":  [
+                         "Modelo vertical tradicional",
+                         "Modelo transaccional básico",
+                         "Modelo de contingencia situacional",
+                         "Modelo 360"
+                     ],
+        "respuestaCorrecta":  "Modelo 360",
+        "tema":  "Liderazgo",
+        "explicacion":  "El modelo de liderazgo especificado en el temario es el \u0027Modelo de liderazgo Ejercito del aire: 360\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cómo se llama el apartado de liderazgo accesible a través de la intranet?",
+        "opciones":  [
+                         "Aula Virtual de Liderazgo",
+                         "El rincón del Líder",
+                         "Espacio del Mando y Valores",
+                         "Portal de Liderazgo del EA"
+                     ],
+        "respuestaCorrecta":  "El rincón del Líder",
+        "tema":  "Liderazgo",
+        "explicacion":  "El temario señala que el apartado correspondiente en la intranet es \u0027El rincón del Líder\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué teoría o herramienta se menciona en el temario para explicar la Motivación como parte de los valores militares?",
+        "opciones":  [
+                         "La Pirámide de Maslow",
+                         "El modelo de expectativas de Vroom",
+                         "La teoría X e Y de McGregor",
+                         "La teoría de los dos factores de Herzberg"
+                     ],
+        "respuestaCorrecta":  "La Pirámide de Maslow",
+        "tema":  "Liderazgo",
+        "explicacion":  "Bajo el noveno valor (\u0027Motivación\u0027), el temario menciona explícitamente: \u0027Motivación: Pirámide de Maslow\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "En columna de a tres, ¿quién es el único integrante que NO gira la cabeza durante los giros en orden cerrado?",
+        "opciones":  [
+                         "El que va en el centro",
+                         "El último de la fila",
+                         "El guía",
+                         "Todos deben girar la cabeza obligatoriamente"
+                     ],
+        "respuestaCorrecta":  "El guía",
+        "tema":  "IOC",
+        "explicacion":  "El temario de Instrucción de Orden Cerrado indica: \u0027En columna de a tres el UNICO que no gira la cabeza es el guía\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "En instrucción de orden cerrado, ¿con qué pierna se debe flexionar al escuchar la voz preventiva del paso ligero?",
+        "opciones":  [
+                         "Ninguna, la flexión se realiza en la voz ejecutiva",
+                         "Ambas piernas simultáneamente",
+                         "La pierna derecha",
+                         "La pierna izquierda"
+                     ],
+        "respuestaCorrecta":  "La pierna derecha",
+        "tema":  "IOC",
+        "explicacion":  "El paso ligero requiere \u0027Flexionar la pierna derecha en voz preventiva\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿A quién le corresponde portar el banderín de una Compañía, Escuadrón o Batería?",
+        "opciones":  [
+                         "Soldado",
+                         "Cabo",
+                         "Sargento",
+                         "Cabo 1.º"
+                     ],
+        "respuestaCorrecta":  "Cabo",
+        "tema":  "IOC",
+        "explicacion":  "El temario especifica textualmente para \u0027Banderín dBe Cía./Escón./Bía.: Cabo\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cuál de los siguientes NO es uno de los tres objetivos principales del TCCC?",
+        "opciones":  [
+                         "Asegurar el repliegue táctico inmediato",
+                         "Evitar más heridos",
+                         "Completar la misión",
+                         "Tratar al Herido"
+                     ],
+        "respuestaCorrecta":  "Asegurar el repliegue táctico inmediato",
+        "tema":  "TCCC",
+        "explicacion":  "Los tres objetivos del TCCC son: Tratar al Herido, Evitar más heridos y Completar la misión.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "Según las estadísticas de TCCC, ¿cuál es la causa de baja más común en combate, representando el 85% de las muertes evitables?",
+        "opciones":  [
+                         "Obstrucción de vías aéreas",
+                         "Hemorragias",
+                         "Hemotórax a tensión",
+                         "Traumatismo craneal"
+                     ],
+        "respuestaCorrecta":  "Hemorragias",
+        "tema":  "TCCC",
+        "explicacion":  "La causa número 1 de baja es \u002785% por Hemorragias. Tratar antes de 3 minutos\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿En qué fase de la asistencia en combate (TCCC) se encuentra el personal si está bajo fuego enemigo en la zona caliente?",
+        "opciones":  [
+                         "TACTICAL EVACUATION CARE (TEC)",
+                         "CARE UNDER FIRE (CUF)",
+                         "TACTICAL FIELD CARE (TFC)",
+                         "MEDEVAC"
+                     ],
+        "respuestaCorrecta":  "CARE UNDER FIRE (CUF)",
+        "tema":  "TCCC",
+        "explicacion":  "La fase bajo fuego enemigo (zona caliente) se denomina \u0027CARE UNDER FIRE (CUF)\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿A qué distancia del punto de sangrado se debe aplicar un torniquete en extremidades?",
+        "opciones":  [
+                         "Lo más proximal posible, cerca de la ingle o axila",
+                         "Justo encima de la herida",
+                         "A 5-7 cm del punto de sangrado",
+                         "A 10-15 cm del punto de sangrado"
+                     ],
+        "respuestaCorrecta":  "A 5-7 cm del punto de sangrado",
+        "tema":  "TCCC",
+        "explicacion":  "El temario instruye: \u0027Torniquete en extremidades siempre a 5-7 cm del punto de sangrado\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué significan las siglas OPRL en el ámbito del Ejército del Aire y del Espacio?",
+        "opciones":  [
+                         "Oficial de Prevención de Riesgos de la Unidad",
+                         "Organización de Planes y Recursos Laborales",
+                         "Orden de Prevención y Riesgo Local",
+                         "Oficina de Prevención de Riesgos Laborales"
+                     ],
+        "respuestaCorrecta":  "Oficina de Prevención de Riesgos Laborales",
+        "tema":  "PRL",
+        "explicacion":  "Las siglas OPRL hacen referencia a la Oficina de Prevención de Riesgos Laborales.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cómo define el temario el término \u0027Riesgo\u0027 en prevención de riesgos laborales?",
+        "opciones":  [
+                         "Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo",
+                         "Conjunto de actividades adoptadas para evitar o disminuir accidentes",
+                         "Daño material ocurrido a los equipos de la empresa",
+                         "Lesión corporal sufrida por el trabajador durante la jornada de trabajo"
+                     ],
+        "respuestaCorrecta":  "Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo",
+        "tema":  "PRL",
+        "explicacion":  "El temario define Riesgo como: \u0027Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cómo se clasifica a un accidente laboral que ocurre durante el desplazamiento al trabajo?",
+        "opciones":  [
+                         "ACCIDENTE CON BAJA",
+                         "ACCIDENTE SIN BAJA",
+                         "INCIDENTE",
+                         "ACCIDENTE IN ITINERE"
+                     ],
+        "respuestaCorrecta":  "ACCIDENTE IN ITINERE",
+        "tema":  "PRL",
+        "explicacion":  "El temario define: \u0027ACCIDENTE IN ITINERE: Durante el desplazamiento al trabajo\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué define a un \u0027Incidente\u0027 según la normativa de prevención de riesgos laborales?",
+        "opciones":  [
+                         "Acontecimiento que ocurre sin ocasionar lesión",
+                         "Accidente que ocurre durante el trayecto de ida o vuelta",
+                         "Lesión corporal que incapacita para la tarea",
+                         "Falta de uso de los Equipos de Protección Individual"
+                     ],
+        "respuestaCorrecta":  "Acontecimiento que ocurre sin ocasionar lesión",
+        "tema":  "PRL",
+        "explicacion":  "El temario indica: \u0027INCIDENTE: Sin ocasionar lesión\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué norma ISO regula el Sistema de Gestión Ambiental en el Ejército del Aire?",
+        "opciones":  [
+                         "ISO 45001",
+                         "ISO 9001",
+                         "ISO 14001",
+                         "ISO 50001"
+                     ],
+        "respuestaCorrecta":  "ISO 14001",
+        "tema":  "Medio Ambiente",
+        "explicacion":  "La norma ISO 14001 es la que regula el Sistema de Gestión Ambiental.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué autoridad firma las políticas medioambientales del Ejército del Aire y del Espacio?",
+        "opciones":  [
+                         "El Comandante de la Base Aérea",
+                         "El JEMA",
+                         "El Director del Instituto de Prevención",
+                         "El Ministro de Defensa"
+                     ],
+        "respuestaCorrecta":  "El JEMA",
+        "tema":  "Medio Ambiente",
+        "explicacion":  "El temario especifica: \u0027El JEMA firma las políticas medioambientales\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cuál es el objetivo general del plan PADEA?",
+        "opciones":  [
+                         "Establecer la prevención de riesgos y accidentes por caídas",
+                         "Realizar pruebas físicas obligatorias a todo el personal de la UCO",
+                         "Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa",
+                         "Regular las licencias de bebidas alcohólicas en bases militares"
+                     ],
+        "respuestaCorrecta":  "Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa",
+        "tema":  "PADEA",
+        "explicacion":  "El temario señala que el \u0027OBJETIVO GENERAL PADEA → Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿De cuántos meses es el periodo de seguimiento si se da positivo en una prueba de drogas del PADEA?",
+        "opciones":  [
+                         "12 meses",
+                         "8 meses",
+                         "6 meses",
+                         "24 meses"
+                     ],
+        "respuestaCorrecta":  "8 meses",
+        "tema":  "PADEA",
+        "explicacion":  "El temario indica: \u0027Seguimiento si das positivo en PADEA = 8 meses\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Cómo define el temario el término \u0027Intoxicación\u0027 en el ámbito de las adicciones?",
+        "opciones":  [
+                         "Consumo de droga",
+                         "Necesidad de dosis cada vez mayores",
+                         "Deseo intenso de consumir",
+                         "Síntomas físicos y psicológicos al suspender el consumo"
+                     ],
+        "respuestaCorrecta":  "Consumo de droga",
+        "tema":  "PADEA",
+        "explicacion":  "El temario define \u0027Intoxicación: Consumo de droga\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    },
+    {
+        "pregunta":  "¿Qué consecuencia puede acarrear para los alumnos la negativa al cumplimiento de las órdenes legítimas sobre el PADEA?",
+        "opciones":  [
+                         "La expulsión (en caso de alumnos) y aplicación de medidas disciplinarias",
+                         "La suspensión temporal de empleo y sueldo",
+                         "Un apercibimiento verbal del Presidente de la Junta",
+                         "La obligación de repetir las pruebas PAFAS en 1 año"
+                     ],
+        "respuestaCorrecta":  "La expulsión (en caso de alumnos) y aplicación de medidas disciplinarias",
+        "tema":  "PADEA",
+        "explicacion":  "El temario indica: \u0027La negativa al cumplimiento de un deber legítimamente ordenado puede dar lugar a la aplicación de medidas disciplinarias (y a la expulsión en caso de alumnos)\u0027.",
+        "dificultad":  "facil",
+        "imprescindible":  false,
+        "examen":  "simulacro1"
+    }
 ]
