@@ -1,450 +1,450 @@
 [
   {
-    "pregunta": "El valor del 'Espíritu de equipo' incluye una actitud específica hacia el conocimiento y la información. ¿Cómo la describe exactamente el temario?",
+    "pregunta": "De acuerdo con las normas de seguridad de tiro, ¿dónde debe mantenerse el dedo índice si no se quiere disparar?",
     "opciones": [
-      "Reservar la información para proteger la seguridad de la unidad",
-      "Actitud abierta de compartir conocimiento e información con franqueza y sinceridad",
-      "Transmitir solo la información necesaria para el cumplimiento de órdenes",
-      "Gestionar el conocimiento a través de la cadena de mando exclusivamente"
+      "Fuera del disparador",
+      "En el guardamonte",
+      "Presionando suavemente el disparador",
+      "En el seguro del arma"
     ],
-    "respuestaCorrecta": "Actitud abierta de compartir conocimiento e información con franqueza y sinceridad",
-    "tema": "Valores Militares",
-    "explicacion": "El temario describe el espíritu de equipo como una 'actitud abierta de compartir conocimiento e información con franqueza y sinceridad'. Esta apertura genera confianza y refuerza el compañerismo.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Cuál de estas afirmaciones sobre la Unión Europea tras el Brexit es CORRECTA?",
-    "opciones": [
-      "La UE tiene actualmente 28 miembros tras la salida del Reino Unido",
-      "La UE tiene 27 miembros y el Parlamento Europeo se elige cada 4 años",
-      "La UE tiene 27 miembros y el Parlamento Europeo se elige cada 5 años",
-      "La UE tiene 26 miembros porque también salió Noruega"
-    ],
-    "respuestaCorrecta": "La UE tiene 27 miembros y el Parlamento Europeo se elige cada 5 años",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Tras el Brexit la UE tiene 27 estados miembros. El Parlamento Europeo se elige cada 5 años (no 4). Noruega nunca fue miembro de la UE aunque sí del Espacio Económico Europeo.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuáles son las principales utilidades del registro de documentación?",
-    "opciones": [
-      "Mejorar la trazabilidad de la información",
-      "Acceso a consultar las características de un documento",
-      "Mejorar su localización en los expedientes",
-      "Todas son correctas"
-    ],
-    "respuestaCorrecta": "Todas son correctas",
-    "tema": "Registro y Utilización de Documentos",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿A qué tipo de documento administrativo pertenece una 'resolución' según la clasificación del temario?",
-    "opciones": [
-      "Documento de juicio",
-      "Documento de los ciudadanos",
-      "Documento de transmisión",
-      "Documento de decisión"
-    ],
-    "respuestaCorrecta": "Documento de decisión",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "Las resoluciones son documentos de decisión, junto con los acuerdos. Los de juicio son los informes; los de transmisión incluyen notificaciones y comunicaciones; los de ciudadanos incluyen solicitudes, denuncias, alegaciones y recursos (instancias).",
+    "respuestaCorrecta": "Fuera del disparador",
+    "tema": "Tiro",
+    "explicacion": "Las normas de seguridad de tiro especifican claramente: 'Dedo índice fuera del disparador si no se quiere disparar'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Qué aeronave de transporte pesado y reabastecimiento en vuelo sustituyó definitivamente al clásico C-130 Hércules en el Ala 31 en 2021?",
+    "pregunta": "¿Cómo se deben tratar las armas según las normas de seguridad de tiro?",
     "opciones": [
-      "Airbus A-400M (T.23)",
-      "Airbus A-330-200 (T.24)",
-      "CASA C-295 (T.21)",
-      "CASA CN-235 (T.19)"
+      "Como si estuvieran cargadas",
+      "Como si estuvieran descargadas para evitar miedo",
+      "Dependiendo de si tienen cargador puesto o no",
+      "Únicamente con el seguro puesto"
     ],
-    "respuestaCorrecta": "Airbus A-400M (T.23)",
-    "tema": "Material Aéreo",
-    "explicacion": "El Airbus A-400M (T.23) sustituyó oficialmente al mítico C-130 Hércules en 2021.",
-    "dificultad": "media",
+    "respuestaCorrecta": "Como si estuvieran cargadas",
+    "tema": "Tiro",
+    "explicacion": "Según las normas de seguridad de tiro, se debe siempre: 'Tratar armas como si estuvieran cargadas'.",
+    "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "Según la teoría de la Ruta-Meta, ¿qué comportamiento de liderazgo se caracteriza por establecer metas ambiciosas y esperar alto rendimiento?",
+    "pregunta": "¿Cuál es el calibre oficial del fusil G36E según el temario?",
     "opciones": [
-      "Líder Director",
-      "Líder Apoyador",
-      "Líder Participativo",
-      "Líder Orientado a Logros"
+      "5'56mm x 45 OTAN",
+      "9x19mm parabellum",
+      "7'62mm x 51 OTAN",
+      "5'56mm x 30 OTAN"
     ],
-    "respuestaCorrecta": "Líder Orientado a Logros",
+    "respuestaCorrecta": "5'56mm x 45 OTAN",
+    "tema": "Armamento",
+    "explicacion": "El temario indica que el calibre del fusil G36E es 5'56mm x 45 OTAN.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué capacidad de cartuchos tiene el cargador de la pistola USP COMPACT?",
+    "opciones": [
+      "13 cartuchos",
+      "30 cartuchos",
+      "15 cartuchos",
+      "10 cartuchos"
+    ],
+    "respuestaCorrecta": "13 cartuchos",
+    "tema": "Armamento",
+    "explicacion": "La capacidad del cargador de la pistola USP COMPACT es de 13 cartuchos.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "Según la instrucción IG 60-28, ¿cuál de las siguientes pruebas físicas NO forma parte de las PAFAS?",
+    "opciones": [
+      "Lanzamiento de balón medicinal",
+      "Extensiones de brazos",
+      "Flexiones de tronco",
+      "Carrera continua 2000m"
+    ],
+    "respuestaCorrecta": "Lanzamiento de balón medicinal",
+    "tema": "PAFAS",
+    "explicacion": "Las pruebas establecidas en la IG 60-28 son: extensiones de brazos, flexiones de tronco, carrera continua 2000m y circuito de agilidad. El lanzamiento de balón medicinal no está incluido.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuántos puntos mínimos por prueba se requieren para obtener la calificación de APTO en las PAFAS?",
+    "opciones": [
+      "Mínimo 20 puntos por prueba",
+      "Mínimo 50 puntos por prueba",
+      "Mínimo 15 puntos por prueba",
+      "Mínimo 10 puntos por prueba"
+    ],
+    "respuestaCorrecta": "Mínimo 20 puntos por prueba",
+    "tema": "PAFAS",
+    "explicacion": "Para obtener la calificación de APTO en las PAFAS se requiere obtener un mínimo de 20 puntos por prueba.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cómo define el temario el concepto de 'Grupo'?",
+    "opciones": [
+      "Personas juntas por una característica común",
+      "Personas que trabajan en un mismo edificio",
+      "Un conjunto de individuos con diferentes liderazgos",
+      "Un equipo militar de combate organizado formalmente"
+    ],
+    "respuestaCorrecta": "Personas juntas por una característica común",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "El temario define el concepto del siguiente modo: 'Grupo = personas juntas por una característica común'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "Según la calificación de grupos, ¿cuáles son considerados grupos primarios?",
+    "opciones": [
+      "Cercanos e informales (como la familia)",
+      "Relaciones de interés común y relación formal",
+      "Los amigos y compañeros de trabajo",
+      "El Ejército del Aire y del Espacio"
+    ],
+    "respuestaCorrecta": "Cercanos e informales (como la familia)",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "Los grupos primarios se clasifican en el temario como: 'Cercanos e informales (Familia)'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia fundamental en el origen del poder entre un Jefe y un Líder según el temario?",
+    "opciones": [
+      "El Jefe tiene poder por el puesto; el Líder por la autoridad otorgada por compañeros y subordinados",
+      "El Jefe es elegido por votación; el Líder es impuesto por la organización",
+      "El Jefe tiene poder informal; el Líder tiene poder puramente formal",
+      "No existe diferencia alguna entre ambos conceptos"
+    ],
+    "respuestaCorrecta": "El Jefe tiene poder por el puesto; el Líder por la autoridad otorgada por compañeros y subordinados",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "El temario detalla que 'Jefe = Poder por puesto' y 'Líder = Poder por autoridad que le otorgan compañeros y subordinados'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "Según la visión del JEMA, ¿en cuántos niveles se organiza el liderazgo?",
+    "opciones": [
+      "Tres niveles",
+      "Dos niveles",
+      "Cuatro niveles",
+      "Cinco niveles"
+    ],
+    "respuestaCorrecta": "Tres niveles",
     "tema": "Liderazgo",
-    "explicacion": "El Líder Orientado a Logros establece metas exigentes y espera el máximo rendimiento de sus subordinados. El Apoyador muestra interés personal; el Director da instrucciones precisas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes países NO forma parte de los cinco miembros permanentes del Consejo de Seguridad de la ONU?",
-    "opciones": [
-      "Francia",
-      "Alemania",
-      "China",
-      "Reino Unido"
-    ],
-    "respuestaCorrecta": "Alemania",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Los cinco miembros permanentes del Consejo de Seguridad son: China, Estados Unidos, Rusia, Francia y Reino Unido. Alemania no es miembro permanente aunque sea una de las mayores economías del mundo.",
+    "explicacion": "La visión del JEMA contempla una 'Organización en tres niveles: Recursos Humanos, Material y Organización'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Cuál de los siguientes NO es un órgano principal de la ONU?",
+    "pregunta": "¿Cuál es el modelo de liderazgo adoptado por el Ejército del Aire y del Espacio?",
     "opciones": [
-      "Consejo de Seguridad",
-      "Corte Internacional de Justicia",
-      "Tribunal Penal Internacional",
-      "Asamblea General"
+      "Modelo 360",
+      "Modelo vertical tradicional",
+      "Modelo transaccional básico",
+      "Modelo de contingencia situacional"
     ],
-    "respuestaCorrecta": "Tribunal Penal Internacional",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Los seis órganos principales de la ONU son: Asamblea General, Consejo de Seguridad, Consejo Económico y Social (ECOSOC), Corte Internacional de Justicia, Secretaría y Consejo de Tutela. El Tribunal Penal Internacional es un organismo independiente, no un órgano principal de la ONU.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Cuál de estas prelaciones del teletipo (MEFO) indica que el mensaje debe entregarse en menos de 1 hora?",
-    "opciones": [
-      "Z — Flash",
-      "O — Inmediato",
-      "P — Prioridad",
-      "R — Rutina"
-    ],
-    "respuestaCorrecta": "O — Inmediato",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La prelación O (Inmediato) indica entrega en menos de 1 hora. La Z (Flash) es lo antes posible; la P (Prioridad) hasta 6 horas; la R (Rutina) hasta el inicio del día siguiente.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿En qué año cambió el nombre del Ejército del Aire al actual 'Ejército del Aire y del Espacio' y mediante qué norma?",
-    "opciones": [
-      "En 2020 mediante Ley Orgánica",
-      "En 2022 mediante Real Decreto 524/2022 de 27 de junio",
-      "En 2019 mediante Instrucción General del JEMA",
-      "En 2021 mediante Orden Ministerial"
-    ],
-    "respuestaCorrecta": "En 2022 mediante Real Decreto 524/2022 de 27 de junio",
-    "tema": "Material Aéreo",
-    "explicacion": "En junio de 2022, tras 83 años de historia, el Real Decreto 524/2022 de 27 de junio dispuso el cambio de denominación de Ejército del Aire a Ejército del Aire y del Espacio.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Qué norma establece que en el cuerpo de los documentos se suprimen los tratamientos honoríficos excepto 'don/doña' y 'señor/señora'?",
-    "opciones": [
-      "La IG 10-01",
-      "La IG 10-14",
-      "El Manual de Documentos Administrativos de 2003",
-      "La IG 00-4"
-    ],
-    "respuestaCorrecta": "El Manual de Documentos Administrativos de 2003",
-    "tema": "Instrucción a la IG 10-01",
-    "explicacion": "Es el Manual de Documentos Administrativos de 2003 el que suprime los tratamientos honoríficos en el cuerpo de los documentos. Muchos lo confunden con la IG 10-01, que regula la redacción general, pero este punto específico está en el Manual.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuáles son las tres categorías de ilusiones del 'pensamiento grupal' de Janis relacionadas con la capacidad del grupo para abordar problemas?",
-    "opciones": [
-      "Ilusión de superioridad, de control y de permanencia",
-      "Ilusión de invulnerabilidad e ilusión de unanimidad",
-      "Ilusión de liderazgo, de consenso y de eficacia",
-      "Ilusión de cohesión, de neutralidad y de objetividad"
-    ],
-    "respuestaCorrecta": "Ilusión de invulnerabilidad e ilusión de unanimidad",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Janis distingue dos ilusiones compartidas relacionadas con la capacidad de abordar problemas: la ilusión de invulnerabilidad (el grupo cree que no puede fallar) y la ilusión de unanimidad (se sobreestima el acuerdo interno). Estas forman la 2.ª categoría de las 3 que describe.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "⚠ Trampa — La empatía y la simpatía se mencionan explícitamente en el temario como conceptos distintos. ¿Qué afirmación es CORRECTA según el temario?",
-    "opciones": [
-      "La simpatía implica ponerse en el lugar del otro y entender su perspectiva",
-      "La empatía y la simpatía son sinónimos en el contexto de la comunicación",
-      "La empatía implica ponerse en la situación del otro y pensar como él; la simpatía no es lo mismo",
-      "La simpatía es superior a la empatía como herramienta de comunicación"
-    ],
-    "respuestaCorrecta": "La empatía implica ponerse en la situación del otro y pensar como él; la simpatía no es lo mismo",
-    "tema": "Expresión Oral",
-    "explicacion": "El temario es explícito: 'Empatía y simpatía NO es lo mismo'. La empatía es ponerse en la situación del otro y pensar y entender como él, 'caminar con sus zapatos'. La simpatía es algo diferente.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Durante la Guerra Civil Española, ¿qué cambio táctico fundamental en las formaciones aéreas se desarrolló y luego se aplicó en la Segunda Guerra Mundial?",
-    "opciones": [
-      "Se pasó de vuelo en solitario a formaciones de 3 aviones",
-      "Se pasó de formaciones de 3 aviones a grupos de 4, más eficaces",
-      "Se inventó el vuelo nocturno como táctica estándar",
-      "Se implantó el reabastecimiento en vuelo como táctica habitual"
-    ],
-    "respuestaCorrecta": "Se pasó de formaciones de 3 aviones a grupos de 4, más eficaces",
-    "tema": "Historia del EA",
-    "explicacion": "La Guerra Civil Española fue un campo de pruebas para la aviación. Una de las innovaciones tácticas fue el cambio de formaciones de 3 aviones a grupos de 4, que resultaron más eficaces en combate. Esta táctica se exportó a la Segunda Guerra Mundial.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿En qué teoría sobre el liderazgo existen ciertos comportamientos específicos que diferencian a los líderes de los no líderes?",
-    "opciones": [
-      "Rasgos",
-      "Conductuales",
-      "Situacional",
-      "Teoría de la Ruta-Meta"
-    ],
-    "respuestaCorrecta": "Conductuales",
+    "respuestaCorrecta": "Modelo 360",
     "tema": "Liderazgo",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "En mensajería formal (MEFO), ¿qué plazo de entrega tiene fijada la prelación 'O' (Inmediato)?",
-    "opciones": [
-      "Menos de 1 hora",
-      "Entrega lo antes posible",
-      "Hasta 6 horas",
-      "Al comienzo de la jornada siguiente"
-    ],
-    "respuestaCorrecta": "Menos de 1 hora",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La prelación 'O' (Inmediato) exige que el mensaje sea entregado en un plazo inferior a una hora.",
+    "explicacion": "El modelo de liderazgo especificado en el temario es el 'Modelo de liderazgo Ejercito del aire: 360'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Cuáles son los dos coroneles o capitanes considerados creadores del Ejército de Aviación Español en 1910 y qué distinción tuvo Benito Loygorri Pimentel ese mismo año?",
+    "pregunta": "¿Cómo se llama el apartado de liderazgo accesible a través de la intranet?",
     "opciones": [
-      "Herrera y Kindelán los crearon; Loygorri fue el primer piloto junto al Infante Alfonso",
-      "Coronel Vives y capitán Kindelán los crearon; Loygorri fue el 1.er piloto junto al Infante Alfonso",
-      "Sanjurjo y Mola los crearon; Loygorri diseñó el Rokiski",
-      "Franco y Ruiz de Alda los crearon; Loygorri pilotó el Plus Ultra"
+      "El rincón del Líder",
+      "Portal de Liderazgo del EA",
+      "Espacio del Mando y Valores",
+      "Aula Virtual de Liderazgo"
     ],
-    "respuestaCorrecta": "Coronel Vives y capitán Kindelán los crearon; Loygorri fue el 1.er piloto junto al Infante Alfonso",
-    "tema": "Historia del EA",
-    "explicacion": "El Coronel Vives y el Capitán Kindelán son considerados los creadores del Ejército de Aviación Española en 1910. Ese mismo año los primeros pilotos militares fueron el Infante don Alfonso de Orleáns y Benito Loygorri Pimentel.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes describe correctamente la 'asertividad' según el temario?",
-    "opciones": [
-      "La capacidad de percibir las emociones del interlocutor y ponerse en su lugar",
-      "La habilidad para escuchar activamente sin interrumpir al que habla",
-      "La convicción de defender opiniones propias de forma razonada, evitando reacciones emocionales",
-      "La capacidad de transmitir mensajes claros ajustando el tono de voz al contenido"
-    ],
-    "respuestaCorrecta": "La convicción de defender opiniones propias de forma razonada, evitando reacciones emocionales",
-    "tema": "Expresión Oral",
-    "explicacion": "La asertividad es la convicción de defender opiniones propias de forma razonada, evitando reacciones emocionales, hasta convencer a otros o ser convencido de que otras opciones son mejores. La empatía es ponerse en el lugar del otro; la escucha activa es la otra herramienta comunicativa clave.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "El principio de 'Expectativas' en la intervención psicológica en emergencias consiste en transmitir información positiva a la víctima. ¿Con qué otro principio podría confundirse y cuál es la diferencia?",
-    "opciones": [
-      "Con Proximidad; la diferencia es que Proximidad trata la localización física y Expectativas el contenido del mensaje",
-      "Con Inmediatez; la diferencia es que Inmediatez trata el tiempo de actuación y Expectativas trata el contenido del mensaje que se transmite",
-      "Con Unidad; la diferencia es que Unidad reestructura experiencias y Expectativas informa positivamente",
-      "Con Simplicidad; son el mismo principio con distintos nombres"
-    ],
-    "respuestaCorrecta": "Con Inmediatez; la diferencia es que Inmediatez trata el tiempo de actuación y Expectativas trata el contenido del mensaje que se transmite",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Podría confundirse con Inmediatez, pero son distintos: Inmediatez indica que la intervención debe ser precoz (cuándo se actúa). Expectativas indica que el mensaje transmitido debe ser positivo y generar confianza en la recuperación (qué se comunica). Son dimensiones complementarias pero diferentes.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál es el contenido exacto de la Directiva 024/15 del JEMA y en qué año se publicó?",
-    "opciones": [
-      "Regula los valores militares en la IG 00-4, publicada en octubre 2015",
-      "Establece la implantación del modelo de Liderazgo y Valores en el EA, publicada en junio 2015",
-      "Modifica el Código Penal Militar, publicada en 2014",
-      "Regula el sistema de registro documental, publicada en 2015"
-    ],
-    "respuestaCorrecta": "Establece la implantación del modelo de Liderazgo y Valores en el EA, publicada en junio 2015",
-    "tema": "Valores Militares",
-    "explicacion": "La Directiva 024/15 del JEMA, de junio de 2015, establece la implantación del modelo de Liderazgo y Valores en el EA en dos fases: implementación y consolidación. La IG 00-4 llegó después, en octubre de 2015, desarrollando los valores esenciales y el modelo 360º.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Por qué el temario concluye que 'tener ciertos rasgos y ciertas conductas ayudan para ser un líder, pero en ningún caso son determinantes'?",
-    "opciones": [
-      "Porque el liderazgo depende únicamente de la formación recibida",
-      "Porque no existe una relación causa-efecto directa entre tener rasgos o conductas de liderazgo y ser efectivamente un líder eficaz en cualquier situación",
-      "Porque el liderazgo es innato y no puede desarrollarse",
-      "Porque la situación es el único factor relevante"
-    ],
-    "respuestaCorrecta": "Porque no existe una relación causa-efecto directa entre tener rasgos o conductas de liderazgo y ser efectivamente un líder eficaz en cualquier situación",
+    "respuestaCorrecta": "El rincón del Líder",
     "tema": "Liderazgo",
-    "explicacion": "El temario concluye que no existe relación causa-efecto directa. El liderazgo está determinado por el conjunto del contexto, los rasgos y las conductas, pero ninguno por sí solo es determinante ni suficiente. El líder se construye a partir de todas esas variables interactuando.",
+    "explicacion": "El temario señala que el apartado correspondiente en la intranet es 'El rincón del Líder'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "En los textos descriptivos, ¿qué estructura sintáctica es la más usada?",
+    "pregunta": "¿Qué teoría o herramienta se menciona en el temario para explicar la Motivación como parte de los valores militares?",
     "opciones": [
-      "Subordinación para expresar causas",
-      "Yuxtaposición",
-      "Coordinación adversativa",
-      "Oraciones interrogativas directas"
+      "La Pirámide de Maslow",
+      "La teoría de los dos factores de Herzberg",
+      "El modelo de expectativas de Vroom",
+      "La teoría X e Y de McGregor"
     ],
-    "respuestaCorrecta": "Yuxtaposición",
-    "tema": "Expresión Escrita",
-    "explicacion": "La yuxtaposición es la estructura más usada en el texto descriptivo. La subordinación aparece para hacer comparaciones.",
+    "respuestaCorrecta": "La Pirámide de Maslow",
+    "tema": "Liderazgo",
+    "explicacion": "Bajo el noveno valor ('Motivación'), el temario menciona explícitamente: 'Motivación: Pirámide de Maslow'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Qué siglas identifican al futuro caza europeo de combate de quinta/sexta generación desarrollado por España, Francia y Alemania?",
+    "pregunta": "En columna de a tres, ¿quién es el único integrante que NO gira la cabeza durante los giros en orden cerrado?",
     "opciones": [
-      "FCAS",
-      "EF-2000",
-      "MQ-9",
-      "CLAEX"
+      "El guía",
+      "El que va en el centro",
+      "El último de la fila",
+      "Todos deben girar la cabeza obligatoriamente"
     ],
-    "respuestaCorrecta": "FCAS",
-    "tema": "Material Aéreo",
-    "explicacion": "El FCAS (Future Combat Air System) es el programa trinacional europeo para el desarrollo del futuro caza.",
+    "respuestaCorrecta": "El guía",
+    "tema": "IOC",
+    "explicacion": "El temario de Instrucción de Orden Cerrado indica: 'En columna de a tres el UNICO que no gira la cabeza es el guía'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "Un grupo militar lleva tiempo funcionando bien, pero últimamente hay dudas sobre el liderazgo, los miembros empiezan a cuestionar la misión común y hay desconfianza creciente. Según el modelo cíclico de Worchel, ¿en qué fase se encuentra el grupo y qué puede ocurrir a continuación?",
+    "pregunta": "En instrucción de orden cerrado, ¿con qué pierna se debe flexionar al escuchar la voz preventiva del paso ligero?",
     "opciones": [
-      "Fase de productividad grupal; a continuación vendrá la individualización",
-      "Fase de individualización; a continuación vendrá el declive grupal",
-      "Fase de declive grupal; el grupo puede reiniciar el ciclo o disolverse",
-      "Fase de descontento; se aproxima un suceso precipitante"
+      "La pierna derecha",
+      "La pierna izquierda",
+      "Ambas piernas simultáneamente",
+      "Ninguna, la flexión se realiza en la voz ejecutiva"
     ],
-    "respuestaCorrecta": "Fase de declive grupal; el grupo puede reiniciar el ciclo o disolverse",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Las características descritas (dudas, desconfianza, cuestionamiento) corresponden a la fase de Declive grupal, la última del modelo de Worchel. Tras ella, el grupo puede reiniciar el ciclo con una nueva fase de descontento o disolverse.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes sería adecuado en la escritura de un texto?",
-    "opciones": [
-      "NATO",
-      "OTAN",
-      "NATO y OTAN son válidas las dos",
-      "Ninguna es correcta"
-    ],
-    "respuestaCorrecta": "OTAN",
-    "tema": "Expresión Escrita",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "Según el temario, ¿cuál es la diferencia entre 'escuchar' y 'escucha activa'?",
-    "opciones": [
-      "No existe diferencia práctica entre ambas",
-      "Escuchar es entender y dar sentido a lo que se oye; la escucha activa va más allá percibiendo también emociones e ideas que hay detrás",
-      "Escuchar es pasivo; la escucha activa implica interrumpir para confirmar",
-      "La escucha activa solo se aplica en contextos terapéuticos profesionales"
-    ],
-    "respuestaCorrecta": "Escuchar es entender y dar sentido a lo que se oye; la escucha activa va más allá percibiendo también emociones e ideas que hay detrás",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "El temario distingue tres niveles: oír (percibir el sonido), escuchar (entender y dar sentido) y escucha activa (percibir más allá de lo expresado directamente, captando emociones e ideas subyacentes). La diferencia radica en el nivel de atención.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro1"
-  },
-  {
-    "pregunta": "La ONU nació para evitar guerras mediante la diplomacia. ¿Cuántos miembros tiene actualmente, frente a los 51 fundadores de 1945?",
-    "opciones": [
-      "151 miembros",
-      "173 miembros",
-      "193 miembros",
-      "207 miembros"
-    ],
-    "respuestaCorrecta": "193 miembros",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La ONU comenzó con 51 estados miembros en 1945 y hoy cuenta con 193, prácticamente la totalidad de los estados reconocidos internacionalmente.",
+    "respuestaCorrecta": "La pierna derecha",
+    "tema": "IOC",
+    "explicacion": "El paso ligero requiere 'Flexionar la pierna derecha en voz preventiva'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "Las fases en una crisis psicológica son:",
+    "pregunta": "¿A quién le corresponde portar el banderín de una Compañía, Escuadrón o Batería?",
     "opciones": [
-      "Fase de adaptación y fase de asimilación",
-      "Fase shock y fase de reacción",
-      "Fase previa y fase final",
-      "Fase incipiente y fase terminal"
+      "Cabo",
+      "Sargento",
+      "Cabo 1.º",
+      "Soldado"
     ],
-    "respuestaCorrecta": "Fase shock y fase de reacción",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "",
+    "respuestaCorrecta": "Cabo",
+    "tema": "IOC",
+    "explicacion": "El temario especifica textualmente para 'Banderín dBe Cía./Escón./Bía.: Cabo'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "El primer puente aéreo de la historia de España transportó miles de soldados desde África a la Península durante la Guerra Civil. ¿Cuántos hombres del ejército de África habían sido transportados cuando culminó el puente en noviembre?",
+    "pregunta": "¿Cuál de los siguientes NO es uno de los tres objetivos principales del TCCC?",
     "opciones": [
-      "5.000 hombres",
-      "12.000 hombres",
-      "23.393 hombres de los 30.000 del ejército de África",
-      "30.000 hombres completos"
+      "Asegurar el repliegue táctico inmediato",
+      "Tratar al Herido",
+      "Evitar más heridos",
+      "Completar la misión"
     ],
-    "respuestaCorrecta": "23.393 hombres de los 30.000 del ejército de África",
-    "tema": "Historia del EA",
-    "explicacion": "El puente aéreo de la Guerra Civil culminó en noviembre habiendo transportado a 23.393 hombres de los 30.000 del ejército de África. Comenzó con 2 Junkers Ju-52 que trasladaron los primeros 2.500 hombres, luego llegaron 9 más y 6 cazas Heinkel He-51.",
+    "respuestaCorrecta": "Asegurar el repliegue táctico inmediato",
+    "tema": "TCCC",
+    "explicacion": "Los tres objetivos del TCCC son: Tratar al Herido, Evitar más heridos y Completar la misión.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"
   },
   {
-    "pregunta": "¿Cuál es el número mínimo de condiciones que establece Bar-Tal para que un colectivo sea considerado un grupo?",
+    "pregunta": "Según las estadísticas de TCCC, ¿cuál es la causa de baja más común en combate, representando el 85% de las muertes evitables?",
     "opciones": [
-      "Una sola condición",
-      "Dos condiciones",
-      "Tres condiciones",
-      "Cuatro condiciones"
+      "Hemorragias",
+      "Obstrucción de vías aéreas",
+      "Hemotórax a tensión",
+      "Traumatismo craneal"
     ],
-    "respuestaCorrecta": "Tres condiciones",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Bar-Tal (1990) establece tres condiciones: 1) los componentes se definan como miembros del grupo, 2) compartan creencias grupales, 3) exista actividad coordinada. Las tres deben cumplirse simultáneamente.",
+    "respuestaCorrecta": "Hemorragias",
+    "tema": "TCCC",
+    "explicacion": "La causa número 1 de baja es '85% por Hemorragias. Tratar antes de 3 minutos'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿En qué fase de la asistencia en combate (TCCC) se encuentra el personal si está bajo fuego enemigo en la zona caliente?",
+    "opciones": [
+      "CARE UNDER FIRE (CUF)",
+      "TACTICAL FIELD CARE (TFC)",
+      "TACTICAL EVACUATION CARE (TEC)",
+      "MEDEVAC"
+    ],
+    "respuestaCorrecta": "CARE UNDER FIRE (CUF)",
+    "tema": "TCCC",
+    "explicacion": "La fase bajo fuego enemigo (zona caliente) se denomina 'CARE UNDER FIRE (CUF)'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿A qué distancia del punto de sangrado se debe aplicar un torniquete en extremidades?",
+    "opciones": [
+      "A 5-7 cm del punto de sangrado",
+      "Justo encima de la herida",
+      "A 10-15 cm del punto de sangrado",
+      "Lo más proximal posible, cerca de la ingle o axila"
+    ],
+    "respuestaCorrecta": "A 5-7 cm del punto de sangrado",
+    "tema": "TCCC",
+    "explicacion": "El temario instruye: 'Torniquete en extremidades siempre a 5-7 cm del punto de sangrado'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué significan las siglas OPRL en el ámbito del Ejército del Aire y del Espacio?",
+    "opciones": [
+      "Oficina de Prevención de Riesgos Laborales",
+      "Organización de Planes y Recursos Laborales",
+      "Orden de Prevención y Riesgo Local",
+      "Oficial de Prevención de Riesgos de la Unidad"
+    ],
+    "respuestaCorrecta": "Oficina de Prevención de Riesgos Laborales",
+    "tema": "PRL",
+    "explicacion": "Las siglas OPRL hacen referencia a la Oficina de Prevención de Riesgos Laborales.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cómo define el temario el término 'Riesgo' en prevención de riesgos laborales?",
+    "opciones": [
+      "Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo",
+      "Conjunto de actividades adoptadas para evitar o disminuir accidentes",
+      "Lesión corporal sufrida por el trabajador durante la jornada de trabajo",
+      "Daño material ocurrido a los equipos de la empresa"
+    ],
+    "respuestaCorrecta": "Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo",
+    "tema": "PRL",
+    "explicacion": "El temario define Riesgo como: 'Posibilidad de que un trabajador sufra un determinado daño, derivado del trabajo'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cómo se clasifica a un accidente laboral que ocurre durante el desplazamiento al trabajo?",
+    "opciones": [
+      "ACCIDENTE IN ITINERE",
+      "ACCIDENTE SIN BAJA",
+      "ACCIDENTE CON BAJA",
+      "INCIDENTE"
+    ],
+    "respuestaCorrecta": "ACCIDENTE IN ITINERE",
+    "tema": "PRL",
+    "explicacion": "El temario define: 'ACCIDENTE IN ITINERE: Durante el desplazamiento al trabajo'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué define a un 'Incidente' según la normativa de prevención de riesgos laborales?",
+    "opciones": [
+      "Acontecimiento que ocurre sin ocasionar lesión",
+      "Lesión corporal que incapacita para la tarea",
+      "Accidente que ocurre durante el trayecto de ida o vuelta",
+      "Falta de uso de los Equipos de Protección Individual"
+    ],
+    "respuestaCorrecta": "Acontecimiento que ocurre sin ocasionar lesión",
+    "tema": "PRL",
+    "explicacion": "El temario indica: 'INCIDENTE: Sin ocasionar lesión'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué norma ISO regula el Sistema de Gestión Ambiental en el Ejército del Aire?",
+    "opciones": [
+      "ISO 14001",
+      "ISO 9001",
+      "ISO 45001",
+      "ISO 50001"
+    ],
+    "respuestaCorrecta": "ISO 14001",
+    "tema": "Medio Ambiente",
+    "explicacion": "La norma ISO 14001 es la que regula el Sistema de Gestión Ambiental.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué autoridad firma las políticas medioambientales del Ejército del Aire y del Espacio?",
+    "opciones": [
+      "El JEMA",
+      "El Ministro de Defensa",
+      "El Director del Instituto de Prevención",
+      "El Comandante de la Base Aérea"
+    ],
+    "respuestaCorrecta": "El JEMA",
+    "tema": "Medio Ambiente",
+    "explicacion": "El temario especifica: 'El JEMA firma las políticas medioambientales'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo general del plan PADEA?",
+    "opciones": [
+      "Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa",
+      "Regular las licencias de bebidas alcohólicas en bases militares",
+      "Establecer la prevención de riesgos y accidentes por caídas",
+      "Realizar pruebas físicas obligatorias a todo el personal de la UCO"
+    ],
+    "respuestaCorrecta": "Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa",
+    "tema": "PADEA",
+    "explicacion": "El temario señala que el 'OBJETIVO GENERAL PADEA → Erradicar la tenencia, consumo y tráfico de drogas en el Ministerio de Defensa'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿De cuántos meses es el periodo de seguimiento si se da positivo en una prueba de drogas del PADEA?",
+    "opciones": [
+      "8 meses",
+      "12 meses",
+      "6 meses",
+      "24 meses"
+    ],
+    "respuestaCorrecta": "8 meses",
+    "tema": "PADEA",
+    "explicacion": "El temario indica: 'Seguimiento si das positivo en PADEA = 8 meses'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Cómo define el temario el término 'Intoxicación' en el ámbito de las adicciones?",
+    "opciones": [
+      "Consumo de droga",
+      "Deseo intenso de consumir",
+      "Necesidad de dosis cada vez mayores",
+      "Síntomas físicos y psicológicos al suspender el consumo"
+    ],
+    "respuestaCorrecta": "Consumo de droga",
+    "tema": "PADEA",
+    "explicacion": "El temario define 'Intoxicación: Consumo de droga'.",
+    "dificultad": "facil",
+    "imprescindible": false,
+    "examen": "simulacro1"
+  },
+  {
+    "pregunta": "¿Qué consecuencia puede acarrear para los alumnos la negativa al cumplimiento de las órdenes legítimas sobre el PADEA?",
+    "opciones": [
+      "La expulsión (en caso de alumnos) y aplicación de medidas disciplinarias",
+      "La suspensión temporal de empleo y sueldo",
+      "La obligación de repetir las pruebas PAFAS en 1 año",
+      "Un apercibimiento verbal del Presidente de la Junta"
+    ],
+    "respuestaCorrecta": "La expulsión (en caso de alumnos) y aplicación de medidas disciplinarias",
+    "tema": "PADEA",
+    "explicacion": "El temario indica: 'La negativa al cumplimiento de un deber legítimamente ordenado puede dar lugar a la aplicación de medidas disciplinarias (y a la expulsión en caso de alumnos)'.",
     "dificultad": "facil",
     "imprescindible": false,
     "examen": "simulacro1"

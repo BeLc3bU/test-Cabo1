@@ -1,451 +1,451 @@
 [
   {
-    "pregunta": "¿Qué institución de la UE vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales?",
+    "pregunta": "De acuerdo con los elementos de puntería con pistola descritos en el temario, ¿dónde se debe enfocar la vista para apuntar de manera correcta?",
     "opciones": [
-      "La Comisión Europea",
-      "El Consejo Europeo",
-      "El Tribunal de Justicia",
-      "El Parlamento Europeo"
+      "En el punto de mira",
+      "En el blanco u objetivo",
+      "En la parte trasera de la corredera",
+      "En el punto de mira y en el blanco de forma alterna"
     ],
-    "respuestaCorrecta": "El Tribunal de Justicia",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El Tribunal de Justicia vela porque los países apliquen las leyes aprobadas y se respeten los derechos fundamentales.",
+    "respuestaCorrecta": "En el punto de mira",
+    "tema": "Tiro",
+    "explicacion": "El temario indica literalmente: 'Elementos de puntería con pistola: Enfocar el punto de mira para apuntar'.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿En qué año se creó el primer aeródromo militar en España y dónde estaba ubicado?",
+    "pregunta": "¿Cuál es la posición oficial de tiro que se detalla en el documento de estudio?",
     "opciones": [
-      "1908, en Los Alcázares",
-      "1913, en Getafe",
-      "1911, en Cuatro Vientos",
-      "1915, en Zaragoza"
+      "Isósceles moderna",
+      "Posición Weaver clásica",
+      "Tendido con apoyo",
+      "De rodillas en dos tiempos"
     ],
-    "respuestaCorrecta": "1911, en Cuatro Vientos",
-    "tema": "Historia del EA",
-    "explicacion": "El primer aeródromo militar en España se creó en 1911 en Cuatro Vientos.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "Isósceles moderna",
+    "tema": "Tiro",
+    "explicacion": "En la sección de TIRO se establece que la posición de tiro oficial es la 'Isósceles moderna'.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "En la teoría situacional, ¿qué estilo combina baja tarea y alta relación?",
+    "pregunta": "¿Cuál es el peso oficial del fusil automático G36E en vacío según el temario?",
     "opciones": [
-      "Decir",
-      "Vender",
-      "Delegar",
-      "Participar"
+      "3,3 kg",
+      "3,1 kg",
+      "3,5 kg",
+      "2,9 kg"
     ],
-    "respuestaCorrecta": "Participar",
+    "respuestaCorrecta": "3,3 kg",
+    "tema": "Armamento",
+    "explicacion": "El peso detallado para el fusil G36E es de 3,3 kg.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Respecto a la capacidad del fusil G36E, ¿cuál es la distribución de cartuchos en el cargador y en el arma según el temario?",
+    "opciones": [
+      "30 cartuchos en el cargador y 31 en el arma (uno en recámara)",
+      "20 cartuchos en el cargador y 21 en el arma",
+      "30 cartuchos en el cargador y 30 en el arma",
+      "15 cartuchos en el cargador y 16 en el arma"
+    ],
+    "respuestaCorrecta": "30 cartuchos en el cargador y 31 en el arma (uno en recámara)",
+    "tema": "Armamento",
+    "explicacion": "El temario especifica: 'Capacidad: 30 cartuchos cargador. 31 el arma (uno en recamara)'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué tipo de rallado tiene el cañón del fusil G36E y de la pistola USP COMPACT según el temario?",
+    "opciones": [
+      "Rallado DEXTROSUM",
+      "Rallado SINISTRORSUM",
+      "Rallado Poligonal Rectilíneo",
+      "No disponen de rallado (cañón liso)"
+    ],
+    "respuestaCorrecta": "Rallado DEXTROSUM",
+    "tema": "Armamento",
+    "explicacion": "El temario indica para ambos modelos de armas: 'Rallado DEXTROSUM'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es el periodo de vigencia general de las pruebas PAFAS y el periodo para los alumnos que salen del centro de formación?",
+    "opciones": [
+      "2 años con carácter general y 1 año para alumnos que salen del centro de formación",
+      "1 año general y 2 años para egresados",
+      "Vigencia permanente con revisión médica cada 2 años",
+      "3 años con revisión anual obligatoria"
+    ],
+    "respuestaCorrecta": "2 años con carácter general y 1 año para alumnos que salen del centro de formación",
+    "tema": "PAFAS",
+    "explicacion": "El temario recoge: 'Vigencia PAFAS: 2 años. Para alumnos que salen del centro de formación 1 año'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Quién ostenta la presidencia de la Junta de Evaluación de las pruebas PAFAS?",
+    "opciones": [
+      "El Jefe de la UCO (Coronel o Teniente Coronel)",
+      "El Coronel Médico de la Unidad",
+      "El Oficial de Adiestramiento de la Base",
+      "El Secretario General del tribunal"
+    ],
+    "respuestaCorrecta": "El Jefe de la UCO (Coronel o Teniente Coronel)",
+    "tema": "PAFAS",
+    "explicacion": "En la Junta de evaluación de las PAFAS, el Presidente del tribunal es el 'Jefe de la UCO (Col. O Tcol.)'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según la calificación de grupos del temario, ¿qué tipo de grupo se define por relaciones cercanas e informales, y qué grupo por un interés común y relación formal?",
+    "opciones": [
+      "Primarios (Familia) y Secundarios (Ejército)",
+      "Secundarios (Familia) y Primarios (Ejército)",
+      "Informales (Trabajo) y Formales (Amigos)",
+      "De referencia (Ejército) y De pertenencia (Familia)"
+    ],
+    "respuestaCorrecta": "Primarios (Familia) y Secundarios (Ejército)",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "La clasificación de grupos es: 'Grupos primarios: Cercanos e informales (Familia)' y 'Grupos secundarios: Interés común. Relación formal (Ejercito)'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuáles son las categorías estructurales que organizan un grupo según un patrón en el temario de dinámicas de grupo?",
+    "opciones": [
+      "Rol, Normas grupales, Cohesión grupal y Pensamiento grupal",
+      "Liderazgo, Poder, Puesto y Tarea",
+      "Primarios, Secundarios, Formales e Informales",
+      "Ambiente, Contacto, Cohesión y Actividad"
+    ],
+    "respuestaCorrecta": "Rol, Normas grupales, Cohesión grupal y Pensamiento grupal",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "El temario detalla que la 'Estructura: Grupo se organiza según un patrón: Rol, Normas grupales, Cohesión grupal, Pensamiento grupal'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cómo se define el concepto de 'Rol' dentro del estudio de la dinámica de grupos?",
+    "opciones": [
+      "Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo",
+      "Poder legítimo que otorga la organización a un puesto de trabajo",
+      "Grado de atracción y unión que sienten los miembros entre sí",
+      "Proceso por el que las interacciones sociales modifican la percepción"
+    ],
+    "respuestaCorrecta": "Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "El temario define 'Rol: Conjunto de conductas esperables de una persona que ocupa una posición determinada en un grupo'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuáles son los tres niveles organizativos contemplados en la visión del JEMA sobre el liderazgo?",
+    "opciones": [
+      "Recursos Humanos, Material y Organización",
+      "Estratégico, Operativo y Táctico",
+      "Misión, Subordinados y Familia",
+      "Jefe, Líder y Subordinado"
+    ],
+    "respuestaCorrecta": "Recursos Humanos, Material y Organización",
     "tema": "Liderazgo",
-    "explicacion": "El estilo Participar combina baja tarea + alta relación. Es el adecuado cuando el subalterno tiene problemas de motivación pero es competente (nivel R3).",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ Trampa — El valor 'Compromiso' incluye referencias a varios artículos de las RR.OO. ¿Cuál de estas afirmaciones NO corresponde al compromiso sino a otro valor?",
-    "opciones": [
-      "Art. 3 — Entrega de la vida como primer deber",
-      "Art. 128 — Aprovechar al máximo los medios y oportunidades (alumnos)",
-      "Art. 10 — Comportarse con lealtad y compañerismo",
-      "Art. 21 — Tradición"
-    ],
-    "respuestaCorrecta": "Art. 10 — Comportarse con lealtad y compañerismo",
-    "tema": "Valores Militares",
-    "explicacion": "El Art. 10 (lealtad y compañerismo) corresponde al valor de la LEALTAD, no al compromiso. Los artículos del compromiso son: Art. 3 (entrega de la vida), Art. 21 (tradición), Art. 22 (prestigio), Art. 23 (historial) y Art. 128 (obligación de los alumnos de aprovechar los medios).",
+    "explicacion": "La visión del JEMA establece que la organización del liderazgo se da en tres niveles: Recursos Humanos, Material y Organización.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "¿Quién fue el autor referente en la dinámica de grupos?",
+    "pregunta": "¿Cuáles son las tres responsabilidades esenciales del mando como líder descritas en el temario?",
     "opciones": [
-      "Stephen Olson",
-      "Winston Churchill",
-      "Albert Einstein",
-      "Kurt Lewin"
+      "Cumplir la misión, cuidar a tus subordinados y cuidar de sus familias",
+      "Mantener la disciplina, controlar los recursos y planificar la instrucción",
+      "Obedecer las órdenes, adiestrar al personal y gestionar el material",
+      "Fomentar el deporte, realizar evaluaciones PAFAS y tramitar EPIs"
     ],
-    "respuestaCorrecta": "Kurt Lewin",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ TRAMPA — Ordena correctamente las letras del protocolo ACERCARSE: Ambiente, Contacto, Evaluación, Restablecimiento emocional… ¿qué viene después?",
-    "opciones": [
-      "Seguimiento",
-      "Comprensión de crisis",
-      "Recuperación de funcionamiento",
-      "Activar"
-    ],
-    "respuestaCorrecta": "Comprensión de crisis",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Tras el Restablecimiento emocional viene la Comprensión de crisis, luego Activar, Recuperación de funcionamiento y finalmente Seguimiento.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Cuál de estas fases del proceso de escritura NO pertenece a la terminología clásica latina recogida en el temario?",
-    "opciones": [
-      "Inventio",
-      "Dispositio",
-      "Elocutio",
-      "Scriptio"
-    ],
-    "respuestaCorrecta": "Scriptio",
-    "tema": "Expresión Escrita",
-    "explicacion": "Las cuatro fases del proceso de escritura en el temario son: Inventio (construcción), Dispositio (disposición), Elocutio (redacción) y Emendatio (revisión). 'Scriptio' no aparece en el temario.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Una víctima de tercer grado en una emergencia sería:",
-    "opciones": [
-      "Un familiar directo del afectado",
-      "Alguien que se salvó por no estar presente",
-      "Un miembro de los equipos intervinientes",
-      "Alguien que conoce el suceso por los medios"
-    ],
-    "respuestaCorrecta": "Un miembro de los equipos intervinientes",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las víctimas de 3º grado son los equipos intervinientes. Las de 2º grado son los familiares y las de 1º los afectados directamente.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál de estos personajes históricos NO aparece en el temario como ejemplo de liderazgo?",
-    "opciones": [
-      "Nelson Mandela",
-      "Malala Yousafzai",
-      "Martin Luther King",
-      "Napoleón Bonaparte"
-    ],
-    "respuestaCorrecta": "Napoleón Bonaparte",
+    "respuestaCorrecta": "Cumplir la misión, cuidar a tus subordinados y cuidar de sus familias",
     "tema": "Liderazgo",
-    "explicacion": "Los ejemplos de liderazgo citados en el temario son Gandhi, Churchill, Martin Luther King, Nelson Mandela y Malala Yousafzai. Napoleón no aparece.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué aviones utilizaron los nacionales en el bombardeo de Guernica durante la Guerra Civil y quién los proporcionó?",
-    "opciones": [
-      "Polikarpov I-16 proporcionados por la URSS",
-      "Heinkel He-111 y Ju-52 de la Legión Cóndor alemana",
-      "Fiat CR-32 y Savoia S-81 italianos",
-      "Breguet XIX proporcionados por Francia"
-    ],
-    "respuestaCorrecta": "Heinkel He-111 y Ju-52 de la Legión Cóndor alemana",
-    "tema": "Historia del EA",
-    "explicacion": "El bombardeo de Guernica fue realizado con aviones alemanes Heinkel He-111 y Junkers Ju-52 pertenecientes a la Legión Cóndor. Inspiró la famosa obra de Pablo Picasso. Fue uno de los primeros bombardeos estratégicos sobre población civil de la historia.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ Trampa — En el texto narrativo lineal, ¿cuál es el orden correcto de sus tres partes estructurales?",
-    "opciones": [
-      "Introducción → Clímax → Desenlace",
-      "Planteamiento → Nudo/complicación → Desenlace",
-      "Desarrollo → Planteamiento → Clímax",
-      "Exposición → Refutación → Conclusión"
-    ],
-    "respuestaCorrecta": "Planteamiento → Nudo/complicación → Desenlace",
-    "tema": "Expresión Escrita",
-    "explicacion": "La estructura narrativa lineal tiene: Planteamiento o exposición → Nudo/complicación → Desenlace. La estructura libre o artística es la que incluye Clímax. La secuencia Exposición→Refutación→Conclusión es del texto argumentativo.",
+    "explicacion": "Bajo las Responsabilidades como líder se detalla: 'Cumplir la misión, Cuidar a tus subordinados, Cuidar también de sus familias'.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "En la redacción de documentos militares, ¿a quién va dirigido un Oficio y cuántos asuntos puede tratar, según la IG 10-01?",
+    "pregunta": "¿Cuáles son las denominadas '5C' que componen el valor militar del 'Espíritu de equipo'?",
     "opciones": [
-      "A la persona física que ocupa el cargo; puede tratar varios asuntos relacionados",
-      "A la autoridad o al cargo oficial, nunca a la persona; trata un único asunto",
-      "A la sección que debe ejecutar la acción; sin límite de asuntos",
-      "Al superior jerárquico directo; puede tratar hasta dos asuntos"
+      "Coordinación, Compromiso, Confianza, Complementariedad y Comunicación",
+      "Cohesión, Control, Carácter, Compañerismo y Compromiso",
+      "Comunicación, Calidad, Capacitación, Cooperación y Confianza",
+      "Cuidado, Conducta, Capacidad, Consistencia y Claridad"
     ],
-    "respuestaCorrecta": "A la autoridad o al cargo oficial, nunca a la persona; trata un único asunto",
-    "tema": "Instrucción a la IG 10-01",
-    "explicacion": "El Oficio se dirige siempre a la autoridad o al cargo oficial, nunca a la persona física que lo ocupa. Trata un único asunto y usa N/Ref y S/Ref para su identificación y seguimiento.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es la principal diferencia entre la función de 'constancia' y la función de 'comunicación' de los documentos administrativos?",
-    "opciones": [
-      "La función de constancia es interna; la de comunicación es siempre externa",
-      "La función de constancia conserva y demuestra la existencia de los actos y da acceso a los ciudadanos; la de comunicación transmite información interna o externamente",
-      "Son la misma función con dos nombres distintos",
-      "La función de constancia solo aplica a documentos clasificados"
-    ],
-    "respuestaCorrecta": "La función de constancia conserva y demuestra la existencia de los actos y da acceso a los ciudadanos; la de comunicación transmite información interna o externamente",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La función de constancia garantiza la conservación de los actos, demuestra su existencia y da derecho a los ciudadanos a acceder a ellos. La función de comunicación transmite información, tanto interna (entre órganos) como externa (con ciudadanos o instituciones).",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "El Ejército del Aire participa en la Policía Aérea del Báltico con unos 150 militares. ¿Con qué aeronaves puede participar según el temario?",
-    "opciones": [
-      "MQ-9 Predator o C-295",
-      "A-400M o A-330",
-      "F-18 o Eurofighter",
-      "Canadair CL-415 o AS-332"
-    ],
-    "respuestaCorrecta": "F-18 o Eurofighter",
-    "tema": "Material Aéreo",
-    "explicacion": "En la misión de Policía Aérea del Báltico (BAP), cuyo objetivo es asegurar el espacio aéreo OTAN, España participa con aproximadamente 150 militares y aeronaves F-18 o Eurofighter según la rotación.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes NO es un principio de intervención psicológica en emergencias según el temario?",
-    "opciones": [
-      "Proximidad",
-      "Inmediatez",
-      "Objetividad",
-      "Expectativas"
-    ],
-    "respuestaCorrecta": "Objetividad",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Los principios de intervención del temario son: Proximidad, Inmediatez, Expectativas, Simplicidad y Unidad. La 'Objetividad' no aparece como principio de intervención psicológica.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "En el sistema de mensajería formal MEFO (teletipo), ¿qué letra identifica a la prelación 'Prioridad' y qué plazo de entrega tiene fijado?",
-    "opciones": [
-      "P (Prioridad) - Plazo máximo de entrega de 6 horas",
-      "Z (Flash) - Entrega inmediata en menos de 5 minutos",
-      "O (Inmediato) - Plazo de 1 hora",
-      "R (Rutina) - Plazo de 24 horas"
-    ],
-    "respuestaCorrecta": "P (Prioridad) - Plazo máximo de entrega de 6 horas",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La prelación 'P' indica 'Prioridad' y fija un plazo máximo de entrega o transmisión de 6 horas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál es el órgano de la ONU que dirime controversias entre estados con fallos inapelables, está compuesto por 15 jueces y tiene su sede en La Haya?",
-    "opciones": [
-      "El Consejo de Seguridad",
-      "El Secretariado",
-      "La Corte Internacional de Justicia",
-      "El ECOSOC"
-    ],
-    "respuestaCorrecta": "La Corte Internacional de Justicia",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La Corte Internacional de Justicia (CIJ) es el principal órgano judicial de la ONU. Sus 15 jueces son elegidos por la Asamblea General y el Consejo de Seguridad. Sus fallos son inapelables y dirime solo controversias entre estados.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿En qué año entró en servicio el primer F-86 Sabre en el EA español, gracias al tratado de asistencia con EE.UU.?",
-    "opciones": [
-      "1949",
-      "1953",
-      "1955",
-      "1960"
-    ],
-    "respuestaCorrecta": "1955",
-    "tema": "Historia del EA",
-    "explicacion": "La primera unidad operativa española con el F-86 Sabre fue en 1955, dos años después de la firma del tratado de asistencia con EE.UU. en 1953. En 1960 llegó el F-104 Starfighter y en 1965 el HA-200 Saeta, primer reactor nacional.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Según el temario, ¿qué ocurre con la credibilidad del comunicador 'durante el discurso' y de qué depende en ese momento?",
-    "opciones": [
-      "Depende de las referencias previas que tenga el público sobre el comunicador",
-      "Depende de la prestancia, el dinamismo y la personalidad del comunicador durante la intervención",
-      "Depende del autoexamen posterior que realice el comunicador",
-      "Depende exclusivamente del contenido técnico del discurso"
-    ],
-    "respuestaCorrecta": "Depende de la prestancia, el dinamismo y la personalidad del comunicador durante la intervención",
-    "tema": "Expresión Oral",
-    "explicacion": "El temario distingue tres momentos de la credibilidad: antes del discurso (referencias previas del público), durante el discurso (prestancia, dinamismo y personalidad del comunicador) y después del discurso (autoexamen). Durante la intervención, lo que transmite el comunicador con su presencia y personalidad es determinante.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Respecto a las principales respuestas de los grupos, señalar la incorrecta.",
-    "opciones": [
-      "Participativa",
-      "Imitativa",
-      "Conformista",
-      "Colectivista"
-    ],
-    "respuestaCorrecta": "Participativa",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "El MQ-9 'Predator' es la aeronave no tripulada del EA. ¿Qué tipo de misiones realiza y desde qué base opera?",
-    "opciones": [
-      "Contraincendios desde BA Torrejón",
-      "Reconocimiento e ISR desde BA Talavera (ALA 23)",
-      "Fotografía y calibración desde BA Getafe",
-      "SAR desde BA Gando"
-    ],
-    "respuestaCorrecta": "Reconocimiento e ISR desde BA Talavera (ALA 23)",
-    "tema": "Material Aéreo",
-    "explicacion": "El MQ-9 Predator (versión MQ-9B) realiza misiones de Reconocimiento e ISR (Inteligencia, Vigilancia y Reconocimiento) desde la BA Talavera, donde está el ALA 23.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "El valor de 'Ejemplaridad' implica que la conducta íntegra es una obligación ética. ¿Qué artículo recoge que los mandos reafirmarán su liderazgo con el ejemplo?",
-    "opciones": [
-      "Art. 44",
-      "Art. 54",
-      "Art. 70",
-      "Art. 89"
-    ],
-    "respuestaCorrecta": "Art. 54",
-    "tema": "Valores Militares",
-    "explicacion": "El Art. 54 establece que los mandos reafirmarán su liderazgo con el ejemplo. El Art. 70 recoge que motivarán a los subordinados también con el ejemplo.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "Indique cual de las siguientes modificaciones deroga una disposición normativa en vigor:",
-    "opciones": [
-      "Enmienda",
-      "Revisión",
-      "Modificación",
-      "Anulación"
-    ],
-    "respuestaCorrecta": "Anulación",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes es un ERROR propio de la comunicación vertical ASCENDENTE según el temario?",
-    "opciones": [
-      "Reducción del mensaje al descender de nivel jerárquico",
-      "Falta de comprensión del mensaje",
-      "Gatekeeping o efecto portero",
-      "Exceso de información en los mensajes descendentes"
-    ],
-    "respuestaCorrecta": "Gatekeeping o efecto portero",
-    "tema": "Expresión Oral",
-    "explicacion": "El Gatekeeping (portero) es un error específico de la comunicación ascendente: quien transmite la información hacia arriba la reduce o restringe. La reducción del mensaje y la falta de comprensión son errores de la comunicación DESCENDENTE.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué permite el sistema de registro y gestión documental?",
-    "opciones": [
-      "Localizar física o electrónicamente un documento",
-      "Consultar sus características",
-      "Destruir documentación clasificada",
-      "A y B son correctas"
-    ],
-    "respuestaCorrecta": "A y B son correctas",
-    "tema": "Registro y Utilización de Documentos",
-    "explicacion": "",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Qué artículo del Tratado de la OTAN establece el compromiso de autodefensa colectiva entre sus miembros?",
-    "opciones": [
-      "Artículo 3",
-      "Artículo 5",
-      "Artículo 10",
-      "Artículo 14"
-    ],
-    "respuestaCorrecta": "Artículo 5",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El artículo 5 del Tratado de la OTAN establece el compromiso de autodefensa colectiva: un ataque contra uno de los miembros se considera un ataque contra todos. El artículo 10 permite invitar a nuevos estados europeos.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "¿Cuáles son los siete rasgos que, según la teoría de rasgos, destacan en los líderes?",
-    "opciones": [
-      "Ambición, energía, deseo de dirigir, honradez, autoconfianza, inteligencia y autocontrol",
-      "Carisma, empatía, decisión, visión, energía, honradez y experiencia",
-      "Amabilidad, firmeza, inteligencia, creatividad, energía, lealtad y disciplina",
-      "Autoridad, conocimiento, respeto, disciplina, ambición, confianza y empatía"
-    ],
-    "respuestaCorrecta": "Ambición, energía, deseo de dirigir, honradez, autoconfianza, inteligencia y autocontrol",
+    "respuestaCorrecta": "Coordinación, Compromiso, Confianza, Complementariedad y Comunicación",
     "tema": "Liderazgo",
-    "explicacion": "La teoría de rasgos identifica 7 rasgos en los líderes: ambición y energía, deseo de dirigir, honradez e integridad, autoconfianza, inteligencia, conocimiento y autocontrol.",
-    "dificultad": "dificil",
-    "imprescindible": false,
-    "examen": "simulacro2"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Cuál es la misión principal del AS-332 'Superpuma' del ALA 48 encuadrado en el 402 Escuadrón?",
-    "opciones": [
-      "Misiones SAR de búsqueda y rescate",
-      "Transporte VIP",
-      "Contraincendios",
-      "Enseñanza avanzada de helicópteros"
-    ],
-    "respuestaCorrecta": "Transporte VIP",
-    "tema": "Material Aéreo",
-    "explicacion": "El AS-332 del 402 Escuadrón (ALA 48, BA Getafe) tiene designación HT.21 y su misión es Transporte VIP. No debe confundirse con el AS-332B del 803 Escuadrón (HD.21), que sí hace SAR.",
+    "explicacion": "El valor 'Espíritu de equipo' consta de las denominadas '5C': Coordinación, Compromiso, Confianza, Complementariedad, Comunicación.",
     "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "En la estructura de la UE, ¿cuál es la diferencia entre el órgano que propone leyes y el que representa la voz de los ciudadanos votando esas leyes?",
+    "pregunta": "En instrucción de orden cerrado, ¿cómo se ejecutan los giros de cabeza al marchar en columna de a seis o de a nueve?",
     "opciones": [
-      "La Comisión propone; el Parlamento Europeo representa y vota junto al Consejo",
-      "El Consejo Europeo propone; la Comisión vota",
-      "El Parlamento propone; la Comisión vota",
-      "El Tribunal de Justicia propone; el Consejo aprueba"
+      "Toda la columna guía es la que no gira la cabeza",
+      "El único que no gira la cabeza es el guía principal de la derecha",
+      "Únicamente giran la cabeza los mandos de sección",
+      "Ninguno de los integrantes debe realizar giros de cabeza"
     ],
-    "respuestaCorrecta": "La Comisión propone; el Parlamento Europeo representa y vota junto al Consejo",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La Comisión Europea (27 comisarios) propone nuevas leyes. El Parlamento Europeo (representantes ciudadanos elegidos cada 5 años) debate y vota esas leyes junto al Consejo de la UE.",
-    "dificultad": "dificil",
+    "respuestaCorrecta": "Toda la columna guía es la que no gira la cabeza",
+    "tema": "IOC",
+    "explicacion": "El temario indica: 'En columna de a seis o nueve TODA la columna guía es la que no gira la cabeza'.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   },
   {
-    "pregunta": "Según el temario, ¿qué afirmación resume correctamente la relación entre grupo de pertenencia y grupo de referencia en el ámbito militar?",
+    "pregunta": "¿Qué norma se da en el temario sobre los braceos al realizar variaciones en el orden cerrado?",
     "opciones": [
-      "El grupo militar debe ser de pertenencia y nunca de referencia",
-      "El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia",
-      "Ambos conceptos son idénticos en el contexto castrense",
-      "El grupo de referencia negativo es el más valorado en el Ejército"
+      "Dejar de bracear a la orden EJECUTIVA, volviendo a bracear por filas al acabar la variación",
+      "Continuar braceando ininterrumpidamente durante toda la variación",
+      "Dejar de bracear a la orden PREVENTIVA y reanudar a la orden ejecutiva",
+      "Bracear únicamente con el brazo izquierdo durante el giro"
     ],
-    "respuestaCorrecta": "El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "El temario cita textualmente: 'El grupo militar debe erigirse no tanto en grupo de pertenencia cuanto en grupo de referencia', pues debe inspirar valores y aspiraciones.",
-    "dificultad": "dificil",
+    "respuestaCorrecta": "Dejar de bracear a la orden EJECUTIVA, volviendo a bracear por filas al acabar la variación",
+    "tema": "IOC",
+    "explicacion": "Sobre las variaciones se indica: 'Variaciones: Dejar de bracear a la orden EJECUTIVA. Se vuelve a bracear por filas cuando acabe la variación'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿A quién le corresponde portar el guion de un batallón o grupo que ha heredado la tradición de regimientos?",
+    "opciones": [
+      "Sargento o cabo 1.º",
+      "Únicamente un suboficial mayor",
+      "Cabo o soldado más antiguo",
+      "Un Oficial subalterno"
+    ],
+    "respuestaCorrecta": "Sargento o cabo 1.º",
+    "tema": "IOC",
+    "explicacion": "El temario establece: 'Guion de batallón o grupo: Sargento o cabo 1.º para aquellos Bóns./Grs. que han heredado la tradición de regimientos y cabo 1.º para el resto'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En el tratamiento de hemorragias en el TCCC, ¿cómo se debe aplicar un agente hemostático en la unión de miembros?",
+    "opciones": [
+      "Manteniendo 3 minutos de presión directa",
+      "Manteniendo 10 minutos de presión directa",
+      "Colocando un vendaje compresivo sin ejercer presión manual",
+      "El agente hemostático no requiere presión directa, actúa solo"
+    ],
+    "respuestaCorrecta": "Manteniendo 3 minutos de presión directa",
+    "tema": "TCCC",
+    "explicacion": "En la sección TCCC se lee: 'Agente hemostático en unión de miembros. 3 minutos de presión directa. (3+3+3)'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es el protocolo de evaluación táctica MARCH utilizado en la fase TACTICAL FIELD CARE (TFC) y qué significa la letra 'A'?",
+    "opciones": [
+      "Airway (manejo de la vía aérea)",
+      "Arterial bleeding (control de hemorragia arterial)",
+      "Assessment (evaluación rápida del estado)",
+      "Antisepsis (desinfección de la herida)"
+    ],
+    "respuestaCorrecta": "Airway (manejo de la vía aérea)",
+    "tema": "TCCC",
+    "explicacion": "El protocolo MARCH en la fase TFC significa: M: Massive bleeding, A: Airway (manejo de la vía aérea), R: Respiration, C: Circulation, H: Head Trauma / hypothermia.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cuál es la causa número 2 de baja evitable en combate y cuánto tiempo máximo hay para tratarla?",
+    "opciones": [
+      "14% por vías aéreas. Tratar antes de 6 minutos",
+      "15% por neumotórax. Tratar antes de 5 minutos",
+      "9% por hemotórax. Tratar antes de 9 minutos",
+      "20% por shock. Tratar antes de 10 minutos"
+    ],
+    "respuestaCorrecta": "14% por vías aéreas. Tratar antes de 6 minutos",
+    "tema": "TCCC",
+    "explicacion": "Las causas de baja especificadas son: '2. 14% por vías aéreas. Tratar antes de 6 minutos'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿En qué fase de la asistencia del TCCC interviene el paramédico en ausencia de fuego enemigo (zona templada)?",
+    "opciones": [
+      "TACTICAL FIELD CARE (TFC)",
+      "CARE UNDER FIRE (CUF)",
+      "TACTICAL EVACUATION CARE (TEC)",
+      "MEDEVAC"
+    ],
+    "respuestaCorrecta": "TACTICAL FIELD CARE (TFC)",
+    "tema": "TCCC",
+    "explicacion": "El temario indica: '2. TACTICAL FIELD CARE (TFC): No fuego enemigo (Zona templada). Limitado pero interviene Para-medico'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "De acuerdo con la prevención de riesgos laborales, ¿cómo se define el término 'Prevención'?",
+    "opciones": [
+      "Conjunto de actividades o medidas adoptadas o previstas en todas las fases con el fin de evitar o disminuir los riesgos del trabajo",
+      "Posibilidad de que un trabajador sufra un determinado daño derivado del trabajo",
+      "Obligatoriedad de utilizar los Equipos de Protección Individual",
+      "Estudio médico para calificar la gravedad de un accidente"
+    ],
+    "respuestaCorrecta": "Conjunto de actividades o medidas adoptadas o previstas en todas las fases con el fin de evitar o disminuir los riesgos del trabajo",
+    "tema": "PRL",
+    "explicacion": "El temario define PREVENCIÓN como: 'Conjunto de actividades o medidas adoptadas o previstas en todas las fases de actividades de la empresa con el fin de evitar o disminuir los riesgos derivados del trabajo'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre un Accidente sin Baja y un Accidente con Baja en el ámbito de la prevención laboral?",
+    "opciones": [
+      "El accidente sin baja permite seguir trabajando tras la asistencia; el accidente con baja incapacita para la tarea",
+      "El accidente sin baja ocurre fuera de la jornada laboral; el accidente con baja ocurre dentro de la UCO",
+      "El accidente sin baja no tiene consecuencias legales; el accidente con baja requiere juicio",
+      "No hay diferencia administrativa, ambos son términos idénticos"
+    ],
+    "respuestaCorrecta": "El accidente sin baja permite seguir trabajando tras la asistencia; el accidente con baja incapacita para la tarea",
+    "tema": "PRL",
+    "explicacion": "En la sección de PRL se define: 'ACCIDENTE SIN BAJA: Hay lesión pero permite seguir trabajando tras asistencia' y 'ACCIDNTE CON BAJA: Incapacitado para seguir la tarea'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿A través de qué oficina se debe tramitar la solicitud de los Equipos de Protección Individual (EPI) correspondientes a cada puesto de trabajo?",
+    "opciones": [
+      "Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO",
+      "Junta de Evaluación de la Base",
+      "Oficina de Recursos Humanos del Ministerio de Defensa",
+      "Secretaría General de la Unidad"
+    ],
+    "respuestaCorrecta": "Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO",
+    "tema": "PRL",
+    "explicacion": "El temario indica: 'La solicitud de los EPI que le puedan corresponder, siempre basada en la evaluación de riesgos de su puesto de trabajo, debe realizarse a través de la Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Para calificar la gravedad de un riesgo laboral, ¿cuáles son los dos factores que se deben valorar?",
+    "opciones": [
+      "La probabilidad de que se produzca el daño y la severidad del mismo",
+      "La duración de la jornada laboral y la antigüedad del personal",
+      "La presencia de equipos médicos y los recursos materiales de la UCO",
+      "La formación previa del personal y el coste de los EPIs"
+    ],
+    "respuestaCorrecta": "La probabilidad de que se produzca el daño y la severidad del mismo",
+    "tema": "PRL",
+    "explicacion": "El temario indica: 'Para calificar un riesgo desde el punto de vista de su gravedad, se valorará la probabilidad de que se produzca un daño y la severidad del mismo'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿Cómo se define el Sistema de Gestión Ambiental (ISO 14001) según el temario?",
+    "opciones": [
+      "Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano",
+      "Un reglamento disciplinario para sancionar vertidos industriales en bases aéreas",
+      "Una directiva del JEMA de obligado cumplimiento sobre reciclaje de papel",
+      "Una auditoría de seguridad que determina el apto médico ambiental"
+    ],
+    "respuestaCorrecta": "Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano",
+    "tema": "Medio Ambiente",
+    "explicacion": "El temario define ISO 14001 como: 'ISO 14001: Sistema de gestión ambiental. Un conjunto ordenado de elementos para administrar todo lo que rodea y afecta a los seres vivos, incluido el ser humano'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿De cuántos puntos consta la Política Ambiental del Ejército del Aire y del Espacio?",
+    "opciones": [
+      "Consta de 10 puntos",
+      "Consta de 5 puntos",
+      "Consta de 12 puntos",
+      "Consta de 8 puntos"
+    ],
+    "respuestaCorrecta": "Consta de 10 puntos",
+    "tema": "Medio Ambiente",
+    "explicacion": "El temario indica explícitamente: 'Política Ambiental del EA: El JEMA firma las políticas medioambientales. Consta de 10 puntos'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "En el plan PADEA, ¿cuál es la diferencia entre los conceptos de Tolerancia y Síntomas de abstinencia?",
+    "opciones": [
+      "Tolerancia es la necesidad de dosis mayores; Síntomas de abstinencia son las reacciones al suspender el consumo",
+      "Tolerancia es el deseo intenso; Síntomas de abstinencia es el consumo experimental",
+      "Tolerancia es la intoxicación aguda; Síntomas de abstinencia es el seguimiento de 8 meses",
+      "No hay diferencia, son dos términos clínicos sinónimos"
+    ],
+    "respuestaCorrecta": "Tolerancia es la necesidad de dosis mayores; Síntomas de abstinencia son las reacciones al suspender el consumo",
+    "tema": "PADEA",
+    "explicacion": "Bajo 'Dependencia: Deseo intenso. Produce:', el temario diferencia: 'Tolerancia: se acostumbra a la sustancia. Necesita dosis cada vez mayores. Síntomas de abstinencia: síntomas físico y psicológicos cuando se suspende consumo de drogas'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según la clasificación del PADEA, ¿quién es el consumidor experimental?",
+    "opciones": [
+      "El que realiza ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo",
+      "El que ya sabe previamente lo que puede obtener y escoge el momento propicio",
+      "El que consume periódicamente pero esto no le impide desarrollar su vida",
+      "Aquel para el que el consumo es el centro de su vida"
+    ],
+    "respuestaCorrecta": "El que realiza ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo",
+    "tema": "PADEA",
+    "explicacion": "El temario define: 'Experimentales. Ensayos por curiosidad en una o varias ocasiones, sin intención de repetir el consumo'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "Según la clasificación del PADEA, ¿quién es el consumidor habitual?",
+    "opciones": [
+      "El que tiene un consumo periódico, que no le impide desarrollar su vida, pero busca el efecto con continuidad",
+      "El que realiza ensayos por curiosidad en una o varias ocasiones sin repetir",
+      "Aquel para el que el consumo es el centro de su vida y constituye un problema",
+      "El que escoge escenarios específicos por conocer previamente los efectos"
+    ],
+    "respuestaCorrecta": "El que tiene un consumo periódico, que no le impide desarrollar su vida, pero busca el efecto con continuidad",
+    "tema": "PADEA",
+    "explicacion": "El temario define: 'Habituales. consumo periódico, “no les impide desarrollar su vida” pero el efecto es buscado con continuidad'.",
+    "dificultad": "media",
+    "imprescindible": false,
+    "examen": "simulacro2"
+  },
+  {
+    "pregunta": "¿En qué grado afecta al cuerpo el consumo de drogas más allá del momento del consumo, y qué ejemplo cita el temario?",
+    "opciones": [
+      "Afecta más allá de su consumo, por ejemplo el THC afecta más de 7 días",
+      "Afecta solo durante las 24 horas siguientes al consumo",
+      "Afecta exclusivamente a nivel físico durante un periodo de 48 horas",
+      "No hay efectos residuales que superen los 3 días"
+    ],
+    "respuestaCorrecta": "Afecta más allá de su consumo, por ejemplo el THC afecta más de 7 días",
+    "tema": "PADEA",
+    "explicacion": "El temario señala: 'El consumo de drogas afecta al cuerpo más allá de su consumo. (ej: THC más 7 días). Importa lo que haces en el fin de semana'.",
+    "dificultad": "media",
     "imprescindible": false,
     "examen": "simulacro2"
   }

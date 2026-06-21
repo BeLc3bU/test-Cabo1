@@ -1,451 +1,451 @@
 [
   {
-    "pregunta": "En la teoría situacional de Hersey y Blanchard, ¿qué estilo de liderazgo se aplica cuando el subalterno tiene un nivel R4 de disposición?",
+    "pregunta": "Cuando el tirador presenta una dominancia cruzada (ojo y mano de diferentes lados), ¿qué técnica específica de tiro con los dos ojos abiertos se debe aplicar según el temario?",
     "opciones": [
-      "Decir: alta tarea, baja relación",
-      "Vender: alta tarea, alta relación",
-      "Participar: baja tarea, alta relación",
-      "Delegar: baja tarea, baja relación"
+      "Tiro con los dos ojos abiertos utilizando el ojo y mano de diferentes lados",
+      "Cerrar obligatoriamente el ojo no dominante",
+      "Cambiar la empuñadura a la mano del ojo dominante",
+      "Adoptar la posición Weaver modificada"
     ],
-    "respuestaCorrecta": "Delegar: baja tarea, baja relación",
+    "respuestaCorrecta": "Tiro con los dos ojos abiertos utilizando el ojo y mano de diferentes lados",
+    "tema": "Tiro",
+    "explicacion": "El temario establece literalmente: 'Tiro con los dos ojos abiertos: Ojo y mano de diferentes lados=dominancia cruzada'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "De acuerdo con las especificaciones técnicas del fusil automático G36E, ¿cuál es el principio mecánico de automatismo del arma?",
+    "opciones": [
+      "Fusil automático por toma de gases indirecta",
+      "Fusil automático por retroceso directo de masas",
+      "Fusil automático por toma de gases directa",
+      "Fusil semiautomático por acerrojamiento Browning-Peters"
+    ],
+    "respuestaCorrecta": "Fusil automático por toma de gases indirecta",
+    "tema": "Armamento",
+    "explicacion": "La ficha del fusil G36E indica: 'Fusil automático por toma de gases indirecta'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuántos y de qué tipo son los seguros que posee la pistola USP COMPACT según el temario?",
+    "opciones": [
+      "Seguros: 4 (1 activo + 3 pasivos)",
+      "Seguros: 3 (1 activo + 2 pasivos)",
+      "Seguros: 4 pasivos automáticos",
+      "Seguros: 2 activos manuales"
+    ],
+    "respuestaCorrecta": "Seguros: 4 (1 activo + 3 pasivos)",
+    "tema": "Armamento",
+    "explicacion": "El temario especifica que la USP COMPACT tiene 'Seguros: 4 (1 activo + 3 pasivos)'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuál es el sistema de acerrojamiento mecánico que utiliza la pistola USP COMPACT?",
+    "opciones": [
+      "Browning-Peters",
+      "Cierre de rodillos semirrígido",
+      "Bloque de cuña oscilante",
+      "Toma de gases indirecta con cabeza de cierre rotatoria"
+    ],
+    "respuestaCorrecta": "Browning-Peters",
+    "tema": "Armamento",
+    "explicacion": "El sistema de acerrojamiento de la USP COMPACT es: 'Browning-Peters'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Respecto a la capacidad del arma de la pistola USP COMPACT, ¿cuántos cartuchos aloja en total si tiene uno en la recámara?",
+    "opciones": [
+      "14 el arma (13 cartuchos en el cargador)",
+      "13 el arma (12 cartuchos en el cargador)",
+      "15 el arma (14 cartuchos en el cargador)",
+      "16 el arma (15 cartuchos en el cargador)"
+    ],
+    "respuestaCorrecta": "14 el arma (13 cartuchos en el cargador)",
+    "tema": "Armamento",
+    "explicacion": "El temario detalla para la USP COMPACT: 'Capacidad: 13 cartuchos cargador. 14 el arma (uno en recamara)'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según la IG 60-28, ¿qué limitación de edad se establece para la realización de la prueba de circuito de agilidad en las PAFAS?",
+    "opciones": [
+      "Es aplicable solo a menores de 45 años",
+      "Es obligatoria para todos los menores de 50 años",
+      "Está reservada exclusivamente para menores de 35 años",
+      "Se dispensa únicamente a los mayores de 40 años"
+    ],
+    "respuestaCorrecta": "Es aplicable solo a menores de 45 años",
+    "tema": "PAFAS",
+    "explicacion": "En la lista de pruebas físicas se lee: 'Prueba de circuito de agilidad (menores de 45 años)'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuáles son las funciones específicas asignadas al cargo de Secretario General dentro de la Junta de Evaluación de las PAFAS?",
+    "opciones": [
+      "Elabora el acta, comprueba validez de certificados médicos y juez de pruebas",
+      "Firmar las actas finales y presidir el tribunal de apelación",
+      "Tomar los tiempos de carrera y supervisar el circuito de agilidad",
+      "Decidir sobre la calificación de APTO en caso de empate del tribunal"
+    ],
+    "respuestaCorrecta": "Elabora el acta, comprueba validez de certificados médicos y juez de pruebas",
+    "tema": "PAFAS",
+    "explicacion": "El temario asigna al Secretario general de la junta: 'Elabora el acta, comprueba validez de certificados médicos y juez de pruebas'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según la definición del temario, ¿qué es la 'Influencia social' en las dinámicas de grupo?",
+    "opciones": [
+      "Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo",
+      "Capacidad de un mando militar para dirigir las decisiones del grupo por su autoridad",
+      "Poder que los compañeros otorgan a un líder en detrimento de un jefe formal",
+      "Proceso por el que un individuo decide abandonar el grupo de pertenencia"
+    ],
+    "respuestaCorrecta": "Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "En la sección de dinámicas de grupo se define 'Influencia social: Conjunto de procesos por los que las interacciones sociales modifican la percepción, los juicios, los modos de pensar y actuar del individuo'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cómo describe detalladamente el temario el proceso de 'Conformismo'?",
+    "opciones": [
+      "Proceso por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) por presión real o imaginada",
+      "Aceptar las directrices del jefe de grupo por el simple hecho de ocupar el puesto formal",
+      "Adaptar los valores individuales a los del grupo militar de pertenencia voluntariamente",
+      "Cuestionar las decisiones colectivas para evitar el fenómeno de pensamiento grupal"
+    ],
+    "respuestaCorrecta": "Proceso por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) por presión real o imaginada",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "El temario indica sobre Conformismo: 'Proceso de influencia por el que el individuo modifica su respuesta con relación a un objeto, acercándola a la de la mayoría (fuente) dentro de un grupo. Cambio en la condición, respuestas u opiniones como resultado de una presión, real o imaginada, por parte de una persona o grupo'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuáles son los ejemplos de grupos que el temario asocia respectivamente a 'De referencia' y 'De pertenencia'?",
+    "opciones": [
+      "Familia (referencia) y Ejército (pertenencia)",
+      "Ejército (referencia) y Familia (pertenencia)",
+      "Amigos (referencia) y Grupo de Trabajo (pertenencia)",
+      "Secundarios (referencia) y Primarios (pertenencia)"
+    ],
+    "respuestaCorrecta": "Familia (referencia) y Ejército (pertenencia)",
+    "tema": "Dinámicas de Grupo",
+    "explicacion": "La clasificación del temario establece literalmente: 'De referencia: Familia' y 'De pertenencia: Ejercito'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿Cuáles son los cinco escalones de la Pirámide de Maslow que el temario asocia al valor militar de la 'Motivación', ordenados de base a cúspide?",
+    "opciones": [
+      "Biológicas → Seguridad → Pertenencia → Reconocimiento → Autorrealización",
+      "Fisiológicas → Protección → Afecto → Autoestima → Liderazgo",
+      "Básicas → Estabilidad → Afiliación → Estatus → Éxito profesional",
+      "Supervivencia → Seguridad → Integración → Logro → Motivación"
+    ],
+    "respuestaCorrecta": "Biológicas → Seguridad → Pertenencia → Reconocimiento → Autorrealización",
     "tema": "Liderazgo",
-    "explicacion": "En R4 el seguidor está dispuesto y es capaz de asumir responsabilidad, por lo que el líder delega (baja tarea + baja relación) y no necesita intervenir mucho.",
-    "dificultad": "media",
+    "explicacion": "Según el gráfico de la Pirámide de Maslow en el temario, los escalones son: Biológicas (base), Seguridad, Pertenencia, Reconocimiento y Autorrealización (cúspide).",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué organismo de la ONU tiene como función principal promover el nivel de vida, el empleo y el desarrollo económico-social, coordinando a organismos como UNICEF y ACNUR?",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre las responsabilidades del líder y la influencia es CORRECTA según el modelo del Ejército del Aire?",
     "opciones": [
-      "La Asamblea General",
-      "La Corte Internacional de Justicia",
-      "El ECOSOC",
-      "La Secretaría"
+      "El líder influye al resto; tiene la responsabilidad de cumplir la misión, cuidar a subordinados y a sus familias",
+      "El líder solo influye sobre los subordinados directos, no sobre el resto del grupo",
+      "El líder debe centrarse en cumplir la misión; cuidar a subordinados y familias es secundario",
+      "El modelo de liderazgo es exclusivamente piramidal y descendente, sin influencia de retorno"
     ],
-    "respuestaCorrecta": "El ECOSOC",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "El Consejo Económico y Social (ECOSOC) promueve el nivel de vida, el empleo y el desarrollo económico-social. Gestiona aproximadamente el 70% de los recursos de la ONU y coordina a FAO, OMS, UNESCO, PNUD, UNICEF y ACNUR.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál es la relación entre los valores militares y las Reales Ordenanzas de las FAS (R.D. 96/2009) según el temario?",
-    "opciones": [
-      "Las RR.OO. son posteriores a la IG 00-4 y la complementan",
-      "Las RR.OO. son el código deontológico con principios éticos y reglas de comportamiento; la IG 00-4 desarrolla los valores del EA sobre esa base",
-      "Las RR.OO. solo regulan aspectos disciplinarios, no valores",
-      "Las RR.OO. han sido derogadas por la IG 00-4"
-    ],
-    "respuestaCorrecta": "Las RR.OO. son el código deontológico con principios éticos y reglas de comportamiento; la IG 00-4 desarrolla los valores del EA sobre esa base",
-    "tema": "Valores Militares",
-    "explicacion": "El R.D. 96/2009 (RR.OO.) es el código deontológico general de las FAS con principios éticos y reglas de comportamiento. La IG 00-4 (2015) desarrolla específicamente los valores en el EA, el modelo de liderazgo 360º y el empeño colectivo, construyendo sobre esa base.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Qué avión de fabricación española fue el primero en incorporarse al EA con carácter de reactor de diseño nacional, en qué año llegó y cuál era su misión principal?",
-    "opciones": [
-      "C-101 Mirlo en 1970 como entrenador avanzado",
-      "HA-200 Saeta (E-14) en 1965 como entrenador en la Escuela Básica",
-      "CASA C-212 Aviocar en 1975 para transporte y enlace",
-      "EF-2000 Eurofighter en 2003 como caza polivalente"
-    ],
-    "respuestaCorrecta": "HA-200 Saeta (E-14) en 1965 como entrenador en la Escuela Básica",
-    "tema": "Historia del EA",
-    "explicacion": "El HA-200 Saeta (E-14) llegó al EA en 1965 y fue el primer reactor de diseño y fabricación puramente nacional. Se usó como entrenador en la Escuela Básica de Matacán y después en la AGA. Fue un hito de la industria aeronáutica española.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "⚠ Trampa — El protocolo ACERCARSE tiene 8 pasos. ¿Cuál es el paso que ocupa la quinta posición?",
-    "opciones": [
-      "Activar",
-      "Restablecimiento emocional",
-      "Comprensión de crisis",
-      "Recuperación de funcionamiento"
-    ],
-    "respuestaCorrecta": "Comprensión de crisis",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "El orden exacto es: Ambiente · Contacto · Evaluación · Restablecimiento emocional · Comprensión de crisis · Activar · Recuperación de funcionamiento · Seguimiento. La 5.ª posición es 'Comprensión de crisis'.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿En qué fase del modelo de socialización grupal de Moreland y Levine el individuo evalúa si el grupo ha cumplido sus expectativas antes de posiblemente marcharse?",
-    "opciones": [
-      "Fase de investigación",
-      "Fase de mantenimiento",
-      "Fase de resolución",
-      "Fase de recuerdo (remembrance)"
-    ],
-    "respuestaCorrecta": "Fase de recuerdo (remembrance)",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "La fase de recuerdo o remembrance es la última: el individuo evalúa su paso por el grupo. La de resolución trata la asignación de roles o el abandono.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "⚠ Trampa — ¿Cuál de estos principios de intervención psicológica hace referencia a reestructurar las experiencias de la víctima?",
-    "opciones": [
-      "Proximidad",
-      "Inmediatez",
-      "Unidad",
-      "Simplicidad"
-    ],
-    "respuestaCorrecta": "Unidad",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "'Unidad' en el temario significa reestructurar las experiencias vividas. No confundir con Proximidad (atención cerca del lugar), Inmediatez (actuar sin demora) ni Simplicidad (métodos breves y sencillos).",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Qué tipo de texto predominantemente usa estructuras de 'yuxtaposición' y formas verbales que expresan estado o apariencia?",
-    "opciones": [
-      "Texto narrativo",
-      "Texto argumentativo",
-      "Texto expositivo",
-      "Texto descriptivo"
-    ],
-    "respuestaCorrecta": "Texto descriptivo",
-    "tema": "Expresión Escrita",
-    "explicacion": "El texto descriptivo usa formas verbales que expresan estado o apariencia, adjetivos, adverbios de modo y la yuxtaposición como estructura principal.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál de los siguientes NO es uno de los valores militares esenciales descritos en la IG 00-4 según el temario?",
-    "opciones": [
-      "Disponibilidad",
-      "Ejemplaridad",
-      "Neutralidad",
-      "Disciplina"
-    ],
-    "respuestaCorrecta": "Neutralidad",
-    "tema": "Valores Militares",
-    "explicacion": "Los valores militares del temario son: disponibilidad, compromiso, lealtad, respeto, espíritu de equipo, profesionalidad, ejemplaridad, disciplina y valor. La 'neutralidad' no figura entre los valores militares esenciales.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Un subalterno conoce perfectamente su trabajo pero lleva semanas desmotivado y resistente. Su líder decide involucrarlo en las decisiones y darle apoyo emocional sin marcarle las tareas. ¿Qué estilo y nivel de disposición del subalterno justifican esta elección?",
-    "opciones": [
-      "Estilo Decir; nivel R1",
-      "Estilo Vender; nivel R2",
-      "Estilo Participar; nivel R3",
-      "Estilo Delegar; nivel R4"
-    ],
-    "respuestaCorrecta": "Estilo Participar; nivel R3",
+    "respuestaCorrecta": "El líder influye al resto; tiene la responsabilidad de cumplir la misión, cuidar a subordinados y a sus familias",
     "tema": "Liderazgo",
-    "explicacion": "El subalterno es competente pero está desmotivado: es un nivel R3. El estilo adecuado para R3 es Participar (baja tarea + alta relación): el líder resuelve los problemas de motivación con apoyo y participación, sin necesidad de dirigir las tareas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Un soldado lleva 6 meses en su nueva unidad. Ya conoce las normas, ha adquirido un rol definido y el grupo lo ha aceptado plenamente. Sin embargo, empieza a sentir que sus necesidades individuales no están siendo satisfechas. ¿En qué fase del modelo de Moreland y Levine se encuentra?",
-    "opciones": [
-      "Fase de socialización",
-      "Fase de mantenimiento",
-      "Fase de individualización (no aplica a Moreland y Levine)",
-      "Fase de resolución"
-    ],
-    "respuestaCorrecta": "Fase de resolución",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "Está en la fase de Resolución: el individuo ya tiene un rol asignado pero surgen tensiones entre sus necesidades individuales y las del grupo. Si no se resuelve satisfactoriamente, puede llevar al abandono del grupo. (No confundir con la Individualización del modelo de Worchel, que es un modelo distinto.)",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál es la diferencia entre los Canadair CL-215T y CL-415 que operan desde BA Torrejón y cuáles son sus designaciones militares?",
-    "opciones": [
-      "El CL-215T es cisterna y el CL-415 es fotográfico",
-      "Ambos son contraincendios; el CL-215T tiene designación UD.13T y el CL-415 tiene UD.14",
-      "El CL-215T es anfibio y el CL-415 es terrestre",
-      "Son el mismo avión con diferente motorización y misión distinta"
-    ],
-    "respuestaCorrecta": "Ambos son contraincendios; el CL-215T tiene designación UD.13T y el CL-415 tiene UD.14",
-    "tema": "Material Aéreo",
-    "explicacion": "Ambos son aviones contraincendios del EA operados desde BA Torrejón (43 Grupo FFAA). El CL-215T tiene designación UD.13T (la T indica que es la versión turboprop modernizada) y el CL-415 tiene designación UD.14. Son los únicos aviones dedicados exclusivamente a extinción de incendios.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Un soldado que participó en una misión de rescate y, al regresar, no estaba en el lugar del accidente, experimenta culpa por haberse 'salvado' sin estar presente. ¿A qué grado de víctima corresponde?",
-    "opciones": [
-      "Cuarto grado",
-      "Quinto grado",
-      "Sexto grado",
-      "No se considera víctima"
-    ],
-    "respuestaCorrecta": "Sexto grado",
-    "tema": "Apoyo Psicológico",
-    "explicacion": "Las víctimas de 6.º grado son los llamados 'accidente blanco': personas que no estaban allí y sienten culpa por haberse salvado.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Qué información se registra, como norma general, en el libro de registro?",
-    "opciones": [
-      "Número de entrada o salida",
-      "Destinatario o remitente",
-      "Fecha del asiento",
-      "Todas son correctas"
-    ],
-    "respuestaCorrecta": "Todas son correctas",
-    "tema": "Registro y Utilización de Documentos",
-    "explicacion": "",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "Señala la afirmación INCORRECTA sobre la misión Atalanta del EA.",
-    "opciones": [
-      "Se enmarca en la operación EUNAVFOR Somalia",
-      "Su objetivo es la protección contra la piratería en el Cuerno de África",
-      "El EA despliega en Yibuti con el D.4 (CN-235 VIGMA) y el T.21 (C-295)",
-      "Tiene como objetivo asegurar el espacio aéreo OTAN en el Báltico"
-    ],
-    "respuestaCorrecta": "Tiene como objetivo asegurar el espacio aéreo OTAN en el Báltico",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Asegurar el espacio aéreo OTAN en el Báltico es el objetivo de la Policía Aérea del Báltico (BAP), no de Atalanta. La operación Atalanta (EUNAVFOR Somalia) se centra en la protección contra la piratería en el Cuerno de África, con despliegue en Yibuti.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "La instancia es un documento de los ciudadanos. ¿Cuál de las siguientes afirmaciones sobre la instancia es FALSA?",
-    "opciones": [
-      "Puede incluir solicitudes, denuncias, alegaciones o recursos",
-      "Debe llevar datos del solicitante, expone, solicita, fecha y firma",
-      "Debe ir firmada por el Jefe de la UCO del interesado",
-      "Debe registrarse de entrada conforme a lo establecido en la IG 10-14"
-    ],
-    "respuestaCorrecta": "Debe ir firmada por el Jefe de la UCO del interesado",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La instancia la firma el propio interesado, no el Jefe de su UCO. Esa es una afirmación falsa que aparece como trampa habitual en el temario.",
+    "explicacion": "El temario describe las responsabilidades: cumplir la misión, cuidar a subordinados y cuidar de sus familias, y añade: '*El líder influye al resto'.",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué estilo de liderazgo de Hersey y Blanchard se aplica cuando el subalterno tiene bajo nivel de disposición y necesita indicaciones claras?",
+    "pregunta": "En instrucción de orden cerrado, ¿qué norma rige las variaciones en las formaciones de a seis o a nueve?",
     "opciones": [
-      "Participar",
-      "Delegar",
-      "Vender",
-      "Decir"
+      "Existe doble variaciones pero no es aconsejable de a seis o a nueve",
+      "Es obligatorio realizar doble variaciones de a seis o a nueve para mantener el alineamiento",
+      "No están permitidas las variaciones en estas columnas por riesgo de colisión",
+      "Las variaciones en estas columnas deben ejecutarse siempre a paso ligero"
     ],
-    "respuestaCorrecta": "Decir",
-    "tema": "Liderazgo",
-    "explicacion": "El estilo 'Decir' (alta tarea + baja relación) se aplica en el nivel R1, cuando el subalterno tiene bajo nivel de disposición y necesita direcciones claras y específicas.",
-    "dificultad": "facil",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuántos votos son necesarios para que el Consejo de Seguridad de la ONU apruebe una resolución, y qué condición adicional deben cumplir?",
-    "opciones": [
-      "7 votos sin condiciones adicionales",
-      "9 votos, y ningún miembro permanente puede vetar",
-      "9 votos, con mayoría simple de permanentes",
-      "12 votos por unanimidad"
-    ],
-    "respuestaCorrecta": "9 votos, y ningún miembro permanente puede vetar",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "Las resoluciones del Consejo de Seguridad se aprueban con 9 votos, pero cualquier miembro permanente puede vetarlas.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Qué institución de la UE está formada por 27 comisarios que proponen nuevas leyes?",
-    "opciones": [
-      "El Parlamento Europeo",
-      "El Consejo Europeo",
-      "La Comisión Europea",
-      "El Tribunal de Justicia"
-    ],
-    "respuestaCorrecta": "La Comisión Europea",
-    "tema": "Organizaciones Internacionales",
-    "explicacion": "La Comisión Europea está formada por 27 comisarios y es la encargada de proponer nuevas leyes en el conjunto de la UE.",
-    "dificultad": "media",
-    "imprescindible": false,
-    "examen": "simulacro3"
-  },
-  {
-    "pregunta": "¿Cuál de las siguientes no es una característica exigida por la IG 10-01 para la redacción de escritos militares?",
-    "opciones": [
-      "Redundancia explicativa",
-      "Claridad y concisión",
-      "Orden lógico o método",
-      "Concreción y corrección gramática"
-    ],
-    "respuestaCorrecta": "Redundancia explicativa",
-    "tema": "Instrucción a la IG 10-01",
-    "explicacion": "La IG 10-01 exige escritos claros, concisos, metódicos, concretos y correctos; la redundancia está explícitamente desaconsejada.",
+    "respuestaCorrecta": "Existe doble variaciones pero no es aconsejable de a seis o a nueve",
+    "tema": "IOC",
+    "explicacion": "El temario expone textualmente: 'Existe doble variaciones pero no es aconsejable de a seis o a nueve'.",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué misión realiza el C-235 con designación D.4 y bajo qué Ala está encuadrado?",
+    "pregunta": "Con respecto a los guiones y banderines, ¿quiénes están autorizados a portar el guion de batallón o grupo?",
     "opciones": [
-      "Transporte de carga, ALA 35",
-      "Fotografía aérea, ALA 48",
-      "Vigilancia marítima (VIGMA), ALA 37",
-      "Enseñanza básica, ALA 78"
+      "Sargento o cabo 1.º en los que han heredado la tradición de regimientos y cabo 1.º para el resto",
+      "Únicamente sargentos para batallón y cabos 1.º para grupos independientes",
+      "Cabos 1.º o cabos indistintamente, siempre que tengan el apto en las PAFAS",
+      "Soldados de primera bajo la supervisión directa del cabo de escuadra"
     ],
-    "respuestaCorrecta": "Vigilancia marítima (VIGMA), ALA 37",
-    "tema": "Material Aéreo",
-    "explicacion": "El C-235 con designación D.4 realiza misiones de Vigilancia Marítima (VIGMA) y pertenece al ALA 37, aunque opera desde bases como Getafe, Son San Juan y Gando.",
+    "respuestaCorrecta": "Sargento o cabo 1.º en los que han heredado la tradición de regimientos y cabo 1.º para el resto",
+    "tema": "IOC",
+    "explicacion": "El temario determina: 'Guion de batallón o grupo: Sargento o cabo 1.º para aquellos Bóns./Grs. que han heredado la tradición de regimientos y cabo 1.º para el resto'.",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "El NH-90 y el Pilatus PC-21 aparecen en el temario como novedades y proyectos. ¿Cuáles son sus misiones y bases previstas respectivamente?",
+    "pregunta": "Al ejecutar las órdenes de 'Armar' o 'Envainar' la bayoneta, ¿cuál es la regla visual que se debe cumplir obligatoriamente?",
     "opciones": [
-      "NH-90: combate en BA Morón — PC-21: SAR en BA Gando",
-      "NH-90: transporte y SAR en BA Cuatro Vientos — PC-21: enseñanza en BA San Javier",
-      "NH-90: reabastecimiento en BA Zaragoza — PC-21: fotografía en BA Getafe",
-      "NH-90: contraincendios — PC-21: guerra electrónica"
+      "Mirar la bayoneta siempre que la movamos",
+      "Mantener la vista al frente en posición de firmes",
+      "Cerrar los ojos durante el encastre",
+      "Mirar únicamente al suelo para comprobar el encastre"
     ],
-    "respuestaCorrecta": "NH-90: transporte y SAR en BA Cuatro Vientos — PC-21: enseñanza en BA San Javier",
-    "tema": "Material Aéreo",
-    "explicacion": "Según el temario, el NH-90 es para misiones de Transporte y SAR con base prevista en BA Cuatro Vientos (ALA 48, 803 Escuadrón). El Pilatus PC-21 está previsto para enseñanza en BA San Javier (AGA). Ambos son proyectos de incorporación al EA.",
+    "respuestaCorrecta": "Mirar la bayoneta siempre que la movamos",
+    "tema": "IOC",
+    "explicacion": "Sobre armar/envainar, el temario dice: 'Mirar la bayoneta siempre que la movamos. Diferencia de encastre en función al fusil'.",
     "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué prelación del teletipo (MEFO) indica que el mensaje debe entregarse hasta el comienzo del trabajo del día siguiente?",
+    "pregunta": "¿Cuáles son los porcentajes de causas de baja evitable y sus respectivos tiempos límite de tratamiento según el TCCC?",
     "opciones": [
-      "Z — Flash",
-      "O — Inmediato",
-      "P — Prioridad",
-      "R — Rutina"
+      "85% Hemorragias (<3 min), 14% Vías Aéreas (<6 min), 9% Hemotórax (<9 min)",
+      "80% Hemorragias (<5 min), 15% Vías Aéreas (<8 min), 5% Hemotórax (<10 min)",
+      "85% Hemorragias (<5 min), 10% Vías Aéreas (<3 min), 5% Hemotórax (<6 min)",
+      "90% Hemorragias (<3 min), 8% Vías Aéreas (<6 min), 2% Hemotórax (<9 min)"
     ],
-    "respuestaCorrecta": "R — Rutina",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "La prelación R (Rutina) indica que el mensaje se entregará hasta el comienzo del trabajo del día siguiente. La P (Prioridad) es hasta 6 horas, la O (Inmediato) menos de 1 hora y la Z (Flash) lo antes posible.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "85% Hemorragias (<3 min), 14% Vías Aéreas (<6 min), 9% Hemotórax (<9 min)",
+    "tema": "TCCC",
+    "explicacion": "Las estadísticas exactas del temario son: '1. 85% por Hemorragias. Tratar antes de 3 minutos', '2. 14% por vías aéreas. Tratar antes de 6 minutos' y '3. 9% Hemotorax. Tratar antes de 9 minutos'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué histórica aeronave española realizó el vuelo Sevilla-Río de Janeiro en 1929?",
+    "pregunta": "En el TCCC, ¿en qué consiste la regla de aplicación de presión directa con agente hemostático para hemorragias en unión de miembros?",
     "opciones": [
-      "El avión 'Jesús del Gran Poder'",
-      "El hidroavión 'Plus Ultra'",
-      "La escuadrilla 'Elcano'",
-      "El avión 'Cuatro Vientos'"
+      "3 minutos de presión directa con esquema (3+3+3)",
+      "Presión continua durante 9 minutos sin interrupción alguna",
+      "Presión directa durante 5 minutos y luego vendaje compresivo durante 3 minutos",
+      "Presión intermitente de 1 minuto seguida de descanso de 3 minutos"
     ],
-    "respuestaCorrecta": "El avión 'Jesús del Gran Poder'",
-    "tema": "Historia del EA",
-    "explicacion": "En 1929 se llevó a cabo el histórico vuelo Sevilla - Río de Janeiro empleando el monoplano 'Jesús del Gran Poder'.",
-    "dificultad": "media",
+    "respuestaCorrecta": "3 minutos de presión directa con esquema (3+3+3)",
+    "tema": "TCCC",
+    "explicacion": "La directriz de tratamiento indica: 'Agente hemostático en unión de miembros. 3 minutos de presión directa. (3+3+3)'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿A qué tipo de comunicación pertenece la comunicación vertical ascendente o descendente dentro de una organización?",
+    "pregunta": "En la fase CARE UNDER FIRE (CUF), ¿cuál es la conducta correcta ante un herido durante una escaramuza activa?",
     "opciones": [
-      "Informal",
-      "Masiva",
-      "Formal",
-      "Intrapersonal"
+      "En escaramuza NO asistimos al herido y se ordena o espera que continúe disparando si es viable",
+      "Proporcionar asistencia paramédica inmediata bajo fuego de cobertura",
+      "Evacuar inmediatamente al herido hacia la zona templada (TFC)",
+      "Aplicar el protocolo MARCH completo antes de repeler la agresión"
     ],
-    "respuestaCorrecta": "Formal",
-    "tema": "Expresión Oral",
-    "explicacion": "La comunicación vertical (ascendente o descendente) pertenece a la comunicación formal dentro de la organización.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "En escaramuza NO asistimos al herido y se ordena o espera que continúe disparando si es viable",
+    "tema": "TCCC",
+    "explicacion": "En la sección CUF del temario se detalla: 'Ordenar o esperar que el herido continúe disparando en el combate, si es viable. En escaramuza NO asistimos al herido. Tratar hemorragias con torniquete'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué elemento de la comunicación no verbal estudia el uso y estructuración del espacio inmediato al comunicador?",
+    "pregunta": "Según el protocolo MARCH aplicado en la fase TACTICAL FIELD CARE (TFC), ¿qué representan detalladamente las siglas 'R', 'C' e 'H'?",
     "opciones": [
-      "Kinesia",
-      "Paralingüística",
-      "Proxémica",
-      "Gestualización"
+      "Respiration (respiración), Circulation (circulación) y Head Trauma / hypothermia (traumatismo craneal / hipotermia)",
+      "Rescue (rescate), Compression (compresión) y Hospitalization (hospitalización)",
+      "Reanimation (reanimación), Cardiography (cardiografía) y Hemostasis (hemostasia)",
+      "Resuscitation (resucitación), Clearing (limpieza de vía) y Hemorrhage (hemorragia)"
     ],
-    "respuestaCorrecta": "Proxémica",
-    "tema": "Expresión Oral",
-    "explicacion": "La proxémica estudia el espacio inmediato (no físico, sino mental) que rodea al comunicador.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "Respiration (respiración), Circulation (circulación) y Head Trauma / hypothermia (traumatismo craneal / hipotermia)",
+    "tema": "TCCC",
+    "explicacion": "En el protocolo MARCH de TFC, las letras significan: M: Massive bleeding, A: Airway, R: Respiration, C: Circulation, H: Head Trauma / hypothermia.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué avión protagonizó la primera vuelta a España en 1927, cuántos kilómetros recorrió y en cuántas horas aproximadamente?",
+    "pregunta": "¿Cuál es la definición y características de la fase TACTICAL EVACUATION CARE (TEC) dentro del TCCC?",
     "opciones": [
-      "C-101 Mirlo — 5.000 km — 48 horas",
-      "Breguet XIX — 3.000 km — 72 horas",
-      "Plus Ultra — 3.500 km — 60 horas",
-      "Dornier — 4.500 km — 55 horas"
+      "Asistencia tras evacuación (Zona fría) por personal médico y equipo medicalizado",
+      "Asistencia paramédica precoz en la Zona Templada sin fuego hostil",
+      "Tratamiento de hemorragias masivas únicamente con torniquete bajo fuego enemigo",
+      "Estadística de bajas basada en el tiempo límite de evacuación del combatiente"
     ],
-    "respuestaCorrecta": "Breguet XIX — 3.000 km — 72 horas",
-    "tema": "Historia del EA",
-    "explicacion": "La primera vuelta a España se realizó en 1927 con un Breguet XIX, recorriendo aproximadamente 3.000 km en unas 72 horas. No confundir con el vuelo Sevilla-Bata de 1931 (4.500 km en 27 horas).",
-    "dificultad": "facil",
+    "respuestaCorrecta": "Asistencia tras evacuación (Zona fría) por personal médico y equipo medicalizado",
+    "tema": "TCCC",
+    "explicacion": "El temario define: '3. TACTICAL EVACUATION CARE (TEC): Asistencia tras evacuación (Zona fría). Personal médico y equipo medicalizado'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "¿Qué prelación MEFO se entrega 'al comienzo del trabajo del día siguiente' de su transmisión?",
+    "pregunta": "¿Qué diferencia al Accidente in Itinere de los Accidentes con o sin baja según las definiciones de prevención de riesgos?",
     "opciones": [
-      "R (Rutina)",
-      "P (Prioridad)",
-      "O (Inmediato)",
-      "Z (Flash)"
+      "El in itinere se define estrictamente por ocurrir durante el desplazamiento al trabajo",
+      "El in itinere no provoca lesión física alguna en el trabajador",
+      "El in itinere exime de la obligatoriedad de usar los Equipos de Protección Individual",
+      "El in itinere es competencia exclusiva del personal civil, no del personal militar"
     ],
-    "respuestaCorrecta": "R (Rutina)",
-    "tema": "Redacción de Documentos Militares",
-    "explicacion": "Los teletipos con prelación 'R' (Rutina) se tramitan para ser entregados antes de que comience el horario laboral del día siguiente.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "El in itinere se define estrictamente por ocurrir durante el desplazamiento al trabajo",
+    "tema": "PRL",
+    "explicacion": "El temario clasifica los accidentes por sus consecuencias y circunstancias: 'ACCIDENTE IN ITINERE: Durante el desplazamiento al trabajo'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "En el proceso de escritura, ¿cuál es la diferencia entre la fase 'Dispositio' y la fase 'Elocutio'?",
+    "pregunta": "Según la normativa de prevención de riesgos laborales del Ejército del Aire, ¿cómo se califica formalmente un 'Accidente de trabajo'?",
     "opciones": [
-      "Dispositio es revisar; Elocutio es construir ideas",
-      "Dispositio es ordenar y planificar ideas mediante esquemas; Elocutio es redactar eligiendo la expresión lingüística",
-      "Dispositio es redactar; Elocutio es corregir",
-      "Son la misma fase con dos nombres distintos"
+      "Lesión corporal",
+      "Daño a las instalaciones derivado de una negligencia",
+      "Posibilidad de que un trabajador sufra un determinado daño",
+      "Cualquier incidente ocurrido en acto de servicio"
     ],
-    "respuestaCorrecta": "Dispositio es ordenar y planificar ideas mediante esquemas; Elocutio es redactar eligiendo la expresión lingüística",
-    "tema": "Expresión Escrita",
-    "explicacion": "Dispositio (Disposición): ordenar y planificar las ideas mediante esquemas, elegir el tipo de discurso. Elocutio (Redacción): elegir la expresión lingüística adecuada, elaborar borradores. Emendatio sería la revisión final.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "Lesión corporal",
+    "tema": "PRL",
+    "explicacion": "El temario define de manera escueta: 'ACCIDENTE DE TRABAJO: Lesión corporal'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   },
   {
-    "pregunta": "En la fase de 'productividad grupal' del modelo de Worchel, ¿cuál es el objetivo principal del grupo?",
+    "pregunta": "De acuerdo con la gestión de prevención, ¿sobre qué base se debe realizar la solicitud de un Equipo de Protección Individual (EPI)?",
     "opciones": [
-      "Resolver los conflictos internos surgidos en la fase anterior",
-      "Cooperar entre todos los miembros para convertirse en un grupo eficaz",
-      "Identificar y expulsar a los miembros que no cumplen las normas",
-      "Replantearse la misión original del grupo"
+      "Siempre basada en la evaluación de riesgos de su puesto de trabajo",
+      "Sobre la base de la antigüedad del trabajador y su rango",
+      "Exclusivamente por petición del jefe de la UCO sin justificación técnica",
+      "En función de la disponibilidad de presupuesto anual en la UCO"
     ],
-    "respuestaCorrecta": "Cooperar entre todos los miembros para convertirse en un grupo eficaz",
-    "tema": "Dinámica de Grupos",
-    "explicacion": "En la fase de productividad grupal, los miembros cooperan para ser un grupo eficaz. Es la cuarta fase del modelo de Worchel, tras la identificación con el grupo, y precede a la individualización donde empiezan a prevalecer las necesidades individuales.",
-    "dificultad": "facil",
+    "respuestaCorrecta": "Siempre basada en la evaluación de riesgos de su puesto de trabajo",
+    "tema": "PRL",
+    "explicacion": "El temario es claro: 'La solicitud de los EPI que le puedan corresponder, siempre basada en la evaluación de riesgos de su puesto de trabajo, debe realizarse a través de la Oficina de Prevención de Riesgos Laborales (OPRL) de la UCO'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según la norma ISO 14001, ¿qué preguntas fundamentales debe responder el Sistema de Gestión Ambiental en la UCO?",
+    "opciones": [
+      "Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse",
+      "Quién contamina, qué sanción se aplica, cuánto cuesta la multa y cómo recurrirla",
+      "Cuántos recursos se consumen, qué porcentaje se recicla y a qué coste",
+      "Qué directiva se incumple, quién firma el acta y cuándo se ejecuta la sanción"
+    ],
+    "respuestaCorrecta": "Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse",
+    "tema": "Medio Ambiente",
+    "explicacion": "El temario detalla que la ISO 14001 responde a: 'Qué hacer, para qué, quién tiene que hacerlo, cómo debe de hacerlo, cuándo hay que llevarlo a cabo y dónde debe realizarse'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según la clasificación del PADEA, ¿en qué consiste la diferencia entre un consumidor ocasional y un consumidor dependiente?",
+    "opciones": [
+      "El ocasional conoce los efectos y escoge momentos propicios; el dependiente tiene el consumo como centro de su vida",
+      "El ocasional realiza ensayos por curiosidad; el dependiente consume periódicamente sin alterar su rutina",
+      "El ocasional consume los fines de semana; el dependiente consume exclusivamente en días laborables",
+      "El ocasional da negativo en las pruebas; el dependiente requiere 8 meses de seguimiento"
+    ],
+    "respuestaCorrecta": "El ocasional conoce los efectos y escoge momentos propicios; el dependiente tiene el consumo como centro de su vida",
+    "tema": "PADEA",
+    "explicacion": "El temario clasifica a los consumidores en: 'Ocasionales. La persona ya sabe previamente lo que puede obtener de una droga y escoge los momentos y escenarios más propicios para sentir los efectos' y 'Dependientes. El consumo es el centro de sus vidas. PROBLEMA'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "De acuerdo con el plan PADEA, ¿qué se entiende por el fenómeno de la 'Tolerancia' en un consumidor?",
+    "opciones": [
+      "Se acostumbra a la sustancia y necesita dosis cada vez mayores",
+      "El deseo intenso y obsesivo de consumir una droga",
+      "Los síntomas físicos y psicológicos al interrumpir bruscamente el consumo",
+      "La capacidad del organismo para eliminar la sustancia en un fin de semana"
+    ],
+    "respuestaCorrecta": "Se acostumbra a la sustancia y necesita dosis cada vez mayores",
+    "tema": "PADEA",
+    "explicacion": "El temario describe la Tolerancia como: 'Tolerancia: se acostumbra a la sustancia. Necesita dosis cada vez mayores'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según el temario de adicciones, ¿cómo se define clínicamente la 'Dependencia'?",
+    "opciones": [
+      "Deseo intenso",
+      "Consumo periódico que no impide llevar una vida normal",
+      "Alteración física temporal del sistema nervioso",
+      "Acción de evadir las órdenes legítimas de control de la UCO"
+    ],
+    "respuestaCorrecta": "Deseo intenso",
+    "tema": "PADEA",
+    "explicacion": "El temario define de manera literal: 'Dependencia: Deseo intenso'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "¿En qué grado afecta al organismo el consumo de cannabis (THC) y qué advertencia temporal realiza el plan PADEA?",
+    "opciones": [
+      "El consumo de THC afecta al cuerpo más de 7 días, importando lo que se hace en el fin de semana",
+      "El THC se elimina por completo en 24 horas y no deja secuelas físicas",
+      "Afecta al cuerpo solo durante las primeras 12 horas tras el consumo",
+      "El THC afecta únicamente al rendimiento en las pruebas físicas PAFAS"
+    ],
+    "respuestaCorrecta": "El consumo de THC afecta al cuerpo más de 7 días, importando lo que se hace en el fin de semana",
+    "tema": "PADEA",
+    "explicacion": "El temario expone textualmente: 'El consumo de drogas afecta al cuerpo más allá de su consumo. (ej: THC más 7 días). Importa lo que haces en el fin de semana'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según el temario del PADEA, ¿qué consecuencias tiene negarse a cumplir un deber legítimamente ordenado relacionado con el control de drogas?",
+    "opciones": [
+      "Medidas disciplinarias y, en el caso de los alumnos, la expulsión",
+      "Una sanción económica de hasta el 50% de la retribución mensual",
+      "La suspensión automática de la vigencia de las pruebas PAFAS",
+      "El arresto preventivo en la UCO por un periodo de 30 días"
+    ],
+    "respuestaCorrecta": "Medidas disciplinarias y, en el caso de los alumnos, la expulsión",
+    "tema": "PADEA",
+    "explicacion": "El temario recoge: 'La negativa al cumplimiento de un deber legítimamente ordenado puede dar lugar a la aplicación de medidas disciplinarias (y a la expulsión en caso de alumnos)'.",
+    "dificultad": "dificil",
+    "imprescindible": false,
+    "examen": "simulacro3"
+  },
+  {
+    "pregunta": "Según la clasificación del PADEA, ¿cuál es la característica que define al consumidor 'habitual'?",
+    "opciones": [
+      "Consumo periódico, no les impide desarrollar su vida pero el efecto es buscado con continuidad",
+      "Ensayos por curiosidad en una o varias ocasiones sin intención de repetir",
+      "Deseo intenso y obsesivo que constituye el centro de su vida",
+      "Consumo selectivo escogiendo escenarios específicos por conocer los efectos"
+    ],
+    "respuestaCorrecta": "Consumo periódico, no les impide desarrollar su vida pero el efecto es buscado con continuidad",
+    "tema": "PADEA",
+    "explicacion": "El temario define: 'Habituales. consumo periódico, “no les impide desarrollar su vida” pero el efecto es buscado con continuidad'.",
+    "dificultad": "dificil",
     "imprescindible": false,
     "examen": "simulacro3"
   }
